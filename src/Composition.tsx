@@ -38,7 +38,7 @@ async function main() {
   const user = await getUser();
 `;
 
-// Scene 1: The Panic (Development Context) (0-5s)
+// Scene 1: The Panic (Development Context) (0-8s)
 const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
@@ -55,6 +55,16 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
         fps,
         config: { damping: 15, stiffness: 120 }
     });
+
+    // "What does this mean??" overlay appearance
+    const questionFrame = 120;
+    const showQuestion = frame > questionFrame;
+    const questionScale = spring({
+        frame: frame - questionFrame,
+        fps,
+        config: { damping: 10, stiffness: 100 }
+    });
+    const questionShake = Math.sin(frame * 0.8) * 10;
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#1e1e1e', fontFamily: monoFamily, color: '#d4d4d4', fontSize: 24, padding: 40 }}>
@@ -82,25 +92,52 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
                     left: '50%',
                     transform: `translate(-50%, -50%) scale(${errorScale})`,
                     backgroundColor: '#2d2d2d',
-                    border: '1px solid #f48771',
-                    borderRadius: 8,
+                    border: '4px solid #f48771', // Thicker border
+                    borderRadius: 12,
                     padding: 0,
-                    boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
-                    width: '80%',
-                    overflow: 'hidden'
+                    boxShadow: '0 30px 80px rgba(0,0,0,0.8)', // Stronger shadow
+                    width: '90%', // Wider
+                    overflow: 'hidden',
+                    zIndex: 10
                 }}>
-                    <div style={{ backgroundColor: '#f48771', padding: '10px 20px', color: '#2d2d2d', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: 10 }}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div style={{ backgroundColor: '#f48771', padding: '15px 30px', color: '#2d2d2d', fontWeight: 'bold', fontSize: 30, display: 'flex', alignItems: 'center', gap: 15 }}>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                             <circle cx="12" cy="12" r="10" />
                             <line x1="12" y1="8" x2="12" y2="12" />
                             <line x1="12" y1="16" x2="12.01" y2="16" />
                         </svg>
                         ERROR
                     </div>
-                    <div style={{ padding: 30 }}>
-                        <p style={{ color: '#f48771', fontSize: 32, margin: 0, fontWeight: 'bold' }}>{errorMessage}</p>
-                        <p style={{ color: '#ccc', fontSize: 24, marginTop: 10 }}>What does this mean??</p>
+                    <div style={{ padding: 40 }}>
+                        <p style={{ color: '#f48771', fontSize: 75, margin: 0, fontWeight: 'bold', lineHeight: 1.1 }}>{errorMessage}</p>
                     </div>
+                </div>
+            )}
+
+            {/* Tsukkomi Overlay */}
+            {showQuestion && (
+                <div style={{
+                    position: 'absolute',
+                    top: '65%',
+                    left: '50%',
+                    transform: `translate(-50%, -50%) scale(${questionScale}) translate(${questionShake}px, 0)`,
+                    zIndex: 20,
+                    width: '100%',
+                    textAlign: 'center'
+                }}>
+                    <p style={{
+                        fontFamily: '"Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+                        fontSize: 110,
+                        fontWeight: 900,
+                        color: 'white',
+                        textShadow: '5px 5px 0 #ff0000, -5px -5px 0 #0000ff',
+                        margin: 0,
+                        backgroundColor: 'rgba(0,0,0,0.8)',
+                        padding: '30px 0',
+                        transform: 'rotate(-5deg)'
+                    }}>
+                        どういう意味！！？？
+                    </p>
                 </div>
             )}
         </AbsoluteFill>
@@ -241,16 +278,16 @@ const UsageScene: React.FC<{ context: string, example: string, punchline: string
 export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props) => {
     return (
         <AbsoluteFill>
-            <Sequence from={0} durationInFrames={150}>
+            <Sequence from={0} durationInFrames={240}>
                 <PanicScene errorMessage={props.errorMessage} />
             </Sequence>
-            <Sequence from={150} durationInFrames={450}>
+            <Sequence from={240} durationInFrames={450}>
                 <WordScene word={props.targetWord} meaning={props.generalMeaning} example={props.generalExample} />
             </Sequence>
-            <Sequence from={600} durationInFrames={600}>
+            <Sequence from={690} durationInFrames={600}>
                 <ContextScene techMeaning={props.techMeaning} explanation={props.explanation} />
             </Sequence>
-            <Sequence from={1200} durationInFrames={300}>
+            <Sequence from={1290} durationInFrames={300}>
                 <UsageScene context={props.usageContext} example={props.usageExample} punchline={props.usagePunchline} />
             </Sequence>
         </AbsoluteFill>
