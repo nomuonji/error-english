@@ -9,7 +9,9 @@
         "explanation": "再起不能。保存してないデータは諦めよう。",
         "usageContext": "遅刻確定の時",
         "usageExample": "I made a fatal mistake...",
-        "usagePunchline": "上司: 403 Forbidden (許さん)"
+        "usageExampleTranslation": "致命的なミスをしちゃった…",
+        "usagePunchline": "Boss: 403 Forbidden",
+        "usagePunchlineTranslation": "上司：許さん（アクセス拒否）"
     },
     {
         "targetWord": "Argument",
@@ -21,7 +23,9 @@
         "explanation": "プログラムに関数を渡すのは、『議論の種』を渡すようなもの。コンピュータと喧嘩してるわけじゃないよ！",
         "usageContext": "夫婦喧嘩の時",
         "usageExample": "Invalid Argument provided.",
-        "usagePunchline": "妻: System Shutdown."
+        "usageExampleTranslation": "無効な主張（引数）です。",
+        "usagePunchline": "Wife: System Shutdown.",
+        "usagePunchlineTranslation": "妻：システムシャットダウン（会話終了）"
     },
     {
         "targetWord": "Exception",
@@ -33,7 +37,9 @@
         "explanation": "プログラムにとっての『例外』は『処理できない！』という悲鳴。キャッチしてあげないと落ちるよ。",
         "usageContext": "飲み会で一人だけ飲まない時",
         "usageExample": "I am an Exception.",
-        "usagePunchline": "幹事: Error handling required."
+        "usageExampleTranslation": "僕は例外（飲まない人）です。",
+        "usagePunchline": "Organizer: Error handling required.",
+        "usagePunchlineTranslation": "幹事：エラー処理（介抱）が必要だな。"
     },
     {
         "targetWord": "Deprecated",
@@ -45,7 +51,9 @@
         "explanation": "禁止ではないが、『もう時代遅れだから、使うと恥かくよ（そのうち消すよ）』という優しさを含んだ警告。",
         "usageContext": "死語を使った時",
         "usageExample": "Using 'ナウい' is deprecated.",
-        "usagePunchline": "若者: Warning ignored."
+        "usageExampleTranslation": "「ナウい」の使用は非推奨です。",
+        "usagePunchline": "Youth: Warning ignored.",
+        "usagePunchlineTranslation": "若者：警告を無視（スルー）"
     },
     {
         "targetWord": "Void",
@@ -57,7 +65,9 @@
         "explanation": "仕事を頼んでも『虚空』に向かって叫ぶだけ。返事は返ってこない一方通行の命令。",
         "usageContext": "既読スルーされた時",
         "usageExample": "My message returned void.",
-        "usagePunchline": "相手: (No Response)"
+        "usageExampleTranslation": "私のメッセージは虚空（無視）を返した。",
+        "usagePunchline": "Partner: (No Response)",
+        "usagePunchlineTranslation": "相手：（応答なし）"
     },
     {
         "targetWord": "Listen",
@@ -69,6 +79,8 @@
         "explanation": "サーバーは常にポート（扉）に耳を当てて、アクセスが来るのを『Listen』しているんだ。エラーは『耳が塞がってる』ってこと。",
         "usageContext": "話を聞かない彼氏に",
         "usageExample": "Error: Port 80 not listening.",
-        "usagePunchline": "彼女: Connection Refused."
+        "usageExampleTranslation": "エラー：ポート80（耳）が聞いてません。",
+        "usagePunchline": "Girlfriend: Connection Refused.",
+        "usagePunchlineTranslation": "彼女：接続拒否（さようなら）。"
     }
 ]

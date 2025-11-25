@@ -18,7 +18,9 @@ export const myCompSchema = z.object({
     explanation: z.string(),
     usageContext: z.string(),
     usageExample: z.string(),
+    usageExampleTranslation: z.string(),
     usagePunchline: z.string(),
+    usagePunchlineTranslation: z.string(),
 });
 
 // Mock Code for background
@@ -55,6 +57,13 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
         frame: frame - errorFrame,
         fps,
         config: { damping: 15, stiffness: 120 }
+    });
+
+    // Japanese "Error Occurred" Pop appearance
+    const jpErrorScale = spring({
+        frame: frame - errorFrame - 5,
+        fps,
+        config: { damping: 12, stiffness: 200 }
     });
 
     // Flash effect on error
@@ -142,6 +151,45 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
                 </div>
             )}
 
+            {/* Japanese Error Pop */}
+            {showError && (
+                <div style={{
+                    position: 'absolute',
+                    top: '20%',
+                    right: '5%',
+                    transform: `scale(${jpErrorScale}) rotate(15deg)`,
+                    zIndex: 15,
+                }}>
+                    <div style={{
+                        backgroundColor: '#ff0000',
+                        color: 'white',
+                        padding: '20px 40px',
+                        borderRadius: '10px',
+                        border: '8px solid white',
+                        boxShadow: '0 15px 30px rgba(0,0,0,0.6)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }}>
+                        <div style={{
+                            fontSize: 80,
+                            lineHeight: 1,
+                            marginBottom: 10
+                        }}>⚠️</div>
+                        <div style={{
+                            fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif',
+                            fontWeight: 900,
+                            fontSize: 70,
+                            whiteSpace: 'nowrap',
+                            textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                        }}>
+                            エラー発生！
+                        </div>
+                    </div>
+                </div>
+            )}
+
             {/* Tsukkomi Overlay */}
             {showQuestion && (
                 <div style={{
@@ -171,7 +219,6 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
         </AbsoluteFill>
     );
 };
-
 
 // Scene 2: The Word (Dictionary Style) (5-20s)
 const WordScene: React.FC<{ word: string, meaning: string, example: string, messageTranslation: string, errorMessage: string }> = ({ word, meaning, example, messageTranslation, errorMessage }) => {
@@ -248,33 +295,87 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
 // Scene 3: The Context (Matrix/Hacker Style) (20-40s)
 const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ techMeaning, explanation }) => {
     const frame = useCurrentFrame();
+    const { fps } = useVideoConfig();
 
-    // Matrix rain effect simulation
-    const drops = new Array(20).fill(0).map((_, i) => {
-        const x = i * 50 + 20;
-        const y = (frame * (10 + random(i) * 10)) % 2000 - 100;
-        return <div key={i} style={{ position: 'absolute', left: x, top: y, color: '#0f0', opacity: 0.2, fontSize: 20 }}>{random(i) > 0.5 ? '1' : '0'}</div>;
+    // Enhanced Matrix rain effect
+    const drops = new Array(40).fill(0).map((_, i) => {
+        const x = i * 25 + 10;
+        const speed = 10 + random(i) * 20;
+        const y = (frame * speed) % 2000 - 100;
+        const opacity = random(i + 100) * 0.5 + 0.1;
+        return (
+            <div key={i} style={{
+                position: 'absolute',
+                left: x,
+                top: y,
+                color: '#0f0',
+                opacity,
+                fontSize: 16,
+                textShadow: '0 0 5px #0f0'
+            }}>
+                {String.fromCharCode(0x30A0 + Math.floor(random(i + frame) * 96))}
+            </div>
+        );
     });
+
+    // Content animation
+    const contentOpacity = interpolate(frame, [0, 20], [0, 1]);
+    const contentScale = spring({ frame, fps, config: { damping: 20 } });
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#000', color: '#0f0', fontFamily: monoFamily, overflow: 'hidden' }}>
             {drops}
-            <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', padding: 60, backgroundColor: 'rgba(0,0,0,0.8)' }}>
-                <div style={{ border: '2px solid #0f0', padding: 40, borderRadius: 10, backgroundColor: 'rgba(0,20,0,0.9)', boxShadow: '0 0 20px #0f0' }}>
-                    <h2 style={{ fontSize: 40, borderBottom: '1px solid #0f0', paddingBottom: 20, marginBottom: 40 }}>
-                        &gt; SYSTEM_CONTEXT_ANALYSIS
+
+            {/* Scanline effect */}
+            <div style={{
+                position: 'absolute',
+                top: 0, left: 0, right: 0, bottom: 0,
+                background: 'linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.2) 50%)',
+                backgroundSize: '100% 4px',
+                pointerEvents: 'none',
+                zIndex: 10
+            }} />
+
+            <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', padding: 60, backgroundColor: 'rgba(0,0,0,0.85)' }}>
+                <div style={{
+                    border: '2px solid #0f0',
+                    padding: 50,
+                    borderRadius: 10,
+                    backgroundColor: 'rgba(0,20,0,0.9)',
+                    boxShadow: '0 0 30px rgba(0, 255, 0, 0.3)',
+                    opacity: contentOpacity,
+                    transform: `scale(${contentScale})`,
+                    maxWidth: '90%'
+                }}>
+                    <h2 style={{
+                        fontSize: 40,
+                        borderBottom: '2px solid #0f0',
+                        paddingBottom: 20,
+                        marginBottom: 40,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 20
+                    }}>
+                        <span style={{ animation: 'blink 1s infinite' }}>█</span>
+                        SYSTEM_CONTEXT_ANALYSIS
                     </h2>
 
                     <div style={{ marginBottom: 60 }}>
-                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 10 }}>// TECHNICAL MEANING</p>
-                        <p style={{ color: '#fff', fontSize: 50, fontWeight: 'bold', textShadow: '0 0 10px #fff' }}>
+                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 15, letterSpacing: 2 }}>// TECHNICAL MEANING</p>
+                        <p style={{
+                            color: '#fff',
+                            fontSize: 50,
+                            fontWeight: 'bold',
+                            textShadow: '0 0 15px #0f0',
+                            lineHeight: 1.3
+                        }}>
                             {techMeaning}
                         </p>
                     </div>
 
                     <div>
-                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 10 }}>// EXPLANATION</p>
-                        <p style={{ color: '#ccc', fontSize: 40, lineHeight: 1.5 }}>
+                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 15, letterSpacing: 2 }}>// EXPLANATION</p>
+                        <p style={{ color: '#ccc', fontSize: 40, lineHeight: 1.5, fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif' }}>
                             {explanation}
                         </p>
                     </div>
@@ -285,48 +386,132 @@ const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ 
 };
 
 // Scene 4: Usage (Chat App Style) (40-50s)
-const UsageScene: React.FC<{ context: string, example: string, punchline: string }> = ({ context, example, punchline }) => {
+const UsageScene: React.FC<{
+    context: string,
+    example: string,
+    exampleTranslation: string,
+    punchline: string,
+    punchlineTranslation: string
+}> = ({ context, example, exampleTranslation, punchline, punchlineTranslation }) => {
     const frame = useCurrentFrame();
+    const { fps } = useVideoConfig();
+
+    // Final CTA animation
+    const ctaFrame = 200; // Appears near the end
+    const showCta = frame > ctaFrame;
+    const ctaScale = spring({
+        frame: frame - ctaFrame,
+        fps,
+        config: { damping: 12, stiffness: 100 }
+    });
+
+    // Chat bubble animations
+    const msg1Start = 10;
+    const msg1Scale = spring({
+        frame: frame - msg1Start,
+        fps,
+        config: { damping: 15, stiffness: 150 }
+    });
+    const msg1Opacity = interpolate(frame, [msg1Start, msg1Start + 5], [0, 1], { extrapolateRight: 'clamp' });
+
+    const msg2Start = 60;
+    const msg2Scale = spring({
+        frame: frame - msg2Start,
+        fps,
+        config: { damping: 15, stiffness: 150 }
+    });
+    const msg2Opacity = interpolate(frame, [msg2Start, msg2Start + 5], [0, 1], { extrapolateRight: 'clamp' });
+
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#ece5dd', fontFamily }}>
             {/* Header */}
-            <div style={{ height: 120, backgroundColor: '#075e54', display: 'flex', alignItems: 'center', padding: '0 40px', color: 'white', fontSize: 40, fontWeight: 'bold', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }}>
-                <div style={{ width: 60, height: 60, borderRadius: '50%', backgroundColor: '#fff', marginRight: 20 }} />
-                {context}
+            <div style={{
+                height: 120,
+                backgroundColor: '#075e54',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 40px',
+                color: 'white',
+                boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+                zIndex: 10,
+                position: 'absolute',
+                top: 0,
+                width: '100%'
+            }}>
+                <div style={{ fontSize: 40, fontWeight: 'bold' }}>【使用例】{context}</div>
             </div>
 
-            <div style={{ padding: 40, display: 'flex', flexDirection: 'column', gap: 40 }}>
+            <div style={{
+                padding: 40,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 60,
+                justifyContent: 'center',
+                height: '100%',
+                maxWidth: '90%',
+                margin: '0 auto'
+            }}>
                 {/* Message 1 (Right - Me) */}
                 <div style={{
                     alignSelf: 'flex-end',
                     backgroundColor: '#dcf8c6',
-                    padding: '20px 40px',
-                    borderRadius: '20px 0 20px 20px',
-                    maxWidth: '80%',
-                    boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-                    transform: `scale(${interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' })})`,
-                    transformOrigin: 'top right'
+                    padding: '30px 50px',
+                    borderRadius: '30px 0 30px 30px',
+                    maxWidth: '90%',
+                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                    opacity: msg1Opacity,
+                    transform: `scale(${msg1Scale})`,
+                    transformOrigin: 'bottom right'
                 }}>
-                    <p style={{ fontSize: 36, margin: 0, color: '#333' }}>{example}</p>
-                    <span style={{ fontSize: 20, color: '#999', display: 'block', textAlign: 'right', marginTop: 10 }}>10:42 PM</span>
+                    <p style={{ fontSize: 42, margin: 0, color: '#333', marginBottom: 15 }}>{example}</p>
+                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{exampleTranslation}</p>
                 </div>
 
                 {/* Message 2 (Left - Other) */}
                 <div style={{
                     alignSelf: 'flex-start',
                     backgroundColor: '#fff',
-                    padding: '20px 40px',
-                    borderRadius: '0 20px 20px 20px',
-                    maxWidth: '80%',
-                    boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-                    transform: `scale(${interpolate(frame, [30, 40], [0, 1], { extrapolateRight: 'clamp' })})`,
-                    transformOrigin: 'top left'
+                    padding: '30px 50px',
+                    borderRadius: '0 30px 30px 30px',
+                    maxWidth: '90%',
+                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                    opacity: msg2Opacity,
+                    transform: `scale(${msg2Scale})`,
+                    transformOrigin: 'bottom left'
                 }}>
-                    <p style={{ fontSize: 36, margin: 0, color: '#333', fontWeight: 'bold' }}>{punchline}</p>
-                    <span style={{ fontSize: 20, color: '#999', display: 'block', textAlign: 'right', marginTop: 10 }}>10:43 PM</span>
+                    <p style={{ fontSize: 42, margin: 0, color: '#333', fontWeight: 'bold', marginBottom: 15 }}>{punchline}</p>
+                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{punchlineTranslation}</p>
                 </div>
             </div>
+
+            {/* Final CTA Pop-up */}
+            {showCta && (
+                <div style={{
+                    position: 'absolute',
+                    bottom: 50,
+                    left: '50%',
+                    transform: `translateX(-50%) scale(${ctaScale})`,
+                    backgroundColor: '#ff9f43',
+                    padding: '20px 60px',
+                    borderRadius: 50,
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                    border: '5px solid white',
+                    zIndex: 20
+                }}>
+                    <p style={{
+                        fontSize: 50,
+                        fontWeight: 'bold',
+                        color: 'white',
+                        margin: 0,
+                        textAlign: 'center',
+                        textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                    }}>
+                        明日から使ってみよう！
+                    </p>
+                </div>
+            )}
         </AbsoluteFill>
     );
 };
@@ -344,7 +529,13 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                 <ContextScene techMeaning={props.techMeaning} explanation={props.explanation} />
             </Sequence>
             <Sequence from={1290} durationInFrames={300}>
-                <UsageScene context={props.usageContext} example={props.usageExample} punchline={props.usagePunchline} />
+                <UsageScene
+                    context={props.usageContext}
+                    example={props.usageExample}
+                    exampleTranslation={props.usageExampleTranslation}
+                    punchline={props.usagePunchline}
+                    punchlineTranslation={props.usagePunchlineTranslation}
+                />
             </Sequence>
         </AbsoluteFill>
     );

@@ -23,7 +23,9 @@ export const RemotionRoot: React.FC = () => {
                     explanation: "再起不能。保存してないデータは諦めよう。",
                     usageContext: "遅刻確定の時",
                     usageExample: "I made a fatal mistake...",
-                    usagePunchline: "上司: 403 Forbidden (許さん)"
+                    usageExampleTranslation: "致命的なミスをしちゃった…",
+                    usagePunchline: "Boss: 403 Forbidden",
+                    usagePunchlineTranslation: "上司：許さん（アクセス拒否）"
                 }}
             />
         </>
