@@ -2,6 +2,7 @@
     {
         "targetWord": "Fatal",
         "errorMessage": "FATAL ERROR: System Halted",
+        "messageTranslation": "致命的なエラー：システムが停止しました",
         "generalMeaning": "【形】致命的な、命に関わる",
         "generalExample": "A fatal accident (死亡事故)",
         "techMeaning": "プログラムが即死して、もう息をしていない状態",

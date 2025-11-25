@@ -11,6 +11,7 @@ const { fontFamily: monoFamily } = loadMono();
 export const myCompSchema = z.object({
     targetWord: z.string(),
     errorMessage: z.string(),
+    messageTranslation: z.string(),
     generalMeaning: z.string(),
     generalExample: z.string(),
     techMeaning: z.string(),
@@ -56,6 +57,30 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
         config: { damping: 15, stiffness: 120 }
     });
 
+    // Flash effect on error
+    const flashOpacity = interpolate(
+        frame,
+        [errorFrame, errorFrame + 5, errorFrame + 10],
+        [0, 0.5, 0],
+        { extrapolateRight: 'clamp' }
+    );
+
+    // Shake effect on error
+    const shake = interpolate(
+        frame,
+        [errorFrame, errorFrame + 10],
+        [0, 0],
+        {
+            extrapolateRight: 'clamp',
+            easing: (t) => Math.sin(t * Math.PI * 10) * 10 * (1 - t)
+        }
+    );
+    // Simple shake calculation if easing is complex
+    const simpleShake = frame >= errorFrame && frame < errorFrame + 10
+        ? Math.sin((frame - errorFrame) * 2) * 20 * (1 - (frame - errorFrame) / 10)
+        : 0;
+
+
     // "What does this mean??" overlay appearance
     const questionFrame = 120;
     const showQuestion = frame > questionFrame;
@@ -68,6 +93,9 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#1e1e1e', fontFamily: monoFamily, color: '#d4d4d4', fontSize: 24, padding: 40 }}>
+            {/* Flash Overlay */}
+            <AbsoluteFill style={{ backgroundColor: 'red', opacity: flashOpacity, zIndex: 5, pointerEvents: 'none' }} />
+
             {/* VS Code Header */}
             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 40, backgroundColor: '#252526', display: 'flex', alignItems: 'center', paddingLeft: 20 }}>
                 <div style={{ display: 'flex', gap: 8 }}>
@@ -79,7 +107,7 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
             </div>
 
             {/* Code Area */}
-            <div style={{ marginTop: 40, whiteSpace: 'pre-wrap' }}>
+            <div style={{ marginTop: 40, whiteSpace: 'pre-wrap', transform: `translateX(${simpleShake}px)` }}>
                 {currentCode}
                 <span style={{ borderRight: '2px solid white', animation: 'blink 1s step-end infinite' }}>|</span>
             </div>
@@ -106,7 +134,7 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
                             <line x1="12" y1="8" x2="12" y2="12" />
                             <line x1="12" y1="16" x2="12.01" y2="16" />
                         </svg>
-                        ERROR
+                        ERROR DETECTED
                     </div>
                     <div style={{ padding: 40 }}>
                         <p style={{ color: '#f48771', fontSize: 75, margin: 0, fontWeight: 'bold', lineHeight: 1.1 }}>{errorMessage}</p>
@@ -144,13 +172,19 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
     );
 };
 
+
 // Scene 2: The Word (Dictionary Style) (5-20s)
-const WordScene: React.FC<{ word: string, meaning: string, example: string }> = ({ word, meaning, example }) => {
+const WordScene: React.FC<{ word: string, meaning: string, example: string, messageTranslation: string, errorMessage: string }> = ({ word, meaning, example, messageTranslation, errorMessage }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
     const opacity = interpolate(frame, [0, 10], [0, 1]);
     const slideUp = spring({ frame, fps, config: { damping: 20 } });
+
+    // Translation appears later
+    const translationFrame = 150; // 5 seconds into the scene
+    const translationOpacity = interpolate(frame, [translationFrame, translationFrame + 30], [0, 1]);
+    const translationSlide = spring({ frame: frame - translationFrame, fps, config: { damping: 20 } });
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
@@ -183,6 +217,28 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string }> = 
                             "{example}"
                         </p>
                     </div>
+                </div>
+
+                {/* Full Message Translation */}
+                <div style={{
+                    marginTop: 80,
+                    opacity: translationOpacity,
+                    transform: `translateY(${interpolate(translationSlide, [0, 1], [30, 0])}px)`,
+                    backgroundColor: '#2c3e50',
+                    padding: '20px 40px',
+                    borderRadius: 15,
+                    color: 'white',
+                    boxShadow: '0 10px 40px rgba(0,0,0,0.3)'
+                }}>
+                    <p style={{ fontSize: 20, color: '#bdc3c7', marginBottom: 5, textTransform: 'uppercase', letterSpacing: 2 }}>Original Error</p>
+                    <p style={{ fontSize: 28, color: '#ecf0f1', marginBottom: 20, fontFamily: monoFamily, borderBottom: '1px solid #7f8c8d', paddingBottom: 10 }}>
+                        {errorMessage}
+                    </p>
+
+                    <p style={{ fontSize: 20, color: '#bdc3c7', marginBottom: 5, textTransform: 'uppercase', letterSpacing: 2 }}>Meaning</p>
+                    <p style={{ fontSize: 36, fontWeight: 'bold', margin: 0 }}>
+                        {messageTranslation}
+                    </p>
                 </div>
             </div>
         </AbsoluteFill>
@@ -282,7 +338,7 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                 <PanicScene errorMessage={props.errorMessage} />
             </Sequence>
             <Sequence from={240} durationInFrames={450}>
-                <WordScene word={props.targetWord} meaning={props.generalMeaning} example={props.generalExample} />
+                <WordScene word={props.targetWord} meaning={props.generalMeaning} example={props.generalExample} messageTranslation={props.messageTranslation} errorMessage={props.errorMessage} />
             </Sequence>
             <Sequence from={690} durationInFrames={600}>
                 <ContextScene techMeaning={props.techMeaning} explanation={props.explanation} />

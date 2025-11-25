@@ -2,6 +2,7 @@
     {
         "targetWord": "Fatal",
         "errorMessage": "FATAL ERROR: System Halted",
+        "messageTranslation": "致命的なエラー：システムが停止しました",
         "generalMeaning": "【形】致命的な、命に関わる",
         "generalExample": "A fatal accident (死亡事故)",
         "techMeaning": "プログラムが即死して、もう息をしていない状態",
@@ -13,6 +14,7 @@
     {
         "targetWord": "Argument",
         "errorMessage": "Invalid Argument",
+        "messageTranslation": "無効な引数です",
         "generalMeaning": "【名】口論、議論",
         "generalExample": "They had a heated argument. (彼らは激しく口論した)",
         "techMeaning": "引数（ひきすう）＝ 関数に渡すデータ",
@@ -24,6 +26,7 @@
     {
         "targetWord": "Exception",
         "errorMessage": "Unhandled Exception",
+        "messageTranslation": "処理されていない例外が発生しました",
         "generalMeaning": "【名】例外、特例",
         "generalExample": "Everyone liked it, with the exception of Bob.",
         "techMeaning": "想定外のエラー（ルール違反）",
@@ -35,6 +38,7 @@
     {
         "targetWord": "Deprecated",
         "errorMessage": "Deprecated Warning",
+        "messageTranslation": "非推奨の警告",
         "generalMeaning": "【動】非難される、反対される",
         "generalExample": "The practice was deprecated.",
         "techMeaning": "非推奨（もう古くさいから使うな）",
@@ -46,6 +50,7 @@
     {
         "targetWord": "Void",
         "errorMessage": "public void main...",
+        "messageTranslation": "戻り値なし（void）のメイン関数",
         "generalMeaning": "【名/形】空っぽ、虚空",
         "generalExample": "Staring into the void. (虚空を見つめる)",
         "techMeaning": "戻り値（返事）がない",
@@ -57,6 +62,7 @@
     {
         "targetWord": "Listen",
         "errorMessage": "EADDRINUSE: address already in use",
+        "messageTranslation": "エラー：アドレスは既に使用中です",
         "generalMeaning": "【動】聞く、耳を傾ける",
         "generalExample": "Listen to the music.",
         "techMeaning": "（接続待ちで）耳をすませて待機する",
