@@ -1,0 +1,68 @@
+[
+    {
+        "targetWord": "Fatal",
+        "errorMessage": "FATAL ERROR: System Halted",
+        "generalMeaning": "【形】致命的な、命に関わる",
+        "generalExample": "A fatal accident (死亡事故)",
+        "techMeaning": "プログラムが即死して、もう息をしていない状態",
+        "explanation": "再起不能。保存してないデータは諦めよう。",
+        "usageContext": "遅刻確定の時",
+        "usageExample": "I made a fatal mistake...",
+        "usagePunchline": "上司: 403 Forbidden (許さん)"
+    },
+    {
+        "targetWord": "Argument",
+        "errorMessage": "Invalid Argument",
+        "generalMeaning": "【名】口論、議論",
+        "generalExample": "They had a heated argument. (彼らは激しく口論した)",
+        "techMeaning": "引数（ひきすう）＝ 関数に渡すデータ",
+        "explanation": "プログラムに関数を渡すのは、『議論の種』を渡すようなもの。コンピュータと喧嘩してるわけじゃないよ！",
+        "usageContext": "夫婦喧嘩の時",
+        "usageExample": "Invalid Argument provided.",
+        "usagePunchline": "妻: System Shutdown."
+    },
+    {
+        "targetWord": "Exception",
+        "errorMessage": "Unhandled Exception",
+        "generalMeaning": "【名】例外、特例",
+        "generalExample": "Everyone liked it, with the exception of Bob.",
+        "techMeaning": "想定外のエラー（ルール違反）",
+        "explanation": "プログラムにとっての『例外』は『処理できない！』という悲鳴。キャッチしてあげないと落ちるよ。",
+        "usageContext": "飲み会で一人だけ飲まない時",
+        "usageExample": "I am an Exception.",
+        "usagePunchline": "幹事: Error handling required."
+    },
+    {
+        "targetWord": "Deprecated",
+        "errorMessage": "Deprecated Warning",
+        "generalMeaning": "【動】非難される、反対される",
+        "generalExample": "The practice was deprecated.",
+        "techMeaning": "非推奨（もう古くさいから使うな）",
+        "explanation": "禁止ではないが、『もう時代遅れだから、使うと恥かくよ（そのうち消すよ）』という優しさを含んだ警告。",
+        "usageContext": "死語を使った時",
+        "usageExample": "Using 'ナウい' is deprecated.",
+        "usagePunchline": "若者: Warning ignored."
+    },
+    {
+        "targetWord": "Void",
+        "errorMessage": "public void main...",
+        "generalMeaning": "【名/形】空っぽ、虚空",
+        "generalExample": "Staring into the void. (虚空を見つめる)",
+        "techMeaning": "戻り値（返事）がない",
+        "explanation": "仕事を頼んでも『虚空』に向かって叫ぶだけ。返事は返ってこない一方通行の命令。",
+        "usageContext": "既読スルーされた時",
+        "usageExample": "My message returned void.",
+        "usagePunchline": "相手: (No Response)"
+    },
+    {
+        "targetWord": "Listen",
+        "errorMessage": "EADDRINUSE: address already in use",
+        "generalMeaning": "【動】聞く、耳を傾ける",
+        "generalExample": "Listen to the music.",
+        "techMeaning": "（接続待ちで）耳をすませて待機する",
+        "explanation": "サーバーは常にポート（扉）に耳を当てて、アクセスが来るのを『Listen』しているんだ。エラーは『耳が塞がってる』ってこと。",
+        "usageContext": "話を聞かない彼氏に",
+        "usageExample": "Error: Port 80 not listening.",
+        "usagePunchline": "彼女: Connection Refused."
+    }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "error-english-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "render": "remotion render src/index.ts ErrorEnglishVideo out/video.mp4",
+    "generate": "tsx scripts/generate.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/google-fonts": "^4.0.377",
+    "@remotion/shapes": "^4.0.377",
+    "prismjs": "^1.30.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.377",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.377",
+    "@types/prismjs": "^1.26.5",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
