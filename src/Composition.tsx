@@ -516,6 +516,59 @@ const UsageScene: React.FC<{
     );
 };
 
+// Scene 5: Outro (Branding/CTA) (53-58s)
+const OutroScene: React.FC = () => {
+    const frame = useCurrentFrame();
+    const { fps } = useVideoConfig();
+
+    const opacity = interpolate(frame, [0, 10], [0, 1]);
+    const scale = spring({ frame, fps, config: { damping: 15 } });
+
+    return (
+        <AbsoluteFill style={{ backgroundColor: '#2c3e50', justifyContent: 'center', alignItems: 'center', fontFamily }}>
+            <div style={{ opacity, transform: `scale(${scale})`, textAlign: 'center', color: 'white' }}>
+                <div style={{
+                    width: 150,
+                    height: 150,
+                    backgroundColor: '#f48771',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    margin: '0 auto 40px',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+                }}>
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                </div>
+
+                <h1 style={{ fontSize: 70, fontWeight: 'bold', marginBottom: 20, letterSpacing: 2 }}>
+                    エラーで学ぶ英語
+                </h1>
+                <p style={{ fontSize: 36, opacity: 0.9, marginBottom: 60, fontFamily: monoFamily }}>
+                    Error English for Engineers
+                </p>
+
+                <div style={{
+                    backgroundColor: 'white',
+                    color: '#2c3e50',
+                    padding: '20px 50px',
+                    borderRadius: 50,
+                    fontSize: 40,
+                    fontWeight: 'bold',
+                    display: 'inline-block',
+                    boxShadow: '0 5px 15px rgba(0,0,0,0.2)'
+                }}>
+                    Follow for more!
+                </div>
+            </div>
+        </AbsoluteFill>
+    );
+};
+
 export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props) => {
     return (
         <AbsoluteFill>
@@ -536,6 +589,9 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     punchline={props.usagePunchline}
                     punchlineTranslation={props.usagePunchlineTranslation}
                 />
+            </Sequence>
+            <Sequence from={1590} durationInFrames={150}>
+                <OutroScene />
             </Sequence>
         </AbsoluteFill>
     );
