@@ -78,7 +78,7 @@ async function main() {
 `;
 
 // Scene 1: The Panic (Development Context) (0-8s)
-const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
+const PanicScene: React.FC<{ errorMessage: string, errorAudioDuration?: number }> = ({ errorMessage, errorAudioDuration }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
@@ -127,7 +127,11 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
 
 
     // "What does this mean??" overlay appearance
-    const questionFrame = 120;
+    // Calculate start frame based on error audio duration if available
+    // Default to 120 if no audio duration provided
+    const errorAudioFrames = errorAudioDuration ? Math.ceil(errorAudioDuration * fps) : 75; // Default 2.5s
+    const questionFrame = errorFrame + errorAudioFrames + 10; // 10 frames buffer
+
     const showQuestion = frame > questionFrame;
     const questionScale = spring({
         frame: frame - questionFrame,
@@ -305,7 +309,19 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
 };
 
 // Scene 2: The Word (Dictionary Style) (5-20s)
-const WordScene: React.FC<{ word: string, meaning: string, example: string, messageTranslation: string, errorMessage: string }> = ({ word, meaning, example, messageTranslation, errorMessage }) => {
+const WordScene: React.FC<{
+    word: string,
+    meaning: string,
+    example: string,
+    messageTranslation: string,
+    errorMessage: string,
+    audioDurations?: {
+        targetWord?: number,
+        generalMeaning?: number,
+        generalExample?: number,
+        messageTranslation?: number
+    }
+}> = ({ word, meaning, example, messageTranslation, errorMessage, audioDurations }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
@@ -318,8 +334,40 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
     const translationSlide = spring({ frame: frame - translationFrame, fps, config: { damping: 20 } });
 
     // Character speaking timing (during narration)
-    // Assuming narration happens from frame 10 onwards
-    const isSpeaking = frame >= 10 && frame <= 300;
+    // Calculate precise speaking intervals based on audio durations
+    const durations = {
+        targetWord: 1.5, // Default duration if not provided
+        generalMeaning: 2.5,
+        generalExample: 3.5,
+        messageTranslation: 4.0,
+        ...audioDurations
+    };
+
+    const startFrame = 10;
+    const gap = 15;
+
+    // Calculate intervals for each clip
+    // Clip 1: Target Word
+    const clip1Start = startFrame;
+    const clip1End = clip1Start + Math.ceil(durations.targetWord * fps);
+
+    // Clip 2: General Meaning
+    const clip2Start = clip1End + gap;
+    const clip2End = clip2Start + Math.ceil(durations.generalMeaning * fps);
+
+    // Clip 3: General Example
+    const clip3Start = clip2End + gap;
+    const clip3End = clip3Start + Math.ceil(durations.generalExample * fps);
+
+    // Clip 4: Message Translation
+    const clip4Start = clip3End + gap;
+    const clip4End = clip4Start + Math.ceil(durations.messageTranslation * fps);
+
+    const isSpeaking =
+        (frame >= clip1Start && frame <= clip1End) ||
+        (frame >= clip2Start && frame <= clip2End) ||
+        (frame >= clip3Start && frame <= clip3End) ||
+        (frame >= clip4Start && frame <= clip4End);
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
@@ -392,9 +440,41 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
 };
 
 // Scene 3: The Context (Matrix/Hacker Style) (20-40s)
-const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ techMeaning, explanation }) => {
+const ContextScene: React.FC<{
+    techMeaning: string,
+    explanation: string,
+    duration: number,
+    audioDurations?: {
+        techMeaning?: number,
+        explanation?: number
+    }
+}> = ({ techMeaning, explanation, duration, audioDurations }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
+
+    // Lip-sync logic
+    const durations = {
+        techMeaning: 3.0,
+        explanation: 5.0,
+        ...audioDurations
+    };
+
+    // Calculate start frames based on the sequence in ErrorEnglishVideo
+    // The audio starts at: panicDuration + wordDuration + 20
+    // But inside this scene, we start at 0.
+    // The parent sequence passes audio clips. We need to match that timing.
+    // In parent:
+    // Clip 1 (Tech Meaning) starts at relative frame 20
+    const clip1Start = 20;
+    const clip1End = clip1Start + Math.ceil(durations.techMeaning * fps);
+
+    // Clip 2 (Explanation) starts after Clip 1 + 5 frames gap
+    const clip2Start = clip1End + 5;
+    const clip2End = clip2Start + Math.ceil(durations.explanation * fps);
+
+    const isSpeaking =
+        (frame >= clip1Start && frame <= clip1End) ||
+        (frame >= clip2Start && frame <= clip2End);
 
     // Enhanced Matrix rain effect
     const drops = new Array(40).fill(0).map((_, i) => {
@@ -481,15 +561,16 @@ const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ 
                 </div>
             </AbsoluteFill>
 
-            {/* SE: Naruhodo at end */}
-            <Sequence from={350}>
+            {/* SE: Naruhodo at end - dynamic timing based on scene duration */}
+            {/* Play 2 seconds (60 frames) before the end of the scene */}
+            <Sequence from={duration - 60}>
                 <Audio src={staticFile("se/context_end.mp3")} volume={0.6} />
             </Sequence>
 
             {/* Character - Speaking during narration */}
             <Character
                 emotion="normal"
-                isSpeaking={frame >= 20 && frame <= 350}
+                isSpeaking={isSpeaking}
             />
         </AbsoluteFill>
     );
@@ -501,19 +582,69 @@ const UsageScene: React.FC<{
     example: string,
     exampleTranslation: string,
     punchline: string,
-    punchlineTranslation: string
-}> = ({ context, example, exampleTranslation, punchline, punchlineTranslation }) => {
+    punchlineTranslation: string,
+    duration: number,
+    audioDurations?: {
+        usageContext?: number,
+        usageExample?: number,
+        usageExampleTranslation?: number,
+        usagePunchline?: number,
+        usagePunchlineTranslation?: number
+    }
+}> = ({ context, example, exampleTranslation, punchline, punchlineTranslation, duration, audioDurations }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
-    // Final CTA animation
-    const ctaFrame = 200; // Appears near the end
+    // Final CTA animation - appears just before the scene ends
+    const ctaFrame = duration - 45; // 1.5 seconds before end
     const showCta = frame > ctaFrame;
     const ctaScale = spring({
         frame: frame - ctaFrame,
         fps,
         config: { damping: 12, stiffness: 100 }
     });
+
+    // Lip-sync logic
+    const durations = {
+        usageContext: 2.0,
+        usageExample: 3.0,
+        usageExampleTranslation: 3.0,
+        usagePunchline: 3.0,
+        usagePunchlineTranslation: 3.0,
+        ...audioDurations
+    };
+
+    // Audio sequence timing matching parent component
+    // Starts at relative frame 5
+    const startFrame = 5;
+    const gap = 15;
+
+    // Clip 1: Context
+    const clip1Start = startFrame;
+    const clip1End = clip1Start + Math.ceil(durations.usageContext * fps);
+
+    // Clip 2: Example
+    const clip2Start = clip1End + gap;
+    const clip2End = clip2Start + Math.ceil(durations.usageExample * fps);
+
+    // Clip 3: Example Translation
+    const clip3Start = clip2End + gap;
+    const clip3End = clip3Start + Math.ceil(durations.usageExampleTranslation * fps);
+
+    // Clip 4: Punchline
+    const clip4Start = clip3End + gap;
+    const clip4End = clip4Start + Math.ceil(durations.usagePunchline * fps);
+
+    // Clip 5: Punchline Translation
+    const clip5Start = clip4End + gap;
+    const clip5End = clip5Start + Math.ceil(durations.usagePunchlineTranslation * fps);
+
+    const isSpeaking =
+        (frame >= clip1Start && frame <= clip1End) ||
+        (frame >= clip2Start && frame <= clip2End) ||
+        (frame >= clip3Start && frame <= clip3End) ||
+        (frame >= clip4Start && frame <= clip4End) ||
+        (frame >= clip5Start && frame <= clip5End);
 
     // Chat bubble animations
     const msg1Start = 10;
@@ -553,34 +684,7 @@ const UsageScene: React.FC<{
                 <div style={{ fontSize: 40, fontWeight: 'bold' }}>【使用例】{context}</div>
             </div>
 
-            {/* Final CTA Pop-up - placed before chat messages */}
-            {showCta && (
-                <div style={{
-                    position: 'absolute',
-                    bottom: 50,
-                    left: '50%',
-                    transform: `translateX(-50%) scale(${ctaScale})`,
-                    backgroundColor: '#ff9f43',
-                    padding: '20px 60px',
-                    borderRadius: 50,
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
-                    border: '5px solid white',
-                    zIndex: 5
-                }}>
-                    <p style={{
-                        fontSize: 50,
-                        fontWeight: 'bold',
-                        color: 'white',
-                        margin: 0,
-                        textAlign: 'center',
-                        textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
-                    }}>
-                        明日から使ってみよう！
-                    </p>
-                </div>
-            )}
-
-            {/* Chat messages container - placed after CTA with higher zIndex */}
+            {/* Chat messages container */}
             <div style={{
                 padding: 40,
                 display: 'flex',
@@ -589,7 +693,9 @@ const UsageScene: React.FC<{
                 justifyContent: 'center',
                 height: '100%',
                 maxWidth: '90%',
-                margin: '0 auto'
+                margin: '0 auto',
+                position: 'relative',
+                zIndex: 10
             }}>
                 {/* Message 1 (Right - Me) */}
                 <div style={{
@@ -631,8 +737,35 @@ const UsageScene: React.FC<{
             {/* Character - Speaking during conversation */}
             <Character
                 emotion="normal"
-                isSpeaking={frame >= 10 && frame <= 150}
+                isSpeaking={isSpeaking}
             />
+
+            {/* Final CTA Pop-up - moved to ABSOLUTE END of DOM and HIGHEST zIndex */}
+            {showCta && (
+                <div style={{
+                    position: 'absolute',
+                    top: 220, // Adjusted to be centered in the upper space
+                    left: '50%',
+                    transform: `translateX(-50%) scale(${ctaScale})`,
+                    backgroundColor: '#ff9f43',
+                    padding: '20px 60px',
+                    borderRadius: 50,
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                    border: '5px solid white',
+                    zIndex: 2000 // Highest priority
+                }}>
+                    <p style={{
+                        fontSize: 50,
+                        fontWeight: 'bold',
+                        color: 'white',
+                        margin: 0,
+                        textAlign: 'center',
+                        textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                    }}>
+                        明日から使ってみよう！
+                    </p>
+                </div>
+            )}
         </AbsoluteFill>
     );
 };
@@ -691,9 +824,10 @@ const OutroScene: React.FC = () => {
             </div>
 
             {/* Character - Speaking during outro */}
+            {/* Sync with "follow me" audio (approx 2.5s) */}
             <Character
                 emotion="normal"
-                isSpeaking={frame >= 20 && frame <= 100}
+                isSpeaking={frame >= 20 && frame <= 95}
             />
         </AbsoluteFill>
     );
@@ -785,24 +919,41 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
             )}
 
             <Sequence from={0} durationInFrames={props.sceneDurations?.panic || 240}>
-                <PanicScene errorMessage={props.errorMessage} />
+                <PanicScene
+                    errorMessage={props.errorMessage}
+                    errorAudioDuration={props.audioDurations?.errorMessage}
+                />
             </Sequence>
             <Sequence from={props.sceneDurations?.panic || 240} durationInFrames={props.sceneDurations?.word || 450}>
-                <WordScene word={props.targetWord} meaning={props.generalMeaning} example={props.generalExample} messageTranslation={props.messageTranslation} errorMessage={props.errorMessage} />
+                <WordScene
+                    word={props.targetWord}
+                    meaning={props.generalMeaning}
+                    example={props.generalExample}
+                    messageTranslation={props.messageTranslation}
+                    errorMessage={props.errorMessage}
+                    audioDurations={props.audioDurations}
+                />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450)} durationInFrames={props.sceneDurations?.context || 600}>
-                <ContextScene techMeaning={props.techMeaning} explanation={props.explanation} />
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450)} durationInFrames={props.sceneDurations?.context || 710}>
+                <ContextScene
+                    techMeaning={props.techMeaning}
+                    explanation={props.explanation}
+                    duration={props.sceneDurations?.context || 710}
+                    audioDurations={props.audioDurations}
+                />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 600)} durationInFrames={props.sceneDurations?.usage || 300}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 710)} durationInFrames={props.sceneDurations?.usage || 300}>
                 <UsageScene
                     context={props.usageContext}
                     example={props.usageExample}
                     exampleTranslation={props.usageExampleTranslation}
                     punchline={props.usagePunchline}
                     punchlineTranslation={props.usagePunchlineTranslation}
+                    duration={props.sceneDurations?.usage || 300}
+                    audioDurations={props.audioDurations}
                 />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 600) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 710) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
                 <OutroScene />
             </Sequence>
         </AbsoluteFill>
