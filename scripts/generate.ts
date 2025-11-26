@@ -77,7 +77,7 @@ async function main() {
             getFrames('techMeaning'),
             getFrames('explanation')
         ].reduce((a, b) => a + b + 5, 0); // Reduced padding between clips
-        const contextDuration = Math.max(400, contextAudio + 30); // Reduced buffer at end
+        const contextDuration = Math.max(150, contextAudio + 60); // Min 5s, buffer for Naruhodo
 
         const usageAudio = [
             getFrames('usageContext'),

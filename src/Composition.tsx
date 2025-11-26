@@ -157,6 +157,11 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
                 <Audio src={staticFile("se/pop.mp3")} volume={0.6} />
             </Sequence>
 
+            {/* Voice: What does this mean? */}
+            <Sequence from={questionFrame}>
+                <Audio src={staticFile("se/what_mean.mp3")} volume={0.8} />
+            </Sequence>
+
             {/* Flash Overlay */}
             <AbsoluteFill style={{ backgroundColor: 'red', opacity: flashOpacity, zIndex: 5, pointerEvents: 'none' }} />
 
@@ -447,6 +452,11 @@ const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ 
                     </div>
                 </div>
             </AbsoluteFill>
+
+            {/* SE: Naruhodo at end */}
+            <Sequence from={350}>
+                <Audio src={staticFile("se/context_end.mp3")} volume={0.6} />
+            </Sequence>
         </AbsoluteFill>
     );
 };
@@ -687,7 +697,7 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                         return clips.map((clip, i) => {
                             if (!clip.path) return null;
                             const start = currentFrame;
-                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 5;
                             return (
                                 <Sequence key={i} from={start}>
                                     <Audio src={staticFile(clip.path)} />
