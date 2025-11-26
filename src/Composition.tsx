@@ -4,6 +4,7 @@ import { loadFont } from '@remotion/google-fonts/Inter';
 import { loadFont as loadMono } from '@remotion/google-fonts/JetBrainsMono';
 import { Rect, Circle } from '@remotion/shapes';
 import React from 'react';
+import { Character } from './Character';
 
 const { fontFamily } = loadFont();
 const { fontFamily: monoFamily } = loadMono();
@@ -282,6 +283,23 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
                     </div>
                 )
             }
+
+            {/* Character - Crying emotion during error with slide-in animation */}
+            {showError && (
+                <div style={{
+                    position: 'absolute',
+                    bottom: 0,
+                    right: -50,
+                    opacity: interpolate(frame - errorFrame, [0, 20], [0, 1], { extrapolateRight: 'clamp' }),
+                    transform: `translateX(${interpolate(frame - errorFrame, [0, 30], [200, 0], { extrapolateRight: 'clamp' })}px)`,
+                    zIndex: 100
+                }}>
+                    <Character
+                        emotion="cry"
+                        isSpeaking={false}
+                    />
+                </div>
+            )}
         </AbsoluteFill >
     );
 };
@@ -298,6 +316,10 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
     const translationFrame = 150; // 5 seconds into the scene
     const translationOpacity = interpolate(frame, [translationFrame, translationFrame + 30], [0, 1]);
     const translationSlide = spring({ frame: frame - translationFrame, fps, config: { damping: 20 } });
+
+    // Character speaking timing (during narration)
+    // Assuming narration happens from frame 10 onwards
+    const isSpeaking = frame >= 10 && frame <= 300;
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
@@ -359,6 +381,12 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
                     </p>
                 </div>
             </div >
+
+            {/* Character - Speaking during narration */}
+            <Character
+                emotion="normal"
+                isSpeaking={isSpeaking}
+            />
         </AbsoluteFill >
     );
 };
@@ -457,6 +485,12 @@ const ContextScene: React.FC<{ techMeaning: string, explanation: string }> = ({ 
             <Sequence from={350}>
                 <Audio src={staticFile("se/context_end.mp3")} volume={0.6} />
             </Sequence>
+
+            {/* Character - Speaking during narration */}
+            <Character
+                emotion="normal"
+                isSpeaking={frame >= 20 && frame <= 350}
+            />
         </AbsoluteFill>
     );
 };
@@ -519,50 +553,7 @@ const UsageScene: React.FC<{
                 <div style={{ fontSize: 40, fontWeight: 'bold' }}>【使用例】{context}</div>
             </div>
 
-            <div style={{
-                padding: 40,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 60,
-                justifyContent: 'center',
-                height: '100%',
-                maxWidth: '90%',
-                margin: '0 auto'
-            }}>
-                {/* Message 1 (Right - Me) */}
-                <div style={{
-                    alignSelf: 'flex-end',
-                    backgroundColor: '#dcf8c6',
-                    padding: '30px 50px',
-                    borderRadius: '30px 0 30px 30px',
-                    maxWidth: '90%',
-                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-                    opacity: msg1Opacity,
-                    transform: `scale(${msg1Scale})`,
-                    transformOrigin: 'bottom right'
-                }}>
-                    <p style={{ fontSize: 42, margin: 0, color: '#333', marginBottom: 15 }}>{example}</p>
-                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{exampleTranslation}</p>
-                </div>
-
-                {/* Message 2 (Left - Other) */}
-                <div style={{
-                    alignSelf: 'flex-start',
-                    backgroundColor: '#fff',
-                    padding: '30px 50px',
-                    borderRadius: '0 30px 30px 30px',
-                    maxWidth: '90%',
-                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
-                    opacity: msg2Opacity,
-                    transform: `scale(${msg2Scale})`,
-                    transformOrigin: 'bottom left'
-                }}>
-                    <p style={{ fontSize: 42, margin: 0, color: '#333', fontWeight: 'bold', marginBottom: 15 }}>{punchline}</p>
-                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{punchlineTranslation}</p>
-                </div>
-            </div>
-
-            {/* Final CTA Pop-up */}
+            {/* Final CTA Pop-up - placed before chat messages */}
             {showCta && (
                 <div style={{
                     position: 'absolute',
@@ -574,7 +565,7 @@ const UsageScene: React.FC<{
                     borderRadius: 50,
                     boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
                     border: '5px solid white',
-                    zIndex: 20
+                    zIndex: 5
                 }}>
                     <p style={{
                         fontSize: 50,
@@ -588,6 +579,60 @@ const UsageScene: React.FC<{
                     </p>
                 </div>
             )}
+
+            {/* Chat messages container - placed after CTA with higher zIndex */}
+            <div style={{
+                padding: 40,
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 60,
+                justifyContent: 'center',
+                height: '100%',
+                maxWidth: '90%',
+                margin: '0 auto'
+            }}>
+                {/* Message 1 (Right - Me) */}
+                <div style={{
+                    alignSelf: 'flex-end',
+                    backgroundColor: 'rgba(220, 248, 198, 0.95)',
+                    padding: '30px 50px',
+                    borderRadius: '30px 0 30px 30px',
+                    maxWidth: '90%',
+                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                    opacity: msg1Opacity,
+                    transform: `scale(${msg1Scale})`,
+                    transformOrigin: 'bottom right',
+                    position: 'relative',
+                    zIndex: 20
+                }}>
+                    <p style={{ fontSize: 42, margin: 0, color: '#333', marginBottom: 15 }}>{example}</p>
+                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{exampleTranslation}</p>
+                </div>
+
+                {/* Message 2 (Left - Other) */}
+                <div style={{
+                    alignSelf: 'flex-start',
+                    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                    padding: '30px 50px',
+                    borderRadius: '0 30px 30px 30px',
+                    maxWidth: '90%',
+                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                    opacity: msg2Opacity,
+                    transform: `scale(${msg2Scale})`,
+                    transformOrigin: 'bottom left',
+                    position: 'relative',
+                    zIndex: 20
+                }}>
+                    <p style={{ fontSize: 42, margin: 0, color: '#333', fontWeight: 'bold', marginBottom: 15 }}>{punchline}</p>
+                    <p style={{ fontSize: 32, margin: 0, color: '#555', borderTop: '2px solid rgba(0,0,0,0.1)', paddingTop: 15, fontWeight: 'bold' }}>{punchlineTranslation}</p>
+                </div>
+            </div>
+
+            {/* Character - Speaking during conversation */}
+            <Character
+                emotion="normal"
+                isSpeaking={frame >= 10 && frame <= 150}
+            />
         </AbsoluteFill>
     );
 };
@@ -644,6 +689,12 @@ const OutroScene: React.FC = () => {
                     Follow for more!
                 </div>
             </div>
+
+            {/* Character - Speaking during outro */}
+            <Character
+                emotion="normal"
+                isSpeaking={frame >= 20 && frame <= 100}
+            />
         </AbsoluteFill>
     );
 };
