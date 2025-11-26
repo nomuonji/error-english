@@ -1,4 +1,4 @@
-import { AbsoluteFill, Sequence, useCurrentFrame, interpolate, spring, useVideoConfig, random } from 'remotion';
+import { AbsoluteFill, Sequence, useCurrentFrame, interpolate, spring, useVideoConfig, random, staticFile, Audio } from 'remotion';
 import { z } from 'zod';
 import { loadFont } from '@remotion/google-fonts/Inter';
 import { loadFont as loadMono } from '@remotion/google-fonts/JetBrainsMono';
@@ -21,6 +21,34 @@ export const myCompSchema = z.object({
     usageExampleTranslation: z.string(),
     usagePunchline: z.string(),
     usagePunchlineTranslation: z.string(),
+    audioPaths: z.object({
+        errorMessage: z.string(),
+        messageTranslation: z.string(),
+        targetWord: z.string(),
+        generalMeaning: z.string(),
+        generalExample: z.string(),
+        techMeaning: z.string(),
+        explanation: z.string(),
+        usageContext: z.string(),
+        usageExample: z.string(),
+        usageExampleTranslation: z.string(),
+        usagePunchline: z.string(),
+        usagePunchlineTranslation: z.string(),
+    }).optional(),
+    audioDurations: z.object({
+        errorMessage: z.number().optional(),
+        messageTranslation: z.number().optional(),
+        targetWord: z.number().optional(),
+        generalMeaning: z.number().optional(),
+        generalExample: z.number().optional(),
+        techMeaning: z.number().optional(),
+        explanation: z.number().optional(),
+        usageContext: z.number().optional(),
+        usageExample: z.number().optional(),
+        usageExampleTranslation: z.number().optional(),
+        usagePunchline: z.number().optional(),
+        usagePunchlineTranslation: z.number().optional(),
+    }).optional(),
 });
 
 // Mock Code for background
@@ -102,6 +130,21 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#1e1e1e', fontFamily: monoFamily, color: '#d4d4d4', fontSize: 24, padding: 40 }}>
+            {/* SE: Alert on Error */}
+            <Sequence from={errorFrame}>
+                <Audio src={staticFile("se/alert.mp3")} volume={0.5} />
+            </Sequence>
+
+            {/* SE: Pop on Japanese Error */}
+            <Sequence from={errorFrame + 5}>
+                <Audio src={staticFile("se/pop.mp3")} volume={0.5} />
+            </Sequence>
+
+            {/* SE: Pop on Tsukkomi */}
+            <Sequence from={questionFrame}>
+                <Audio src={staticFile("se/pop.mp3")} volume={0.6} />
+            </Sequence>
+
             {/* Flash Overlay */}
             <AbsoluteFill style={{ backgroundColor: 'red', opacity: flashOpacity, zIndex: 5, pointerEvents: 'none' }} />
 
@@ -235,6 +278,15 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
+            {/* SE: Slide Up */}
+            <Sequence from={0}>
+                <Audio src={staticFile("se/type.mp3")} volume={0.3} />
+            </Sequence>
+            {/* SE: Translation Appears */}
+            <Sequence from={translationFrame}>
+                <Audio src={staticFile("se/pop.mp3")} volume={0.4} />
+            </Sequence>
+
             <div style={{ opacity, textAlign: 'center', width: '80%' }}>
                 <h1 style={{
                     fontSize: 140,
@@ -572,6 +624,83 @@ const OutroScene: React.FC = () => {
 export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props) => {
     return (
         <AbsoluteFill>
+            <Audio src={staticFile("bgm.mp3")} volume={0.1} loop />
+
+            {/* Audio Narrations */}
+            {props.audioPaths && props.audioDurations && (
+                <>
+                    {/* Panic Scene Audio */}
+                    {props.audioPaths.errorMessage && (
+                        <Sequence from={45}>
+                            <Audio src={staticFile(props.audioPaths.errorMessage)} />
+                        </Sequence>
+                    )}
+
+                    {/* Word Scene Audio */}
+                    {(() => {
+                        let currentFrame = 240 + 10;
+                        const clips = [
+                            { path: props.audioPaths.targetWord, duration: props.audioDurations.targetWord },
+                            { path: props.audioPaths.generalMeaning, duration: props.audioDurations.generalMeaning },
+                            { path: props.audioPaths.generalExample, duration: props.audioDurations.generalExample },
+                            { path: props.audioPaths.messageTranslation, duration: props.audioDurations.messageTranslation },
+                        ];
+                        return clips.map((clip, i) => {
+                            if (!clip.path) return null;
+                            const start = currentFrame;
+                            // Add some padding between clips (e.g., 15 frames = 0.5s)
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
+                            return (
+                                <Sequence key={i} from={start}>
+                                    <Audio src={staticFile(clip.path)} />
+                                </Sequence>
+                            );
+                        });
+                    })()}
+
+                    {/* Context Scene Audio */}
+                    {(() => {
+                        let currentFrame = 690 + 20;
+                        const clips = [
+                            { path: props.audioPaths.techMeaning, duration: props.audioDurations.techMeaning },
+                            { path: props.audioPaths.explanation, duration: props.audioDurations.explanation },
+                        ];
+                        return clips.map((clip, i) => {
+                            if (!clip.path) return null;
+                            const start = currentFrame;
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
+                            return (
+                                <Sequence key={i} from={start}>
+                                    <Audio src={staticFile(clip.path)} />
+                                </Sequence>
+                            );
+                        });
+                    })()}
+
+                    {/* Usage Scene Audio */}
+                    {(() => {
+                        let currentFrame = 1290 + 5;
+                        const clips = [
+                            { path: props.audioPaths.usageContext, duration: props.audioDurations.usageContext },
+                            { path: props.audioPaths.usageExample, duration: props.audioDurations.usageExample },
+                            { path: props.audioPaths.usageExampleTranslation, duration: props.audioDurations.usageExampleTranslation },
+                            { path: props.audioPaths.usagePunchline, duration: props.audioDurations.usagePunchline },
+                            { path: props.audioPaths.usagePunchlineTranslation, duration: props.audioDurations.usagePunchlineTranslation },
+                        ];
+                        return clips.map((clip, i) => {
+                            if (!clip.path) return null;
+                            const start = currentFrame;
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
+                            return (
+                                <Sequence key={i} from={start}>
+                                    <Audio src={staticFile(clip.path)} />
+                                </Sequence>
+                            );
+                        });
+                    })()}
+                </>
+            )}
+
             <Sequence from={0} durationInFrames={240}>
                 <PanicScene errorMessage={props.errorMessage} />
             </Sequence>

@@ -13,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/text-to-speech": "^6.4.0",
     "@remotion/google-fonts": "^4.0.377",
     "@remotion/shapes": "^4.0.377",
+    "music-metadata": "^11.10.3",
     "prismjs": "^1.30.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
