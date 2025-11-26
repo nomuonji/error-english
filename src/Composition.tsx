@@ -743,7 +743,7 @@ const UsageScene: React.FC<{
     const { fps } = useVideoConfig();
 
     // Final CTA animation - appears just before the scene ends
-    const ctaFrame = duration - 45; // 1.5 seconds before end
+    const ctaFrame = duration - 90; // 3 seconds before end
     const showCta = frame > ctaFrame;
     const ctaScale = spring({
         frame: frame - ctaFrame,
@@ -763,7 +763,10 @@ const UsageScene: React.FC<{
 
     // Audio sequence timing matching parent component
     // Starts at relative frame 5
-    const startFrame = 5;
+    // Added intro duration (approx 1.5s = 45 frames)
+    const introDelay = 15; // Delay before intro starts
+    const introDuration = 60; // Increased to 2s safety
+    const startFrame = 5 + introDelay + introDuration + 20; // Added extra buffer after intro
     const gap = 15;
 
     // Clip 1: Context
@@ -787,14 +790,17 @@ const UsageScene: React.FC<{
     const clip5End = clip5Start + Math.ceil(durations.usagePunchlineTranslation * fps);
 
     const isSpeaking =
+        (frame >= introDelay && frame <= introDelay + introDuration) || // Intro speaking
         (frame >= clip1Start && frame <= clip1End) ||
         (frame >= clip2Start && frame <= clip2End) ||
         (frame >= clip3Start && frame <= clip3End) ||
         (frame >= clip4Start && frame <= clip4End) ||
-        (frame >= clip5Start && frame <= clip5End);
+        (frame >= clip5Start && frame <= clip5End) ||
+        (frame >= ctaFrame && frame <= ctaFrame + 60); // Outro speaking
 
     // Chat bubble animations
-    const msg1Start = 10;
+    // Delayed by introDuration
+    const msg1Start = 10 + introDelay + introDuration;
     const msg1Scale = spring({
         frame: frame - msg1Start,
         fps,
@@ -802,7 +808,7 @@ const UsageScene: React.FC<{
     });
     const msg1Opacity = interpolate(frame, [msg1Start, msg1Start + 5], [0, 1], { extrapolateRight: 'clamp' });
 
-    const msg2Start = 60;
+    const msg2Start = 60 + introDelay + introDuration;
     const msg2Scale = spring({
         frame: frame - msg2Start,
         fps,
@@ -813,6 +819,11 @@ const UsageScene: React.FC<{
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#ece5dd', fontFamily }}>
+            {/* Intro Audio - Delayed start */}
+            <Sequence from={introDelay}>
+                <Audio src={staticFile("se/usage_intro.mp3")} />
+            </Sequence>
+
             {/* Header */}
             <div style={{
                 height: 120,
@@ -889,29 +900,35 @@ const UsageScene: React.FC<{
 
             {/* Final CTA Pop-up - moved to ABSOLUTE END of DOM and HIGHEST zIndex */}
             {showCta && (
-                <div style={{
-                    position: 'absolute',
-                    top: 220, // Adjusted to be centered in the upper space
-                    left: '50%',
-                    transform: `translateX(-50%) scale(${ctaScale})`,
-                    backgroundColor: '#ff9f43',
-                    padding: '20px 60px',
-                    borderRadius: 50,
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
-                    border: '5px solid white',
-                    zIndex: 2000 // Highest priority
-                }}>
-                    <p style={{
-                        fontSize: 50,
-                        fontWeight: 'bold',
-                        color: 'white',
-                        margin: 0,
-                        textAlign: 'center',
-                        textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                <>
+                    {/* Outro Audio - Synced with CTA appearance */}
+                    <Sequence from={ctaFrame}>
+                        <Audio src={staticFile("se/usage_outro.mp3")} />
+                    </Sequence>
+                    <div style={{
+                        position: 'absolute',
+                        top: 220, // Adjusted to be centered in the upper space
+                        left: '50%',
+                        transform: `translateX(-50%) scale(${ctaScale})`,
+                        backgroundColor: '#ff9f43',
+                        padding: '20px 60px',
+                        borderRadius: 50,
+                        boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+                        border: '5px solid white',
+                        zIndex: 2000 // Highest priority
                     }}>
-                        明日から使ってみよう！
-                    </p>
-                </div>
+                        <p style={{
+                            fontSize: 50,
+                            fontWeight: 'bold',
+                            color: 'white',
+                            margin: 0,
+                            textAlign: 'center',
+                            textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                        }}>
+                            明日から使ってみよう！
+                        </p>
+                    </div>
+                </>
             )}
         </AbsoluteFill>
     );
@@ -1059,12 +1076,16 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     })()}
 
                     {/* Usage Scene Audio */}
+
+                    {/* Usage Scene Audio */}
                     {(() => {
                         const panicDuration = props.sceneDurations?.panic || 240;
                         const errorMeaningDuration = props.sceneDurations?.errorMeaning || 150;
                         const wordDuration = props.sceneDurations?.word || 300;
                         const contextDuration = props.sceneDurations?.context || 600;
-                        let currentFrame = panicDuration + errorMeaningDuration + wordDuration + contextDuration + 5;
+                        // Add offset for intro narration (15 + 60 + 20 + 5 = 100 frames)
+                        const introOffset = 100;
+                        let currentFrame = panicDuration + errorMeaningDuration + wordDuration + contextDuration + 5 + introOffset;
                         const clips = [
                             { path: props.audioPaths.usageContext, duration: props.audioDurations.usageContext },
                             { path: props.audioPaths.usageExample, duration: props.audioDurations.usageExample },
@@ -1086,51 +1107,71 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                 </>
             )}
 
-            <Sequence from={0} durationInFrames={props.sceneDurations?.panic || 240}>
-                <PanicScene
-                    errorMessage={props.errorMessage}
-                    errorAudioDuration={props.audioDurations?.errorMessage}
-                />
-            </Sequence>
-            <Sequence from={props.sceneDurations?.panic || 240} durationInFrames={props.sceneDurations?.errorMeaning || 150}>
-                <ErrorMeaningScene
-                    errorMessage={props.errorMessage}
-                    messageTranslation={props.messageTranslation}
-                    audioDurations={props.audioDurations}
-                />
-            </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150)} durationInFrames={props.sceneDurations?.word || 300}>
-                <WordScene
-                    word={props.targetWord}
-                    meaning={props.generalMeaning}
-                    example={props.generalExample}
-                    audioDurations={props.audioDurations}
-                />
-            </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300)} durationInFrames={props.sceneDurations?.context || 710}>
-                <ContextScene
-                    targetWord={props.targetWord}
-                    errorMessage={props.errorMessage}
-                    techMeaning={props.techMeaning}
-                    explanation={props.explanation}
-                    duration={props.sceneDurations?.context || 710}
-                    audioDurations={props.audioDurations}
-                />
-            </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300) + (props.sceneDurations?.context || 710)} durationInFrames={props.sceneDurations?.usage || 300}>
-                <UsageScene
-                    context={props.usageContext}
-                    example={props.usageExample}
-                    exampleTranslation={props.usageExampleTranslation}
-                    punchline={props.usagePunchline}
-                    punchlineTranslation={props.usagePunchlineTranslation}
-                    duration={props.sceneDurations?.usage || 300}
-                    audioDurations={props.audioDurations}
-                />
-            </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300) + (props.sceneDurations?.context || 710) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
-                <OutroScene />
-            </Sequence>
+            {(() => {
+                const panicDur = props.sceneDurations?.panic || 240;
+                const errorMeaningDur = props.sceneDurations?.errorMeaning || 150;
+                const wordDur = props.sceneDurations?.word || 300;
+                const contextDur = props.sceneDurations?.context || 710;
+                const usageDur = props.sceneDurations?.usage || 300;
+                const outroDur = props.sceneDurations?.outro || 150;
+
+                const panicStart = 0;
+                const errorMeaningStart = panicStart + panicDur;
+                const wordStart = errorMeaningStart + errorMeaningDur;
+                const contextStart = wordStart + wordDur;
+                const usageStart = contextStart + contextDur;
+                const outroStart = usageStart + usageDur;
+
+                return (
+                    <>
+                        <Sequence from={panicStart} durationInFrames={panicDur}>
+                            <PanicScene
+                                errorMessage={props.errorMessage}
+                                errorAudioDuration={props.audioDurations?.errorMessage}
+                            />
+                        </Sequence>
+                        <Sequence from={errorMeaningStart} durationInFrames={errorMeaningDur}>
+                            <ErrorMeaningScene
+                                errorMessage={props.errorMessage}
+                                messageTranslation={props.messageTranslation}
+                                audioDurations={props.audioDurations}
+                            />
+                        </Sequence>
+                        <Sequence from={wordStart} durationInFrames={wordDur}>
+                            <WordScene
+                                word={props.targetWord}
+                                meaning={props.generalMeaning}
+                                example={props.generalExample}
+                                audioDurations={props.audioDurations}
+                            />
+                        </Sequence>
+                        <Sequence from={contextStart} durationInFrames={contextDur}>
+                            <ContextScene
+                                targetWord={props.targetWord}
+                                errorMessage={props.errorMessage}
+                                techMeaning={props.techMeaning}
+                                explanation={props.explanation}
+                                duration={contextDur}
+                                audioDurations={props.audioDurations}
+                            />
+                        </Sequence>
+                        <Sequence from={usageStart} durationInFrames={usageDur}>
+                            <UsageScene
+                                context={props.usageContext}
+                                example={props.usageExample}
+                                exampleTranslation={props.usageExampleTranslation}
+                                punchline={props.usagePunchline}
+                                punchlineTranslation={props.usagePunchlineTranslation}
+                                duration={usageDur}
+                                audioDurations={props.audioDurations}
+                            />
+                        </Sequence>
+                        <Sequence from={outroStart} durationInFrames={outroDur}>
+                            <OutroScene />
+                        </Sequence>
+                    </>
+                );
+            })()}
         </AbsoluteFill>
     );
 };

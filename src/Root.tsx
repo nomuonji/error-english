@@ -8,11 +8,22 @@ export const RemotionRoot: React.FC = () => {
             <Composition
                 id="ErrorEnglishVideo"
                 component={ErrorEnglishVideo}
-                durationInFrames={1740}
+                durationInFrames={3000}
                 fps={30}
                 width={1080}
                 height={1920}
                 schema={myCompSchema}
+                calculateMetadata={async ({ props }) => {
+                    if (props.sceneDurations) {
+                        const total = Object.values(props.sceneDurations).reduce((a, b) => a + (b as number), 0);
+                        return {
+                            durationInFrames: total,
+                        };
+                    }
+                    return {
+                        durationInFrames: 3000,
+                    };
+                }}
                 defaultProps={{
                     targetWord: "Fatal",
                     errorMessage: "FATAL ERROR: System Halted",

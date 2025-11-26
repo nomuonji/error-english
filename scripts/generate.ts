@@ -59,46 +59,63 @@ async function main() {
 
         // Calculate scene durations
         const fps = 30;
-        const paddingFrames = 15; // 0.5s
         const getFrames = (key: string) => Math.ceil((audioDurations[key] || 0) * fps);
 
+        // 1. Panic Scene
         const panicAudio = getFrames('errorMessage');
         const panicDuration = Math.max(120, 45 + panicAudio + 60);
 
-        const wordAudio = [
-            getFrames('targetWord'),
-            getFrames('generalMeaning'),
-            getFrames('generalExample'),
-            getFrames('messageTranslation')
-        ].reduce((a, b) => a + b + paddingFrames, 0);
-        const wordDuration = Math.max(300, wordAudio + 60);
+        // 2. Error Meaning Scene
+        const errorMeaningAudio = getFrames('messageTranslation');
+        const errorMeaningDuration = Math.max(150, 10 + errorMeaningAudio + 60);
 
-        const contextAudio = [
-            getFrames('techMeaning'),
-            getFrames('explanation')
-        ].reduce((a, b) => a + b + 5, 0); // Reduced padding between clips
-        const contextDuration = Math.max(150, contextAudio + 100); // Min 5s, buffer for Naruhodo
+        // 3. Word Scene
+        // Composition: start 30, 3 clips, 2 gaps of 15
+        const wordAudioSum = getFrames('targetWord') + getFrames('generalMeaning') + getFrames('generalExample');
+        const wordContentEnd = 30 + wordAudioSum + 30; // 30 start + audio + 2*15 gaps
+        const wordDuration = wordContentEnd + 30; // +1s buffer
 
-        const usageAudio = [
-            getFrames('usageContext'),
-            getFrames('usageExample'),
-            getFrames('usageExampleTranslation'),
-            getFrames('usagePunchline'),
-            getFrames('usagePunchlineTranslation')
-        ].reduce((a, b) => a + b + paddingFrames, 0);
-        const usageDuration = Math.max(300, usageAudio + 60);
+        // 4. Context Scene
+        // Composition: start 20, 2 clips, 1 gap of 20
+        const contextAudioSum = getFrames('techMeaning') + getFrames('explanation');
+        const contextContentEnd = 20 + contextAudioSum + 20;
+        const contextDuration = Math.max(150, contextContentEnd + 100); // Buffer for Naruhodo
 
-        const outroDuration = 150;
+        // 5. Usage Scene
+        // Composition: start 100, 5 clips, 4 gaps of 15
+        const usageAudioSum = 
+            getFrames('usageContext') +
+            getFrames('usageExample') +
+            getFrames('usageExampleTranslation') +
+            getFrames('usagePunchline') +
+            getFrames('usagePunchlineTranslation');
+        const usageContentEnd = 100 + usageAudioSum + 60; // 100 start + audio + 4*15 gaps
+        const usageDuration = usageContentEnd + 150; // +5s for CTA/Outro
+
+        // 6. Outro Scene
+        // Composition: start 20, follow_me audio
+        let followMeFrames = 0;
+        try {
+            const followMePath = path.join(__dirname, '../public/se/follow_me.mp3');
+            if (fs.existsSync(followMePath)) {
+                const metadata = await parseFile(followMePath);
+                followMeFrames = Math.ceil((metadata.format.duration || 0) * fps);
+            }
+        } catch (e) {
+            console.error("Failed to get follow_me.mp3 duration");
+        }
+        const outroDuration = 20 + followMeFrames + 90; // 20 start + audio + 3s buffer
 
         const sceneDurations = {
             panic: panicDuration,
+            errorMeaning: errorMeaningDuration,
             word: wordDuration,
             context: contextDuration,
             usage: usageDuration,
             outro: outroDuration
         };
 
-        const totalDuration = panicDuration + wordDuration + contextDuration + usageDuration + outroDuration;
+        const totalDuration = panicDuration + errorMeaningDuration + wordDuration + contextDuration + usageDuration + outroDuration;
 
         const props = {
             ...error,
@@ -112,7 +129,7 @@ async function main() {
 
         console.log(`Rendering video for word ${error.targetWord} (Duration: ${totalDuration} frames)...`);
         try {
-            execSync(`npx remotion render src/index.ts ErrorEnglishVideo out/video-${error.targetWord}.mp4 --props=${propsFile} --durationInFrames=${totalDuration} --timeout=240000 --concurrency=1`, {
+            execSync(`npx remotion render src/index.ts ErrorEnglishVideo out/video-${error.targetWord}.mp4 --props=${propsFile} --duration-in-frames=${totalDuration} --timeout=240000 --concurrency=1`, {
                 stdio: 'inherit',
             });
         } catch (e) {
