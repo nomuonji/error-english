@@ -1,8 +1,5 @@
 ﻿node_modules
-node_modules/
-out/
-.remotion/
-.vscode/
-*.log
-*.mp4
-temp-props-*.json
+.DS_Store
+out
+public/audio
+.env

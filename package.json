@@ -16,6 +16,7 @@
     "@google-cloud/text-to-speech": "^6.4.0",
     "@remotion/google-fonts": "^4.0.377",
     "@remotion/shapes": "^4.0.377",
+    "dotenv": "^17.2.3",
     "music-metadata": "^11.10.3",
     "prismjs": "^1.30.0",
     "react": "^19.2.0",

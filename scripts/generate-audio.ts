@@ -1,9 +1,17 @@
+import https from 'https';
 import fs from 'fs';
 import path from 'path';
-import https from 'https';
+import dotenv from 'dotenv';
 
-const API_KEY = 'aivis_9BHtNVqFvfMgH7XcoicacgzBQwti7JuM';
-const MODEL_UUID = 'a59cb814-0083-4369-8542-f51a29e72af7';
+dotenv.config();
+
+const API_KEY = process.env.AIVIS_API_KEY;
+const MODEL_UUID = process.env.AIVIS_MODEL_UUID;
+
+if (!API_KEY || !MODEL_UUID) {
+    console.error("Missing API_KEY or MODEL_UUID in .env");
+    process.exit(1);
+}
 
 export async function generateAudio(text: string, outputFile: string) {
     // Ensure directory exists

@@ -32,7 +32,7 @@ async function main() {
             { key: 'usageContext', text: error.usageContext, lang: 'ja-JP', gender: 'FEMALE' },
             { key: 'usageExample', text: error.usageExample, lang: 'en-US', gender: 'MALE' },
             { key: 'usageExampleTranslation', text: error.usageExampleTranslation, lang: 'ja-JP', gender: 'MALE' },
-            { key: 'usagePunchline', text: error.usagePunchline, lang: 'en-US', gender: 'FEMALE' }, // Boss is female? or change to MALE
+            { key: 'usagePunchline', text: error.usagePunchline, lang: 'en-US', gender: 'FEMALE' },
             { key: 'usagePunchlineTranslation', text: error.usagePunchlineTranslation, lang: 'ja-JP', gender: 'FEMALE' },
         ];
 
@@ -42,7 +42,7 @@ async function main() {
         for (const task of audioTasks) {
             const fileName = `${task.key}.mp3`;
             const filePath = path.join(wordAudioDir, fileName);
-            // Cast gender to expected type
+
             try {
                 await generateAudio(task.text, filePath);
                 // Path for staticFile (relative to public)
@@ -54,22 +54,65 @@ async function main() {
 
             } catch (e) {
                 console.error(`Failed to generate audio for ${task.key}. Continuing without audio.`);
-                // throw e; // Allow generation to continue
             }
         }
+
+        // Calculate scene durations
+        const fps = 30;
+        const paddingFrames = 15; // 0.5s
+        const getFrames = (key: string) => Math.ceil((audioDurations[key] || 0) * fps);
+
+        const panicAudio = getFrames('errorMessage');
+        const panicDuration = Math.max(120, 45 + panicAudio + 60);
+
+        const wordAudio = [
+            getFrames('targetWord'),
+            getFrames('generalMeaning'),
+            getFrames('generalExample'),
+            getFrames('messageTranslation')
+        ].reduce((a, b) => a + b + paddingFrames, 0);
+        const wordDuration = Math.max(300, wordAudio + 60);
+
+        const contextAudio = [
+            getFrames('techMeaning'),
+            getFrames('explanation')
+        ].reduce((a, b) => a + b + 5, 0); // Reduced padding between clips
+        const contextDuration = Math.max(400, contextAudio + 30); // Reduced buffer at end
+
+        const usageAudio = [
+            getFrames('usageContext'),
+            getFrames('usageExample'),
+            getFrames('usageExampleTranslation'),
+            getFrames('usagePunchline'),
+            getFrames('usagePunchlineTranslation')
+        ].reduce((a, b) => a + b + paddingFrames, 0);
+        const usageDuration = Math.max(300, usageAudio + 60);
+
+        const outroDuration = 150;
+
+        const sceneDurations = {
+            panic: panicDuration,
+            word: wordDuration,
+            context: contextDuration,
+            usage: usageDuration,
+            outro: outroDuration
+        };
+
+        const totalDuration = panicDuration + wordDuration + contextDuration + usageDuration + outroDuration;
 
         const props = {
             ...error,
             audioPaths,
-            audioDurations
+            audioDurations,
+            sceneDurations
         };
 
         const propsFile = path.join(__dirname, `../temp-props-${error.targetWord}.json`);
         fs.writeFileSync(propsFile, JSON.stringify(props));
 
-        console.log(`Rendering video for word ${error.targetWord}...`);
+        console.log(`Rendering video for word ${error.targetWord} (Duration: ${totalDuration} frames)...`);
         try {
-            execSync(`npx remotion render src/index.ts ErrorEnglishVideo out/video-${error.targetWord}.mp4 --props=${propsFile}`, {
+            execSync(`npx remotion render src/index.ts ErrorEnglishVideo out/video-${error.targetWord}.mp4 --props=${propsFile} --durationInFrames=${totalDuration} --timeout=240000 --concurrency=1`, {
                 stdio: 'inherit',
             });
         } catch (e) {

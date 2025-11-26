@@ -49,6 +49,13 @@ export const myCompSchema = z.object({
         usagePunchline: z.number().optional(),
         usagePunchlineTranslation: z.number().optional(),
     }).optional(),
+    sceneDurations: z.object({
+        panic: z.number(),
+        word: z.number(),
+        context: z.number(),
+        usage: z.number(),
+        outro: z.number(),
+    }).optional(),
 });
 
 // Mock Code for background
@@ -130,6 +137,11 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#1e1e1e', fontFamily: monoFamily, color: '#d4d4d4', fontSize: 24, padding: 40 }}>
+            {/* SE: Type Sound at Start */}
+            <Sequence from={0}>
+                <Audio src={staticFile("se/type.mp3")} volume={0.5} />
+            </Sequence>
+
             {/* SE: Alert on Error */}
             <Sequence from={errorFrame}>
                 <Audio src={staticFile("se/alert.mp3")} volume={0.5} />
@@ -165,101 +177,107 @@ const PanicScene: React.FC<{ errorMessage: string }> = ({ errorMessage }) => {
             </div>
 
             {/* Error Popup */}
-            {showError && (
-                <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: `translate(-50%, -50%) scale(${errorScale})`,
-                    backgroundColor: '#2d2d2d',
-                    border: '4px solid #f48771', // Thicker border
-                    borderRadius: 12,
-                    padding: 0,
-                    boxShadow: '0 30px 80px rgba(0,0,0,0.8)', // Stronger shadow
-                    width: '90%', // Wider
-                    overflow: 'hidden',
-                    zIndex: 10
-                }}>
-                    <div style={{ backgroundColor: '#f48771', padding: '15px 30px', color: '#2d2d2d', fontWeight: 'bold', fontSize: 30, display: 'flex', alignItems: 'center', gap: 15 }}>
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                            <circle cx="12" cy="12" r="10" />
-                            <line x1="12" y1="8" x2="12" y2="12" />
-                            <line x1="12" y1="16" x2="12.01" y2="16" />
-                        </svg>
-                        ERROR DETECTED
-                    </div>
-                    <div style={{ padding: 40 }}>
-                        <p style={{ color: '#f48771', fontSize: 75, margin: 0, fontWeight: 'bold', lineHeight: 1.1 }}>{errorMessage}</p>
-                    </div>
-                </div>
-            )}
-
-            {/* Japanese Error Pop */}
-            {showError && (
-                <div style={{
-                    position: 'absolute',
-                    top: '20%',
-                    right: '5%',
-                    transform: `scale(${jpErrorScale}) rotate(15deg)`,
-                    zIndex: 15,
-                }}>
+            {
+                showError && (
                     <div style={{
-                        backgroundColor: '#ff0000',
-                        color: 'white',
-                        padding: '20px 40px',
-                        borderRadius: '10px',
-                        border: '8px solid white',
-                        boxShadow: '0 15px 30px rgba(0,0,0,0.6)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center'
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: `translate(-50%, -50%) scale(${errorScale})`,
+                        backgroundColor: '#2d2d2d',
+                        border: '4px solid #f48771', // Thicker border
+                        borderRadius: 12,
+                        padding: 0,
+                        boxShadow: '0 30px 80px rgba(0,0,0,0.8)', // Stronger shadow
+                        width: '90%', // Wider
+                        overflow: 'hidden',
+                        zIndex: 10
                     }}>
-                        <div style={{
-                            fontSize: 80,
-                            lineHeight: 1,
-                            marginBottom: 10
-                        }}>⚠️</div>
-                        <div style={{
-                            fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif',
-                            fontWeight: 900,
-                            fontSize: 70,
-                            whiteSpace: 'nowrap',
-                            textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
-                        }}>
-                            エラー発生！
+                        <div style={{ backgroundColor: '#f48771', padding: '15px 30px', color: '#2d2d2d', fontWeight: 'bold', fontSize: 30, display: 'flex', alignItems: 'center', gap: 15 }}>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="12" y1="8" x2="12" y2="12" />
+                                <line x1="12" y1="16" x2="12.01" y2="16" />
+                            </svg>
+                            ERROR DETECTED
+                        </div>
+                        <div style={{ padding: 40 }}>
+                            <p style={{ color: '#f48771', fontSize: 75, margin: 0, fontWeight: 'bold', lineHeight: 1.1 }}>{errorMessage}</p>
                         </div>
                     </div>
-                </div>
-            )}
+                )
+            }
+
+            {/* Japanese Error Pop */}
+            {
+                showError && (
+                    <div style={{
+                        position: 'absolute',
+                        top: '20%',
+                        right: '5%',
+                        transform: `scale(${jpErrorScale}) rotate(15deg)`,
+                        zIndex: 15,
+                    }}>
+                        <div style={{
+                            backgroundColor: '#ff0000',
+                            color: 'white',
+                            padding: '20px 40px',
+                            borderRadius: '10px',
+                            border: '8px solid white',
+                            boxShadow: '0 15px 30px rgba(0,0,0,0.6)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}>
+                            <div style={{
+                                fontSize: 80,
+                                lineHeight: 1,
+                                marginBottom: 10
+                            }}>⚠️</div>
+                            <div style={{
+                                fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif',
+                                fontWeight: 900,
+                                fontSize: 70,
+                                whiteSpace: 'nowrap',
+                                textShadow: '2px 2px 0 rgba(0,0,0,0.2)'
+                            }}>
+                                エラー発生！
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
 
             {/* Tsukkomi Overlay */}
-            {showQuestion && (
-                <div style={{
-                    position: 'absolute',
-                    top: '65%',
-                    left: '50%',
-                    transform: `translate(-50%, -50%) scale(${questionScale}) translate(${questionShake}px, 0)`,
-                    zIndex: 20,
-                    width: '100%',
-                    textAlign: 'center'
-                }}>
-                    <p style={{
-                        fontFamily: '"Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
-                        fontSize: 110,
-                        fontWeight: 900,
-                        color: 'white',
-                        textShadow: '5px 5px 0 #ff0000, -5px -5px 0 #0000ff',
-                        margin: 0,
-                        backgroundColor: 'rgba(0,0,0,0.8)',
-                        padding: '30px 0',
-                        transform: 'rotate(-5deg)'
+            {
+                showQuestion && (
+                    <div style={{
+                        position: 'absolute',
+                        top: '65%',
+                        left: '50%',
+                        transform: `translate(-50%, -50%) scale(${questionScale}) translate(${questionShake}px, 0)`,
+                        zIndex: 20,
+                        width: '100%',
+                        textAlign: 'center'
                     }}>
-                        どういう意味！！？？
-                    </p>
-                </div>
-            )}
-        </AbsoluteFill>
+                        <p style={{
+                            fontFamily: '"Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif',
+                            fontSize: 110,
+                            fontWeight: 900,
+                            color: 'white',
+                            textShadow: '5px 5px 0 #ff0000, -5px -5px 0 #0000ff',
+                            margin: 0,
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            padding: '30px 0',
+                            transform: 'rotate(-5deg)'
+                        }}>
+                            どういう意味！！？？
+                        </p>
+                    </div>
+                )
+            }
+        </AbsoluteFill >
     );
 };
 
@@ -278,10 +296,6 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
-            {/* SE: Slide Up */}
-            <Sequence from={0}>
-                <Audio src={staticFile("se/type.mp3")} volume={0.3} />
-            </Sequence>
             {/* SE: Translation Appears */}
             <Sequence from={translationFrame}>
                 <Audio src={staticFile("se/pop.mp3")} volume={0.4} />
@@ -339,8 +353,8 @@ const WordScene: React.FC<{ word: string, meaning: string, example: string, mess
                         {messageTranslation}
                     </p>
                 </div>
-            </div>
-        </AbsoluteFill>
+            </div >
+        </AbsoluteFill >
     );
 };
 
@@ -578,6 +592,9 @@ const OutroScene: React.FC = () => {
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#2c3e50', justifyContent: 'center', alignItems: 'center', fontFamily }}>
+            <Sequence from={20}>
+                <Audio src={staticFile("se/follow_me.mp3")} />
+            </Sequence>
             <div style={{ opacity, transform: `scale(${scale})`, textAlign: 'center', color: 'white' }}>
                 <div style={{
                     width: 150,
@@ -638,7 +655,8 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
 
                     {/* Word Scene Audio */}
                     {(() => {
-                        let currentFrame = 240 + 10;
+                        const panicDuration = props.sceneDurations?.panic || 240;
+                        let currentFrame = panicDuration + 10;
                         const clips = [
                             { path: props.audioPaths.targetWord, duration: props.audioDurations.targetWord },
                             { path: props.audioPaths.generalMeaning, duration: props.audioDurations.generalMeaning },
@@ -648,7 +666,6 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                         return clips.map((clip, i) => {
                             if (!clip.path) return null;
                             const start = currentFrame;
-                            // Add some padding between clips (e.g., 15 frames = 0.5s)
                             currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
                             return (
                                 <Sequence key={i} from={start}>
@@ -660,7 +677,9 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
 
                     {/* Context Scene Audio */}
                     {(() => {
-                        let currentFrame = 690 + 20;
+                        const panicDuration = props.sceneDurations?.panic || 240;
+                        const wordDuration = props.sceneDurations?.word || 450;
+                        let currentFrame = panicDuration + wordDuration + 20;
                         const clips = [
                             { path: props.audioPaths.techMeaning, duration: props.audioDurations.techMeaning },
                             { path: props.audioPaths.explanation, duration: props.audioDurations.explanation },
@@ -679,7 +698,10 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
 
                     {/* Usage Scene Audio */}
                     {(() => {
-                        let currentFrame = 1290 + 5;
+                        const panicDuration = props.sceneDurations?.panic || 240;
+                        const wordDuration = props.sceneDurations?.word || 450;
+                        const contextDuration = props.sceneDurations?.context || 600;
+                        let currentFrame = panicDuration + wordDuration + contextDuration + 5;
                         const clips = [
                             { path: props.audioPaths.usageContext, duration: props.audioDurations.usageContext },
                             { path: props.audioPaths.usageExample, duration: props.audioDurations.usageExample },
@@ -701,16 +723,16 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                 </>
             )}
 
-            <Sequence from={0} durationInFrames={240}>
+            <Sequence from={0} durationInFrames={props.sceneDurations?.panic || 240}>
                 <PanicScene errorMessage={props.errorMessage} />
             </Sequence>
-            <Sequence from={240} durationInFrames={450}>
+            <Sequence from={props.sceneDurations?.panic || 240} durationInFrames={props.sceneDurations?.word || 450}>
                 <WordScene word={props.targetWord} meaning={props.generalMeaning} example={props.generalExample} messageTranslation={props.messageTranslation} errorMessage={props.errorMessage} />
             </Sequence>
-            <Sequence from={690} durationInFrames={600}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450)} durationInFrames={props.sceneDurations?.context || 600}>
                 <ContextScene techMeaning={props.techMeaning} explanation={props.explanation} />
             </Sequence>
-            <Sequence from={1290} durationInFrames={300}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 600)} durationInFrames={props.sceneDurations?.usage || 300}>
                 <UsageScene
                     context={props.usageContext}
                     example={props.usageExample}
@@ -719,7 +741,7 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     punchlineTranslation={props.usagePunchlineTranslation}
                 />
             </Sequence>
-            <Sequence from={1590} durationInFrames={150}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 600) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
                 <OutroScene />
             </Sequence>
         </AbsoluteFill>
