@@ -25,7 +25,7 @@ async function main() {
             { key: 'errorMessage', text: error.errorMessage, lang: 'en-US', gender: 'FEMALE' },
             { key: 'messageTranslation', text: error.messageTranslation, lang: 'ja-JP', gender: 'FEMALE' },
             { key: 'targetWord', text: error.targetWord, lang: 'en-US', gender: 'FEMALE' },
-            { key: 'generalMeaning', text: error.generalMeaning, lang: 'ja-JP', gender: 'FEMALE' },
+            { key: 'generalMeaning', text: error.generalMeaning.replace(/【.*?】/g, ''), lang: 'ja-JP', gender: 'FEMALE' },
             { key: 'generalExample', text: error.generalExample, lang: 'en-US', gender: 'MALE' },
             { key: 'techMeaning', text: error.techMeaning, lang: 'ja-JP', gender: 'MALE' },
             { key: 'explanation', text: error.explanation, lang: 'ja-JP', gender: 'FEMALE' },
@@ -77,7 +77,7 @@ async function main() {
             getFrames('techMeaning'),
             getFrames('explanation')
         ].reduce((a, b) => a + b + 5, 0); // Reduced padding between clips
-        const contextDuration = Math.max(150, contextAudio + 60); // Min 5s, buffer for Naruhodo
+        const contextDuration = Math.max(150, contextAudio + 100); // Min 5s, buffer for Naruhodo
 
         const usageAudio = [
             getFrames('usageContext'),

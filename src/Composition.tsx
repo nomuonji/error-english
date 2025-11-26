@@ -52,6 +52,7 @@ export const myCompSchema = z.object({
     }).optional(),
     sceneDurations: z.object({
         panic: z.number(),
+        errorMeaning: z.number(),
         word: z.number(),
         context: z.number(),
         usage: z.number(),
@@ -308,30 +309,96 @@ const PanicScene: React.FC<{ errorMessage: string, errorAudioDuration?: number }
     );
 };
 
-// Scene 2: The Word (Dictionary Style) (5-20s)
-const WordScene: React.FC<{
-    word: string,
-    meaning: string,
-    example: string,
-    messageTranslation: string,
+// Scene 1.5: Error Meaning (Explaining the error)
+const ErrorMeaningScene: React.FC<{
     errorMessage: string,
+    messageTranslation: string,
     audioDurations?: {
-        targetWord?: number,
-        generalMeaning?: number,
-        generalExample?: number,
         messageTranslation?: number
     }
-}> = ({ word, meaning, example, messageTranslation, errorMessage, audioDurations }) => {
+}> = ({ errorMessage, messageTranslation, audioDurations }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
     const opacity = interpolate(frame, [0, 10], [0, 1]);
     const slideUp = spring({ frame, fps, config: { damping: 20 } });
 
-    // Translation appears later
-    const translationFrame = 150; // 5 seconds into the scene
-    const translationOpacity = interpolate(frame, [translationFrame, translationFrame + 30], [0, 1]);
-    const translationSlide = spring({ frame: frame - translationFrame, fps, config: { damping: 20 } });
+    // Lip-sync logic
+    const durations = {
+        messageTranslation: 4.0,
+        ...audioDurations
+    };
+
+    const clipStart = 10;
+    const clipEnd = clipStart + Math.ceil(durations.messageTranslation * fps);
+    const isSpeaking = frame >= clipStart && frame <= clipEnd;
+
+    return (
+        <AbsoluteFill style={{ backgroundColor: '#2c3e50', justifyContent: 'center', alignItems: 'center', fontFamily }}>
+            <div style={{
+                opacity,
+                transform: `translateY(${interpolate(slideUp, [0, 1], [30, 0])}px)`,
+                backgroundColor: 'white', // Inverted colors for impact
+                padding: '40px 60px',
+                borderRadius: 20,
+                color: '#2c3e50',
+                boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
+                width: '85%',
+                textAlign: 'center',
+                position: 'relative'
+            }}>
+                {/* Title Badge */}
+                <div style={{
+                    position: 'absolute',
+                    top: -25,
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: '#e74c3c',
+                    color: 'white',
+                    padding: '10px 40px',
+                    fontSize: 24,
+                    fontWeight: 'bold',
+                    letterSpacing: 3,
+                    borderRadius: 50,
+                    boxShadow: '0 4px 15px rgba(231, 76, 60, 0.4)',
+                    whiteSpace: 'nowrap'
+                }}>
+                    エラーの意味
+                </div>
+
+                <p style={{ fontSize: 40, color: '#e74c3c', marginBottom: 40, marginTop: 30, fontFamily: monoFamily, borderBottom: '2px solid #ecf0f1', paddingBottom: 20, fontWeight: 'bold' }}>
+                    {errorMessage}
+                </p>
+
+                <p style={{ fontSize: 60, fontWeight: 900, margin: 0, color: '#2c3e50' }}>
+                    {messageTranslation}
+                </p>
+            </div>
+
+            <Character
+                emotion="normal"
+                isSpeaking={isSpeaking}
+            />
+        </AbsoluteFill>
+    );
+};
+
+// Scene 2: The Word (Dictionary Style) (5-20s)
+const WordScene: React.FC<{
+    word: string,
+    meaning: string,
+    example: string,
+    audioDurations?: {
+        targetWord?: number,
+        generalMeaning?: number,
+        generalExample?: number
+    }
+}> = ({ word, meaning, example, audioDurations }) => {
+    const frame = useCurrentFrame();
+    const { fps } = useVideoConfig();
+
+    const opacity = interpolate(frame, [0, 10], [0, 1]);
+    const slideUp = spring({ frame, fps, config: { damping: 20 } });
 
     // Character speaking timing (during narration)
     // Calculate precise speaking intervals based on audio durations
@@ -339,7 +406,6 @@ const WordScene: React.FC<{
         targetWord: 1.5, // Default duration if not provided
         generalMeaning: 2.5,
         generalExample: 3.5,
-        messageTranslation: 4.0,
         ...audioDurations
     };
 
@@ -359,23 +425,13 @@ const WordScene: React.FC<{
     const clip3Start = clip2End + gap;
     const clip3End = clip3Start + Math.ceil(durations.generalExample * fps);
 
-    // Clip 4: Message Translation
-    const clip4Start = clip3End + gap;
-    const clip4End = clip4Start + Math.ceil(durations.messageTranslation * fps);
-
     const isSpeaking =
         (frame >= clip1Start && frame <= clip1End) ||
         (frame >= clip2Start && frame <= clip2End) ||
-        (frame >= clip3Start && frame <= clip3End) ||
-        (frame >= clip4Start && frame <= clip4End);
+        (frame >= clip3Start && frame <= clip3End);
 
     return (
         <AbsoluteFill style={{ backgroundColor: '#f8f9fa', justifyContent: 'center', alignItems: 'center', fontFamily }}>
-            {/* SE: Translation Appears */}
-            <Sequence from={translationFrame}>
-                <Audio src={staticFile("se/pop.mp3")} volume={0.4} />
-            </Sequence>
-
             <div style={{ opacity, textAlign: 'center', width: '80%' }}>
                 <h1 style={{
                     fontSize: 140,
@@ -395,39 +451,34 @@ const WordScene: React.FC<{
 
                     <div style={{
                         marginTop: 60,
-                        backgroundColor: 'white',
-                        padding: 40,
+                        backgroundColor: '#fff',
+                        padding: '50px 40px',
                         borderRadius: 20,
-                        boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
-                        borderLeft: '10px solid #3498db'
+                        boxShadow: '0 15px 40px rgba(52, 152, 219, 0.15)',
+                        border: '3px solid #3498db',
+                        position: 'relative'
                     }}>
-                        <p style={{ fontSize: 36, color: '#7f8c8d', fontStyle: 'italic', margin: 0 }}>
-                            "{example}"
+                        <div style={{
+                            position: 'absolute',
+                            top: -20,
+                            left: 40,
+                            backgroundColor: '#3498db',
+                            color: 'white',
+                            padding: '8px 25px',
+                            borderRadius: 20,
+                            fontSize: 20,
+                            fontWeight: 'bold',
+                            letterSpacing: 2,
+                            boxShadow: '0 5px 15px rgba(52, 152, 219, 0.4)'
+                        }}>
+                            例文
+                        </div>
+                        <p style={{ fontSize: 38, color: '#2c3e50', margin: 0, lineHeight: 1.4, fontWeight: 500 }}>
+                            {example}
                         </p>
                     </div>
                 </div>
 
-                {/* Full Message Translation */}
-                <div style={{
-                    marginTop: 80,
-                    opacity: translationOpacity,
-                    transform: `translateY(${interpolate(translationSlide, [0, 1], [30, 0])}px)`,
-                    backgroundColor: '#2c3e50',
-                    padding: '20px 40px',
-                    borderRadius: 15,
-                    color: 'white',
-                    boxShadow: '0 10px 40px rgba(0,0,0,0.3)'
-                }}>
-                    <p style={{ fontSize: 20, color: '#bdc3c7', marginBottom: 5, textTransform: 'uppercase', letterSpacing: 2 }}>Original Error</p>
-                    <p style={{ fontSize: 28, color: '#ecf0f1', marginBottom: 20, fontFamily: monoFamily, borderBottom: '1px solid #7f8c8d', paddingBottom: 10 }}>
-                        {errorMessage}
-                    </p>
-
-                    <p style={{ fontSize: 20, color: '#bdc3c7', marginBottom: 5, textTransform: 'uppercase', letterSpacing: 2 }}>Meaning</p>
-                    <p style={{ fontSize: 36, fontWeight: 'bold', margin: 0 }}>
-                        {messageTranslation}
-                    </p>
-                </div>
             </div >
 
             {/* Character - Speaking during narration */}
@@ -439,8 +490,77 @@ const WordScene: React.FC<{
     );
 };
 
+// Sub-component for Context Scene Title
+const ContextTitle: React.FC<{ word: string, error: string }> = ({ word, error }) => {
+    return (
+        <div style={{
+            width: '100%',
+            marginBottom: 40,
+        }}>
+            {/* Main Title Section */}
+            <div style={{
+                borderBottom: '4px solid #0f0',
+                paddingBottom: 15,
+                marginBottom: 20,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start'
+            }}>
+                <div style={{
+                    backgroundColor: '#0f0',
+                    color: 'black',
+                    padding: '5px 15px',
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                    marginBottom: 10,
+                    letterSpacing: 2
+                }}>
+                    文脈で覚える
+                </div>
+                <div style={{
+                    fontSize: 90,
+                    color: 'white',
+                    fontWeight: 'bold',
+                    textShadow: '0 0 20px rgba(0, 255, 0, 0.6)',
+                    lineHeight: 1,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 20,
+                }}>
+                    {word}
+                    <span style={{ animation: 'blink 1s infinite', color: '#0f0' }}>_</span>
+                </div>
+            </div>
+
+            {/* Sub Title / Error Message Section */}
+            <div style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 20,
+                backgroundColor: 'rgba(255, 95, 86, 0.15)',
+                borderLeft: '8px solid #ff5f56',
+                padding: '20px 30px',
+                borderRadius: '0 10px 10px 0'
+            }}>
+                <span style={{ color: '#ff5f56', fontSize: 42 }}>⚠️</span>
+                <span style={{
+                    color: '#ff5f56',
+                    fontSize: 42,
+                    fontFamily: 'monospace',
+                    fontWeight: 'bold',
+                    lineHeight: 1.2
+                }}>
+                    {error}
+                </span>
+            </div>
+        </div>
+    );
+};
+
 // Scene 3: The Context (Matrix/Hacker Style) (20-40s)
 const ContextScene: React.FC<{
+    targetWord: string,
+    errorMessage: string,
     techMeaning: string,
     explanation: string,
     duration: number,
@@ -448,7 +568,7 @@ const ContextScene: React.FC<{
         techMeaning?: number,
         explanation?: number
     }
-}> = ({ techMeaning, explanation, duration, audioDurations }) => {
+}> = ({ targetWord, errorMessage, techMeaning, explanation, duration, audioDurations }) => {
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
@@ -468,8 +588,8 @@ const ContextScene: React.FC<{
     const clip1Start = 20;
     const clip1End = clip1Start + Math.ceil(durations.techMeaning * fps);
 
-    // Clip 2 (Explanation) starts after Clip 1 + 5 frames gap
-    const clip2Start = clip1End + 5;
+    // Clip 2 (Explanation) starts after Clip 1 + 20 frames gap (increased for "Tsumari" timing)
+    const clip2Start = clip1End + 20;
     const clip2End = clip2Start + Math.ceil(durations.explanation * fps);
 
     const isSpeaking =
@@ -524,37 +644,64 @@ const ContextScene: React.FC<{
                     boxShadow: '0 0 30px rgba(0, 255, 0, 0.3)',
                     opacity: contentOpacity,
                     transform: `scale(${contentScale})`,
-                    maxWidth: '90%'
+                    maxWidth: '90%',
+                    width: '90%'
                 }}>
-                    <h2 style={{
-                        fontSize: 40,
-                        borderBottom: '2px solid #0f0',
-                        paddingBottom: 20,
-                        marginBottom: 40,
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 20
-                    }}>
-                        <span style={{ animation: 'blink 1s infinite' }}>█</span>
-                        SYSTEM_CONTEXT_ANALYSIS
-                    </h2>
+                    <ContextTitle word={targetWord} error={errorMessage} />
 
-                    <div style={{ marginBottom: 60 }}>
-                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 15, letterSpacing: 2 }}>// TECHNICAL MEANING</p>
+                    <div style={{ marginBottom: 30 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 15, marginBottom: 15, color: '#0f0' }}>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <rect x="3" y="11" width="18" height="10" rx="2" />
+                                <circle cx="12" cy="16" r="2" />
+                                <path d="M12 11V7" />
+                                <rect x="10" y="3" width="4" height="4" rx="1" />
+                            </svg>
+                            <span style={{ fontSize: 24, letterSpacing: 2, fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif' }}>💻 コンピュータの言い分</span>
+                        </div>
                         <p style={{
                             color: '#fff',
                             fontSize: 50,
                             fontWeight: 'bold',
                             textShadow: '0 0 15px #0f0',
-                            lineHeight: 1.3
+                            lineHeight: 1.3,
+                            paddingLeft: 20,
+                            borderLeft: '4px solid #0f0'
                         }}>
                             {techMeaning}
                         </p>
                     </div>
 
-                    <div>
-                        <p style={{ color: '#0f0', fontSize: 24, marginBottom: 15, letterSpacing: 2 }}>// EXPLANATION</p>
-                        <p style={{ color: '#ccc', fontSize: 40, lineHeight: 1.5, fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif' }}>
+                    <div style={{
+                        backgroundColor: '#fffcf5', // Warmer white
+                        padding: '40px 40px',
+                        borderRadius: 20,
+                        position: 'relative',
+                        opacity: interpolate(frame, [clip2Start - 10, clip2Start], [0, 1], { extrapolateRight: 'clamp' }),
+                        transform: `translateY(${interpolate(frame, [clip2Start - 10, clip2Start], [20, 0], { extrapolateRight: 'clamp' })}px) scale(${1 + Math.sin(frame * 0.05) * 0.01})`, // Gentle pulse
+                        boxShadow: '0 15px 50px rgba(255, 165, 0, 0.15)', // Warm shadow
+                        border: '4px solid #ffd700' // Gold border
+                    }}>
+                        <div style={{
+                            position: 'absolute',
+                            top: -25,
+                            left: 30,
+                            backgroundColor: '#ff9f43', // Orange accent
+                            padding: '10px 25px',
+                            borderRadius: 30,
+                            color: '#fff',
+                            fontSize: 22,
+                            letterSpacing: 1,
+                            fontWeight: 'bold',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: 10,
+                            boxShadow: '0 5px 15px rgba(255, 159, 67, 0.4)'
+                        }}>
+                            <span style={{ fontSize: 28 }}>💡</span>
+                            ざっくり言うと
+                        </div>
+                        <p style={{ color: '#2c3e50', fontSize: 42, lineHeight: 1.5, fontFamily: '"Hiragino Kaku Gothic ProN", sans-serif', margin: 0, fontWeight: 'bold' }}>
                             {explanation}
                         </p>
                     </div>
@@ -562,8 +709,8 @@ const ContextScene: React.FC<{
             </AbsoluteFill>
 
             {/* SE: Naruhodo at end - dynamic timing based on scene duration */}
-            {/* Play 2 seconds (60 frames) before the end of the scene */}
-            <Sequence from={duration - 60}>
+            {/* Play after explanation finishes */}
+            <Sequence from={clip2End + 15}>
                 <Audio src={staticFile("se/context_end.mp3")} volume={0.6} />
             </Sequence>
 
@@ -848,15 +995,34 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                         </Sequence>
                     )}
 
-                    {/* Word Scene Audio */}
+                    {/* Error Meaning Scene Audio */}
                     {(() => {
                         const panicDuration = props.sceneDurations?.panic || 240;
                         let currentFrame = panicDuration + 10;
                         const clips = [
+                            { path: props.audioPaths.messageTranslation, duration: props.audioDurations.messageTranslation },
+                        ];
+                        return clips.map((clip, i) => {
+                            if (!clip.path) return null;
+                            const start = currentFrame;
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 15;
+                            return (
+                                <Sequence key={i} from={start}>
+                                    <Audio src={staticFile(clip.path)} />
+                                </Sequence>
+                            );
+                        });
+                    })()}
+
+                    {/* Word Scene Audio */}
+                    {(() => {
+                        const panicDuration = props.sceneDurations?.panic || 240;
+                        const errorMeaningDuration = props.sceneDurations?.errorMeaning || 150;
+                        let currentFrame = panicDuration + errorMeaningDuration + 10;
+                        const clips = [
                             { path: props.audioPaths.targetWord, duration: props.audioDurations.targetWord },
                             { path: props.audioPaths.generalMeaning, duration: props.audioDurations.generalMeaning },
                             { path: props.audioPaths.generalExample, duration: props.audioDurations.generalExample },
-                            { path: props.audioPaths.messageTranslation, duration: props.audioDurations.messageTranslation },
                         ];
                         return clips.map((clip, i) => {
                             if (!clip.path) return null;
@@ -873,8 +1039,9 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     {/* Context Scene Audio */}
                     {(() => {
                         const panicDuration = props.sceneDurations?.panic || 240;
-                        const wordDuration = props.sceneDurations?.word || 450;
-                        let currentFrame = panicDuration + wordDuration + 20;
+                        const errorMeaningDuration = props.sceneDurations?.errorMeaning || 150;
+                        const wordDuration = props.sceneDurations?.word || 300;
+                        let currentFrame = panicDuration + errorMeaningDuration + wordDuration + 20;
                         const clips = [
                             { path: props.audioPaths.techMeaning, duration: props.audioDurations.techMeaning },
                             { path: props.audioPaths.explanation, duration: props.audioDurations.explanation },
@@ -882,7 +1049,7 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                         return clips.map((clip, i) => {
                             if (!clip.path) return null;
                             const start = currentFrame;
-                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 5;
+                            currentFrame += Math.ceil((clip.duration || 0) * 30) + 20; // Increased gap for Tsumari
                             return (
                                 <Sequence key={i} from={start}>
                                     <Audio src={staticFile(clip.path)} />
@@ -894,9 +1061,10 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     {/* Usage Scene Audio */}
                     {(() => {
                         const panicDuration = props.sceneDurations?.panic || 240;
-                        const wordDuration = props.sceneDurations?.word || 450;
+                        const errorMeaningDuration = props.sceneDurations?.errorMeaning || 150;
+                        const wordDuration = props.sceneDurations?.word || 300;
                         const contextDuration = props.sceneDurations?.context || 600;
-                        let currentFrame = panicDuration + wordDuration + contextDuration + 5;
+                        let currentFrame = panicDuration + errorMeaningDuration + wordDuration + contextDuration + 5;
                         const clips = [
                             { path: props.audioPaths.usageContext, duration: props.audioDurations.usageContext },
                             { path: props.audioPaths.usageExample, duration: props.audioDurations.usageExample },
@@ -924,25 +1092,32 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     errorAudioDuration={props.audioDurations?.errorMessage}
                 />
             </Sequence>
-            <Sequence from={props.sceneDurations?.panic || 240} durationInFrames={props.sceneDurations?.word || 450}>
+            <Sequence from={props.sceneDurations?.panic || 240} durationInFrames={props.sceneDurations?.errorMeaning || 150}>
+                <ErrorMeaningScene
+                    errorMessage={props.errorMessage}
+                    messageTranslation={props.messageTranslation}
+                    audioDurations={props.audioDurations}
+                />
+            </Sequence>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150)} durationInFrames={props.sceneDurations?.word || 300}>
                 <WordScene
                     word={props.targetWord}
                     meaning={props.generalMeaning}
                     example={props.generalExample}
-                    messageTranslation={props.messageTranslation}
-                    errorMessage={props.errorMessage}
                     audioDurations={props.audioDurations}
                 />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450)} durationInFrames={props.sceneDurations?.context || 710}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300)} durationInFrames={props.sceneDurations?.context || 710}>
                 <ContextScene
+                    targetWord={props.targetWord}
+                    errorMessage={props.errorMessage}
                     techMeaning={props.techMeaning}
                     explanation={props.explanation}
                     duration={props.sceneDurations?.context || 710}
                     audioDurations={props.audioDurations}
                 />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 710)} durationInFrames={props.sceneDurations?.usage || 300}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300) + (props.sceneDurations?.context || 710)} durationInFrames={props.sceneDurations?.usage || 300}>
                 <UsageScene
                     context={props.usageContext}
                     example={props.usageExample}
@@ -953,7 +1128,7 @@ export const ErrorEnglishVideo: React.FC<z.infer<typeof myCompSchema>> = (props)
                     audioDurations={props.audioDurations}
                 />
             </Sequence>
-            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.word || 450) + (props.sceneDurations?.context || 710) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
+            <Sequence from={(props.sceneDurations?.panic || 240) + (props.sceneDurations?.errorMeaning || 150) + (props.sceneDurations?.word || 300) + (props.sceneDurations?.context || 710) + (props.sceneDurations?.usage || 300)} durationInFrames={props.sceneDurations?.outro || 150}>
                 <OutroScene />
             </Sequence>
         </AbsoluteFill>
