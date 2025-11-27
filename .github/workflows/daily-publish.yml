@@ -1,0 +1,39 @@
+name: Daily Video Publish
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 00:00 UTC = 09:00 JST
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          npm ci
+          
+      - name: Generate and Upload Video
+        env:
+          AIVIS_API_KEY: ${{ secrets.AIVIS_API_KEY }}
+          AIVIS_MODEL_UUID: ${{ secrets.AIVIS_MODEL_UUID }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/daily-publish.ts
+        
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data/errors.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update video status" && git push)
