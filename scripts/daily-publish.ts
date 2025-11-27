@@ -56,10 +56,29 @@ ${item.explanation}
 
         const uploadResult = await uploadVideo(videoPath, title, description, tags);
 
-        // 5. Remove from errors.json (Queue)
-        errors.splice(pendingIndex, 1);
-        fs.writeFileSync(errorsPath, JSON.stringify(errors, null, 4));
-        console.log(`Successfully processed and uploaded ${item.targetWord}. Removed from queue.`);
+        // 5. Remove from errors.json (Queue) and add to history.json
+        // Re-read errors.json to avoid race conditions with replenish script
+        const currentErrors: ErrorItem[] = JSON.parse(fs.readFileSync(errorsPath, 'utf-8'));
+        const indexToRemove = currentErrors.findIndex(e => e.targetWord === item.targetWord);
+
+        if (indexToRemove !== -1) {
+            currentErrors.splice(indexToRemove, 1);
+            fs.writeFileSync(errorsPath, JSON.stringify(currentErrors, null, 4));
+        } else {
+            console.warn(`Item ${item.targetWord} was already removed from errors.json`);
+        }
+
+        const historyPath = path.join(__dirname, '../data/history.json');
+        let historyWords: string[] = [];
+        if (fs.existsSync(historyPath)) {
+            historyWords = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+        }
+        if (!historyWords.includes(item.targetWord)) {
+            historyWords.push(item.targetWord);
+            fs.writeFileSync(historyPath, JSON.stringify(historyWords, null, 4));
+        }
+
+        console.log(`Successfully processed and uploaded ${item.targetWord}. Removed from queue and added to history.`);
 
         // Cleanup video file
         if (fs.existsSync(videoPath)) {

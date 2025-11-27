@@ -81,7 +81,11 @@ JSON形式で出力してください。Markdownのコードブロックは不�
         }
 
         // Filter out any duplicates that might have slipped through (sanity check)
-        const uniqueNewErrors = newErrors.filter((e: any) => !historyWords.includes(e.targetWord));
+        const currentErrors = fs.existsSync(errorsPath) ? JSON.parse(fs.readFileSync(errorsPath, 'utf-8')) : [];
+        const currentErrorWords = currentErrors.map((e: any) => e.targetWord);
+        const allExistingWords = [...new Set([...historyWords, ...currentErrorWords])];
+
+        const uniqueNewErrors = newErrors.filter((e: any) => !allExistingWords.includes(e.targetWord));
 
         if (uniqueNewErrors.length === 0) {
             console.log('No new unique errors generated.');
@@ -91,21 +95,12 @@ JSON形式で出力してください。Markdownのコードブロックは不�
         console.log(`Generated ${uniqueNewErrors.length} new errors: ${uniqueNewErrors.map((e: any) => e.targetWord).join(', ')}`);
 
         // 4. Append to errors.json (Queue)
-        let existingErrors: any[] = [];
-        if (fs.existsSync(errorsPath)) {
-            existingErrors = JSON.parse(fs.readFileSync(errorsPath, 'utf-8'));
-        }
-        // We don't need status anymore as the file itself is the queue, but keeping it consistent doesn't hurt.
-        // Actually, let's remove status usage since presence in file = pending.
-        const updatedErrors = [...existingErrors, ...uniqueNewErrors];
+        const updatedErrors = [...currentErrors, ...uniqueNewErrors];
         fs.writeFileSync(errorsPath, JSON.stringify(updatedErrors, null, 4));
         console.log(`Updated ${errorsPath}`);
 
-        // 5. Update history.json
-        const newWords = uniqueNewErrors.map((e: any) => e.targetWord);
-        const updatedHistory = [...historyWords, ...newWords];
-        fs.writeFileSync(historyPath, JSON.stringify(updatedHistory, null, 4));
-        console.log(`Updated ${historyPath}`);
+        // Note: We do NOT update history.json here. 
+        // It will be updated when the video is successfully generated/published.
 
     } catch (error) {
         console.error('Error generating data:', error);
