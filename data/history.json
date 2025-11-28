@@ -4,5 +4,6 @@
     "Exception",
     "Deprecated",
     "Void",
-    "Listen"
+    "Listen",
+    "Syntax"
 ]

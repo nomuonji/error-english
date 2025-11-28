@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Syntax",
-        "errorMessage": "SyntaxError: Unexpected token",
-        "messageTranslation": "構文エラー：予期しないトークンです",
-        "generalMeaning": "【名】構文、統語法",
-        "generalExample": "English syntax is hard. (英語の構文は難しい)",
-        "techMeaning": "文法ミス（てにをはの間違い）",
-        "explanation": "プログラムの言葉遣いが間違ってるよ！カンマやカッコを忘れてない？",
-        "usageContext": "言い間違いをした時",
-        "usageExample": "I want to eat... apple?",
-        "usageExampleTranslation": "食べたい…りんご？（文法がおかしい）",
-        "usagePunchline": "Teacher: Syntax Error.",
-        "usagePunchlineTranslation": "先生：構文エラー（やり直し）。"
-    },
-    {
         "targetWord": "Undefined",
         "errorMessage": "ReferenceError: x is not defined",
         "messageTranslation": "参照エラー：xは定義されていません",
