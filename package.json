@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "remotion preview src/index.ts",
-    "render": "remotion render src/index.ts ErrorEnglishVideo out/video.mp4",
-    "generate": "tsx scripts/generate.ts",
-    "generate-data": "tsx scripts/generate-new-errors.ts",
+    "process-next": "tsx scripts/daily-publish.ts",
+    "create-next": "tsx scripts/create-next.ts",
+    "replenish": "tsx scripts/generate-new-errors.ts",
+    "upload-file": "tsx scripts/upload-single.ts",
+    "generate-all": "tsx scripts/generate.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

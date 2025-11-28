@@ -37,7 +37,14 @@ async function main() {
         const videoPath = await generateVideo(item, outputDir);
 
         // 4. Upload to YouTube
-        const title = `【エンジニア英語】${item.targetWord}: ${item.errorMessage} #shorts`;
+        let title = `【エンジニア英語】${item.targetWord}: ${item.errorMessage}`;
+        const suffix = ' #shorts';
+        const maxLength = 100;
+
+        if (title.length + suffix.length > maxLength) {
+            title = title.substring(0, maxLength - suffix.length - 3) + '...';
+        }
+        title += suffix;
         const description = `
 ${item.targetWord}
 意味: ${item.generalMeaning}
