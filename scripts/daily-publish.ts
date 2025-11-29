@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { generateVideo, ErrorItem } from './video-generator';
 import { uploadVideo } from './upload-youtube';
+import { postThreads } from './threads-api';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -62,8 +63,18 @@ ${item.explanation}
         const tags = ['programming', 'english', 'error', 'engineer', 'learning', item.targetWord];
 
         const uploadResult = await uploadVideo(videoPath, title, description, tags);
+        const youtubeUrl = `https://youtube.com/shorts/${uploadResult.id}`;
 
-        // 5. Remove from errors.json (Queue) and add to history.json
+        // 5. Post to Threads
+        try {
+            const threadsText = `${title}\n\n${youtubeUrl}\n\n#プログラミング #英語`;
+            await postThreads(threadsText);
+        } catch (threadsError) {
+            console.error('Failed to post to Threads:', threadsError);
+            // Don't fail the whole process if Threads fails, but log it.
+        }
+
+        // 6. Remove from errors.json (Queue) and add to history.json
         // Re-read errors.json to avoid race conditions with replenish script
         const currentErrors: ErrorItem[] = JSON.parse(fs.readFileSync(errorsPath, 'utf-8'));
         const indexToRemove = currentErrors.findIndex(e => e.targetWord === item.targetWord);

@@ -3,3 +3,4 @@
 out
 public/audio
 .env
+data/threads-token.json

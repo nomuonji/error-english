@@ -24,7 +24,29 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg fonts-noto-cjk
           npm ci
-          
+
+      - name: Restore Threads Token Cache
+        uses: actions/cache@v3
+        with:
+          path: data/threads-token.json
+          key: threads-token-${{ github.run_id }}
+          restore-keys: |
+            threads-token-
+
+      - name: Initialize Threads Token (if missing)
+        if: hashFiles('data/threads-token.json') == ''
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          if [ -n "$THREADS_ACCESS_TOKEN" ]; then
+            echo "{\"access_token\": \"$THREADS_ACCESS_TOKEN\"}" > data/threads-token.json
+          else
+            echo "Warning: THREADS_ACCESS_TOKEN secret is not set."
+          fi
+
+      - name: Refresh Threads Token
+        run: npx tsx scripts/refresh-threads-token.ts
+
       - name: Generate and Upload Video
         env:
           AIVIS_API_KEY: ${{ secrets.AIVIS_API_KEY }}
