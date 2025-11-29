@@ -7,5 +7,6 @@
     "Listen",
     "Syntax",
     "Undefined",
-    "Null"
+    "Null",
+    "Timeout"
 ]
