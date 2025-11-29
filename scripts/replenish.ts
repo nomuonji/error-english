@@ -3,7 +3,7 @@ import path from 'path';
 import { execSync } from 'child_process';
 
 const errorsPath = path.join(__dirname, '../data/errors.json');
-const THRESHOLD = 5;
+const THRESHOLD = 10;
 
 async function main() {
     if (!fs.existsSync(errorsPath)) {

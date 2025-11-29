@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Undefined",
-        "errorMessage": "ReferenceError: x is not defined",
-        "messageTranslation": "参照エラー：xは定義されていません",
-        "generalMeaning": "【形】未定義の、はっきりしない",
-        "generalExample": "His future is undefined. (彼の将来は未定だ)",
-        "techMeaning": "存在しないものを呼んでいる（誰それ？）",
-        "explanation": "まだ作ってない変数や関数を使おうとしてるよ。名前を間違えてない？",
-        "usageContext": "知らない人の話をされた時",
-        "usageExample": "Do you know Tanaka-san?",
-        "usageExampleTranslation": "田中さんって知ってる？",
-        "usagePunchline": "Me: ReferenceError. Undefined.",
-        "usagePunchlineTranslation": "私：参照エラー。誰それ（未定義）。"
-    },
-    {
         "targetWord": "Null",
         "errorMessage": "TypeError: Cannot read property of null",
         "messageTranslation": "型エラー：nullのプロパティを読み取れません",
