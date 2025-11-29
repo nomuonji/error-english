@@ -2,7 +2,7 @@ name: Daily Video Publish
 
 on:
   schedule:
-    - cron: '0 0 * * *' # 00:00 UTC = 09:00 JST
+    - cron: '0 23,4,11 * * *' # 23:00 UTC (08:00 JST), 04:00 UTC (13:00 JST), 11:00 UTC (20:00 JST)
   workflow_dispatch:
 
 jobs:
@@ -35,5 +35,5 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data/errors.json
+          git add data/errors.json data/history.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update video status" && git push)
