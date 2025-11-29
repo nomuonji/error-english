@@ -12,7 +12,7 @@ if (!apiKey) {
 }
 
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
 const errorsPath = path.join(__dirname, '../data/errors.json');
 const historyPath = path.join(__dirname, '../data/history.json');
@@ -24,7 +24,16 @@ async function main() {
     if (fs.existsSync(historyPath)) {
         historyWords = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
     }
-    console.log(`Existing words in history: ${historyWords.join(', ')}`);
+
+    // Read current errors for exclusion
+    let currentErrorWords: string[] = [];
+    if (fs.existsSync(errorsPath)) {
+        const currentErrors = JSON.parse(fs.readFileSync(errorsPath, 'utf-8'));
+        currentErrorWords = currentErrors.map((e: any) => e.targetWord);
+    }
+
+    const allExclusionWords = [...new Set([...historyWords, ...currentErrorWords])];
+    console.log(`Excluding ${allExclusionWords.length} words.`);
 
     // 2. Read prompt template
     let promptTemplate = fs.readFileSync(promptPath, 'utf-8');
@@ -33,7 +42,7 @@ async function main() {
     const exclusionInstruction = `
 \n\n## 除外リスト
 以下の単語は既に生成済みのため、**絶対に**生成しないでください：
-${historyWords.join(', ')}
+${allExclusionWords.join(', ')}
 
 JSON形式で出力してください。Markdownのコードブロックは不要です。
 `;
