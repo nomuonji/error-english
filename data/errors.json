@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Parse",
-        "errorMessage": "Parse Error: Unexpected end of input",
-        "messageTranslation": "パースエラー：予期しない入力の終了",
-        "generalMeaning": "【動】解析する、解剖する",
-        "generalExample": "Parse the sentence. (文を解析する)",
-        "techMeaning": "解読不能（意味が分からない）",
-        "explanation": "データを受け取ったけど、形式がぐちゃぐちゃで読めないよ！JSONのカッコが閉じてないとか。",
-        "usageContext": "相手の字が汚すぎて読めない時",
-        "usageExample": "Can you read this note?",
-        "usageExampleTranslation": "このメモ読める？",
-        "usagePunchline": "Me: Parse Error.",
-        "usagePunchlineTranslation": "私：解析不能（読めん）。"
-    },
-    {
         "targetWord": "Denied",
         "errorMessage": "Permission Denied",
         "messageTranslation": "許可が拒否されました",
