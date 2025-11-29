@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Null",
-        "errorMessage": "TypeError: Cannot read property of null",
-        "messageTranslation": "型エラー：nullのプロパティを読み取れません",
-        "generalMeaning": "【名/形】無、ゼロ、無効な",
-        "generalExample": "Null and void. (無効)",
-        "techMeaning": "「無」が入っている（空っぽ）",
-        "explanation": "箱（変数）はあるけど、中身が空っぽ（null）の状態。空っぽの箱から何か取り出そうとしてない？",
-        "usageContext": "財布が空の時",
-        "usageExample": "Can I buy this? (Wallet is null)",
-        "usageExampleTranslation": "これ買える？（財布は空）",
-        "usagePunchline": "Shop: Payment Required.",
-        "usagePunchlineTranslation": "店：支払いが必要です（金払え）。"
-    },
-    {
         "targetWord": "Timeout",
         "errorMessage": "Gateway Timeout Error",
         "messageTranslation": "ゲートウェイタイムアウトエラー",
