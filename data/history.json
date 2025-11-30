@@ -10,5 +10,6 @@
     "Null",
     "Timeout",
     "Parse",
-    "Denied"
+    "Denied",
+    "Overflow"
 ]

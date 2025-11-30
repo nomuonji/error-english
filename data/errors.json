@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Overflow",
-        "errorMessage": "Stack Overflow Error",
-        "messageTranslation": "スタックオーバーフローエラー",
-        "generalMeaning": "【名/動】氾濫、溢れ出る",
-        "generalExample": "River overflowed. (川が氾濫した)",
-        "techMeaning": "キャパオーバー（もう食べられないよ）",
-        "explanation": "メモリの領域（スタック）がいっぱいになっちゃった。無限ループとかで、お皿を積み上げすぎて倒壊した状態。",
-        "usageContext": "仕事が多すぎてパンクした時",
-        "usageExample": "Can you do this task too?",
-        "usageExampleTranslation": "この仕事もやってくれる？",
-        "usagePunchline": "Me: 503 Service Unavailable.",
-        "usagePunchlineTranslation": "私：サービス利用不可（無理）。"
-    },
-    {
         "targetWord": "Invalid",
         "errorMessage": "Invalid Argument Exception",
         "messageTranslation": "無効な引数の例外",
