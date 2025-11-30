@@ -9,5 +9,6 @@
     "Undefined",
     "Null",
     "Timeout",
-    "Parse"
+    "Parse",
+    "Denied"
 ]

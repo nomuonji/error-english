@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Denied",
-        "errorMessage": "Permission Denied",
-        "messageTranslation": "許可が拒否されました",
-        "generalMeaning": "【動/形】拒否された、否定された",
-        "generalExample": "Access denied. (アクセス拒否)",
-        "techMeaning": "門前払い（お前を通す権限はない）",
-        "explanation": "ファイルを開こうとしたり、保存しようとしたけど、「お前には無理だ」って怒られた状態。権限（sudo）が必要かも？",
-        "usageContext": "高級クラブに入ろうとした時",
-        "usageExample": "Can I come in?",
-        "usageExampleTranslation": "入ってもいい？",
-        "usagePunchline": "Bouncer: 403 Forbidden.",
-        "usagePunchlineTranslation": "用心棒：立ち入り禁止（帰れ）。"
-    },
-    {
         "targetWord": "Overflow",
         "errorMessage": "Stack Overflow Error",
         "messageTranslation": "スタックオーバーフローエラー",
