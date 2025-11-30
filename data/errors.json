@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Invalid",
-        "errorMessage": "Invalid Argument Exception",
-        "messageTranslation": "無効な引数の例外",
-        "generalMeaning": "【形】無効な、根拠のない",
-        "generalExample": "Invalid password. (無効なパスワード)",
-        "techMeaning": "ルール違反（それは受け取れない）",
-        "explanation": "関数に渡したデータが、期待してたものと違うよ。「数字」が欲しいのに「文字」を渡したりしてない？",
-        "usageContext": "自販機にゲームセンターのコインを入れた時",
-        "usageExample": "Why won't it accept my coin?",
-        "usageExampleTranslation": "なんでコイン入らないの？",
-        "usagePunchline": "Machine: 400 Bad Request.",
-        "usagePunchlineTranslation": "自販機：不正なリクエスト（変なもん入れんな）。"
-    },
-    {
         "targetWord": "Internal",
         "errorMessage": "500 Internal Server Error",
         "messageTranslation": "500 内部サーバーエラー",

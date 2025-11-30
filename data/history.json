@@ -11,5 +11,6 @@
     "Timeout",
     "Parse",
     "Denied",
-    "Overflow"
+    "Overflow",
+    "Invalid"
 ]
