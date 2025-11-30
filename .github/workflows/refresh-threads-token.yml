@@ -1,0 +1,44 @@
+name: Refresh Threads Token
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # Run monthly on the 1st day at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  refresh-token:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+
+      - name: Restore Threads Token Cache
+        uses: actions/cache@v3
+        with:
+          path: data/threads-token.json
+          key: threads-token-${{ github.run_id }}
+          restore-keys: |
+            threads-token-
+
+      - name: Initialize Threads Token (if missing)
+        if: hashFiles('data/threads-token.json') == ''
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        run: |
+          mkdir -p data
+          if [ -n "$THREADS_ACCESS_TOKEN" ]; then
+            echo "{\"access_token\": \"$THREADS_ACCESS_TOKEN\"}" > data/threads-token.json
+          else
+            echo "Warning: THREADS_ACCESS_TOKEN secret is not set."
+          fi
+
+      - name: Refresh Threads Token
+        run: npx tsx scripts/refresh-threads-token.ts

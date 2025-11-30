@@ -26,7 +26,7 @@ jobs:
           npm ci
 
       - name: Restore Threads Token Cache
-        uses: actions/cache@v3
+        uses: actions/cache/restore@v3
         with:
           path: data/threads-token.json
           key: threads-token-${{ github.run_id }}
@@ -43,9 +43,6 @@ jobs:
           else
             echo "Warning: THREADS_ACCESS_TOKEN secret is not set."
           fi
-
-      - name: Refresh Threads Token
-        run: npx tsx scripts/refresh-threads-token.ts
 
       - name: Generate and Upload Video
         env:
