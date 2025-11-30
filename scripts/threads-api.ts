@@ -40,7 +40,7 @@ export async function refreshAccessToken() {
     return data.access_token;
 }
 
-export async function postThreads(text: string) {
+export async function postThreads(text: string, videoUrl?: string) {
     console.log('Posting to Threads...');
     const token = await getAccessToken();
 
@@ -52,18 +52,46 @@ export async function postThreads(text: string) {
 
     // 2. Create Container
     const createUrl = `https://graph.threads.net/v1.0/${userId}/threads`;
+    const body: any = {
+        media_type: videoUrl ? 'VIDEO' : 'TEXT',
+        text: text,
+        access_token: token
+    };
+    if (videoUrl) {
+        body.video_url = videoUrl;
+    }
+
     const createRes = await fetch(createUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            media_type: 'TEXT',
-            text: text,
-            access_token: token
-        })
+        body: JSON.stringify(body)
     });
     if (!createRes.ok) throw new Error(`Failed to create container: ${await createRes.text()}`);
     const createData = await createRes.json();
     const creationId = createData.id;
+
+    // Wait for container to be ready
+    let attempts = 0;
+    while (attempts < 20) {
+        const statusUrl = `https://graph.threads.net/v1.0/${creationId}?fields=status,error_message&access_token=${token}`;
+        const statusRes = await fetch(statusUrl);
+
+        if (statusRes.ok) {
+            const statusData = await statusRes.json();
+            console.log(`Container status: ${statusData.status}`);
+            if (statusData.status === 'FINISHED') {
+                break;
+            }
+            if (statusData.status === 'ERROR') {
+                throw new Error(`Container creation failed: ${statusData.error_message}`);
+            }
+        } else {
+            console.warn(`Waiting for container to be available... (Attempt ${attempts + 1})`);
+        }
+
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        attempts++;
+    }
 
     // 3. Publish
     const publishUrl = `https://graph.threads.net/v1.0/${userId}/threads_publish`;

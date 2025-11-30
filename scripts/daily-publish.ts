@@ -4,14 +4,46 @@ import { generateVideo, ErrorItem } from './video-generator';
 import { uploadVideo } from './upload-youtube';
 import { postThreads } from './threads-api';
 import dotenv from 'dotenv';
+import { exec } from 'child_process';
+import { promisify } from 'util';
 
 dotenv.config();
+
+const execAsync = promisify(exec);
 
 const errorsPath = path.join(__dirname, '../data/errors.json');
 const outputDir = path.join(__dirname, '../out');
 
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
+}
+
+async function uploadToTmpFiles(filePath: string): Promise<string> {
+    const fileName = path.basename(filePath);
+    const curlCommand = process.platform === 'win32' ? 'curl.exe' : 'curl';
+    // Command: curl -F "file=@<file>" https://tmpfiles.org/api/v1/upload
+    const command = `${curlCommand} -F "file=@${filePath}" https://tmpfiles.org/api/v1/upload`;
+
+    console.log(`Uploading ${fileName} to tmpfiles.org using ${curlCommand}...`);
+    const { stdout, stderr } = await execAsync(command);
+
+    if (!stdout || stdout.trim().length === 0) {
+        throw new Error(`Upload failed or returned empty response. Stderr: ${stderr}`);
+    }
+
+    try {
+        const json = JSON.parse(stdout);
+        if (json.status !== 'success') {
+            throw new Error(`tmpfiles.org upload failed: ${JSON.stringify(json)}`);
+        }
+
+        const originalUrl = json.data.url;
+        // Convert to direct download URL: https://tmpfiles.org/dl/[id]/[filename]
+        const directUrl = originalUrl.replace('//tmpfiles.org/', '//tmpfiles.org/dl/');
+        return directUrl;
+    } catch (e) {
+        throw new Error(`Failed to parse tmpfiles.org response: ${stdout}`);
+    }
 }
 
 async function main() {
@@ -67,8 +99,12 @@ ${item.explanation}
 
         // 5. Post to Threads
         try {
-            const threadsText = `${title}\n\n${youtubeUrl}\n\n#プログラミング #英語`;
-            await postThreads(threadsText);
+            console.log('Uploading video to tmpfiles.org for Threads...');
+            const videoUrl = await uploadToTmpFiles(videoPath);
+            console.log(`Video uploaded to: ${videoUrl}`);
+
+            const threadsText = `${title}\n\n#プログラミング #英語`;
+            await postThreads(threadsText, videoUrl);
         } catch (threadsError) {
             console.error('Failed to post to Threads:', threadsError);
             // Don't fail the whole process if Threads fails, but log it.
