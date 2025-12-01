@@ -206,7 +206,7 @@
         "usageContext": "通訳が変な訳をした時",
         "usageExample": "He said you are stupid.",
         "usageExampleTranslation": "彼はあなたが馬鹿だと言っています。",
-        "usagePunchline": "Diplomat: 502 Bad Gateway.",
+        "usagePunchline": "Diplomat: 502 Bad Gateway (Proxy Error).",
         "usagePunchlineTranslation": "外交官：不正な仲介（戦争になるわ）。"
     },
     {
