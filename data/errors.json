@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Conflict",
-        "errorMessage": "409 Conflict",
-        "messageTranslation": "409 競合",
-        "generalMeaning": "【名/動】衝突、対立する",
-        "generalExample": "Conflict of interest. (利益相反)",
-        "techMeaning": "かち合った（席の取り合い）",
-        "explanation": "同時に同じファイルを編集しようとしたり、既に使われてるIDを使おうとしたりして、ぶつかっちゃった状態。",
-        "usageContext": "ダブルブッキングした時",
-        "usageExample": "I have two dates tonight.",
-        "usageExampleTranslation": "今夜デートが2つあるんだ。",
-        "usagePunchline": "Me: 409 Conflict.",
-        "usagePunchlineTranslation": "私：競合（修羅場）。"
-    },
-    {
         "targetWord": "Unauthorized",
         "errorMessage": "401 Unauthorized",
         "messageTranslation": "401 認証が必要",
