@@ -12,5 +12,6 @@
     "Parse",
     "Denied",
     "Overflow",
-    "Invalid"
+    "Invalid",
+    "Internal"
 ]

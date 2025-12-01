@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Internal",
-        "errorMessage": "500 Internal Server Error",
-        "messageTranslation": "500 内部サーバーエラー",
-        "generalMeaning": "【形】内部の、国内の",
-        "generalExample": "Internal medicine. (内科)",
-        "techMeaning": "身内の不祥事（こっちのミスです…）",
-        "explanation": "君のリクエストは合ってるけど、サーバー側で何かバグって処理できなかった。ごめんね、直すから待ってて。",
-        "usageContext": "料理人が調理中に失敗した時",
-        "usageExample": "Where is my order?",
-        "usageExampleTranslation": "注文まだ？",
-        "usagePunchline": "Chef: 500 Internal Error.",
-        "usagePunchlineTranslation": "シェフ：内部エラー（焦がしました）。"
-    },
-    {
         "targetWord": "Uncaught",
         "errorMessage": "Uncaught ReferenceError",
         "messageTranslation": "捕捉されない参照エラー",
