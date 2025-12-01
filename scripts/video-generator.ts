@@ -136,13 +136,26 @@ export async function generateVideo(error: ErrorItem, outputDir: string) {
     fs.writeFileSync(propsFile, JSON.stringify(props));
 
     const outputPath = path.join(outputDir, `video-${error.targetWord}.mp4`);
+    const thumbnailPath = path.join(outputDir, `thumbnail-${error.targetWord}.png`);
+
+    // Calculate thumbnail frame: panic scene start + error frame (45) + audio + buffer (10) + settle time (20)
+    // This targets the "What does this mean??" text
+    const thumbnailFrame = 45 + panicAudio + 30;
 
     console.log(`Rendering video for word ${error.targetWord} (Duration: ${totalDuration} frames)...`);
     try {
+        // Generate Video
         execSync(`npx remotion render src/index.ts ErrorEnglishVideo "${outputPath}" --props="${propsFile}" --duration-in-frames=${totalDuration} --timeout=240000 --concurrency=1`, {
             stdio: 'inherit',
         });
-        return outputPath;
+
+        // Generate Thumbnail
+        console.log(`Generating thumbnail at frame ${thumbnailFrame}...`);
+        execSync(`npx remotion still src/index.ts ErrorEnglishVideo "${thumbnailPath}" --props="${propsFile}" --frame=${thumbnailFrame}`, {
+            stdio: 'inherit',
+        });
+
+        return { videoPath: outputPath, thumbnailPath };
     } catch (e) {
         console.error(`Failed to render video for ${error.targetWord}`);
         throw e;

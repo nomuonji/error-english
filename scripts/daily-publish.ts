@@ -3,6 +3,7 @@ import path from 'path';
 import { generateVideo, ErrorItem } from './video-generator';
 import { uploadVideo } from './upload-youtube';
 import { postThreads } from './threads-api';
+import { postInstagramReels } from './instagram-api';
 import dotenv from 'dotenv';
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -67,7 +68,7 @@ async function main() {
 
     try {
         // 3. Generate Video
-        const videoPath = await generateVideo(item, outputDir);
+        const { videoPath, thumbnailPath } = await generateVideo(item, outputDir);
 
         // 4. Upload to YouTube
         let title = `【エンジニア英語】${item.targetWord}: ${item.errorMessage}`;
@@ -97,17 +98,40 @@ ${item.explanation}
         const uploadResult = await uploadVideo(videoPath, title, description, tags);
         const youtubeUrl = `https://youtube.com/shorts/${uploadResult.id}`;
 
-        // 5. Post to Threads
+        // 5. Upload to tmpfiles.org (shared for Threads and Instagram)
+        let videoUrl: string | undefined;
+        let thumbnailUrl: string | undefined;
+
         try {
-            console.log('Uploading video to tmpfiles.org for Threads...');
-            const videoUrl = await uploadToTmpFiles(videoPath);
+            console.log('Uploading video to tmpfiles.org...');
+            videoUrl = await uploadToTmpFiles(videoPath);
             console.log(`Video uploaded to: ${videoUrl}`);
 
-            const threadsText = `${title}\n\n#プログラミング #英語`;
-            await postThreads(threadsText, videoUrl);
-        } catch (threadsError) {
-            console.error('Failed to post to Threads:', threadsError);
-            // Don't fail the whole process if Threads fails, but log it.
+            if (thumbnailPath && fs.existsSync(thumbnailPath)) {
+                console.log('Uploading thumbnail to tmpfiles.org...');
+                thumbnailUrl = await uploadToTmpFiles(thumbnailPath);
+                console.log(`Thumbnail uploaded to: ${thumbnailUrl}`);
+            }
+        } catch (uploadError) {
+            console.error('Failed to upload to tmpfiles.org:', uploadError);
+        }
+
+        if (videoUrl) {
+            // 6. Post to Threads
+            try {
+                const threadsText = `${title}\n\n#プログラミング #英語`;
+                await postThreads(threadsText, videoUrl);
+            } catch (threadsError) {
+                console.error('Failed to post to Threads:', threadsError);
+            }
+
+            // 7. Post to Instagram Reels
+            try {
+                const instagramCaption = `${title}\n\n#プログラミング #英語 #エンジニア #学習`;
+                await postInstagramReels(instagramCaption, videoUrl, thumbnailUrl);
+            } catch (instagramError) {
+                console.error('Failed to post to Instagram Reels:', instagramError);
+            }
         }
 
         // 6. Remove from errors.json (Queue) and add to history.json
@@ -137,6 +161,9 @@ ${item.explanation}
         // Cleanup video file
         if (fs.existsSync(videoPath)) {
             fs.unlinkSync(videoPath);
+        }
+        if (thumbnailPath && fs.existsSync(thumbnailPath)) {
+            fs.unlinkSync(thumbnailPath);
         }
 
     } catch (error) {
