@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Uncaught",
-        "errorMessage": "Uncaught ReferenceError",
-        "messageTranslation": "捕捉されない参照エラー",
-        "generalMeaning": "【形】捕まらない、見つからない",
-        "generalExample": "Uncaught ball. (捕球されなかったボール)",
-        "techMeaning": "野放しのトラブル（誰も助けてくれない）",
-        "explanation": "エラーが発生したのに、誰もそれをキャッチ（処理）してないから、プログラムが止まっちゃった。try-catchで捕まえてあげて！",
-        "usageContext": "誰も電話に出ない時",
-        "usageExample": "I'm calling support...",
-        "usageExampleTranslation": "サポートに電話してるんだけど…",
-        "usagePunchline": "Phone: Uncaught Exception.",
-        "usagePunchlineTranslation": "電話：応答なし（誰も出ません）。"
-    },
-    {
         "targetWord": "Conflict",
         "errorMessage": "409 Conflict",
         "messageTranslation": "409 競合",
