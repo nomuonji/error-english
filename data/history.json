@@ -16,5 +16,6 @@
     "Internal",
     "Uncaught",
     "Conflict",
-    "Unauthorized"
+    "Unauthorized",
+    "Method"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Method",
-        "errorMessage": "Method Not Allowed",
-        "messageTranslation": "許可されていないメソッド",
-        "generalMeaning": "【名】方法、方式",
-        "generalExample": "Scientific method. (科学的方法)",
-        "techMeaning": "やり方が違う（その技は禁止）",
-        "explanation": "GETで送るべきところをPOSTで送ったり、許可されてないやり方でアクセスしようとしてるよ。",
-        "usageContext": "手でサッカーボールを触った時",
-        "usageExample": "Handball!",
-        "usageExampleTranslation": "ハンド！",
-        "usagePunchline": "Ref: 405 Method Not Allowed.",
-        "usagePunchlineTranslation": "審判：許可されていないメソッド（足使え）。"
-    },
-    {
         "targetWord": "Payload",
         "errorMessage": "Payload Too Large",
         "messageTranslation": "ペイロードが大きすぎます",
