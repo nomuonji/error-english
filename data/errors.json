@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Payload",
-        "errorMessage": "Payload Too Large",
-        "messageTranslation": "ペイロードが大きすぎます",
-        "generalMeaning": "【名】積載量、荷物",
-        "generalExample": "Rocket payload. (ロケットの積載物)",
-        "techMeaning": "荷物が重すぎる（持てない）",
-        "explanation": "送ろうとしてるデータが大きすぎて、サーバーが受け取れないよ。ファイルを小さくするか、分割して送って。",
-        "usageContext": "旅行の荷物が多すぎる時",
-        "usageExample": "My bag is 30kg.",
-        "usageExampleTranslation": "カバンが30kgある。",
-        "usagePunchline": "Airport: 413 Payload Too Large.",
-        "usagePunchlineTranslation": "空港：積載量オーバー（追加料金な）。"
-    },
-    {
         "targetWord": "Unsupported",
         "errorMessage": "Unsupported Media Type",
         "messageTranslation": "サポートされていないメディアタイプ",

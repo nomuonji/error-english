@@ -17,5 +17,6 @@
     "Uncaught",
     "Conflict",
     "Unauthorized",
-    "Method"
+    "Method",
+    "Payload"
 ]
