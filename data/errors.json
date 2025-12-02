@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unauthorized",
-        "errorMessage": "401 Unauthorized",
-        "messageTranslation": "401 認証が必要",
-        "generalMeaning": "【形】権限のない、許可されていない",
-        "generalExample": "Unauthorized entry. (無断立ち入り)",
-        "techMeaning": "身分証見せて（誰かわからん）",
-        "explanation": "ログインしてないか、パスワードが間違ってるよ。まずは自分が誰なのか証明してね。",
-        "usageContext": "会員制バーに入ろうとした時",
-        "usageExample": "Let me in!",
-        "usageExampleTranslation": "入れろよ！",
-        "usagePunchline": "Staff: 401 Unauthorized.",
-        "usagePunchlineTranslation": "店員：認証失敗（会員証出して）。"
-    },
-    {
         "targetWord": "Method",
         "errorMessage": "Method Not Allowed",
         "messageTranslation": "許可されていないメソッド",

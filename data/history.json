@@ -15,5 +15,6 @@
     "Invalid",
     "Internal",
     "Uncaught",
-    "Conflict"
+    "Conflict",
+    "Unauthorized"
 ]
