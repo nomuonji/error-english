@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Range",
-        "errorMessage": "Range Error: Invalid array length",
-        "messageTranslation": "範囲エラー：無効な配列の長さ",
-        "generalMeaning": "【名】範囲、領域",
-        "generalExample": "Price range. (価格帯)",
-        "techMeaning": "ありえない数値（枠からはみ出てる）",
-        "explanation": "配列の長さにマイナスを指定したり、許容範囲外の数字を使おうとしてるよ。",
-        "usageContext": "テストで120点を取ったと言われた時",
-        "usageExample": "I got 120 points!",
-        "usageExampleTranslation": "120点取った！",
-        "usagePunchline": "Teacher: Range Error.",
-        "usagePunchlineTranslation": "先生：範囲エラー（満点は100点です）。"
-    },
-    {
         "targetWord": "Circular",
         "errorMessage": "Circular Dependency Detected",
         "messageTranslation": "循環参照が検出されました",

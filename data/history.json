@@ -19,5 +19,6 @@
     "Unauthorized",
     "Method",
     "Payload",
-    "Unsupported"
+    "Unsupported",
+    "Range"
 ]
