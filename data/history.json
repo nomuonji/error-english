@@ -20,5 +20,6 @@
     "Method",
     "Payload",
     "Unsupported",
-    "Range"
+    "Range",
+    "Circular"
 ]

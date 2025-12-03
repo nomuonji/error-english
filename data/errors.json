@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Circular",
-        "errorMessage": "Circular Dependency Detected",
-        "messageTranslation": "循環参照が検出されました",
-        "generalMeaning": "【形】円形の、循環する",
-        "generalExample": "Circular reasoning. (循環論法)",
-        "techMeaning": "堂々巡り（終わらない追いかけっこ）",
-        "explanation": "AがBを必要として、BがAを必要としてる状態。お互いに待ち続けて、いつまでも処理が終わらないよ。",
-        "usageContext": "「卵が先か鶏が先か」の議論",
-        "usageExample": "Which came first?",
-        "usageExampleTranslation": "どっちが先？",
-        "usagePunchline": "God: Circular Dependency.",
-        "usagePunchlineTranslation": "神：循環参照（無限ループ）。"
-    },
-    {
         "targetWord": "Deprecation",
         "errorMessage": "Deprecation Warning",
         "messageTranslation": "非推奨の警告",
