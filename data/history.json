@@ -18,5 +18,6 @@
     "Conflict",
     "Unauthorized",
     "Method",
-    "Payload"
+    "Payload",
+    "Unsupported"
 ]

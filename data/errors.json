@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unsupported",
-        "errorMessage": "Unsupported Media Type",
-        "messageTranslation": "サポートされていないメディアタイプ",
-        "generalMeaning": "【形】支持されない、対応していない",
-        "generalExample": "Unsupported browser. (非対応ブラウザ)",
-        "techMeaning": "その形式は読めない（何語？）",
-        "explanation": "サーバーが理解できない形式のファイルを送ろうとしてるよ。PDFしか受け付けないのにWord送ったりしてない？",
-        "usageContext": "カセットテープを渡された時",
-        "usageExample": "Listen to this tape.",
-        "usageExampleTranslation": "このテープ聴いて。",
-        "usagePunchline": "Me: 415 Unsupported Media Type.",
-        "usagePunchlineTranslation": "私：非対応メディア（再生機ないわ）。"
-    },
-    {
         "targetWord": "Range",
         "errorMessage": "Range Error: Invalid array length",
         "messageTranslation": "範囲エラー：無効な配列の長さ",
