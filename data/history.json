@@ -21,5 +21,6 @@
     "Payload",
     "Unsupported",
     "Range",
-    "Circular"
+    "Circular",
+    "Deprecation"
 ]

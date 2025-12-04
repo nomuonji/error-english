@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Deprecation",
-        "errorMessage": "Deprecation Warning",
-        "messageTranslation": "非推奨の警告",
-        "generalMeaning": "【名】非難、反対、非推奨",
-        "generalExample": "Self-deprecation. (自虐)",
-        "techMeaning": "もう古いから使わないで（賞味期限切れ）",
-        "explanation": "その機能は将来なくなる予定だよ。今のうちに新しい書き方に直しておいてね。",
-        "usageContext": "ガラケーを使っている人を見た時",
-        "usageExample": "Look at my flip phone!",
-        "usageExampleTranslation": "俺のガラケー見て！",
-        "usagePunchline": "Tech: Deprecation Warning.",
-        "usagePunchlineTranslation": "技術者：非推奨警告（そろそろスマホにしな）。"
-    },
-    {
         "targetWord": "Unreachable",
         "errorMessage": "Unreachable Code Detected",
         "messageTranslation": "到達不能コードが検出されました",
