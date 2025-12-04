@@ -23,5 +23,6 @@
     "Range",
     "Circular",
     "Deprecation",
-    "Unreachable"
+    "Unreachable",
+    "Assignment"
 ]

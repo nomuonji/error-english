@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Assignment",
-        "errorMessage": "Assignment to constant variable",
-        "messageTranslation": "定数変数への代入",
-        "generalMeaning": "【名】割り当て、課題、任命",
-        "generalExample": "Homework assignment. (宿題)",
-        "techMeaning": "書き換え禁止（それは変えちゃダメ）",
-        "explanation": "constで宣言した変数（定数）の中身を変えようとしてるよ。変わる可能性があるならletを使おう。",
-        "usageContext": "聖書の内容を書き換えようとした時",
-        "usageExample": "I'll edit the Bible.",
-        "usageExampleTranslation": "聖書を編集するわ。",
-        "usagePunchline": "Priest: Assignment to constant.",
-        "usagePunchlineTranslation": "神父：定数への代入（神の言葉は絶対）。"
-    },
-    {
         "targetWord": "Module",
         "errorMessage": "Module Not Found Error",
         "messageTranslation": "モジュールが見つかりません",
