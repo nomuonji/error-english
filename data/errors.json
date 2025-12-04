@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unreachable",
-        "errorMessage": "Unreachable Code Detected",
-        "messageTranslation": "到達不能コードが検出されました",
-        "generalMeaning": "【形】到達できない、連絡が取れない",
-        "generalExample": "Unreachable goal. (達成不可能な目標)",
-        "techMeaning": "そこには絶対行けない（無駄な道）",
-        "explanation": "returnの後とか、絶対に実行されない場所にコードが書いてあるよ。意味ないから消しちゃおう。",
-        "usageContext": "閉店後の店に行こうとする時",
-        "usageExample": "Let's go to that shop at 2 AM.",
-        "usageExampleTranslation": "深夜2時にあの店行こうぜ。",
-        "usagePunchline": "Friend: Unreachable Code.",
-        "usagePunchlineTranslation": "友：到達不能（閉まってるわ）。"
-    },
-    {
         "targetWord": "Assignment",
         "errorMessage": "Assignment to constant variable",
         "messageTranslation": "定数変数への代入",

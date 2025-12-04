@@ -22,5 +22,6 @@
     "Unsupported",
     "Range",
     "Circular",
-    "Deprecation"
+    "Deprecation",
+    "Unreachable"
 ]
