@@ -26,5 +26,6 @@
     "Unreachable",
     "Assignment",
     "Module",
-    "Promise"
+    "Promise",
+    "Key"
 ]

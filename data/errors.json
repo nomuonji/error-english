@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Key",
-        "errorMessage": "Duplicate Key Error",
-        "messageTranslation": "重複キーエラー",
-        "generalMeaning": "【名】鍵、手がかり、主要な",
-        "generalExample": "Key to success. (成功の鍵)",
-        "techMeaning": "名札が被ってる（同姓同名）",
-        "explanation": "データベースやリストの中で、ユニーク（唯一）であるべきIDやキーが重複してるよ。",
-        "usageContext": "クラスに同じ名前の子が2人いる時",
-        "usageExample": "Which Tanaka?",
-        "usageExampleTranslation": "どっちの田中？",
-        "usagePunchline": "Teacher: Duplicate Key Error.",
-        "usagePunchlineTranslation": "先生：重複キーエラー（出席番号で呼ぶわ）。"
-    },
-    {
         "targetWord": "Header",
         "errorMessage": "Headers already sent",
         "messageTranslation": "ヘッダーは既に送信されています",
