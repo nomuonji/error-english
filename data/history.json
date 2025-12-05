@@ -25,5 +25,6 @@
     "Deprecation",
     "Unreachable",
     "Assignment",
-    "Module"
+    "Module",
+    "Promise"
 ]

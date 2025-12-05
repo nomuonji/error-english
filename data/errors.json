@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Promise",
-        "errorMessage": "Unhandled Promise Rejection",
-        "messageTranslation": "処理されていないPromiseの拒否",
-        "generalMeaning": "【名/動】約束、見込み",
-        "generalExample": "I keep my promise. (約束は守る)",
-        "techMeaning": "約束破られたのに無視（バックレ）",
-        "explanation": "非同期処理（Promise）が失敗したのに、エラー処理（catch）をしてないよ。失敗した時のことも考えてあげて。",
-        "usageContext": "結婚の約束を破られた時",
-        "usageExample": "He didn't show up at the altar.",
-        "usageExampleTranslation": "彼、式場に来なかったの。",
-        "usagePunchline": "Priest: Unhandled Promise Rejection.",
-        "usagePunchlineTranslation": "神父：約束不履行（訴訟もんだな）。"
-    },
-    {
         "targetWord": "Key",
         "errorMessage": "Duplicate Key Error",
         "messageTranslation": "重複キーエラー",
