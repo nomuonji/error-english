@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Module",
-        "errorMessage": "Module Not Found Error",
-        "messageTranslation": "モジュールが見つかりません",
-        "generalMeaning": "【名】構成単位、モジュール",
-        "generalExample": "Space station module. (宇宙ステーションのモジュール)",
-        "techMeaning": "部品が足りない（家に忘れてきた）",
-        "explanation": "importしようとしたファイルやライブラリが見つからないよ。パスが間違ってるか、インストールし忘れてない？",
-        "usageContext": "カレーを作るのにルーがない時",
-        "usageExample": "Let's make curry! (No roux)",
-        "usageExampleTranslation": "カレー作ろう！（ルーがない）",
-        "usagePunchline": "Cook: Module Not Found.",
-        "usagePunchlineTranslation": "料理人：モジュール未検出（材料足りん）。"
-    },
-    {
         "targetWord": "Promise",
         "errorMessage": "Unhandled Promise Rejection",
         "messageTranslation": "処理されていないPromiseの拒否",

@@ -24,5 +24,6 @@
     "Circular",
     "Deprecation",
     "Unreachable",
-    "Assignment"
+    "Assignment",
+    "Module"
 ]
