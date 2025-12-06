@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Header",
-        "errorMessage": "Headers already sent",
-        "messageTranslation": "ヘッダーは既に送信されています",
-        "generalMeaning": "【名】頭、先頭、ヘッダー",
-        "generalExample": "Letter header. (手紙のヘッダー)",
-        "techMeaning": "手紙出した後に宛名書き直すな（もう遅い）",
-        "explanation": "サーバーがレスポンス（返事）を送り始めた後に、ヘッダー情報を変更しようとしてるよ。順序を守って。",
-        "usageContext": "ポストに入れた手紙を取り出そうとする時",
-        "usageExample": "Wait! I forgot the stamp!",
-        "usageExampleTranslation": "待って！切手忘れた！",
-        "usagePunchline": "Postman: Headers already sent.",
-        "usagePunchlineTranslation": "郵便屋：送信済み（もう回収できません）。"
-    },
-    {
         "targetWord": "Proxy",
         "errorMessage": "502 Bad Gateway (Proxy Error)",
         "messageTranslation": "502 不正なゲートウェイ",
