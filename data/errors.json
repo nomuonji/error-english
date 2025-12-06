@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Proxy",
-        "errorMessage": "502 Bad Gateway (Proxy Error)",
-        "messageTranslation": "502 不正なゲートウェイ",
-        "generalMeaning": "【名】代理、代理人",
-        "generalExample": "Proxy vote. (代理投票)",
-        "techMeaning": "仲介役がポンコツ（伝言ゲーム失敗）",
-        "explanation": "プロキシサーバー（仲介役）が、奥のサーバーから変な返事を受け取ったよ。仲介役か奥のサーバー、どっちかがおかしい。",
-        "usageContext": "通訳が変な訳をした時",
-        "usageExample": "He said you are stupid.",
-        "usageExampleTranslation": "彼はあなたが馬鹿だと言っています。",
-        "usagePunchline": "Diplomat: 502 Bad Gateway (Proxy Error).",
-        "usagePunchlineTranslation": "外交官：不正な仲介（戦争になるわ）。"
-    },
-    {
         "targetWord": "Quota",
         "errorMessage": "Quota Exceeded Error",
         "messageTranslation": "割り当て超過エラー",

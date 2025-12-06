@@ -28,5 +28,6 @@
     "Module",
     "Promise",
     "Key",
-    "Header"
+    "Header",
+    "Proxy"
 ]
