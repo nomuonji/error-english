@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Quota",
-        "errorMessage": "Quota Exceeded Error",
-        "messageTranslation": "割り当て超過エラー",
-        "generalMeaning": "【名】割り当て、ノルマ、定員",
-        "generalExample": "Sales quota. (販売ノルマ)",
-        "techMeaning": "使いすぎ（今月のギガ死んだ）",
-        "explanation": "APIの使用回数やディスク容量など、決められた制限（クォータ）を超えて使おうとしてるよ。",
-        "usageContext": "食べ放題の時間を過ぎて食べようとした時",
-        "usageExample": "One more plate please!",
-        "usageExampleTranslation": "もう一皿！",
-        "usagePunchline": "Waiter: Quota Exceeded.",
-        "usagePunchlineTranslation": "店員：割り当て超過（時間切れです）。"
-    },
-    {
         "targetWord": "Socket",
         "errorMessage": "Socket Hang Up",
         "messageTranslation": "ソケット切断",

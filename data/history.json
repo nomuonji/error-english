@@ -29,5 +29,6 @@
     "Promise",
     "Key",
     "Header",
-    "Proxy"
+    "Proxy",
+    "Quota"
 ]
