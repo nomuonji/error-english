@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Token",
-        "errorMessage": "Invalid Token",
-        "messageTranslation": "無効なトークン",
-        "generalMeaning": "【名】しるし、代用貨幣、記念品",
-        "generalExample": "Token of appreciation. (感謝の印)",
-        "techMeaning": "偽造チケット（それじゃ入れない）",
-        "explanation": "認証に使うトークン（合言葉のようなもの）が間違ってるか、期限切れだよ。もう一度ログインし直して。",
-        "usageContext": "偽札を使おうとした時",
-        "usageExample": "This is a 10000 yen bill.",
-        "usageExampleTranslation": "これ一万円札です。",
-        "usagePunchline": "Clerk: Invalid Token.",
-        "usagePunchlineTranslation": "店員：無効なトークン（子供銀行券ですね）。"
-    },
-    {
         "targetWord": "Redirect",
         "errorMessage": "Too Many Redirects",
         "messageTranslation": "リダイレクトが多すぎます",

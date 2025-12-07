@@ -31,5 +31,6 @@
     "Header",
     "Proxy",
     "Quota",
-    "Socket"
+    "Socket",
+    "Token"
 ]
