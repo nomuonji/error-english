@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Redirect",
-        "errorMessage": "Too Many Redirects",
-        "messageTranslation": "リダイレクトが多すぎます",
-        "generalMeaning": "【動】向きを変える、転送する",
-        "generalExample": "Redirect mail. (郵便を転送する)",
-        "techMeaning": "たらい回し（あっち行けこっち行け）",
-        "explanation": "Aに行ったらBに行けと言われ、Bに行ったらAに行けと言われ…無限に転送され続けてるよ。",
-        "usageContext": "役所で窓口をたらい回しにされた時",
-        "usageExample": "Go to window 5. Go to window 1.",
-        "usageExampleTranslation": "5番窓口へ。1番窓口へ。",
-        "usagePunchline": "Me: Too Many Redirects.",
-        "usagePunchlineTranslation": "私：リダイレクト過多（いい加減にしろ）。"
-    },
-    {
         "targetWord": "Deadlock",
         "errorMessage": "Deadlock Detected",
         "messageTranslation": "デッドロックが検出されました",

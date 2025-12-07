@@ -32,5 +32,6 @@
     "Proxy",
     "Quota",
     "Socket",
-    "Token"
+    "Token",
+    "Redirect"
 ]
