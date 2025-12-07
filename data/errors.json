@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Socket",
-        "errorMessage": "Socket Hang Up",
-        "messageTranslation": "ソケット切断",
-        "generalMeaning": "【名】コンセントの穴、受け口",
-        "generalExample": "Eye socket. (眼窩)",
-        "techMeaning": "電話ガチャ切り（突然切れた）",
-        "explanation": "通信のパイプ（ソケット）が突然切断されたよ。相手が急に通信を切ったか、ネットワークの問題かも。",
-        "usageContext": "彼女に電話をガチャ切りされた時",
-        "usageExample": "Hello? Hello?",
-        "usageExampleTranslation": "もしもし？もしもし？",
-        "usagePunchline": "Me: Socket Hang Up.",
-        "usagePunchlineTranslation": "私：ソケット切断（フラれた…）。"
-    },
-    {
         "targetWord": "Token",
         "errorMessage": "Invalid Token",
         "messageTranslation": "無効なトークン",
