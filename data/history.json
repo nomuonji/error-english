@@ -34,5 +34,6 @@
     "Socket",
     "Token",
     "Redirect",
-    "Deadlock"
+    "Deadlock",
+    "Illegal"
 ]

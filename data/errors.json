@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Illegal",
-        "errorMessage": "Illegal Argument Exception",
-        "messageTranslation": "不正な引数の例外",
-        "generalMeaning": "【形】違法の、不法の",
-        "generalExample": "Illegal parking. (違法駐車)",
-        "techMeaning": "禁じ手（ルール違反）",
-        "explanation": "メソッドに渡した値が、ルールに反してるよ。正の数じゃなきゃいけないのにマイナスを渡したとか。",
-        "usageContext": "サッカーで手を使った時",
-        "usageExample": "I caught the ball!",
-        "usageExampleTranslation": "ボールキャッチしたぞ！",
-        "usagePunchline": "Ref: Illegal Argument.",
-        "usagePunchlineTranslation": "審判：不正な引数（レッドカード）。"
-    },
-    {
         "targetWord": "Constraint",
         "errorMessage": "Constraint Violation Exception",
         "messageTranslation": "制約違反の例外",
