@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Deadlock",
-        "errorMessage": "Deadlock Detected",
-        "messageTranslation": "デッドロックが検出されました",
-        "generalMeaning": "【名】行き詰まり、膠着状態",
-        "generalExample": "Political deadlock. (政治的膠着)",
-        "techMeaning": "お見合い事故（譲り合いすぎて動けない）",
-        "explanation": "複数の処理がお互いのリソースが空くのを待っていて、誰も動けなくなってしまった状態。",
-        "usageContext": "狭い道ですれ違えない時",
-        "usageExample": "You go first. No, you go.",
-        "usageExampleTranslation": "お先にどうぞ。いや、あなたが。",
-        "usagePunchline": "Drivers: Deadlock.",
-        "usagePunchlineTranslation": "運転手たち：デッドロック（一生動けん）。"
-    },
-    {
         "targetWord": "Illegal",
         "errorMessage": "Illegal Argument Exception",
         "messageTranslation": "不正な引数の例外",

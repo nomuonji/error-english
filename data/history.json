@@ -33,5 +33,6 @@
     "Quota",
     "Socket",
     "Token",
-    "Redirect"
+    "Redirect",
+    "Deadlock"
 ]
