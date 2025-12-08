@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Constraint",
-        "errorMessage": "Constraint Violation Exception",
-        "messageTranslation": "制約違反の例外",
-        "generalMeaning": "【名】制約、束縛、強制",
-        "generalExample": "Budget constraints. (予算の制約)",
-        "techMeaning": "掟破り（約束が違う）",
-        "explanation": "データベースの制約（ユニーク制約や外部キー制約など）に違反するデータを保存しようとしたよ。",
-        "usageContext": "ダイエット中にケーキを食べた時",
-        "usageExample": "Just one piece...",
-        "usageExampleTranslation": "一個だけ…",
-        "usagePunchline": "Scale: Constraint Violation.",
-        "usagePunchlineTranslation": "体重計：制約違反（痩せるって言ったよね？）。"
-    },
-    {
         "targetWord": "Manifest",
         "errorMessage": "Manifest file missing",
         "messageTranslation": "マニフェストファイルが見つかりません",

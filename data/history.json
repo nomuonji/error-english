@@ -35,5 +35,6 @@
     "Token",
     "Redirect",
     "Deadlock",
-    "Illegal"
+    "Illegal",
+    "Constraint"
 ]
