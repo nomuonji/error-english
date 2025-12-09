@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Protocol",
-        "errorMessage": "Protocol Error",
-        "messageTranslation": "プロトコルエラー",
-        "generalMeaning": "【名】議定書、手順、儀礼",
-        "generalExample": "Kyoto Protocol. (京都議定書)",
-        "techMeaning": "お作法がなってない（空気が読めない）",
-        "explanation": "通信の手順（プロトコル）を守ってないよ。HTTPのルールに従って話しかけてね。",
-        "usageContext": "王様にタメ口をきいた時",
-        "usageExample": "Yo King! What's up?",
-        "usageExampleTranslation": "よぉ王様！元気？",
-        "usagePunchline": "Guard: Protocol Error.",
-        "usagePunchlineTranslation": "衛兵：儀礼違反（処刑）。"
-    },
-    {
         "targetWord": "Assertion",
         "errorMessage": "Assertion Failed",
         "messageTranslation": "アサーション失敗",
