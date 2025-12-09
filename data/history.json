@@ -38,5 +38,6 @@
     "Illegal",
     "Constraint",
     "Manifest",
-    "Protocol"
+    "Protocol",
+    "Assertion"
 ]

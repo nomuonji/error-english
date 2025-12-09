@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Assertion",
-        "errorMessage": "Assertion Failed",
-        "messageTranslation": "アサーション失敗",
-        "generalMeaning": "【名】断言、主張",
-        "generalExample": "Assertion of rights. (権利の主張)",
-        "techMeaning": "思い込みが外れた（絶対そうだと思ったのに）",
-        "explanation": "「ここは絶対こうなってるはず！」という前提条件（アサーション）が間違っていたよ。テストでよく出るね。",
-        "usageContext": "絶対勝てると思った賭けに負けた時",
-        "usageExample": "I bet all my money!",
-        "usageExampleTranslation": "全財産賭けるぜ！",
-        "usagePunchline": "Reality: Assertion Failed.",
-        "usagePunchlineTranslation": "現実：断言失敗（無一文）。"
-    },
-    {
         "targetWord": "Reference",
         "errorMessage": "Uncaught ReferenceError: 'user' is not defined",
         "messageTranslation": "捕捉されていない参照エラー：'user'は定義されていません",
