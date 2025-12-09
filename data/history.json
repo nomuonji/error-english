@@ -36,5 +36,6 @@
     "Redirect",
     "Deadlock",
     "Illegal",
-    "Constraint"
+    "Constraint",
+    "Manifest"
 ]

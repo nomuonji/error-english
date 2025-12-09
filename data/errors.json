@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Manifest",
-        "errorMessage": "Manifest file missing",
-        "messageTranslation": "マニフェストファイルが見つかりません",
-        "generalMeaning": "【名/形】明白な、積荷目録、宣言書",
-        "generalExample": "Election manifest. (選挙公約)",
-        "techMeaning": "説明書がない（何が入ってるの？）",
-        "explanation": "アプリやパッケージの内容を記述したファイル（マニフェスト）が見つからないよ。これがないと正体がわからない。",
-        "usageContext": "福袋の中身がゴミだった時",
-        "usageExample": "What is this trash?",
-        "usageExampleTranslation": "なんだこのゴミ？",
-        "usagePunchline": "Shop: Manifest missing.",
-        "usagePunchlineTranslation": "店：目録紛失（何が入ってるかはお楽しみ）。"
-    },
-    {
         "targetWord": "Protocol",
         "errorMessage": "Protocol Error",
         "messageTranslation": "プロトコルエラー",
