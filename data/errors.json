@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Required",
-        "errorMessage": "Required field 'username' is missing.",
-        "messageTranslation": "必須フィールド 'username' が不足しています。",
-        "generalMeaning": "【形】必須の、要求される",
-        "generalExample": "Required documentation (必要な書類)",
-        "techMeaning": "「これがないと動かないよ！早く入力して！」とプログラムに駄々をこねられている状態。",
-        "explanation": "フォーム送信時やAPIリクエストでよく見るエラー。「必須」マークを見落としていないか確認しよう。プログラムからの「愛の要求」だと思って満たしてあげよう。",
-        "usageContext": "友達に「絶対に持ってきて」と頼まれたものがある時",
-        "usageExample": "Sushi is required for this party.",
-        "usageExampleTranslation": "このパーティーには寿司が必須だ。",
-        "usagePunchline": "Friends: 406 Not Acceptable",
-        "usagePunchlineTranslation": "友達：受け付けません（寿司以外は拒否）"
-    },
-    {
         "targetWord": "Missing",
         "errorMessage": "File or directory 'config.yml' is missing.",
         "messageTranslation": "ファイルまたはディレクトリ 'config.yml' が見つかりません。",

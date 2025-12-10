@@ -40,5 +40,6 @@
     "Manifest",
     "Protocol",
     "Assertion",
-    "Reference"
+    "Reference",
+    "Required"
 ]
