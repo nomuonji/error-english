@@ -39,5 +39,6 @@
     "Constraint",
     "Manifest",
     "Protocol",
-    "Assertion"
+    "Assertion",
+    "Reference"
 ]

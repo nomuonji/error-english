@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reference",
-        "errorMessage": "Uncaught ReferenceError: 'user' is not defined",
-        "messageTranslation": "捕捉されていない参照エラー：'user'は定義されていません",
-        "generalMeaning": "【名】参照、参考、言及",
-        "generalExample": "Please check the reference document. (参照ドキュメントを確認してください。)",
-        "techMeaning": "プログラムが特定の変数や関数を呼び出そうとしたが、その名前の「住所録」が見つからないこと。",
-        "explanation": "特にJavaScriptなどで、変数を宣言する前に使おうとしたり、スコープの外から呼び出そうとしたときに発生。「参照」とは「あの人」と指をさす行為。指さした先に誰もいなかったらこのエラー。変数を使う際は、まずその変数がどこで定義されているか確認しよう。",
-        "usageContext": "友人に「昨日会ったあの人さ」と言ったら「誰だよ？」と返された時",
-        "usageExample": "Who are you talking about? I have no reference for that name.",
-        "usageExampleTranslation": "誰のことを言ってるの？その名前に関する参照情報がないよ。",
-        "usagePunchline": "Friend: Are you facing a Scope Problem?",
-        "usagePunchlineTranslation": "友達：それ、スコープ（変数の有効範囲）の問題に直面してるんじゃない？"
-    },
-    {
         "targetWord": "Required",
         "errorMessage": "Required field 'username' is missing.",
         "messageTranslation": "必須フィールド 'username' が不足しています。",
