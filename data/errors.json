@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Missing",
-        "errorMessage": "File or directory 'config.yml' is missing.",
-        "messageTranslation": "ファイルまたはディレクトリ 'config.yml' が見つかりません。",
-        "generalMeaning": "【形】行方不明の、不足している",
-        "generalExample": "Missing socks (行方不明の靴下)",
-        "techMeaning": "参照しようとしたものが「どこにもないよ！」とプログラムが泣いている状態。依存関係の迷子。",
-        "explanation": "必要なファイルを消したり、パスを間違えたりした時に発生。「Missing」はただのエラーではなく、「愛しのファイルはどこ？」という切ない問いかけである。パスが合っているか、大文字小文字の違いがないかチェック！",
-        "usageContext": "家族が探しているリモコンが見つからない時",
-        "usageExample": "The TV remote is missing again.",
-        "usageExampleTranslation": "またテレビのリモコンが行方不明だ。",
-        "usagePunchline": "Remote: 404 Not Found",
-        "usagePunchlineTranslation": "リモコン：見つかりません（存在しない）"
-    },
-    {
         "targetWord": "Corrupted",
         "errorMessage": "Error: Database file is corrupted.",
         "messageTranslation": "エラー：データベースファイルが破損しています。",

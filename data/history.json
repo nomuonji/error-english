@@ -41,5 +41,6 @@
     "Protocol",
     "Assertion",
     "Reference",
-    "Required"
+    "Required",
+    "Missing"
 ]
