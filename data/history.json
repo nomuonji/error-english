@@ -43,5 +43,6 @@
     "Reference",
     "Required",
     "Missing",
-    "Corrupted"
+    "Corrupted",
+    "Unresolved"
 ]

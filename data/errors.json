@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unresolved",
-        "errorMessage": "Build Error: Unresolved external symbol 'myFunction'",
-        "messageTranslation": "ビルドエラー：未解決の外部シンボル 'myFunction'",
-        "generalMeaning": "【形】未解決の、決着がついていない",
-        "generalExample": "An unresolved issue (未解決の問題)",
-        "techMeaning": "「この名前、聞いたことあるけど、具体的にどこにあるか知らないんだよね」とプログラムが困惑している状態。友達の連絡先が登録されていないようなもの。",
-        "explanation": "プログラムが外部の関数や変数を使おうとしたが、その定義が見つからなかった、またはリンクされていなかった時に発生する。「Unresolved」は「未解決事件」。必要なライブラリをリンクするか、スペルミスがないか確認しよう。",
-        "usageContext": "喧嘩したまま仲直りできていない時",
-        "usageExample": "Our relationship is still unresolved.",
-        "usageExampleTranslation": "私たちの関係はまだ未解決のままだ。",
-        "usagePunchline": "Friend: 409 Conflict",
-        "usagePunchlineTranslation": "友達：衝突（和解しないと先に進めない）"
-    },
-    {
         "targetWord": "Expired",
         "errorMessage": "Security certificate has expired.",
         "messageTranslation": "セキュリティ証明書の期限が切れました。",
