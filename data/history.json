@@ -42,5 +42,6 @@
     "Assertion",
     "Reference",
     "Required",
-    "Missing"
+    "Missing",
+    "Corrupted"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Corrupted",
-        "errorMessage": "Error: Database file is corrupted.",
-        "messageTranslation": "エラー：データベースファイルが破損しています。",
-        "generalMeaning": "【形】破損した、堕落した、汚職の",
-        "generalExample": "Corrupted politician (汚職政治家)",
-        "techMeaning": "データが崩壊し、ぐちゃぐちゃになって、もう原型をとどめていない状態。電子的な崩れ落ちた城。",
-        "explanation": "ファイルが壊れているので、開いても読めないよ、ということ。保存中に電源が落ちたり、転送中にエラーが発生したりして、データの一部が変質した結果。残念ながら、基本的には修復不能（バックアップを探すべし）。",
-        "usageContext": "頼まれたお土産が衝撃でボロボロになってしまった時",
-        "usageExample": "My souvenir got corrupted during the flight.",
-        "usageExampleTranslation": "お土産がフライト中に破損してしまった。",
-        "usagePunchline": "Me: 500 Internal Server Error",
-        "usagePunchlineTranslation": "私：サーバー内部エラー（精神的な崩壊）"
-    },
-    {
         "targetWord": "Unresolved",
         "errorMessage": "Build Error: Unresolved external symbol 'myFunction'",
         "messageTranslation": "ビルドエラー：未解決の外部シンボル 'myFunction'",
