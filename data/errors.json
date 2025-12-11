@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Expired",
-        "errorMessage": "Security certificate has expired.",
-        "messageTranslation": "セキュリティ証明書の期限が切れました。",
-        "generalMeaning": "【形】期限切れの、満期になった",
-        "generalExample": "Expired milk (期限切れの牛乳)",
-        "techMeaning": "「残念ですが、あなたのパスポートは期限切れです。アクセスを拒否します」とプログラムが冷酷に告げている状態。時間との戦いに敗北。",
-        "explanation": "セッション、トークン、証明書など、時間制限があるものがその役割を終えた時に発生。セキュリティのために意図的に期限を設定することが多い。期限切れの牛乳を飲まないように、速やかに更新してね！",
-        "usageContext": "割引クーポンを使おうとした時",
-        "usageExample": "This coupon has expired.",
-        "usageExampleTranslation": "このクーポンは期限切れです。",
-        "usagePunchline": "Cashier: 410 Gone",
-        "usagePunchlineTranslation": "店員：消滅しました（特典は永久にない）"
-    },
-    {
         "targetWord": "Resolve",
         "errorMessage": "DNS Resolution Failed",
         "messageTranslation": "DNSの解決に失敗しました",
