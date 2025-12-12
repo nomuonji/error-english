@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Abort",
-        "errorMessage": "Connection aborted by peer",
-        "messageTranslation": "ピア（相手）によって接続が中断されました",
-        "generalMeaning": "【動】中止する、打ち切る",
-        "generalExample": "Abort the mission (ミッションを中止する)",
-        "techMeaning": "プログラムや接続が「もう無理！やーめた！」と、途中で投げ出して強制終了すること。",
-        "explanation": "接続のタイムアウトや、処理中に予期せぬ大きなエラーが発生した際に発生しやすい。ミサイル発射寸前で中止ボタンを押すイメージ。接続相手に切られたら、リソースをもう一度確認！",
-        "usageContext": "困難なダイエットを途中でやめた時。",
-        "usageExample": "I decided to abort my diet plan.",
-        "usageExampleTranslation": "ダイエット計画を中止することにしたよ。",
-        "usagePunchline": "Scale: HTTP 500 Internal Server Error",
-        "usagePunchlineTranslation": "体重計：500（サーバー内部エラーで測定不能）"
-    },
-    {
         "targetWord": "Suspend",
         "errorMessage": "Thread suspended indefinitely",
         "messageTranslation": "スレッドが無期限に中断されました",
