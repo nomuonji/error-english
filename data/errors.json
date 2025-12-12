@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Suspend",
-        "errorMessage": "Thread suspended indefinitely",
-        "messageTranslation": "スレッドが無期限に中断されました",
-        "generalMeaning": "【動】一時的に中止する、吊るす",
-        "generalExample": "Suspend a driver's license (運転免許を停止する)",
-        "techMeaning": "処理が一時停止してフリーズしている状態。待機命令が出たけど、解除の信号が来なくて永遠に眠り続けている。",
-        "explanation": "スレッドやプロセスがデッドロックしたり、リソース待ちで動けなくなっているサイン。フリーズしているように見えるが、CPUは少しずつ電気を無駄遣いしている。タスクマネージャーで確認だ。",
-        "usageContext": "授業中に先生の長い話で意識が飛んだ時。",
-        "usageExample": "My brain was temporarily suspended during the lecture.",
-        "usageExampleTranslation": "講義中、私の脳は一時的に機能停止していた。",
-        "usagePunchline": "Teacher: Ping request timed out.",
-        "usagePunchlineTranslation": "先生：応答がありません（脳が）"
-    },
-    {
         "targetWord": "Retry",
         "errorMessage": "Maximum retries exceeded",
         "messageTranslation": "最大再試行回数を超過しました",

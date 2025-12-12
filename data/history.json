@@ -47,5 +47,6 @@
     "Unresolved",
     "Expired",
     "Resolve",
-    "Abort"
+    "Abort",
+    "Suspend"
 ]
