@@ -45,5 +45,6 @@
     "Missing",
     "Corrupted",
     "Unresolved",
-    "Expired"
+    "Expired",
+    "Resolve"
 ]

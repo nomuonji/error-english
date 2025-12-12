@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Resolve",
-        "errorMessage": "DNS Resolution Failed",
-        "messageTranslation": "DNSの解決に失敗しました",
-        "generalMeaning": "【動】解決する、分解する、決定する",
-        "generalExample": "Resolve a mystery (謎を解明する)",
-        "techMeaning": "「お前の指定した場所（URLや変数名）がどこにあるか、住所録（DNSやスコープ）を見ても分からん！」",
-        "explanation": "ネットワークや変数のスコープエラーでよく見る。ブラウザが「このウェブサイト、どこに行けばいいの？」と迷子になっている状態。まずはスペルチェックか、ルーター再起動を試そう。",
-        "usageContext": "友達が待ち合わせ場所を伝えず、「ここで会おう」と言ってきたとき。",
-        "usageExample": "I cannot resolve where we should meet.",
-        "usageExampleTranslation": "どこで会うべきか、解決できないよ。",
-        "usagePunchline": "Friend: 404 Not Found",
-        "usagePunchlineTranslation": "友達：404（指定した場所は見つからない）"
-    },
-    {
         "targetWord": "Abort",
         "errorMessage": "Connection aborted by peer",
         "messageTranslation": "ピア（相手）によって接続が中断されました",
