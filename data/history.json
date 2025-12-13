@@ -48,5 +48,6 @@
     "Expired",
     "Resolve",
     "Abort",
-    "Suspend"
+    "Suspend",
+    "Retry"
 ]
