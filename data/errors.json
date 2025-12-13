@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Allocate",
-        "errorMessage": "Cannot allocate memory",
-        "messageTranslation": "メモリを割り当てられません",
-        "generalMeaning": "【動】（資源や時間などを）割り当てる、配分する",
-        "generalExample": "Allocate funds for the project (プロジェクトに資金を割り当てる)",
-        "techMeaning": "プログラムが「お金（メモリ）」を要求したのに、システム側が「ごめん、もう財布が空っぽだよ」と断る状態。",
-        "explanation": "大量のデータを一気に処理しようとしたり、無限ループでメモリを食い尽くした時に発生しがち。デスクトップを再起動すると治ることがある。",
-        "usageContext": "友達にお金を貸してほしいと頼まれた時",
-        "usageExample": "Sorry, I cannot allocate any cash to you right now.",
-        "usageExampleTranslation": "ごめん、今すぐは君に現金を割り当てられないよ。",
-        "usagePunchline": "Friend: OOM (Out Of Memory)",
-        "usagePunchlineTranslation": "友達：メモリ不足（お財布が空っぽ）"
-    },
-    {
         "targetWord": "Ambiguous",
         "errorMessage": "Ambiguous reference to method X",
         "messageTranslation": "メソッドXへの参照が曖昧です",

@@ -50,5 +50,6 @@
     "Abort",
     "Suspend",
     "Retry",
-    "Integrity"
+    "Integrity",
+    "Allocate"
 ]
