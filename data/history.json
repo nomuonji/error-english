@@ -49,5 +49,6 @@
     "Resolve",
     "Abort",
     "Suspend",
-    "Retry"
+    "Retry",
+    "Integrity"
 ]

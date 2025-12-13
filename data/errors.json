@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Integrity",
-        "errorMessage": "Data integrity check failed",
-        "messageTranslation": "データ整合性チェックに失敗しました",
-        "generalMeaning": "【名】誠実、高潔、完全性、整合性",
-        "generalExample": "Maintain political integrity (政治的な誠実さを保つ)",
-        "techMeaning": "データが「嘘をついている」状態。期待された形式や値と、実際のデータが合っていない。「お前、本当に正しいデータなのか？」と疑われている。",
-        "explanation": "データベースの破損や、データの送信中に一部が欠落した際によく発生。データの信頼性が崩壊している。バックアップを確認するか、破損したファイルを修復する必要がある。",
-        "usageContext": "友達が約束の時間に1時間遅れてきた時。",
-        "usageExample": "Your integrity is questionable after that delay.",
-        "usageExampleTranslation": "その遅刻の後では、君の誠実さは疑わしいね。",
-        "usagePunchline": "Friend: The timestamp on my message is corrupted.",
-        "usagePunchlineTranslation": "友達：俺のメッセージのタイムスタンプが破損しているんだ（本当は遅刻を隠している）"
-    },
-    {
         "targetWord": "Allocate",
         "errorMessage": "Cannot allocate memory",
         "messageTranslation": "メモリを割り当てられません",
