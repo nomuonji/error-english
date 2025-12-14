@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Ambiguous",
-        "errorMessage": "Ambiguous reference to method X",
-        "messageTranslation": "メソッドXへの参照が曖昧です",
-        "generalMeaning": "【形】曖昧な、どちらとも取れる",
-        "generalExample": "An ambiguous expression (曖昧な表現)",
-        "techMeaning": "プログラムが「これやって！」と指示を出したけど、同じ名前の機能が2つ以上あって、コンピューターが「え、どっちのこと？」と困惑している状態。",
-        "explanation": "クラスや関数をインポートしすぎたときによく発生。特定のファイルを指定してあげれば解決する。（例：`Namespace::Method`）",
-        "usageContext": "友達の誘いに対する返事が曖昧な時",
-        "usageExample": "Your plan is too ambiguous. Which restaurant are we going to?",
-        "usageExampleTranslation": "君の計画は曖昧すぎるよ。どのレストランに行くの？",
-        "usagePunchline": "Interpreter: 400 Bad Request (どっちかハッキリしろ！)",
-        "usagePunchlineTranslation": "インタプリタ：不正なリクエスト（どっちかハッキリしろ！）"
-    },
-    {
         "targetWord": "Inconsistent",
         "errorMessage": "Inconsistent types detected",
         "messageTranslation": "一貫性のない型が検出されました",

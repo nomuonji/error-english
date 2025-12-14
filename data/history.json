@@ -51,5 +51,6 @@
     "Suspend",
     "Retry",
     "Integrity",
-    "Allocate"
+    "Allocate",
+    "Ambiguous"
 ]
