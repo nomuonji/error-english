@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Interrupt",
-        "errorMessage": "I/O operation interrupted",
-        "messageTranslation": "I/O操作が中断されました",
-        "generalMeaning": "【動】中断する、邪魔をする",
-        "generalExample": "Please do not interrupt me while I am working. (作業中は邪魔しないでください。)",
-        "techMeaning": "プログラムが何か作業中に、外部からの横やり（キーボード入力や別のプロセス）が入って、作業が途中で強制終了させられること。",
-        "explanation": "ファイルの読み書き中やネットワーク通信中に、急に接続が切れたり、ユーザーがCtrl+Cを押したりすると発生。だいたいの場合、リトライ（やり直し）すれば大丈夫。",
-        "usageContext": "集中して作業している時に話しかけられた時",
-        "usageExample": "Sorry, can you please not interrupt my flow state?",
-        "usageExampleTranslation": "ごめん、集中状態を中断しないでくれるかな？",
-        "usagePunchline": "Me: Status Code 503 Service Unavailable",
-        "usagePunchlineTranslation": "私：サービス停止中（作業中断）"
-    },
-    {
         "targetWord": "Exhausted",
         "errorMessage": "Thread pool exhausted",
         "messageTranslation": "スレッドプールが使い尽くされました",
