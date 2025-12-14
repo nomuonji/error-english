@@ -52,5 +52,6 @@
     "Retry",
     "Integrity",
     "Allocate",
-    "Ambiguous"
+    "Ambiguous",
+    "Inconsistent"
 ]

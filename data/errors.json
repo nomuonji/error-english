@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Inconsistent",
-        "errorMessage": "Inconsistent types detected",
-        "messageTranslation": "一貫性のない型が検出されました",
-        "generalMeaning": "【形】矛盾した、一貫性のない",
-        "generalExample": "Inconsistent performance (ムラのある成績)",
-        "techMeaning": "データや設定が「朝はA、昼はB」と矛盾している状態。プログラム全体で「俺は整数型だ！いや、俺は文字列型だ！」と喧嘩が起きている。",
-        "explanation": "データベースのスキーマ変更時や、設定ファイル間で値が異なるときに注意。型定義や変数名の付け方を統一することが大事。",
-        "usageContext": "誰かの発言や行動がコロコロ変わる時",
-        "usageExample": "Your statements are highly inconsistent with the facts.",
-        "usageExampleTranslation": "あなたの発言は事実と非常に矛盾しています。",
-        "usagePunchline": "QA Team: Commit History Rollback!",
-        "usagePunchlineTranslation": "QAチーム：コミット履歴をロールバック！（発言を取り消せ！）"
-    },
-    {
         "targetWord": "Interrupt",
         "errorMessage": "I/O operation interrupted",
         "messageTranslation": "I/O操作が中断されました",
