@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unexpected",
-        "errorMessage": "Unexpected token 'else'",
-        "messageTranslation": "予期せぬトークン 'else'",
-        "generalMeaning": "【形】予期せぬ、思いがけない",
-        "generalExample": "An unexpected visitor (予期せぬ訪問者)",
-        "techMeaning": "プログラムが「え、なんで今これ持ってきたの？」とパニックになっている状態",
-        "explanation": "構文的に、そこに存在してはいけない記号やキーワードが出現している。「;」の付け忘れや、括弧の閉じ忘れを疑おう。プログラムは驚いています。",
-        "usageContext": "サプライズを仕掛けられた時",
-        "usageExample": "That huge gift was totally unexpected!",
-        "usageExampleTranslation": "あの巨大なプレゼントは全く予期せぬものだったよ！",
-        "usagePunchline": "Unexpected Item in the Bagging Area. Please remove the item. (スーパーのセルフレジ風)",
-        "usagePunchlineTranslation": "袋詰めエリアに予期せぬ品物があります。品物を取り除いてください。"
-    },
-    {
         "targetWord": "Incompatible",
         "errorMessage": "Incompatible version detected: required 3.0, found 2.5",
         "messageTranslation": "互換性のないバージョンが検出されました：必要なのは3.0、見つかったのは2.5",

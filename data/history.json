@@ -55,5 +55,6 @@
     "Ambiguous",
     "Inconsistent",
     "Interrupt",
-    "Exhausted"
+    "Exhausted",
+    "Unexpected"
 ]
