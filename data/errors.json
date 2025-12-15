@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Incompatible",
-        "errorMessage": "Incompatible version detected: required 3.0, found 2.5",
-        "messageTranslation": "互換性のないバージョンが検出されました：必要なのは3.0、見つかったのは2.5",
-        "generalMeaning": "【形】互換性のない、両立しない",
-        "generalExample": "Incompatible personalities (相性の悪い性格)",
-        "techMeaning": "2つの部品（ライブラリやバージョン）が「お前とは話が合わない」とケンカしている状態",
-        "explanation": "バージョン違いや、使っているOSとソフトウェアの相性が悪いときに発生。無理に共存させようとするとバグの温床になるので、どちらかを諦めるか、環境を分けよう（仮想環境やDockerの出番！）。",
-        "usageContext": "合コンでタイプが違いすぎた時",
-        "usageExample": "We are completely incompatible, sorry.",
-        "usageExampleTranslation": "ごめん、私たちは完全に相性が悪いわ。",
-        "usagePunchline": "Status Code 406 Not Acceptable (お互いの要求が合致しない)",
-        "usagePunchlineTranslation": "ステータスコード 406 受け入れ不可（好みを受け入れられない）"
-    },
-    {
         "targetWord": "Segmentation",
         "errorMessage": "Segmentation fault (core dumped)",
         "messageTranslation": "セグメンテーション違反（コアダンプ）",

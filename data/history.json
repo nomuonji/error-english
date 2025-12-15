@@ -56,5 +56,6 @@
     "Inconsistent",
     "Interrupt",
     "Exhausted",
-    "Unexpected"
+    "Unexpected",
+    "Incompatible"
 ]
