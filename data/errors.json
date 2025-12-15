@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Exhausted",
-        "errorMessage": "Thread pool exhausted",
-        "messageTranslation": "スレッドプールが使い尽くされました",
-        "generalMeaning": "【形】疲れ果てた、使い尽くされた",
-        "generalExample": "I am totally exhausted after running a marathon. (マラソンを走って完全に疲れ果てた。)",
-        "techMeaning": "プログラムが使えるリソース（接続数や処理スレッド）を限界まで使い切って、もう新しい仕事を受ける体力（リソース）が残っていない状態。",
-        "explanation": "アクセスが集中したり、コネクションを閉じ忘れたりすると発生。リソースの上限を増やす前に、処理が本当に解放されているか確認しよう。",
-        "usageContext": "徹夜明けの朝",
-        "usageExample": "My brain is completely exhausted from coding all night.",
-        "usageExampleTranslation": "徹夜でコードを書いたせいで、脳が完全に使い尽くされた（疲労困憊だ）。",
-        "usagePunchline": "My Performance: 429 Too Many Requests",
-        "usagePunchlineTranslation": "私のパフォーマンス：リクエストが多すぎます（過負荷）"
-    },
-    {
         "targetWord": "Unexpected",
         "errorMessage": "Unexpected token 'else'",
         "messageTranslation": "予期せぬトークン 'else'",

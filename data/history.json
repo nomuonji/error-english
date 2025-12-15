@@ -54,5 +54,6 @@
     "Allocate",
     "Ambiguous",
     "Inconsistent",
-    "Interrupt"
+    "Interrupt",
+    "Exhausted"
 ]
