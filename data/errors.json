@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Segmentation",
-        "errorMessage": "Segmentation fault (core dumped)",
-        "messageTranslation": "セグメンテーション違反（コアダンプ）",
-        "generalMeaning": "【名】分割、区分け",
-        "generalExample": "Market segmentation (市場の細分化)",
-        "techMeaning": "プログラムが「立ち入り禁止のメモリ領域」に踏み込み、OSに強制退去させられた状態",
-        "explanation": "C/C++など低レイヤー言語でよく見る。「セグフォ」と略される。ポインタ操作のミスで、他人の家に勝手に入り込もうとした図。だいたいの場合、メモリをちゃんと解放していないか、存在しない場所を参照しようとしている。",
-        "usageContext": "立ち入り禁止の場所に勝手に入った時",
-        "usageExample": "This area is under severe segmentation restrictions.",
-        "usageExampleTranslation": "このエリアは厳重な立ち入り制限（区分け）を受けています。",
-        "usagePunchline": "Police: 403 Forbidden. This is not your allocated memory space.",
-        "usagePunchlineTranslation": "警察：403 立ち入り禁止。ここはあなたに割り当てられたメモリ空間ではありません。"
-    },
-    {
         "targetWord": "Binding",
         "errorMessage": "Address already in use: binding to 0.0.0.0:8080 failed",
         "messageTranslation": "アドレスは既に使用中です: 0.0.0.0:8080 へのバインドに失敗しました",
