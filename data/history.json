@@ -58,5 +58,6 @@
     "Exhausted",
     "Unexpected",
     "Incompatible",
-    "Segmentation"
+    "Segmentation",
+    "Binding"
 ]

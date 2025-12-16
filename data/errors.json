@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Binding",
-        "errorMessage": "Address already in use: binding to 0.0.0.0:8080 failed",
-        "messageTranslation": "アドレスは既に使用中です: 0.0.0.0:8080 へのバインドに失敗しました",
-        "generalMeaning": "【名】縛ること、結びつけること、製本",
-        "generalExample": "Book binding (本の製本)",
-        "techMeaning": "プログラムが「このポートを俺のものにする！」と宣言したが、既に誰か（別のプログラム）に使われていて契約に失敗した状態",
-        "explanation": "サーバーを起動しようとした際によく発生。8080番ポートが既に他のアプリに使われているので、そのポートを解放するか、別のポート（例：3000番）で起動し直せば解決！",
-        "usageContext": "カラオケの予約が重複した時",
-        "usageExample": "Sorry, this room is currently under binding.",
-        "usageExampleTranslation": "すみません、この部屋は現在予約されています（結びつけられています）。",
-        "usagePunchline": "System Error: Port 8080 is occupied by PID 1337. (プロセスIDで誰が使っているかバレる)",
-        "usagePunchlineTranslation": "システムエラー：ポート8080はプロセスID 1337によって占有されています。"
-    },
-    {
         "targetWord": "Malformed",
         "errorMessage": "Malformed JSON input: expected ',' but found ']'",
         "messageTranslation": "不正な形式のJSON入力：','を期待したが']'が見つかりました",
