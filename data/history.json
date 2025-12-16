@@ -59,5 +59,6 @@
     "Unexpected",
     "Incompatible",
     "Segmentation",
-    "Binding"
+    "Binding",
+    "Malformed"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Malformed",
-        "errorMessage": "Malformed JSON input: expected ',' but found ']'",
-        "messageTranslation": "不正な形式のJSON入力：','を期待したが']'が見つかりました",
-        "generalMeaning": "【形】形が不格好な、奇形の",
-        "generalExample": "Malformed handwriting (不格好な手書き文字)",
-        "techMeaning": "プログラムが「渡されたデータの形がめちゃくちゃで、読めたもんじゃない！」と匙を投げた状態",
-        "explanation": "JSONやXMLなど、決められたフォーマットに従っていないデータが来たときに発生。カッコやカンマの打ち間違い（タイポ）が原因であることが多いので、丁寧に整形（フォーマット）ツールにかけてチェックしよう。",
-        "usageContext": "レシートの文字が薄くて読めない時",
-        "usageExample": "This application form is completely malformed and unreadable.",
-        "usageExampleTranslation": "この申請フォームは完全に不格好で読めません。",
-        "usagePunchline": "Parser: I need a 400 Bad Request. (構文解析器から不正なリクエストが来たというクレーム)",
-        "usagePunchlineTranslation": "パーサー：400 不正なリクエストが必要です。（データがめちゃくちゃだ）"
-    },
-    {
         "targetWord": "Volatile",
         "errorMessage": "Volatile data access detected",
         "messageTranslation": "揮発性データへのアクセスを検出しました",
