@@ -62,5 +62,6 @@
     "Binding",
     "Malformed",
     "Volatile",
-    "Stale"
+    "Stale",
+    "Unsafe"
 ]

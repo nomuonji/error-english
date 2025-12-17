@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unsafe",
-        "errorMessage": "Unsafe access to non-public member",
-        "messageTranslation": "非公開メンバーへの安全でないアクセス",
-        "generalMeaning": "【形】安全でない、危険な",
-        "generalExample": "Unsafe driving (危険な運転)",
-        "techMeaning": "プログラムのパンドラの箱を開けようとしている状態。危険だから普通はやっちゃダメ！と警告されている。",
-        "explanation": "C言語やRustなど、低レイヤーの操作をする時に使うキーワード。メモリを直接操作するなど、パワーはあるけど、ミスるとシステム全体が爆発する諸刃の剣。",
-        "usageContext": "夜中にこっそり冷蔵庫を開ける時",
-        "usageExample": "This area is declared unsafe.",
-        "usageExampleTranslation": "この区域は立ち入り禁止だ。",
-        "usagePunchline": "Security Policy: XSS Detected",
-        "usagePunchlineTranslation": "危険な侵入者だ！（クロスサイトスクリプティング検知）"
-    },
-    {
         "targetWord": "Pending",
         "errorMessage": "Promise is currently pending",
         "messageTranslation": "Promiseは現在保留中です",
