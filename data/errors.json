@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Volatile",
-        "errorMessage": "Volatile data access detected",
-        "messageTranslation": "揮発性データへのアクセスを検出しました",
-        "generalMeaning": "【形】揮発性の、不安定な、変わりやすい",
-        "generalExample": "Volatile markets (不安定な市場)",
-        "techMeaning": "データが、あなたの知らないところで勝手に書き換えられちゃう危険な状態",
-        "explanation": "キャッシュを信用するな！このデータは信用できないぞ！と言われているのと同じ。触るたびに値が変わるかもしれない爆弾データ。特にマルチスレッド処理では要注意。",
-        "usageContext": "恋人の機嫌がコロコロ変わる時",
-        "usageExample": "Her mood is so volatile today.",
-        "usageExampleTranslation": "彼女の機嫌、今日はすごく変わりやすいな。",
-        "usagePunchline": "Status: 408 Request Timeout",
-        "usagePunchlineTranslation": "どの機嫌で話しかけるか迷っているうちにタイムアウト"
-    },
-    {
         "targetWord": "Stale",
         "errorMessage": "Stale element reference",
         "messageTranslation": "古い要素への参照",

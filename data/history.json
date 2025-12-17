@@ -60,5 +60,6 @@
     "Incompatible",
     "Segmentation",
     "Binding",
-    "Malformed"
+    "Malformed",
+    "Volatile"
 ]
