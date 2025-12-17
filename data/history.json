@@ -61,5 +61,6 @@
     "Segmentation",
     "Binding",
     "Malformed",
-    "Volatile"
+    "Volatile",
+    "Stale"
 ]

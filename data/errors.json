@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Stale",
-        "errorMessage": "Stale element reference",
-        "messageTranslation": "古い要素への参照",
-        "generalMeaning": "【形】（食べ物が）新鮮でない、古くなった、陳腐な",
-        "generalExample": "Stale bread (古くなったパン)",
-        "techMeaning": "腐ったデータ。もう画面上には存在しないのに、それを参照しようとしている。",
-        "explanation": "ブラウザテストなどで、リンクをクリックしたら画面が更新されて、クリックしたかった要素が消えちゃった！「もうそこにはいないよ！」というエラー。ページをリロードして新鮮な状態に戻しましょう。",
-        "usageContext": "昔のSNSの投稿を掘り出された時",
-        "usageExample": "That joke is getting stale.",
-        "usageExampleTranslation": "その冗談はもう古くてつまらないよ。",
-        "usagePunchline": "Database: DROP TABLE IF EXISTS",
-        "usagePunchlineTranslation": "そんな古いのもう消しちゃえ！"
-    },
-    {
         "targetWord": "Unsafe",
         "errorMessage": "Unsafe access to non-public member",
         "messageTranslation": "非公開メンバーへの安全でないアクセス",
