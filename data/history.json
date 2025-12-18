@@ -65,5 +65,6 @@
     "Stale",
     "Unsafe",
     "Pending",
-    "Orphan"
+    "Orphan",
+    "Truncated"
 ]

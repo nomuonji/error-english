@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Truncated",
-        "errorMessage": "Data Truncated: Value too long for column",
-        "messageTranslation": "データが切り詰められました：値がカラムに対して長すぎます",
-        "generalMeaning": "【形】切り詰められた、短くされた",
-        "generalExample": "A truncated pyramid (切頭ピラミッド)",
-        "techMeaning": "送ったデータがデカすぎて、受け入れ先の箱のサイズをオーバーし、途中から「ザクッ」とカットされてしまった状態。",
-        "explanation": "データベースあるある。「設定した文字数を超えているから、余分な部分は捨てるね」と言われている。大事なデータが失われないように、データベースのカラムサイズを大きくするか、入力データを削るかしよう。",
-        "usageContext": "制限時間内にレポートを提出しきれず、途中で打ち切られた時",
-        "usageExample": "My presentation was truncated due to the strict time limit.",
-        "usageExampleTranslation": "厳しい時間制限のせいで、私のプレゼンは途中で切り詰められちゃった。",
-        "usagePunchline": "Boss: HTTP 413 Payload Too Large",
-        "usagePunchlineTranslation": "上司：お前の情報、デカすぎ（データ容量オーバー）"
-    },
-    {
         "targetWord": "Mutable",
         "errorMessage": "Cannot assign to mutable variable 'x' in immutable context",
         "messageTranslation": "不変なコンテキストでは、可変変数'x'に代入できません",
