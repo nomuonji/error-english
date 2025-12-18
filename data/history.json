@@ -63,5 +63,6 @@
     "Malformed",
     "Volatile",
     "Stale",
-    "Unsafe"
+    "Unsafe",
+    "Pending"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Pending",
-        "errorMessage": "Promise is currently pending",
-        "messageTranslation": "Promiseは現在保留中です",
-        "generalMeaning": "【形】未決の、係争中の、保留中の",
-        "generalExample": "A pending decision (保留中の決定)",
-        "techMeaning": "「まだ終わってないよ！ちょっと待って！」とプログラムに言われている状態。結果が出るまで待機中。",
-        "explanation": "非同期処理（Promiseなど）の際に発生。結果はわかっているけど、時間差で返ってくる。「コンビニの揚げ物待ち」みたいなもの。結果（Resolved/Rejected）が返ってくるのを辛抱強く待ちましょう。",
-        "usageContext": "注文した料理がなかなか出てこない時",
-        "usageExample": "The request is still pending.",
-        "usageExampleTranslation": "そのリクエストはまだ処理中です。",
-        "usagePunchline": "Boss: 503 Service Unavailable",
-        "usagePunchlineTranslation": "店員：ごめんなさい、ちょっと待って！手が回りません"
-    },
-    {
         "targetWord": "Orphan",
         "errorMessage": "Orphaned resources found",
         "messageTranslation": "孤立したリソースが見つかりました",
