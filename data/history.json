@@ -64,5 +64,6 @@
     "Volatile",
     "Stale",
     "Unsafe",
-    "Pending"
+    "Pending",
+    "Orphan"
 ]

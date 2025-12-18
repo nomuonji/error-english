@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Orphan",
-        "errorMessage": "Orphaned resources found",
-        "messageTranslation": "孤立したリソースが見つかりました",
-        "generalMeaning": "【名】孤児、親を失った人",
-        "generalExample": "He is an orphan (彼は孤児だ)",
-        "techMeaning": "親プロセス（使っていた大元のプログラム）が死んでしまい、誰も面倒を見てくれなくなった可哀想な子プロセス。",
-        "explanation": "サーバー処理などで親プロセスが先に落ちると、子プロセスが宙ぶらりん（孤立）になり、メモリを食い潰す可能性がある。見つけたら手動でちゃんと終了させてあげましょう。",
-        "usageContext": "集合場所に一人だけ残された時",
-        "usageExample": "The file was left as an orphan.",
-        "usageExampleTranslation": "そのファイルは孤立したまま残された。",
-        "usagePunchline": "System Check: 410 Gone",
-        "usagePunchlineTranslation": "親に見捨てられたので、もう消滅します"
-    },
-    {
         "targetWord": "Truncated",
         "errorMessage": "Data Truncated: Value too long for column",
         "messageTranslation": "データが切り詰められました：値がカラムに対して長すぎます",
