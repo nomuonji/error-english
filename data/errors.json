@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unimplemented",
-        "errorMessage": "Error: Function 'calculate_total' is unimplemented.",
-        "messageTranslation": "エラー：関数 'calculate_total' は未実装です。",
-        "generalMeaning": "【形】実行されていない、実施されていない",
-        "generalExample": "The plan remains unimplemented. (計画は未実施のままだ)",
-        "techMeaning": "「名前だけは作ったけど、中身（処理）はまだ空っぽだよ！」という、プログラム界の正直なサボり宣言。",
-        "explanation": "設計図（関数名やインターフェース）はあるけれど、まだ具体的な処理のコードが書かれていない状態。開発途中のTODOリストの最優先事項。このエラーが出たら、潔く手を動かそう。",
-        "usageContext": "やるべき家事を宣言したものの、まだ実行に移していない時",
-        "usageExample": "My promise to start exercising is unfortunately unimplemented.",
-        "usageExampleTranslation": "運動を始めるという私の約束は、残念ながらまだ実行されていません。",
-        "usagePunchline": "Wife: Status 501 Not Implemented",
-        "usagePunchlineTranslation": "妻：ステータス501 未実装（機能が存在しないぞ）"
-    },
-    {
         "targetWord": "Schema",
         "errorMessage": "Schema validation failed for input data.",
         "messageTranslation": "入力データに対するスキーマ検証に失敗しました。",

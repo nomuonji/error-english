@@ -67,5 +67,6 @@
     "Pending",
     "Orphan",
     "Truncated",
-    "Mutable"
+    "Mutable",
+    "Unimplemented"
 ]
