@@ -68,5 +68,6 @@
     "Orphan",
     "Truncated",
     "Mutable",
-    "Unimplemented"
+    "Unimplemented",
+    "Schema"
 ]

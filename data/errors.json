@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Schema",
-        "errorMessage": "Schema validation failed for input data.",
-        "messageTranslation": "入力データに対するスキーマ検証に失敗しました。",
-        "generalMeaning": "【名】概要、図式、骨組み、構成",
-        "generalExample": "The schema of the university curriculum (大学のカリキュラムの構成)",
-        "techMeaning": "データがどういう形（構造）で来るべきか、というお約束事や設計図のこと。データが設計図通りに来ていないときに「形が違う！」と突き返される。",
-        "explanation": "データベースやAPIでデータの型や構成が間違っていると発生する。「名前が文字列であるべきなのに数字が来た」「必須のフィールドが丸ごと抜けている」など。設計図を再確認しよう。",
-        "usageContext": "新しい職場や学校の複雑なルールが理解できない時",
-        "usageExample": "I cannot grasp the complex schema of this company's hierarchy.",
-        "usageExampleTranslation": "この会社の階層構造の複雑な構成（ルール）が理解できない。",
-        "usagePunchline": "Manager: Data structure mismatch. Expected JSON, received binary.",
-        "usagePunchlineTranslation": "上司：データ構造の不一致。JSONを期待していたのに、なぜかバイナリデータが来たぞ。（形式が違う）"
-    },
-    {
         "targetWord": "Semaphore",
         "errorMessage": "Deadlock detected while acquiring semaphore.",
         "messageTranslation": "セマフォを取得中にデッドロックが検出されました。",
