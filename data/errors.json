@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mutable",
-        "errorMessage": "Cannot assign to mutable variable 'x' in immutable context",
-        "messageTranslation": "不変なコンテキストでは、可変変数'x'に代入できません",
-        "generalMeaning": "【形】変化しやすい、変わりやすい",
-        "generalExample": "Mutable moods (変わりやすい気分)",
-        "techMeaning": "「いつでも内容を変えていいよ！」という許可が出ている変数。ただし、変更が許されない場所で勝手に内容を変えようとして怒られている。",
-        "explanation": "プログラミング界では、変数は原則「immutable（不変）」にすることが推奨されることが多い。意図しない変更を防ぐため。もし変更が必要なら、コードで明示的に『Mutable』の印をつけてあげよう。",
-        "usageContext": "友人との待ち合わせ場所がコロコロ変わる時",
-        "usageExample": "Our meeting point seems highly mutable today.",
-        "usageExampleTranslation": "今日の待ち合わせ場所は、すごく変わりやすいみたいだ。",
-        "usagePunchline": "Friend: Sounds like HTTP 302 Found (Redirect)",
-        "usagePunchlineTranslation": "友達：それって302（リダイレクト）じゃん、すぐ行き先変わるな"
-    },
-    {
         "targetWord": "Unimplemented",
         "errorMessage": "Error: Function 'calculate_total' is unimplemented.",
         "messageTranslation": "エラー：関数 'calculate_total' は未実装です。",
