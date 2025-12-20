@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Semaphore",
-        "errorMessage": "Deadlock detected while acquiring semaphore.",
-        "messageTranslation": "セマフォを取得中にデッドロックが検出されました。",
-        "generalMeaning": "【名】手旗信号、腕木通信（鉄道などの信号機）",
-        "generalExample": "The railway semaphore indicated the train to stop.",
-        "techMeaning": "複数のプログラムが共有リソースにアクセスする際に、「今、俺が使うから待ってて！」と合図するデジタル信号機。リソースの同時使用人数を制御する。",
-        "explanation": "マルチスレッド環境で重要な概念。セマフォが複雑に絡み合うと、全員がお互いを待ち続けて誰も進めなくなる「デッドロック」が発生し、システム全体がフリーズする。",
-        "usageContext": "家族間で、バスルームの利用権を巡って争いになった時",
-        "usageExample": "We need a strict semaphore system for the shared bathroom in the morning.",
-        "usageExampleTranslation": "朝の共有バスルームのために、厳格なセマフォ（利用制限）システムが必要だ。",
-        "usagePunchline": "Family: Everyone is waiting for the lock to be released. This is a 409 Conflict!",
-        "usagePunchlineTranslation": "家族：全員がロック解除を待っている。これは409コンフリクトだ！（資源の競合）"
-    },
-    {
         "targetWord": "Buffer",
         "errorMessage": "Buffer overflow detected!",
         "messageTranslation": "バッファオーバーフローが検出されました！",

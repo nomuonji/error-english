@@ -69,5 +69,6 @@
     "Truncated",
     "Mutable",
     "Unimplemented",
-    "Schema"
+    "Schema",
+    "Semaphore"
 ]
