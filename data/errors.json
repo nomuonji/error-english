@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Buffer",
-        "errorMessage": "Buffer overflow detected!",
-        "messageTranslation": "バッファオーバーフローが検出されました！",
-        "generalMeaning": "【名】緩衝材、バッファ、在庫",
-        "generalExample": "A buffer zone (緩衝地帯)",
-        "techMeaning": "プログラムがデータを一時的に置くための「箱」から、中身が溢れ出てしまった状態",
-        "explanation": "キャパオーバー。「もうこれ以上入らないよ！」と悲鳴をあげています。箱のサイズをちゃんと計算しよう。セキュリティ問題にも繋がる危険なサイン。",
-        "usageContext": "大食いチャレンジで限界を超えた時",
-        "usageExample": "I think I hit a buffer overflow after the third plate.",
-        "usageExampleTranslation": "3皿目でバッファオーバーフローしたと思う。",
-        "usagePunchline": "Status: 413 Payload Too Large",
-        "usagePunchlineTranslation": "状態：413 ペイロードがデカすぎる"
-    },
-    {
         "targetWord": "Privilege",
         "errorMessage": "Insufficient privileges for operation.",
         "messageTranslation": "操作に必要な権限が不足しています。",

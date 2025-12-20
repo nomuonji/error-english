@@ -70,5 +70,6 @@
     "Mutable",
     "Unimplemented",
     "Schema",
-    "Semaphore"
+    "Semaphore",
+    "Buffer"
 ]
