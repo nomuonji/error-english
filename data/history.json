@@ -71,5 +71,6 @@
     "Unimplemented",
     "Schema",
     "Semaphore",
-    "Buffer"
+    "Buffer",
+    "Privilege"
 ]

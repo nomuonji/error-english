@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Privilege",
-        "errorMessage": "Insufficient privileges for operation.",
-        "messageTranslation": "操作に必要な権限が不足しています。",
-        "generalMeaning": "【名】特権、特典、名誉",
-        "generalExample": "Enjoy your privilege of seniority (年長者としての特権を享受する)",
-        "techMeaning": "その操作を実行するための「特別な許可証」を持っていない状態。「お前にはまだ早い！」とシステムに怒られている。",
-        "explanation": "権限昇格（sudo）が必要かも。アクセス権が足りないと、重要な設定ファイルは触らせてもらえない。まずは自分のランクを確認しよう。",
-        "usageContext": "上司に重要な仕事を任せてもらえない時",
-        "usageExample": "Do I have the privilege to manage this project?",
-        "usageExampleTranslation": "このプロジェクトを管理する特権はありますか？",
-        "usagePunchline": "System: Run as Administrator",
-        "usagePunchlineTranslation": "システム：管理者として実行しろ（特権モードでやれ）"
-    },
-    {
         "targetWord": "Rollback",
         "errorMessage": "Transaction failed. Initiating rollback...",
         "messageTranslation": "トランザクションが失敗しました。ロールバックを開始します...",
