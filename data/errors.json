@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Rollback",
-        "errorMessage": "Transaction failed. Initiating rollback...",
-        "messageTranslation": "トランザクションが失敗しました。ロールバックを開始します...",
-        "generalMeaning": "【名/動】巻き戻し、後退",
-        "generalExample": "The company decided on a policy rollback. (会社は方針の巻き戻しを決定した。)",
-        "techMeaning": "作業の途中で失敗したため、全てを「なかったこと」にして、元のきれいな状態に戻す処理。タイムマシン機能。",
-        "explanation": "データベースの処理でよく見る。中途半端なデータが残るのを防ぐ、保険システム。エラーが起きても「まあ、元の状態に戻ればセーフ」という安心感がある。",
-        "usageContext": "衝動買いした後に後悔してキャンセルする時",
-        "usageExample": "I need an immediate rollback on that online purchase!",
-        "usageExampleTranslation": "そのオンライン購入、すぐさまロールバック（キャンセル）が必要だ！",
-        "usagePunchline": "Seller: Status 301 Moved Permanently",
-        "usagePunchlineTranslation": "売主：状態 301 完全に移動しました（キャンセル不可）"
-    },
-    {
         "targetWord": "Acknowledge",
         "errorMessage": "Connection failure: No acknowledge received.",
         "messageTranslation": "接続失敗：確認応答が受信されませんでした。",

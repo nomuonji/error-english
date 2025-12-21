@@ -72,5 +72,6 @@
     "Schema",
     "Semaphore",
     "Buffer",
-    "Privilege"
+    "Privilege",
+    "Rollback"
 ]
