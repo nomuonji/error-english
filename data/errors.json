@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Acknowledge",
-        "errorMessage": "Connection failure: No acknowledge received.",
-        "messageTranslation": "接続失敗：確認応答が受信されませんでした。",
-        "generalMeaning": "【動】認める、承認する、受け取ったことを伝える",
-        "generalExample": "Please acknowledge receipt of this email. (このメールの受領を確認してください。)",
-        "techMeaning": "「聞こえてるよ！」「受け取ったよ！」という返事が来ていない状態。相手が沈黙しているため、通信が成立していない。",
-        "explanation": "通信における「既読スルー」状態。メッセージを送ったのに返事がないと、プログラムは不安になり、接続を切ってしまう。まずは相手が生きてるか確認しよう。",
-        "usageContext": "LINEでメッセージを送ったのに返信が来ない時",
-        "usageExample": "I sent the proposal, but my boss didn't acknowledge it.",
-        "usageExampleTranslation": "提案書を送ったのに、上司が確認応答（反応）してくれない。",
-        "usagePunchline": "Friend: TCP 3-way Handshake Failed",
-        "usagePunchlineTranslation": "友達：TCPの3ウェイハンドシェイク失敗（友達との通信が確立しない）"
-    },
-    {
         "targetWord": "Escalate",
         "errorMessage": "Error severity escalated to Critical.",
         "messageTranslation": "エラーの深刻度がクリティカルに上昇しました。",

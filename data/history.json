@@ -73,5 +73,6 @@
     "Semaphore",
     "Buffer",
     "Privilege",
-    "Rollback"
+    "Rollback",
+    "Acknowledge"
 ]
