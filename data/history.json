@@ -74,5 +74,6 @@
     "Buffer",
     "Privilege",
     "Rollback",
-    "Acknowledge"
+    "Acknowledge",
+    "Escalate"
 ]

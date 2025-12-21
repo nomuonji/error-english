@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Escalate",
-        "errorMessage": "Error severity escalated to Critical.",
-        "messageTranslation": "エラーの深刻度がクリティカルに上昇しました。",
-        "generalMeaning": "【動】エスカレートする、段階的に上げる、深刻化させる",
-        "generalExample": "Tensions between the two countries escalated. (二国間の緊張が高まった。)",
-        "techMeaning": "最初は小さなエラーだったのに、時間が経つにつれて「ヤバいレベル」に深刻度が増している状態。警告無視の結果。",
-        "explanation": "放置すればするほど状況が悪くなる。最初はただの警告(Warning)だったのに、いつの間にか致命的なエラー(Critical)になっている。早めの対処が鉄則。",
-        "usageContext": "風邪をこじらせて重症化した時",
-        "usageExample": "My minor cold quickly escalated into pneumonia.",
-        "usageExampleTranslation": "軽い風邪がすぐに肺炎にエスカレートした。",
-        "usagePunchline": "System Monitor: Status 500 Internal Server Error",
-        "usagePunchlineTranslation": "システム監視：状態 500 サーバー内部エラー（完全に手遅れ）"
-    },
-    {
         "targetWord": "Permission",
         "errorMessage": "Permission denied: Access to the path is forbidden.",
         "messageTranslation": "許可が拒否されました：そのパスへのアクセスは禁止されています。",
