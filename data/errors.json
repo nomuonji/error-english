@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Async (Asynchronous)",
-        "errorMessage": "Async operation failed to complete.",
-        "messageTranslation": "非同期操作が完了できませんでした。",
-        "generalMeaning": "【形】非同期の、同時進行しない",
-        "generalExample": "This is an asynchronous learning model. (これは非同期型の学習モデルです。)",
-        "techMeaning": "「ちょっと待っててね」と言って裏で作業を依頼した処理が、期待通りに終わらなかったり、結果を返し忘れたりする状態。",
-        "explanation": "時間のかかる処理（ネットワーク通信など）をメイン処理と切り離して行うこと。コーヒーを淹れている間に他の作業をするイメージ。エラーが出たら、結果を受け取る側の設定や、待機時間（Await/Callback）を見直そう。",
-        "usageContext": "友達に頼みごとをしたのに、結果報告が全然来ない時",
-        "usageExample": "Your response is totally asynchronous.",
-        "usageExampleTranslation": "あなたの返事は完全に非同期処理だね。（時間差がありすぎる）",
-        "usagePunchline": "Wait time exceeded 504 Gateway Timeout.",
-        "usagePunchlineTranslation": "待ち時間が504ゲートウェイタイムアウトを超過しました。"
-    },
-    {
         "targetWord": "Leak",
         "errorMessage": "Memory leak detected: Unreferenced objects accumulating.",
         "messageTranslation": "メモリリークを検出：参照されていないオブジェクトが蓄積しています。",

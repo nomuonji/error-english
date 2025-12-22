@@ -77,5 +77,6 @@
     "Acknowledge",
     "Escalate",
     "Permission",
-    "Resource"
+    "Resource",
+    "Async (Asynchronous)"
 ]
