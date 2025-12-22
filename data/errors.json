@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Resource",
-        "errorMessage": "Out of resource error: Maximum memory exceeded.",
-        "messageTranslation": "リソース不足エラー：最大メモリを超過しました。",
-        "generalMeaning": "【名】資源、資産、手持ちの手段",
-        "generalExample": "Natural resources (天然資源)",
-        "techMeaning": "プログラムの活動に必要な「体力（メモリ）」や「道具（CPU、ファイルハンドル）」が枯渇している状態。",
-        "explanation": "スマホでアプリを大量に開きすぎて、本体がフリーズする現象と同じ。特に無限ループ処理などでメモリを食い潰すと発生しやすい。一旦PCを再起動するのも手。",
-        "usageContext": "課題や仕事が多すぎてパンクしそうな時",
-        "usageExample": "I'm out of mental resources right now.",
-        "usageExampleTranslation": "今、精神的なリソースが枯渇している。",
-        "usagePunchline": "My brain is experiencing a Denial of Service attack.",
-        "usagePunchlineTranslation": "私の脳がサービス拒否攻撃を受けている。"
-    },
-    {
         "targetWord": "Async (Asynchronous)",
         "errorMessage": "Async operation failed to complete.",
         "messageTranslation": "非同期操作が完了できませんでした。",

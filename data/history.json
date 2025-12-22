@@ -76,5 +76,6 @@
     "Rollback",
     "Acknowledge",
     "Escalate",
-    "Permission"
+    "Permission",
+    "Resource"
 ]
