@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Permission",
-        "errorMessage": "Permission denied: Access to the path is forbidden.",
-        "messageTranslation": "許可が拒否されました：そのパスへのアクセスは禁止されています。",
-        "generalMeaning": "【名】許可、承認、権限",
-        "generalExample": "You need permission to enter. (入るには許可が必要です。)",
-        "techMeaning": "プログラムが「そこには入るな！」「触るな！」と警備員に止められている状態。権限不足。",
-        "explanation": "権限がなさすぎてファイルを読み書きできない時に発生。ファイルを読み書きしたいのに、鍵（権限）を持っていない状態。`sudo`をつけたり、OS側の設定（パーミッション）を確認しよう。",
-        "usageContext": "立ち入り禁止の場所に入ろうとした時",
-        "usageExample": "Do I have permission to use your charger?",
-        "usageExampleTranslation": "充電器使ってもいいですか？",
-        "usagePunchline": "Guard: 401 Unauthorized",
-        "usagePunchlineTranslation": "警備員：認証されていません（お前は誰だ）"
-    },
-    {
         "targetWord": "Resource",
         "errorMessage": "Out of resource error: Maximum memory exceeded.",
         "messageTranslation": "リソース不足エラー：最大メモリを超過しました。",
