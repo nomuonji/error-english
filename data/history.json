@@ -79,5 +79,6 @@
     "Permission",
     "Resource",
     "Async (Asynchronous)",
-    "Leak"
+    "Leak",
+    "Scope"
 ]

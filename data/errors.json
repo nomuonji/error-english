@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Scope",
-        "errorMessage": "Variable 'x' is not defined in this scope.",
-        "messageTranslation": "変数「x」はこのスコープ内で定義されていません。",
-        "generalMeaning": "【名】範囲、視野、領域",
-        "generalExample": "The scope of the investigation (調査の範囲)",
-        "techMeaning": "変数が使える「縄張り」のこと。その縄張りから外に出ると、変数は「知らない人」扱いされて怒られる。",
-        "explanation": "宣言した場所によって、変数の見える範囲が変わるのがプログラミングの基本ルール。ローカル変数（関数の内部）とグローバル変数の違いを理解しよう。縄張りから外に出たいなら、引数として手渡ししてあげよう。",
-        "usageContext": "自分の担当範囲外のことを要求された時",
-        "usageExample": "That is completely out of my scope.",
-        "usageExampleTranslation": "それは完全に私の担当範囲外です。",
-        "usagePunchline": "Error 404: Variable Not Found.",
-        "usagePunchlineTranslation": "エラー404：変数が見つかりません。"
-    },
-    {
         "targetWord": "Obsolete",
         "errorMessage": "Warning: Function X is obsolete since version 3.0. Use Y instead.",
         "messageTranslation": "警告：関数Xはバージョン3.0以降廃止予定です。代わりにYを使ってください。",
