@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Leak",
-        "errorMessage": "Memory leak detected: Unreferenced objects accumulating.",
-        "messageTranslation": "メモリリークを検出：参照されていないオブジェクトが蓄積しています。",
-        "generalMeaning": "【名/動】漏れ、漏らす、水が漏れる",
-        "generalExample": "A water leak (水漏れ)",
-        "techMeaning": "メモリという名の「水槽」に穴が空いていて、使ったはずのメモリが解放されず、ジワジワとPCの動作を遅くしていく現象。",
-        "explanation": "プログラムが使い終わったメモリを片付け忘れるせいで発生。最初は気づかないが、長時間実行するとPCがカクカクになる。不要な変数をちゃんと`dispose`したり、メモリ監視ツールを使ってみよう。",
-        "usageContext": "社内の秘密情報が外部に漏れた時",
-        "usageExample": "The plan was leaked to the press.",
-        "usageExampleTranslation": "その計画は報道機関に漏れた。",
-        "usagePunchline": "That's a serious Security Vulnerability!",
-        "usagePunchlineTranslation": "それは深刻なセキュリティ脆弱性です！"
-    },
-    {
         "targetWord": "Scope",
         "errorMessage": "Variable 'x' is not defined in this scope.",
         "messageTranslation": "変数「x」はこのスコープ内で定義されていません。",

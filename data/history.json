@@ -78,5 +78,6 @@
     "Escalate",
     "Permission",
     "Resource",
-    "Async (Asynchronous)"
+    "Async (Asynchronous)",
+    "Leak"
 ]
