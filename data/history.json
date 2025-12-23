@@ -80,5 +80,6 @@
     "Resource",
     "Async (Asynchronous)",
     "Leak",
-    "Scope"
+    "Scope",
+    "Obsolete"
 ]

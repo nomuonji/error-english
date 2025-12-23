@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Obsolete",
-        "errorMessage": "Warning: Function X is obsolete since version 3.0. Use Y instead.",
-        "messageTranslation": "警告：関数Xはバージョン3.0以降廃止予定です。代わりにYを使ってください。",
-        "generalMeaning": "【形】時代遅れの、廃れた、使われなくなった",
-        "generalExample": "Obsolete technology (時代遅れの技術)",
-        "techMeaning": "昔の偉大な関数が、開発者の都合で「もうおじいちゃんだから引退してね」と言われてしまう悲しい状態。",
-        "explanation": "警告が出ただけならまだ動くことが多いが、未来のバージョンでは本当に消える。アップデートをサボるとシステム全体が使えなくなるぞ。今のうちに新しい書き方に書き換えよう。",
-        "usageContext": "昔の恋人との再会時",
-        "usageExample": "Your flip phone is completely obsolete!",
-        "usageExampleTranslation": "あなたのガラケー、完全に時代遅れだよ！",
-        "usagePunchline": "That relationship is now 410 Gone.",
-        "usagePunchlineTranslation": "あの関係は、もう410 Gone（永久に消滅）だね。"
-    },
-    {
         "targetWord": "Verbose",
         "errorMessage": "Setting logging level to VERBOSE. Expect heavy output.",
         "messageTranslation": "ロギングレベルを冗長に設定します。大量の出力を覚悟してください。",
