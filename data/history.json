@@ -83,5 +83,6 @@
     "Scope",
     "Obsolete",
     "Verbose",
-    "Immutable"
+    "Immutable",
+    "Deplete"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Deplete",
-        "errorMessage": "ERROR: System resources severely depleted. Out of memory.",
-        "messageTranslation": "エラー：システムリソースが深刻に枯渇しました。メモリ不足です。",
-        "generalMeaning": "【動】（資源などを）使い果たす、枯渇させる",
-        "generalExample": "Depleting natural resources (天然資源を枯渇させる)",
-        "techMeaning": "プログラムが暴走して、PCのメモリやCPUパワーを「飲めや歌えや」と使いまくり、システム全体が息切れしてしまった状態。",
-        "explanation": "メモリリークや無限ループが原因であることが多い。タスクマネージャーを開いて、どのプロセスが暴食しているか確認しよう。物理的な水や食料と同じで、リソースには限りがある。",
-        "usageContext": "週末に遊びすぎて疲労困憊した時",
-        "usageExample": "After the long weekend, my energy is totally depleted.",
-        "usageExampleTranslation": "長い週末の後で、私のエネルギーは完全に枯渇した。",
-        "usagePunchline": "You need a quick Reboot (再起動) and some Caching!",
-        "usagePunchlineTranslation": "すぐに再起動とキャッシング（休息）が必要だ！"
-    },
-    {
         "targetWord": "Daemon",
         "errorMessage": "Failed to restart the SSH daemon service.",
         "messageTranslation": "SSHデーモンサービスの再起動に失敗しました。",
