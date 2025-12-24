@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Verbose",
-        "errorMessage": "Setting logging level to VERBOSE. Expect heavy output.",
-        "messageTranslation": "ロギングレベルを冗長に設定します。大量の出力を覚悟してください。",
-        "generalMeaning": "【形】言葉数の多い、冗長な、くどい",
-        "generalExample": "A verbose speaker (話が長い人)",
-        "techMeaning": "プログラムが「どこで何をやったか」を隅々まで報告しすぎて、画面が情報で溢れかえり、逆に何が重要かわからなくなる状態。",
-        "explanation": "バグの原因を突き止めるには最高の設定だが、普段使いするとログファイルがHDDを食い尽くす。必要な時だけオンにするのが賢明。情報量の洪水に溺れないように。",
-        "usageContext": "報告書を作成するとき",
-        "usageExample": "Please stop being so verbose and just tell me the result.",
-        "usageExampleTranslation": "そんなに冗長にならずに、結果だけ教えてくれ。",
-        "usagePunchline": "Less is more, buddy. Keep it 200 OK.",
-        "usagePunchlineTranslation": "簡潔にね、友よ。200 OK（成功）で済ませよう。"
-    },
-    {
         "targetWord": "Immutable",
         "errorMessage": "TypeError: 'tuple' object does not support item assignment (Immutable object)",
         "messageTranslation": "TypeError：'タプル'オブジェクトは要素の代入をサポートしていません（不変のオブジェクト）。",
