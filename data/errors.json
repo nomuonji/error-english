@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Immutable",
-        "errorMessage": "TypeError: 'tuple' object does not support item assignment (Immutable object)",
-        "messageTranslation": "TypeError：'タプル'オブジェクトは要素の代入をサポートしていません（不変のオブジェクト）。",
-        "generalMeaning": "【形】不変の、変わらない",
-        "generalExample": "An immutable fact (動かしがたい事実)",
-        "techMeaning": "頑固でテコでも動かないデータ。「俺はこうすると決めたんだ！誰にも変えさせない！」とデータの意志が強すぎる状態。",
-        "explanation": "エラーが出たら、それはデータを変更するべきではないオブジェクトを使っているサイン。変更が必要なら、新しいオブジェクトを作り直す必要がある。設計思想が関わる深いエラーだ。",
-        "usageContext": "意志の固いダイエット中の友人に対して",
-        "usageExample": "His resolve to quit sweets is immutable.",
-        "usageExampleTranslation": "彼が甘いものをやめるという決意は不変だ。",
-        "usagePunchline": "Don't try to change him! He's running in Read-Only mode.",
-        "usagePunchlineTranslation": "彼を変えようとするな！彼は読み取り専用モードで動いているんだ。"
-    },
-    {
         "targetWord": "Deplete",
         "errorMessage": "ERROR: System resources severely depleted. Out of memory.",
         "messageTranslation": "エラー：システムリソースが深刻に枯渇しました。メモリ不足です。",

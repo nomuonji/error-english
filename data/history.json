@@ -82,5 +82,6 @@
     "Leak",
     "Scope",
     "Obsolete",
-    "Verbose"
+    "Verbose",
+    "Immutable"
 ]
