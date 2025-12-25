@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Daemon",
-        "errorMessage": "Failed to restart the SSH daemon service.",
-        "messageTranslation": "SSHデーモンサービスの再起動に失敗しました。",
-        "generalMeaning": "【名】悪魔、守護霊 (プログラミング文脈では)バックグラウンドで動くプログラム",
-        "generalExample": "The original meaning is 'a guiding spirit' in Greek mythology. (元々の意味はギリシャ神話の「守護霊」)",
-        "techMeaning": "ユーザーの操作とは関係なく、陰でコソコソと働いている、影の支配者（プロセス）。システムエラーになると悪魔のように厄介になる。",
-        "explanation": "サーバーやOSの裏方で、ネットワーク接続や印刷処理などをノンストップで担当している縁の下の力持ち。彼は昼も夜も働いているから、時々機嫌が悪くなるんだ。エラーが出たら再起動（Restart）が必要。",
-        "usageContext": "誰にも見られていないが、常に誰かのために働いている人",
-        "usageExample": "He is the silent daemon of the office, fixing everything behind the scenes.",
-        "usageExampleTranslation": "彼はオフィスの静かなデーモンで、裏で全てを直している。",
-        "usagePunchline": "Ah, a true Background Process! Needs a 204 No Content for a job well done.",
-        "usagePunchlineTranslation": "ああ、真のバックグラウンドプロセスだね！よくやったご褒美に204 No Content（褒美は控えめに）だ。"
-    },
-    {
         "targetWord": "Transient",
         "errorMessage": "Transient network error occurred. Please retry.",
         "messageTranslation": "一時的なネットワークエラーが発生しました。再試行してください。",

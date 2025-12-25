@@ -84,5 +84,6 @@
     "Obsolete",
     "Verbose",
     "Immutable",
-    "Deplete"
+    "Deplete",
+    "Daemon"
 ]
