@@ -86,5 +86,6 @@
     "Immutable",
     "Deplete",
     "Daemon",
-    "Transient"
+    "Transient",
+    "Throttle"
 ]

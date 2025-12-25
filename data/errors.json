@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Throttle",
-        "errorMessage": "API request rate limit exceeded (Throttled)",
-        "messageTranslation": "APIリクエストレート制限を超過しました（スロットリングされました）",
-        "generalMeaning": "【動】（エンジンなどの）絞り弁、または絞る、制限する",
-        "generalExample": "Throttle down the speed (速度を落とす)",
-        "techMeaning": "「ちょっと落ち着け」とサーバーに怒られている状態。あまりにも高速にリクエストを送りすぎたため、サーバーがサービス拒否を起こさないように速度を抑制している。",
-        "explanation": "プログラムが「リクエスト連打の鬼」になった結果。制限解除まで待つか、リクエストの頻度を下げる対策が必要。「君は少し熱くなりすぎた」と諭されていると思おう。",
-        "usageContext": "好きな芸能人にSNSで連続でコメントを送りすぎるファン",
-        "usageExample": "Stop throttling your idol with excessive comments!",
-        "usageExampleTranslation": "過剰なコメントでアイドルを絞めつける（困らせる）のはやめて！",
-        "usagePunchline": "Idol Agency: 429 Too Many Requests",
-        "usagePunchlineTranslation": "事務所：リクエストが多すぎます（しばらくコメント禁止）"
-    },
-    {
         "targetWord": "Retrieve",
         "errorMessage": "Failed to retrieve data from database.",
         "messageTranslation": "データベースからのデータ取得に失敗しました。",
