@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Transient",
-        "errorMessage": "Transient network error occurred. Please retry.",
-        "messageTranslation": "一時的なネットワークエラーが発生しました。再試行してください。",
-        "generalMeaning": "【形】一時的な、儚い、つかの間の",
-        "generalExample": "Transient feeling (一時的な感情)",
-        "techMeaning": "儚すぎるエラー。すぐに消えるから、落ち着いてもう一回試せば大丈夫なことが多い、ちょいワル系エラー。",
-        "explanation": "ネットワークが「ちょっと休憩したい」と言っている状態。リロードボタンを押すことで大体解決する。もし何度も出るなら、それはもはやTransientではない。",
-        "usageContext": "待ち合わせに遅れそうな時",
-        "usageExample": "My delay is transient, I'll be there in 5 minutes!",
-        "usageExampleTranslation": "私の遅れは一時的なものよ、5分で着くから！",
-        "usagePunchline": "Friend: 504 Gateway Timeout!",
-        "usagePunchlineTranslation": "友達：ゲートウェイタイムアウト！（待ちくたびれた）"
-    },
-    {
         "targetWord": "Throttle",
         "errorMessage": "API request rate limit exceeded (Throttled)",
         "messageTranslation": "APIリクエストレート制限を超過しました（スロットリングされました）",

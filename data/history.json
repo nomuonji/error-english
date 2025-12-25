@@ -85,5 +85,6 @@
     "Verbose",
     "Immutable",
     "Deplete",
-    "Daemon"
+    "Daemon",
+    "Transient"
 ]
