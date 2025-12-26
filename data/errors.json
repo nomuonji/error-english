@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disposed",
-        "errorMessage": "Cannot access a disposed object.",
-        "messageTranslation": "破棄されたオブジェクトにアクセスできません。",
-        "generalMeaning": "【動】配置する、処分する、処理する",
-        "generalExample": "Dispose of waste (ゴミを処分する)",
-        "techMeaning": "お役御免になって、ゴミ箱に捨てられたはずのオブジェクトを、しつこく呼び出そうとしている状態。「死人に口なし」ならぬ「死んだオブジェクトにデータなし」。",
-        "explanation": "オブジェクトのライフサイクル管理ミス。特にリソース解放（ファイルやDB接続など）が必要なオブジェクトを解放した後に、うっかり再利用しようとすると発生。故人をそっとしておいてあげよう。",
-        "usageContext": "過去の恋人のSNSアカウントをチェックしようとする時",
-        "usageExample": "Stop trying to access the disposed relationship!",
-        "usageExampleTranslation": "破棄された関係にアクセスしようとするのはやめて！",
-        "usagePunchline": "Ex-Partner: 410 Gone",
-        "usagePunchlineTranslation": "元カレ/元カノ：存在しない（消えました）"
-    },
-    {
         "targetWord": "Suppressed",
         "errorMessage": "Warning Suppressed: Unused Variable",
         "messageTranslation": "警告が抑制されました: 未使用の変数",

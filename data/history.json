@@ -89,5 +89,6 @@
     "Transient",
     "Throttle",
     "Retrieve",
-    "Dangling"
+    "Dangling",
+    "Disposed"
 ]
