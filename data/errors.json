@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dangling",
-        "errorMessage": "Found a dangling pointer reference.",
-        "messageTranslation": "宙ぶらりんのポインタ参照が見つかりました。",
-        "generalMeaning": "【形】ぶら下がっている、宙に浮いた",
-        "generalExample": "A dangling cable (ぶら下がっているケーブル)",
-        "techMeaning": "かつて存在したはずのメモリのアドレスを指しているが、もうそのメモリは解放されていて誰もいない状態。「幽霊の住所」を指している。",
-        "explanation": "C/C++など、メモリ管理を手動で行う言語の悪夢。ポインタが指す対象が消滅しているのに、ポインタだけが生き残ってしまった。実体がないので触るとプログラムがクラッシュする。",
-        "usageContext": "卒業した先輩のLINEアカウントをまだフォローしている時",
-        "usageExample": "That old social media account is just a dangling reference now.",
-        "usageExampleTranslation": "あの古いSNSアカウントは、今やただの宙ぶらりんな参照だ。",
-        "usagePunchline": "System: Segmentation Fault",
-        "usagePunchlineTranslation": "システム：セグメンテーション違反（触ったら爆発）"
-    },
-    {
         "targetWord": "Disposed",
         "errorMessage": "Cannot access a disposed object.",
         "messageTranslation": "破棄されたオブジェクトにアクセスできません。",

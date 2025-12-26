@@ -88,5 +88,6 @@
     "Daemon",
     "Transient",
     "Throttle",
-    "Retrieve"
+    "Retrieve",
+    "Dangling"
 ]
