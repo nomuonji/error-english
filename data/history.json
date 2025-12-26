@@ -87,5 +87,6 @@
     "Deplete",
     "Daemon",
     "Transient",
-    "Throttle"
+    "Throttle",
+    "Retrieve"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Retrieve",
-        "errorMessage": "Failed to retrieve data from database.",
-        "messageTranslation": "データベースからのデータ取得に失敗しました。",
-        "generalMeaning": "【動】取り戻す、回収する、検索する",
-        "generalExample": "Retrieve a lost wallet (失くした財布を取り戻す)",
-        "techMeaning": "データベースという名の巨大倉庫から、目的のデータを見つけられなかった状態。「え、どこやったっけ？」とデータが迷子になっている。",
-        "explanation": "検索指示（SQLクエリなど）が間違っているか、データ自体が存在しない可能性が高い。「見つからない」と言われたら、まず探し方（クエリ）を確認しよう。",
-        "usageContext": "買い物に来たのに、必要なものを忘れてきた時",
-        "usageExample": "I need to retrieve the shopping list from my memory!",
-        "usageExampleTranslation": "記憶から買い物リストを取り戻さなきゃ！",
-        "usagePunchline": "Wife: 404 Not Found",
-        "usagePunchlineTranslation": "妻：リストが見つからない（買い物は失敗）"
-    },
-    {
         "targetWord": "Dangling",
         "errorMessage": "Found a dangling pointer reference.",
         "messageTranslation": "宙ぶらりんのポインタ参照が見つかりました。",
