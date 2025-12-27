@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Suppressed",
-        "errorMessage": "Warning Suppressed: Unused Variable",
-        "messageTranslation": "警告が抑制されました: 未使用の変数",
-        "generalMeaning": "【形】抑制された、抑圧された、隠された",
-        "generalExample": "She suppressed a yawn. (彼女はあくびをこらえた。)",
-        "techMeaning": "プログラムが「まあ、大したことないから黙っとくわ」と警告を無視した状態。",
-        "explanation": "本来出るべき警告を、設定やアノテーションを使って意図的に非表示にしている状況。本当に重要な警告を見逃さないよう、注意深く使うべし！",
-        "usageContext": "上司にダメ出しを言われたが、笑顔で耐え忍ぶ時。",
-        "usageExample": "My frustration was successfully suppressed.",
-        "usageExampleTranslation": "私の不満はうまく抑制された。",
-        "usagePunchline": "Boss: 204 No Content",
-        "usagePunchlineTranslation": "上司：文句を言うな、中身は空だ（反応なし）"
-    },
-    {
         "targetWord": "Instantiate",
         "errorMessage": "Cannot Instantiate Abstract Class",
         "messageTranslation": "抽象クラスをインスタンス化できません",

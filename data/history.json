@@ -90,5 +90,6 @@
     "Throttle",
     "Retrieve",
     "Dangling",
-    "Disposed"
+    "Disposed",
+    "Suppressed"
 ]
