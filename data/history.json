@@ -91,5 +91,6 @@
     "Retrieve",
     "Dangling",
     "Disposed",
-    "Suppressed"
+    "Suppressed",
+    "Instantiate"
 ]

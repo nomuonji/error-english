@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Instantiate",
-        "errorMessage": "Cannot Instantiate Abstract Class",
-        "messageTranslation": "抽象クラスをインスタンス化できません",
-        "generalMeaning": "【動】実例を挙げる、具体化する",
-        "generalExample": "To instantiate a concept (概念を具体化する)",
-        "techMeaning": "設計図（クラス）を元に、実際に動かせるモノ（オブジェクト）を「製造する」こと。",
-        "explanation": "「クラス」が「たい焼きの型」だとすると、「インスタンス」は実際にできた「たい焼き」そのもの。未完成の設計図（抽象クラス）からはモノは作れないよ、というエラー。",
-        "usageContext": "レシピ（クラス）を読んで、料理を始めようとする時。",
-        "usageExample": "I need to instantiate the coffee making process.",
-        "usageExampleTranslation": "コーヒーを作るプロセスを実体化する必要がある。",
-        "usagePunchline": "Wife: 501 Not Implemented",
-        "usagePunchlineTranslation": "妻：まだ何もできてない（実装されていません）"
-    },
-    {
         "targetWord": "Resilience",
         "errorMessage": "Failed to achieve system resilience after three retries.",
         "messageTranslation": "3回の再試行後もシステム回復力を達成できませんでした。",
