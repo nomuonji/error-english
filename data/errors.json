@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Resilience",
-        "errorMessage": "Failed to achieve system resilience after three retries.",
-        "messageTranslation": "3回の再試行後もシステム回復力を達成できませんでした。",
-        "generalMeaning": "【名】回復力、弾力性、立ち直る力",
-        "generalExample": "The resilience of the human spirit (人間の精神の回復力)",
-        "techMeaning": "システムがエラーや障害に見舞われても、へこたれずに元通りに立ち直ろうとする粘り強さ。",
-        "explanation": "サーバーがダウンしても、自動的に復旧したり、予備機に切り替わったりする能力のこと。想定外の入力に対しても「それでも動き続ける」設計が重要。",
-        "usageContext": "厳しいダイエット計画を破ってしまった翌朝。",
-        "usageExample": "My resilience to snacks is low today.",
-        "usageExampleTranslation": "今日はスナック菓子に対する回復力が低い。",
-        "usagePunchline": "Diet Coach: 429 Too Many Requests",
-        "usagePunchlineTranslation": "ダイエットコーチ：要求が多すぎます（食べ過ぎ）"
-    },
-    {
         "targetWord": "Incomplete",
         "errorMessage": "Incomplete structure definition or missing semicolon",
         "messageTranslation": "不完全な構造定義、またはセミコロンが不足しています",

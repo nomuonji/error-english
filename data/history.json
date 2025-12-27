@@ -92,5 +92,6 @@
     "Dangling",
     "Disposed",
     "Suppressed",
-    "Instantiate"
+    "Instantiate",
+    "Resilience"
 ]
