@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Authenticate",
-        "errorMessage": "Failed to authenticate user.",
-        "messageTranslation": "ユーザーの認証に失敗しました",
-        "generalMeaning": "【動】（本物であることを）証明する、認証する",
-        "generalExample": "Please authenticate your identity. (あなたの身元を認証してください。)",
-        "techMeaning": "「お前、本当にそこの住人か？」とシステムが問い詰めている状態。パスワードやキーが間違っていると怒られる。",
-        "explanation": "IDとパスワードを確認する儀式。大文字小文字の打ち間違いは万国共通のエラー原因。コピペ推奨。",
-        "usageContext": "会社の入口でセキュリティチェックを受けている時。",
-        "usageExample": "I failed to authenticate with the new security system.",
-        "usageExampleTranslation": "新しいセキュリティシステムで認証失敗したよ。",
-        "usagePunchline": "Security Guard: \"Access Denied. Error Code 401 Unauthorized.\"",
-        "usagePunchlineTranslation": "警備員：「アクセス拒否。エラーコード 401 認証が必要です。」"
-    },
-    {
         "targetWord": "Configure",
         "errorMessage": "Failed to configure database connection.",
         "messageTranslation": "データベース接続の設定に失敗しました",
