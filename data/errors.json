@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Incomplete",
-        "errorMessage": "Incomplete structure definition or missing semicolon",
-        "messageTranslation": "不完全な構造定義、またはセミコロンが不足しています",
-        "generalMeaning": "【形】不完全な、未完成の",
-        "generalExample": "An incomplete puzzle (未完成のパズル)",
-        "techMeaning": "プログラムの文法や構造が、コンパイラにとって「まだ終わってないよ！」と怒鳴られる状態。",
-        "explanation": "括弧の閉じ忘れや、セミコロンの打ち忘れが主な原因。プログラミングの文章は「。」（セミコロン）を忘れると、永遠に話が終わらない人みたいになってしまう。",
-        "usageContext": "締切直前に提出した企画書を見た上司の反応。",
-        "usageExample": "This report is totally incomplete! Where is the conclusion?",
-        "usageExampleTranslation": "このレポートは全く不完全だ！結論はどこだ？",
-        "usagePunchline": "Subordinate: 411 Length Required",
-        "usagePunchlineTranslation": "部下：文字数が足りなかったんです（長さが必要です）"
-    },
-    {
         "targetWord": "Bootstrap",
         "errorMessage": "Failed to initialize application bootstrap",
         "messageTranslation": "アプリケーションの初期起動に失敗しました",
