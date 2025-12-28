@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Bootstrap",
-        "errorMessage": "Failed to initialize application bootstrap",
-        "messageTranslation": "アプリケーションの初期起動に失敗しました",
-        "generalMeaning": "【名】（ブーツの）引き手、自力で解決する手段",
-        "generalExample": "Pull oneself up by one's bootstraps (自力で成功する)",
-        "techMeaning": "コンピュータやプログラムが自分自身を起動するための最初の手順。自分自身の靴ひもを持って引き上げて起動する、というイメージ。",
-        "explanation": "プログラムが動き出すために必要な、最も基礎的な初期設定や読み込みのこと。これが失敗すると、全てが始まる前に終了してしまう、深刻なエラー。",
-        "usageContext": "朝、目覚まし時計が鳴らない時。",
-        "usageExample": "My morning routine failed to bootstrap today.",
-        "usageExampleTranslation": "今日の朝のルーティンは起動に失敗した。",
-        "usagePunchline": "Alarm Clock: 503 Service Unavailable",
-        "usagePunchlineTranslation": "目覚まし時計：サービス停止中（寝坊確定）"
-    },
-    {
         "targetWord": "Authenticate",
         "errorMessage": "Failed to authenticate user.",
         "messageTranslation": "ユーザーの認証に失敗しました",

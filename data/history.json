@@ -94,5 +94,6 @@
     "Suppressed",
     "Instantiate",
     "Resilience",
-    "Incomplete"
+    "Incomplete",
+    "Bootstrap"
 ]
