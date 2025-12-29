@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Compromised",
-        "errorMessage": "Security Alert: Database credentials may be compromised.",
-        "messageTranslation": "セキュリティ警告：データベースの認証情報が侵害された可能性があります。",
-        "generalMeaning": "【動】（信用などを）傷つける、危うくする。あるいは「妥協する」。",
-        "generalExample": "The negotiation was a good compromise. (その交渉は良い妥協点だった。)",
-        "techMeaning": "セキュリティ文脈では「悪者に侵入されて、機密情報が漏れたり、改ざんされたりした状態」。",
-        "explanation": "侵入者によってデータの純粋さが損なわれた状態。パスワードの使い回しは、セキュリティを自ら「妥協」させている行為なので今すぐやめよう。",
-        "usageContext": "ダイエット中に夜中にこっそりラーメンを食べた翌朝。",
-        "usageExample": "My diet plan was severely compromised last night.",
-        "usageExampleTranslation": "昨夜、私のダイエット計画はひどく危うくされた（破綻した）。",
-        "usagePunchline": "Trainer: \"You violated Rule #1. Status Code 406 Not Acceptable.\"",
-        "usagePunchlineTranslation": "トレーナー：「ルール1に違反しました。ステータスコード 406 受理できません。」"
-    },
-    {
         "targetWord": "Integrate",
         "errorMessage": "Failed to integrate external API module.",
         "messageTranslation": "外部APIモジュールの統合に失敗しました。",

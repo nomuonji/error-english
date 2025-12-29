@@ -98,5 +98,6 @@
     "Bootstrap",
     "Authenticate",
     "Configure",
-    "Redundant"
+    "Redundant",
+    "Compromised"
 ]
