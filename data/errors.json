@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Redundant",
-        "errorMessage": "Warning: Redundant initialization of variable 'i'.",
-        "messageTranslation": "警告：変数 'i' の冗長な初期化です。",
-        "generalMeaning": "【形】冗長な、不要な、余分な",
-        "generalExample": "A redundant explanation (冗長な説明)",
-        "techMeaning": "「それ、さっきもやったでしょ？」とコンパイラにツッコまれている状態。意味のない二度手間コード。",
-        "explanation": "コードの肥満体質。パフォーマンスには影響しないことが多いが、コードレビューで「ダイエットしろ！」と指摘される。書かなくていいものは書かない美学。",
-        "usageContext": "会議で同じことを何度も説明している時。",
-        "usageExample": "Your arguments are getting redundant.",
-        "usageExampleTranslation": "あなたの議論は冗長になってきているよ。",
-        "usagePunchline": "Colleague: \"Please commit your changes without 'git push --force' (The redundancy of force pushing).\"",
-        "usagePunchlineTranslation": "同僚：「『git push --force』なしでコミットしてください。（強制プッシュの冗長性）」"
-    },
-    {
         "targetWord": "Compromised",
         "errorMessage": "Security Alert: Database credentials may be compromised.",
         "messageTranslation": "セキュリティ警告：データベースの認証情報が侵害された可能性があります。",
