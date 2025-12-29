@@ -96,5 +96,6 @@
     "Resilience",
     "Incomplete",
     "Bootstrap",
-    "Authenticate"
+    "Authenticate",
+    "Configure"
 ]

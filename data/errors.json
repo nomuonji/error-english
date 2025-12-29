@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Configure",
-        "errorMessage": "Failed to configure database connection.",
-        "messageTranslation": "データベース接続の設定に失敗しました",
-        "generalMeaning": "【動】（機器などを）設定する、組み立てる",
-        "generalExample": "Configure the new router settings. (新しいルーターの設定を行う。)",
-        "techMeaning": "プログラムが「箱から出したばかりで、まだ何をどう動かせばいいかわからない」と泣きついている状態。",
-        "explanation": "プログラムを動かすための住所やルールを教えてあげる作業。大抵の場合、設定ファイル（.envやconfig.yaml）に書き間違いがある。",
-        "usageContext": "引っ越ししたばかりで、家具の配置を決めている時。",
-        "usageExample": "I need to configure my life schedule better this week.",
-        "usageExampleTranslation": "今週は人生のスケジュールをもっとうまく設定する必要がある。",
-        "usagePunchline": "Friend: \"Your lifestyle seems like a default setting.\"",
-        "usagePunchlineTranslation": "友人：「お前の生活様式、デフォルト設定のままだろ。」"
-    },
-    {
         "targetWord": "Redundant",
         "errorMessage": "Warning: Redundant initialization of variable 'i'.",
         "messageTranslation": "警告：変数 'i' の冗長な初期化です。",
