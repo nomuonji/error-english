@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Integrate",
-        "errorMessage": "Failed to integrate external API module.",
-        "messageTranslation": "外部APIモジュールの統合に失敗しました。",
-        "generalMeaning": "【動】統合する、一体化させる",
-        "generalExample": "We need to integrate the new features into the main system. (新しい機能をメインシステムに統合する必要がある。)",
-        "techMeaning": "複数の部品（モジュールやAPI）をくっつけて、一つのプログラムとして仲良く動かそうとしているが、規格が合わずケンカしている状態。",
-        "explanation": "パズルのピースを無理やりはめようとしている状態。接続先のバージョンが古かったり、データ形式（JSONかXMLか）が合わないなど、事前の調整不足が原因であることが多い。",
-        "usageContext": "部署が違うチーム同士で共同プロジェクトを進める時。",
-        "usageExample": "It's hard to integrate my hobbies with my busy work schedule.",
-        "usageExampleTranslation": "趣味を忙しい仕事のスケジュールに統合するのは難しい。",
-        "usagePunchline": "Project Manager: \"This integration failure is a massive 'Merge Conflict'.\"",
-        "usagePunchlineTranslation": "プロジェクトマネージャー：「この統合失敗は、大規模な『マージコンフリクト』だ。」"
-    },
-    {
         "targetWord": "Inferred",
         "errorMessage": "Cannot infer type of expression",
         "messageTranslation": "式の型を推論できません",
