@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Inferred",
-        "errorMessage": "Cannot infer type of expression",
-        "messageTranslation": "式の型を推論できません",
-        "generalMeaning": "【形】推論された、察せられた",
-        "generalExample": "The truth was inferred from his silence (真実は彼の沈黙から推論された)",
-        "techMeaning": "「お前、何者だ？」プログラムが「コイツの正体がわからん！」と困惑している状態。型を自動で決めるのに失敗した時。",
-        "explanation": "プログラミング言語が気を利かせて型を自動で判断しようとしてくれたのに、情報が少なすぎてお手上げになったパターン。ちゃんと型を明記してあげると機嫌が直る。",
-        "usageContext": "友達の曖昧な発言に対して",
-        "usageExample": "Your intentions are poorly inferred.",
-        "usageExampleTranslation": "君の意図、推測しにくいわ。",
-        "usagePunchline": "I got 501 Not Implemented",
-        "usagePunchlineTranslation": "実装できませんでした (意図が不明すぎる)"
-    },
-    {
         "targetWord": "Degraded",
         "errorMessage": "Service Degraded: High latency detected",
         "messageTranslation": "サービス劣化：高遅延が検出されました",
