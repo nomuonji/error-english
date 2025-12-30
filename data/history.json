@@ -101,5 +101,6 @@
     "Redundant",
     "Compromised",
     "Integrate",
-    "Inferred"
+    "Inferred",
+    "Degraded"
 ]

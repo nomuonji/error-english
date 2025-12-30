@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Degraded",
-        "errorMessage": "Service Degraded: High latency detected",
-        "messageTranslation": "サービス劣化：高遅延が検出されました",
-        "generalMeaning": "【形】劣化させられた、品質を落とされた",
-        "generalExample": "Degraded video quality (劣化した動画品質)",
-        "techMeaning": "「今、ギリギリ生きてるけど、調子めっちゃ悪いよ！」と悲鳴を上げている状態。サービスダウンの一歩手前。",
-        "explanation": "サーバーやDBの負荷が高すぎて、応答速度が著しく落ちているサイン。エラーではないが、ユーザー体験は最悪。早急にスケールアップ（増強）が必要。",
-        "usageContext": "疲れて仕事の効率が落ちている時",
-        "usageExample": "My energy levels are severely degraded today.",
-        "usageExampleTranslation": "今日の私のエネルギーレベル、ひどく劣化してるわ。",
-        "usagePunchline": "My performance is currently running at 10% CPU usage.",
-        "usagePunchlineTranslation": "現在、私のパフォーマンスはCPU使用率10%で動いています（全然動いてない）"
-    },
-    {
         "targetWord": "Insecure",
         "errorMessage": "Insecure connection detected. Certificate required.",
         "messageTranslation": "安全でない接続が検出されました。証明書が必要です。",
