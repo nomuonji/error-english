@@ -104,5 +104,6 @@
     "Inferred",
     "Degraded",
     "Insecure",
-    "Mismatched"
+    "Mismatched",
+    "Sanitize"
 ]

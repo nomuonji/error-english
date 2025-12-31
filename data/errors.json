@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Sanitize",
-        "errorMessage": "Input must be sanitized before processing.",
-        "messageTranslation": "入力は処理する前に無害化（サニタイズ）されなければなりません。",
-        "generalMeaning": "【動】衛生的にする、消毒する、無害化する",
-        "generalExample": "Sanitize your hands frequently (頻繁に手を消毒しなさい)",
-        "techMeaning": "「汚い入力を持ってくるな！ちゃんと掃除してから渡せ！」セキュリティ上の危険な文字列を排除しろという要求。",
-        "explanation": "ユーザーからの入力値に悪意のあるコード（SQLインジェクションやXSSの原因となる文字）が含まれていないかチェックし、無効化する処理。これができていないとシステムが乗っ取られる危険がある。",
-        "usageContext": "整理整頓されていないデスクを見た時",
-        "usageExample": "You need to sanitize your workspace immediately!",
-        "usageExampleTranslation": "すぐに作業スペースを消毒（片付け）しなさい！",
-        "usagePunchline": "Security Check: DROP TABLE",
-        "usagePunchlineTranslation": "セキュリティチェック：テーブルを削除しろ！（SQLインジェクションの攻撃を模倣）"
-    },
-    {
         "targetWord": "Terminate",
         "errorMessage": "Process terminated by signal 9",
         "messageTranslation": "プロセスがシグナル9によって強制終了されました",
