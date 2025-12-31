@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Insecure",
-        "errorMessage": "Insecure connection detected. Certificate required.",
-        "messageTranslation": "安全でない接続が検出されました。証明書が必要です。",
-        "generalMeaning": "【形】不安定な、危険な、不安な、安全でない",
-        "generalExample": "Feeling insecure about giving a presentation (プレゼンすることに不安を感じる)",
-        "techMeaning": "通信や設定が丸見え！「パスワードや機密情報が盗まれる危険性があるぞ！」という警告。",
-        "explanation": "主にHTTPSではなくHTTPを使っていたり、古い暗号化方式を使っている時に出る。絶対に機密情報を扱ってはいけない「裸の通信」状態。まずはTLS/SSL証明書を入れよう。",
-        "usageContext": "鍵をかけ忘れた時",
-        "usageExample": "Leaving the door unlocked makes the whole house insecure.",
-        "usageExampleTranslation": "ドアの鍵を開けっぱなしにすると家全体が危険になる。",
-        "usagePunchline": "Security Policy: 401 Unauthorized",
-        "usagePunchlineTranslation": "セキュリティポリシー：許可できません（権限なし）"
-    },
-    {
         "targetWord": "Mismatched",
         "errorMessage": "Type Mismatched: Expecting integer but received string",
         "messageTranslation": "型の不一致：整数を期待しましたが、文字列を受け取りました",
