@@ -103,5 +103,6 @@
     "Integrate",
     "Inferred",
     "Degraded",
-    "Insecure"
+    "Insecure",
+    "Mismatched"
 ]

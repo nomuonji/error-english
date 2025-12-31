@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mismatched",
-        "errorMessage": "Type Mismatched: Expecting integer but received string",
-        "messageTranslation": "型の不一致：整数を期待しましたが、文字列を受け取りました",
-        "generalMeaning": "【形】一致しない、釣り合わない",
-        "generalExample": "Mismatched socks (ちぐはぐな靴下)",
-        "techMeaning": "期待していたものと全然違うものが渡された時にプログラムが叫ぶ。「いや、リンゴって言ったじゃん！なんでバナナ持ってくんの!?」",
-        "explanation": "型が厳しい言語でよく遭遇する。数字が欲しいのに文字が来たり、配列が欲しいのにオブジェクトが来たり。引数や返り値の仕様をよく確認し、型変換（キャスト）が必要かどうか検討しよう。",
-        "usageContext": "頼んだメニューと違うものが来た時",
-        "usageExample": "Wait, the sauce is completely mismatched with the pasta.",
-        "usageExampleTranslation": "待って、このソース、パスタと全然合ってない。",
-        "usagePunchline": "Server response: 406 Not Acceptable",
-        "usagePunchlineTranslation": "サーバー応答：受け付けられません (期待と違うものだから)"
-    },
-    {
         "targetWord": "Sanitize",
         "errorMessage": "Input must be sanitized before processing.",
         "messageTranslation": "入力は処理する前に無害化（サニタイズ）されなければなりません。",
