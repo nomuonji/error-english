@@ -106,5 +106,6 @@
     "Insecure",
     "Mismatched",
     "Sanitize",
-    "Terminate"
+    "Terminate",
+    "Validate"
 ]

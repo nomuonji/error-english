@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Validate",
-        "errorMessage": "Failed to validate input data",
-        "messageTranslation": "入力データの検証に失敗しました",
-        "generalMeaning": "【動】有効であることを証明する、正当性を確認する",
-        "generalExample": "Validate the ticket (切符の有効性を確認する)",
-        "techMeaning": "入力された情報が「まともなものか？」「指定されたルール通りか？」を審査すること",
-        "explanation": "ユーザーの自由奔放な入力（例えば、年齢欄に「バナナ」と入れる）をチェックする門番。Validateに失敗したら、門前払い（エラー）です。",
-        "usageContext": "友達の突飛な言い訳を聞いた時",
-        "usageExample": "I need to validate your story first.",
-        "usageExampleTranslation": "まず君の話が本当か検証する必要があるね。",
-        "usagePunchline": "Friend's explanation: 406 Not Acceptable",
-        "usagePunchlineTranslation": "友達の言い訳：受け入れられない（入力フォーマット違反）"
-    },
-    {
         "targetWord": "Restore",
         "errorMessage": "Failed to restore database from backup",
         "messageTranslation": "バックアップからのデータベース復元に失敗しました",
