@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Restore",
-        "errorMessage": "Failed to restore database from backup",
-        "messageTranslation": "バックアップからのデータベース復元に失敗しました",
-        "generalMeaning": "【動】回復させる、元に戻す",
-        "generalExample": "Restore peace (平和を回復する)",
-        "techMeaning": "壊れたり消えたりしたデータを、過去の健全な状態に戻すタイムマシン機能",
-        "explanation": "「やっちまった！」となった時に頼る最後の砦。Restoreが失敗したら、それはバックアップ自体が機能していなかったという、二重の悲劇。",
-        "usageContext": "過去の栄光を語る時",
-        "usageExample": "Let's restore our glorious old days!",
-        "usageExampleTranslation": "輝かしい昔の日々を取り戻そう！",
-        "usagePunchline": "Status Code: 501 Not Implemented",
-        "usagePunchlineTranslation": "ステータスコード：実装されていません（復元機能自体が動いていない）"
-    },
-    {
         "targetWord": "Synchronize",
         "errorMessage": "Failed to synchronize file versions",
         "messageTranslation": "ファイルバージョンの同期に失敗しました",

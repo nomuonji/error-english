@@ -107,5 +107,6 @@
     "Mismatched",
     "Sanitize",
     "Terminate",
-    "Validate"
+    "Validate",
+    "Restore"
 ]
