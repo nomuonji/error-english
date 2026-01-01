@@ -105,5 +105,6 @@
     "Degraded",
     "Insecure",
     "Mismatched",
-    "Sanitize"
+    "Sanitize",
+    "Terminate"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Terminate",
-        "errorMessage": "Process terminated by signal 9",
-        "messageTranslation": "プロセスがシグナル9によって強制終了されました",
-        "generalMeaning": "【動】終わらせる、終了させる",
-        "generalExample": "Terminate a contract (契約を終了する)",
-        "techMeaning": "プログラムが「やめだ！もう働かない！」と突然シャットダウンすること",
-        "explanation": "ユーザーがCtrl+Cを押したり、OSが「お前、メモリ食いすぎ！」と判断して問答無用で終わらせた状態。優雅な幕引きではない。",
-        "usageContext": "やる気のない会議で早く終わらせたい時",
-        "usageExample": "Please terminate this meeting immediately.",
-        "usageExampleTranslation": "この会議を即座に終わらせてください。",
-        "usagePunchline": "Meeting Status: 408 Request Timeout",
-        "usagePunchlineTranslation": "会議のステータス：要求タイムアウト（長すぎて聞く気力がない）"
-    },
-    {
         "targetWord": "Validate",
         "errorMessage": "Failed to validate input data",
         "messageTranslation": "入力データの検証に失敗しました",
