@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Compile",
-        "errorMessage": "Compilation failed due to errors.",
-        "messageTranslation": "エラーのためコンパイルに失敗しました。",
-        "generalMeaning": "【動】編集する、彙集する、翻訳する",
-        "generalExample": "Compile a list of names (名前のリストを編集する)",
-        "techMeaning": "ソースコード（人間の言葉に近い指示書）を、コンピュータが理解できる機械語（バイナリ）に翻訳し、実行可能な形にすること。",
-        "explanation": "翻訳のプロセスのこと。この翻訳作業中に文法ミス（Syntax Errorなど）が見つかると、翻訳者は「ちょっと何言ってるか分からない」とキレて、エラーを吐き出します。まずは文法チェックから！",
-        "usageContext": "企画書を上司に提出する前",
-        "usageExample": "I need to compile all the sales data before the meeting.",
-        "usageExampleTranslation": "会議の前に、全ての売上データをまとめなきゃ。",
-        "usagePunchline": "Boss: Please check the status code 400 Bad Request.",
-        "usagePunchlineTranslation": "上司：ステータスコード400（入力ミス）を確認してください。"
-    },
-    {
         "targetWord": "Commit",
         "errorMessage": "Failed to commit changes.",
         "messageTranslation": "変更のコミットに失敗しました。",

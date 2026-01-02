@@ -110,5 +110,6 @@
     "Validate",
     "Restore",
     "Synchronize",
-    "Clobber"
+    "Clobber",
+    "Compile"
 ]
