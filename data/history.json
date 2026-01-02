@@ -109,5 +109,6 @@
     "Terminate",
     "Validate",
     "Restore",
-    "Synchronize"
+    "Synchronize",
+    "Clobber"
 ]
