@@ -108,5 +108,6 @@
     "Sanitize",
     "Terminate",
     "Validate",
-    "Restore"
+    "Restore",
+    "Synchronize"
 ]

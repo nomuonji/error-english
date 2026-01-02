@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Synchronize",
-        "errorMessage": "Failed to synchronize file versions",
-        "messageTranslation": "ファイルバージョンの同期に失敗しました",
-        "generalMeaning": "【動】同期させる、同時に起こるようにする",
-        "generalExample": "Synchronize watches (時計を合わせる)",
-        "techMeaning": "複数のデータやプロセスが、お互いに同じ情報を共有し、足並みを揃えている状態",
-        "explanation": "AさんとBさんが別々に作業していて、Aさんの最新変更がBさんに伝わってないときに発生。情報格差は争いの元！Gitでよく見るやつです。",
-        "usageContext": "チームのメンバーがバラバラの意見を出している時",
-        "usageExample": "We need to synchronize our understanding before starting.",
-        "usageExampleTranslation": "始める前に、私たちの理解を同期させる必要がある。",
-        "usagePunchline": "Team Collaboration: 409 Conflict",
-        "usagePunchlineTranslation": "チームの連携：対立（バージョンの衝突）"
-    },
-    {
         "targetWord": "Clobber",
         "errorMessage": "Output file already exists. Use '--clobber' to force overwrite.",
         "messageTranslation": "出力ファイルが既に存在します。上書きを強制するには'--clobber'を使ってください。",
