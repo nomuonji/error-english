@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Commit",
-        "errorMessage": "Failed to commit changes.",
-        "messageTranslation": "変更のコミットに失敗しました。",
-        "generalMeaning": "【動】委託する、ゆだねる、約束する、専念する",
-        "generalExample": "Commit to memory (記憶にとどめる)",
-        "techMeaning": "Gitなどのバージョン管理システムにおいて、「この時点での変更を正式に記録する」という決意表明。銀行の確定申告みたいなもの。",
-        "explanation": "プログラミングにおける「記録ボタン」。押すまでは変更が宙ぶらりんの状態です。頻繁にコミットして小さな単位で記録を残すのが、バグ修正を楽にする鉄則です。",
-        "usageContext": "ダイエットの誓いを立てる時",
-        "usageExample": "I commit to losing 5kg this month!",
-        "usageExampleTranslation": "今月5kg痩せることを約束するわ！",
-        "usagePunchline": "System: 507 Insufficient Storage",
-        "usagePunchlineTranslation": "システム：507 ストレージ容量不足（決意が重すぎる）"
-    },
-    {
         "targetWord": "Debug",
         "errorMessage": "Debugging mode is enabled.",
         "messageTranslation": "デバッグモードが有効になっています。",

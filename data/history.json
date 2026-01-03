@@ -111,5 +111,6 @@
     "Restore",
     "Synchronize",
     "Clobber",
-    "Compile"
+    "Compile",
+    "Commit"
 ]
