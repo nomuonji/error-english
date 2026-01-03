@@ -112,5 +112,6 @@
     "Synchronize",
     "Clobber",
     "Compile",
-    "Commit"
+    "Commit",
+    "Debug"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Debug",
-        "errorMessage": "Debugging mode is enabled.",
-        "messageTranslation": "デバッグモードが有効になっています。",
-        "generalMeaning": "【動】（機器の）欠陥を取り除く、不具合を修正する。",
-        "generalExample": "We need to debug the new software. (新しいソフトウェアの不具合を直す必要がある。)",
-        "techMeaning": "プログラムに侵入した「バグ（虫）」を駆除する作業。探偵のようにプログラムの行動を追跡し、犯人（エラーの原因）を特定すること。",
-        "explanation": "プログラムの仕事の8割はデバッグです。エラーが出たら、ひたすらログと睨めっこし、虫探しゲームを始めましょう。落ち着いて、どこで処理が止まったか確認するのがコツ。",
-        "usageContext": "週末の予定を立てる時",
-        "usageExample": "I need to debug my schedule because I double-booked the dentist and the haircut.",
-        "usageExampleTranslation": "歯医者と美容院の予約がダブルブッキングしてるから、スケジュールを修正（デバッグ）しなきゃ。",
-        "usagePunchline": "Life: 418 I'm a teapot",
-        "usagePunchlineTranslation": "人生：418 私はティーポット（意味不明なエラーで現実逃避）"
-    },
-    {
         "targetWord": "Acquire",
         "errorMessage": "Failed to acquire necessary resources.",
         "messageTranslation": "必要なリソースの取得に失敗しました。",
