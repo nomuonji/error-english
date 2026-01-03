@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Acquire",
-        "errorMessage": "Failed to acquire necessary resources.",
-        "messageTranslation": "必要なリソースの取得に失敗しました。",
-        "generalMeaning": "【動】獲得する、手に入れる、身につける",
-        "generalExample": "Acquire new skills (新しいスキルを身につける)",
-        "techMeaning": "プログラムが処理を進めるために、メモリやファイル、ロック（排他制御）などの必要な資源を「自分のものにする」こと。",
-        "explanation": "プログラム界の席取り合戦。「獲得（Acquire）→使用（Use）→解放（Release）」が一連の流れ。取得に失敗したら、他の誰かがその資源を占領している可能性が高いです。解放処理を忘れると深刻なエラーにつながります。",
-        "usageContext": "人気店の限定品をゲットする時",
-        "usageExample": "Did you acquire the limited edition sneakers?",
-        "usageExampleTranslation": "限定版スニーカー、手に入れた？",
-        "usagePunchline": "Friend: 429 Too Many Requests",
-        "usagePunchlineTranslation": "友達：429 リクエストが多すぎます（買い占め禁止！）"
-    },
-    {
         "targetWord": "Serialize",
         "errorMessage": "Failed to serialize data for transmission.",
         "messageTranslation": "送信のためにデータのシリアライズに失敗しました。",
