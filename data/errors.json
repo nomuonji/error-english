@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Recursive",
-        "errorMessage": "Maximum recursion depth exceeded",
-        "messageTranslation": "最大再帰深度を超えました",
-        "generalMeaning": "【形】再帰的な、何度も繰り返す",
-        "generalExample": "A recursive definition (再帰的な定義)",
-        "techMeaning": "自分の仕事を終わらせるために、また自分自身に仕事を頼み続け、結果的に「無限ループ」に陥って意識不明になった状態。",
-        "explanation": "終わりのないトンネルに迷い込んだ状態。終了条件（ベースケース）を設定し忘れると、スタックオーバーフローで即死します。",
-        "usageContext": "友人に質問された時、答えがまた質問を生んで話が終わらない状況",
-        "usageExample": "The discussion became totally recursive.",
-        "usageExampleTranslation": "議論が完全に再帰的になっちゃったよ。",
-        "usagePunchline": "Friend: 301 Moved Permanently",
-        "usagePunchlineTranslation": "友：永遠に転送（話がループする）"
-    },
-    {
         "targetWord": "Arbitrary",
         "errorMessage": "Arbitrary code execution vulnerability detected",
         "messageTranslation": "任意のコード実行の脆弱性が検出されました",
