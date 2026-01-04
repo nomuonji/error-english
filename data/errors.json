@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Serialize",
-        "errorMessage": "Failed to serialize data for transmission.",
-        "messageTranslation": "送信のためにデータのシリアライズに失敗しました。",
-        "generalMeaning": "【動】連続化する、一連の順序にする",
-        "generalExample": "Serialize a collection of stamps (切手のコレクションを通し番号順にする)",
-        "techMeaning": "プログラム内部の複雑なデータ構造（オブジェクトや配列）を、ネットワークやファイルで簡単にやり取りできる「単なる文字列やバイト列」に変換すること。",
-        "explanation": "複雑な3Dのケーキを、遠くの友達に送るために、平らで軽量な「レシピ（JSONやXML）」に変換するイメージ。これができないとデータは箱詰めできず、送れません。",
-        "usageContext": "引っ越しで荷物を梱包する時",
-        "usageExample": "We need to serialize the books into numbered boxes.",
-        "usageExampleTranslation": "本を通し番号のついた箱に順番に詰めなきゃ（シリアライズ）。",
-        "usagePunchline": "Box: 406 Not Acceptable",
-        "usagePunchlineTranslation": "箱：406 受理不能（このデータ形式じゃ無理）"
-    },
-    {
         "targetWord": "Recursive",
         "errorMessage": "Maximum recursion depth exceeded",
         "messageTranslation": "最大再帰深度を超えました",
