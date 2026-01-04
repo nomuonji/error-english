@@ -116,5 +116,6 @@
     "Debug",
     "Acquire",
     "Serialize",
-    "Recursive"
+    "Recursive",
+    "Arbitrary"
 ]

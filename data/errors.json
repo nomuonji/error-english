@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Arbitrary",
-        "errorMessage": "Arbitrary code execution vulnerability detected",
-        "messageTranslation": "任意のコード実行の脆弱性が検出されました",
-        "generalMeaning": "【形】任意の、独断的な、勝手な",
-        "generalExample": "Choose an arbitrary number (任意の数字を選びなさい)",
-        "techMeaning": "プログラムが「ここは俺の自由にしていい場所だ」と勘違いし、予測不能なコードを勝手に実行してしまう、暴走寸前の状態。",
-        "explanation": "セキュリティの文脈では超危険。「勝手にやられる」ことを防ぐのが最大の目的です。プログラマーの意図を超えた行動はだいたい Arbitrary です。",
-        "usageContext": "組織で、上司が勝手にルールを変更した時",
-        "usageExample": "That decision was totally arbitrary!",
-        "usageExampleTranslation": "あの決定は完全に独断的だったぞ！",
-        "usagePunchline": "Colleague: 418 I'm a teapot",
-        "usagePunchlineTranslation": "同僚：私はティーポット（意味不明な自由行動）"
-    },
-    {
         "targetWord": "Idempotent",
         "errorMessage": "Non-idempotent operation repeated",
         "messageTranslation": "べき等でない操作が繰り返されました",
