@@ -87,5 +87,33 @@
         "usagePunchline": "Closet: Access Denied (HTTP 403)! I still need that shirt from 10 years ago!",
         "usagePunchlineTranslation": "クローゼット：アクセス拒否！10年前のあのシャツはまだ必要なんだ！",
         "imagePath": "prune_fail.png"
+    },
+    {
+        "targetWord": "Invoke",
+        "errorMessage": "Cannot invoke method 'X' on null object",
+        "messageTranslation": "nullオブジェクトに対してメソッド 'X'を呼び出すことができません",
+        "generalMeaning": "【動】（権限や神などを）発動させる、呼び出す",
+        "generalExample": "Invoke the power of the Gods (神の力を発動させる)",
+        "techMeaning": "プログラムが「ねぇ、これやって」とメソッドにお願いすること。ただし、お願いする相手（オブジェクト）がそもそも存在しない（null）ため、虚空に向かって話しかけている状態。",
+        "explanation": "お前が誰に話しかけているのか、はっきりさせろ！ NullPointerExceptionの原因。お願いする前に、まず相手（インスタンス）がいるか確認しよう。",
+        "usageContext": "待ち合わせ場所で、友人がなかなか見つからない時。",
+        "usageExample": "I tried to invoke him, but he was nowhere to be found.",
+        "usageExampleTranslation": "彼を呼び出そうとしたけど、どこにも見当たらなかった。",
+        "usagePunchline": "He returned 404 Not Found.",
+        "usagePunchlineTranslation": "彼は「404 見つかりません」を返してきたよ。"
+    },
+    {
+        "targetWord": "Revert",
+        "errorMessage": "Cannot revert merge commit: Conflict detected",
+        "messageTranslation": "マージコミットを元に戻すことができません：競合が検出されました",
+        "generalMeaning": "【動】（元の状態や話題に）戻る、復帰する",
+        "generalExample": "We must revert to the old plan. (私たちは古い計画に戻らなければならない。)",
+        "techMeaning": "Gitなどのバージョン管理システムで、過去の安全な状態に戻ろうとしたが、「ちょっと待った！ 意見が食い違っているぞ！」と喧嘩が起こってしまい、戻れない状態。",
+        "explanation": "プロジェクトの保険。失敗しても「Revert」ボタンで助かることが多いが、マージ後のRevertは特に慎重に。競合はコードの意見の食い違い。丁寧に話し合って解決しよう（手動で）。",
+        "usageContext": "週末の夜更かし生活から、仕事モードに戻れない時。",
+        "usageExample": "I tried to revert my sleep schedule, but my brain detected a conflict.",
+        "usageExampleTranslation": "睡眠スケジュールを元に戻そうとしたけど、脳が競合を検出した。",
+        "usagePunchline": "Action Status: 409 Conflict.",
+        "usagePunchlineTranslation": "アクションステータス：409 競合。（お前はまだ戻れない）"
     }
 ]
