@@ -117,5 +117,6 @@
     "Acquire",
     "Serialize",
     "Recursive",
-    "Arbitrary"
+    "Arbitrary",
+    "Idempotent"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Idempotent",
-        "errorMessage": "Non-idempotent operation repeated",
-        "messageTranslation": "べき等でない操作が繰り返されました",
-        "generalMeaning": "【形】べき等な（数学用語：何度処理を繰り返しても結果が変わらない性質）",
-        "generalExample": "The function is idempotent (その関数はべき等である)",
-        "techMeaning": "「何度ボタンを押しても、結果は一回押した時と同じだよ！」という保証がある状態。ウェブAPIでは、安全にリトライできるかの重要な指標。",
-        "explanation": "ラーメンを注文する際、Idempotent なら1回注文しても10回注文してもラーメンは1杯だけ届きます。そうじゃないと、お財布もサーバーも大爆発。",
-        "usageContext": "友人に同じ話を何度も聞かされた時",
-        "usageExample": "Your story is so idempotent; the result is always the same.",
-        "usageExampleTranslation": "君の話は本当にべき等だね、いつも結末が同じだ。",
-        "usagePunchline": "Friend: 200 OK",
-        "usagePunchlineTranslation": "友：成功（何度聞かれてもブレない）"
-    },
-    {
         "targetWord": "Delegate",
         "errorMessage": "Cannot delegate task to worker process",
         "messageTranslation": "ワーカープロセスにタスクを委任できません",
