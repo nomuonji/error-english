@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mutex",
-        "errorMessage": "Mutex acquisition timed out",
-        "messageTranslation": "Mutexの取得がタイムアウトしました",
-        "generalMeaning": "Mutual Exclusion (相互排他) の略語",
-        "generalExample": "A mutex lock protects the shared resource (Mutexロックが共有リソースを保護する)",
-        "techMeaning": "複数のプログラムが共有リソース（データなど）を同時に触って破壊しないようにするための「トイレの鍵」。鍵が取れなくて入れない状態がエラー。",
-        "explanation": "共有スペースの順番待ち。同時に一人しか使えないように制御します。この鍵（ロック）を誰かが返し忘れると、他のプログラムが永遠に待ちぼうけを食らいます。",
-        "usageContext": "友人同士で、冷蔵庫の最後のプリンを取り合う時",
-        "usageExample": "I need a Mutex on the last pudding!",
-        "usageExampleTranslation": "最後のプリンに相互排他ロックをかける必要がある！",
-        "usagePunchline": "Friend: 423 Locked",
-        "usagePunchlineTranslation": "友：ロック済み（先に私が食べた）"
-    },
-    {
         "targetWord": "Coercion",
         "errorMessage": "Type Coercion Error: Cannot convert String to Number",
         "messageTranslation": "型強制エラー：文字列を数値に変換できません",

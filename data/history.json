@@ -119,5 +119,6 @@
     "Recursive",
     "Arbitrary",
     "Idempotent",
-    "Delegate"
+    "Delegate",
+    "Mutex"
 ]
