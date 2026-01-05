@@ -118,5 +118,6 @@
     "Serialize",
     "Recursive",
     "Arbitrary",
-    "Idempotent"
+    "Idempotent",
+    "Delegate"
 ]

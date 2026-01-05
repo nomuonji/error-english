@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Delegate",
-        "errorMessage": "Cannot delegate task to worker process",
-        "messageTranslation": "ワーカープロセスにタスクを委任できません",
-        "generalMeaning": "【動】委任する、代理として送る",
-        "generalExample": "He delegated the authority to his subordinate (彼は部下に権限を委任した)",
-        "techMeaning": "「ちょっとこの面倒な計算、そっちに任せた！」と、仕事を別のモジュールやプロセスに丸投げすること。エラーは、丸投げに失敗した状態。",
-        "explanation": "責任の押し付け合いが発生した状態。得意な奴に仕事を振る（Delegateする）のが効率的ですが、振られた側が受け取ってくれないとエラーになります。",
-        "usageContext": "期限が迫っていて、仕事を同僚に手伝ってもらいたい時",
-        "usageExample": "Could you delegate this reporting task to me?",
-        "usageExampleTranslation": "このレポート作成の仕事を私に委任してもらえませんか？",
-        "usagePunchline": "Colleague: 401 Unauthorized",
-        "usagePunchlineTranslation": "同僚：権限なし（勝手に引き受けられない）"
-    },
-    {
         "targetWord": "Mutex",
         "errorMessage": "Mutex acquisition timed out",
         "messageTranslation": "Mutexの取得がタイムアウトしました",
