@@ -121,5 +121,6 @@
     "Idempotent",
     "Delegate",
     "Mutex",
-    "Coercion"
+    "Coercion",
+    "Deploy"
 ]
