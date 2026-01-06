@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Coercion",
-        "errorMessage": "Type Coercion Error: Cannot convert String to Number",
-        "messageTranslation": "型強制エラー：文字列を数値に変換できません",
-        "generalMeaning": "【名】強制、強要",
-        "generalExample": "Coercion into signing a contract (契約書へのサインの強要)",
-        "techMeaning": "プログラムが「ここはこうあるべきだ！」と勝手に型を変えようとして、失敗してブチ切れている状態。",
-        "explanation": "特にJavaScriptなどの型にルーズな言語で起こりがち。「勝手に空気を読むな！」と言いたいが、大抵はこちらのコードが原因。明示的な型変換（Cast）を使おう。",
-        "usageContext": "ダイエット中なのに、上司に無理やりラーメンを食べさせられそうになった時。",
-        "usageExample": "Stop the coercion! I'm on a diet!",
-        "usageExampleTranslation": "強制はやめてくれ！ダイエット中なんだ！",
-        "usagePunchline": "Boss: The type conversion succeeded, enjoy the Noodle-String.",
-        "usagePunchlineTranslation": "上司：型変換成功。ヌードル（ラーメン）文字列を楽しめ。",
-        "imagePath": "coercion_error.png"
-    },
-    {
         "targetWord": "Deploy",
         "errorMessage": "Failed to deploy application due to dependency conflicts.",
         "messageTranslation": "依存関係の競合によりアプリケーションのデプロイに失敗しました。",

@@ -120,5 +120,6 @@
     "Arbitrary",
     "Idempotent",
     "Delegate",
-    "Mutex"
+    "Mutex",
+    "Coercion"
 ]
