@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Artifact",
-        "errorMessage": "Missing build artifact 'app.jar'.",
-        "messageTranslation": "ビルド成果物 'app.jar' が見つかりません。",
-        "generalMeaning": "【名】人工物、工芸品、遺物",
-        "generalExample": "Ancient artifacts found in the ruin (遺跡で発見された古代の遺物)",
-        "techMeaning": "プログラムがコンパイルやビルドを経て生成した、最終的な「宝物（動くファイル）」。",
-        "explanation": "ビルドシステムが一生懸命作り上げた完成品のこと。これが無いと、リリースできません。アーティファクトが見つからないなら、ビルド工程自体が失敗している可能性が高い。",
-        "usageContext": "友達とBBQをした後、思い出のゴミを残してしまった時。",
-        "usageExample": "Please remove all the artifacts from the party.",
-        "usageExampleTranslation": "パーティーの人工物（ゴミ）を全部片付けてね。",
-        "usagePunchline": "Friend: That empty beer can is a historical artifact now.",
-        "usagePunchlineTranslation": "友達：その空のビール缶は、もう歴史的遺物だよ。",
-        "imagePath": "artifact_missing.png"
-    },
-    {
         "targetWord": "Ephemeral",
         "errorMessage": "Ephemeral port range exhausted.",
         "messageTranslation": "一時的なポート範囲が使い果たされました。",
