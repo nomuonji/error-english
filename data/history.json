@@ -125,5 +125,6 @@
     "Deploy",
     "Artifact",
     "Ephemeral",
-    "Prune"
+    "Prune",
+    "Invoke"
 ]
