@@ -124,5 +124,6 @@
     "Coercion",
     "Deploy",
     "Artifact",
-    "Ephemeral"
+    "Ephemeral",
+    "Prune"
 ]

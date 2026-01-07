@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Prune",
-        "errorMessage": "Docker system prune failed: volume is currently in use.",
-        "messageTranslation": "Dockerシステムの整理（プルーニング）に失敗しました：ボリュームが現在使用中です。",
-        "generalMeaning": "【動】（木の枝などを）刈り込む、剪定（せんてい）する、不要な部分を切り取る",
-        "generalExample": "Prune the rose bushes (バラの茂みを剪定する)",
-        "techMeaning": "肥大化したログやキャッシュ、使わないコンテナイメージなどを「バッサリ」切り捨てること。システムのダイエット行為。",
-        "explanation": "システムの容量を圧迫する不要なファイルを削除する際に使うコマンド。エラーが出たら、まだ誰かに使われているか、守られているファイルなので削除できません。",
-        "usageContext": "部屋の片付けで、服を捨てようか迷っている時。",
-        "usageExample": "I need to prune my closet inventory.",
-        "usageExampleTranslation": "クローゼットの在庫（服）を剪定しなきゃ（整理しなきゃ）。",
-        "usagePunchline": "Closet: Access Denied (HTTP 403)! I still need that shirt from 10 years ago!",
-        "usagePunchlineTranslation": "クローゼット：アクセス拒否！10年前のあのシャツはまだ必要なんだ！",
-        "imagePath": "prune_fail.png"
-    },
-    {
         "targetWord": "Invoke",
         "errorMessage": "Cannot invoke method 'X' on null object",
         "messageTranslation": "nullオブジェクトに対してメソッド 'X'を呼び出すことができません",
