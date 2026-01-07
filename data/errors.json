@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Ephemeral",
-        "errorMessage": "Ephemeral port range exhausted.",
-        "messageTranslation": "一時的なポート範囲が使い果たされました。",
-        "generalMeaning": "【形】つかの間の、短命な、はかない",
-        "generalExample": "Ephemeral beauty of cherry blossoms (桜のつかの間の美しさ)",
-        "techMeaning": "サーバーが一時的に使って、すぐ捨てるつもりで用意したリソース（ポートやファイル）。使い捨て前提。",
-        "explanation": "クラウド環境やコンテナ（Dockerなど）でよく遭遇します。使い捨てリソース（エフェメラルリソース）を大量に使った結果、「もう一時的に使う場所もない！」という状態。",
-        "usageContext": "食べた瞬間溶けてなくなるアイスクリーム。",
-        "usageExample": "This ice cream is truly ephemeral.",
-        "usageExampleTranslation": "このアイス、本当につかの間だね（すぐ溶ける）。",
-        "usagePunchline": "Ice cream vendor: That’s its lifetime (TTL: 5 seconds).",
-        "usagePunchlineTranslation": "アイス屋：それがこのアイスの寿命です（生存時間：5秒）。",
-        "imagePath": "ephemeral_exhausted.png"
-    },
-    {
         "targetWord": "Prune",
         "errorMessage": "Docker system prune failed: volume is currently in use.",
         "messageTranslation": "Dockerシステムの整理（プルーニング）に失敗しました：ボリュームが現在使用中です。",

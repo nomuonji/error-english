@@ -123,5 +123,6 @@
     "Mutex",
     "Coercion",
     "Deploy",
-    "Artifact"
+    "Artifact",
+    "Ephemeral"
 ]
