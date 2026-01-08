@@ -127,5 +127,6 @@
     "Ephemeral",
     "Prune",
     "Invoke",
-    "Revert"
+    "Revert",
+    "Panic"
 ]

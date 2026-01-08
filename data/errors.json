@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Panic",
-        "errorMessage": "'Index out of bounds' panic occurred.",
-        "messageTranslation": "「インデックスが範囲外です」というパニックが発生しました。",
-        "generalMeaning": "【名】パニック、恐慌 【動】パニックになる",
-        "generalExample": "Don't panic! (パニックになるな！)",
-        "techMeaning": "プログラムが「もう無理！」と匙を投げて、緊急停止ボタンを押した状態。開発者が想定外の事態。",
-        "explanation": "落ち着いて！これは特にRustのような言語で遭遇しやすい。「致命的（Fatal）」とほぼ同義だけど、より「プログラムが精神的に耐えられなかった」ニュアンス。スタックトレースをしっかり読んで、プログラムがどこで発狂したか見つけ出そう。",
-        "usageContext": "プレゼン中にPCがフリーズした時。",
-        "usageExample": "My laptop went into a sudden panic mode right before the demo!",
-        "usageExampleTranslation": "デモ直前に、私のラップトップが突然パニックモードに陥った！",
-        "usagePunchline": "User: 500 Internal Server Error",
-        "usagePunchlineTranslation": "ユーザー：500 サーバー内部エラー（サーバーが頭を抱えている）"
-    },
-    {
         "targetWord": "Detach",
         "errorMessage": "Process detached from console.",
         "messageTranslation": "プロセスがコンソールから切り離されました。",
