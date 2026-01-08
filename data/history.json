@@ -126,5 +126,6 @@
     "Artifact",
     "Ephemeral",
     "Prune",
-    "Invoke"
+    "Invoke",
+    "Revert"
 ]

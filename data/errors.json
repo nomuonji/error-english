@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Revert",
-        "errorMessage": "Cannot revert merge commit: Conflict detected",
-        "messageTranslation": "マージコミットを元に戻すことができません：競合が検出されました",
-        "generalMeaning": "【動】（元の状態や話題に）戻る、復帰する",
-        "generalExample": "We must revert to the old plan. (私たちは古い計画に戻らなければならない。)",
-        "techMeaning": "Gitなどのバージョン管理システムで、過去の安全な状態に戻ろうとしたが、「ちょっと待った！ 意見が食い違っているぞ！」と喧嘩が起こってしまい、戻れない状態。",
-        "explanation": "プロジェクトの保険。失敗しても「Revert」ボタンで助かることが多いが、マージ後のRevertは特に慎重に。競合はコードの意見の食い違い。丁寧に話し合って解決しよう（手動で）。",
-        "usageContext": "週末の夜更かし生活から、仕事モードに戻れない時。",
-        "usageExample": "I tried to revert my sleep schedule, but my brain detected a conflict.",
-        "usageExampleTranslation": "睡眠スケジュールを元に戻そうとしたけど、脳が競合を検出した。",
-        "usagePunchline": "Action Status: 409 Conflict.",
-        "usagePunchlineTranslation": "アクションステータス：409 競合。（お前はまだ戻れない）"
-    },
-    {
         "targetWord": "Panic",
         "errorMessage": "'Index out of bounds' panic occurred.",
         "messageTranslation": "「インデックスが範囲外です」というパニックが発生しました。",
