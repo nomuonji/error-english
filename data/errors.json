@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Detach",
-        "errorMessage": "Process detached from console.",
-        "messageTranslation": "プロセスがコンソールから切り離されました。",
-        "generalMeaning": "【動】切り離す、分離する",
-        "generalExample": "Detach the magnetic keyboard. (マグネット式キーボードを取り外す。)",
-        "techMeaning": "依存関係を断ち切り、自立してバックグラウンドで生きることを選んだプログラム。コンソール（親）から独立して自由に行動し始める。",
-        "explanation": "プロセスをバックグラウンドで実行させたいとき（デーモン化など）に使うテクニック。意図せずこれが起こると、ログが見えなくなって制御不能になることも。親が死んでも子は生き続ける。",
-        "usageContext": "子どもが自立して家を出る時。",
-        "usageExample": "My son decided to detach from the family resources.",
-        "usageExampleTranslation": "息子が家族のリソースから切り離されることを決めた。",
-        "usagePunchline": "Parent: Oh no, he went background mode!",
-        "usagePunchlineTranslation": "親：ああ、彼はバックグラウンドモードに移行してしまった！（もう監視できない）"
-    },
-    {
         "targetWord": "Elevated",
         "errorMessage": "Operation requires elevated privileges.",
         "messageTranslation": "この操作には昇格した特権が必要です。",

@@ -128,5 +128,6 @@
     "Prune",
     "Invoke",
     "Revert",
-    "Panic"
+    "Panic",
+    "Detach"
 ]
