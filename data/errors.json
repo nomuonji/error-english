@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Resubmit",
-        "errorMessage": "Form data needs to be resubmitted.",
-        "messageTranslation": "フォームデータは再送信が必要です。",
-        "generalMeaning": "【動】再提出する、再送する",
-        "generalExample": "Please resubmit your application with the correct documents. (正しい書類を添えて申請書を再提出してください。)",
-        "techMeaning": "データ送信がうまくいかなかった時や、前の状態に戻ってしまった時に、もう一度同じことをやり直してくれとブラウザやサーバーに懇願される状態。",
-        "explanation": "ウェブ開発で「ページを更新したらデータが二重送信されるかも？」という警告が出るときによく見る。POSTリクエストの後にブラウザバックしたりリロードしたりすると発生しがち。リクエストを冪等（Idempotent）にする工夫が重要。",
-        "usageContext": "期限ギリギリで提出したレポートがエラーで戻ってきた時。",
-        "usageExample": "I have to resubmit the entire report because of a tiny typo.",
-        "usageExampleTranslation": "些細な誤字のせいで、レポート全体を再提出しなきゃならない。",
-        "usagePunchline": "System: HTTP 307 Temporary Redirect",
-        "usagePunchlineTranslation": "システム：HTTP 307 一時的なリダイレクト（一時的に再送を要求します）"
-    },
-    {
         "targetWord": "Mute",
         "errorMessage": "Log level set to Mute during silent startup.",
         "messageTranslation": "サイレントスタートアップ中はログレベルがミュートに設定されました。",

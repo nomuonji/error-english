@@ -130,5 +130,6 @@
     "Revert",
     "Panic",
     "Detach",
-    "Elevated"
+    "Elevated",
+    "Resubmit"
 ]
