@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Elevated",
-        "errorMessage": "Operation requires elevated privileges.",
-        "messageTranslation": "この操作には昇格した特権が必要です。",
-        "generalMeaning": "【形】高められた、昇格した、高い",
-        "generalExample": "Elevated train tracks. (高架の線路。)",
-        "techMeaning": "「普通のユーザーじゃ触らせないぞ！」という、管理者権限が必要な、一段階上のステータスのこと。スーパーユーザーになった気分。",
-        "explanation": "重要なシステムファイルを変更したり、OSレベルの設定をいじる際に必要。Windowsなら「管理者として実行」、Linux/Macなら`sudo`を使うのがこれ。「権限不足（403 Forbidden）」の上位版で、「権限はあるけど、まだスイッチが入ってない」状態。",
-        "usageContext": "会社の機密情報を取り扱う時。",
-        "usageExample": "Accessing this file requires elevated authorization from the CEO.",
-        "usageExampleTranslation": "このファイルへのアクセスはCEOからの昇格した認可が必要です。",
-        "usagePunchline": "Colleague: Did you run it as Super User (SU)?",
-        "usagePunchlineTranslation": "同僚：それ、スーパーユーザー（SU）として実行した？（権限上げろよ）"
-    },
-    {
         "targetWord": "Resubmit",
         "errorMessage": "Form data needs to be resubmitted.",
         "messageTranslation": "フォームデータは再送信が必要です。",

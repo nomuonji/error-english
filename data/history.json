@@ -129,5 +129,6 @@
     "Invoke",
     "Revert",
     "Panic",
-    "Detach"
+    "Detach",
+    "Elevated"
 ]
