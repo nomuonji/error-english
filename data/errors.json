@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mute",
-        "errorMessage": "Log level set to Mute during silent startup.",
-        "messageTranslation": "サイレントスタートアップ中はログレベルがミュートに設定されました。",
-        "generalMeaning": "【動】音を消す、無音にする 【形】無言の",
-        "generalExample": "Please mute your microphone during the meeting. (会議中はマイクをミュートしてください。)",
-        "techMeaning": "プログラムが喋るのをやめて、ログや警告を一切出力しない沈黙モードに入った状態。静かだが、裏で何が起きているか全く見えない。",
-        "explanation": "デバッグ時には絶対に避けたい設定。運用環境ではパフォーマンスのためにログを抑制することがあるが、エラー調査の時は「しゃべってくれ！」と叫びたくなる。プログラマーにとってMuteは「情報不足」の恐怖。",
-        "usageContext": "彼女（彼氏）が怒って無言になった時。",
-        "usageExample": "My partner suddenly went mute after I mentioned deleting the old code base.",
-        "usageExampleTranslation": "古いコードベースを削除すると言った途端、パートナーが突然ミュートになった。",
-        "usagePunchline": "Developer: This is a 204 No Content situation!",
-        "usagePunchlineTranslation": "開発者：これは204 No Contentだ！（応答はあるけど、肝心の中身がない！）"
-    },
-    {
         "targetWord": "Stray",
         "errorMessage": "Stray ')' found in input",
         "messageTranslation": "入力中にはぐれた ')' が見つかりました",
