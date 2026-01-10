@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unpack",
-        "errorMessage": "ValueError: too many values to unpack",
-        "messageTranslation": "ValueError: 展開するには値が多すぎます",
-        "generalMeaning": "【動】荷を解く、包みを開ける",
-        "generalExample": "Please unpack the box. (箱を開けてください。)",
-        "techMeaning": "データという名の荷物を小分けにしようとしたら、中身が多すぎて箱（変数）に入りきらない状態。",
-        "explanation": "プログラミングでは、リストやタプルの中身を変数に一括で代入する処理を指すことが多い。例えば、変数が2個なのにデータが3個あると「多すぎる！」って怒られる。荷造りの計画が甘かったね。",
-        "usageContext": "旅行から帰ってきて、お土産を配ろうとしたら、渡す人が多すぎる時",
-        "usageExample": "I have too many souvenirs to unpack for everyone.",
-        "usageExampleTranslation": "みんなに配るにはお土産が多すぎるよ。",
-        "usagePunchline": "That sounds like a classic 413 Payload Too Large.",
-        "usagePunchlineTranslation": "それは典型的な413 Payload Too Large（要求エンティティが大きすぎます）だね。"
-    },
-    {
         "targetWord": "Remediate",
         "errorMessage": "Failed to remediate security vulnerability.",
         "messageTranslation": "セキュリティ脆弱性の修復に失敗しました。",
