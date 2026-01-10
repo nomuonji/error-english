@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Stray",
-        "errorMessage": "Stray ')' found in input",
-        "messageTranslation": "入力中にはぐれた ')' が見つかりました",
-        "generalMeaning": "【形】はぐれた、迷子の、野良の",
-        "generalExample": "A stray cat (野良猫)",
-        "techMeaning": "「おい、誰だ、閉じ括弧を置きっぱなしにしたのは？」プログラムの世界で迷子になった記号のこと。",
-        "explanation": "文法的にはそこにいちゃいけない記号が、ふらっと迷い込んでいる状態。大抵、コピペミスや、括弧の対応を間違えたときに出るよ。野良猫（Stray）みたいに、どこから来たか分からないのが厄介。",
-        "usageContext": "会社の飲み会で、誰も頼んでいないはずの高級ワインの空き瓶がテーブルに残っている時",
-        "usageExample": "Where did this stray bottle come from?",
-        "usageExampleTranslation": "このはぐれたボトル、どこから来たの？",
-        "usagePunchline": "It's like an unexpected 500 Internal Server Error.",
-        "usagePunchlineTranslation": "予期せぬ500 Internal Server Error（サーバー内部エラー）みたいなもんさ。"
-    },
-    {
         "targetWord": "Unpack",
         "errorMessage": "ValueError: too many values to unpack",
         "messageTranslation": "ValueError: 展開するには値が多すぎます",
