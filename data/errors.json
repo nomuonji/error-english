@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Remediate",
-        "errorMessage": "Failed to remediate security vulnerability.",
-        "messageTranslation": "セキュリティ脆弱性の修復に失敗しました。",
-        "generalMeaning": "【動】改善する、矯正する、修復する",
-        "generalExample": "To remediate environmental damage. (環境破壊を修復する。)",
-        "techMeaning": "システムに入った傷や欠陥を治療し、正常な状態に戻すこと。プログラマーにとっての医療行為。",
-        "explanation": "セキュリティパッチを当てたり、バグを修正したりする工程全体を指す、ちょっとカッコいい単語。このエラーが出たら、システムが「治療を拒否しました」ってこと。手動での外科手術が必要かも。",
-        "usageContext": "テストで悪い点を取って、親に呼び出された時",
-        "usageExample": "I need to remediate this bad grade by studying harder.",
-        "usageExampleTranslation": "もっと勉強して、この悪い成績を改善（修復）しなきゃ。",
-        "usagePunchline": "If the remediation fails, maybe we need a full 424 Failed Dependency.",
-        "usagePunchlineTranslation": "修復に失敗するなら、たぶん全体的に424 Failed Dependency（依存関係の失敗）が必要だ。"
-    },
-    {
         "targetWord": "Downgrade",
         "errorMessage": "Cannot install package: a downgrade is not permitted.",
         "messageTranslation": "パッケージをインストールできません：ダウングレードは許可されていません。",
