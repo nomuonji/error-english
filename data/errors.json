@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Inconsistency",
-        "errorMessage": "Data Inconsistency Detected. Check logs for details.",
-        "messageTranslation": "データの不整合が検出されました。詳細はログを確認してください。",
-        "generalMeaning": "【名】矛盾、不一致、整合性の欠如",
-        "generalExample": "Inconsistency in the report (報告書における矛盾)",
-        "techMeaning": "プログラムが「AとB、どっちが本当なんだい？」とパニックになっている状態。データが左右で食い違っている。",
-        "explanation": "データベースの更新失敗や、複数のシステム間で情報が同期されていない時によく発生します。信じるものが一つに定まらない「多重人格エラー」。",
-        "usageContext": "友人が言っていることと、SNSに書かれていることが違う時",
-        "usageExample": "There is an inconsistency between what you said and what I saw online.",
-        "usageExampleTranslation": "あなたが言ったことと、私がオンラインで見たことに矛盾があるよ。",
-        "usagePunchline": "You are suffering from a 409 Conflict.",
-        "usagePunchlineTranslation": "君は409コンフリクト（競合）を起こしているね。",
-        "generalExampleTranslation": "報告書における矛盾"
-    },
-    {
         "targetWord": "Vulnerability",
         "errorMessage": "Security Vulnerability detected in library X. Update immediately.",
         "messageTranslation": "ライブラリXでセキュリティの脆弱性が検出されました。直ちに更新してください。",

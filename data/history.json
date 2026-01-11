@@ -137,5 +137,6 @@
     "Unpack",
     "Remediate",
     "Downgrade",
-    "Discarded"
+    "Discarded",
+    "Inconsistency"
 ]
