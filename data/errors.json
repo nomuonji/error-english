@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Discarded",
-        "errorMessage": "Warning: Input data was discarded due to buffer overload.",
-        "messageTranslation": "警告：バッファの過負荷により、入力データが破棄されました。",
-        "generalMeaning": "【動】捨てる、破棄する、無視する",
-        "generalExample": "Discard the old notes. (古いメモを捨てなさい。)",
-        "techMeaning": "処理しきれない、あるいは不要になった情報を容赦なくゴミ箱にポイすること。冷酷な情報整理術。",
-        "explanation": "データを受け取る箱（バッファ）が満杯なのに、さらにデータが送られてきた場合、溢れた分は問答無用で捨てられます。重要なデータだったとしても、システムは無慈悲。事前に容量を確認しよう！",
-        "usageContext": "忙しすぎて、メールボックスがパンクし、重要なメールを読み飛ばしてしまった時",
-        "usageExample": "I accidentally discarded the important proposal email.",
-        "usageExampleTranslation": "うっかり重要な提案メールを捨てちゃった（無視しちゃった）。",
-        "usagePunchline": "That crucial data suffered a 408 Request Timeout fate.",
-        "usagePunchlineTranslation": "その重要なデータは408 Request Timeout（リクエストタイムアウト）の運命を辿ったね。"
-    },
-    {
         "targetWord": "Inconsistency",
         "errorMessage": "Data Inconsistency Detected. Check logs for details.",
         "messageTranslation": "データの不整合が検出されました。詳細はログを確認してください。",
