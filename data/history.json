@@ -135,5 +135,6 @@
     "Mute",
     "Stray",
     "Unpack",
-    "Remediate"
+    "Remediate",
+    "Downgrade"
 ]

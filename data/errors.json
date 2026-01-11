@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Downgrade",
-        "errorMessage": "Cannot install package: a downgrade is not permitted.",
-        "messageTranslation": "パッケージをインストールできません：ダウングレードは許可されていません。",
-        "generalMeaning": "【動】格下げする、性能を低下させる",
-        "generalExample": "He was downgraded to economy class. (彼はエコノミークラスに格下げされた。)",
-        "techMeaning": "新しいバージョンから古いバージョンに戻すこと。システムが「逆行は許さん！」と抵抗している状態。",
-        "explanation": "特にデータベースやOSなど、一度上げたものを戻すとデータの整合性が崩れる可能性がある場合によく出る警告。一度プレミアム会員になったら、なかなか普通会員には戻れないのと同じ。",
-        "usageContext": "昇進したのに、自分のミスで係長に戻される時",
-        "usageExample": "I definitely do not want a downgrade in status.",
-        "usageExampleTranslation": "絶対にステータスの格下げはされたくない。",
-        "usagePunchline": "Sounds like you got hit with a status code 409 Conflict.",
-        "usagePunchlineTranslation": "それはステータスコード409 Conflict（競合）にやられた感じだね。"
-    },
-    {
         "targetWord": "Discarded",
         "errorMessage": "Warning: Input data was discarded due to buffer overload.",
         "messageTranslation": "警告：バッファの過負荷により、入力データが破棄されました。",
