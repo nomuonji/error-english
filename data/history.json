@@ -138,5 +138,6 @@
     "Remediate",
     "Downgrade",
     "Discarded",
-    "Inconsistency"
+    "Inconsistency",
+    "Vulnerability"
 ]

@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Vulnerability",
-        "errorMessage": "Security Vulnerability detected in library X. Update immediately.",
-        "messageTranslation": "ライブラリXでセキュリティの脆弱性が検出されました。直ちに更新してください。",
-        "generalMeaning": "【名】脆弱性、弱点、傷つきやすさ",
-        "generalExample": "Economic vulnerability (経済的な脆弱性)",
-        "techMeaning": "プログラムのセキュリティにおける「防御の穴」。悪い人がそこから侵入してくる可能性がある、システムの急所。",
-        "explanation": "バグは単なる間違いですが、脆弱性は攻撃者が悪用できる「隙」です。報告書に書かれたら緊急事態！すぐにパッチを当てて穴を塞ぎましょう。",
-        "usageContext": "自分の弱点を指摘された時",
-        "usageExample": "That comment exposed my fatal vulnerability.",
-        "usageExampleTranslation": "あのコメントが私の致命的な弱点をさらけ出した。",
-        "usagePunchline": "You need a full patch (CVE-2024-XXX).",
-        "usagePunchlineTranslation": "フルパッチ（セキュリティ更新）が必要だね（脆弱性管理番号を添えて）。",
-        "generalExampleTranslation": "経済的な脆弱性"
-    },
-    {
         "targetWord": "Uninitialized",
         "errorMessage": "Use of uninitialized variable 'i'",
         "messageTranslation": "未初期化の変数 'i' が使用されています",
