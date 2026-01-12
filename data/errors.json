@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Uninitialized",
-        "errorMessage": "Use of uninitialized variable 'i'",
-        "messageTranslation": "未初期化の変数 'i' が使用されています",
-        "generalMeaning": "【形】初期化されていない、設定されていない",
-        "generalExample": "The system is still uninitialized. (システムはまだ初期設定されていない)",
-        "techMeaning": "「ハロー、変数さん！君、誰？」と聞いても、何も答えてくれない、中身が空っぽの変数。ゴミデータが入っている可能性あり。",
-        "explanation": "変数を宣言しただけで値を入れずに使おうとすると出ます。「箱を用意したけど、まだ何も入れてないのに中身を取り出そうとしている」状態。まずはちゃんと値をセットしてあげましょう。",
-        "usageContext": "新しいバイト先で何も教えてもらっていないのに、仕事を振られた時",
-        "usageExample": "I'm completely uninitialized for this task!",
-        "usageExampleTranslation": "このタスクに関して、私は完全に初期化されていません！（何も準備できてない！）",
-        "usagePunchline": "That's a classic 501 Not Implemented error for humans.",
-        "usagePunchlineTranslation": "それは人間版501未実装エラーだね。",
-        "generalExampleTranslation": "システムはまだ初期設定されていない"
-    },
-    {
         "targetWord": "Precondition",
         "errorMessage": "Precondition failed: User must be authenticated to proceed.",
         "messageTranslation": "前提条件が満たされませんでした：続行するにはユーザーが認証されている必要があります。",
