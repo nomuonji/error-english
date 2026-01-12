@@ -140,5 +140,6 @@
     "Discarded",
     "Inconsistency",
     "Vulnerability",
-    "Uninitialized"
+    "Uninitialized",
+    "Precondition"
 ]

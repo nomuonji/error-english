@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Precondition",
-        "errorMessage": "Precondition failed: User must be authenticated to proceed.",
-        "messageTranslation": "前提条件が満たされませんでした：続行するにはユーザーが認証されている必要があります。",
-        "generalMeaning": "【名】前提条件、必須条件",
-        "generalExample": "A good education is a precondition for success. (良い教育は成功の前提条件である)",
-        "techMeaning": "プログラムを実行する前に「これだけは絶対に守ってね！」という約束事。認証やファイル存在チェックなど、これが守られてないと処理が止まる。",
-        "explanation": "処理の前に必要なステップが抜けているときに発生します。「宿題をやってないならゲームは禁止」という親のルールのようなもの。まずはルールを守ろう。",
-        "usageContext": "友達と約束の場所に行く前に、必要な持ち物を確認する時",
-        "usageExample": "We can't start the party. The pizza is the absolute precondition!",
-        "usageExampleTranslation": "パーティは始められないよ。ピザが絶対的な前提条件だ！",
-        "usagePunchline": "Missing Precondition? That's a 428 Precondition Required.",
-        "usagePunchlineTranslation": "前提条件不足？それは428前提条件が必要だね。",
-        "generalExampleTranslation": "良い教育は成功の前提条件である"
-    },
-    {
         "targetWord": "Drift",
         "errorMessage": "Configuration drift detected between environment A and B.",
         "messageTranslation": "環境AとBの間で設定のズレ（ドリフト）が検出されました。",
