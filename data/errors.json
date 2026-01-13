@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Drift",
-        "errorMessage": "Configuration drift detected between environment A and B.",
-        "messageTranslation": "環境AとBの間で設定のズレ（ドリフト）が検出されました。",
-        "generalMeaning": "【名】漂流、ズレ、徐々に移り変わること",
-        "generalExample": "Continental drift (大陸移動説)",
-        "techMeaning": "最初は同じだったはずの設定や環境が、手動での変更などにより、時間とともに徐々にズレていってしまう現象。",
-        "explanation": "IaC（Infrastructure as Code）で定義された「理想」と、誰かがこっそり変更した「現実」とのズレです。このズレが原因で、デプロイやトラブルシューティングが大変になります。",
-        "usageContext": "ダイエット中に気づかないうちに体重が増えていた時",
-        "usageExample": "I thought I was maintaining my weight, but I noticed a serious weight drift.",
-        "usageExampleTranslation": "体重を維持しているつもりだったけど、深刻な体重のズレ（ドリフト）に気づいた。",
-        "usagePunchline": "Stop the drift! Rollback to the last stable commit (HTTP 200 OK).",
-        "usagePunchlineTranslation": "ズレを止めろ！最後の安定したコミット（200 OK）に戻せ。",
-        "generalExampleTranslation": "大陸移動説"
-    },
-    {
         "targetWord": "Exceed",
         "errorMessage": "Rate limit exceeded.",
         "messageTranslation": "制限回数を超過しました。",

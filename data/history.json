@@ -141,5 +141,6 @@
     "Inconsistency",
     "Vulnerability",
     "Uninitialized",
-    "Precondition"
+    "Precondition",
+    "Drift"
 ]
