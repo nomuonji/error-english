@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Contention",
-        "errorMessage": "Lock Contention Detected.",
-        "messageTranslation": "ロックの競合が検出されました。",
-        "generalMeaning": "【名】論争、張り合い、競争",
-        "generalExample": "The competition caused severe contention. (その競争は激しい争いを引き起こした。)",
-        "techMeaning": "プログラム内で二つ以上の処理が「このデータは俺が使う！いや、俺だ！」とケンカしている状態。",
-        "explanation": "データベースの共有リソースを取り合っている時に発生。アクセスが集中するとプログラムがモタつく原因になる。ロックの範囲を小さくしたり、並列処理の設計を見直す必要がある。",
-        "usageContext": "家族でリモコンの取り合いをしている時",
-        "usageExample": "We are in contention over the TV remote.",
-        "usageExampleTranslation": "テレビのリモコンで争いになっている。",
-        "usagePunchline": "Remote: HTTP 503 Service Unavailable (待機中)",
-        "usagePunchlineTranslation": "リモコン：サービス利用不可（誰か使い終わるまで待て）"
-    },
-    {
         "targetWord": "Depletion",
         "errorMessage": "Memory Depletion Warning.",
         "messageTranslation": "メモリ枯渇の警告。",

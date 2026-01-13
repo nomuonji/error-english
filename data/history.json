@@ -143,5 +143,6 @@
     "Uninitialized",
     "Precondition",
     "Drift",
-    "Exceed"
+    "Exceed",
+    "Contention"
 ]
