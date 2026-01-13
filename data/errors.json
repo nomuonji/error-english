@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Exceed",
-        "errorMessage": "Rate limit exceeded.",
-        "messageTranslation": "制限回数を超過しました。",
-        "generalMeaning": "【動】（程度、数量が）～を超える、超過する",
-        "generalExample": "The speed limit must not be exceeded. (制限速度を超過してはならない。)",
-        "techMeaning": "サーバーが「ちょっと待って、処理が多すぎるよ！」と限界突破された状態。",
-        "explanation": "請求書が届く前に、APIの使用回数が上限を超えた時に見る悲しいメッセージ。スパム対策や負荷分散のために設定されていることが多いので、大人しく待つか、上位プランに課金しよう。",
-        "usageContext": "食べ放題で元を取りすぎた時",
-        "usageExample": "My appetite exceeded my limit.",
-        "usageExampleTranslation": "食欲が限界を超えた。",
-        "usagePunchline": "Chef: 429 Too Many Requests",
-        "usagePunchlineTranslation": "シェフ：多すぎるリクエスト（もう勘弁して）"
-    },
-    {
         "targetWord": "Contention",
         "errorMessage": "Lock Contention Detected.",
         "messageTranslation": "ロックの競合が検出されました。",
