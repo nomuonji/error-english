@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mismatch",
-        "errorMessage": "Type mismatch error: Expected string but received integer.",
-        "messageTranslation": "型不一致エラー：文字列を期待しましたが、整数を受け取りました。",
-        "generalMeaning": "【名/動】不一致、ミスマッチ、合わないこと",
-        "generalExample": "There is a mismatch between your skills and the job requirement. (あなたのスキルと職務要件の間にミスマッチがある。)",
-        "techMeaning": "プログラム同士がお互いの期待するデータ形式について「話が違うじゃないか！」と食い違っている状態。",
-        "explanation": "数字が欲しいのに文字が来たり、配列が欲しいのにオブジェクトが来たりする。初心者が最も遭遇しやすいエラーの一つ。入力と出力のデータ型をしっかり確認し、「この箱には何を入れるべきか」を明確にしよう。",
-        "usageContext": "服のコーディネートを失敗した時",
-        "usageExample": "My socks and shirt are a total mismatch.",
-        "usageExampleTranslation": "私の靴下とシャツは完全にミスマッチだ。",
-        "usagePunchline": "Friend: 406 Not Acceptable",
-        "usagePunchlineTranslation": "友達：受け付けられない（その組み合わせはダサい）"
-    },
-    {
         "targetWord": "Intermittent",
         "errorMessage": "Intermittent connection failure detected.",
         "messageTranslation": "断続的な接続障害が検出されました。",
