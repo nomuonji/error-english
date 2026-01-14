@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Depletion",
-        "errorMessage": "Memory Depletion Warning.",
-        "messageTranslation": "メモリ枯渇の警告。",
-        "generalMeaning": "【名】減少、枯渇、使い尽くすこと",
-        "generalExample": "The depletion of natural resources is a serious issue. (天然資源の枯渇は深刻な問題だ。)",
-        "techMeaning": "パソコンのメモリやサーバーのリソースが「もう限界、何も残ってないよ…」と悲鳴を上げている状態。",
-        "explanation": "メモリリーク（使い終わったメモリを返さない）が起きているか、あるいは処理に対して物理的にリソースが足りていない可能性大。プログラムの無駄遣いをチェックするか、ハードウェアを増強する必要がある。",
-        "usageContext": "お財布の中身が空っぽになった時",
-        "usageExample": "Financial depletion after shopping.",
-        "usageExampleTranslation": "買い物の後でお金が枯渇した。",
-        "usagePunchline": "Wallet: Error 402 Payment Required",
-        "usagePunchlineTranslation": "財布：エラー402 支払いが必要です（お金入れて）"
-    },
-    {
         "targetWord": "Mismatch",
         "errorMessage": "Type mismatch error: Expected string but received integer.",
         "messageTranslation": "型不一致エラー：文字列を期待しましたが、整数を受け取りました。",

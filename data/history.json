@@ -144,5 +144,6 @@
     "Precondition",
     "Drift",
     "Exceed",
-    "Contention"
+    "Contention",
+    "Depletion"
 ]
