@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Intermittent",
-        "errorMessage": "Intermittent connection failure detected.",
-        "messageTranslation": "断続的な接続障害が検出されました。",
-        "generalMeaning": "【形】断続的な、時々途切れる",
-        "generalExample": "The patient suffered from intermittent fever. (患者は断続的な熱に苦しんだ。)",
-        "techMeaning": "エラーが「出たり消えたり、幽霊みたいに現れる」状態で、再現性が低くデバッグ担当者を最も精神的に追い詰めるやつ。",
-        "explanation": "常に起きるエラーは簡単だが、たまにしか起きないエラーは地獄。サーバー負荷やネットワークの一時的な不安定さが原因のことが多い。ログを詳細に記録し、発生条件を粘り強く探るしかない。",
-        "usageContext": "友人との連絡が途切れがちで不安な時",
-        "usageExample": "His replies are always intermittent, I worry about him.",
-        "usageExampleTranslation": "彼の返信はいつも断続的で、彼が心配だ。",
-        "usagePunchline": "System Analyst: 408 Request Timeout (返事待ってる)",
-        "usagePunchlineTranslation": "システムアナリスト：リクエストタイムアウト（いい加減返事くれ）"
-    },
-    {
         "targetWord": "Iterate",
         "errorMessage": "StopIteration: iterator did not yield new values",
         "messageTranslation": "反復停止エラー：イテレータが新しい値を生成しませんでした",

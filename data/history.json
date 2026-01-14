@@ -146,5 +146,6 @@
     "Exceed",
     "Contention",
     "Depletion",
-    "Mismatch"
+    "Mismatch",
+    "Intermittent"
 ]
