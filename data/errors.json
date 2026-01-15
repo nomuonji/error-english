@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "EOF (End of File)",
-        "errorMessage": "Unexpected EOF while parsing",
-        "messageTranslation": "解析中に予期せぬファイル終端（ファイルの終わり）",
-        "generalMeaning": "End of File (ファイルの終わり) の略",
-        "generalExample": "You have reached the EOF. (ファイルの終わりに到達しました。)",
-        "techMeaning": "ファイルを読み込んでいたのに、閉じタグやクォーテーションが終わる前に、急にデータが途切れて「はい、終わり！」と宣言される状態。",
-        "explanation": "「あれ？まだ続きがあるはずなのに…」という状況。JSONやXML、コードなどで閉じカッコが抜けていることが原因であることが多い。プログラムはデータが不完全だと怒り出す。",
-        "usageContext": "読書中にいきなり本が破れて終わっていることに気づいた時",
-        "usageExample": "This book had an unexpected EOF!",
-        "usageExampleTranslation": "この本、予期せぬファイル終端だ！（途中で終わってる！）",
-        "usagePunchline": "Reader: 400 Bad Request",
-        "usagePunchlineTranslation": "読者：リクエストが不正です（ちゃんと最後まで読ませてくれ）"
-    },
-    {
         "targetWord": "Unwind",
         "errorMessage": "Stack Unwind Failure",
         "messageTranslation": "スタック巻き戻し失敗",
