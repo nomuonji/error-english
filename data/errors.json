@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Iterate",
-        "errorMessage": "StopIteration: iterator did not yield new values",
-        "messageTranslation": "反復停止エラー：イテレータが新しい値を生成しませんでした",
-        "generalMeaning": "【動】反復する、繰り返す",
-        "generalExample": "Iterate over the list (リストを順番に処理する)",
-        "techMeaning": "「永遠に俺のターン！」か、逆に「もう終わり！」と急に手札を捨ててしまう状態。ループ処理で次に進めない。",
-        "explanation": "ループ処理やリストの操作でよく見る。「まだ次があると思ったら、実はもうデータは空っぽだった」という状況。無限ループにならないよう、ちゃんと終了条件を確認しよう。",
-        "usageContext": "週末の掃除で「またこれやるの？」と思う時",
-        "usageExample": "I have to iterate over this cleaning routine every weekend.",
-        "usageExampleTranslation": "毎週この掃除ルーティンを繰り返さないといけないの。",
-        "usagePunchline": "Loop: 301 Moved Permanently",
-        "usagePunchlineTranslation": "ループ：永久に続くことが確定しました"
-    },
-    {
         "targetWord": "EOF (End of File)",
         "errorMessage": "Unexpected EOF while parsing",
         "messageTranslation": "解析中に予期せぬファイル終端（ファイルの終わり）",
