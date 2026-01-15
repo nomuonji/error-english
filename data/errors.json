@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unwind",
-        "errorMessage": "Stack Unwind Failure",
-        "messageTranslation": "スタック巻き戻し失敗",
-        "generalMeaning": "【動】巻き戻す、ほどく、くつろぐ",
-        "generalExample": "I need to unwind after work. (仕事の後、くつろぐ必要がある。)",
-        "techMeaning": "エラーが発生した時に、呼び出し元の関数に戻っていく「タイムトラベル」のような動作。これが失敗すると、プログラムは混乱し、制御不能になる。",
-        "explanation": "例外処理で重要な概念。エラーを検出したら、そのエラーを処理できる親の関数までスタック（処理履歴）を順番に戻る。戻る途中でミスると「あれ？どこに戻ればいいんだ？」と迷子になる。",
-        "usageContext": "疲れていて、家に帰るまでの道のりを思い出す時",
-        "usageExample": "My brain failed to unwind the events of the day.",
-        "usageExampleTranslation": "一日の出来事を巻き戻して（思い出して）処理できなかった。",
-        "usagePunchline": "Debugger: 500 Internal Server Error",
-        "usagePunchlineTranslation": "デバッガ：サーバ内部エラー（処理がカオスになりました）"
-    },
-    {
         "targetWord": "Oversize",
         "errorMessage": "File upload failed: file is oversize (max 10MB)",
         "messageTranslation": "ファイルアップロード失敗：ファイルが大きすぎる (最大10MB)",
