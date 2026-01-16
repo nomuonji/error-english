@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Coerce",
-        "errorMessage": "Type Coercion Error: Cannot convert 'string' to 'number'",
-        "messageTranslation": "型強制エラー：'文字列'を'数値'に変換できません",
-        "generalMeaning": "【動】強制する、強いる",
-        "generalExample": "He coerced her into signing the document. (彼は彼女に書類に署名するよう強要した。)",
-        "techMeaning": "プログラムがプログラマーの意思を無視して、データ型を勝手に書き換える「強引な結婚」のような処理",
-        "explanation": "JavaScriptなどで起こりがち。暗黙的な型変換で意図しない結果になる。エラーを避けるには、自分で明示的に変換するか、型チェックを厳しくしよう。",
-        "usageContext": "苦手なことを無理やりさせられる時",
-        "usageExample": "My boss tried to coerce me into doing overtime again!",
-        "usageExampleTranslation": "上司がまた残業をしろって強制してきた！",
-        "usagePunchline": "Status Code: 406 Not Acceptable",
-        "usagePunchlineTranslation": "許容できません！（受け入れがたい）"
-    },
-    {
         "targetWord": "Propagate",
         "errorMessage": "Failed to propagate changes to secondary replicas.",
         "messageTranslation": "変更をセカンダリレプリカに伝播できませんでした。",

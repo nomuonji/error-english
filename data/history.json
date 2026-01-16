@@ -152,5 +152,6 @@
     "EOF (End of File)",
     "Unwind",
     "Oversize",
-    "Halt"
+    "Halt",
+    "Coerce"
 ]
