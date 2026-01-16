@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Oversize",
-        "errorMessage": "File upload failed: file is oversize (max 10MB)",
-        "messageTranslation": "ファイルアップロード失敗：ファイルが大きすぎる (最大10MB)",
-        "generalMeaning": "【形】大きすぎる、特大の",
-        "generalExample": "An oversize luggage (特大サイズの荷物)",
-        "techMeaning": "制限を超えてデカすぎるデータ。「そんなデカいもの、俺のメモリに入らないよ！」とプログラムに拒否される状態。",
-        "explanation": "サーバやデータベースが処理できる許容量を超えている状態。画像や動画ファイルをアップロードする際によく遭遇する。データにダイエットが必要。",
-        "usageContext": "食欲の秋に、ついつい注文しすぎてしまった時",
-        "usageExample": "My order was totally oversize for one person!",
-        "usageExampleTranslation": "私の注文は一人分としては完全に特大サイズだった！",
-        "usagePunchline": "Waiter: 413 Payload Too Large",
-        "usagePunchlineTranslation": "ウェイター：積載量が大きすぎます"
-    },
-    {
         "targetWord": "Halt",
         "errorMessage": "System Halt: Kernel Panic",
         "messageTranslation": "システム停止：カーネルパニック",
