@@ -151,5 +151,6 @@
     "Iterate",
     "EOF (End of File)",
     "Unwind",
-    "Oversize"
+    "Oversize",
+    "Halt"
 ]

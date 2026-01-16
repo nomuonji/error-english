@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Halt",
-        "errorMessage": "System Halt: Kernel Panic",
-        "messageTranslation": "システム停止：カーネルパニック",
-        "generalMeaning": "【動】停止する、立ち止まる",
-        "generalExample": "The train came to a sudden halt. (電車が突然停止した。)",
-        "techMeaning": "プログラムが「もう無理。考えたくない」と手を放して、完全に意識を失う状態。システムの根幹（カーネル）がパニックを起こすと発生する。",
-        "explanation": "強制的なストップ命令。回復不可能な状態に入ったことを指す。致命的なエラー（Fatal Error）の結果としてHaltに至ることが多い。再起動するしかない。",
-        "usageContext": "会議中に突拍子もない提案が出て、全員が黙り込んだ時",
-        "usageExample": "The discussion came to a complete halt.",
-        "usageExampleTranslation": "議論が完全に停止した。",
-        "usagePunchline": "CPU: 503 Service Unavailable",
-        "usagePunchlineTranslation": "CPU：サービス利用不可（しばらく動けません）"
-    },
-    {
         "targetWord": "Coerce",
         "errorMessage": "Type Coercion Error: Cannot convert 'string' to 'number'",
         "messageTranslation": "型強制エラー：'文字列'を'数値'に変換できません",
