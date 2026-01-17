@@ -154,5 +154,6 @@
     "Oversize",
     "Halt",
     "Coerce",
-    "Propagate"
+    "Propagate",
+    "Inject"
 ]

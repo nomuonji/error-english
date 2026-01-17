@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Inject",
-        "errorMessage": "Dependency Injection Error: Cannot inject dependency Y.",
-        "messageTranslation": "依存性注入エラー：依存関係Yを注入できません。",
-        "generalMeaning": "【動】注入する、注射する",
-        "generalExample": "The doctor injected the medicine. (医者は薬を注射した。)",
-        "techMeaning": "プログラムが必要な部品（モジュールやサービス）を外部から「点滴のように」送り込むこと",
-        "explanation": "部品を外部から受け取る設計（DI: Dependency Injection）はテストしやすくなるが、注入に失敗するのは、部品の作り方（設定）がおかしいことが多い。設定ファイルを確認しよう。",
-        "usageContext": "健康診断で注射をされる時",
-        "usageExample": "I hate when the nurse tries to inject the needle!",
-        "usageExampleTranslation": "看護師さんが針を注入しようとする時が嫌だ！",
-        "usagePunchline": "SQL Injection Detected! (攻撃的な注入はダメ、絶対)",
-        "usagePunchlineTranslation": "SQLインジェクション検出！（攻撃的な注入はダメ、絶対）"
-    },
-    {
         "targetWord": "Delimit",
         "errorMessage": "Input Delimiter Error: Expecting a comma, found a semicolon.",
         "messageTranslation": "入力区切り文字エラー：カンマを期待しましたが、セミコロンが見つかりました。",
