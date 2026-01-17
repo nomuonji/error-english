@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Delimit",
-        "errorMessage": "Input Delimiter Error: Expecting a comma, found a semicolon.",
-        "messageTranslation": "入力区切り文字エラー：カンマを期待しましたが、セミコロンが見つかりました。",
-        "generalMeaning": "【動】境界を定める、区切る",
-        "generalExample": "The fence delimits the property line. (そのフェンスが敷地境界を定めている。)",
-        "techMeaning": "データやコードの要素を「どこからどこまでか」区切るための目印（カンマ、タブ、スペースなど）",
-        "explanation": "CSVファイルや設定ファイルでよく発生。カンマ区切りなのにセミコロンを混ぜたりすると、プログラムは「区切りがわからない！」とパニックになる。指定された区切り文字を厳守しよう。",
-        "usageContext": "料理の分量をきっちり測る時",
-        "usageExample": "We need clear rules to delimit responsibilities in the team.",
-        "usageExampleTranslation": "チームの責任範囲を区切る明確なルールが必要だ。",
-        "usagePunchline": "Boss: Your time management is highly unstructured (Status Code 400 Bad Request).",
-        "usagePunchlineTranslation": "上司：君の時間管理はめちゃくちゃだ（不正なリクエスト）。"
-    },
-    {
         "targetWord": "Egress",
         "errorMessage": "Egress policy violation detected",
         "messageTranslation": "送信ポリシー違反が検出されました",

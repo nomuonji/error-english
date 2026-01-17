@@ -155,5 +155,6 @@
     "Halt",
     "Coerce",
     "Propagate",
-    "Inject"
+    "Inject",
+    "Delimit"
 ]
