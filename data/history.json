@@ -153,5 +153,6 @@
     "Unwind",
     "Oversize",
     "Halt",
-    "Coerce"
+    "Coerce",
+    "Propagate"
 ]

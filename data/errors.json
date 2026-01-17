@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Propagate",
-        "errorMessage": "Failed to propagate changes to secondary replicas.",
-        "messageTranslation": "変更をセカンダリレプリカに伝播できませんでした。",
-        "generalMeaning": "【動】伝播させる、広める、繁殖させる",
-        "generalExample": "The sound propagated rapidly through the water. (音は水中を急速に伝播した。)",
-        "techMeaning": "エラーやデータが、システム全体（複数のサーバーやモジュール）に「おしゃべりのように広まっていく」こと",
-        "explanation": "エラーが伝播しないと、データベースのデータが不整合を起こしたり、システム間で情報が食い違う原因になる。連鎖反応は怖いので、バグは初期段階で食い止めたい。",
-        "usageContext": "噂話が広まる時",
-        "usageExample": "I hope this embarrassing story doesn't propagate to the whole company.",
-        "usageExampleTranslation": "この恥ずかしい話が会社全体に広まらないといいけど。",
-        "usagePunchline": "It's a DDoS attack of gossip!",
-        "usagePunchlineTranslation": "それはゴシップのDDoS攻撃だ！"
-    },
-    {
         "targetWord": "Inject",
         "errorMessage": "Dependency Injection Error: Cannot inject dependency Y.",
         "messageTranslation": "依存性注入エラー：依存関係Yを注入できません。",
