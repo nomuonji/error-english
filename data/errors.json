@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Egress",
-        "errorMessage": "Egress policy violation detected",
-        "messageTranslation": "送信ポリシー違反が検出されました",
-        "generalMeaning": "【名】外に出ること、流出、出口",
-        "generalExample": "Egress route (脱出経路)",
-        "techMeaning": "プログラムが「外部」にデータを送ろうとしたが、「門番」（ファイアウォールなど）に止められた状態。外出し禁止！",
-        "explanation": "データを外部サーバーに送信しようとしたとき、セキュリティ設定でブロックされている。「家から出ようとしたら鍵がかかっていた」状況。外部アクセスが許可されているか、設定を見直そう。",
-        "usageContext": "終業時間直前に上司が帰ろうとするあなたを引き止める時",
-        "usageExample": "Boss: No egress! Finish this report first.",
-        "usageExampleTranslation": "上司：出口はないぞ！まずこのレポートを終わらせろ。",
-        "usagePunchline": "You: Status Code 503 Service Unavailable",
-        "usagePunchlineTranslation": "あなた：ステータスコード 503 サービス利用不可（もう無理です）"
-    },
-    {
         "targetWord": "Deallocate",
         "errorMessage": "Failed to deallocate memory block",
         "messageTranslation": "メモリブロックの解放に失敗しました",

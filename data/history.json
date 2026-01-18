@@ -156,5 +156,6 @@
     "Coerce",
     "Propagate",
     "Inject",
-    "Delimit"
+    "Delimit",
+    "Egress"
 ]
