@@ -157,5 +157,6 @@
     "Propagate",
     "Inject",
     "Delimit",
-    "Egress"
+    "Egress",
+    "Deallocate"
 ]

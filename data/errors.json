@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Deallocate",
-        "errorMessage": "Failed to deallocate memory block",
-        "messageTranslation": "メモリブロックの解放に失敗しました",
-        "generalMeaning": "【動】（資源などを）割り当て解除する、解放する",
-        "generalExample": "Deallocate the budget (予算を削減する/割り当てを解除する)",
-        "techMeaning": "プログラムが借りたメモリを返そうとしたら、「いや、これ、あんたのじゃないよ？」と突き返された状態。",
-        "explanation": "メモリを確保（Allocate）した後、正しく解放（Deallocate）できていないと発生。特にC言語などで手動でメモリ管理をする際に起こりがち。解放する権利のない領域を返そうとしていないか確認！",
-        "usageContext": "友達が持っていった物を返してもらおうとした時",
-        "usageExample": "Could you deallocate my pen from your possession?",
-        "usageExampleTranslation": "あなたが持っている私のペンを解放してもらえますか？",
-        "usagePunchline": "Friend: Segmentation Fault",
-        "usagePunchlineTranslation": "友達：セグメンテーション違反（そんなペンは存在しない）"
-    },
-    {
         "targetWord": "Transpile",
         "errorMessage": "Transpile error: Cannot convert ES6 to ES5",
         "messageTranslation": "トランスパイルエラー：ES6をES5に変換できません",
