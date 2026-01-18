@@ -1,20 +1,5 @@
 [
     {
-        "targetWord": "Transpile",
-        "errorMessage": "Transpile error: Cannot convert ES6 to ES5",
-        "messageTranslation": "トランスパイルエラー：ES6をES5に変換できません",
-        "generalMeaning": "【動】（元の言語の抽象度を保ちながら）ソースコードを別の言語に変換する",
-        "generalExample": "The text was too complex to transpile into simple words.",
-        "generalExampleTranslation": "その文章は複雑すぎて、簡単な言葉に変換（トランスパイル）できなかった。",
-        "techMeaning": "「未来の言葉」で書いた手紙を、「昔の言葉」しかわからない人に無理やり理解させようとして失敗した状態。",
-        "explanation": "主にJavaScript開発で使う用語。新しい書き方（ES6/TypeScriptなど）を古い環境で動くように変換する際に発生。設定ミスや変換ルール（Babelなど）が原因であることが多い。設定ファイルを直せば未来が待っている！",
-        "usageContext": "流行りのネットミームを上司に説明する時",
-        "usageExample": "I tried to transpile the latest slang to something readable by the boss.",
-        "usageExampleTranslation": "最新の俗語を、上司でも読めるものにトランスパイルしようとした。",
-        "usagePunchline": "Boss: I'm throwing a 400 Bad Request at that slang.",
-        "usagePunchlineTranslation": "上司：その俗語に対しては400不正なリクエストを投げるぞ。"
-    },
-    {
         "targetWord": "Ingress",
         "errorMessage": "Ingress controller failed to accept connection",
         "messageTranslation": "受信コントローラーが接続の受け入れに失敗しました",

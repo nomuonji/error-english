@@ -158,5 +158,6 @@
     "Inject",
     "Delimit",
     "Egress",
-    "Deallocate"
+    "Deallocate",
+    "Transpile"
 ]
