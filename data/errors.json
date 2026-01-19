@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Eject",
-        "errorMessage": "Failed to Eject Device 'USB Stick'",
-        "messageTranslation": "デバイス『USBスティック』の取り出しに失敗しました",
-        "generalMeaning": "【動】（人や物を）追い出す、射出する、取り出す",
-        "generalExample": "Eject the disc from the player (プレイヤーからディスクを取り出す)",
-        "techMeaning": "プログラムが「さあ、お前はもう用済みだ」と、特定の接続やプロセスを安全に切り離そうとするが、失敗した状態。",
-        "explanation": "プログラムが別れを告げようとしているのに、相手（リソース）がしがみついている状態。ファイルを全部閉じて、誰も使っていないことを確認してから再度試そう。",
-        "usageContext": "長居している飲み会からの帰宅時",
-        "usageExample": "I need to eject myself from this party before midnight.",
-        "usageExampleTranslation": "真夜中になる前に、このパーティーから自分を射出しなきゃ。",
-        "usagePunchline": "Friend: Status Code 409 Conflict!",
-        "usagePunchlineTranslation": "友達：コンフリクト（衝突）！まだ帰らせないよ！"
-    },
-    {
         "targetWord": "Drain",
         "errorMessage": "Resource Drain Detected: High CPU Usage",
         "messageTranslation": "リソースの消耗が検出されました：高いCPU使用率",
