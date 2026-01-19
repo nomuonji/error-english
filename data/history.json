@@ -159,5 +159,6 @@
     "Delimit",
     "Egress",
     "Deallocate",
-    "Transpile"
+    "Transpile",
+    "Ingress"
 ]

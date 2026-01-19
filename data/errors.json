@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Ingress",
-        "errorMessage": "Ingress controller failed to accept connection",
-        "messageTranslation": "受信コントローラーが接続の受け入れに失敗しました",
-        "generalMeaning": "【名】中に入ること、侵入、入り口",
-        "generalExample": "The ingress of light (光の侵入/差し込み)",
-        "techMeaning": "プログラムが「外部」からデータを受け取ろうとしたが、「玄関の鍵」が壊れていて入れない状態。",
-        "explanation": "外部からの通信（HTTPリクエストなど）を受け入れる際の障害。ドアは開いているはずなのに、インターホン（コントローラー）が応答しないイメージ。ポート設定やファイアウォール（門番）がアクセスを許可しているか確認しよう。Egress（出る）とIngress（入る）はセットで覚えよう。",
-        "usageContext": "友人宅に遊びに行ったが、玄関で立ち往生している時",
-        "usageExample": "We faced an ingress issue at the party entrance.",
-        "usageExampleTranslation": "パーティーの入り口で入室問題（イングレス問題）に直面した。",
-        "usagePunchline": "Friend: Don't worry, I'll allow TCP Handshake!",
-        "usagePunchlineTranslation": "友達：大丈夫、TCPハンドシェイクを許可するよ！"
-    },
-    {
         "targetWord": "Telemetry",
         "errorMessage": "Telemetry data processing failed: Buffer full",
         "messageTranslation": "テレメトリーデータの処理に失敗しました：バッファがいっぱいです",
