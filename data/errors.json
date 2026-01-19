@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Telemetry",
-        "errorMessage": "Telemetry data processing failed: Buffer full",
-        "messageTranslation": "テレメトリーデータの処理に失敗しました：バッファがいっぱいです",
-        "generalMeaning": "【名】遠隔測定、遠隔計測データ",
-        "generalExample": "NASA uses telemetry to monitor rockets. (NASAはロケットの監視にテレメトリーを使用する。)",
-        "techMeaning": "プログラムの活動記録（ログやメトリクス）を送りつけようとしたが、記録係が忙しすぎて受け取り拒否された状態。",
-        "explanation": "裏側で動いている「監視・報告システム」がパンクしているサイン。エラーログやパフォーマンスデータが多すぎて、処理が追いつかない（バッファオーバーフロー）場合に発生。報告量を減らすか、記録係（ロギングサービス）のスペックを上げよう。",
-        "usageContext": "自分の趣味や行動をパートナーに延々と説明している時",
-        "usageExample": "My partner can't handle the telemetry of my hobbies.",
-        "usageExampleTranslation": "私のパートナーは私の趣味に関する遠隔測定データ（情報量）を処理しきれない。",
-        "usagePunchline": "Partner: Error 413 Payload Too Large!",
-        "usagePunchlineTranslation": "パートナー：エラー 413 ペイロードが大きすぎます！データ送信を停止して！"
-    },
-    {
         "targetWord": "Eject",
         "errorMessage": "Failed to Eject Device 'USB Stick'",
         "messageTranslation": "デバイス『USBスティック』の取り出しに失敗しました",

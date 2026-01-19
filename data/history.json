@@ -160,5 +160,6 @@
     "Egress",
     "Deallocate",
     "Transpile",
-    "Ingress"
+    "Ingress",
+    "Telemetry"
 ]
