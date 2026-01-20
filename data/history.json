@@ -163,5 +163,6 @@
     "Ingress",
     "Telemetry",
     "Eject",
-    "Drain"
+    "Drain",
+    "Disrupt"
 ]

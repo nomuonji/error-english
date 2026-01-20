@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disrupt",
-        "errorMessage": "Network connection was abruptly disrupted.",
-        "messageTranslation": "ネットワーク接続が突然中断されました。",
-        "generalMeaning": "【動】（システムや活動を）中断させる、混乱させる",
-        "generalExample": "The noise disrupted my concentration (騒音が私の集中を乱した)",
-        "techMeaning": "処理や通信がスムーズに進んでいたのに、突然第三者（ネットワークの切断、他のプロセスなど）が邪魔に入り、流れをぶち壊した状態。",
-        "explanation": "大事なダウンロード中にWi-Fiが切れたり、誰かがケーブルを抜いたりした時に発生。原因は外部にあることが多いので、まず物理的な接続を確認しよう。",
-        "usageContext": "集中して作業している時",
-        "usageExample": "Please don't disrupt me when I'm debugging!",
-        "usageExampleTranslation": "デバッグ中は邪魔しないでください！",
-        "usagePunchline": "Interrupter: I am the Root Cause Analysis!",
-        "usagePunchlineTranslation": "邪魔者：私が根本原因の分析（RCA）だ！（私が問題だ！）"
-    },
-    {
         "targetWord": "Coalesce",
         "errorMessage": "Failed to Coalesce disk segments.",
         "messageTranslation": "ディスクのセグメント結合に失敗しました。",
