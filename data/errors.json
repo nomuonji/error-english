@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Coalesce",
-        "errorMessage": "Failed to Coalesce disk segments.",
-        "messageTranslation": "ディスクのセグメント結合に失敗しました。",
-        "generalMeaning": "【動】合体する、一つにまとまる",
-        "generalExample": "The small groups coalesced into a single large party (小グループが合体して一つの大きな政党になった)",
-        "techMeaning": "バラバラになったデータやリソースを「よし、一つになろう！」と融合させようとしたが、うまくいかなかった状態。",
-        "explanation": "分断されたメモリやストレージの破片を集めて、効率よく使おうとする処理。失敗するとパフォーマンスに影響が出る。データたちが協調性を持ってくれないとエラーになる。",
-        "usageContext": "意見がまとまらないチーム会議",
-        "usageExample": "We need to coalesce our ideas into one presentation.",
-        "usageExampleTranslation": "私たちのアイデアを一つのプレゼンにまとめ上げる必要がある。",
-        "usagePunchline": "Team Member: This is a 415 Unsupported Media Type.",
-        "usagePunchlineTranslation": "チームメンバー：これはサポートされていないメディアタイプだ。（考え方が違いすぎる！）"
-    },
-    {
         "targetWord": "Ingest",
         "errorMessage": "Data Ingest Failed: Format Mismatch",
         "messageTranslation": "データの取り込みに失敗しました：フォーマットの不一致",
