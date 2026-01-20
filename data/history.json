@@ -162,5 +162,6 @@
     "Transpile",
     "Ingress",
     "Telemetry",
-    "Eject"
+    "Eject",
+    "Drain"
 ]
