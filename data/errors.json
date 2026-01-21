@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Vulnerable",
-        "errorMessage": "SECURITY WARNING: Vulnerable dependency detected",
-        "messageTranslation": "セキュリティ警告：脆弱な依存関係が検出されました",
-        "generalMeaning": "【形】脆弱な、傷つきやすい、攻撃を受けやすい",
-        "generalExample": "He is vulnerable to criticism. (彼は批判に弱い。)",
-        "techMeaning": "プログラムの弱点。ハッカーに「どうぞ入ってください」と言っているようなセキュリティ上の穴。",
-        "explanation": "この警告が出たら、すぐにアップデートが必要。放置すると、データが流出したり、プログラムが乗っ取られたりするかも。「パッチ当てなきゃ（Patching is required）」のサイン。",
-        "usageContext": "徹夜明けで集中力がない時",
-        "usageExample": "I'm feeling vulnerable after pulling an all-nighter.",
-        "usageExampleTranslation": "徹夜したせいで、なんだか心が弱っている（集中力がない）よ。",
-        "usagePunchline": "Hacker: SQL Injection Successful",
-        "usagePunchlineTranslation": "ハッカー：「棚からぼた餅でした」（401 Unauthorizedのチャンス）"
-    },
-    {
         "targetWord": "Saturated",
         "errorMessage": "Resource pool is saturated, increasing latency.",
         "messageTranslation": "リソースプールが飽和状態です。レイテンシが増加しています。",
