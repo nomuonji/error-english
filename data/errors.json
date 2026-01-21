@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Saturated",
-        "errorMessage": "Resource pool is saturated, increasing latency.",
-        "messageTranslation": "リソースプールが飽和状態です。レイテンシが増加しています。",
-        "generalMeaning": "【形】飽和した、いっぱいの、これ以上受け付けられない",
-        "generalExample": "The sponge is saturated with water. (スポンジは水で飽和している。)",
-        "techMeaning": "サーバーやメモリがキャパオーバーで、もうこれ以上仕事を受けられない状態。「もうダメだ、いっぱいだ！」と悲鳴をあげている。",
-        "explanation": "満員電車と同じ。処理待ちの行列が長くなり、システムの応答速度が遅くなっている。処理能力（CPUやメモリ）を上げるか、リクエストを減らす対処が必要。",
-        "usageContext": "食べ放題でお腹がいっぱいになった時",
-        "usageExample": "I am completely saturated. I can't eat another bite.",
-        "usageExampleTranslation": "完全に飽和したわ。もう一口も食べられない。",
-        "usagePunchline": "System: HTTP 429 Too Many Requests",
-        "usagePunchlineTranslation": "システム：リクエストが多すぎます（腹八分目を知らないのか）"
-    },
-    {
         "targetWord": "Eviction",
         "errorMessage": "Cache Eviction Policy triggered: LRU applied.",
         "messageTranslation": "キャッシュの立ち退きポリシーが発動しました：LRUが適用されました。",
