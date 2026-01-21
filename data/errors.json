@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Ingest",
-        "errorMessage": "Data Ingest Failed: Format Mismatch",
-        "messageTranslation": "データの取り込みに失敗しました：フォーマットの不一致",
-        "generalMeaning": "【動】（食物などを）摂取する、取り込む",
-        "generalExample": "The factory ingests raw materials (工場は原材料を取り込む)",
-        "techMeaning": "外部から大量のデータを取り込み、自分のシステムで使える形に加工しようとしたが、そのデータが「異物」すぎて拒否した状態。",
-        "explanation": "プログラムが「いただきます！」とデータを受け取ろうとしたら、砂利や石が混ざっていたようなもの。多くの場合、データの形（CSVのはずがJSONだったなど）が期待通りではないことが原因。データの形式とスキーマをよく確認しよう。",
-        "usageContext": "食事の準備",
-        "usageExample": "My stomach cannot ingest spicy food easily.",
-        "usageExampleTranslation": "私の胃は辛い食べ物を簡単に摂取できない。",
-        "usagePunchline": "Program: Error 406 Not Acceptable!",
-        "usagePunchlineTranslation": "プログラム：受け入れ不可！（そんな形式のデータは嫌だ！）"
-    },
-    {
         "targetWord": "Vulnerable",
         "errorMessage": "SECURITY WARNING: Vulnerable dependency detected",
         "messageTranslation": "セキュリティ警告：脆弱な依存関係が検出されました",
