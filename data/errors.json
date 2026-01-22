@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Eviction",
-        "errorMessage": "Cache Eviction Policy triggered: LRU applied.",
-        "messageTranslation": "キャッシュの立ち退きポリシーが発動しました：LRUが適用されました。",
-        "generalMeaning": "【名】立ち退き、追い出し、排除",
-        "generalExample": "Eviction notice (立ち退き通知)",
-        "techMeaning": "キャッシュやメモリから、古いデータやあまり使われていないデータを強制的に追い出すこと。「新しいデータを入れるために、君には出て行ってもらうよ！」",
-        "explanation": "メモリは有限なので、新しいデータを入れるためには何かを犠牲にする必要がある。LRU（Least Recently Used：最も使われていないもの）は、最も賢い立ち退き方法の一つ。",
-        "usageContext": "冷蔵庫の収納スペースがない時",
-        "usageExample": "We need an urgent Eviction of old food from the fridge.",
-        "usageExampleTranslation": "冷蔵庫から古い食べ物を緊急で立ち退かせる必要がある。",
-        "usagePunchline": "Fridge Policy: 404 Not Found",
-        "usagePunchlineTranslation": "冷蔵庫ポリシー：見つかりません（もはや食材として認識不能）"
-    },
-    {
         "targetWord": "Preflight",
         "errorMessage": "CORS Preflight check failed for origin X.",
         "messageTranslation": "オリジンXに対するCORSの事前チェックが失敗しました。",
