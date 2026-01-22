@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Preflight",
-        "errorMessage": "CORS Preflight check failed for origin X.",
-        "messageTranslation": "オリジンXに対するCORSの事前チェックが失敗しました。",
-        "generalMeaning": "【名】事前飛行（航空用語）、準備段階",
-        "generalExample": "Preflight inspection of the aircraft (航空機の飛行前点検)",
-        "techMeaning": "サーバーに本命のリクエストを送る前に、「この操作、やっても大丈夫？」と確認する事前チェックのこと。CORS（ドメイン間通信）でよく使われる、丁寧な下準備。",
-        "explanation": "他所のサイトに物を頼むとき、いきなり本題に入るのは失礼なので、まず「こういう方法で頼みますけど、いいですか？」と確認する。これが失敗すると、本命のデータ送信は拒否される。",
-        "usageContext": "デートで相手の機嫌を伺う時",
-        "usageExample": "I need to run a Preflight check on her mood before asking about the movie.",
-        "usageExampleTranslation": "映画の件を聞く前に、彼女の機嫌について事前チェックをする必要がある。",
-        "usagePunchline": "Server: OPTION denied",
-        "usagePunchlineTranslation": "サーバー：選択肢は拒否します（いきなりGETしろ！）"
-    },
-    {
         "targetWord": "Mitigate",
         "errorMessage": "Security vulnerabilities Mitigated by patch version 2.1.",
         "messageTranslation": "セキュリティの脆弱性はパッチバージョン2.1によって軽減されました。",

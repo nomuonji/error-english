@@ -169,5 +169,6 @@
     "Ingest",
     "Vulnerable",
     "Saturated",
-    "Eviction"
+    "Eviction",
+    "Preflight"
 ]
