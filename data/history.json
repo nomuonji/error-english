@@ -170,5 +170,6 @@
     "Vulnerable",
     "Saturated",
     "Eviction",
-    "Preflight"
+    "Preflight",
+    "Mitigate"
 ]

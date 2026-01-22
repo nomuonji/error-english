@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mitigate",
-        "errorMessage": "Security vulnerabilities Mitigated by patch version 2.1.",
-        "messageTranslation": "セキュリティの脆弱性はパッチバージョン2.1によって軽減されました。",
-        "generalMeaning": "【動】軽減する、和らげる、痛みを緩和する",
-        "generalExample": "Mitigate the risk of disaster (災害のリスクを軽減する)",
-        "techMeaning": "エラーや問題が起こる「リスク」や「被害」を小さく抑えること。完全に直すわけではないが、ひとまず致命傷を避けるための応急処置。",
-        "explanation": "エラーが出たときに、バグをゼロにすることは難しい場合がある。その場合、この単語は「とりあえず、被害が広がらないようにしたよ」という意味で使われる。根本解決も大事だが、緊急時は軽減措置が命綱。",
-        "usageContext": "仕事でミスが発覚し、謝罪が必要な時",
-        "usageExample": "We must apologize immediately to mitigate the damage.",
-        "usageExampleTranslation": "ダメージを軽減するために、直ちに謝罪しなければならない。",
-        "usagePunchline": "Manager: Soft Reboot",
-        "usagePunchlineTranslation": "マネージャー：優しくやり直せ（ハードリセットは勘弁な）"
-    },
-    {
         "targetWord": "Handshake",
         "errorMessage": "TLS Handshake Failed",
         "messageTranslation": "TLSのハンドシェイクに失敗しました",
