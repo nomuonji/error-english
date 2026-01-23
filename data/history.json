@@ -172,5 +172,6 @@
     "Eviction",
     "Preflight",
     "Mitigate",
-    "Handshake"
+    "Handshake",
+    "Misconfiguration"
 ]

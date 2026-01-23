@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Misconfiguration",
-        "errorMessage": "Security Misconfiguration Detected",
-        "messageTranslation": "セキュリティの設定ミスが検出されました",
-        "generalMeaning": "【名】誤った設定、設定間違い",
-        "generalExample": "Due to a network misconfiguration (ネットワークの設定ミスにより)",
-        "techMeaning": "悪気はないが、設定ファイルや環境変数のネジを締め忘れた状態。ほとんどのエラーの根源。プログラミング界の「うっかり八兵衛」。",
-        "explanation": "このエラーは、大抵の場合、コードではなく「環境」や「設定ファイル」を疑うべきサイン。特にDockerやクラウド環境では、このミスで半日溶ける。スペルミスもよくある犯人。",
-        "usageContext": "新しい家具を組み立てる時",
-        "usageExample": "The bookcase collapsed due to my misconfiguration of the screws.",
-        "usageExampleTranslation": "ネジの取り付け設定をミスったせいで本棚が崩壊した。",
-        "usagePunchline": "Console: RM -RF",
-        "usagePunchlineTranslation": "コンソール：全てを消去してやり直せ！"
-    },
-    {
         "targetWord": "Checksum",
         "errorMessage": "Checksum mismatch during download",
         "messageTranslation": "ダウンロード中にチェックサムの不一致が発生しました",
