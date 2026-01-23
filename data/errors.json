@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Checksum",
-        "errorMessage": "Checksum mismatch during download",
-        "messageTranslation": "ダウンロード中にチェックサムの不一致が発生しました",
-        "generalMeaning": "【名】（IT用語）チェックサム、誤り検出符号",
-        "generalExample": "Verify the checksum of the file before installation. (インストール前にファイルのチェックサムを確認してください。)",
-        "techMeaning": "データが旅の途中で汚染されていないかを確認するための「データの指紋」。指紋が違ったら、それは偽物か、途中で何者かにいじられた証拠。",
-        "explanation": "ファイルやデータが正しく転送されたかを検証するための合計値。エラーで「Checksum mismatch」が出たら、データが壊れているか、ダウンロードが完全に終わっていないことが多い。大事なファイルの身分証明書。",
-        "usageContext": "買い物でレシートの合計金額を確認する時",
-        "usageExample": "My credit card statement showed a checksum mismatch with my records.",
-        "usageExampleTranslation": "クレジットカードの明細が、私の記録とチェックサム（合計値）が合わない！",
-        "usagePunchline": "Data Integrity: 500 Internal Server Error",
-        "usagePunchlineTranslation": "データの整合性：サーバー内部エラー（サーバー内部でデータが矛盾している）"
-    },
-    {
         "targetWord": "Idle",
         "errorMessage": "Connection timed out: system was idle for too long",
         "messageTranslation": "接続がタイムアウトしました：システムが長すぎる時間アイドル状態でした",

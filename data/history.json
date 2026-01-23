@@ -173,5 +173,6 @@
     "Preflight",
     "Mitigate",
     "Handshake",
-    "Misconfiguration"
+    "Misconfiguration",
+    "Checksum"
 ]
