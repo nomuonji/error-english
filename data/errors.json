@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Handshake",
-        "errorMessage": "TLS Handshake Failed",
-        "messageTranslation": "TLSのハンドシェイクに失敗しました",
-        "generalMeaning": "【名】握手、合意、挨拶",
-        "generalExample": "An exchange of handshakes (握手の交換)",
-        "techMeaning": "通信を始める前の「ねぇ、君、誰？」「僕だよ、よろしく！」という初期の挨拶と合意の儀式。これが失敗すると、通信は絶対に始まらない。",
-        "explanation": "サーバーとクライアントがお互いの認証情報を交換し、暗号化方式を決める重要な儀式。これが失敗するのは、相手が全く知らない人か、ルールが合わない時。ネット世界の社交辞令。",
-        "usageContext": "初めてマッチングアプリで会う時",
-        "usageExample": "We failed the first handshake, he looked nothing like his profile picture.",
-        "usageExampleTranslation": "最初のハンドシェイクに失敗したわ、彼、プロフィール写真と全然違った。",
-        "usagePunchline": "Server Response: 406 Not Acceptable",
-        "usagePunchlineTranslation": "サーバー応答：受け入れられません（タイプが合わない）"
-    },
-    {
         "targetWord": "Misconfiguration",
         "errorMessage": "Security Misconfiguration Detected",
         "messageTranslation": "セキュリティの設定ミスが検出されました",
