@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disruption",
-        "errorMessage": "Service Disruption Detected",
-        "messageTranslation": "サービス中断が検出されました",
-        "generalMeaning": "【名】混乱、中断、妨害",
-        "generalExample": "Traffic disruption (交通混乱)",
-        "techMeaning": "プログラムが「急に話すのをやめた」状態。安定していた流れが何らかの理由でブツッと途切れたこと。",
-        "explanation": "ネットワークや外部サービスの不安定さが原因であることが多い。突然サービスが停止したり、接続が切れたりする。コーヒーブレイクじゃないんだから、ちゃんと継続してよ！",
-        "usageContext": "集中して作業している時に横槍が入る時",
-        "usageExample": "The continuous disruption of notifications made me lose focus.",
-        "usageExampleTranslation": "通知が継続的に邪魔をしてきたせいで集中力を失った。",
-        "usagePunchline": "Manager: Let's schedule a 503 Service Unavailable meeting.",
-        "usagePunchlineTranslation": "上司：503エラー（サービス利用不可）会議をスケジュールしよう。"
-    },
-    {
         "targetWord": "Cipher",
         "errorMessage": "Failed to initialize cipher suite",
         "messageTranslation": "暗号スイートの初期化に失敗しました",
