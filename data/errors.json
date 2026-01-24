@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Clipped",
-        "errorMessage": "Output string was clipped to 100 characters",
-        "messageTranslation": "出力文字列は100文字に切り詰められました",
-        "generalMeaning": "【形】切り取られた、切り詰められた",
-        "generalExample": "Clipped wings (切り詰められた翼)",
-        "techMeaning": "データが長すぎて容器に入りきらず、はみ出した部分がバッサリと切り落とされた状態。重要な情報が失われる原因になりやすい。",
-        "explanation": "ログファイルや表示領域、データベースのカラムなどに制限がある場合によく発生する。「全部表示してほしいのに！」という時に遭遇する。特にユーザーが入力した長いテキストを扱う際には注意が必要。",
-        "usageContext": "長すぎる領収書を財布に入れようとする時",
-        "usageExample": "My long CVS receipt was clipped when I tried to fit it in my small wallet.",
-        "usageExampleTranslation": "長すぎるCVSのレシートが、小さい財布に入れようとしたら切り詰められた。",
-        "usagePunchline": "Limit: 413 Payload Too Large",
-        "usagePunchlineTranslation": "制限：ペイロードが大きすぎる（データ量が制限を超過した）"
-    },
-    {
         "targetWord": "Disruption",
         "errorMessage": "Service Disruption Detected",
         "messageTranslation": "サービス中断が検出されました",

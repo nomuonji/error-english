@@ -175,5 +175,6 @@
     "Handshake",
     "Misconfiguration",
     "Checksum",
-    "Idle"
+    "Idle",
+    "Clipped"
 ]
