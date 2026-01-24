@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Idle",
-        "errorMessage": "Connection timed out: system was idle for too long",
-        "messageTranslation": "接続がタイムアウトしました：システムが長すぎる時間アイドル状態でした",
-        "generalMeaning": "【形】何もしていない、怠惰な、暇な",
-        "generalExample": "An idle worker (暇を持て余している作業員)",
-        "techMeaning": "プログラムやコネクションが「何もすることがない」と判断して、ふて寝している状態。しばらく無視していると、「もういいや」と勝手に接続を切ってしまう。",
-        "explanation": "サーバーやデータベースの接続は、リソース節約のために「活動がない」と自動的に切断される設定になっていることが多い。集中して作業を再開しようとしたら、接続が切れていて二度手間になる「プログラマーあるある」。",
-        "usageContext": "暇すぎて恋人に構ってもらえない時",
-        "usageExample": "My girlfriend said I was too idle, so she logged out of the relationship.",
-        "usageExampleTranslation": "彼女に「暇すぎ」と言われたので、彼女は関係からログアウトした。",
-        "usagePunchline": "State: 408 Request Timeout",
-        "usagePunchlineTranslation": "状態：リクエストタイムアウト（要求がなかったので接続を切る）"
-    },
-    {
         "targetWord": "Clipped",
         "errorMessage": "Output string was clipped to 100 characters",
         "messageTranslation": "出力文字列は100文字に切り詰められました",

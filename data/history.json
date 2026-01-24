@@ -174,5 +174,6 @@
     "Mitigate",
     "Handshake",
     "Misconfiguration",
-    "Checksum"
+    "Checksum",
+    "Idle"
 ]
