@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Handle",
-        "errorMessage": "Unhandled rejection at: Promise",
-        "messageTranslation": "処理されない拒否：Promise",
-        "generalMeaning": "【動】対処する、扱う、処理する / 【名】取っ手",
-        "generalExample": "Handle the situation calmly (状況を冷静に対処する)",
-        "techMeaning": "「ちょっと、これどうするの？」とプログラムがパニックになっている状態。発生した問題に対して「対処するコード」が書かれていない。",
-        "explanation": "エラーが発生したときに「これをログに出して、ユーザーには優しいメッセージを表示する」といった処理（ハンドリング）をしてあげないと、プログラムはフリーズしたり予期せぬ挙動をしたりするよ。責任を持って対応しよう！",
-        "usageContext": "難しい頼まれ事をされた時",
-        "usageExample": "I can't handle this much workload alone.",
-        "usageExampleTranslation": "これだけの量の仕事は一人では処理できない。",
-        "usagePunchline": "Colleague: Consider this error 501 Not Implemented.",
-        "usagePunchlineTranslation": "同僚：このエラーは「501 未実装」と見なす。"
-    },
-    {
         "targetWord": "Hook",
         "errorMessage": "Failed to execute pre-commit hook",
         "messageTranslation": "コミット前のフックの実行に失敗しました",

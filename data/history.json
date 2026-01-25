@@ -178,5 +178,6 @@
     "Idle",
     "Clipped",
     "Disruption",
-    "Cipher"
+    "Cipher",
+    "Handle"
 ]
