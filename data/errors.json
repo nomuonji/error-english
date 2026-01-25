@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Cipher",
-        "errorMessage": "Failed to initialize cipher suite",
-        "messageTranslation": "暗号スイートの初期化に失敗しました",
-        "generalMeaning": "【名】暗号、ゼロ（0）、無価値な人",
-        "generalExample": "Decipher the secret message (秘密のメッセージを解読する)",
-        "techMeaning": "データを秘密にするための「暗号のお道具セット」。これの初期化に失敗すると、通信が丸裸になるか、そもそも通信できない。",
-        "explanation": "セキュリティ関連のエラー。鍵（Key）と錠（Cipher）が合わない、あるいは古い錠を使おうとしている（古いプロトコル）ときに発生しやすい。安全な通信ができないから、ブラウザが赤くなるよ！",
-        "usageContext": "秘密を打ち明けようとしたが、相手に全く伝わらない時",
-        "usageExample": "His explanation was a total cipher to me.",
-        "usageExampleTranslation": "彼の説明は私にとって全くの暗号だった。",
-        "usagePunchline": "Friend: Did you forget the SHA-256 hash of your feelings?",
-        "usagePunchlineTranslation": "友達：お前の気持ちのSHA-256ハッシュ値を忘れたのか？"
-    },
-    {
         "targetWord": "Handle",
         "errorMessage": "Unhandled rejection at: Promise",
         "messageTranslation": "処理されない拒否：Promise",
