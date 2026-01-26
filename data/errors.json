@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Taint",
-        "errorMessage": "Data flow analysis detected possible source of taint",
-        "messageTranslation": "データフロー解析により汚染の可能性のあるソースが検出されました",
-        "generalMeaning": "【動】汚す、汚染する、傷つける",
-        "generalExample": "His reputation was tainted by scandal (彼の評判はスキャンダルによって汚された)",
-        "techMeaning": "外部から入ってきたデータが「信用できない印」をつけられている状態。セキュリティ的に危険な可能性があるよ、と警告している。",
-        "explanation": "ユーザー入力や外部APIからのデータは「不潔なデータ（Taint）」として扱うのが原則。そのままデータベースに入れたり画面に出力したりすると、SQLインジェクションやXSSの原因になる。入力は必ずサニタイズ（消毒）しよう！",
-        "usageContext": "信頼していた情報源が間違っていた時",
-        "usageExample": "I realized the whole report was tainted by misleading data.",
-        "usageExampleTranslation": "レポート全体が誤解を招くデータによって汚染されていることに気づいた。",
-        "usagePunchline": "Security Team: This input is highly 406 Not Acceptable.",
-        "usagePunchlineTranslation": "セキュリティチーム：この入力は非常に危険で受け入れられない（406）。"
-    },
-    {
         "targetWord": "Overload",
         "errorMessage": "HTTP 503 Service Unavailable (Server Overload)",
         "messageTranslation": "サービス利用不可（サーバー過負荷）",

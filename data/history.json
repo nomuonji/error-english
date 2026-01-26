@@ -180,5 +180,6 @@
     "Disruption",
     "Cipher",
     "Handle",
-    "Hook"
+    "Hook",
+    "Taint"
 ]
