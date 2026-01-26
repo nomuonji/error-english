@@ -181,5 +181,6 @@
     "Cipher",
     "Handle",
     "Hook",
-    "Taint"
+    "Taint",
+    "Overload"
 ]

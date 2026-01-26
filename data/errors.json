@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Overload",
-        "errorMessage": "HTTP 503 Service Unavailable (Server Overload)",
-        "messageTranslation": "サービス利用不可（サーバー過負荷）",
-        "generalMeaning": "【動】過負荷をかける、詰め込みすぎる",
-        "generalExample": "Don't overload the washing machine. (洗濯機に詰め込みすぎるな。)",
-        "techMeaning": "サーバーが「もう無理！限界！」と悲鳴を上げている状態。キャパシティを超えたアクセスで処理が麻痺している。",
-        "explanation": "プログラムが同時に処理できる量を超えたときに発生します。ダイエット中の胃袋に焼き肉を無理やり詰め込むようなもの。急にアクセスが増えたら、サーバーを増やしたり（スケールアウト）、処理能力を上げる（スケールアップ）ことを検討しましょう。",
-        "usageContext": "忙しい友人に頼みごとをする時",
-        "usageExample": "I don't want to overload you with too many tasks.",
-        "usageExampleTranslation": "君にあまりにも多くのタスクを押し付けたくない。",
-        "usagePunchline": "Friend: My queue is full. Status 429 Too Many Requests!",
-        "usagePunchlineTranslation": "友人：僕のキューは満杯だよ。ステータス 429 リクエスト過多！"
-    },
-    {
         "targetWord": "Redacted",
         "errorMessage": "Log file (Sensitive data redacted)",
         "messageTranslation": "ログファイル（機密データは編集・削除済み）",
