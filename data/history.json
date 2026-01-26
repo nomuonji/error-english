@@ -182,5 +182,6 @@
     "Handle",
     "Hook",
     "Taint",
-    "Overload"
+    "Overload",
+    "Redacted"
 ]

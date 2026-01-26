@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Redacted",
-        "errorMessage": "Log file (Sensitive data redacted)",
-        "messageTranslation": "ログファイル（機密データは編集・削除済み）",
-        "generalMeaning": "【動】編集する、削除する、検閲する（特に機密情報を黒塗りして公開すること）",
-        "generalExample": "The document was heavily redacted before release. (その文書は公開前に大幅に黒塗りされた。)",
-        "techMeaning": "セキュリティやプライバシー保護のため、ログや表示から「黒塗り」された情報。見せたくないから消したわけではなく、ユーザーを守っているのだ。",
-        "explanation": "ユーザーパスワードやAPIキーなど、絶対に公開してはいけない情報が漏れないように伏せ字にすること。もし必要な情報がRedactedされていたら、表示するための権限や設定を見直す必要があります。",
-        "usageContext": "秘密をバラされたくない時",
-        "usageExample": "The details of my weekend plan are redacted.",
-        "usageExampleTranslation": "週末の計画の詳細は、黒塗り（秘密）です。",
-        "usagePunchline": "Friend: But I found the SQL injection vulnerability!",
-        "usagePunchlineTranslation": "友人：でも、SQLインジェクションの脆弱性を見つけたぞ！"
-    },
-    {
         "targetWord": "Unwrap",
         "errorMessage": "fatal error: unexpectedly found nil while unwrapping an Optional value",
         "messageTranslation": "致命的なエラー：Optional値を開封する際に予期せずnilが見つかりました",
