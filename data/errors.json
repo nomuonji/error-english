@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unwrap",
-        "errorMessage": "fatal error: unexpectedly found nil while unwrapping an Optional value",
-        "messageTranslation": "致命的なエラー：Optional値を開封する際に予期せずnilが見つかりました",
-        "generalMeaning": "【動】包みを開ける、解く",
-        "generalExample": "Unwrap the gift carefully. (注意深くプレゼントの包みを開けなさい。)",
-        "techMeaning": "値が入っているか保証されていない箱（Optional型）を、中身を確認せずに力ずくで開けてしまう操作。箱の中が空っぽ（nil）だとプログラムがクラッシュする原因。",
-        "explanation": "SwiftやRustなど、安全性を重視する言語でよく見るエラー。Unwrapは「絶対に入っているはず！」という確信犯的な開封です。中身がnilだったら、即座にSegmentation Fault!（メモリ破壊エラー）になります。",
-        "usageContext": "期待外れのプレゼントを開ける時",
-        "usageExample": "I was excited to unwrap the package, but it was just socks.",
-        "usageExampleTranslation": "パッケージを開けるのが楽しみだったのに、ただの靴下だった。",
-        "usagePunchline": "Me: That's a huge nil pointer dereference!",
-        "usagePunchlineTranslation": "私：それはひどいnilポインタ参照解除だよ！（クラッシュ確定）"
-    },
-    {
         "targetWord": "Reconfigure",
         "errorMessage": "System needs to reconfigure firewall settings.",
         "messageTranslation": "システムはファイアウォールの設定を再構成する必要があります。",

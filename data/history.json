@@ -183,5 +183,6 @@
     "Hook",
     "Taint",
     "Overload",
-    "Redacted"
+    "Redacted",
+    "Unwrap"
 ]
