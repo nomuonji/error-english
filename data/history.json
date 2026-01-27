@@ -185,5 +185,6 @@
     "Overload",
     "Redacted",
     "Unwrap",
-    "Reconfigure"
+    "Reconfigure",
+    "Degenerate"
 ]

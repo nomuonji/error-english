@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Degenerate",
-        "errorMessage": "The matrix has become degenerate; calculation failed.",
-        "messageTranslation": "行列が特異値分解不能になりました（退化しました）。計算に失敗しました。",
-        "generalMeaning": "【動】退化する、堕落する、衰える",
-        "generalExample": "His moral standards began to degenerate. (彼の道徳基準は堕落し始めた。)",
-        "techMeaning": "数値計算やアルゴリズムにおいて、システムが「悪い状態」に陥り、数学的に破綻したり、意味のない結果しか出せなくなった状態。特に機械学習や線形代数で聞く、最悪のパターン。",
-        "explanation": "プログラムが段々とポンコツになっていくイメージ。計算上のゼロ割や無限大のような状態を引き起こす前に、エラーとして警告されます。入力データが偏りすぎていたり、変な値が入っていると起こりやすいです。",
-        "usageContext": "長期休暇明けの自分を見た時",
-        "usageExample": "After a week of vacation, my productivity tends to degenerate.",
-        "usageExampleTranslation": "1週間の休暇の後、私の生産性は退化しがちだ。",
-        "usagePunchline": "Project Manager: Your code quality is suffering from serious entropy!",
-        "usagePunchlineTranslation": "PM：君のコードの質は深刻なエントロピー（無秩序）に苦しんでいるぞ！"
-    },
-    {
         "targetWord": "Stall",
         "errorMessage": "Request stalled due to resource contention.",
         "messageTranslation": "リソース競合によりリクエストが停止しました。",
