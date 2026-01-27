@@ -184,5 +184,6 @@
     "Taint",
     "Overload",
     "Redacted",
-    "Unwrap"
+    "Unwrap",
+    "Reconfigure"
 ]

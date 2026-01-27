@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reconfigure",
-        "errorMessage": "System needs to reconfigure firewall settings.",
-        "messageTranslation": "システムはファイアウォールの設定を再構成する必要があります。",
-        "generalMeaning": "【動】再構成する、設定し直す",
-        "generalExample": "We need to reconfigure the office layout. (オフィスの配置を再構成する必要がある。)",
-        "techMeaning": "今の設定ではうまく動かないから、一度システムを停止するか、設定をやり直すこと。大体、環境が変わったときや、セキュリティ要件が変わったときに要求される。",
-        "explanation": "プログラムやサーバーが「ちょっと待って、頭の中を整理させて！」と言っているようなもの。このメッセージが出たら、ドキュメントを読みながら慎重に設定ファイルを見直しましょう。急いで適当にやると、余計な穴（セキュリティホール）を開けることになります。",
-        "usageContext": "計画が大幅に狂った時",
-        "usageExample": "Our weekend trip plan failed, so we have to reconfigure.",
-        "usageExampleTranslation": "週末の旅行計画がダメになったから、再構成しないといけない。",
-        "usagePunchline": "Boss: Make sure to apply the changes without downtime! (Zero-downtime deployment!)",
-        "usagePunchlineTranslation": "上司：停止時間なしで変更を適用しろよ！（無停止デプロイ！）"
-    },
-    {
         "targetWord": "Degenerate",
         "errorMessage": "The matrix has become degenerate; calculation failed.",
         "messageTranslation": "行列が特異値分解不能になりました（退化しました）。計算に失敗しました。",
