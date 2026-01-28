@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Yield",
-        "errorMessage": "Generator cannot yield outside of function body.",
-        "messageTranslation": "ジェネレータは関数本体の外で値を生成（譲渡）できません。",
-        "generalMeaning": "【動】産出する、屈する、道を譲る",
-        "generalExample": "The field yields a rich harvest. (その畑は豊かな収穫をもたらす。)",
-        "techMeaning": "「一旦停止して、今の結果を渡すよ。でも処理自体は終わらせないよ」とプログラムが区切りをつけること。休憩を挟んで結果を返す賢い奴。",
-        "explanation": "普通の関数は処理が終わるまで結果を返さないが、これは途中で結果を小出しにできる機能。行列処理や無限データセットを扱うときにメモリを節約できる。急いでいる時は向かないかも。",
-        "usageContext": "会社の飲み会で、上司に話の主導権を譲る時。",
-        "usageExample": "I decided to yield the floor to the CEO.",
-        "usageExampleTranslation": "私はCEOに話す場を譲ることにしました。",
-        "usagePunchline": "CEO: Okay, 204 No Content.",
-        "usagePunchlineTranslation": "CEO：よし、204 コンテンツなし。（もう話すことはない）"
-    },
-    {
         "targetWord": "Concatenate",
         "errorMessage": "Cannot concatenate 'str' and 'int' objects.",
         "messageTranslation": "'str'（文字列）と 'int'（整数）のオブジェクトを連結できません。",
