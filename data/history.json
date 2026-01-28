@@ -188,5 +188,6 @@
     "Reconfigure",
     "Degenerate",
     "Stall",
-    "Yield"
+    "Yield",
+    "Concatenate"
 ]

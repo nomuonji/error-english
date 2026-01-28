@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Concatenate",
-        "errorMessage": "Cannot concatenate 'str' and 'int' objects.",
-        "messageTranslation": "'str'（文字列）と 'int'（整数）のオブジェクトを連結できません。",
-        "generalMeaning": "【動】連結する、鎖状につなぐ",
-        "generalExample": "Concatenate two lists into one. (2つのリストを1つに連結する。)",
-        "techMeaning": "複数の文字列やデータを、一つの一本鎖のソーセージのようにくっつける作業。エラーになるのは、リンゴとバナナをそのままつなげようとする時。",
-        "explanation": "プログラミングにおけるデータ型の結婚。型が揃っていないと「それは無理だよ」とエラーを吐かれる。文字列にするなら全部文字列にしてから連結しよう。まずは型合わせが大事。",
-        "usageContext": "料理で、全然合わない食材を無理やり混ぜようとする時。",
-        "usageExample": "I tried to concatenate spicy curry and ice cream.",
-        "usageExampleTranslation": "私はスパイシーなカレーとアイスクリームを連結（混ぜよう）しました。",
-        "usagePunchline": "Result: 400 Bad Request.",
-        "usagePunchlineTranslation": "結果：400 不正なリクエスト。（味がひどすぎる）"
-    },
-    {
         "targetWord": "Residue",
         "errorMessage": "Residual data detected in the allocated memory block.",
         "messageTranslation": "割り当てられたメモリブロックに残存データが検出されました。",
