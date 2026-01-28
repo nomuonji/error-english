@@ -186,5 +186,6 @@
     "Redacted",
     "Unwrap",
     "Reconfigure",
-    "Degenerate"
+    "Degenerate",
+    "Stall"
 ]

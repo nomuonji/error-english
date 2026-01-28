@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Stall",
-        "errorMessage": "Request stalled due to resource contention.",
-        "messageTranslation": "リソース競合によりリクエストが停止しました。",
-        "generalMeaning": "【動】失速する、停止する、時間稼ぎをする",
-        "generalExample": "The car stalled on the hill. (車が坂道でエンストした。)",
-        "techMeaning": "プログラムが「ちょっと待ってて！」と言って、フリーズ状態になっていること。特にリソースの奪い合いで起きる。",
-        "explanation": "信号待ちで次の処理に進めない状態。原因はメモリ不足やロックの取り合いが多い。コーヒーブレイクをして待つのも手だが、無限ループの可能性もあるのでログを確認しよう。",
-        "usageContext": "友達が約束の時間になっても家から出てこない時。",
-        "usageExample": "Stop stalling! We are going to be late!",
-        "usageExampleTranslation": "ウジウジしないで！遅刻するよ！",
-        "usagePunchline": "Friend: My commit failed, status 418 I'm a teapot.",
-        "usagePunchlineTranslation": "友人：コミットに失敗した、ステータス418 僕はティーポットだよ（機能しない）"
-    },
-    {
         "targetWord": "Yield",
         "errorMessage": "Generator cannot yield outside of function body.",
         "messageTranslation": "ジェネレータは関数本体の外で値を生成（譲渡）できません。",
