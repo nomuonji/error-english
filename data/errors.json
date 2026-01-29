@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Residue",
-        "errorMessage": "Residual data detected in the allocated memory block.",
-        "messageTranslation": "割り当てられたメモリブロックに残存データが検出されました。",
-        "generalMeaning": "【名】残渣、残留物、残り",
-        "generalExample": "There was an oily residue left in the pan. (フライパンに油の残留物が残っていた。)",
-        "techMeaning": "昔使ったデータがメモリの片隅にゴミとして残っている状態。「前使ってた人の痕跡が残っちゃったよ」というちょっと気持ち悪い状態。",
-        "explanation": "部屋を掃除せずに次の人が使い始めたら、前の住人の食べ残しが残っていたようなもの。セキュリティ上も問題になることがあるので、きっちり初期化（掃除）をしてから使おう。",
-        "usageContext": "友達が急に引っ越した後の、冷蔵庫の中。",
-        "usageExample": "We found some strange residue in the fridge after they left.",
-        "usageExampleTranslation": "彼らが引っ越した後、冷蔵庫に変な残留物を見つけた。",
-        "usagePunchline": "Security Guard: 401 Unauthorized",
-        "usagePunchlineTranslation": "警備員：401 認証されていません（誰のゴミだかわからない）"
-    },
-    {
         "targetWord": "Bypass",
         "errorMessage": "Security policy violation: attempted bypass of access control.",
         "messageTranslation": "セキュリティポリシー違反：アクセス制御の迂回が試行されました。",

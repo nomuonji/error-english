@@ -189,5 +189,6 @@
     "Degenerate",
     "Stall",
     "Yield",
-    "Concatenate"
+    "Concatenate",
+    "Residue"
 ]
