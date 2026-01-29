@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Scramble",
-        "errorMessage": "Data Scramble Error: Failed to decrypt",
-        "messageTranslation": "データスクランブルエラー：復号化に失敗しました",
-        "generalMeaning": "【動】ごちゃ混ぜにする、かき乱す、よじ登る",
-        "generalExample": "Scramble the eggs (卵をかき混ぜる)",
-        "techMeaning": "データが暗号化されすぎて、何がなんだか分からなくなった状態。情報がぐちゃぐちゃの卵とじ。",
-        "explanation": "復号キーが間違っているか、送信中にデータが破壊された可能性大。暗号化はパズル作りですが、失敗するとただのゴミ（ノイズ）になる。",
-        "usageContext": "徹夜明けのプレゼンで頭が回らない時",
-        "usageExample": "My brain is completely scrambled right now.",
-        "usageExampleTranslation": "今、私の頭の中は完全にぐちゃぐちゃだよ。",
-        "usagePunchline": "Status: 500 Internal Server Error",
-        "usagePunchlineTranslation": "状況：500 サーバー内部エラー (頭の中がサーバーエラー)"
-    },
-    {
         "targetWord": "Veto",
         "errorMessage": "Operation Vetoed by Security Policy",
         "messageTranslation": "操作はセキュリティポリシーによって拒否されました",

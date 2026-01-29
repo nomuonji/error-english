@@ -191,5 +191,6 @@
     "Yield",
     "Concatenate",
     "Residue",
-    "Bypass"
+    "Bypass",
+    "Scramble"
 ]
