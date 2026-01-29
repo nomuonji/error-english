@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Bypass",
-        "errorMessage": "Security policy violation: attempted bypass of access control.",
-        "messageTranslation": "セキュリティポリシー違反：アクセス制御の迂回が試行されました。",
-        "generalMeaning": "【動】迂回する、回り道をする、無視して通る",
-        "generalExample": "We took the bypass road to avoid traffic. (交通渋滞を避けるためにバイパス道路を使った。)",
-        "techMeaning": "ルールを無視して最短距離を突破しようとする行為。セキュリティやアクセス制限をこっそり飛び越えようとする、ちょっと悪い子のプログラム。",
-        "explanation": "プログラムの正規ルート（設計された流れ）を無視して、抜け道や裏口を使おうとすると出るエラー。セキュリティ上は大問題。悪いハッカーがよく使う手口なので、自分のプログラムでは迂回できないようにしっかりガードしよう。",
-        "usageContext": "会社のセキュリティを破って、社員食堂のおかわり自由のルールを無視しようとする時。",
-        "usageExample": "He tried to bypass the security check to get extra desserts.",
-        "usageExampleTranslation": "彼は追加のデザートをもらうために、セキュリティチェックを迂回しようとした。",
-        "usagePunchline": "HR: Status 406 Not Acceptable",
-        "usagePunchlineTranslation": "人事部：ステータス 406 受理できない（そんなに食べるのは許されない）"
-    },
-    {
         "targetWord": "Scramble",
         "errorMessage": "Data Scramble Error: Failed to decrypt",
         "messageTranslation": "データスクランブルエラー：復号化に失敗しました",
