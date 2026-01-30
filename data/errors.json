@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Epoch",
-        "errorMessage": "Timestamp outside valid epoch range",
-        "messageTranslation": "タイムスタンプが有効なエポック範囲外です",
-        "generalMeaning": "【名】（特定の出来事が始まる）時代、画期的な出来事、起点",
-        "generalExample": "A new epoch in medical history (医学史における新時代)",
-        "techMeaning": "プログラミング世界における「時間のスタート地点」。例えばUnix時間は1970年1月1日0時0分0秒。ここから離れすぎた未来や過去に行こうとすると発生する時間の壁。",
-        "explanation": "システムが扱うには時間が古すぎる、または遠い未来すぎる場合に発生。特に有名なのが2038年問題で、32bit環境で時間が溢れてエラーになる。",
-        "usageContext": "懐かしのゲームの話をする時",
-        "usageExample": "That game defined an epoch for the entire genre.",
-        "usageExampleTranslation": "あのゲームはジャンル全体の時代を決定づけたね。",
-        "usagePunchline": "Back to the Future: Error 88 MPH",
-        "usagePunchlineTranslation": "未来へ：エラー 時速88マイル (デロリアンが時間移動に失敗)"
-    },
-    {
         "targetWord": "Shim",
         "errorMessage": "Compatibility shim failed to load native module",
         "messageTranslation": "互換性シムがネイティブモジュールのロードに失敗しました",
