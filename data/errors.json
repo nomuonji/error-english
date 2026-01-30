@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Shim",
-        "errorMessage": "Compatibility shim failed to load native module",
-        "messageTranslation": "互換性シムがネイティブモジュールのロードに失敗しました",
-        "generalMeaning": "【名】（隙間を埋めるための）薄い板、つっかえ棒、調整板",
-        "generalExample": "Use a shim to stabilize the shaky table. (不安定なテーブルを安定させるためにつっかえ棒を使う。)",
-        "techMeaning": "古い機能と新しい機能の間や、異なる環境の隙間を埋めるための「応急処置プログラム」。見えないところで頑張る縁の下の力持ち。",
-        "explanation": "ブラウザの古いバージョンで新しい機能を使えるようにするPolyfill（ポリフィル）も一種のシム。応急処置が壊れた、つまり互換性が崩壊した状態なので、代替のモジュールを探そう。",
-        "usageContext": "穴あきの靴下を履いて誤魔化す時",
-        "usageExample": "I need a shim for my broken relationship status.",
-        "usageExampleTranslation": "壊れた人間関係を一時的に取り繕うつっかえ棒が必要だ。",
-        "usagePunchline": "Quick Fix Status: 206 Partial Content",
-        "usagePunchlineTranslation": "応急処置ステータス：206 部分的なコンテンツ (半分だけ直した)"
-    },
-    {
         "targetWord": "Pivot",
         "errorMessage": "Database operation failed: Pivot column not found",
         "messageTranslation": "データベース操作失敗：ピボット列が見つかりません",

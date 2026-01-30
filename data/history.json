@@ -194,5 +194,6 @@
     "Bypass",
     "Scramble",
     "Veto",
-    "Epoch"
+    "Epoch",
+    "Shim"
 ]
