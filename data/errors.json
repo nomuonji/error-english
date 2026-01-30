@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Veto",
-        "errorMessage": "Operation Vetoed by Security Policy",
-        "messageTranslation": "操作はセキュリティポリシーによって拒否されました",
-        "generalMeaning": "【名/動】拒否権、拒否権を行使する",
-        "generalExample": "The president vetoed the bill. (大統領はその法案に拒否権を行使した。)",
-        "techMeaning": "プログラムの実行を、別の権限やルールが「ちょっと待った！」と絶対的に阻止する状態。セキュリティ担当者の鶴の一声。",
-        "explanation": "実行しようとした操作が、設定されたルール（ポリシー）に反しているため、問答無用で止められた。まずは、アクセス権限や設定ファイルを確認しよう。",
-        "usageContext": "友達の提案が絶対嫌な時",
-        "usageExample": "I veto that idea instantly!",
-        "usageExampleTranslation": "そのアイデアは即座に却下する！",
-        "usagePunchline": "Response: 405 Method Not Allowed",
-        "usagePunchlineTranslation": "返答：405 許可されない操作 (操作自体が拒否された)"
-    },
-    {
         "targetWord": "Epoch",
         "errorMessage": "Timestamp outside valid epoch range",
         "messageTranslation": "タイムスタンプが有効なエポック範囲外です",

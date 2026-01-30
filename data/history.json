@@ -192,5 +192,6 @@
     "Concatenate",
     "Residue",
     "Bypass",
-    "Scramble"
+    "Scramble",
+    "Veto"
 ]
