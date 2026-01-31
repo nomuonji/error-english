@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Pivot",
-        "errorMessage": "Database operation failed: Pivot column not found",
-        "messageTranslation": "データベース操作失敗：ピボット列が見つかりません",
-        "generalMeaning": "【名/動】回転軸、軸を移動させる、方向転換する",
-        "generalExample": "They decided to pivot their business strategy. (彼らはビジネス戦略を大きく転換することに決めた。)",
-        "techMeaning": "データの視点や構造をガラッと変えること。データ分析（Excelのピボットテーブル）や、スタートアップの急な路線変更で使われる。「急に方向転換しようとしたら軸が見つからなかった」エラー。",
-        "explanation": "指定されたデータ列を軸として、集計や構造の転換を試みているが、その軸となる列が存在しない。名前のスペルミスがないか確認しよう。",
-        "usageContext": "会議で急に全く違う話題に変わった時",
-        "usageExample": "Let's pivot and discuss the budget now.",
-        "usageExampleTranslation": "方向転換して、今すぐ予算について議論しましょう。",
-        "usagePunchline": "PM: Rollback",
-        "usagePunchlineTranslation": "PM：ロールバック (変更をなかったことに！)"
-    },
-    {
         "targetWord": "Divergence",
         "errorMessage": "Merge conflict: Divergence detected between branches.",
         "messageTranslation": "マージの競合：ブランチ間で乖離が検出されました。",
