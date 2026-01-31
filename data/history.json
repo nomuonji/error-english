@@ -197,5 +197,6 @@
     "Epoch",
     "Shim",
     "Pivot",
-    "Divergence"
+    "Divergence",
+    "Rebase"
 ]

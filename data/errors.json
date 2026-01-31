@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Rebase",
-        "errorMessage": "Failed to rebase: Conflicts still exist.",
-        "messageTranslation": "リベースに失敗しました：競合が残っています。",
-        "generalMeaning": "【動】基盤を変更する、土台を置き換える",
-        "generalExample": "We need to rebase our strategy on new data. (戦略を新しいデータに基づき直す必要がある)",
-        "techMeaning": "自分の作業を、最新のマスターブランチの上に「なかったことにして」積み木のように並べ直す作業。歴史改変マジック。",
-        "explanation": "マージよりきれいな履歴が作れるが、失敗すると泥沼。特に共有ブランチでrebaseすると「お前の歴史改変のせいで俺のローカルが壊れたぞ」と怒られるので注意！",
-        "usageContext": "大掃除で部屋のレイアウトをガラッと変える時",
-        "usageExample": "We decided to rebase the entire living room layout.",
-        "usageExampleTranslation": "リビング全体のレイアウトを根本的に変えることにした。",
-        "usagePunchline": "History is rewritten. (Git Reset --hard 後の顔)",
-        "usagePunchlineTranslation": "歴史は書き換えられた。（Gitリセット・ハード後の顔）"
-    },
-    {
         "targetWord": "Elide",
         "errorMessage": "Compiler warning: Unused parameter might be elided.",
         "messageTranslation": "コンパイラ警告：未使用のパラメータは省略される可能性があります。",
