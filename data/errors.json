@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Divergence",
-        "errorMessage": "Merge conflict: Divergence detected between branches.",
-        "messageTranslation": "マージの競合：ブランチ間で乖離が検出されました。",
-        "generalMeaning": "【名】意見の相違、発散、乖離",
-        "generalExample": "A divergence of opinion (意見の相違)",
-        "techMeaning": "あなたと共同作業者のコードが、お互い知らないうちに宇宙の果てと地球くらい遠い別の進化を遂げてしまい、自動ではもう統合できない状態。",
-        "explanation": "Gitでよく見るエラー。マージする前に、相手の変更を取り込む（pull）か、自分の変更を相手のベースに合わせる（rebase）などして、対話の場を設けましょう。",
-        "usageContext": "家族で夕食のメニューが完全に割れた時",
-        "usageExample": "We reached a complete divergence on dinner plans.",
-        "usageExampleTranslation": "夕食の献立について、完全に意見が乖離した。",
-        "usagePunchline": "Wife: Status 409 Conflict. Go fix it yourself!",
-        "usagePunchlineTranslation": "妻：ステータス409コンフリクト。自分で何とかして！"
-    },
-    {
         "targetWord": "Rebase",
         "errorMessage": "Failed to rebase: Conflicts still exist.",
         "messageTranslation": "リベースに失敗しました：競合が残っています。",
