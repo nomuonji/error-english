@@ -200,5 +200,6 @@
     "Divergence",
     "Rebase",
     "Elide",
-    "Umask"
+    "Umask",
+    "Pin"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Pin",
-        "errorMessage": "Dependency conflict: Cannot pin package A to version X.",
-        "messageTranslation": "依存関係の競合：パッケージAをバージョンXに固定できません。",
-        "generalMeaning": "【動】（画鋲などで）留める、固定する、突き刺す",
-        "generalExample": "Pin the memo to the bulletin board (メモを掲示板に留める)",
-        "techMeaning": "ソフトウェアの依存関係で、特定のライブラリのバージョンを「絶対にこれ！」と画鋲でカチッと固定すること。バージョン地獄から逃れるための最終兵器。",
-        "explanation": "ライブラリが勝手にアップデートされて動かなくなるのを防ぐために行う。ただし、依存関係の他のライブラリとの兼ね合いで「固定したいけど無理！」と怒られることがある。",
-        "usageContext": "好きな食べ物への愛を貫き通す時",
-        "usageExample": "I always pin my order to the large pepperoni pizza.",
-        "usageExampleTranslation": "注文はいつも大きめのペパロニピザに固定する（変えない）。",
-        "usagePunchline": "Package Manager: 507 Insufficient Storage (固定する余地がない)",
-        "usagePunchlineTranslation": "パッケージマネージャ：507容量不足（固定する余地がない）"
-    },
-    {
         "targetWord": "Jitter",
         "errorMessage": "High network Jitter detected.",
         "messageTranslation": "高いネットワークジッター（揺らぎ）が検出されました。",
