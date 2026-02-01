@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Umask",
-        "errorMessage": "File creation failed: Insufficient permissions due to umask setting.",
-        "messageTranslation": "ファイル作成に失敗：umask設定により権限が不十分です。",
-        "generalMeaning": "(技術用語) ユーザーファイル作成マスク",
-        "generalExample": "Administrators often set a low umask value for security. (管理者はセキュリティのために低いumask値を設定することが多い)",
-        "techMeaning": "新しくファイルを作るときに、自動で「絶対にこの権限は与えないぞ」と決めるルール。ちょっと厳しいおかんみたいな存在。",
-        "explanation": "LinuxやUnix系OSで使われる。数字で表現され（例：0022）、この設定のせいで、ファイルを作っても共同作業者に読み書き権限が付かずハマることがある。デフォルト値を確認しよう。",
-        "usageContext": "友人に貸した本に勝手に落書きされたくない時",
-        "usageExample": "I need to set a strict umask for my private library.",
-        "usageExampleTranslation": "私の私的な蔵書には、厳しいumask（権限設定）が必要だ。",
-        "usagePunchline": "Friend: 403 Forbidden (立ち入り禁止)",
-        "usagePunchlineTranslation": "友達：403フォービデン（立ち入り禁止）"
-    },
-    {
         "targetWord": "Pin",
         "errorMessage": "Dependency conflict: Cannot pin package A to version X.",
         "messageTranslation": "依存関係の競合：パッケージAをバージョンXに固定できません。",
