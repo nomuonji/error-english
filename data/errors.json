@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Elide",
-        "errorMessage": "Compiler warning: Unused parameter might be elided.",
-        "messageTranslation": "コンパイラ警告：未使用のパラメータは省略される可能性があります。",
-        "generalMeaning": "【動】（音節や言葉を）省略する、削る",
-        "generalExample": "Elide the final vowel (最後の母音を省略する)",
-        "techMeaning": "コンパイラ先生が「これ、なくても動くじゃん」と判断して、こっそりあなたの書いたコードの一部を消去して最適化すること。",
-        "explanation": "基本的には良いことだが、意図的に残していたり、デバッグ用に使うはずの変数が消されると困る。コンパイラを信用しすぎないこと！",
-        "usageContext": "会議で時間がなくて重要なパートを削った時",
-        "usageExample": "I had to elide several slides due to the time limit.",
-        "usageExampleTranslation": "時間制限のため、いくつかのスライドを省略せざるを得なかった。",
-        "usagePunchline": "Client: 204 No Content. (内容がない)",
-        "usagePunchlineTranslation": "クライアント：204コンテンツなし。（内容を削りすぎた結果）"
-    },
-    {
         "targetWord": "Umask",
         "errorMessage": "File creation failed: Insufficient permissions due to umask setting.",
         "messageTranslation": "ファイル作成に失敗：umask設定により権限が不十分です。",

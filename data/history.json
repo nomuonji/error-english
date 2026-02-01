@@ -198,5 +198,6 @@
     "Shim",
     "Pivot",
     "Divergence",
-    "Rebase"
+    "Rebase",
+    "Elide"
 ]
