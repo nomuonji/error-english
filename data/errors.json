@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Align",
-        "errorMessage": "Cannot align memory boundary for allocation.",
-        "messageTranslation": "割り当てのためにメモリー境界を整列できません。",
-        "generalMeaning": "【動】一列に並べる、整列させる、調整する",
-        "generalExample": "Align the books on the shelf. (本棚の本をきっちり並べる。)",
-        "techMeaning": "データやメモリーの塊を、コンピューターが処理しやすいように、きっちりとした区切り（境界）に合わせて配置すること。ミリタリー式の整列。",
-        "explanation": "データがズレていると、CPUが何度も作業し直さないといけなくなり、効率がガタ落ちする。データ構造の設計を見直すか、コンパイラのオプションを調整する必要がある。",
-        "usageContext": "家族で旅行の予定がバラバラで決まらない時",
-        "usageExample": "We must align our vacation schedules!",
-        "usageExampleTranslation": "我々の休暇のスケジュールを整列させなければならない！",
-        "usagePunchline": "Family: We are running asynchronously.",
-        "usagePunchlineTranslation": "家族：私たちは非同期で動いています。（調整不可で各自勝手に動く）"
-    },
-    {
         "targetWord": "Cap",
         "errorMessage": "Rate limit exceeded: Reached hard cap of 100 requests/sec.",
         "messageTranslation": "レート制限超過：1秒あたりのリクエスト数100件の厳格な上限に達しました。",
