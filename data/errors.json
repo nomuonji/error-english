@@ -110,5 +110,61 @@
         "usageExampleTranslation": "マラソンを走る前に、体幹の筋肉を強化しないと。",
         "usagePunchline": "Attacker: Success! Status Code 200 OK.",
         "usagePunchlineTranslation": "攻撃者：成功！ ステータスコード 200 OK（侵入完了）"
+    },
+    {
+        "targetWord": "Inference",
+        "errorMessage": "Type inference failed in declaration",
+        "messageTranslation": "宣言における型推論に失敗しました",
+        "generalMeaning": "【名】推論、類推",
+        "generalExample": "The detective made an inference about the suspect. (探偵は容疑者について推論を行った。)",
+        "techMeaning": "プログラムが「たぶんこれはこういう型だろう」と勝手に忖度する能力が限界を迎えた状態。",
+        "explanation": "コンパイラがエスパー能力を発揮できず、君が具体的に指示しないと何もできないと泣き言を言っている。型を明記してあげましょう。",
+        "usageContext": "相手の気持ちを勝手に推測して行動した時",
+        "usageExample": "My inference about her plans was completely wrong.",
+        "usageExampleTranslation": "彼女の予定についての私の推論は完全に間違っていた。",
+        "usagePunchline": "Friend: 501 Not Implemented",
+        "usagePunchlineTranslation": "友達：そんな機能実装してないよ（勝手に推測するな）"
+    },
+    {
+        "targetWord": "Dumping",
+        "errorMessage": "Core dumping initiated...",
+        "messageTranslation": "コアダンプを開始します...",
+        "generalMeaning": "【動】投げ捨てる、排出する",
+        "generalExample": "Dumping waste into the river is prohibited. (川にゴミを捨てるのは禁止されています。)",
+        "techMeaning": "プログラムが死ぬ直前に、脳みそ（メモリの中身）を全部ファイルにぶちまけて遺言を残す行為。",
+        "explanation": "大抵は致命的なエラー（セグメンテーション違反など）で発生する。原因究明のための貴重な遺品だが、ファイルサイズがデカくて場所を取るのが玉にキズ。",
+        "usageContext": "会議で上司に詰められ、言い訳をマシンガンのようにぶちまける時",
+        "usageExample": "He was dumping excuses all over the meeting room.",
+        "usageExampleTranslation": "彼は会議室中に言い訳をまき散らしていた。",
+        "usagePunchline": "Colleague: 413 Payload Too Large",
+        "usagePunchlineTranslation": "同僚：情報量が多すぎます（言い訳が長すぎる）"
+    },
+    {
+        "targetWord": "Backlog",
+        "errorMessage": "TCP backlog limit exceeded, dropping connection.",
+        "messageTranslation": "TCPのバックログ制限を超過しました、接続を切断します。",
+        "generalMeaning": "【名】未処理の仕事、在庫、積み残し",
+        "generalExample": "I have a huge backlog of emails to answer. (返信すべきメールの膨大な未処理分がある。)",
+        "techMeaning": "サーバーが処理待ちの接続要求を一時的に溜め込んでおく「待合室」のこと。満室になると追い返される。",
+        "explanation": "大人気のサービスでアクセスが集中すると、この待合室がすぐに満員になる。設定値を大きくするか、サーバーの処理能力を上げないと、ユーザーが入れなくなる。",
+        "usageContext": "仕事が大量に溜まっている金曜日の夜",
+        "usageExample": "I can't go drinking, my backlog is insane.",
+        "usageExampleTranslation": "飲みに行けないよ、仕事の積み残しがヤバいんだ。",
+        "usagePunchline": "Boss: 429 Too Many Requests",
+        "usagePunchlineTranslation": "上司：リクエストが多すぎる（残業確定）"
+    },
+    {
+        "targetWord": "Entropy",
+        "errorMessage": "Low entropy detected, unable to generate secure random number.",
+        "messageTranslation": "エントロピーの低下を検出しました、安全な乱数を生成できません。",
+        "generalMeaning": "【名】エントロピー（物理学：乱雑さの度合い、情報学：情報量）",
+        "generalExample": "The entropy in the closed system always increases. (閉鎖系ではエントロピーは常に増大する。)",
+        "techMeaning": "コンピュータが「真のランダムさ」を作り出すための材料（カオス度）のこと。これが足りないと、弱いパスワードや予測可能な暗号キーしか作れない。",
+        "explanation": "キーボードの入力間隔やマウスの動きなど、人間らしい予測不能な動きを集めてエントロピーを稼いでいる。これが足りないとセキュリティがヤバい。",
+        "usageContext": "友人との会話がパターン化してきて、新鮮味がない時",
+        "usageExample": "Our conversations are suffering from low entropy lately.",
+        "usageExampleTranslation": "最近、俺たちの会話はエントロピーが低いな（マンネリだ）。",
+        "usagePunchline": "Friend: 200 OK, but predictability is increasing.",
+        "usagePunchlineTranslation": "友達：了解、だが予測可能性は増している。（展開が読める）"
     }
 ]
