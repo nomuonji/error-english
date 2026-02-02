@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Jitter",
-        "errorMessage": "High network Jitter detected.",
-        "messageTranslation": "高いネットワークジッター（揺らぎ）が検出されました。",
-        "generalMeaning": "【名】（神経質な）振動、揺らぎ、ゆらゆら動くこと",
-        "generalExample": "Camera jitter caused the photo to blur. (カメラの揺らぎが原因で写真がぼやけた。)",
-        "techMeaning": "データの到着時刻が予測不能なほどバラバラになっている状態。約束の時間に全く来ない配達員。",
-        "explanation": "ネットワークが不安定で、データがスムーズに流れないときに発生。オンラインゲームでラグがひどいときは大体こいつのせい。対処法は有線接続に切り替えること。",
-        "usageContext": "待ち合わせの友人が全く時間通りに来ない時",
-        "usageExample": "Your arrival time has too much jitter!",
-        "usageExampleTranslation": "お前の到着時間、ジッターがひどすぎる！",
-        "usagePunchline": "Friend: I'm facing 504 Gateway Timeout. ",
-        "usagePunchlineTranslation": "友達：504 ゲートウェイタイムアウトに直面してるんだよ。（待っても来ない）"
-    },
-    {
         "targetWord": "Sanity",
         "errorMessage": "Sanity Check Failed: Configuration seems absurd.",
         "messageTranslation": "健全性チェック失敗：設定が異常に見えます。",

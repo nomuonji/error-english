@@ -201,5 +201,6 @@
     "Rebase",
     "Elide",
     "Umask",
-    "Pin"
+    "Pin",
+    "Jitter"
 ]
