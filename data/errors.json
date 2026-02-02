@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Sanity",
-        "errorMessage": "Sanity Check Failed: Configuration seems absurd.",
-        "messageTranslation": "健全性チェック失敗：設定が異常に見えます。",
-        "generalMeaning": "【名】正気、健全な精神状態",
-        "generalExample": "Losing one's sanity (正気を失う)",
-        "techMeaning": "「ちょっと待て、この設定は本当に正気か？」とプログラムが自己チェックするプロセス。プログラマーの常識を疑う。",
-        "explanation": "プログラムが「さすがにこれはおかしいだろう」と判断した場合に発生。主に開発初期や設定ファイルが巨大な時に、バグの入り口を防ぐために使われる。",
-        "usageContext": "友人のぶっ飛んだ計画を聞いた時",
-        "usageExample": "Are you sure about this plan? You need a sanity check!",
-        "usageExampleTranslation": "この計画、本気か？正気かどうかのチェックが必要だぞ！",
-        "usagePunchline": "Friend: Well, I passed the 200 OK test yesterday.",
-        "usagePunchlineTranslation": "友達：まあ、昨日は200 OKのテストはクリアしたんだ。（一応大丈夫だった）"
-    },
-    {
         "targetWord": "Align",
         "errorMessage": "Cannot align memory boundary for allocation.",
         "messageTranslation": "割り当てのためにメモリー境界を整列できません。",

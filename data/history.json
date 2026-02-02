@@ -202,5 +202,6 @@
     "Elide",
     "Umask",
     "Pin",
-    "Jitter"
+    "Jitter",
+    "Sanity"
 ]
