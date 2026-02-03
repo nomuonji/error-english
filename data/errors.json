@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Jettison",
-        "errorMessage": "Jettisoning redundant data due to low memory.",
-        "messageTranslation": "メモリ不足のため、冗長なデータを投棄しています。",
-        "generalMeaning": "【動】（船や飛行機を軽くするために）荷物を投棄する",
-        "generalExample": "The aircraft had to jettison fuel. (飛行機は燃料を投棄しなければならなかった。)",
-        "techMeaning": "システムの継続のために、優先度の低いデータやプロセスを犠牲にして「ポイ捨て」すること。緊急事態宣言。",
-        "explanation": "メモリがパンク寸前の時、プログラムが生き残るために行う最終手段の一つ。本当に必要なもの以外は問答無用で海に捨てるイメージ。不要なログやキャッシュを捨てて延命を図る。",
-        "usageContext": "旅行の荷物が重すぎて、お土産を諦める時",
-        "usageExample": "I had to jettison my souvenir to reduce the weight.",
-        "usageExampleTranslation": "重さを減らすためにお土産を投棄しなければならなかった。",
-        "usagePunchline": "Luggage: Data Loss is acceptable in this scenario (DLAS).",
-        "usagePunchlineTranslation": "荷物：このシナリオではデータ損失は許容されます（DLAS）。"
-    },
-    {
         "targetWord": "Cull",
         "errorMessage": "Culling unnecessary faces during rendering.",
         "messageTranslation": "レンダリング中に不要な面を選別しています。",
