@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Cull",
-        "errorMessage": "Culling unnecessary faces during rendering.",
-        "messageTranslation": "レンダリング中に不要な面を選別しています。",
-        "generalMeaning": "【動】（不要なものを）選び出す、間引く、処分する",
-        "generalExample": "To cull weak plants (弱い植物を間引く)",
-        "techMeaning": "大掃除。不要なデータやオブジェクトを厳選してゴミ箱行きにする作業。特にゲームやグラフィック処理で、見えないものを「間引く」ことで処理を軽くする時に使う、冷酷なセレクター。",
-        "explanation": "「カリング」は、処理負荷を減らすための効率化技術だよ。エラーでこれが出てきたら、プログラムが「お前、計算する価値ないな」って判断したってこと。もし間違って大事なものがCullされたら、それはバグだ！",
-        "usageContext": "週末のやるべきタスクを選別する時",
-        "usageExample": "I need to cull my to-do list before the deadline.",
-        "usageExampleTranslation": "締め切り前に、やることリストを厳選しなきゃ。",
-        "usagePunchline": "Task Manager: Process Terminated",
-        "usagePunchlineTranslation": "タスクマネージャー：そのプロセスは処分しました。"
-    },
-    {
         "targetWord": "Scrub",
         "errorMessage": "Data Scrubbing in progress: detected and fixed 3 errors.",
         "messageTranslation": "データスクラビング進行中：3件のエラーを検出し修正しました。",
