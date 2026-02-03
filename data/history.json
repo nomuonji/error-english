@@ -204,5 +204,6 @@
     "Pin",
     "Jitter",
     "Sanity",
-    "Align"
+    "Align",
+    "Cap"
 ]

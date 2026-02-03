@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Cap",
-        "errorMessage": "Rate limit exceeded: Reached hard cap of 100 requests/sec.",
-        "messageTranslation": "レート制限超過：1秒あたりのリクエスト数100件の厳格な上限に達しました。",
-        "generalMeaning": "【名】帽子、蓋、上限、最高限度",
-        "generalExample": "Put a cap on the bottle. (瓶に蓋をする。)",
-        "techMeaning": "リソースの使いすぎを防ぐための「蓋」や「制限」。これ以上は受け付けません、という防波堤。",
-        "explanation": "サーバーが過負荷でダウンしないようにするための保護機能。APIで頻繁に発生し、これを無視するとアカウント停止もあり得る。「もう限界です」という悲鳴。",
-        "usageContext": "予算オーバーで欲しいものが買えない時",
-        "usageExample": "My spending for this month has hit its cap.",
-        "usageExampleTranslation": "今月の私の出費は上限に達した。",
-        "usagePunchline": "Wallet: Status Code 429 Too Many Requests",
-        "usagePunchlineTranslation": "財布：ステータスコード 429 リクエストが多すぎます（買いすぎ）"
-    },
-    {
         "targetWord": "Jettison",
         "errorMessage": "Jettisoning redundant data due to low memory.",
         "messageTranslation": "メモリ不足のため、冗長なデータを投棄しています。",
