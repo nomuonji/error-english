@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disambiguation",
-        "errorMessage": "Type Disambiguation failed: ambiguous reference detected.",
-        "messageTranslation": "型の曖昧さ解消に失敗：曖昧な参照が検出されました。",
-        "generalMeaning": "【名】曖昧さの解消、多義性の除去",
-        "generalExample": "Context is important for disambiguation. (文脈は曖昧さの解消に重要だ。)",
-        "techMeaning": "プログラムの「どっちなんだい！？」問題。コンパイラやリンカが、同じ名前を持つ複数の候補の中から、どれが正解か判断できずにパニックになっている状態。人間でいう「名前が同じで区別がつかない」状態。",
-        "explanation": "プログラミングでは、変数名や関数名が重複したり、複数のライブラリで同じ定義があったりすると発生する。「佐藤さん」が3人いる状態と同じ。エラーが出たら、カッコやスコープをしっかり指定して、プログラムに「君はこっちの佐藤さんだよ」と教えてあげよう。",
-        "usageContext": "合コンで同じ名前の人が二人いて混乱した時",
-        "usageExample": "We need some serious disambiguation here. Which Kenji are we talking about?",
-        "usageExampleTranslation": "ここで真剣に曖昧さの解消が必要だね。どのケンジの話をしているの？",
-        "usagePunchline": "Friend: Error 409 Conflict.",
-        "usagePunchlineTranslation": "友達：エラー 409 コンフリクト（衝突しているぞ）。"
-    },
-    {
         "targetWord": "Fence",
         "errorMessage": "Memory Fence required for atomic operations.",
         "messageTranslation": "アトミック操作にはメモリフェンスが必要です。",
