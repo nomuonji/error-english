@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Fence",
-        "errorMessage": "Memory Fence required for atomic operations.",
-        "messageTranslation": "アトミック操作にはメモリフェンスが必要です。",
-        "generalMeaning": "【名】柵、塀、境界線",
-        "generalExample": "Jump over the fence (柵を飛び越える)",
-        "techMeaning": "処理の境界線。マルチスレッド処理で、CPUが勝手に命令の順番を入れ替えるのを防ぐための、強制的な「立ち入り禁止バリケード」。これがないと、データが意図しないタイミングで読み書きされて大混乱に陥る。",
-        "explanation": "コンピュータは効率化のため、命令を最適化して順番を入れ替えちゃうことがある。しかし、複数のスレッドが同時に同じデータを見ている場合、この順番変更が命取りになる。Fenceは「ここから先は勝手に動かすな！」とCPUに命令するガードマンのようなもの。初心者には難しい概念だが、並行処理で出てきたら「順番が大事なところだ」と覚えよう。",
-        "usageContext": "仕事とプライベートの境界線が崩壊した時",
-        "usageExample": "We must put up a mental fence between work and life.",
-        "usageExampleTranslation": "仕事と生活の間に心の境界線（フェンス）を設けなければならない。",
-        "usagePunchline": "System: 503 Service Unavailable",
-        "usagePunchlineTranslation": "システム：503 サービス利用不可（過負荷で境界が崩壊）"
-    },
-    {
         "targetWord": "Harden",
         "errorMessage": "Server configuration hardening failed due to missing module.",
         "messageTranslation": "サーバー設定の強化（ハードニング）が、モジュール不足により失敗しました。",
