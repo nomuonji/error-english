@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Scrub",
-        "errorMessage": "Data Scrubbing in progress: detected and fixed 3 errors.",
-        "messageTranslation": "データスクラビング進行中：3件のエラーを検出し修正しました。",
-        "generalMeaning": "【動】ゴシゴシ洗う、こする、取り消す",
-        "generalExample": "Scrub the floor (床をゴシゴシ磨く)",
-        "techMeaning": "データの汚れ落とし。ディスクやメモリの記録ミスや劣化を検出し、きれいな状態に戻すための、徹底的なデジタル清掃員。エラーメッセージでは、修正作業が実行されたことを示す。",
-        "explanation": "データベースやストレージの世界では、「データは放っておくと腐る」という前提がある。だから定期的にScrubして、微細なエラーを「ゴシゴシ」修正する。もしScrubingが失敗したら、それはデータが修正不能なくらい汚れている証拠かも。",
-        "usageContext": "大切なプレゼン資料を提出する前",
-        "usageExample": "Make sure to scrub all the typos and grammatical errors.",
-        "usageExampleTranslation": "スペルミスや文法ミスを全部きれいに消し去るんだ。",
-        "usagePunchline": "Boss: We need 200 OK quality data!",
-        "usagePunchlineTranslation": "上司：我々には200 OK（成功）レベルのきれいなデータが必要なんだ！"
-    },
-    {
         "targetWord": "Disambiguation",
         "errorMessage": "Type Disambiguation failed: ambiguous reference detected.",
         "messageTranslation": "型の曖昧さ解消に失敗：曖昧な参照が検出されました。",
