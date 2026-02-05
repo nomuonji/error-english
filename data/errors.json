@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Inference",
-        "errorMessage": "Type inference failed in declaration",
-        "messageTranslation": "宣言における型推論に失敗しました",
-        "generalMeaning": "【名】推論、類推",
-        "generalExample": "The detective made an inference about the suspect. (探偵は容疑者について推論を行った。)",
-        "techMeaning": "プログラムが「たぶんこれはこういう型だろう」と勝手に忖度する能力が限界を迎えた状態。",
-        "explanation": "コンパイラがエスパー能力を発揮できず、君が具体的に指示しないと何もできないと泣き言を言っている。型を明記してあげましょう。",
-        "usageContext": "相手の気持ちを勝手に推測して行動した時",
-        "usageExample": "My inference about her plans was completely wrong.",
-        "usageExampleTranslation": "彼女の予定についての私の推論は完全に間違っていた。",
-        "usagePunchline": "Friend: 501 Not Implemented",
-        "usagePunchlineTranslation": "友達：そんな機能実装してないよ（勝手に推測するな）"
-    },
-    {
         "targetWord": "Dumping",
         "errorMessage": "Core dumping initiated...",
         "messageTranslation": "コアダンプを開始します...",
