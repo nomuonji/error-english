@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dumping",
-        "errorMessage": "Core dumping initiated...",
-        "messageTranslation": "コアダンプを開始します...",
-        "generalMeaning": "【動】投げ捨てる、排出する",
-        "generalExample": "Dumping waste into the river is prohibited. (川にゴミを捨てるのは禁止されています。)",
-        "techMeaning": "プログラムが死ぬ直前に、脳みそ（メモリの中身）を全部ファイルにぶちまけて遺言を残す行為。",
-        "explanation": "大抵は致命的なエラー（セグメンテーション違反など）で発生する。原因究明のための貴重な遺品だが、ファイルサイズがデカくて場所を取るのが玉にキズ。",
-        "usageContext": "会議で上司に詰められ、言い訳をマシンガンのようにぶちまける時",
-        "usageExample": "He was dumping excuses all over the meeting room.",
-        "usageExampleTranslation": "彼は会議室中に言い訳をまき散らしていた。",
-        "usagePunchline": "Colleague: 413 Payload Too Large",
-        "usagePunchlineTranslation": "同僚：情報量が多すぎます（言い訳が長すぎる）"
-    },
-    {
         "targetWord": "Backlog",
         "errorMessage": "TCP backlog limit exceeded, dropping connection.",
         "messageTranslation": "TCPのバックログ制限を超過しました、接続を切断します。",
