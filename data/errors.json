@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Harden",
-        "errorMessage": "Server configuration hardening failed due to missing module.",
-        "messageTranslation": "サーバー設定の強化（ハードニング）が、モジュール不足により失敗しました。",
-        "generalMeaning": "【動】硬くする、強固にする、強化する",
-        "generalExample": "The metal needs to harden. (その金属は固くする必要がある。)",
-        "techMeaning": "サーバーを鉄壁にする作業。セキュリティ設定を厳しくしたり、不要な機能をオフにしたりして、外部からの攻撃に耐えられるように「固くする」こと。エラーが出たら、サーバーがまだフニャフニャで危ない状態ということ。",
-        "explanation": "Hardenは、セキュリティ設定を厳格にすること。人間でいう「風邪を引かないように免疫力を高める」のと同じ。特に公開するサーバーでは必須の工程。失敗したらすぐに設定を見直さないと、攻撃者にとって「Welcome!」状態になってしまうよ。",
-        "usageContext": "運動をサボりすぎて体がなまっている時",
-        "usageExample": "I need to harden my core muscles before running a marathon.",
-        "usageExampleTranslation": "マラソンを走る前に、体幹の筋肉を強化しないと。",
-        "usagePunchline": "Attacker: Success! Status Code 200 OK.",
-        "usagePunchlineTranslation": "攻撃者：成功！ ステータスコード 200 OK（侵入完了）"
-    },
-    {
         "targetWord": "Inference",
         "errorMessage": "Type inference failed in declaration",
         "messageTranslation": "宣言における型推論に失敗しました",

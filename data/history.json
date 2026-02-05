@@ -210,5 +210,6 @@
     "Cull",
     "Scrub",
     "Disambiguation",
-    "Fence"
+    "Fence",
+    "Harden"
 ]
