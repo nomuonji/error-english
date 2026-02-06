@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Permit",
-        "errorMessage": "Operation not permitted",
-        "messageTranslation": "操作が許可されていません",
-        "generalMeaning": "【動】許可する、可能にする【名】許可証",
-        "generalExample": "They permit smoking in this area. (このエリアでは喫煙を許可しています)",
-        "techMeaning": "「お前には触らせない！」と、プログラムの番犬に追い返された状態。アクセス権限がない。",
-        "explanation": "ファイルやディレクトリのアクセス権限を確認しよう。他人名義の部屋に勝手に入ろうとしている状態。",
-        "usageContext": "会社の冷蔵庫のプリンを食べようとした時",
-        "usageExample": "I tried to eat the pudding, but the owner didn't permit it.",
-        "usageExampleTranslation": "プリンを食べようとしたけど、持ち主が許してくれなかった。",
-        "usagePunchline": "Owner: This is a 401 Unauthorized item!",
-        "usagePunchlineTranslation": "持ち主：これは認証されていないアイテムだ！（許可なきアクセス）"
-    },
-    {
         "targetWord": "Reclaim",
         "errorMessage": "Failed to reclaim memory",
         "messageTranslation": "メモリの回収に失敗しました",
