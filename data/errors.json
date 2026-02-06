@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Backlog",
-        "errorMessage": "TCP backlog limit exceeded, dropping connection.",
-        "messageTranslation": "TCPのバックログ制限を超過しました、接続を切断します。",
-        "generalMeaning": "【名】未処理の仕事、在庫、積み残し",
-        "generalExample": "I have a huge backlog of emails to answer. (返信すべきメールの膨大な未処理分がある。)",
-        "techMeaning": "サーバーが処理待ちの接続要求を一時的に溜め込んでおく「待合室」のこと。満室になると追い返される。",
-        "explanation": "大人気のサービスでアクセスが集中すると、この待合室がすぐに満員になる。設定値を大きくするか、サーバーの処理能力を上げないと、ユーザーが入れなくなる。",
-        "usageContext": "仕事が大量に溜まっている金曜日の夜",
-        "usageExample": "I can't go drinking, my backlog is insane.",
-        "usageExampleTranslation": "飲みに行けないよ、仕事の積み残しがヤバいんだ。",
-        "usagePunchline": "Boss: 429 Too Many Requests",
-        "usagePunchlineTranslation": "上司：リクエストが多すぎる（残業確定）"
-    },
-    {
         "targetWord": "Entropy",
         "errorMessage": "Low entropy detected, unable to generate secure random number.",
         "messageTranslation": "エントロピーの低下を検出しました、安全な乱数を生成できません。",
