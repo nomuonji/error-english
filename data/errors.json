@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Entropy",
-        "errorMessage": "Low entropy detected, unable to generate secure random number.",
-        "messageTranslation": "エントロピーの低下を検出しました、安全な乱数を生成できません。",
-        "generalMeaning": "【名】エントロピー（物理学：乱雑さの度合い、情報学：情報量）",
-        "generalExample": "The entropy in the closed system always increases. (閉鎖系ではエントロピーは常に増大する。)",
-        "techMeaning": "コンピュータが「真のランダムさ」を作り出すための材料（カオス度）のこと。これが足りないと、弱いパスワードや予測可能な暗号キーしか作れない。",
-        "explanation": "キーボードの入力間隔やマウスの動きなど、人間らしい予測不能な動きを集めてエントロピーを稼いでいる。これが足りないとセキュリティがヤバい。",
-        "usageContext": "友人との会話がパターン化してきて、新鮮味がない時",
-        "usageExample": "Our conversations are suffering from low entropy lately.",
-        "usageExampleTranslation": "最近、俺たちの会話はエントロピーが低いな（マンネリだ）。",
-        "usagePunchline": "Friend: 200 OK, but predictability is increasing.",
-        "usagePunchlineTranslation": "友達：了解、だが予測可能性は増している。（展開が読める）"
-    },
-    {
         "targetWord": "Permit",
         "errorMessage": "Operation not permitted",
         "messageTranslation": "操作が許可されていません",
