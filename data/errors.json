@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Omit",
-        "errorMessage": "Omitted required field 'user_id'",
-        "messageTranslation": "必須フィールド 'user_id' が省略されています",
-        "generalMeaning": "【動】省略する、含めない",
-        "generalExample": "Omit unnecessary details from the report. (報告書から不要な詳細を省略する)",
-        "techMeaning": "「大事なものを書き忘れてるよ！」とコンパイラに指摘された状態。些細な省略が命取り。",
-        "explanation": "プログラミングにおける『うっかりミス』の代名詞。特にフォーム入力やAPIリクエストで必須パラメータを忘れると発生。",
-        "usageContext": "旅行の持ち物チェックリストで大事なものを忘れた時",
-        "usageExample": "I regret to omit my toothbrush from the suitcase.",
-        "usageExampleTranslation": "スーツケースから歯ブラシを省略（入れ忘れ）したことを後悔している。",
-        "usagePunchline": "Hotel: 400 Bad Request: Missing Parameter",
-        "usagePunchlineTranslation": "ホテル：400不正なリクエスト：必須パラメータ不足"
-    },
-    {
         "targetWord": "Resume",
         "errorMessage": "Cannot resume execution after error",
         "messageTranslation": "エラー発生後に実行を再開できません",

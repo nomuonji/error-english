@@ -218,5 +218,6 @@
     "Entropy",
     "Permit",
     "Reclaim",
-    "Garbage"
+    "Garbage",
+    "Omit"
 ]
