@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reclaim",
-        "errorMessage": "Failed to reclaim memory",
-        "messageTranslation": "メモリの回収に失敗しました",
-        "generalMeaning": "【動】取り戻す、回収する、再生する",
-        "generalExample": "Reclaim wasted land for farming. (荒廃した土地を耕作地として再生する)",
-        "techMeaning": "プログラムが「使ったもの返して！」と叫んでいるのに、リソースが返却されない状態。メモリの掃除ができない。",
-        "explanation": "メモリリークの可能性大。使い終わった資源を解放するのを忘れて、部屋がゴミだらけになっている状態と同じ。",
-        "usageContext": "子どもがおもちゃを片付けない時",
-        "usageExample": "Please reclaim all your scattered toys right now!",
-        "usageExampleTranslation": "今すぐ散らかったおもちゃを全部片付けて（回収して）！",
-        "usagePunchline": "Mom: Low memory warning!",
-        "usagePunchlineTranslation": "母：メモリ不足警告よ！"
-    },
-    {
         "targetWord": "Garbage",
         "errorMessage": "Found garbage data in input stream",
         "messageTranslation": "入力ストリームにゴミデータが見つかりました",
