@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Garbage",
-        "errorMessage": "Found garbage data in input stream",
-        "messageTranslation": "入力ストリームにゴミデータが見つかりました",
-        "generalMeaning": "【名】ゴミ、生ゴミ、くず",
-        "generalExample": "Throw the garbage away. (ゴミを捨てなさい)",
-        "techMeaning": "プログラムが「ゴミを食わされた」と怒っている状態。期待値とはかけ離れた、不要で汚いデータが送られてきた。",
-        "explanation": "データ形式が想定外だったり、エンコーディングがおかしい場合によく出る。入力のサニタイズ（浄化）が重要。",
-        "usageContext": "味見をしたら予想外に不味かった時",
-        "usageExample": "This soup tastes like pure garbage.",
-        "usageExampleTranslation": "このスープ、純粋なゴミみたいな味がする。",
-        "usagePunchline": "Chef: Input Validation Failed.",
-        "usagePunchlineTranslation": "シェフ：入力検証失敗です。（毒見役）"
-    },
-    {
         "targetWord": "Omit",
         "errorMessage": "Omitted required field 'user_id'",
         "messageTranslation": "必須フィールド 'user_id' が省略されています",
