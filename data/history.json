@@ -220,5 +220,6 @@
     "Reclaim",
     "Garbage",
     "Omit",
-    "Resume"
+    "Resume",
+    "Lock"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Lock",
-        "errorMessage": "Lock acquisition failed: Resource temporarily unavailable",
-        "messageTranslation": "ロックの取得に失敗しました：リソースが一時的に利用できません",
-        "generalMeaning": "【名】錠、鍵；【動】錠をかける",
-        "generalExample": "Lock the door (ドアに鍵をかける)",
-        "techMeaning": "他のプログラムが共有リソース（大事なデータや機能）を専有していて、「今は絶対触るな！」と鍵をかけている状態。",
-        "explanation": "複数の処理が同時に同じデータを書き換えないようにする防御機構。このエラーが出たら、誰かが鍵をかけっぱなしで、プログラムがその鍵が開くのをひたすら待っている状態か、諦めた状態。",
-        "usageContext": "会社のデスクで休憩中に、共有スペースを使おうとした時。",
-        "usageExample": "Sorry, the coffee machine is under lock.",
-        "usageExampleTranslation": "ごめん、コーヒーメーカーがロック中です。（誰かが独占している）",
-        "usagePunchline": "Boss: Let's avoid a Deadlock situation.",
-        "usagePunchlineTranslation": "上司：デッドロック（膠着状態、誰も動けない状況）は避けようね。"
-    },
-    {
         "targetWord": "Configuration",
         "errorMessage": "Configuration file not found or invalid format",
         "messageTranslation": "設定ファイルが見つからないか、形式が無効です",
