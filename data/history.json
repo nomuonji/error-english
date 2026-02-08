@@ -221,5 +221,6 @@
     "Garbage",
     "Omit",
     "Resume",
-    "Lock"
+    "Lock",
+    "Configuration"
 ]

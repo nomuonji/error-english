@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Configuration",
-        "errorMessage": "Configuration file not found or invalid format",
-        "messageTranslation": "設定ファイルが見つからないか、形式が無効です",
-        "generalMeaning": "【名】配置、構成、設定",
-        "generalExample": "Check the network configuration (ネットワーク設定を確認する)",
-        "techMeaning": "プログラムの「取扱説明書」や「ルールブック」のこと。これが間違っていると、プログラムは何をしたらいいかわからずパニックになる。",
-        "explanation": "プログラムは設定ファイル（configファイル）の指示通りに動く。設定ファイルの書き間違いや、ファイルを置く場所を間違えると即座に怒られる。大抵はタイポ（タイプミス）が原因なので、まず設定ファイルを隅々までチェック！",
-        "usageContext": "朝、目覚まし時計の設定を間違えた時。",
-        "usageExample": "My alarm clock configuration caused me a serious delay.",
-        "usageExampleTranslation": "目覚まし時計の設定ミスで、ひどい遅延が発生した。",
-        "usagePunchline": "Friend: Looks like a 500 Internal Server Error in your morning routine.",
-        "usagePunchlineTranslation": "友達：君の朝のルーティンで500内部サーバーエラー（設定がおかしい時に出るエラー）が発生してるね。"
-    },
-    {
         "targetWord": "Bind",
         "errorMessage": "Address already in use: Bind failed",
         "messageTranslation": "アドレスは既に使用されています：バインドに失敗しました",
