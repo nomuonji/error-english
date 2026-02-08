@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Resume",
-        "errorMessage": "Cannot resume execution after error",
-        "messageTranslation": "エラー発生後に実行を再開できません",
-        "generalMeaning": "【動】再開する、再び始める",
-        "generalExample": "The meeting will resume after lunch. (会議は昼食後に再開されます)",
-        "techMeaning": "「もう一度やるぞ！」と思ったのに、システムがぐったりして立ち直れない状態。処理が停止して再開不能。",
-        "explanation": "深刻なエラーで状態が不安定になり、安全のために続行を拒否している状態。一度仕切り直し（リブート）が必要かも。",
-        "usageContext": "運動中に足がつって動けなくなった時",
-        "usageExample": "My leg cramped, and I cannot resume running.",
-        "usageExampleTranslation": "足がつって、ランニングを再開できない。",
-        "usagePunchline": "Coach: State is Corrupted. Reboot required.",
-        "usagePunchlineTranslation": "コーチ：状態異常。リブート（休憩）が必要です。"
-    },
-    {
         "targetWord": "Lock",
         "errorMessage": "Lock acquisition failed: Resource temporarily unavailable",
         "messageTranslation": "ロックの取得に失敗しました：リソースが一時的に利用できません",
