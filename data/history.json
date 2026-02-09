@@ -224,5 +224,6 @@
     "Lock",
     "Configuration",
     "Bind",
-    "Latency"
+    "Latency",
+    "Dormant"
 ]

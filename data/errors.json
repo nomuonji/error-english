@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dormant",
-        "errorMessage": "Connection is dormant; closing session",
-        "messageTranslation": "接続が休止状態です。セッションを閉じます",
-        "generalMeaning": "【形】休眠状態の、活動を停止している",
-        "generalExample": "A dormant volcano (休火山)",
-        "techMeaning": "プログラムや接続が「寝てしまっている」状態。何も仕事をせず、ただ静かに待っている間に、システムに「不必要な資源」と判断され切断される。",
-        "explanation": "サーバーとの接続を維持するには、定期的に「生きてますよ」という信号（キープアライブ）を送る必要がある。それを怠ると「休眠状態」とみなされて接続を切断される。サボりは厳禁！",
-        "usageContext": "会議中に発言せず静かに座っている同僚。",
-        "usageExample": "He was entirely dormant during the presentation.",
-        "usageExampleTranslation": "彼はプレゼンの間、完全に休眠状態だった。",
-        "usagePunchline": "Boss: Wake up! You need to be a Daemon, not Dormant!",
-        "usagePunchlineTranslation": "上司：起きろ！休眠状態じゃなくて、デーモン（常駐プログラム）にならなきゃだめだろ！"
-    },
-    {
         "targetWord": "Starvation",
         "errorMessage": "Process Starvation Detected",
         "messageTranslation": "プロセス飢餓が検出されました",
