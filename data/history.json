@@ -223,5 +223,6 @@
     "Resume",
     "Lock",
     "Configuration",
-    "Bind"
+    "Bind",
+    "Latency"
 ]

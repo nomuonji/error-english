@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Latency",
-        "errorMessage": "High network latency detected, connection reset",
-        "messageTranslation": "高いネットワーク遅延が検出され、接続がリセットされました",
-        "generalMeaning": "【名】潜伏、潜在（性）、遅延",
-        "generalExample": "Cognitive latency (認知の遅れ)",
-        "techMeaning": "プログラムが何かを頼んでから、返事が返ってくるまでの「待ち時間」。これが長すぎると、通信相手は「無視された」と思って接続を切ってしまう。",
-        "explanation": "オンラインゲームで「Ping値が高い！」と怒られる現象そのもの。レイテンシが高い原因は、ネットワークの混雑、処理能力不足など。プログラム側でタイムアウト値を調整して対処することもある。",
-        "usageContext": "返信が遅い友人とのLINEでのやりとり。",
-        "usageExample": "Your latency in replying is too high.",
-        "usageExampleTranslation": "君の返信の遅延がひどすぎるよ。",
-        "usagePunchline": "Friend: My response time is 408 Request Timeout.",
-        "usagePunchlineTranslation": "友人：私の応答時間は408リクエストタイムアウトだよ。（時間がかかりすぎた）"
-    },
-    {
         "targetWord": "Dormant",
         "errorMessage": "Connection is dormant; closing session",
         "messageTranslation": "接続が休止状態です。セッションを閉じます",
