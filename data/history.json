@@ -222,5 +222,6 @@
     "Omit",
     "Resume",
     "Lock",
-    "Configuration"
+    "Configuration",
+    "Bind"
 ]

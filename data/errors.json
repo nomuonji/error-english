@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Bind",
-        "errorMessage": "Address already in use: Bind failed",
-        "messageTranslation": "アドレスは既に使用されています：バインドに失敗しました",
-        "generalMeaning": "【動】縛る、結びつける、契約する",
-        "generalExample": "Bind the contract (契約を結ぶ)",
-        "techMeaning": "ネットワーク上の特定の「住所と部屋番号（ポート番号）」に、プログラムが「ここで営業します！」と専有すること。",
-        "explanation": "このエラーは、そのポート番号を別のプログラムがすでに使っている場合に発生。例えるなら、人気物件に二重契約しようとして弾かれている状態。タスクマネージャーで競合しているプロセスを止めれば大抵解決する。",
-        "usageContext": "友達と同じ席を予約しようとした時。",
-        "usageExample": "I tried to bind the same seat, but it was already taken.",
-        "usageExampleTranslation": "同じ席を予約しようとしたけど、既に取られていた。",
-        "usagePunchline": "Waiter: Only one service per port!",
-        "usagePunchlineTranslation": "店員：ポート（席）につき一つだけのサービスです！（二重予約禁止）"
-    },
-    {
         "targetWord": "Latency",
         "errorMessage": "High network latency detected, connection reset",
         "messageTranslation": "高いネットワーク遅延が検出され、接続がリセットされました",
