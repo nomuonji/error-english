@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Proprietary",
-        "errorMessage": "Failed to initialize proprietary driver module",
-        "messageTranslation": "独自仕様のドライバーモジュールの初期化に失敗しました",
-        "generalMeaning": "【形】専有の、独占的な、私有の",
-        "generalExample": "Proprietary software (独自開発のソフトウェア)",
-        "techMeaning": "「ウチのルールでしか動かない」と頑なに主張する、閉鎖的な技術や規格。オープンソースじゃない壁。",
-        "explanation": "特定の企業やベンダー独自の方式で、一般的な標準規格ではない場合に発生。移行や連携が難しい原因になることが多い。マニュアルを熟読するか、諦めて互換製品を探そう。",
-        "usageContext": "会社の飲み会で、上司が独自のルールを押し付けてくる時",
-        "usageExample": "Sorry, that policy is proprietary to our department.",
-        "usageExampleTranslation": "すみません、その方針は我々の部署専有（独自）のものです。",
-        "usagePunchline": "Colleague: That sounds like Vendor Lock-in.",
-        "usagePunchlineTranslation": "同僚：それってベンダーロックインじゃないですか。"
-    },
-    {
         "targetWord": "Filter",
         "errorMessage": "Input failed the security filter check.",
         "messageTranslation": "入力がセキュリティフィルターチェックに失敗しました。",
