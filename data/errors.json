@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Skew",
-        "errorMessage": "Data Skew Detected in Distributed Join",
-        "messageTranslation": "分散ジョインでデータスキュー（偏り）が検出されました",
-        "generalMeaning": "【名・動】歪み、傾き、偏り",
-        "generalExample": "The picture on the wall is slightly skewed. (壁の絵が少し傾いている。)",
-        "techMeaning": "データが均等に分配されず、一部のサーバーや処理に重荷が集中して負荷が歪んでいる状態。",
-        "explanation": "分散処理で特定のキーにデータが集中すると発生。みんなで分担しているのに、一人だけ激重タスクを押し付けられている感じ。キーの選び方を見直そう。",
-        "usageContext": "グループ課題で、一人だけ異常に仕事量が多い時",
-        "usageExample": "The task allocation shows a severe skew!",
-        "usageExampleTranslation": "このタスクの割り振りはひどく偏ってるぞ！",
-        "usagePunchline": "Teammate: Status Code 429 Too Many Requests.",
-        "usagePunchlineTranslation": "チームメイト：ステータスコード 429 リクエストが多すぎる（負荷集中）"
-    },
-    {
         "targetWord": "Proprietary",
         "errorMessage": "Failed to initialize proprietary driver module",
         "messageTranslation": "独自仕様のドライバーモジュールの初期化に失敗しました",
