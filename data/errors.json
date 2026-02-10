@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Starvation",
-        "errorMessage": "Process Starvation Detected",
-        "messageTranslation": "プロセス飢餓が検出されました",
-        "generalMeaning": "【名】飢餓、飢え",
-        "generalExample": "Malnutrition caused by starvation (飢餓による栄養失調)",
-        "techMeaning": "プログラムが無限に「ご飯（CPU時間やメモリ）」をもらえず、泣きながら待っている状態。",
-        "explanation": "並行処理でよくある問題。特定のスレッドだけがリソースを独占し、他のスレッドが処理を進められない。優先順位の設定ミスが原因かも。",
-        "usageContext": "昼休み、食べ放題で友人が肉を独占している時",
-        "usageExample": "Hey, I'm experiencing serious buffet starvation here!",
-        "usageExampleTranslation": "おい、ここで深刻なビュッフェ飢餓を経験してるぞ！",
-        "usagePunchline": "Friend: I'm running at 100% CPU utilization.",
-        "usagePunchlineTranslation": "友人：俺はCPU使用率100%で稼働中だ。"
-    },
-    {
         "targetWord": "Skew",
         "errorMessage": "Data Skew Detected in Distributed Join",
         "messageTranslation": "分散ジョインでデータスキュー（偏り）が検出されました",
