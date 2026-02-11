@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Archive",
-        "errorMessage": "Cannot locate required file in system archive.",
-        "messageTranslation": "システムアーカイブ内で必要なファイルを見つけられません。",
-        "generalMeaning": "【名・動】記録保管所、公文書、ファイルを保存する",
-        "generalExample": "The historical archives (歴史公文書館)",
-        "techMeaning": "古いけど大事なファイルや、まとめて圧縮して隅っこに置かれているデータ倉庫。開けてみたら中身がなかったりする。",
-        "explanation": "過去のバージョンやログなど、普段使わないが重要なファイルを保管する場所。エラーが出たら、ファイルが移動または削除されていないか、パスを確認しよう。古すぎて解凍ソフトがないパターンもよくある。",
-        "usageContext": "実家で昔の思い出の品を探している時",
-        "usageExample": "My mom keeps all my childhood drawings in an archive box.",
-        "usageExampleTranslation": "母は私の子供時代の絵を全部、アーカイブ（保存）ボックスにしまっている。",
-        "usagePunchline": "Mom: Did you check the Trash Can (/dev/null)?",
-        "usagePunchlineTranslation": "母：ゴミ箱（/dev/null）は確認した？"
-    },
-    {
         "targetWord": "Improper",
         "errorMessage": "Improperly formatted JSON input.",
         "messageTranslation": "不適切な形式のJSON入力です。",
