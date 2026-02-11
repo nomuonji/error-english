@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Improper",
-        "errorMessage": "Improperly formatted JSON input.",
-        "messageTranslation": "不適切な形式のJSON入力です。",
-        "generalMeaning": "【形】不適切な、正しくない、ふさわしくない",
-        "generalExample": "Improper attire for the event (そのイベントに不適切な服装)",
-        "techMeaning": "「ちょっと使い方間違ってるよ」とプログラムが呆れている状態。指示された形式を守っていない。",
-        "explanation": "プログラミングにおける『Improper』は、主にデータの形式や引数の渡し方がルール通りではないことを指します。入力規則（スキーマ）をもう一度確認しましょう。",
-        "usageContext": "会社のドレスコードを無視して出勤した時",
-        "usageExample": "Your outfit is improper for a formal meeting.",
-        "usageExampleTranslation": "あなたの服装はフォーマルな会議には不適切です。",
-        "usagePunchline": "HR: 400 Bad Request",
-        "usagePunchlineTranslation": "人事部：不正な要求（その格好はNG）"
-    },
-    {
         "targetWord": "Unbound",
         "errorMessage": "Error: Unbound variable 'i'",
         "messageTranslation": "エラー：未束縛の変数 'i'",
