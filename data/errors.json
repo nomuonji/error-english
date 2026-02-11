@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Filter",
-        "errorMessage": "Input failed the security filter check.",
-        "messageTranslation": "入力がセキュリティフィルターチェックに失敗しました。",
-        "generalMeaning": "【名・動】ろ過器、フィルターにかける、選別する",
-        "generalExample": "Use a water filter (浄水器を使う)",
-        "techMeaning": "不正なデータやスパム、怪しい文字列など、プログラムにとって「汚いもの」をはじき出す関所。",
-        "explanation": "ユーザーからの入力は危険がいっぱい。SQLインジェクションなどを防ぐため、必ずフィルター（サニタイズ）をかけよう。まずは疑ってかかるのが鉄則。",
-        "usageContext": "SNSで発言する前に、友人にチェックしてもらう時",
-        "usageExample": "Please filter my comment before I post it.",
-        "usageExampleTranslation": "投稿する前に、私のコメントをフィルターにかけて（不適切な部分を削除して）ください。",
-        "usagePunchline": "Friend: Looks clean. Status 200 OK.",
-        "usagePunchlineTranslation": "友人：大丈夫そう。ステータス 200 OK。"
-    },
-    {
         "targetWord": "Archive",
         "errorMessage": "Cannot locate required file in system archive.",
         "messageTranslation": "システムアーカイブ内で必要なファイルを見つけられません。",
