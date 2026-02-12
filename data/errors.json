@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reconcile",
-        "errorMessage": "Failed to reconcile desired state with current state.",
-        "messageTranslation": "要求された状態と現在の状態の調整（和解）に失敗しました。",
-        "generalMeaning": "【動】和解させる、調停する、調整する",
-        "generalExample": "They reconciled after a long argument. (彼らは長い議論の末に和解した。)",
-        "techMeaning": "データAとデータBの言い分が食い違っていて、どちらを正とするか「話し合い（同期処理）」が必要だが、それが上手くいっていない状態。",
-        "explanation": "特にデータベースや分散システムで重要です。システムが『理想の状態』と『今の現実の状態』を一致させようとして喧嘩している状況。片方を無理やり上書きするか、処理をやり直すしかありません。",
-        "usageContext": "夫婦で夕食のメニューが完全に割れた時",
-        "usageExample": "I need to reconcile my desire for pizza with my wife's demand for sushi.",
-        "usageExampleTranslation": "ピザが食べたいという願望と、妻の寿司要求を調整しなくてはならない。",
-        "usagePunchline": "Wife: 409 Conflict",
-        "usagePunchlineTranslation": "妻：衝突（意見が合わない）"
-    },
-    {
         "targetWord": "Deprovision",
         "errorMessage": "Failed to deprovision resource due to dependencies.",
         "messageTranslation": "依存関係のため、リソースの廃止（デプロビジョン）に失敗しました。",
