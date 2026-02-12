@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Deprovision",
-        "errorMessage": "Failed to deprovision resource due to dependencies.",
-        "messageTranslation": "依存関係のため、リソースの廃止（デプロビジョン）に失敗しました。",
-        "generalMeaning": "【動】供給を取りやめる、撤去する、資源提供を停止する",
-        "generalExample": "The old server will be deprovisioned next month. (古いサーバーは来月廃止されます。)",
-        "techMeaning": "クラウドサービスやサーバーを「引退」させようとしたが、まだそのサーバーに依存しているプログラムがいて、綺麗に引退できない状態。",
-        "explanation": "依存しているサービスが残っているのに、土台を抜き去ろうとしている状態です。まずは他のサービスが本当にそのリソースを使っていないか確認し、関係を切ってから廃止しましょう。",
-        "usageContext": "定年退職しようとしたが、後任が育っていなかった時",
-        "usageExample": "I tried to retire, but my boss refused to deprovision my responsibilities.",
-        "usageExampleTranslation": "退職しようとしたが、上司は私の職責を撤廃するのを拒否した。",
-        "usagePunchline": "Boss: 503 Service Unavailable",
-        "usagePunchlineTranslation": "上司：サービス利用不可（君がいないと無理）"
-    },
-    {
         "targetWord": "Transact",
         "errorMessage": "Cannot transact: database connection is closed.",
         "messageTranslation": "トランザクションを実行できません：データベース接続が閉じられています。",
