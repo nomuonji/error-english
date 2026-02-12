@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unbound",
-        "errorMessage": "Error: Unbound variable 'i'",
-        "messageTranslation": "エラー：未束縛の変数 'i'",
-        "generalMeaning": "【形】束縛されていない、解放された",
-        "generalExample": "Unbound by rules (規則に縛られていない)",
-        "techMeaning": "「お前、誰に繋がってるんだ？」とプログラムに聞かれて、「誰にも繋がってません」と答える迷子の変数やポートの状態。",
-        "explanation": "変数を宣言しただけで値を代入し忘れたり、モジュールをインポートし忘れた時によく出ます。プログラムは住所不明のオブジェクトを扱うことはできません。まずは『=』で住所を教えてあげましょう。",
-        "usageContext": "集合場所に来たけど、誰も友達がいない時",
-        "usageExample": "I feel unbound in this huge crowd.",
-        "usageExampleTranslation": "この大勢の群衆の中で、自分だけ浮いている（束縛されていない）気がする。",
-        "usagePunchline": "You: 404 Not Found",
-        "usagePunchlineTranslation": "自分：見つかりません（自分の居場所がない）"
-    },
-    {
         "targetWord": "Reconcile",
         "errorMessage": "Failed to reconcile desired state with current state.",
         "messageTranslation": "要求された状態と現在の状態の調整（和解）に失敗しました。",
