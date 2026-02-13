@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Transact",
-        "errorMessage": "Cannot transact: database connection is closed.",
-        "messageTranslation": "トランザクションを実行できません：データベース接続が閉じられています。",
-        "generalMeaning": "【動】処理する、取り引きをする、実行する",
-        "generalExample": "The company transacted business overseas. (その会社は海外で取引を行った。)",
-        "techMeaning": "複数の作業を「まとめて一つの取引」として実行しようとすること。失敗したら最初からやり直し（ロールバック）が必要な、真剣勝負のコマンド。",
-        "explanation": "銀行の振込処理をイメージしてください。『口座Aから引き落とす』と『口座Bに入金する』はセットです。どちらか一つでも失敗したらダメなのがTransact。接続が切れていたら、もちろん取引は成立しません。",
-        "usageContext": "大きな決断をしようとしたが、準備が足りなかった時",
-        "usageExample": "I can't transact on this project until all risks are mitigated.",
-        "usageExampleTranslation": "すべてのリスクが軽減されるまで、このプロジェクトを実行に移すことはできない。",
-        "usagePunchline": "Life: 417 Expectation Failed",
-        "usagePunchlineTranslation": "人生：期待された処理に失敗しました（準備不足だよ）"
-    },
-    {
         "targetWord": "Refused",
         "errorMessage": "Error: Connection refused: localhost:8080",
         "messageTranslation": "エラー：接続が拒否されました：localhost:8080",
