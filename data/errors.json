@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Refused",
-        "errorMessage": "Error: Connection refused: localhost:8080",
-        "messageTranslation": "エラー：接続が拒否されました：localhost:8080",
-        "generalMeaning": "【動】（申し出や依頼を）断る、拒否する",
-        "generalExample": "He refused to sign the contract.（彼は契約への署名を拒否した）",
-        "techMeaning": "サーバーの入り口でガードマンに「お前、予約リストにないぞ」と追い返されている状態",
-        "explanation": "サーバーがそもそも起動していないか、宛先のポート番号を間違えている可能性が高いよ。勇気を出してもう一度話しかける前に、まずは相手が「起きているか」確認して！",
-        "usageContext": "勇気を出して告白した時",
-        "usageExample": "My confession was refused by her.",
-        "usageExampleTranslation": "彼女に告白したけど、思いっきり振られちゃった。",
-        "usagePunchline": "401 Unauthorized",
-        "usagePunchlineTranslation": "君に僕のハートへアクセスする権限はないよ（未認証エラー）。"
-    },
-    {
         "targetWord": "Legacy",
         "errorMessage": "Warning: Legacy feature detected in your code",
         "messageTranslation": "警告：コード内にレガシー（古い形式）な機能が検出されました",

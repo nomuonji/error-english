@@ -235,5 +235,6 @@
     "Unbound",
     "Reconcile",
     "Deprovision",
-    "Transact"
+    "Transact",
+    "Refused"
 ]
