@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Legacy",
-        "errorMessage": "Warning: Legacy feature detected in your code",
-        "messageTranslation": "警告：コード内にレガシー（古い形式）な機能が検出されました",
-        "generalMeaning": "【名】遺産、受け継いだもの",
-        "generalExample": "A legacy from the past.（過去からの遺産）",
-        "techMeaning": "「昔はこれでもブイブイ言わせてたんだぜ」と語る、引退時期を過ぎたおじいちゃんコード",
-        "explanation": "まだ動くけど、いつサポートが終わって消えてもおかしくない状態。生きた化石に頼りすぎず、新しい書き方にアップデートしてあげてね。",
-        "usageContext": "使い方のわからない、古い言葉を使った時",
-        "usageExample": "That joke you just made is a legacy.",
-        "usageExampleTranslation": "今のギャグ、昭和の遺産（レガシー）レベルで古いよ。",
-        "usagePunchline": "301 Moved Permanently",
-        "usagePunchlineTranslation": "そのギャグは、すでに「歴史博物館」へ永久に転送（リダイレクト）されました。"
-    },
-    {
         "targetWord": "Dependency",
         "errorMessage": "npm ERR! missing dependency: lodash",
         "messageTranslation": "npmエラー！依存関係にある lodash が見つかりません",
