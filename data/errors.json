@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dependency",
-        "errorMessage": "npm ERR! missing dependency: lodash",
-        "messageTranslation": "npmエラー！依存関係にある lodash が見つかりません",
-        "generalMeaning": "【名】依存、頼ること",
-        "generalExample": "Drug dependency is a serious issue.（薬物依存は深刻な問題だ）",
-        "techMeaning": "「アイツがいないと俺、コンパイルすらできないんだ！」という、重すぎる共依存状態",
-        "explanation": "プログラムが動くために絶対必要な「相棒」がいない時に怒られるよ。`npm install` とかをして、至急その相棒を呼んできてあげよう。",
-        "usageContext": "スマホを忘れて外出してしまった時",
-        "usageExample": "I have a heavy dependency on my smartphone.",
-        "usageExampleTranslation": "私はスマホへの依存度がめちゃくちゃ高いんだ。",
-        "usagePunchline": "503 Service Unavailable",
-        "usagePunchlineTranslation": "相棒（スマホ）が不在のため、私の人間活動は現在停止しております。"
-    },
-    {
         "targetWord": "Explicit",
         "errorMessage": "Error: Explicit type conversion required",
         "messageTranslation": "エラー：明示的な型変換が必要です",

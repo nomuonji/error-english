@@ -237,5 +237,6 @@
     "Deprovision",
     "Transact",
     "Refused",
-    "Legacy"
+    "Legacy",
+    "Dependency"
 ]
