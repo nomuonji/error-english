@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Explicit",
-        "errorMessage": "Error: Explicit type conversion required",
-        "messageTranslation": "エラー：明示的な型変換が必要です",
-        "generalMeaning": "【形】明白な、はっきりした",
-        "generalExample": "Give me explicit instructions.（明確な指示をください）",
-        "techMeaning": "「雰囲気で察してよ！」が一切通用しない、超絶に説明を求めてくる頑固な性格",
-        "explanation": "コンピューターが「君が何をしたいか確信が持てない」と言っている状態。主語と述語をハッキリさせるように、コードでも「これは整数にするんだ！」と宣言してあげて。",
-        "usageContext": "レストランで曖昧な注文をした時",
-        "usageExample": "Please be more explicit about your order.",
-        "usageExampleTranslation": "注文内容をもっとはっきり（明示的に）言ってください。",
-        "usagePunchline": "400 Bad Request",
-        "usagePunchlineTranslation": "リクエストが曖昧すぎて、こちらのキッチンでは処理できません。"
-    },
-    {
         "targetWord": "Strict",
         "errorMessage": "Uncaught TypeError: Cannot assign to read only property in strict mode",
         "messageTranslation": "捕捉されない型エラー：ストリクト（厳格）モードでは読み取り専用プロパティに代入できません",
