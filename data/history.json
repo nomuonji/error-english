@@ -239,5 +239,6 @@
     "Refused",
     "Legacy",
     "Dependency",
-    "Explicit"
+    "Explicit",
+    "Strict"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Strict",
-        "errorMessage": "Uncaught TypeError: Cannot assign to read only property in strict mode",
-        "messageTranslation": "捕捉されない型エラー：ストリクト（厳格）モードでは読み取り専用プロパティに代入できません",
-        "generalMeaning": "【形】厳しい、厳格な",
-        "generalExample": "My teacher is very strict.（私の先生はとても厳しい）",
-        "techMeaning": "1ミリの校則違反も許さない、竹刀を持った超スパルタ教師が監視しているモード",
-        "explanation": "普段なら「まぁいいか」で見逃される小さなミスも、このモードだと即アウト！でも、そのおかげでバグが減るから、実は愛のある厳しさなんだよ。",
-        "usageContext": "門限に1分遅れた時",
-        "usageExample": "My parents are very strict about the curfew.",
-        "usageExampleTranslation": "うちの親、門限に関してはめちゃくちゃ厳しいんだ。",
-        "usagePunchline": "403 Forbidden",
-        "usagePunchlineTranslation": "校則違反につき、家へのアクセスは拒否されました。"
-    },
-    {
         "targetWord": "Duplicate",
         "errorMessage": "Duplicate entry 'admin' for key 'users.name'",
         "messageTranslation": "ユーザー名の'admin'が重複しています",
