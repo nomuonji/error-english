@@ -242,5 +242,6 @@
     "Explicit",
     "Strict",
     "Duplicate",
-    "Forbidden"
+    "Forbidden",
+    "Unknown"
 ]

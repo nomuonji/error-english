@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unknown",
-        "errorMessage": "Unknown command 'gitt'",
-        "messageTranslation": "不明なコマンド 'gitt' です",
-        "generalMeaning": "【形】未知の、不明な、知らない",
-        "generalExample": "An unknown island (未知の島)",
-        "techMeaning": "「えっ、誰…？」状態。辞書に載っていない、宇宙の彼方から来た言葉だと思われている。",
-        "explanation": "単なるタイピングミス（タイポ）の時に一番よく見る単語です。プログラムは「そんな言葉、僕の教科書には載ってないよ！」と困惑しています。",
-        "usageContext": "同窓会で、全く思い出せない人に「久しぶり！」と親しげに話しかけられた時",
-        "usageExample": "You are an unknown person to me.",
-        "usageExampleTranslation": "あなたは私にとって、どこの誰だか分からない人です。",
-        "usagePunchline": "Me: 404 Not Found",
-        "usagePunchlineTranslation": "私：記憶にございません（ページが見つかりません）"
-    },
-    {
         "targetWord": "Empty",
         "errorMessage": "Error: Response body is empty",
         "messageTranslation": "エラー：レスポンスの中身が空っぽです",
