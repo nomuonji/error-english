@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Forbidden",
-        "errorMessage": "403 Forbidden: Access is denied",
-        "messageTranslation": "403 閲覧禁止：アクセスが拒否されました",
-        "generalMeaning": "【形】禁止された、禁じられた",
-        "generalExample": "Forbidden fruit (禁断の果実)",
-        "techMeaning": "「お前はまだ、ここに来る段階じゃない」と門前払いされている状態。",
-        "explanation": "サーバーには繋がっているけど、「お前のランク（権限）じゃ見せられないね」とガードマンに止められています。ログインし忘れや設定ミスを疑いましょう。",
-        "usageContext": "超高級レストランに、ヨレヨレのTシャツとサンダルで突撃した時",
-        "usageExample": "Entry to this club is forbidden for you.",
-        "usageExampleTranslation": "君はこのクラブへの入場を禁止されているよ。",
-        "usagePunchline": "Staff: 403 Forbidden",
-        "usagePunchlineTranslation": "店員：お引取りを（アクセス権限がありません）"
-    },
-    {
         "targetWord": "Unknown",
         "errorMessage": "Unknown command 'gitt'",
         "messageTranslation": "不明なコマンド 'gitt' です",

@@ -241,5 +241,6 @@
     "Dependency",
     "Explicit",
     "Strict",
-    "Duplicate"
+    "Duplicate",
+    "Forbidden"
 ]
