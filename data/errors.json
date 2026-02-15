@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Duplicate",
-        "errorMessage": "Duplicate entry 'admin' for key 'users.name'",
-        "messageTranslation": "ユーザー名の'admin'が重複しています",
-        "generalMeaning": "【形】重複した、二重の、写しの",
-        "generalExample": "A duplicate key (スペアキー)",
-        "techMeaning": "キャラ被り厳禁！唯一無二の席に、影分身が座ろうとして止められた状態。",
-        "explanation": "データベースなどの「ユニーク（唯一）」でなきゃいけない場所で発生します。同じ名前のキャラは2人もいらない、というプログラムの強い意志です。",
-        "usageContext": "二股がバレて、彼女と浮気相手が鉢合わせした時",
-        "usageExample": "Wait, this is a duplicate situation...",
-        "usageExampleTranslation": "待って、これって重複したシチュエーションだよね…",
-        "usagePunchline": "Wife: DROP TABLE lovers;",
-        "usagePunchlineTranslation": "妻：恋人テーブルを物理削除しました"
-    },
-    {
         "targetWord": "Forbidden",
         "errorMessage": "403 Forbidden: Access is denied",
         "messageTranslation": "403 閲覧禁止：アクセスが拒否されました",

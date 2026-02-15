@@ -240,5 +240,6 @@
     "Legacy",
     "Dependency",
     "Explicit",
-    "Strict"
+    "Strict",
+    "Duplicate"
 ]
