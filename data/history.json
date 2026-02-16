@@ -245,5 +245,6 @@
     "Forbidden",
     "Unknown",
     "Empty",
-    "Broken"
+    "Broken",
+    "Traceback"
 ]

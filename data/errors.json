@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Traceback",
-        "errorMessage": "Traceback (most recent call last):",
-        "messageTranslation": "トレースバック（直近の呼び出しを最後に表示）",
-        "generalMeaning": "【名】形跡をさかのぼること、追跡、足跡",
-        "generalExample": "The traceback of the infection source. (感染源の追跡)",
-        "techMeaning": "プログラムがパニクって死ぬまでの「迷走の足跡」をさらけ出したもの",
-        "explanation": "エラーが起きた場所だけでなく、そこに至るまでの「犯行ルート」をすべて暴露します。下から上に読んでいくのが、真犯人（エラーの原因）を見つけるコツだよ。",
-        "usageContext": "浮気がバレて、昨夜のアリバイを分単位で追及される時",
-        "usageExample": "Show me your Google Maps traceback from last night!",
-        "usageExampleTranslation": "昨日の夜のGoogleマップの移動履歴（足取り）を全部見せなさい！",
-        "usagePunchline": "Error 401: Unauthorized access to my privacy.",
-        "usagePunchlineTranslation": "エラー 401：私のプライバシーへの不正アクセスです（拒否権発動）。"
-    },
-    {
         "targetWord": "Callback",
         "errorMessage": "TypeError: callback is not a function",
         "messageTranslation": "タイプエラー：コールバックが関数ではありません",
