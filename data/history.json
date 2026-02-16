@@ -243,5 +243,6 @@
     "Strict",
     "Duplicate",
     "Forbidden",
-    "Unknown"
+    "Unknown",
+    "Empty"
 ]

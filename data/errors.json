@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Empty",
-        "errorMessage": "Error: Response body is empty",
-        "messageTranslation": "エラー：レスポンスの中身が空っぽです",
-        "generalMeaning": "【形】空の、中身がない、空虚な",
-        "generalExample": "An empty bottle (空き瓶)",
-        "techMeaning": "魂の抜け殻。何かしら入っている前提で動こうとしたのに、虚無を掴まされて絶望している状態。",
-        "explanation": "お弁当箱を開けたのに白米すら入っていなかった時の切なさと同じです。データがどこかで消えてしまったか、最初から送られてきていません。",
-        "usageContext": "給料日前の財布を開いて、領収書しか入っていないことに気づいた時",
-        "usageExample": "My wallet is completely empty.",
-        "usageExampleTranslation": "僕の財布、完全に空っぽなんだ。",
-        "usagePunchline": "Mom: 204 No Content",
-        "usagePunchlineTranslation": "母：中身（仕送り）はないわよ"
-    },
-    {
         "targetWord": "Broken",
         "errorMessage": "Broken pipe: Connection reset by peer",
         "messageTranslation": "ブロークン・パイプ：接続が相手側から切断されました",
