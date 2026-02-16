@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Broken",
-        "errorMessage": "Broken pipe: Connection reset by peer",
-        "messageTranslation": "ブロークン・パイプ：接続が相手側から切断されました",
-        "generalMeaning": "【形】壊れた、折れた、機能しない",
-        "generalExample": "A broken heart (失恋、傷心)",
-        "techMeaning": "通信のホースがバキバキ。向こう側と連絡がつかなくて、データが路頭に迷っている悲劇。",
-        "explanation": "データを送り続けようとしたのに、受け取り側がいきなり帰宅してしまったような状態です。通信環境や、相手のプログラムが落ちていないか確認しましょう。",
-        "usageContext": "喧嘩した恋人に謝罪のLINEを送った瞬間に、ブロックされていることに気づいた時",
-        "usageExample": "Our relationship is broken.",
-        "usageExampleTranslation": "僕たちの関係はもう壊れてしまったんだ。",
-        "usagePunchline": "Crush: 503 Service Unavailable",
-        "usagePunchlineTranslation": "好きな人：現在、受付を停止しております"
-    },
-    {
         "targetWord": "Traceback",
         "errorMessage": "Traceback (most recent call last):",
         "messageTranslation": "トレースバック（直近の呼び出しを最後に表示）",

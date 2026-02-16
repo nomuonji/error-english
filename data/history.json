@@ -244,5 +244,6 @@
     "Duplicate",
     "Forbidden",
     "Unknown",
-    "Empty"
+    "Empty",
+    "Broken"
 ]
