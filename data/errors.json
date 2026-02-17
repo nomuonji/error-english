@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Callback",
-        "errorMessage": "TypeError: callback is not a function",
-        "messageTranslation": "タイプエラー：コールバックが関数ではありません",
-        "generalMeaning": "【名】折り返し電話、呼び戻し",
-        "generalExample": "I'll give you a callback later. (後で折り返し電話します)",
-        "techMeaning": "「自分の作業が終わったら、この命令（パシリ）を実行しといて」という予約",
-        "explanation": "レストランで渡される「料理ができたら鳴るブザー」みたいなもの。ブザーを渡し忘れたり、ブザー自体が壊れていると、料理ができても永遠に呼ばれない切ない事態に。",
-        "usageContext": "気になる相手に連絡先を渡したけど、全く返信が来ない時",
-        "usageExample": "I'm still waiting for her callback...",
-        "usageExampleTranslation": "彼女からの折り返しの連絡（コールバック）をまだ待ってるんだけど…",
-        "usagePunchline": "408 Request Timeout.",
-        "usagePunchlineTranslation": "408 リクエスト・タイムアウト（待機時間の限界です）。"
-    },
-    {
         "targetWord": "Instance",
         "errorMessage": "Cannot create an instance of abstract class",
         "messageTranslation": "抽象クラスのインスタンスを作成できません",

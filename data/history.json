@@ -246,5 +246,6 @@
     "Unknown",
     "Empty",
     "Broken",
-    "Traceback"
+    "Traceback",
+    "Callback"
 ]
