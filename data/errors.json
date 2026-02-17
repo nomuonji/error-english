@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Queue",
-        "errorMessage": "Queue capacity exceeded",
-        "messageTranslation": "キューの容量制限を超えました",
-        "generalMeaning": "【名】（順番を待つ）列、行列",
-        "generalExample": "Wait in a queue for the bus. (バスを待つために列に並ぶ)",
-        "techMeaning": "「先入れ先出し」がルールの、データたちの忍耐強い行列",
-        "explanation": "人気ラーメン店の行列と同じ。早く来たデータから順に処理される超体育会系システム。行列が長すぎると「もう並べません！」と入店拒否されるのがこのエラー。",
-        "usageContext": "トイレが1つしかない家で、家族全員がお腹を壊した朝",
-        "usageExample": "The bathroom queue is too long! I can't hold it!",
-        "usageExampleTranslation": "トイレの行列が長すぎる！もう漏れそうだよ！",
-        "usagePunchline": "507 Insufficient Storage.",
-        "usagePunchlineTranslation": "507 ストレージ不足（もう中身を受け入れる余裕がありません）。"
-    },
-    {
         "targetWord": "Collision",
         "errorMessage": "Hash collision detected",
         "messageTranslation": "ハッシュ衝突が検出されました",
