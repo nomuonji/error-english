@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Instance",
-        "errorMessage": "Cannot create an instance of abstract class",
-        "messageTranslation": "抽象クラスのインスタンスを作成できません",
-        "generalMeaning": "【名】例、実例、具体的な事実",
-        "generalExample": "For instance, let's look at this chart. (例えば、この図を見てみましょう)",
-        "techMeaning": "「設計図（クラス）」という概念から召喚された、魂の宿った「実体」",
-        "explanation": "「たい焼きの型」がクラスなら、そこから焼かれた「あんこ入りたい焼き」がインスタンス。型は食べられないけど、インスタンスなら美味しく実行（実食）できるよね。",
-        "usageContext": "理想の結婚相手（クラス）について語っているが、現実には誰もいない時",
-        "usageExample": "I want a husband who is a rich instance of 'Prince'.",
-        "usageExampleTranslation": "「王子様」というクラスから生成された、金持ちな実体（旦那）が欲しいの。",
-        "usagePunchline": "503 Service Unavailable (Under Maintenance).",
-        "usagePunchlineTranslation": "503 サービス利用不可（ただいま自分磨きのメンテナンス中です）。"
-    },
-    {
         "targetWord": "Queue",
         "errorMessage": "Queue capacity exceeded",
         "messageTranslation": "キューの容量制限を超えました",
