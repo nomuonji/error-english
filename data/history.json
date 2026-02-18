@@ -251,5 +251,6 @@
     "Instance",
     "Queue",
     "Collision",
-    "Unsatisfied"
+    "Unsatisfied",
+    "Inaccessible"
 ]

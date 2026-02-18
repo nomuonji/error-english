@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Inaccessible",
-        "errorMessage": "Error: Inaccessible code detected",
-        "messageTranslation": "到達不能な（アクセスできない）コードが検出されました",
-        "generalMeaning": "【形】接近できない、入手できない、理解しにくい",
-        "generalExample": "The island is inaccessible by boat. (その島はボートでは行けない。)",
-        "techMeaning": "書いた本人が入れない「開かずの間」。一生実行されることのない、切なすぎるコードの状態。",
-        "explanation": "return文（終了）の後にコードを書いたりすると、「そこには一生辿り着けないよ！」とコンパイラが親切に、かつ冷酷に教えてくれます。無駄な努力はやめて、コードを整理しましょう。",
-        "usageContext": "ノイズキャンセリングヘッドホンを爆音で聴いて、自分の世界に入り込んでいる人に話しかける時",
-        "usageExample": "He is completely inaccessible right now.",
-        "usageExampleTranslation": "彼、今は完全にシャットアウト状態で、話しかけても無駄だよ。",
-        "usagePunchline": "Me: 403 Forbidden",
-        "usagePunchlineTranslation": "自分：アクセス禁止（心の扉が閉まってます）"
-    },
-    {
         "targetWord": "Shadow",
         "errorMessage": "Warning: Variable 'name' shadows a variable in the outer scope",
         "messageTranslation": "警告：変数 'name' が外側のスコープの変数を隠しています",
