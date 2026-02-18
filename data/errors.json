@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unsatisfied",
-        "errorMessage": "java.lang.UnsatisfiedLinkError: no nio in java.library.path",
-        "messageTranslation": "ライブラリが見つかりません（リンクの条件が満たされていません）",
-        "generalMeaning": "【形】満足していない、満たされていない、充足されていない",
-        "generalExample": "An unsatisfied customer (不満を感じている顧客)",
-        "techMeaning": "コンピューター様が「これじゃない！足りない！」とお怒りの状態。必要なパーツ（ライブラリ）が見つからなくて、プログラムがヘソを曲げています。",
-        "explanation": "外部の部品を使おうとしたのに、その部品が見つからない時に出るエラー。パス（道順）が間違っているのか、そもそも部品を入れ忘れたのか。彼の「満足したい」という願いを叶えてあげましょう。",
-        "usageContext": "デートで気合いを入れて連れて行ったレストランが、相手の口に全く合わなかった時",
-        "usageExample": "She looked completely unsatisfied with the dinner.",
-        "usageExampleTranslation": "彼女、ディナーに全然満足してないみたいだよ…。",
-        "usagePunchline": "Partner: 406 Not Acceptable",
-        "usagePunchlineTranslation": "パートナー：受理不能（そんな店は認められません）"
-    },
-    {
         "targetWord": "Inaccessible",
         "errorMessage": "Error: Inaccessible code detected",
         "messageTranslation": "到達不能な（アクセスできない）コードが検出されました",

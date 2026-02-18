@@ -250,5 +250,6 @@
     "Callback",
     "Instance",
     "Queue",
-    "Collision"
+    "Collision",
+    "Unsatisfied"
 ]
