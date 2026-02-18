@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Collision",
-        "errorMessage": "Hash collision detected",
-        "messageTranslation": "ハッシュ衝突が検出されました",
-        "generalMeaning": "【名】衝突、一致、不一致",
-        "generalExample": "A collision between two cars. (2台の車の衝突事故)",
-        "techMeaning": "別々のデータが、計算の結果「同じ場所（値）」を奪い合って喧嘩すること",
-        "explanation": "ホテルのダブルブッキングみたいなもの。自分専用の部屋（データ保存場所）だと思って入ったら、先客がいて「そこ俺の場所だぞ！」と揉めている状態。",
-        "usageContext": "デート中に「元カノ」と「今カノ」がバッタリ鉢合わせた時",
-        "usageExample": "A terrible collision between my past and present!",
-        "usageExampleTranslation": "俺の過去（元カノ）と現在（今カノ）が恐ろしい衝突を起こしてる！",
-        "usagePunchline": "409 Conflict.",
-        "usagePunchlineTranslation": "409 コンフリクト（修復不可能な衝突が発生しました。逃げろ！）"
-    },
-    {
         "targetWord": "Unsatisfied",
         "errorMessage": "java.lang.UnsatisfiedLinkError: no nio in java.library.path",
         "messageTranslation": "ライブラリが見つかりません（リンクの条件が満たされていません）",
