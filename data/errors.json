@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Shadow",
-        "errorMessage": "Warning: Variable 'name' shadows a variable in the outer scope",
-        "messageTranslation": "警告：変数 'name' が外側のスコープの変数を隠しています",
-        "generalMeaning": "【名】影 【動】〜を陰らせる、尾行する",
-        "generalExample": "The tree cast a long shadow. (木が長い影を落とした。)",
-        "techMeaning": "「忍者変数」。同じ名前の変数のすぐ前に立って、後ろのやつを透明人間にしちゃう、ちょっとした嫌がらせ状態。",
-        "explanation": "名前が被ると、コンピューターは「どっちの田中さんのこと！？」と混乱します。バグの原因になりやすいので、影に隠さず堂々と別の名前をつけてあげましょう。",
-        "usageContext": "集合写真で、背の高い友達がちょうど自分の真ん前に立ちはだかって、自分が写らなかった時",
-        "usageExample": "You're shadowing me in the photo!",
-        "usageExampleTranslation": "写真で君が僕に被ってて、影になっちゃってるよ！",
-        "usagePunchline": "Photographer: 409 Conflict",
-        "usagePunchlineTranslation": "カメラマン：衝突発生（位置関係が競合しています）"
-    },
-    {
         "targetWord": "Nested",
         "errorMessage": "NestedServletException: root cause is...",
         "messageTranslation": "入れ子になった例外：根本的な原因は…",
