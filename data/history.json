@@ -253,5 +253,6 @@
     "Collision",
     "Unsatisfied",
     "Inaccessible",
-    "Shadow"
+    "Shadow",
+    "Nested"
 ]

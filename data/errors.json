@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Nested",
-        "errorMessage": "NestedServletException: root cause is...",
-        "messageTranslation": "入れ子になった例外：根本的な原因は…",
-        "generalMeaning": "【形】入れ子になった、はめ込み式の",
-        "generalExample": "Nested tables (入れ子構造のテーブル)",
-        "techMeaning": "「エラーのマトリョーシカ」。剥いても剥いても、中からまた別のエラーが出てくる絶望の連鎖。",
-        "explanation": "大きなエラーの中に、真の犯人（原因）が隠れている状態。一番奥に潜んでいる「root cause（根本原因）」を見つけるまで、デバッグの旅は終わりません。",
-        "usageContext": "プレゼントの豪華な箱を開けたら、また箱が入っていて、それを開けたらまた箱が入っていた時",
-        "usageExample": "This is a nested gift box.",
-        "usageExampleTranslation": "これ、マトリョーシカみたいな入れ子式のプレゼント箱だね。",
-        "usagePunchline": "Me: 508 Loop Detected",
-        "usagePunchlineTranslation": "自分：ループ検知（いつ本体に辿り着くの？）"
-    },
-    {
         "targetWord": "Violation",
         "errorMessage": "Access Violation at address 0x00401000",
         "messageTranslation": "アドレス0x00401000でアクセス違反が発生しました",
