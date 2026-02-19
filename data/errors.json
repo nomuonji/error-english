@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Violation",
-        "errorMessage": "Access Violation at address 0x00401000",
-        "messageTranslation": "アドレス0x00401000でアクセス違反が発生しました",
-        "generalMeaning": "【名】違反、侵害、妨害",
-        "generalExample": "A traffic violation (交通違反)",
-        "techMeaning": "立ち入り禁止区域への不法侵入。触っちゃいけないメモリ（他人の領域）をいじろうとして、OSという名のガードマンに捕まった状態。",
-        "explanation": "他人の家の冷蔵庫を勝手に開けるような行為。メモリ管理のルールを破ると、OSから即座に「強制終了」という退場宣告を食らいます。ポインタの扱いは慎重に！",
-        "usageContext": "「一口ちょうだい」と言いながら、相手のメインディッシュを半分以上奪い取った時",
-        "usageExample": "That's a clear violation of our food-sharing rule!",
-        "usageExampleTranslation": "それは僕たちの「シェアのルール」に対する明らかな違反だよ！",
-        "usagePunchline": "Friend: 451 Unavailable For Legal Reasons",
-        "usagePunchlineTranslation": "友人：法的理由により利用不可（君の権利を差し押さえた）"
-    },
-    {
         "targetWord": "Access",
         "errorMessage": "Access Denied",
         "messageTranslation": "アクセスが拒否されました",

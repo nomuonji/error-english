@@ -254,5 +254,6 @@
     "Unsatisfied",
     "Inaccessible",
     "Shadow",
-    "Nested"
+    "Nested",
+    "Violation"
 ]
