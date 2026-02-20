@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Stack",
-        "errorMessage": "Stack Overflow Error",
-        "messageTranslation": "スタック・オーバーフロー（メモリの積み上げ限界突破）",
-        "generalMeaning": "【名】積み重ね、堆積 【動】積み上げる",
-        "generalExample": "A stack of books (積み上げられた本)",
-        "techMeaning": "机の上に書類を積み上げすぎて、なだれが起きて部屋が埋まった状態",
-        "explanation": "自分自身を呼び出しすぎる（再帰）とよく起こる。プログラムが「いつまで積み上げればいいの！？」とパニックになって倒れます。",
-        "usageContext": "締め切り直前に大量の仕事を頼まれた時",
-        "usageExample": "My task stack is overflowing!",
-        "usageExampleTranslation": "タスクが積み上がりすぎて、もう限界突破してるよ！",
-        "usagePunchline": "507 Insufficient Storage",
-        "usagePunchlineTranslation": "脳内の保存容量が足りません"
-    },
-    {
         "targetWord": "Gateway",
         "errorMessage": "502 Bad Gateway",
         "messageTranslation": "不正なゲートウェイ（中継地点の不具合）",

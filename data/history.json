@@ -256,5 +256,6 @@
     "Shadow",
     "Nested",
     "Violation",
-    "Access"
+    "Access",
+    "Stack"
 ]
