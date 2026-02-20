@@ -255,5 +255,6 @@
     "Inaccessible",
     "Shadow",
     "Nested",
-    "Violation"
+    "Violation",
+    "Access"
 ]

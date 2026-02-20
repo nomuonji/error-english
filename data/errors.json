@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Access",
-        "errorMessage": "Access Denied",
-        "messageTranslation": "アクセスが拒否されました",
-        "generalMeaning": "【名】（場所への）出入り、（権利としての）利用、接近",
-        "generalExample": "Get access to the VIP room (VIPルームへの入室許可を得る)",
-        "techMeaning": "「アンタ、部外者でしょ！」とプログラムの門番に追い返されている状態",
-        "explanation": "鍵（パスワードや権限）が間違っている時に発生。自分のパソコンなのに拒否されると、まるで実家で鍵を替えられたような疎外感を味わえます。",
-        "usageContext": "片思いの相手にLINEをブロックされた時",
-        "usageExample": "I tried to call her, but access denied.",
-        "usageExampleTranslation": "彼女に電話しようとしたけど、アクセス拒否（着信拒否）されたわ。",
-        "usagePunchline": "401 Unauthorized",
-        "usagePunchlineTranslation": "君にその権利はない（未認証）"
-    },
-    {
         "targetWord": "Stack",
         "errorMessage": "Stack Overflow Error",
         "messageTranslation": "スタック・オーバーフロー（メモリの積み上げ限界突破）",
