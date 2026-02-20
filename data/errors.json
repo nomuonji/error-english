@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Gateway",
-        "errorMessage": "502 Bad Gateway",
-        "messageTranslation": "不正なゲートウェイ（中継地点の不具合）",
-        "generalMeaning": "【名】出入り口、門、通路",
-        "generalExample": "The gateway to success (成功への入り口)",
-        "techMeaning": "伝言を頼んだ中間管理職が、やる気をなくして返事をしなくなった状態",
-        "explanation": "サーバー同士が連携する時、間に入ったやつが「あー、前のやつから返事こないから俺も知らね」と投げ出しています。だいたいリロードすれば直る（と信じたい）。",
-        "usageContext": "お母さんに「お父さんに聞いて」と言われて、お父さんがテレビに夢中で無視してきた時",
-        "usageExample": "My dad is currently a bad gateway.",
-        "usageExampleTranslation": "今、うちの親父はバッド・ゲートウェイ状態（話が通じない）だわ。",
-        "usagePunchline": "504 Gateway Timeout",
-        "usagePunchlineTranslation": "返事がない。ただの屍のようだ。"
-    },
-    {
         "targetWord": "Host",
         "errorMessage": "Unknown Host Exception",
         "messageTranslation": "不明なホスト例外（接続先が見つかりません）",

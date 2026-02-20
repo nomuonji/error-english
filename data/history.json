@@ -257,5 +257,6 @@
     "Nested",
     "Violation",
     "Access",
-    "Stack"
+    "Stack",
+    "Gateway"
 ]
