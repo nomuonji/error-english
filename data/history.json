@@ -258,5 +258,6 @@
     "Violation",
     "Access",
     "Stack",
-    "Gateway"
+    "Gateway",
+    "Host"
 ]

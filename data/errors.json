@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Host",
-        "errorMessage": "Unknown Host Exception",
-        "messageTranslation": "不明なホスト例外（接続先が見つかりません）",
-        "generalMeaning": "【名】主催者、宿主、（ネットワーク上の）コンピュータ",
-        "generalExample": "The host of the party (パーティーの主催者)",
-        "techMeaning": "「そんな人、うちの名簿に載ってませんけど？」と住所録（DNS）に突き放された状態",
-        "explanation": "URLの打ち間違いが主な原因。「Google.com」を「Gooogle.com」と書くと、プログラムは「誰その人！？知らない！」と叫びます。",
-        "usageContext": "合コンで全然知らない名前の人が来ると聞かされた時",
-        "usageExample": "Who is he? Unknown host for me.",
-        "usageExampleTranslation": "彼って誰？ 私の検索リストには載ってないんだけど。",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "そんなイケメン、この世に存在しません"
-    },
-    {
         "targetWord": "Reset",
         "errorMessage": "Connection Reset by Peer",
         "messageTranslation": "接続が相手側によってリセットされました",
