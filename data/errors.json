@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Zombie",
-        "errorMessage": "Warning: Defunct process (zombie) detected",
-        "messageTranslation": "警告：無効なプロセス（ゾンビ）が検出されました",
-        "generalMeaning": "【名】ゾンビ、死体、生気のない人",
-        "generalExample": "He looked like a zombie after the exam. (試験の後、彼はゾンビのようだった。)",
-        "techMeaning": "死んでるはずなのに、名簿（プロセスリスト）から名前が消えずに残っている「未練たらたらな地縛霊」状態",
-        "explanation": "親プロセスが「終わったよ！」という報告を受け取ってくれないせいで、成仏できずにメモリを占拠している幽霊です。killコマンドで直接殺せないのが厄介。親を叩き起こして手続きさせるか、システムごと再起動しましょう。",
-        "usageContext": "別れた恋人がSNSの足跡をずっとつけてくる時",
-        "usageExample": "My ex is being a total zombie, still checking my stories.",
-        "usageExampleTranslation": "元カレが完全にゾンビ化してて、まだ私のストーリーをチェックしてくるんだよね。",
-        "usagePunchline": "Response: 410 Gone",
-        "usagePunchlineTranslation": "返信：もう私は消えた存在です（消去済み）"
-    },
-    {
         "targetWord": "Lazy",
         "errorMessage": "LazyInitializationException: could not initialize proxy",
         "messageTranslation": "遅延初期化例外：プロキシを初期化できませんでした",

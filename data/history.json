@@ -260,5 +260,6 @@
     "Stack",
     "Gateway",
     "Host",
-    "Reset"
+    "Reset",
+    "Zombie"
 ]
