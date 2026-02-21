@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reset",
-        "errorMessage": "Connection Reset by Peer",
-        "messageTranslation": "接続が相手側によってリセットされました",
-        "generalMeaning": "【動】リセットする、元の状態に戻す、再設定する",
-        "generalExample": "Reset the password (パスワードを再設定する)",
-        "techMeaning": "楽しくおしゃべりしていたのに、相手がいきなり無言で電話をガチャン！と切った状態",
-        "explanation": "通信相手（Peer）が何らかの理由で怒って（または壊れて）強制終了した時に出ます。こちらとしては「えっ、今いいところだったのに…」という切ない気持ちになります。",
-        "usageContext": "デートの誘いをした瞬間に、相手がSNSのアカウントを消した時",
-        "usageExample": "Our relationship was reset by peer.",
-        "usageExampleTranslation": "僕たちの関係、相手によって強制終了（リセット）されちゃった。",
-        "usagePunchline": "410 Gone",
-        "usagePunchlineTranslation": "もう、どこにもいないよ（消滅）"
-    },
-    {
         "targetWord": "Zombie",
         "errorMessage": "Warning: Defunct process (zombie) detected",
         "messageTranslation": "警告：無効なプロセス（ゾンビ）が検出されました",
