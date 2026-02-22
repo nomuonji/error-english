@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Lazy",
-        "errorMessage": "LazyInitializationException: could not initialize proxy",
-        "messageTranslation": "遅延初期化例外：プロキシを初期化できませんでした",
-        "generalMeaning": "【形】怠惰な、怠けた、のろのろした",
-        "generalExample": "A lazy afternoon. (のんびりした午後。)",
-        "techMeaning": "「必要になるまで絶対に動かない」という夏休みの宿題を最終日にやるスタイル",
-        "explanation": "効率化のために「使う直前まで準備しない」という戦略をとった結果、いざ必要になった時に接続が切れていて「あ、準備間に合いませんでしたｗ」と逆ギレされるエラーです。計画性が大事なのはプログラムも人間も同じですね。",
-        "usageContext": "デートの準備を直前までサボって、相手が家に来た時にまだパジャマな時",
-        "usageExample": "I was too lazy to prep, so I'm still in my pajamas!",
-        "usageExampleTranslation": "準備をレイジーに（サボり）すぎて、まだパジャマなんだけど！",
-        "usagePunchline": "Partner: 504 Gateway Timeout",
-        "usagePunchlineTranslation": "相方：時間切れ。もう待てねえ（ゲートウェイ・タイムアウト）"
-    },
-    {
         "targetWord": "Dirty",
         "errorMessage": "Error: Working tree has dirty changes",
         "messageTranslation": "エラー：ワーキングツリーに保存されていない変更（汚れ）があります",

@@ -261,5 +261,6 @@
     "Gateway",
     "Host",
     "Reset",
-    "Zombie"
+    "Zombie",
+    "Lazy"
 ]
