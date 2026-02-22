@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dirty",
-        "errorMessage": "Error: Working tree has dirty changes",
-        "messageTranslation": "エラー：ワーキングツリーに保存されていない変更（汚れ）があります",
-        "generalMeaning": "【形】汚い、汚れた、不正な",
-        "generalExample": "Dirty laundry. (洗濯物。)",
-        "techMeaning": "保存や片付け（コミット）がされてなくて、部屋（リソース）がとっちらかっている状態",
-        "explanation": "Gitなどの管理ツールが「おい、部屋を片付けてからじゃないと次の作業はさせないぞ！」と怒っている状態です。変更したけどコミットしていないデータは、プログラム界では「汚れ」扱い。潔癖症なGitさんに従い、一旦整理（stash）しましょう。",
-        "usageContext": "部屋が汚すぎて、友達を家に呼べない（マージできない）時",
-        "usageExample": "I can't host the party yet, my room is still dirty.",
-        "usageExampleTranslation": "まだパーティーは無理、部屋がまだDirty（片付いてない）なんだ。",
-        "usagePunchline": "Friend: 400 Bad Request",
-        "usagePunchlineTranslation": "友人：要求がひどすぎる（まずは片付けろ）"
-    },
-    {
         "targetWord": "Headless",
         "errorMessage": "Exception: GraphicsEnvironment is headless",
         "messageTranslation": "例外：グラフィックス環境がヘッドレス（画面なし）です",
