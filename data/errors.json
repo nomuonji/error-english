@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Headless",
-        "errorMessage": "Exception: GraphicsEnvironment is headless",
-        "messageTranslation": "例外：グラフィックス環境がヘッドレス（画面なし）です",
-        "generalMeaning": "【形】頭のない、指導者のいない",
-        "generalExample": "A headless statue. (頭部のない像。)",
-        "techMeaning": "体（本体）はあるけど顔（画面・UI）がない状態。「お前の顔が見たい」と言われても物理的に無理な状態",
-        "explanation": "サーバーなどの「顔が必要ない場所」で動いているプログラムに、急に「ボタンを表示しろ」とか「ウィンドウを出せ」と無茶振りをすると発生します。画面がないのに画面を求めた、あなたの罪です。ブラウザを画面なしで爆速で動かす時などによく使われます。",
-        "usageContext": "寝起きすぎて人前に顔を出せない（カメラをオフにしたい）Web会議",
-        "usageExample": "I'm attending the meeting headless today because I just woke up.",
-        "usageExampleTranslation": "寝起きだから、今日はヘッドレス（画面オフ）で会議に出るわ。",
-        "usagePunchline": "Boss: 406 Not Acceptable",
-        "usagePunchlineTranslation": "上司：その姿は受理できません（お断り）"
-    },
-    {
         "targetWord": "Flaky",
         "errorMessage": "Build failed: Flaky test detected in suite",
         "messageTranslation": "ビルド失敗：スイート内で不安定（フレーキー）なテストが検出されました",
