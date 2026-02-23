@@ -266,5 +266,6 @@
     "Dirty",
     "Headless",
     "Flaky",
-    "Unrecognized"
+    "Unrecognized",
+    "Ignored"
 ]

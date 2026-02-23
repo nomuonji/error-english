@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Ignored",
-        "errorMessage": "Warning: setting 'color' was ignored",
-        "messageTranslation": "警告：設定 'color' は無視されました",
-        "generalMeaning": "【形】無視された、軽視された、知らんぷりされた",
-        "generalExample": "He felt ignored by his teammates. (彼はチームメイトから無視されていると感じた。)",
-        "techMeaning": "プログラムによる「既読スルー」。命令は届いているけれど、何らかの理由で「今は無理」と勝手に判断された状態。",
-        "explanation": "エラーではないのでプログラムは動きますが、こちらの要望はガン無視。設定の書き場所が間違っているか、別の設定と喧嘩している可能性大です。",
-        "usageContext": "勇気を出して送ったLINEが既読のまま3日過ぎた時",
-        "usageExample": "My message was completely ignored...",
-        "usageExampleTranslation": "僕のメッセージ、完全にスルーされたよ…",
-        "usagePunchline": "System: Status 204 No Content",
-        "usagePunchlineTranslation": "システム：返信すべきコンテンツはありません（虚無）"
-    },
-    {
         "targetWord": "Remote",
         "errorMessage": "Remote host closed connection",
         "messageTranslation": "リモートホストによって接続が切断されました",
