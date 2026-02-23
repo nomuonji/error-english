@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Flaky",
-        "errorMessage": "Build failed: Flaky test detected in suite",
-        "messageTranslation": "ビルド失敗：スイート内で不安定（フレーキー）なテストが検出されました",
-        "generalMeaning": "【形】薄片の、(口語で)風変わりな、気まぐれな",
-        "generalExample": "He is a flaky person. (彼は気まぐれな人だ。)",
-        "techMeaning": "さっきは成功したのに、今は失敗する。気分屋で信用できない、メンヘラ気味なテスト結果",
-        "explanation": "プログラムに何も変更を加えていないのに、動かすごとに「成功！」と言ったり「無理…」と言ったりする、エンジニアが最も嫌う嘘つきなエラーです。原因はタイミングの問題やネットワークの気まぐれ。根気強く付き合うしかありません。",
-        "usageContext": "「何食べたい？」に対して「なんでもいい」と言ったのに、提案を全部却下される時",
-        "usageExample": "My girlfriend is being so flaky about dinner tonight.",
-        "usageExampleTranslation": "今日の夕食について、彼女がすごくフレーキー（気分屋）なんだよね。",
-        "usagePunchline": "Boyfriend: 502 Bad Gateway",
-        "usagePunchlineTranslation": "彼氏：機嫌が悪すぎて会話が成立しません（不正なゲートウェイ）"
-    },
-    {
         "targetWord": "Unrecognized",
         "errorMessage": "Unrecognized command: 'pytonh'",
         "messageTranslation": "認識されないコマンドです: 'pytonh'",
