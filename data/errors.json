@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unrecognized",
-        "errorMessage": "Unrecognized command: 'pytonh'",
-        "messageTranslation": "認識されないコマンドです: 'pytonh'",
-        "generalMeaning": "【形】認識されていない、見覚えのない、認められていない",
-        "generalExample": "An unrecognized genius (まだ世間に認められていない天才)",
-        "techMeaning": "プログラムが初対面のふりをしている状態。「え、誰？アポなしの訪問は困ります」と門前払いされています。",
-        "explanation": "原因の9割はタイピングミス。プログラムは融通が利かないので、1文字でも違うと『知らない人』扱いしてきます。まずはスペルを疑いましょう。",
-        "usageContext": "泥酔した友達が何を言っているか全く理解できない時",
-        "usageExample": "Everything he says is unrecognized...",
-        "usageExampleTranslation": "彼の言うことは何一つ理解できないよ…",
-        "usagePunchline": "Friend: 400 Bad Request",
-        "usagePunchlineTranslation": "友達：意味不明なリクエスト（理解不能）"
-    },
-    {
         "targetWord": "Ignored",
         "errorMessage": "Warning: setting 'color' was ignored",
         "messageTranslation": "警告：設定 'color' は無視されました",
