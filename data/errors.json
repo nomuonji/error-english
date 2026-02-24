@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Remote",
-        "errorMessage": "Remote host closed connection",
-        "messageTranslation": "リモートホストによって接続が切断されました",
-        "generalMeaning": "【形】遠く離れた、人里離れた、遠隔の",
-        "generalExample": "A remote village in the mountains (山奥の離れた村)",
-        "techMeaning": "「あっち側の世界（サーバー）」の都合で振り回されている状態。遠距離恋愛中の相手に突然電話を切られたような無力感です。",
-        "explanation": "自分のコードが正しくても、相手（サーバー）の機嫌が悪いと発生します。自分のせいじゃないと言い張れる便利なエラーでもあります。",
-        "usageContext": "デートの誘いに対して、相手から一方的にブロックされた時",
-        "usageExample": "She is acting so remote lately.",
-        "usageExampleTranslation": "最近、彼女がすごくよそよそしいんだ（遠く感じるんだ）。",
-        "usagePunchline": "Crush: Connection Reset by Peer",
-        "usagePunchlineTranslation": "好きな人：相手側からの通信強制リセット（一方的な絶交）"
-    },
-    {
         "targetWord": "Reserved",
         "errorMessage": "SyntaxError: Unexpected use of reserved word",
         "messageTranslation": "構文エラー：予約語の予期しない使用です",

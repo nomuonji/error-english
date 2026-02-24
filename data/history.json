@@ -267,5 +267,6 @@
     "Headless",
     "Flaky",
     "Unrecognized",
-    "Ignored"
+    "Ignored",
+    "Remote"
 ]
