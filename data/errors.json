@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Partial",
-        "errorMessage": "206 Partial Content",
-        "messageTranslation": "部分的なコンテンツです",
-        "generalMeaning": "【形】部分的な、不完全な、～が大好き（be partial to）",
-        "generalExample": "A partial solar eclipse (部分日食)",
-        "techMeaning": "「全部送るのは面倒だから、とりあえず今出せる分だけ持ってきたよ！」という、ピザの配達員みたいな中途半端な状態。",
-        "explanation": "動画再生など、データが巨大すぎる時に細切れにして届ける優しい技術。決して「手抜き」ではなく「気遣い」の結果です。",
-        "usageContext": "宿題を半分しかやってこなかったのに、堂々と提出する時",
-        "usageExample": "I finished a partial report.",
-        "usageExampleTranslation": "レポートを（一部だけ）書き上げました。",
-        "usagePunchline": "Teacher: 206 Partial Content",
-        "usagePunchlineTranslation": "先生：部分的な成功（やり直し！）"
-    },
-    {
         "targetWord": "Anonymous",
         "errorMessage": "Anonymous caller does not have permission",
         "messageTranslation": "匿名の呼び出し元には権限がありません",
