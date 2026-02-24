@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Reserved",
-        "errorMessage": "SyntaxError: Unexpected use of reserved word",
-        "messageTranslation": "構文エラー：予約語の予期しない使用です",
-        "generalMeaning": "【形】予約済みの、取っておいた、内気な",
-        "generalExample": "This table is reserved for the VIP. (このテーブルはVIPのために予約されています。)",
-        "techMeaning": "プログラミング界の「予約席」。王様（プログラミング言語）が使うための言葉を、平民（変数名）が勝手に名乗ろうとして怒られている状態。",
-        "explanation": "if, class, returnなどは言語が自分用にキープしています。便利そうだからといって変数名に使おうとすると、不敬罪（エラー）で即刻処刑されます。",
-        "usageContext": "合コンで勝手に上座に座って、幹事に怒られた時",
-        "usageExample": "Sorry, is this seat reserved?",
-        "usageExampleTranslation": "すみません、この席は予約済みですか？",
-        "usagePunchline": "Staff: 403 Forbidden",
-        "usagePunchlineTranslation": "店員：アクセス拒否（お前の席じゃねぇ）"
-    },
-    {
         "targetWord": "Partial",
         "errorMessage": "206 Partial Content",
         "messageTranslation": "部分的なコンテンツです",

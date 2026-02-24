@@ -268,5 +268,6 @@
     "Flaky",
     "Unrecognized",
     "Ignored",
-    "Remote"
+    "Remote",
+    "Reserved"
 ]
