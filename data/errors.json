@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Anonymous",
-        "errorMessage": "Anonymous caller does not have permission",
-        "messageTranslation": "匿名の呼び出し元には権限がありません",
-        "generalMeaning": "【形】匿名の、名前を隠した、作者不明の",
-        "generalExample": "An anonymous tip to the police (警察への匿名通報)",
-        "techMeaning": "「名無しの権兵衛」お断り。誰だか名乗らない怪しい奴は通さないという状態。",
-        "explanation": "ネットの世界では「匿名」は自由の象徴ですが、プログラムの世界では「お前誰やねん」と門前払いされる原因に。まずはログインして名乗りましょう。",
-        "usageContext": "合コンやパーティーで、名前も名乗らずにいきなり核心を突いた質問をしてスベった時",
-        "usageExample": "He wants to remain anonymous.",
-        "usageExampleTranslation": "彼は匿名のままでいたがっている。",
-        "usagePunchline": "Waiter: 401 Unauthorized",
-        "usagePunchlineTranslation": "店員：お引き取りください（認証が必要です）"
-    },
-    {
         "targetWord": "Implicit",
         "errorMessage": "Implicit conversion from 'String' to 'Int' is not allowed",
         "messageTranslation": "文字列型から数値型への暗黙的な変換は許可されていません",

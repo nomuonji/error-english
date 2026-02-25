@@ -270,5 +270,6 @@
     "Ignored",
     "Remote",
     "Reserved",
-    "Partial"
+    "Partial",
+    "Anonymous"
 ]
