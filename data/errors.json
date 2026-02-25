@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Implicit",
-        "errorMessage": "Implicit conversion from 'String' to 'Int' is not allowed",
-        "messageTranslation": "文字列型から数値型への暗黙的な変換は許可されていません",
-        "generalMeaning": "【形】暗黙の、言わずもがなの、絶対的な",
-        "generalExample": "Implicit trust (絶対的な信頼)",
-        "techMeaning": "「言わなくても、空気読んでやってよ」という甘えをプログラムに拒絶された状態。",
-        "explanation": "「数字の100も、文字の'100'も、大体同じでしょ？」という初心者の淡い期待を、厳格なコンパイラがバッサリ切り捨てます。ちゃんと指示しましょう。",
-        "usageContext": "記念日のプレゼントを期待して「別に何もいらないよ（察せよ）」と言ったのに、本当に何もなくてキレそうな時",
-        "usageExample": "We had an implicit agreement.",
-        "usageExampleTranslation": "私たちには暗黙の了解があったはずだ。",
-        "usagePunchline": "Partner: 400 Bad Request",
-        "usagePunchlineTranslation": "パートナー：仕様書（言葉）で言ってくれないと分かりません"
-    },
-    {
         "targetWord": "Race",
         "errorMessage": "Race condition detected in thread execution",
         "messageTranslation": "スレッド実行中にレースコンディション（競合状態）が検出されました",
