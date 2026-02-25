@@ -272,5 +272,6 @@
     "Reserved",
     "Partial",
     "Anonymous",
-    "Implicit"
+    "Implicit",
+    "Race"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Race",
-        "errorMessage": "Race condition detected in thread execution",
-        "messageTranslation": "スレッド実行中にレースコンディション（競合状態）が検出されました",
-        "generalMeaning": "【名】競争、人種 【自】急ぐ、競争する",
-        "generalExample": "A close race (大接戦)",
-        "techMeaning": "データの「椅子取りゲーム」。複数の処理が同時に一つのデータを奪い合ってパニックになっている状態。",
-        "explanation": "AさんとBさんが同時に一つの変数を書き換えようとして、運が良い（速い）方が勝つ。結果が毎回変わる、プログラマが最も嫌う「再現性のないバグ」の正体です。",
-        "usageContext": "最後の一つになった唐揚げを、食卓の全員が同時に箸で狙いに行った時",
-        "usageExample": "It was a close race.",
-        "usageExampleTranslation": "それは接戦だった。",
-        "usagePunchline": "Mom: 409 Conflict",
-        "usagePunchlineTranslation": "母：喧嘩はやめなさい（リソースの競合）"
-    },
-    {
         "targetWord": "Silent",
         "errorMessage": "The process failed with a silent error",
         "messageTranslation": "プロセスがサイレントエラー（無言の失敗）で終了しました",
