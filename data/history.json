@@ -275,5 +275,6 @@
     "Implicit",
     "Race",
     "Silent",
-    "Greedy"
+    "Greedy",
+    "Throw"
 ]

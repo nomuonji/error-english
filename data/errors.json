@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Throw",
-        "errorMessage": "Uncaught Error: Something went wrong was thrown",
-        "messageTranslation": "未キャッチのエラー：エラーがスローされました（投げられました）",
-        "generalMeaning": "【動】投げる、投げ込む",
-        "generalExample": "Throw a ball (ボールを投げる)",
-        "techMeaning": "エラーという名の手榴弾を『はい、これ君の問題ね！』と誰かに投げつけること。",
-        "explanation": "投げっぱなしは厳禁。誰かが Catch（受け止める）してくれないと、システム全体が爆発（クラッシュ）しちゃうよ。",
-        "usageContext": "面倒な仕事を同僚に丸投げするとき",
-        "usageExample": "I’ll throw this task to you.",
-        "usageExampleTranslation": "この仕事、君に投げとくね。",
-        "usagePunchline": "Colleague: 503 Service Unavailable",
-        "usagePunchlineTranslation": "同僚：ただいまサービスを利用できません（キャパオーバー）"
-    },
-    {
         "targetWord": "Infinite",
         "errorMessage": "Infinite loop detected",
         "messageTranslation": "無限ループが検出されました",
