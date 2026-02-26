@@ -274,5 +274,6 @@
     "Anonymous",
     "Implicit",
     "Race",
-    "Silent"
+    "Silent",
+    "Greedy"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Greedy",
-        "errorMessage": "RegExp quantifier is too greedy",
-        "messageTranslation": "正規表現の量指定子が強欲すぎます",
-        "generalMeaning": "【形】強欲な、食い意地の張った、どん欲な",
-        "generalExample": "A greedy child (欲張りな子供)",
-        "techMeaning": "欲張りすぎて、マッチするものを全部自分のものにしようとする食いしん坊な検索状態。",
-        "explanation": "文字列を検索する時、本来なら少しでいいのに、端から端まで全部飲み込もうとする設定のこと。そのせいで意図しない長い範囲がマッチしてしまいます。「足るを知る」ことが大切です。",
-        "usageContext": "食べ放題のビュッフェで、後ろの人のことを考えずに高級な肉を全部皿に盛る友人を見た時",
-        "usageExample": "Don't be so greedy.",
-        "usageExampleTranslation": "そんなにガツガツするなよ。",
-        "usagePunchline": "Server: Out of Memory",
-        "usagePunchlineTranslation": "サーバー：お腹いっぱいでもう入りません"
-    },
-    {
         "targetWord": "Throw",
         "errorMessage": "Uncaught Error: Something went wrong was thrown",
         "messageTranslation": "未キャッチのエラー：エラーがスローされました（投げられました）",
