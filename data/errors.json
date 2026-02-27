@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Logic",
-        "errorMessage": "Logic error in calculation",
-        "messageTranslation": "計算における論理エラー",
-        "generalMeaning": "【名】論理、理屈、筋道",
-        "generalExample": "I don't follow your logic. (君の理屈は理解できない)",
-        "techMeaning": "文法は正しいのに、中身が『1+1=3』になってるような、プログラムの盛大な勘違い。",
-        "explanation": "エラーメッセージすら出ないのに結果が変、という一番厄介なやつ。デバッグの迷宮へようこそ。",
-        "usageContext": "浮気の言い訳が支離滅裂なとき",
-        "usageExample": "Your logic is completely broken.",
-        "usageExampleTranslation": "お前の理屈、完全に破綻してるぞ。",
-        "usagePunchline": "Girlfriend: 400 Bad Request",
-        "usagePunchlineTranslation": "彼女：不正なリクエストです（話になりません）"
-    },
-    {
         "targetWord": "Catch",
         "errorMessage": "Try-Catch block expected",
         "messageTranslation": "Try-Catchブロックが必要です",
