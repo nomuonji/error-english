@@ -277,5 +277,6 @@
     "Silent",
     "Greedy",
     "Throw",
-    "Infinite"
+    "Infinite",
+    "Heap"
 ]

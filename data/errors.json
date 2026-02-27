@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Heap",
-        "errorMessage": "FATAL ERROR: Heap out of memory",
-        "messageTranslation": "致命的なエラー：ヒープメモリが不足しています",
-        "generalMeaning": "【名】積み重なったもの、（乱雑な）山",
-        "generalExample": "A heap of clothes (服の山)",
-        "techMeaning": "プログラムが自由に使える『共有の物置』。片付けを忘れるとゴミが溜まってパンクする。",
-        "explanation": "メモリリーク（物忘れ）が積み重なると、この『山』が崩れてシステムが死にます。プログラムにも断捨離が必要。",
-        "usageContext": "ゴミ屋敷の一歩手前な自分の部屋",
-        "usageExample": "Look at this heap of trash!",
-        "usageExampleTranslation": "このゴミの山を見てよ！",
-        "usagePunchline": "Mother: 507 Insufficient Storage",
-        "usagePunchlineTranslation": "母：ストレージ不足です（もう入りません）"
-    },
-    {
         "targetWord": "Logic",
         "errorMessage": "Logic error in calculation",
         "messageTranslation": "計算における論理エラー",
