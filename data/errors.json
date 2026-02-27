@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Infinite",
-        "errorMessage": "Infinite loop detected",
-        "messageTranslation": "無限ループが検出されました",
-        "generalMeaning": "【形】無限の、終わりのない",
-        "generalExample": "Infinite possibilities (無限の可能性)",
-        "techMeaning": "出口のない迷路。プログラムが『俺のターン！』を永遠に繰り返して、一生自分の番が回ってこない状態。",
-        "explanation": "PCのファンが爆音で回りだしたら、こいつが犯人。Ctrl+Cという名の救済を求めるべし。",
-        "usageContext": "校長先生の話が全然終わらないとき",
-        "usageExample": "The principal's speech is infinite.",
-        "usageExampleTranslation": "校長の話、無限に続いてるんだけど。",
-        "usagePunchline": "Student: 408 Request Timeout",
-        "usagePunchlineTranslation": "生徒：リクエストタイムアウトです（もう聞き取れません）"
-    },
-    {
         "targetWord": "Heap",
         "errorMessage": "FATAL ERROR: Heap out of memory",
         "messageTranslation": "致命的なエラー：ヒープメモリが不足しています",
