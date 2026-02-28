@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Premature",
-        "errorMessage": "Premature end of JPEG file",
-        "messageTranslation": "JPEGファイルの読み込みが早すぎる終了を迎えました（データが途切れています）。",
-        "generalMeaning": "【形】早すぎる、時期尚早な",
-        "generalExample": "A premature decision (早まった決定)",
-        "techMeaning": "プログラムが「話の途中で悪いんだけど、もう帰るわ！」と突然失踪してしまった状態。",
-        "explanation": "データが最後まで届いていないのに、無理やり終わらされた悲しいエラー。ダウンロードに失敗した時によく出ます。",
-        "usageContext": "映画のクライマックスのいいところで、突然CMが入った時。",
-        "usageExample": "The meeting came to a premature end.",
-        "usageExampleTranslation": "会議は予定より早く、中途半端に終わってしまった。",
-        "usagePunchline": "Connection: close",
-        "usagePunchlineTranslation": "通信終了（まだ終わってないんですけどー！）"
-    },
-    {
         "targetWord": "Underflow",
         "errorMessage": "Uncaught RangeError: Buffer underflow",
         "messageTranslation": "キャッチされていない範囲エラー：バッファ・アンダーフロー",
