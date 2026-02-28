@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Insufficient",
-        "errorMessage": "ERROR: Insufficient memory to continue the execution of the program.",
-        "messageTranslation": "エラー：プログラムの実行を継続するためのメモリが不足しています。",
-        "generalMeaning": "【形】不十分な、足りない",
-        "generalExample": "Insufficient sleep (睡眠不足)",
-        "techMeaning": "PCが「お腹空きすぎて、もう一歩も動けません…」と座り込んでデモを起こしている状態。",
-        "explanation": "PCの作業机（メモリ）がいっぱい。いらないソフトを閉じるか、新しいメモリを買って物理で殴るしかありません。",
-        "usageContext": "給料日前の財布の中身を見たとき。",
-        "usageExample": "My budget is insufficient for a new PC.",
-        "usageExampleTranslation": "新しいPCを買うには予算が足りないよ。",
-        "usagePunchline": "402 Payment Required",
-        "usagePunchlineTranslation": "支払いが必要です（金、出しな！）"
-    },
-    {
         "targetWord": "Premature",
         "errorMessage": "Premature end of JPEG file",
         "messageTranslation": "JPEGファイルの読み込みが早すぎる終了を迎えました（データが途切れています）。",
