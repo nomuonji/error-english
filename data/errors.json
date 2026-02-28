@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Catch",
-        "errorMessage": "Try-Catch block expected",
-        "messageTranslation": "Try-Catchブロックが必要です",
-        "generalMeaning": "【動】捕まえる、受け止める",
-        "generalExample": "Catch a cold (風邪を引く)",
-        "techMeaning": "投げられたエラーを『おっと危ない！』と優しくキャッチして、事なきを得る守備範囲の広さ。",
-        "explanation": "Try（やってみる）したら Catch（受け止める）するのがエンジニアの優しさ。エラーを無視するのは、飛んできたボールを顔面で受けるのと同じ。",
-        "usageContext": "飲み会でスベった同僚のギャグをフォローするとき",
-        "usageExample": "Don't worry, I'll catch you.",
-        "usageExampleTranslation": "心配すんな、俺が拾ってやるよ（フォローするよ）。",
-        "usagePunchline": "Boss: 202 Accepted",
-        "usagePunchlineTranslation": "上司：受理されました（セーフ！）"
-    },
-    {
         "targetWord": "Insufficient",
         "errorMessage": "ERROR: Insufficient memory to continue the execution of the program.",
         "messageTranslation": "エラー：プログラムの実行を継続するためのメモリが不足しています。",
