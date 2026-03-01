@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Underflow",
-        "errorMessage": "Uncaught RangeError: Buffer underflow",
-        "messageTranslation": "キャッチされていない範囲エラー：バッファ・アンダーフロー",
-        "generalMeaning": "【名】（数学・IT）下限割れ、流出不足",
-        "generalExample": "Arithmetic underflow (演算下限割れ)",
-        "techMeaning": "「もっとデータをよこせ！」と口を開けて待っているのに、一粒も飛んでこなくて餓死寸前の状態。",
-        "explanation": "Overflow（溢れる）の逆。バケツの底に穴が空いていて、いくら注いでも空っぽなせいで計算がバグっています。",
-        "usageContext": "食べ放題に行ったのに、料理が一つも運ばれてこなくてお皿がずっと空の時。",
-        "usageExample": "This project is suffering from an underflow of resources.",
-        "usageExampleTranslation": "このプロジェクトはリソースが全然足りてなくてカツカツだよ。",
-        "usagePunchline": "Content-Length: 0",
-        "usagePunchlineTranslation": "中身がゼロです（空っぽだよ！）"
-    },
-    {
         "targetWord": "Fragmented",
         "errorMessage": "Disk drive is heavily fragmented",
         "messageTranslation": "ディスクドライブが激しく断片化されています。",
