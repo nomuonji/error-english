@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unstable",
-        "errorMessage": "Warning: The software is in an unstable state.",
-        "messageTranslation": "警告：ソフトウェアが不安定な状態にあります。",
-        "generalMeaning": "【形】不安定な、変わりやすい",
-        "generalExample": "Unstable weather (不安定な天気)",
-        "techMeaning": "プログラムが「今日はなんかダメな気がする…触らないで…」と情緒不安定になって、いつ爆発するか分からない状態。",
-        "explanation": "一応動いてはいるけれど、保証はできない。開発中の最新版を無理やり動かそうとすると出る不吉な予感です。",
-        "usageContext": "絶叫マシンのネジが一本外れているのを見つけてしまった時の安心感。",
-        "usageExample": "His internet connection is very unstable today.",
-        "usageExampleTranslation": "彼のネット接続、今日はめちゃくちゃ不安定だね。",
-        "usagePunchline": "Build: Failed",
-        "usagePunchlineTranslation": "ビルド失敗（はい、心折れましたー！）"
-    },
-    {
         "targetWord": "Indentation",
         "errorMessage": "IndentationError: expected an indented block",
         "messageTranslation": "インデントエラー：字下げされたブロックが必要です",
