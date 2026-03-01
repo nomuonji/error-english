@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Fragmented",
-        "errorMessage": "Disk drive is heavily fragmented",
-        "messageTranslation": "ディスクドライブが激しく断片化されています。",
-        "generalMeaning": "【形】バラバラになった、断片化された",
-        "generalExample": "A fragmented society (バラバラになった社会)",
-        "techMeaning": "部屋の中に書類をバラまきすぎて、どこに何があるか本人も分からなくなっているゴミ屋敷状態。",
-        "explanation": "データが飛び飛び。PCはあっちの破片、こっちの破片を集めるのに必死で、動作がめちゃくちゃ遅くなっています。",
-        "usageContext": "飲み会で財布と鍵とスマホを、それぞれ別の居酒屋に忘れてきたことに気づいた時。",
-        "usageExample": "My memory of last night is fragmented.",
-        "usageExampleTranslation": "昨夜の記憶が断片的にしかないんだ（バラバラなんだ）。",
-        "usagePunchline": "206 Partial Content",
-        "usagePunchlineTranslation": "部分的なコンテンツ（全部揃ってません！）"
-    },
-    {
         "targetWord": "Unstable",
         "errorMessage": "Warning: The software is in an unstable state.",
         "messageTranslation": "警告：ソフトウェアが不安定な状態にあります。",
