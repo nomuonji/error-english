@@ -287,5 +287,6 @@
     "Fragmented",
     "Unstable",
     "Indentation",
-    "Division"
+    "Division",
+    "Maximum"
 ]

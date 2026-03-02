@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Maximum",
-        "errorMessage": "RangeError: Maximum call stack size exceeded",
-        "messageTranslation": "範囲エラー：最大コールスタックサイズを超えました",
-        "generalMeaning": "【名】最大、最大限、最高点 【形】最大の",
-        "generalExample": "The maximum speed limit is 60km/h. (最高速度制限は60キロです。)",
-        "techMeaning": "自分のしっぽを追いかけて回りすぎた犬の状態。自分を呼び出しすぎて脳みそ（メモリ）がパンクした叫び。",
-        "explanation": "「再帰」というテクニックで、終わりの条件を書き忘れるとこうなります。PCが「もう限界！これ以上は入らない！」とギブアップしているので、ループの出口をしっかり作ってあげて。",
-        "usageContext": "わんこそばで、もう一杯も入らないのに次を入れられそうな時",
-        "usageExample": "I've reached my maximum capacity...",
-        "usageExampleTranslation": "もう、私の最大容量（限界）を超えちゃったよ…",
-        "usagePunchline": "Waiter: 508 Loop Detected",
-        "usagePunchlineTranslation": "店員：無限ループを検出しました（もう食べられません）"
-    },
-    {
         "targetWord": "Busy",
         "errorMessage": "Device or resource busy",
         "messageTranslation": "デバイスまたはリソースがビジー（使用中）状態です",
