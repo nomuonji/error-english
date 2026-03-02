@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Division",
-        "errorMessage": "ZeroDivisionError: division by zero",
-        "messageTranslation": "ゼロ除算エラー：0で割ることはできません",
-        "generalMeaning": "【名】分割、除算、割り算、部門",
-        "generalExample": "The division of labor is important. (分業は重要です。)",
-        "techMeaning": "算数で教わった禁じ手「0で割る」を強行して、PCが「宇宙の法則が乱れる！」とパニックになった状態。",
-        "explanation": "平均値や割り勘のプログラムで、分母が0になると発生します。データが空っぽの時に計算しようとしていないか、if文で「0じゃないよね？」と優しく確認してあげましょう。",
-        "usageContext": "飲み会の会計で、参加者が0人の状態で割り勘ボタンを連打している時",
-        "usageExample": "The calculator says 'Division by zero'!",
-        "usageExampleTranslation": "電卓が『0で割れません』って言ってるよ！",
-        "usagePunchline": "Friend: 400 Bad Request",
-        "usagePunchlineTranslation": "友達：リクエストが不正です（そもそも誰が払うの？）"
-    },
-    {
         "targetWord": "Maximum",
         "errorMessage": "RangeError: Maximum call stack size exceeded",
         "messageTranslation": "範囲エラー：最大コールスタックサイズを超えました",
