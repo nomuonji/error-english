@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Indentation",
-        "errorMessage": "IndentationError: expected an indented block",
-        "messageTranslation": "インデントエラー：字下げされたブロックが必要です",
-        "generalMeaning": "【名】（文章の行頭の）字下げ、インデント",
-        "generalExample": "Please check the indentation of this paragraph. (この段落の字下げを確認してください。)",
-        "techMeaning": "PCが「右にならえ！」と潔癖症を発動している状態。1スペースのズレも許さない。",
-        "explanation": "Pythonなどの言語で、プログラムの「まとまり」を表現するためのルール。スペースとタブを混ぜて使うと、PCが混乱して「どっちかにして！」とストライキを起こします。見た目を整えるのが解決の近道。",
-        "usageContext": "ダンスのフォーメーションで、自分だけ半歩ずれて立っている時",
-        "usageExample": "Wait, is my indentation okay in this lineup?",
-        "usageExampleTranslation": "待って、この列の私の立ち位置（インデント）合ってる？",
-        "usagePunchline": "Coach: 406 Not Acceptable",
-        "usagePunchlineTranslation": "コーチ：受け入れがたい（フォーメーションの乱れ）"
-    },
-    {
         "targetWord": "Division",
         "errorMessage": "ZeroDivisionError: division by zero",
         "messageTranslation": "ゼロ除算エラー：0で割ることはできません",
