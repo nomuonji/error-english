@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Signature",
-        "errorMessage": "Signature verification failed",
-        "messageTranslation": "署名の検証に失敗しました",
-        "generalMeaning": "【名】署名、サイン、特徴",
-        "generalExample": "A signature dish (看板料理、その店の特徴的な料理)",
-        "techMeaning": "関数の「顔写真付き身分証」。名前、引数の数、データ型がセットになった、その関数の固有の姿のこと。",
-        "explanation": "PCが「君が呼んでるその関数、私の知ってる本人と顔（引数の数や型）が違うんだけど！」と疑っています。関数の「顔立ち」を再確認しましょう。",
-        "usageContext": "宅配便の受け取りで、ハンコもサインも忘れて指印を迫られた時。",
-        "usageExample": "Wait, my signature is different from this one?",
-        "usageExampleTranslation": "あれ、僕のサイン、これと違ったっけ？",
-        "usagePunchline": "Delivery: 401 Unauthorized",
-        "usagePunchlineTranslation": "配達員：本人確認が取れません（認証失敗）"
-    },
-    {
         "targetWord": "Namespace",
         "errorMessage": "Namespace 'App\\Models' not found",
         "messageTranslation": "名前空間 'App\\Models' が見つかりません",
