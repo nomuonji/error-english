@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Length",
-        "errorMessage": "ValueError: Invalid length for the parameter",
-        "messageTranslation": "値エラー：パラメータの長さが無効です",
-        "generalMeaning": "【名】長さ、期間、丈",
-        "generalExample": "What is the length of this bridge? (この橋の長さはどれくらいですか？)",
-        "techMeaning": "「長すぎ！」「短すぎ！」というPCからのサイズに関する文句。",
-        "explanation": "パスワードの文字数が足りなかったり、一度に送れるデータの量を超えたりした時に出ます。PCは意外とサイズに厳しいので、相手が求める「ちょうどいい長さ」に調整してあげましょう。",
-        "usageContext": "SNSのプロフィール欄に、気合を入れて自分語りを書きすぎた時",
-        "usageExample": "The length of your bio is too much!",
-        "usageExampleTranslation": "自己紹介の長さ、盛りすぎだよ！",
-        "usagePunchline": "Server: 411 Length Required",
-        "usagePunchlineTranslation": "サーバー：適切な長さが必要です（自分語りはほどほどに）"
-    },
-    {
         "targetWord": "Signature",
         "errorMessage": "Signature verification failed",
         "messageTranslation": "署名の検証に失敗しました",
