@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Namespace",
-        "errorMessage": "Namespace 'App\\Models' not found",
-        "messageTranslation": "名前空間 'App\\Models' が見つかりません",
-        "generalMeaning": "【名】名前空間、名前が通用する範囲",
-        "generalExample": "The project uses a custom namespace. (そのプロジェクトは独自の名前空間を使用している)",
-        "techMeaning": "プログラム界の「苗字」や「住所」。同じ名前の関数がいても、誰の家の子か区別するためのエリア分け。",
-        "explanation": "「佐藤さん！」と呼んで5人振り向かないように、「東京の佐藤さん」と指定するルール。住所を間違えるとPCは迷子になります。",
-        "usageContext": "同姓同名だらけの親戚の集まりで、誰を呼んでるか分からなくなった時。",
-        "usageExample": "Which 'Sato' are you talking about? Check the namespace!",
-        "usageExampleTranslation": "どの「佐藤さん」のこと？ ちゃんと名前空間（誰の家か）を確認して！",
-        "usagePunchline": "Family: 409 Conflict",
-        "usagePunchlineTranslation": "親戚一同：名前が衝突してます（競合発生）"
-    },
-    {
         "targetWord": "Mapping",
         "errorMessage": "Result Mapping Error",
         "messageTranslation": "結果のマッピングエラー",

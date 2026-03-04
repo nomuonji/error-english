@@ -291,5 +291,6 @@
     "Maximum",
     "Busy",
     "Length",
-    "Signature"
+    "Signature",
+    "Namespace"
 ]
