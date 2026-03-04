@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Encoding",
-        "errorMessage": "Unsupported encoding detected",
-        "messageTranslation": "サポートされていないエンコーディングが検出されました",
-        "generalMeaning": "【名】符号化、暗号化",
-        "generalExample": "Video encoding settings. (動画のエンコード設定)",
-        "techMeaning": "文字をコンピュータ用の数字に変換する際の「翻訳辞書」。",
-        "explanation": "PCが「その辞書（UTF-8とか）持ってないから読めない！」とキレてます。文字化け（豆腐現象）を引き起こす最大の敵です。",
-        "usageContext": "急いで打ったメッセージが全部「おあああ」みたいな誤字の羅列になって送信された時。",
-        "usageExample": "Something is wrong with my encoding...",
-        "usageExampleTranslation": "私のエンコーディング、なんかおかしいみたい…",
-        "usagePunchline": "Friend: 406 Not Acceptable",
-        "usagePunchlineTranslation": "友人：その内容は受け入れられません（受理不可）"
-    },
-    {
         "targetWord": "Lookup",
         "errorMessage": "DNS Lookup Failure",
         "messageTranslation": "DNSルックアップ失敗",
