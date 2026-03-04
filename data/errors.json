@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mapping",
-        "errorMessage": "Result Mapping Error",
-        "messageTranslation": "結果のマッピングエラー",
-        "generalMeaning": "【名】対応付け、地図の作成、写像",
-        "generalExample": "Mapping the ocean floor. (海底の地図を作る)",
-        "techMeaning": "「こっちのデータは、あっちのこの箱に入れる」という紐付け作業。データベースの列とプログラムの変数を繋ぐ架け橋。",
-        "explanation": "データの引っ越し作業で、段ボールをどの部屋に置くか決める指示書。ここが間違っていると、キッチンに布団が届くような悲劇が起きます。",
-        "usageContext": "合コンで、幹事が決めた座席表（Mapping）がグチャグチャで気まずい空気になった時。",
-        "usageExample": "The mapping of these seats is a total disaster!",
-        "usageExampleTranslation": "この席順のマッピング、もうめちゃくちゃだよ！",
-        "usagePunchline": "Organizer: 404 Not Found",
-        "usagePunchlineTranslation": "幹事：あなたの席はありません（リソースが見つかりません）"
-    },
-    {
         "targetWord": "Encoding",
         "errorMessage": "Unsupported encoding detected",
         "messageTranslation": "サポートされていないエンコーディングが検出されました",
