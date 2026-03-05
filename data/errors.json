@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Rejected",
-        "errorMessage": "Connection rejected by host",
-        "messageTranslation": "ホストによって接続が拒否されました",
-        "generalMeaning": "【形】拒絶された、却下された、不採用の",
-        "generalExample": "His proposal was rejected. (彼の提案は却下された。)",
-        "techMeaning": "プログラムの勇気ある告白が、0.1秒で「ごめんなさい」と秒で振られた切ない状態",
-        "explanation": "「仲良くしようぜ！」とアクセスしたのに、相手のサーバーから「お断りします」と門前払いされた時に出ます。ポート番号が違うとか、相手が忙しすぎるとか、振られる理由は様々です。",
-        "usageContext": "合コンで連絡先を聞いた瞬間に既読スルーが確定した時",
-        "usageExample": "My message was rejected immediately.",
-        "usageExampleTranslation": "俺のメッセージ、即レスで拒絶（ブロック）されたわ。",
-        "usagePunchline": "401 Unauthorized",
-        "usagePunchlineTranslation": "君、そもそも恋愛対象（権限）外だから。"
-    },
-    {
         "targetWord": "Limit",
         "errorMessage": "Rate limit exceeded",
         "messageTranslation": "リクエスト制限（回数制限）を超えました",
