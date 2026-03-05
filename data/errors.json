@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mandatory",
-        "errorMessage": "Field 'username' is mandatory",
-        "messageTranslation": "ユーザー名フィールドは入力必須です",
-        "generalMeaning": "【形】強制的な、義務的な、必須の",
-        "generalExample": "A mandatory meeting (強制参加の会議)",
-        "techMeaning": "「お前、これ言わなきゃ一歩も通さないからな！」という頑固な門番のチェック",
-        "explanation": "入力フォームで『※必須』と書いてあるのに無視した時に出る怒りの声。プログラムは「空っぽ」が一番嫌いなんです。",
-        "usageContext": "飲み会で絶対に何か一品注文しないといけないルールがある時",
-        "usageExample": "Ordering a drink is mandatory at this bar.",
-        "usageExampleTranslation": "このバーではワンドリンク制が必須なんだよ。",
-        "usagePunchline": "400 Bad Request",
-        "usagePunchlineTranslation": "注文が不適切です（ルールを守れ）"
-    },
-    {
         "targetWord": "Rejected",
         "errorMessage": "Connection rejected by host",
         "messageTranslation": "ホストによって接続が拒否されました",

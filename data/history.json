@@ -295,5 +295,6 @@
     "Namespace",
     "Mapping",
     "Encoding",
-    "Lookup"
+    "Lookup",
+    "Mandatory"
 ]
