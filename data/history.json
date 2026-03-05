@@ -294,5 +294,6 @@
     "Signature",
     "Namespace",
     "Mapping",
-    "Encoding"
+    "Encoding",
+    "Lookup"
 ]

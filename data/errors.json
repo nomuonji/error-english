@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Lookup",
-        "errorMessage": "DNS Lookup Failure",
-        "messageTranslation": "DNSルックアップ失敗",
-        "generalMeaning": "【名】検索、照会、調べること",
-        "generalExample": "A dictionary lookup. (辞書を引くこと)",
-        "techMeaning": "「名前は知ってるけど、どこにいるか探す」という住所録の検索作業。IPアドレスなどの調査。",
-        "explanation": "PCが電話帳を一生懸命めくったけど、お目当ての名前が載っていなかった状態。ネットが繋がらない時によく見かけます。",
-        "usageContext": "昔の恋人のSNSをこっそり検索（エゴサ）したけど、アカウントが消えていた時。",
-        "usageExample": "My lookup failed, she's gone from the internet.",
-        "usageExampleTranslation": "検索失敗。彼女、もうネットのどこにもいないんだ。",
-        "usagePunchline": "SNS: 502 Bad Gateway",
-        "usagePunchlineTranslation": "SNS：繋がらない思い出（不正なゲートウェイ）"
-    },
-    {
         "targetWord": "Mandatory",
         "errorMessage": "Field 'username' is mandatory",
         "messageTranslation": "ユーザー名フィールドは入力必須です",
