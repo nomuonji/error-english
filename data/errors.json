@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Threshold",
-        "errorMessage": "Memory usage threshold reached",
-        "messageTranslation": "メモリ使用量がしきい値に達しました",
-        "generalMeaning": "【名】しきい値、境界、入り口、限界点",
-        "generalExample": "The threshold of a new era (新しい時代の入り口)",
-        "techMeaning": "「これ以上やったらマジで怒るからな？」という、プログラムの堪忍袋の緒",
-        "explanation": "「ここまではセーフ、ここからはアウト」という境界線のこと。ダムの水位がヤバい時みたいに、「そろそろ対策しないとパンクするぞ！」という警告としてよく出てきます。",
-        "usageContext": "友達の冗談がギリギリ笑えないラインに達した時",
-        "usageExample": "You are crossing the threshold of my patience.",
-        "usageExampleTranslation": "お前、俺の忍耐の境界線を超えようとしてるぞ。",
-        "usagePunchline": "507 Insufficient Storage",
-        "usagePunchlineTranslation": "（俺の心の）容量がもう足りません。"
-    },
-    {
         "targetWord": "Restricted",
         "errorMessage": "Access restricted to administrators",
         "messageTranslation": "アクセスは管理者のみに制限されています",

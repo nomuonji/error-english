@@ -298,5 +298,6 @@
     "Lookup",
     "Mandatory",
     "Rejected",
-    "Limit"
+    "Limit",
+    "Threshold"
 ]
