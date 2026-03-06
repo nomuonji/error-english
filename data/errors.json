@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Limit",
-        "errorMessage": "Rate limit exceeded",
-        "messageTranslation": "リクエスト制限（回数制限）を超えました",
-        "generalMeaning": "【名】限界、制限、限度",
-        "generalExample": "Speed limit (法定速度)",
-        "techMeaning": "「もうお腹いっぱい！これ以上食べさせないで！」という、プログラムの胃袋がパンパンな状態",
-        "explanation": "短時間に何度もアクセスしすぎた時に出ます。相手のサーバーが「ちょっと落ち着けよ！」とキレている合図なので、しばらく待ってあげるのがマナーです。",
-        "usageContext": "食べ放題のお店で、デザートを10個頼もうとした時",
-        "usageExample": "I think you've reached your limit.",
-        "usageExampleTranslation": "お前、もう限界だろ（食べ過ぎだ）。",
-        "usagePunchline": "429 Too Many Requests",
-        "usagePunchlineTranslation": "落ち着け、注文（リクエスト）が多すぎるぞ。"
-    },
-    {
         "targetWord": "Threshold",
         "errorMessage": "Memory usage threshold reached",
         "messageTranslation": "メモリ使用量がしきい値に達しました",
