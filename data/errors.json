@@ -1,16 +1,1 @@
-[
-    {
-        "targetWord": "Restricted",
-        "errorMessage": "Access restricted to administrators",
-        "messageTranslation": "アクセスは管理者のみに制限されています",
-        "generalMeaning": "【形】制限された、機密の、立ち入り禁止の",
-        "generalExample": "A restricted area (立ち入り禁止区域)",
-        "techMeaning": "「ここはVIPルームだよ。君みたいな一般ピープルは帰ってね」という、冷たい塩対応",
-        "explanation": "普通のユーザーなのに、裏側の設定画面とかを見ようとすると出ます。「お前にはまだ早い」というプログラムからの無言の圧力を感じましょう。",
-        "usageContext": "実家の冷蔵庫の中にある「お父さんの高いビール」を飲もうとした時",
-        "usageExample": "That fridge is restricted to Dad.",
-        "usageExampleTranslation": "その冷蔵庫は父さん専用（制限付き）だぞ。",
-        "usagePunchline": "403 Forbidden",
-        "usagePunchlineTranslation": "禁止。出直してこい。"
-    }
-]
+[]

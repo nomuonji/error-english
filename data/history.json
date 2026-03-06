@@ -299,5 +299,6 @@
     "Mandatory",
     "Rejected",
     "Limit",
-    "Threshold"
+    "Threshold",
+    "Restricted"
 ]
