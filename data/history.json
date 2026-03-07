@@ -300,5 +300,6 @@
     "Rejected",
     "Limit",
     "Threshold",
-    "Restricted"
+    "Restricted",
+    "Literal"
 ]

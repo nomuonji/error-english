@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Literal",
-        "errorMessage": "SyntaxError: Unexpected number literal",
-        "messageTranslation": "構文エラー：予期しない数値リテラルがあります",
-        "generalMeaning": "【名】文字通り、記述されたそのままの値",
-        "generalExample": "A literal translation (逐語訳)",
-        "techMeaning": "変数という名の「服」を着ていない、生まれたままの「生データ」が突然現れて、プログラムが赤面して困惑している状態。",
-        "explanation": "ソースコードに直接書き込まれた「123」や「'apple'」といった値のこと。いきなり「生の値」を裸で放り出すと、プログラムは「お前、誰の所有物だよ！」と驚いてしまいます。ちゃんと変数に代入して、名前（服）を与えてあげましょう。",
-        "usageContext": "デートの帰り際、あまりにも直球すぎる言葉で誘って断られた時",
-        "usageExample": "Your invitation was way too literal...",
-        "usageExampleTranslation": "君の誘い方、あまりにも「文字通り（直球）」すぎてビビっちゃったよ…",
-        "usagePunchline": "400 Bad Request",
-        "usagePunchlineTranslation": "不正なリクエスト（そんな剥き出しの要求は受理できません）"
-    },
-    {
         "targetWord": "Parameter",
         "errorMessage": "Missing required parameter: 'user_id'",
         "messageTranslation": "必須のパラメーター 'user_id' が不足しています",
