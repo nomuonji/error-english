@@ -1,1 +1,72 @@
-[]
+[
+    {
+        "targetWord": "Literal",
+        "errorMessage": "SyntaxError: Unexpected number literal",
+        "messageTranslation": "構文エラー：予期しない数値リテラルがあります",
+        "generalMeaning": "【名】文字通り、記述されたそのままの値",
+        "generalExample": "A literal translation (逐語訳)",
+        "techMeaning": "変数という名の「服」を着ていない、生まれたままの「生データ」が突然現れて、プログラムが赤面して困惑している状態。",
+        "explanation": "ソースコードに直接書き込まれた「123」や「'apple'」といった値のこと。いきなり「生の値」を裸で放り出すと、プログラムは「お前、誰の所有物だよ！」と驚いてしまいます。ちゃんと変数に代入して、名前（服）を与えてあげましょう。",
+        "usageContext": "デートの帰り際、あまりにも直球すぎる言葉で誘って断られた時",
+        "usageExample": "Your invitation was way too literal...",
+        "usageExampleTranslation": "君の誘い方、あまりにも「文字通り（直球）」すぎてビビっちゃったよ…",
+        "usagePunchline": "400 Bad Request",
+        "usagePunchlineTranslation": "不正なリクエスト（そんな剥き出しの要求は受理できません）"
+    },
+    {
+        "targetWord": "Parameter",
+        "errorMessage": "Missing required parameter: 'user_id'",
+        "messageTranslation": "必須のパラメーター 'user_id' が不足しています",
+        "generalMeaning": "【名】媒介変数、条件、範囲",
+        "generalExample": "Within the parameters of the budget (予算の範囲内で)",
+        "techMeaning": "関数というお店に入店する際にチェックされる「ドレスコード（必須の持ち物）」。",
+        "explanation": "「これを渡さないと仕事しないからね！」と関数が要求している材料のこと。忘れ物をすると、プログラムという名の店員に「お帰りください」と冷たくあしらわれます。引数（Argument）との違いは、設計図側の名前か、実際のモノかの違いです。",
+        "usageContext": "手ぶらでバーベキューに来た友達を追い返す時",
+        "usageExample": "You're missing the most important parameter: MEAT!",
+        "usageExampleTranslation": "一番大事なパラメーター（肉）を忘れてるじゃないか！",
+        "usagePunchline": "422 Unprocessable Entity",
+        "usagePunchlineTranslation": "処理不能（材料が足りなすぎて調理できません）"
+    },
+    {
+        "targetWord": "Attribute",
+        "errorMessage": "AttributeError: 'NoneType' object has no attribute 'get'",
+        "messageTranslation": "属性エラー：'NoneType' オブジェクトには 'get' という属性はありません",
+        "generalMeaning": "【名】属性、特性、性質、付随するもの",
+        "generalExample": "Patience is an essential attribute for a teacher. (忍耐力は教師に不可欠な資質だ)",
+        "techMeaning": "そのキャラクターが持っているはずの「持ち物」や「特技」。",
+        "explanation": "「無（None）」という名の幽霊に向かって、「おい、お前が持ってるアイテム（属性）を出せよ」とカツアゲしている状態。持っていないものを要求されたプログラムは、「そんなもん無いわ！」とキレて停止します。まずは中身があるか確認しましょう。",
+        "usageContext": "貯金が底をついている友達に「おごって」と無茶振りした時",
+        "usageExample": "My bank account has no 'money' attribute right now.",
+        "usageExampleTranslation": "今の僕の銀行口座には「お金」という属性（中身）が存在しないんだ。",
+        "usagePunchline": "404 Not Found",
+        "usagePunchlineTranslation": "未検出（探しましたが見当たりませんでした）"
+    },
+    {
+        "targetWord": "Operand",
+        "errorMessage": "TypeError: Invalid operand types for +",
+        "messageTranslation": "型エラー：'+' 演算子に対する無効なオペランド型です",
+        "generalMeaning": "【名】（数学の）演算数、被演算子",
+        "generalExample": "The left operand of the equation (方程式の左の項)",
+        "techMeaning": "計算機という名の「まな板」に乗せられた食材（計算対象の値）。",
+        "explanation": "「数字」と「文字」という、絶対に混ざり合わない食材を一緒に調理しようとして、計算機が「これどうやって料理（計算）すんねん！」とパニックになっている状態。足し算をするなら、両方の型を揃えてあげましょう。",
+        "usageContext": "ラーメンにチョコパフェをトッピングしようとしている暴挙を見た時",
+        "usageExample": "Parfait is an invalid operand for Ramen!",
+        "usageExampleTranslation": "パフェはラーメンに対する無効なオペランド（トッピング）だよ！",
+        "usagePunchline": "406 Not Acceptable",
+        "usagePunchlineTranslation": "受理不能（その食べ合わせ、私の胃が受け付けません）"
+    },
+    {
+        "targetWord": "Pointer",
+        "errorMessage": "NullPointerException",
+        "messageTranslation": "ヌル・ポインター・エクセプション（空の参照エラー）",
+        "generalMeaning": "【名】指し示すもの、針、ヒント",
+        "generalExample": "The pointer on the pressure gauge (圧力計の針)",
+        "techMeaning": "「あっちにデータがあるよ！」と指し示している指差し棒。",
+        "explanation": "「ここを見て！」と指さした先が、実は何もない崖っぷち（Null）だった状態。虚無を掴み取ろうとしたプログラムは、そのまま崖下に転落してしまいます。指さす前に、ちゃんと先に何かあるか確認するのがマナーです。",
+        "usageContext": "友達が誰もいない方向を指さして「あ、有名人だ！」と嘘をついた時",
+        "usageExample": "Your pointer is pointing to absolute nothingness.",
+        "usageExampleTranslation": "君の指差し棒、完全なる「虚無」を指してるよ。",
+        "usagePunchline": "0x00000000",
+        "usagePunchlineTranslation": "ヌルポ（指した先はガッ……ではなく、空っぽです）"
+    }
+]
