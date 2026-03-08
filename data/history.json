@@ -303,5 +303,6 @@
     "Restricted",
     "Literal",
     "Parameter",
-    "Attribute"
+    "Attribute",
+    "Operand"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Operand",
-        "errorMessage": "TypeError: Invalid operand types for +",
-        "messageTranslation": "型エラー：'+' 演算子に対する無効なオペランド型です",
-        "generalMeaning": "【名】（数学の）演算数、被演算子",
-        "generalExample": "The left operand of the equation (方程式の左の項)",
-        "techMeaning": "計算機という名の「まな板」に乗せられた食材（計算対象の値）。",
-        "explanation": "「数字」と「文字」という、絶対に混ざり合わない食材を一緒に調理しようとして、計算機が「これどうやって料理（計算）すんねん！」とパニックになっている状態。足し算をするなら、両方の型を揃えてあげましょう。",
-        "usageContext": "ラーメンにチョコパフェをトッピングしようとしている暴挙を見た時",
-        "usageExample": "Parfait is an invalid operand for Ramen!",
-        "usageExampleTranslation": "パフェはラーメンに対する無効なオペランド（トッピング）だよ！",
-        "usagePunchline": "406 Not Acceptable",
-        "usagePunchlineTranslation": "受理不能（その食べ合わせ、私の胃が受け付けません）"
-    },
-    {
         "targetWord": "Pointer",
         "errorMessage": "NullPointerException",
         "messageTranslation": "ヌル・ポインター・エクセプション（空の参照エラー）",
