@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Parameter",
-        "errorMessage": "Missing required parameter: 'user_id'",
-        "messageTranslation": "必須のパラメーター 'user_id' が不足しています",
-        "generalMeaning": "【名】媒介変数、条件、範囲",
-        "generalExample": "Within the parameters of the budget (予算の範囲内で)",
-        "techMeaning": "関数というお店に入店する際にチェックされる「ドレスコード（必須の持ち物）」。",
-        "explanation": "「これを渡さないと仕事しないからね！」と関数が要求している材料のこと。忘れ物をすると、プログラムという名の店員に「お帰りください」と冷たくあしらわれます。引数（Argument）との違いは、設計図側の名前か、実際のモノかの違いです。",
-        "usageContext": "手ぶらでバーベキューに来た友達を追い返す時",
-        "usageExample": "You're missing the most important parameter: MEAT!",
-        "usageExampleTranslation": "一番大事なパラメーター（肉）を忘れてるじゃないか！",
-        "usagePunchline": "422 Unprocessable Entity",
-        "usagePunchlineTranslation": "処理不能（材料が足りなすぎて調理できません）"
-    },
-    {
         "targetWord": "Attribute",
         "errorMessage": "AttributeError: 'NoneType' object has no attribute 'get'",
         "messageTranslation": "属性エラー：'NoneType' オブジェクトには 'get' という属性はありません",
