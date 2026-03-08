@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Attribute",
-        "errorMessage": "AttributeError: 'NoneType' object has no attribute 'get'",
-        "messageTranslation": "属性エラー：'NoneType' オブジェクトには 'get' という属性はありません",
-        "generalMeaning": "【名】属性、特性、性質、付随するもの",
-        "generalExample": "Patience is an essential attribute for a teacher. (忍耐力は教師に不可欠な資質だ)",
-        "techMeaning": "そのキャラクターが持っているはずの「持ち物」や「特技」。",
-        "explanation": "「無（None）」という名の幽霊に向かって、「おい、お前が持ってるアイテム（属性）を出せよ」とカツアゲしている状態。持っていないものを要求されたプログラムは、「そんなもん無いわ！」とキレて停止します。まずは中身があるか確認しましょう。",
-        "usageContext": "貯金が底をついている友達に「おごって」と無茶振りした時",
-        "usageExample": "My bank account has no 'money' attribute right now.",
-        "usageExampleTranslation": "今の僕の銀行口座には「お金」という属性（中身）が存在しないんだ。",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "未検出（探しましたが見当たりませんでした）"
-    },
-    {
         "targetWord": "Operand",
         "errorMessage": "TypeError: Invalid operand types for +",
         "messageTranslation": "型エラー：'+' 演算子に対する無効なオペランド型です",

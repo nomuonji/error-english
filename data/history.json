@@ -302,5 +302,6 @@
     "Threshold",
     "Restricted",
     "Literal",
-    "Parameter"
+    "Parameter",
+    "Attribute"
 ]
