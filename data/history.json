@@ -304,5 +304,6 @@
     "Literal",
     "Parameter",
     "Attribute",
-    "Operand"
+    "Operand",
+    "Pointer"
 ]

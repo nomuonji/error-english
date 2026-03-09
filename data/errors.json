@@ -1,16 +1,1 @@
-[
-    {
-        "targetWord": "Pointer",
-        "errorMessage": "NullPointerException",
-        "messageTranslation": "ヌル・ポインター・エクセプション（空の参照エラー）",
-        "generalMeaning": "【名】指し示すもの、針、ヒント",
-        "generalExample": "The pointer on the pressure gauge (圧力計の針)",
-        "techMeaning": "「あっちにデータがあるよ！」と指し示している指差し棒。",
-        "explanation": "「ここを見て！」と指さした先が、実は何もない崖っぷち（Null）だった状態。虚無を掴み取ろうとしたプログラムは、そのまま崖下に転落してしまいます。指さす前に、ちゃんと先に何かあるか確認するのがマナーです。",
-        "usageContext": "友達が誰もいない方向を指さして「あ、有名人だ！」と嘘をついた時",
-        "usageExample": "Your pointer is pointing to absolute nothingness.",
-        "usageExampleTranslation": "君の指差し棒、完全なる「虚無」を指してるよ。",
-        "usagePunchline": "0x00000000",
-        "usagePunchlineTranslation": "ヌルポ（指した先はガッ……ではなく、空っぽです）"
-    }
-]
+[]
