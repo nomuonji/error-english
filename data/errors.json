@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unterminated",
-        "errorMessage": "SyntaxError: Unterminated string literal",
-        "messageTranslation": "構文エラー：文字列リテラルが閉じられていません",
-        "generalMeaning": "【形】終わっていない、完結していない、終端のない",
-        "generalExample": "An unterminated meeting (終わりの見えない会議)",
-        "techMeaning": "喋り出したはいいものの、終わらせ方がわからなくなって永遠に喋り続けている状態",
-        "explanation": "ダブルクォーテーション（\"）を閉じ忘れたときによく出るエラー。プログラムは「いつまで喋る気だ！？」とパニックになってるよ。ポエムを書き始めて、最後の一行を書かずに力尽きたみたいな切なさがあるね。",
-        "usageContext": "マッチングアプリで、相手の話が長すぎて終わりが見えない時",
-        "usageExample": "His talk was unterminated, and I missed the last train.",
-        "usageExampleTranslation": "彼の話が全然終わらなくて、終電逃しちゃったよ。",
-        "usagePunchline": "Response: 408 Request Timeout",
-        "usagePunchlineTranslation": "返信：タイムアウト（もう待てねーわ）"
-    },
-    {
         "targetWord": "Disallowed",
         "errorMessage": "Disallowed keyword used in this context",
         "messageTranslation": "この文脈では許可されていないキーワードが使用されました",

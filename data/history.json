@@ -305,5 +305,6 @@
     "Parameter",
     "Attribute",
     "Operand",
-    "Pointer"
+    "Pointer",
+    "Unterminated"
 ]
