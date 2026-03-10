@@ -1,1 +1,72 @@
-[]
+[
+    {
+        "targetWord": "Unterminated",
+        "errorMessage": "SyntaxError: Unterminated string literal",
+        "messageTranslation": "構文エラー：文字列リテラルが閉じられていません",
+        "generalMeaning": "【形】終わっていない、完結していない、終端のない",
+        "generalExample": "An unterminated meeting (終わりの見えない会議)",
+        "techMeaning": "喋り出したはいいものの、終わらせ方がわからなくなって永遠に喋り続けている状態",
+        "explanation": "ダブルクォーテーション（\"）を閉じ忘れたときによく出るエラー。プログラムは「いつまで喋る気だ！？」とパニックになってるよ。ポエムを書き始めて、最後の一行を書かずに力尽きたみたいな切なさがあるね。",
+        "usageContext": "マッチングアプリで、相手の話が長すぎて終わりが見えない時",
+        "usageExample": "His talk was unterminated, and I missed the last train.",
+        "usageExampleTranslation": "彼の話が全然終わらなくて、終電逃しちゃったよ。",
+        "usagePunchline": "Response: 408 Request Timeout",
+        "usagePunchlineTranslation": "返信：タイムアウト（もう待てねーわ）"
+    },
+    {
+        "targetWord": "Disallowed",
+        "errorMessage": "Disallowed keyword used in this context",
+        "messageTranslation": "この文脈では許可されていないキーワードが使用されました",
+        "generalMeaning": "【形】許可されていない、禁止された",
+        "generalExample": "Disallowed goals in soccer (ノーゴール、無効なゴール)",
+        "techMeaning": "「そいつはここではお断りだ！」という、プログラム界の出入り禁止宣告",
+        "explanation": "使っちゃいけない場所で変な設定や命令を使おうとした時に出るよ。厳しい校則がある学校に、派手な髪型で行って門前払いされるようなもの。ルールを守らないと、門番（プログラム）は絶対に通してくれないぞ。",
+        "usageContext": "高級フレンチにジャージで入ろうとして止められた時",
+        "usageExample": "Dressing like that is disallowed in this restaurant.",
+        "usageExampleTranslation": "その格好、このレストランでは出禁ですよ。",
+        "usagePunchline": "Waiter: 403 Forbidden",
+        "usagePunchlineTranslation": "店員：アクセス拒否（身の程を知れ）"
+    },
+    {
+        "targetWord": "Misplaced",
+        "errorMessage": "Misplaced 'else' without 'if'",
+        "messageTranslation": "if文のない場違いなelseがあります",
+        "generalMeaning": "【形】置き間違えた、場違いな、見当違いの",
+        "generalExample": "A misplaced cell phone (置き忘れた携帯電話)",
+        "techMeaning": "本来いるべき場所じゃないところに、場違いな顔してひょっこり現れる迷子状態",
+        "explanation": "if文がないのにelseだけが現れたりすると出るよ。寝室のドアを開けたら知らないおじさんが座っているくらいの恐怖を、プログラムは感じているんだ。「お前、なんでそこにいるの！？」ってツッコミを待ってるぞ。",
+        "usageContext": "自分の誕生日会じゃないのに、主役の席に座っちゃった時",
+        "usageExample": "I felt misplaced at the fancy party.",
+        "usageExampleTranslation": "その豪華なパーティーで、自分が場違いな気がしたんだ。",
+        "usagePunchline": "Guests: 404 Not Found",
+        "usagePunchlineTranslation": "客一同：あなたの居場所は見つかりません"
+    },
+    {
+        "targetWord": "Trailing",
+        "errorMessage": "JSON parse error: Trailing comma not allowed",
+        "messageTranslation": "JSON解析エラー：末尾のカンマは許可されていません",
+        "generalMeaning": "【形】後ろに続く、末尾の、ズルズルと引きずっている",
+        "generalExample": "The trailing team (負けているチーム、後を追うチーム)",
+        "techMeaning": "最後に余計なものをズルズル引きずって、空気を台無しにする「余計な一言」",
+        "explanation": "リストの最後なのにカンマを付けちゃったりしたときに出るよ。デートの別れ際に「あ、そういえばお金貸して（笑）」って言うくらい、それまでの流れを台無しにする致命的なミス。最後はスッキリ終わらせるのがプロの流儀だ。",
+        "usageContext": "告白の最後に「（笑）」をつけて台無しにした時",
+        "usageExample": "Stop trailing unnecessary jokes at the end of every sentence.",
+        "usageExampleTranslation": "全ての文の最後に、余計なジョークを付け足すのはやめて。",
+        "usagePunchline": "Girlfriend: 400 Bad Request",
+        "usagePunchlineTranslation": "彼女：リクエストが不正です（やり直せ）"
+    },
+    {
+        "targetWord": "Unescaped",
+        "errorMessage": "Unescaped control character in string",
+        "messageTranslation": "文字列の中にエスケープされていない制御文字があります",
+        "generalMeaning": "【形】エスケープされていない、そのままの、逃げ出していない",
+        "generalExample": "An unescaped prisoner (脱走していない囚人、捕まったままの囚人)",
+        "techMeaning": "素顔を隠すべきシーンで、すっぴんを晒して正体がバレちゃうスパイの状態",
+        "explanation": "プログラミングには「\"」みたいに特別な意味を持つ文字があるんだけど、それを普通の文字として使いたい時は「変装（エスケープ）」が必要なんだ。変装を忘れると、プログラムが「お前、特殊能力持ちの文字だな！」と勘違いして爆発するぞ。",
+        "usageContext": "変装して潜入したはずなのに、名札をつけたままだったスパイ",
+        "usageExample": "The agent was caught because of his unescaped identity.",
+        "usageExampleTranslation": "エージェントは正体を隠せていなかったせいで捕まった。",
+        "usagePunchline": "Enemy: 422 Unprocessable Entity",
+        "usagePunchlineTranslation": "敵：処理不能なエンティティ（中身がヤバすぎて無理）"
+    }
+]
