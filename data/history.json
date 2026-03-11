@@ -306,5 +306,6 @@
     "Attribute",
     "Operand",
     "Pointer",
-    "Unterminated"
+    "Unterminated",
+    "Disallowed"
 ]

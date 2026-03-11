@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disallowed",
-        "errorMessage": "Disallowed keyword used in this context",
-        "messageTranslation": "この文脈では許可されていないキーワードが使用されました",
-        "generalMeaning": "【形】許可されていない、禁止された",
-        "generalExample": "Disallowed goals in soccer (ノーゴール、無効なゴール)",
-        "techMeaning": "「そいつはここではお断りだ！」という、プログラム界の出入り禁止宣告",
-        "explanation": "使っちゃいけない場所で変な設定や命令を使おうとした時に出るよ。厳しい校則がある学校に、派手な髪型で行って門前払いされるようなもの。ルールを守らないと、門番（プログラム）は絶対に通してくれないぞ。",
-        "usageContext": "高級フレンチにジャージで入ろうとして止められた時",
-        "usageExample": "Dressing like that is disallowed in this restaurant.",
-        "usageExampleTranslation": "その格好、このレストランでは出禁ですよ。",
-        "usagePunchline": "Waiter: 403 Forbidden",
-        "usagePunchlineTranslation": "店員：アクセス拒否（身の程を知れ）"
-    },
-    {
         "targetWord": "Misplaced",
         "errorMessage": "Misplaced 'else' without 'if'",
         "messageTranslation": "if文のない場違いなelseがあります",
