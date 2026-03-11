@@ -308,5 +308,6 @@
     "Pointer",
     "Unterminated",
     "Disallowed",
-    "Misplaced"
+    "Misplaced",
+    "Trailing"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Trailing",
-        "errorMessage": "JSON parse error: Trailing comma not allowed",
-        "messageTranslation": "JSON解析エラー：末尾のカンマは許可されていません",
-        "generalMeaning": "【形】後ろに続く、末尾の、ズルズルと引きずっている",
-        "generalExample": "The trailing team (負けているチーム、後を追うチーム)",
-        "techMeaning": "最後に余計なものをズルズル引きずって、空気を台無しにする「余計な一言」",
-        "explanation": "リストの最後なのにカンマを付けちゃったりしたときに出るよ。デートの別れ際に「あ、そういえばお金貸して（笑）」って言うくらい、それまでの流れを台無しにする致命的なミス。最後はスッキリ終わらせるのがプロの流儀だ。",
-        "usageContext": "告白の最後に「（笑）」をつけて台無しにした時",
-        "usageExample": "Stop trailing unnecessary jokes at the end of every sentence.",
-        "usageExampleTranslation": "全ての文の最後に、余計なジョークを付け足すのはやめて。",
-        "usagePunchline": "Girlfriend: 400 Bad Request",
-        "usagePunchlineTranslation": "彼女：リクエストが不正です（やり直せ）"
-    },
-    {
         "targetWord": "Unescaped",
         "errorMessage": "Unescaped control character in string",
         "messageTranslation": "文字列の中にエスケープされていない制御文字があります",
