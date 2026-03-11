@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Misplaced",
-        "errorMessage": "Misplaced 'else' without 'if'",
-        "messageTranslation": "if文のない場違いなelseがあります",
-        "generalMeaning": "【形】置き間違えた、場違いな、見当違いの",
-        "generalExample": "A misplaced cell phone (置き忘れた携帯電話)",
-        "techMeaning": "本来いるべき場所じゃないところに、場違いな顔してひょっこり現れる迷子状態",
-        "explanation": "if文がないのにelseだけが現れたりすると出るよ。寝室のドアを開けたら知らないおじさんが座っているくらいの恐怖を、プログラムは感じているんだ。「お前、なんでそこにいるの！？」ってツッコミを待ってるぞ。",
-        "usageContext": "自分の誕生日会じゃないのに、主役の席に座っちゃった時",
-        "usageExample": "I felt misplaced at the fancy party.",
-        "usageExampleTranslation": "その豪華なパーティーで、自分が場違いな気がしたんだ。",
-        "usagePunchline": "Guests: 404 Not Found",
-        "usagePunchlineTranslation": "客一同：あなたの居場所は見つかりません"
-    },
-    {
         "targetWord": "Trailing",
         "errorMessage": "JSON parse error: Trailing comma not allowed",
         "messageTranslation": "JSON解析エラー：末尾のカンマは許可されていません",

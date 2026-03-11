@@ -307,5 +307,6 @@
     "Operand",
     "Pointer",
     "Unterminated",
-    "Disallowed"
+    "Disallowed",
+    "Misplaced"
 ]
