@@ -1,16 +1,1 @@
-[
-    {
-        "targetWord": "Unescaped",
-        "errorMessage": "Unescaped control character in string",
-        "messageTranslation": "文字列の中にエスケープされていない制御文字があります",
-        "generalMeaning": "【形】エスケープされていない、そのままの、逃げ出していない",
-        "generalExample": "An unescaped prisoner (脱走していない囚人、捕まったままの囚人)",
-        "techMeaning": "素顔を隠すべきシーンで、すっぴんを晒して正体がバレちゃうスパイの状態",
-        "explanation": "プログラミングには「\"」みたいに特別な意味を持つ文字があるんだけど、それを普通の文字として使いたい時は「変装（エスケープ）」が必要なんだ。変装を忘れると、プログラムが「お前、特殊能力持ちの文字だな！」と勘違いして爆発するぞ。",
-        "usageContext": "変装して潜入したはずなのに、名札をつけたままだったスパイ",
-        "usageExample": "The agent was caught because of his unescaped identity.",
-        "usageExampleTranslation": "エージェントは正体を隠せていなかったせいで捕まった。",
-        "usagePunchline": "Enemy: 422 Unprocessable Entity",
-        "usagePunchlineTranslation": "敵：処理不能なエンティティ（中身がヤバすぎて無理）"
-    }
-]
+[]
