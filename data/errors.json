@@ -1,1 +1,72 @@
-[]
+[
+    {
+        "targetWord": "Type",
+        "errorMessage": "TypeError: 'int' object is not callable",
+        "messageTranslation": "型エラー：'int'（整数型）オブジェクトは呼び出し不可能です",
+        "generalMeaning": "【名】種類、型、タイプ",
+        "generalExample": "What type of food do you like? (どんな種類の食べ物が好きですか？)",
+        "techMeaning": "プログラムが「君、そんなキャラ（型）じゃないでしょ！」と戸惑っている状態",
+        "explanation": "数字の「1」に対して「1()」みたいに、関数みたいに動け！と命令した時に発生。数字は計算されるのが仕事であって、実行されるキャラじゃないんです。",
+        "usageContext": "普段おとなしい同僚が、飲み会で突然激しいラップを刻み始めた時",
+        "usageExample": "He is not the type to do that.",
+        "usageExampleTranslation": "彼はそんなことするタイプ（キャラ）じゃないよ。",
+        "usagePunchline": "Error 415 Unsupported Media Type",
+        "usagePunchlineTranslation": "そのキャラ（型）、うちの現場ではサポート外です。"
+    },
+    {
+        "targetWord": "Value",
+        "errorMessage": "ValueError: invalid literal for int() with base 10: 'apple'",
+        "messageTranslation": "値エラー：'apple'は10進数の整数として無効な文字です",
+        "generalMeaning": "【名】値、数値、価値",
+        "generalExample": "This ring has high sentimental value. (この指輪には高い感情的な価値があります。)",
+        "techMeaning": "「箱の中身が、期待してたのと全然違う！」というプログラムのガッカリ感",
+        "explanation": "「数字を入れてね」と言われた箱に、堂々と「りんご」と書かれた紙を入れると発生。プログラムは正直者なので、納得いかない値にはキレます。",
+        "usageContext": "マッチングアプリの初デートで、写真と全く別人が来た時",
+        "usageExample": "The value of this data is zero.",
+        "usageExampleTranslation": "このデータの価値はゼロだね（中身がスカスカだ）。",
+        "usagePunchline": "400 Bad Request",
+        "usagePunchlineTranslation": "リクエスト（写真）と実物の値が一致しません。"
+    },
+    {
+        "targetWord": "Index",
+        "errorMessage": "IndexError: list index out of range",
+        "messageTranslation": "インデックスエラー：リストの索引が範囲外です",
+        "generalMeaning": "【名】索引、指数、人差し指",
+        "generalExample": "Please look at the index of this book. (この本の索引を見てください。)",
+        "techMeaning": "「そんな番号の席、うちの店には用意してません！」という予約ミス",
+        "explanation": "3人しかいないグループに「4番目の人、返事して！」と言うと発生。プログラムは0番から数え始めるので、人間の感覚より1つズレる罠に注意！",
+        "usageContext": "5人乗りの車に、どうしても6人で乗ろうとして警察に見つかった時",
+        "usageExample": "His index finger is pointing at me.",
+        "usageExampleTranslation": "彼の人差し指が僕を指している。",
+        "usagePunchline": "404 Not Found",
+        "usagePunchlineTranslation": "その番号の座席（データ）は見つかりません。"
+    },
+    {
+        "targetWord": "Property",
+        "errorMessage": "TypeError: Cannot read property 'name' of undefined",
+        "messageTranslation": "型エラー：undefined（未定義）のプロパティ'name'を読み取れません",
+        "generalMeaning": "【名】プロパティ、属性、財産、所有物",
+        "generalExample": "This land is private property. (この土地は私有地です。)",
+        "techMeaning": "「そもそも存在しない幽霊の持ち物を調べようとする」心霊現象",
+        "explanation": "JavaScript初心者が必ず一度は泣かされるエラー。中身が空っぽの変数に対して「名前は何？」と聞くと、プログラムが「いや、俺そもそも存在してないから！」とパニックになります。",
+        "usageContext": "付き合ってもいないのに「俺たちの将来の貯金」の話をされた時",
+        "usageExample": "Wisdom is a property of age.",
+        "usageExampleTranslation": "知恵は年齢に伴う特性だ。",
+        "usagePunchline": "410 Gone",
+        "usagePunchlineTranslation": "その所有者（オブジェクト）は既に消滅（あるいは最初から存在して）いません。"
+    },
+    {
+        "targetWord": "Constant",
+        "errorMessage": "TypeError: Assignment to constant variable.",
+        "messageTranslation": "型エラー：定数（不変の変数）への代入が行われました",
+        "generalMeaning": "【形】不変の、絶え間ない 【名】定数",
+        "generalExample": "He is my constant companion. (彼は私の絶え間ない相棒です。)",
+        "techMeaning": "「一生変わらないって誓ったのに、裏切るの！？」というプログラムの重すぎる愛",
+        "explanation": "const（定数）で宣言した変数は、一度決めたら一生添い遂げる覚悟が必要です。新しい値で上書き（浮気）しようとすると、全力で拒絶されます。",
+        "usageContext": "ダイエットを誓った直後に、ラーメン屋の誘惑に負けそうになった時",
+        "usageExample": "Change is the only constant.",
+        "usageExampleTranslation": "変化だけが唯一の不変のものだ（哲学）。",
+        "usagePunchline": "405 Method Not Allowed",
+        "usagePunchlineTranslation": "その「上書き（心変わり）」という操作は許可されていません。"
+    }
+]
