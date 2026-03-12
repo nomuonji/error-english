@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Type",
-        "errorMessage": "TypeError: 'int' object is not callable",
-        "messageTranslation": "型エラー：'int'（整数型）オブジェクトは呼び出し不可能です",
-        "generalMeaning": "【名】種類、型、タイプ",
-        "generalExample": "What type of food do you like? (どんな種類の食べ物が好きですか？)",
-        "techMeaning": "プログラムが「君、そんなキャラ（型）じゃないでしょ！」と戸惑っている状態",
-        "explanation": "数字の「1」に対して「1()」みたいに、関数みたいに動け！と命令した時に発生。数字は計算されるのが仕事であって、実行されるキャラじゃないんです。",
-        "usageContext": "普段おとなしい同僚が、飲み会で突然激しいラップを刻み始めた時",
-        "usageExample": "He is not the type to do that.",
-        "usageExampleTranslation": "彼はそんなことするタイプ（キャラ）じゃないよ。",
-        "usagePunchline": "Error 415 Unsupported Media Type",
-        "usagePunchlineTranslation": "そのキャラ（型）、うちの現場ではサポート外です。"
-    },
-    {
         "targetWord": "Value",
         "errorMessage": "ValueError: invalid literal for int() with base 10: 'apple'",
         "messageTranslation": "値エラー：'apple'は10進数の整数として無効な文字です",
