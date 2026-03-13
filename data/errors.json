@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Value",
-        "errorMessage": "ValueError: invalid literal for int() with base 10: 'apple'",
-        "messageTranslation": "値エラー：'apple'は10進数の整数として無効な文字です",
-        "generalMeaning": "【名】値、数値、価値",
-        "generalExample": "This ring has high sentimental value. (この指輪には高い感情的な価値があります。)",
-        "techMeaning": "「箱の中身が、期待してたのと全然違う！」というプログラムのガッカリ感",
-        "explanation": "「数字を入れてね」と言われた箱に、堂々と「りんご」と書かれた紙を入れると発生。プログラムは正直者なので、納得いかない値にはキレます。",
-        "usageContext": "マッチングアプリの初デートで、写真と全く別人が来た時",
-        "usageExample": "The value of this data is zero.",
-        "usageExampleTranslation": "このデータの価値はゼロだね（中身がスカスカだ）。",
-        "usagePunchline": "400 Bad Request",
-        "usagePunchlineTranslation": "リクエスト（写真）と実物の値が一致しません。"
-    },
-    {
         "targetWord": "Index",
         "errorMessage": "IndexError: list index out of range",
         "messageTranslation": "インデックスエラー：リストの索引が範囲外です",
