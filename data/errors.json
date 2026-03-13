@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Index",
-        "errorMessage": "IndexError: list index out of range",
-        "messageTranslation": "インデックスエラー：リストの索引が範囲外です",
-        "generalMeaning": "【名】索引、指数、人差し指",
-        "generalExample": "Please look at the index of this book. (この本の索引を見てください。)",
-        "techMeaning": "「そんな番号の席、うちの店には用意してません！」という予約ミス",
-        "explanation": "3人しかいないグループに「4番目の人、返事して！」と言うと発生。プログラムは0番から数え始めるので、人間の感覚より1つズレる罠に注意！",
-        "usageContext": "5人乗りの車に、どうしても6人で乗ろうとして警察に見つかった時",
-        "usageExample": "His index finger is pointing at me.",
-        "usageExampleTranslation": "彼の人差し指が僕を指している。",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "その番号の座席（データ）は見つかりません。"
-    },
-    {
         "targetWord": "Property",
         "errorMessage": "TypeError: Cannot read property 'name' of undefined",
         "messageTranslation": "型エラー：undefined（未定義）のプロパティ'name'を読み取れません",
