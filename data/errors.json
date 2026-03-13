@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Property",
-        "errorMessage": "TypeError: Cannot read property 'name' of undefined",
-        "messageTranslation": "型エラー：undefined（未定義）のプロパティ'name'を読み取れません",
-        "generalMeaning": "【名】プロパティ、属性、財産、所有物",
-        "generalExample": "This land is private property. (この土地は私有地です。)",
-        "techMeaning": "「そもそも存在しない幽霊の持ち物を調べようとする」心霊現象",
-        "explanation": "JavaScript初心者が必ず一度は泣かされるエラー。中身が空っぽの変数に対して「名前は何？」と聞くと、プログラムが「いや、俺そもそも存在してないから！」とパニックになります。",
-        "usageContext": "付き合ってもいないのに「俺たちの将来の貯金」の話をされた時",
-        "usageExample": "Wisdom is a property of age.",
-        "usageExampleTranslation": "知恵は年齢に伴う特性だ。",
-        "usagePunchline": "410 Gone",
-        "usagePunchlineTranslation": "その所有者（オブジェクト）は既に消滅（あるいは最初から存在して）いません。"
-    },
-    {
         "targetWord": "Constant",
         "errorMessage": "TypeError: Assignment to constant variable.",
         "messageTranslation": "型エラー：定数（不変の変数）への代入が行われました",
