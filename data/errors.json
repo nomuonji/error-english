@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Upstream",
-        "errorMessage": "502 Bad Gateway: Upstream server error",
-        "messageTranslation": "502 Bad Gateway：アップストリームサーバーのエラーです",
-        "generalMeaning": "【副・形】（川の）上流へ、上流の",
-        "generalExample": "Salmon swim upstream. (鮭は川をさかのぼる。)",
-        "techMeaning": "自分のサーバーより「もっと上」や「前」にいるサーバーのこと。自分は悪くない、アイツが悪い！という時の言い訳に出てくる用語。",
-        "explanation": "あなたが注文を取る店員だとして、奥の厨房（アップストリーム）でコックが喧嘩して料理が出てこない状態。お客さん（ユーザー）にはあなたが怒られます。理不尽！",
-        "usageContext": "仕事で、前の工程の人がサボっていて自分の仕事が進まない時",
-        "usageExample": "The project is stuck because of an upstream delay.",
-        "usageExampleTranslation": "上流の工程が遅れてるせいで、プロジェクトが止まってるんだよ。",
-        "usagePunchline": "Status: 504 Gateway Timeout (上司からの返信待ちです)",
-        "usagePunchlineTranslation": "ステータス：ゲートウェイタイムアウト（上の人が捕まりません）"
-    },
-    {
         "targetWord": "Graceful",
         "errorMessage": "Failed to perform graceful shutdown",
         "messageTranslation": "グレースフル・シャットダウン（優雅な停止）に失敗しました",

@@ -316,5 +316,6 @@
     "Index",
     "Property",
     "Constant",
-    "Snapshot"
+    "Snapshot",
+    "Upstream"
 ]
