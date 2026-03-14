@@ -314,5 +314,6 @@
     "Type",
     "Value",
     "Index",
-    "Property"
+    "Property",
+    "Constant"
 ]

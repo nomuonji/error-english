@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Constant",
-        "errorMessage": "TypeError: Assignment to constant variable.",
-        "messageTranslation": "型エラー：定数（不変の変数）への代入が行われました",
-        "generalMeaning": "【形】不変の、絶え間ない 【名】定数",
-        "generalExample": "He is my constant companion. (彼は私の絶え間ない相棒です。)",
-        "techMeaning": "「一生変わらないって誓ったのに、裏切るの！？」というプログラムの重すぎる愛",
-        "explanation": "const（定数）で宣言した変数は、一度決めたら一生添い遂げる覚悟が必要です。新しい値で上書き（浮気）しようとすると、全力で拒絶されます。",
-        "usageContext": "ダイエットを誓った直後に、ラーメン屋の誘惑に負けそうになった時",
-        "usageExample": "Change is the only constant.",
-        "usageExampleTranslation": "変化だけが唯一の不変のものだ（哲学）。",
-        "usagePunchline": "405 Method Not Allowed",
-        "usagePunchlineTranslation": "その「上書き（心変わり）」という操作は許可されていません。"
-    },
-    {
         "targetWord": "Snapshot",
         "errorMessage": "Failed to create snapshot: Disk full",
         "messageTranslation": "スナップショットの作成に失敗しました：ディスクがいっぱいです",
