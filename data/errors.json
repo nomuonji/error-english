@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Snapshot",
-        "errorMessage": "Failed to create snapshot: Disk full",
-        "messageTranslation": "スナップショットの作成に失敗しました：ディスクがいっぱいです",
-        "generalMeaning": "【名】スナップショット、短い時間で撮った写真",
-        "generalExample": "A snapshot of the city (街のスナップ写真)",
-        "techMeaning": "ある瞬間のデータやシステムの状態を、写真のように「カシャッ」と丸ごと保存すること。",
-        "explanation": "バックアップのすごい版。でも、システムが散らかっている時に撮ると、ゴミ屋敷の写真を保存するようなもの。後で見返して絶望します。",
-        "usageContext": "友達と変顔で自撮り（スナップ）を撮る時",
-        "usageExample": "Wait! Don't take a snapshot yet, I'm not ready!",
-        "usageExampleTranslation": "待って！まだスナップ撮らないで、準備できてないから！",
-        "usagePunchline": "Error: 507 Insufficient Storage (顔がデカすぎて保存できません)",
-        "usagePunchlineTranslation": "エラー：ストレージ不足（あなたの顔の情報量が多すぎます）"
-    },
-    {
         "targetWord": "Upstream",
         "errorMessage": "502 Bad Gateway: Upstream server error",
         "messageTranslation": "502 Bad Gateway：アップストリームサーバーのエラーです",

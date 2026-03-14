@@ -315,5 +315,6 @@
     "Value",
     "Index",
     "Property",
-    "Constant"
+    "Constant",
+    "Snapshot"
 ]
