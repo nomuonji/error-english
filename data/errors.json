@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Backoff",
-        "errorMessage": "Retrying with exponential backoff",
-        "messageTranslation": "エクスポネンシャル・バックオフ（指数関数的後退）で再試行中",
-        "generalMeaning": "【句動】後退する、身を引く、手を引く",
-        "generalExample": "Back off and give me some space! (下がって、少し離れて！)",
-        "techMeaning": "接続に失敗したとき、しつこく秒速でリトライするのではなく、間隔をどんどん空けて（1秒、2秒、4秒…）空気を読みながらリトライすること。",
-        "explanation": "既読スルーされているのに連投するのではなく、数時間、数日と間隔を空けてLINEを送る「恋の駆け引き」。しつこすぎるとブロック（BAN）されます。",
-        "usageContext": "気になる人にLINEを無視され続けている時",
-        "usageExample": "She ignored me, so I should probably back off for a while.",
-        "usageExampleTranslation": "彼女に無視されたから、しばらく引いたほうがいいかな。",
-        "usagePunchline": "Status: 429 Too Many Requests (しつこすぎて通報されました)",
-        "usagePunchlineTranslation": "ステータス：リクエスト過多（あ、ブロックされたわ）"
-    },
-    {
         "targetWord": "Bad",
         "errorMessage": "400 Bad Request / 502 Bad Gateway",
         "messageTranslation": "不正なリクエスト / 不正なゲートウェイ",

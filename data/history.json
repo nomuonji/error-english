@@ -319,5 +319,6 @@
     "Snapshot",
     "Upstream",
     "Graceful",
-    "Endpoint"
+    "Endpoint",
+    "Backoff"
 ]
