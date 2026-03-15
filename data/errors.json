@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Endpoint",
-        "errorMessage": "Invalid endpoint: URL not found",
-        "messageTranslation": "無効なエンドポイント：URLが見つかりません",
-        "generalMeaning": "【名】終着点、端点、最終目的地点",
-        "generalExample": "The endpoint of a journey (旅の終着点)",
-        "techMeaning": "APIや通信が最後にたどり着く「窓口」のこと。ここに辿り着けないと、データが受け取れません。",
-        "explanation": "デートの待ち合わせ場所。せっかくオシャレしたのに、待ち合わせのカフェが潰れていたり（404）、場所を間違えたりすると、二人の通信（恋）は成立しません。",
-        "usageContext": "友達に住所を教えたのに、全然違う場所にたどり着いた時",
-        "usageExample": "You reached the wrong endpoint. I'm at the station!",
-        "usageExampleTranslation": "間違ったエンドポイントに着いてるよ。私は駅にいるんだってば！",
-        "usagePunchline": "Status: 404 Not Found (君の心に辿り着けません)",
-        "usagePunchlineTranslation": "ステータス：未検出（アクセス許可がありません）"
-    },
-    {
         "targetWord": "Backoff",
         "errorMessage": "Retrying with exponential backoff",
         "messageTranslation": "エクスポネンシャル・バックオフ（指数関数的後退）で再試行中",

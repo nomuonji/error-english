@@ -318,5 +318,6 @@
     "Constant",
     "Snapshot",
     "Upstream",
-    "Graceful"
+    "Graceful",
+    "Endpoint"
 ]
