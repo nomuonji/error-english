@@ -317,5 +317,6 @@
     "Property",
     "Constant",
     "Snapshot",
-    "Upstream"
+    "Upstream",
+    "Graceful"
 ]
