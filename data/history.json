@@ -322,5 +322,6 @@
     "Endpoint",
     "Backoff",
     "Bad",
-    "Unavailable"
+    "Unavailable",
+    "Acceptable"
 ]

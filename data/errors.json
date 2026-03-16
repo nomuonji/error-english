@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Acceptable",
-        "errorMessage": "406 Not Acceptable",
-        "messageTranslation": "受理不能 / 受け入れられません",
-        "generalMeaning": "【形】受け入れられる、許容できる、満足できる",
-        "generalExample": "That's an acceptable price. (それは許容できる価格ですね)",
-        "techMeaning": "ブラウザが「肉（日本語データ）をくれ！」と言っているのに、サーバーが「魚（英語データ）しかねーよ！」と返して、交渉が決裂した状態",
-        "explanation": "お互いの「形式の好み」が合わない時に起こります。こだわりが強すぎるアーティスト同士の打ち合わせみたいなエラーです。",
-        "usageContext": "ラーメン屋で「麺なしで！」という無茶な注文をした時",
-        "usageExample": "Is this order acceptable?",
-        "usageExampleTranslation": "この注文、いけますかね？",
-        "usagePunchline": "406 Not Acceptable (ウチ、麺屋なんで。お引き取りを。)",
-        "usagePunchlineTranslation": "406 受理不能（ウチ、麺屋なんで。お引き取りを。）"
-    },
-    {
         "targetWord": "Gone",
         "errorMessage": "410 Gone",
         "messageTranslation": "消滅しました / 行方不明",
