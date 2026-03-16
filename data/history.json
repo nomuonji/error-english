@@ -321,5 +321,6 @@
     "Graceful",
     "Endpoint",
     "Backoff",
-    "Bad"
+    "Bad",
+    "Unavailable"
 ]

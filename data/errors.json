@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unavailable",
-        "errorMessage": "503 Service Unavailable",
-        "messageTranslation": "サービス利用不可",
-        "generalMeaning": "【形】利用できない、手が空いていない、入手できない",
-        "generalExample": "The manager is unavailable right now. (マネージャーは現在、席を外しております)",
-        "techMeaning": "サーバーが「ちょっと今、修行（メンテナンス）に出てるんで…」と居留守を使っている状態",
-        "explanation": "アクセスが集中しすぎてパンクしたか、裏側で工事中の時に出ます。ユーザーに「また後で来てね」と優しく（？）拒絶するメッセージです。",
-        "usageContext": "意中の相手をデートに誘ったけど、秒で断られた時",
-        "usageExample": "She is unavailable this weekend.",
-        "usageExampleTranslation": "彼女、今週末は予定がある（＝無理）みたい。",
-        "usagePunchline": "HTTP 503: Service Unavailable (現在、心のメンテナンス中です)",
-        "usagePunchlineTranslation": "HTTP 503：サービス利用不可（現在、心のメンテナンス中です）"
-    },
-    {
         "targetWord": "Acceptable",
         "errorMessage": "406 Not Acceptable",
         "messageTranslation": "受理不能 / 受け入れられません",
