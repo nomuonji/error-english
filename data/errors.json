@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Bad",
-        "errorMessage": "400 Bad Request / 502 Bad Gateway",
-        "messageTranslation": "不正なリクエスト / 不正なゲートウェイ",
-        "generalMeaning": "【形】悪い、不快な、下手な",
-        "generalExample": "a bad smell (嫌な臭い)",
-        "techMeaning": "送った命令が、文法的にも論理的にも「は？」って言いたくなるほど支離滅裂な状態",
-        "explanation": "プログラム界の「言葉が通じないヤツ」。書き方が間違っているか、中継地点のサーバーがパニックを起こしている時に発生します。",
-        "usageContext": "友達の合コンの誘い方が雑すぎて、行く気が失せた時",
-        "usageExample": "That's a bad request. I won't go.",
-        "usageExampleTranslation": "その誘い方はナシでしょ。行かないよ。",
-        "usagePunchline": "Error 400: Bad Request (誘い方のセンス、デバッグしてこい)",
-        "usagePunchlineTranslation": "エラー400：不正なリクエスト（誘い方のセンス、やり直してこい）"
-    },
-    {
         "targetWord": "Unavailable",
         "errorMessage": "503 Service Unavailable",
         "messageTranslation": "サービス利用不可",
