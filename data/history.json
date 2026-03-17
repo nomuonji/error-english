@@ -323,5 +323,6 @@
     "Backoff",
     "Bad",
     "Unavailable",
-    "Acceptable"
+    "Acceptable",
+    "Gone"
 ]

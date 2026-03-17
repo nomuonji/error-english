@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Gone",
-        "errorMessage": "410 Gone",
-        "messageTranslation": "消滅しました / 行方不明",
-        "generalMeaning": "【形】去ってしまった、亡くなった、使い果たした",
-        "generalExample": "My summer vacation is gone. (夏休みが終わってしまった)",
-        "techMeaning": "「昔はここにいたんだけどね、もう完全に引退したんだ。探さないで…」というサーバーからの切ない最終宣告",
-        "explanation": "404（見つからない）よりも重い、「永久に消えた」ことを意味します。リンクが死んでいるのを通り越して、お墓が立っているような状態です。",
-        "usageContext": "給料日当日に、家賃と光熱費で財布が空になった時",
-        "usageExample": "My salary is already gone...",
-        "usageExampleTranslation": "給料がもう消えちゃった…",
-        "usagePunchline": "Error 410: Gone (残高という名のデータは削除されました)",
-        "usagePunchlineTranslation": "エラー410：消滅（残高という名のデータは削除されました）"
-    },
-    {
         "targetWord": "Exposed",
         "errorMessage": "Warning: Sensitive Information Exposed",
         "messageTranslation": "警告：機密情報が露出しています",
