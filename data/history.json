@@ -324,5 +324,6 @@
     "Bad",
     "Unavailable",
     "Acceptable",
-    "Gone"
+    "Gone",
+    "Exposed"
 ]

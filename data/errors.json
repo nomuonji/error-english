@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Exposed",
-        "errorMessage": "Warning: Sensitive Information Exposed",
-        "messageTranslation": "警告：機密情報が露出しています",
-        "generalMeaning": "【形】さらされた、むき出しの、暴露された",
-        "generalExample": "exposed skin (露出した肌)",
-        "techMeaning": "パスワードや秘密の鍵が、ネットという大通りのど真ん中にポツンと置かれて、全世界に丸見えになっている大惨事一歩手前の状態",
-        "explanation": "設定ミスで「秘密のノート」を公開設定にしてしまった時に出ます。見つかったら最後、セキュリティ担当者の顔面は蒼白です。",
-        "usageContext": "ズボンのチャックが全開のまま、プレゼンを終えた時",
-        "usageExample": "Your sensitive area was exposed during the meeting.",
-        "usageExampleTranslation": "会議中、大事なところが露出してましたよ。",
-        "usagePunchline": "Security Alert: Private Key Leak (社会の窓、全開につきアクセス禁止)",
-        "usagePunchlineTranslation": "セキュリティ警告：秘密鍵の漏洩（社会の窓、全開につきアクセス禁止）"
-    },
-    {
         "targetWord": "Hydration",
         "errorMessage": "Hydration failed because the initial UI does not match what was rendered on the server.",
         "messageTranslation": "サーバーで描画された内容とブラウザの初期表示が一致しないため、ハイドレーションに失敗しました。",
