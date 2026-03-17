@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Hydration",
-        "errorMessage": "Hydration failed because the initial UI does not match what was rendered on the server.",
-        "messageTranslation": "サーバーで描画された内容とブラウザの初期表示が一致しないため、ハイドレーションに失敗しました。",
-        "generalMeaning": "【名】水分補給、水和作用",
-        "generalExample": "Don't forget hydration during exercise. (運動中の水分補給を忘れないで。)",
-        "techMeaning": "カピカピに乾いたサーバー送りのHTMLに、JavaScriptが水をぶっかけて命を吹き込もうとしている状態。",
-        "explanation": "サーバーから届いた「静止画」を、ブラウザで「動ける状態」にする儀式。サーバーで作った形と、ブラウザで作ろうとした形が違うと『話が違う！』とプログラムが水を吐き出します。",
-        "usageContext": "砂漠で遭難して、やっと見つけたオアシスに飛び込んだ時。",
-        "usageExample": "I need immediate hydration before I collapse!",
-        "usageExampleTranslation": "倒れる前に今すぐ水分補給が必要だ！",
-        "usagePunchline": "Rescue: 200 Success",
-        "usagePunchlineTranslation": "救助隊：水分補給完了（正常終了）"
-    },
-    {
         "targetWord": "State",
         "errorMessage": "InvalidStateError: The object is in an invalid state.",
         "messageTranslation": "無効な状態エラー：オブジェクトが現在の状態では使用できません。",

@@ -325,5 +325,6 @@
     "Unavailable",
     "Acceptable",
     "Gone",
-    "Exposed"
+    "Exposed",
+    "Hydration"
 ]
