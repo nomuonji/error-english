@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "State",
-        "errorMessage": "InvalidStateError: The object is in an invalid state.",
-        "messageTranslation": "無効な状態エラー：オブジェクトが現在の状態では使用できません。",
-        "generalMeaning": "【名】状態、状況、国家、州",
-        "generalExample": "The car is in good state. (その車は状態が良い。)",
-        "techMeaning": "プログラムの『今の機嫌』。寝起きに数学の難問を出されると『今は無理！』とキレる人間のようなもの。",
-        "explanation": "「ロード中なのにボタンを連打した」とか「まだ準備できてないのに命令した」時に発生します。プログラムの機嫌（状態）を読み取ってあげるのがエンジニアの優しさです。",
-        "usageContext": "給料日直前に、友人から飲み会に誘われた時。",
-        "usageExample": "My bank account is in a critical state right now.",
-        "usageExampleTranslation": "俺の銀行口座は今、危機的な状況なんだ。",
-        "usagePunchline": "Brain: 500 System Down",
-        "usagePunchlineTranslation": "脳内：システムダウン（思考停止）"
-    },
-    {
         "targetWord": "Migration",
         "errorMessage": "Pending migration error: your database schema is out of date.",
         "messageTranslation": "保留中のマイグレーションエラー：データベースの構成が古いです。",
