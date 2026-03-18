@@ -328,5 +328,6 @@
     "Exposed",
     "Hydration",
     "State",
-    "Migration"
+    "Migration",
+    "Outdated"
 ]

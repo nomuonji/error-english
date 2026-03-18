@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Outdated",
-        "errorMessage": "npm WARN outdated: This package is no longer supported.",
-        "messageTranslation": "npm警告：このパッケージは古いため、もうサポートされていません。",
-        "generalMeaning": "【形】時代遅れの、旧式の",
-        "generalExample": "An outdated fashion. (時代遅れのファッション。)",
-        "techMeaning": "「お前の装備、ひのきのぼうだぞ？」と最新の魔王に笑われている状態。",
-        "explanation": "古いプログラムを使い続けると、セキュリティに穴が開いたり、新しい機能が動かなくなります。「まだ動くからいいや」は、エンジニア界ではフラグです。",
-        "usageContext": "実家に帰ったら、家族がまだガラケーで必死にネットをしていた時。",
-        "usageExample": "Is this device seriously outdated?",
-        "usageExampleTranslation": "このデバイス、マジで時代遅れじゃない？",
-        "usagePunchline": "Server: 404 Not Found",
-        "usagePunchlineTranslation": "サーバー：そんな古いものは見つかりません"
-    },
-    {
         "targetWord": "Metadata",
         "errorMessage": "Error: Metadata could not be initialized.",
         "messageTranslation": "エラー：メタデータを初期化できませんでした。",
