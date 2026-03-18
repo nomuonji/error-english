@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Migration",
-        "errorMessage": "Pending migration error: your database schema is out of date.",
-        "messageTranslation": "保留中のマイグレーションエラー：データベースの構成が古いです。",
-        "generalMeaning": "【名】移住、移行、鳥の渡り",
-        "generalExample": "The seasonal migration of birds. (鳥の季節的な渡り。)",
-        "techMeaning": "データベースの『大規模なお引っ越し』。新しい部屋（データ構造）に荷物を移そうとしたら、入り口が狭くて家具が入らない状態。",
-        "explanation": "システムが成長して「新しいデータ項目を追加したい！」という時に行います。お引っ越しに失敗すると、新居の鍵が開かずにシステムが路頭に迷います。",
-        "usageContext": "部屋の模様替えで、巨大なソファがドアを通らなくて詰んだ時。",
-        "usageExample": "This furniture migration is a complete disaster.",
-        "usageExampleTranslation": "この家具の移動、まじで大惨事だわ。",
-        "usagePunchline": "New Resident: 301 Moved Permanently",
-        "usagePunchlineTranslation": "新住人：恒久的に移動しました（ここはもう俺の家だ）"
-    },
-    {
         "targetWord": "Outdated",
         "errorMessage": "npm WARN outdated: This package is no longer supported.",
         "messageTranslation": "npm警告：このパッケージは古いため、もうサポートされていません。",
