@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Metadata",
-        "errorMessage": "Error: Metadata could not be initialized.",
-        "messageTranslation": "エラー：メタデータを初期化できませんでした。",
-        "generalMeaning": "【名】メタデータ（データに関するデータ）、付帯情報",
-        "generalExample": "Checking the metadata of a photo. (写真のメタデータを確認する。)",
-        "techMeaning": "データの『送り状』。中身が最高級の肉でも、送り状が破れて「これ何？ 誰から？」とシステムが困惑している状態。",
-        "explanation": "ファイルの作成日やサイズ、作者などの裏方情報のこと。地味ですが、これがないとプログラムは「中身をどう扱えばいいか」分からずフリーズします。",
-        "usageContext": "合コンで、名前も年齢も職業も一切明かさない「謎の人」が来た時。",
-        "usageExample": "That person has no metadata at all.",
-        "usageExampleTranslation": "あの人、プロフィール情報が全くないんだけど。",
-        "usagePunchline": "Organizer: 422 Unprocessable Entity",
-        "usagePunchlineTranslation": "幹事：処理不能なエンティティ（怪しすぎて対応不可）"
-    },
-    {
         "targetWord": "Unmet",
         "errorMessage": "npm ERR! code ERESOLVE: Unmet dependency",
         "messageTranslation": "npmエラー：未充足の依存関係があります",
