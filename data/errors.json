@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Policy",
-        "errorMessage": "Access to fetch at '...' has been blocked by CORS policy",
-        "messageTranslation": "CORSポリシーにより、'...'へのアクセスがブロックされました",
-        "generalMeaning": "【名】方針、規約、政策",
-        "generalExample": "Company policy (社内規定)",
-        "techMeaning": "「うちはよそ者はお断りだよ！」というブラウザの厳しい門番（ルール）",
-        "explanation": "セキュリティのための掟。他人のサイトのデータを勝手に盗まれないように守ってくれているのですが、Web開発初心者にとっては「またお前か！」となる一番の障壁です。",
-        "usageContext": "実家の「門限20時」というルールに阻まれた時",
-        "usageExample": "I can't stay late because of my house policy.",
-        "usageExampleTranslation": "家のポリシー（門限）のせいで、夜更かしできないんだ。",
-        "usagePunchline": "Security: 403 Forbidden",
-        "usagePunchlineTranslation": "警備員：立ち入り禁止（アクセス拒否）"
-    },
-    {
         "targetWord": "Entity",
         "errorMessage": "422 Unprocessable Entity",
         "messageTranslation": "422 処理できないエンティティ",
