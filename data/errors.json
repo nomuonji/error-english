@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unmet",
-        "errorMessage": "npm ERR! code ERESOLVE: Unmet dependency",
-        "messageTranslation": "npmエラー：未充足の依存関係があります",
-        "generalMeaning": "【形】（要求や条件が）満たされていない、充足されていない",
-        "generalExample": "Unmet needs (満たされているとは言えないニーズ)",
-        "techMeaning": "「あれがないと動けないよ！」とプログラムが駄々をこねている状態",
-        "explanation": "インストールし忘れや、バージョンの不一致が原因。必要なパーツが足りなくてプラモデルが完成しないような切ない状況です。まずは、そのパーツ（パッケージ）を揃えてあげましょう。",
-        "usageContext": "冷蔵庫に卵がないのにオムライスを作れと言われた時",
-        "usageExample": "The requirements for the omelet are unmet.",
-        "usageExampleTranslation": "オムライスの要件が満たされていません（卵がないよ）。",
-        "usagePunchline": "Chef: 501 Not Implemented",
-        "usagePunchlineTranslation": "シェフ：実装不可（卵がないから作れません）"
-    },
-    {
         "targetWord": "Policy",
         "errorMessage": "Access to fetch at '...' has been blocked by CORS policy",
         "messageTranslation": "CORSポリシーにより、'...'へのアクセスがブロックされました",
