@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Certificate",
-        "errorMessage": "SSL Certificate Error: Certificate has expired",
-        "messageTranslation": "SSL証明書エラー：証明書の期限が切れています",
-        "generalMeaning": "【名】証明書、免許状、修了証書",
-        "generalExample": "A birth certificate (出生証明書)",
-        "techMeaning": "ウェブサイトの『身分証明書』。期限切れや偽造はブラウザ警察が許しません。",
-        "explanation": "通信を暗号化するための公式な身分証です。これがないと、ブラウザが「このサイト、なりすまし（偽物）かもよ！」と真っ赤な画面で全力で警告してきます。",
-        "usageContext": "運転免許証の更新を忘れていて、警察に止められた時",
-        "usageExample": "Oh no, my certificate is invalid!",
-        "usageExampleTranslation": "やばい、僕の証明書が無効（期限切れ）だ！",
-        "usagePunchline": "Police: 401 Unauthorized",
-        "usagePunchlineTranslation": "警察：未認証（おまわりさんこっちです）"
-    },
-    {
         "targetWord": "Connection",
         "errorMessage": "Connection Refused",
         "messageTranslation": "接続が拒否されました",
