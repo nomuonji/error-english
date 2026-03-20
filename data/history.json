@@ -333,5 +333,6 @@
     "Metadata",
     "Unmet",
     "Policy",
-    "Entity"
+    "Entity",
+    "Environment"
 ]

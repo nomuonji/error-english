@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Environment",
-        "errorMessage": "ERROR: Environment variable 'API_KEY' is not set",
-        "messageTranslation": "エラー：環境変数 'API_KEY' が設定されていません",
-        "generalMeaning": "【名】環境、周囲の状況、自然界",
-        "generalExample": "Protect the environment (環境を保護する)",
-        "techMeaning": "プログラムが生きるための『空気』や『水』。設定がないとプログラムは窒息します。",
-        "explanation": "プログラムの外側で用意する値のこと。開発用、本番用などで中身を入れ替えるための『魔法の箱』です。中身が空っぽだと、プログラムは「ここじゃ生きられない！」とストライキを起こします。",
-        "usageContext": "キャンプに来たのに、火も水も食材も忘れた絶望的な状況",
-        "usageExample": "This is a harsh environment for cooking.",
-        "usageExampleTranslation": "料理をするには過酷な環境（道具が何もない）だね。",
-        "usagePunchline": "User: 503 Service Unavailable",
-        "usagePunchlineTranslation": "ユーザー：サービス利用不可（やる気が出ない）"
-    },
-    {
         "targetWord": "Certificate",
         "errorMessage": "SSL Certificate Error: Certificate has expired",
         "messageTranslation": "SSL証明書エラー：証明書の期限が切れています",
