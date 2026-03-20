@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Entity",
-        "errorMessage": "422 Unprocessable Entity",
-        "messageTranslation": "422 処理できないエンティティ",
-        "generalMeaning": "【名】実体、存在、独立したひとつのもの",
-        "generalExample": "A legal entity (法人)",
-        "techMeaning": "「送られてきたモノの形は分かるけど、中身が意味不明で処理できない」というサーバーの困惑",
-        "explanation": "データという『物（実体）』は届いたけれど、その内容が論理的にヘンな時に出ます。年齢の欄に「1000歳」と書くような、嫌がらせに近いデータを受け取ったサーバーの悲鳴です。",
-        "usageContext": "自販機にお札の形に切った「千円札のカラーコピー」を入れた時",
-        "usageExample": "This vending machine says it's an unprocessable entity.",
-        "usageExampleTranslation": "この自販機、処理できないエンティティ（偽札）だって言ってるよ。",
-        "usagePunchline": "Server: 400 Bad Request",
-        "usagePunchlineTranslation": "サーバー：リクエストが不正です（ふざけんな）"
-    },
-    {
         "targetWord": "Environment",
         "errorMessage": "ERROR: Environment variable 'API_KEY' is not set",
         "messageTranslation": "エラー：環境変数 'API_KEY' が設定されていません",
