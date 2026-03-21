@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Persistent",
-        "errorMessage": "Persistent storage error",
-        "messageTranslation": "永続的ストレージのエラー",
-        "generalMeaning": "【形】しつこい、粘り強い、持続的な",
-        "generalExample": "A persistent cough (しつこい咳)",
-        "techMeaning": "電源を切っても、寝て起きても、ずっとそこに居座り続ける「執念深い記憶力」の持ち主。",
-        "explanation": "メモリ（RAM）が「寝たら忘れる」タイプなのに対し、HDDやSSDは「一生忘れない」タイプ。そこに保存しようとしたけど、拒否された時に出ます。",
-        "usageContext": "10年前の黒歴史を、親戚の集まりで何度も掘り返してくるおばちゃんに遭遇した時。",
-        "usageExample": "Why is this memory so persistent?",
-        "usageExampleTranslation": "なんでこの記憶（黒歴史）はこんなにしつこいの？",
-        "usagePunchline": "Cache Clear",
-        "usagePunchlineTranslation": "キャッシュ（記憶）を今すぐ消去してください"
-    },
-    {
         "targetWord": "Overridden",
         "errorMessage": "Method must be overridden",
         "messageTranslation": "メソッドをオーバーライド（上書き）する必要があります",

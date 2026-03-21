@@ -337,5 +337,6 @@
     "Environment",
     "Certificate",
     "Connection",
-    "Atomic"
+    "Atomic",
+    "Persistent"
 ]
