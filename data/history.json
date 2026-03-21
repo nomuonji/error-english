@@ -335,5 +335,6 @@
     "Policy",
     "Entity",
     "Environment",
-    "Certificate"
+    "Certificate",
+    "Connection"
 ]

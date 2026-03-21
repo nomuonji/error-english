@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Connection",
-        "errorMessage": "Connection Refused",
-        "messageTranslation": "接続が拒否されました",
-        "generalMeaning": "【名】接続、つながり、関係",
-        "generalExample": "A poor internet connection (ネット接続が悪い)",
-        "techMeaning": "勇気を出して相手のサーバーに話しかけたのに、秒速で「お前とは話さない」と着信拒否された状態。",
-        "explanation": "相手が起動していないか、入り口を閉ざしている時に起こります。嫌われているわけではなく、ただ相手が「今は接客中じゃない」だけなので、設定を見直しましょう。",
-        "usageContext": "気になる人をデートに誘ったのに、即答で「その日は無理」と言われた時。",
-        "usageExample": "My connection was refused by her instantly...",
-        "usageExampleTranslation": "彼女に接続（お誘い）を即座に拒否されちゃった…。",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "彼女が見つかりません（実在しません）"
-    },
-    {
         "targetWord": "Atomic",
         "errorMessage": "Atomic operation failed",
         "messageTranslation": "アトミックな操作に失敗しました",
