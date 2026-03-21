@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Atomic",
-        "errorMessage": "Atomic operation failed",
-        "messageTranslation": "アトミックな操作に失敗しました",
-        "generalMeaning": "【形】原子の、これ以上分割できない",
-        "generalExample": "Atomic structure (原子構造)",
-        "techMeaning": "「やるなら全部やる、できないなら一ミリもやらない」という、究極のゼロか百かの完璧主義。",
-        "explanation": "銀行振込で「自分の残高は減ったのに相手には届いていない」という中途半端な事故を防ぐための、絶対に失敗が許されない一連の動作のことです。",
-        "usageContext": "「腹筋100回やるぞ！」と決めたのに、1回目で挫折して「今日のは無かったことにしよう」とする時。",
-        "usageExample": "My workout today must be atomic.",
-        "usageExampleTranslation": "今日の筋トレはアトミック（全部やるか、一回もやらないか）だ。",
-        "usagePunchline": "Rollback",
-        "usagePunchlineTranslation": "巻き戻し（昨日のだらしない自分に即復帰）"
-    },
-    {
         "targetWord": "Persistent",
         "errorMessage": "Persistent storage error",
         "messageTranslation": "永続的ストレージのエラー",

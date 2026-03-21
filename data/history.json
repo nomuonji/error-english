@@ -336,5 +336,6 @@
     "Entity",
     "Environment",
     "Certificate",
-    "Connection"
+    "Connection",
+    "Atomic"
 ]
