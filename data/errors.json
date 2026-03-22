@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Overridden",
-        "errorMessage": "Method must be overridden",
-        "messageTranslation": "メソッドをオーバーライド（上書き）する必要があります",
-        "generalMeaning": "【形】上書きされた、無効にされた、優先された",
-        "generalExample": "The original decision was overridden. (元の決定は覆された。)",
-        "techMeaning": "「親のやり方は古い！俺は俺のやり方でいく！」と子が宣言して、独自のルールを上書きすること。",
-        "explanation": "テンプレートだけあって中身が空っぽな時、「自分で中身を書かなきゃ動かないよ」とプログラムに催促されている状態です。",
-        "usageContext": "実家の「カレーにはソース」という家訓を無視して、自分の家では「激辛スパイス」をドバドバ入れる時。",
-        "usageExample": "The family recipe was overridden by my new style.",
-        "usageExampleTranslation": "家族のレシピは、私の新しいスタイルで上書きされた。",
-        "usagePunchline": "Parent Class Error",
-        "usagePunchlineTranslation": "親（クラス）の顔が見てみたい"
-    },
-    {
         "targetWord": "External",
         "errorMessage": "External library not found",
         "messageTranslation": "外部ライブラリが見つかりません",
