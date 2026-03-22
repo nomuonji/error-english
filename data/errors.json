@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Request",
-        "errorMessage": "400 Bad Request",
-        "messageTranslation": "不正なリクエストです",
-        "generalMeaning": "【名】依頼、頼みごと、要請",
-        "generalExample": "A request for help (助けの要請)",
-        "techMeaning": "プログラムがサーバーに対して送る「これやって！」というお願い",
-        "explanation": "お願いの仕方が雑すぎて、サーバーが「何言ってるか分からない」とキレている状態。マニュアル（仕様）を読まずに無茶振りするとよく出ます。",
-        "usageContext": "友達から100万円貸してと頼まれた時",
-        "usageExample": "Can you lend me 1 million yen?",
-        "usageExampleTranslation": "100万円貸してくれない？",
-        "usagePunchline": "400 Bad Request: Malformed syntax.",
-        "usagePunchlineTranslation": "400 不正なリクエスト：構文がデタラメすぎます。"
-    },
-    {
         "targetWord": "Found",
         "errorMessage": "404 Not Found",
         "messageTranslation": "見つかりませんでした",

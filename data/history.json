@@ -340,5 +340,6 @@
     "Atomic",
     "Persistent",
     "Overridden",
-    "External"
+    "External",
+    "Request"
 ]
