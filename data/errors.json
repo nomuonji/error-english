@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "External",
-        "errorMessage": "External library not found",
-        "messageTranslation": "外部ライブラリが見つかりません",
-        "generalMeaning": "【形】外部の、外側の、外来の",
-        "generalExample": "An external hard drive (外付けハードディスク)",
-        "techMeaning": "自分（自分のコード）だけでは解決できないので、外のプロに助けを求めたのに、そのプロがバックレて連絡が取れない状態。",
-        "explanation": "誰かが作った便利な道具セットを使おうとしたけど、そもそも道具箱をどこに置いたか忘れてしまった時に発生します。",
-        "usageContext": "自分で料理するのが面倒で出前を頼もうとしたら、デリバリーアプリがメンテナンス中だった時。",
-        "usageExample": "I need external help for my dinner.",
-        "usageExampleTranslation": "夕食には外部の助け（出前）が必要だ。",
-        "usagePunchline": "502 Bad Gateway",
-        "usagePunchlineTranslation": "配達員（ゲートウェイ）が道に迷って届きません"
-    },
-    {
         "targetWord": "Request",
         "errorMessage": "400 Bad Request",
         "messageTranslation": "不正なリクエストです",

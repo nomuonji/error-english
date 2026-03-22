@@ -339,5 +339,6 @@
     "Connection",
     "Atomic",
     "Persistent",
-    "Overridden"
+    "Overridden",
+    "External"
 ]
