@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Service",
-        "errorMessage": "503 Service Unavailable",
-        "messageTranslation": "サービスが利用できません",
-        "generalMeaning": "【名】奉仕、公共事業、おもてなし",
-        "generalExample": "The customer service was great. (接客サービスが素晴らしかった)",
-        "techMeaning": "サーバーが提供している「おもてなし」機能そのもの",
-        "explanation": "お店の前に「本日休業」の看板が出ている状態。サーバーが忙しすぎてパンクしているか、メンテナンス中でやる気がない時に出ます。",
-        "usageContext": "飲み会に誘われたけど、家でゲームをしたい時",
-        "usageExample": "Can you join us tonight?",
-        "usageExampleTranslation": "今夜、飲み会に来られる？",
-        "usagePunchline": "503 Service Unavailable. (Under maintenance.)",
-        "usagePunchlineTranslation": "503 サービス停止中（現在、私の心はメンテナンス中です）。"
-    },
-    {
         "targetWord": "Pipe",
         "errorMessage": "Broken pipe",
         "messageTranslation": "パイプが壊れています（通信が切断されました）",
