@@ -343,5 +343,6 @@
     "External",
     "Request",
     "Found",
-    "Service"
+    "Service",
+    "Pipe"
 ]

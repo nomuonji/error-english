@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Pipe",
-        "errorMessage": "Broken pipe",
-        "messageTranslation": "パイプが壊れています（通信が切断されました）",
-        "generalMeaning": "【名】管、水道管、煙管",
-        "generalExample": "A water pipe burst. (水道管が破裂した)",
-        "techMeaning": "データを通すための専用の「ホース」",
-        "explanation": "データを流している途中で、受け取り側が勝手に帰ってしまい、行き場を失ったデータでホースが破裂した状態。相手との信頼関係（接続）が崩壊しています。",
-        "usageContext": "熱弁していたのに、相手が寝落ちしていた時",
-        "usageExample": "Are you listening? This is the most important part!",
-        "usageExampleTranslation": "聞いてる？ここが一番大事なところなんだよ！",
-        "usagePunchline": "Broken pipe: Connection closed by listener.",
-        "usagePunchlineTranslation": "ブロークン・パイプ：聞き手によって接続がブチ切られました。"
-    },
-    {
         "targetWord": "Loop",
         "errorMessage": "Loop Detected",
         "messageTranslation": "ループが検出されました",
