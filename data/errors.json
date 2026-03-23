@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Found",
-        "errorMessage": "404 Not Found",
-        "messageTranslation": "見つかりませんでした",
-        "generalMeaning": "【動】find（見つける）の過去形・過去分詞形",
-        "generalExample": "I found my keys. (鍵を見つけた)",
-        "techMeaning": "「探したけど、どこにもないわ」とプログラムが途方に暮れている状態",
-        "explanation": "冷蔵庫にあるはずのプリンが消えている時の絶望感。URLの間違いや、ファイルが削除された時に発生する「世界一有名なエラー」です。",
-        "usageContext": "デートの相手が待ち合わせ場所に来ない時",
-        "usageExample": "Where is she? I've been waiting for an hour!",
-        "usageExampleTranslation": "彼女はどこ？もう1時間も待ってるんだ！",
-        "usagePunchline": "404 Girlfriend Not Found.",
-        "usagePunchlineTranslation": "404 彼女が見つかりません（最初から存在しない可能性があります）。"
-    },
-    {
         "targetWord": "Service",
         "errorMessage": "503 Service Unavailable",
         "messageTranslation": "サービスが利用できません",
