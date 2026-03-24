@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Loop",
-        "errorMessage": "Loop Detected",
-        "messageTranslation": "ループが検出されました",
-        "generalMeaning": "【名】輪、繰り返されるもの",
-        "generalExample": "A loop in a rope (ロープの結び目の輪)",
-        "techMeaning": "同じ場所をぐるぐる回って、一生抜け出せなくなった状態",
-        "explanation": "出口のない迷路。プログラムが「あ、ここさっき通った」と思いながら永遠に歩き続けているので、強制終了させないと熱暴走します。",
-        "usageContext": "不毛な会議で同じ話が繰り返されている時",
-        "usageExample": "We've been talking about the same thing for 2 hours.",
-        "usageExampleTranslation": "2時間ずっと同じことについて話してるね。",
-        "usagePunchline": "508 Loop Detected. (Terminating meeting...)",
-        "usagePunchlineTranslation": "508 ループ検出（会議を強制終了します）。"
-    },
-    {
         "targetWord": "Zero",
         "errorMessage": "ZeroDivisionError: division by zero",
         "messageTranslation": "ゼロ除算エラー：0で割り算をしました",

@@ -344,5 +344,6 @@
     "Request",
     "Found",
     "Service",
-    "Pipe"
+    "Pipe",
+    "Loop"
 ]
