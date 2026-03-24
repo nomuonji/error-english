@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Zero",
-        "errorMessage": "ZeroDivisionError: division by zero",
-        "messageTranslation": "ゼロ除算エラー：0で割り算をしました",
-        "generalMeaning": "【名】ゼロ、皆無",
-        "generalExample": "Zero chance of rain (降水確率0%)",
-        "techMeaning": "数学界の禁忌「0での割り算」を犯し、コンピュータが「宇宙が壊れる！」とパニックを起こしている状態。",
-        "explanation": "10個のリンゴを0人で分けることは物理的に不可能です。プログラムがこの世の理を無視しようとした時、このエラーで強制終了されます。分母が0にならないよう、if文でガードするのが大人のマナー。",
-        "usageContext": "飲み会の会計で、財布を忘れたフリをして自分の支払額を0にしようとした時",
-        "usageExample": "I'll pay zero today, okay?",
-        "usageExampleTranslation": "今日は僕の分、0円でいいかな？",
-        "usagePunchline": "Friends: 500 Internal Server Error",
-        "usagePunchlineTranslation": "友人一同：サーバー（友情）に重大な障害が発生しました（絶縁）"
-    },
-    {
         "targetWord": "Global",
         "errorMessage": "NameError: global name 'user_token' is not defined",
         "messageTranslation": "名前エラー：グローバル名 'user_token' が定義されていません",
