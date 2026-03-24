@@ -346,5 +346,6 @@
     "Service",
     "Pipe",
     "Loop",
-    "Zero"
+    "Zero",
+    "Global"
 ]

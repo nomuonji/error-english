@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Global",
-        "errorMessage": "NameError: global name 'user_token' is not defined",
-        "messageTranslation": "名前エラー：グローバル名 'user_token' が定義されていません",
-        "generalMeaning": "【形】地球規模の、世界的な、全体的な",
-        "generalExample": "Global warming (地球温暖化)",
-        "techMeaning": "「全人類が知っている超有名人」だと思って名前を呼んだのに、実は近所の誰も知らない人だった時の気まずさ。",
-        "explanation": "プログラムのどこからでも見えるのが『グローバル変数』。でも、ちゃんと紹介（定義）せずに呼び出すと「誰だよ！」と怒られます。有名人（変数）の管理は計画的に。",
-        "usageContext": "地元でしか通じない超マイナーな方言を、都会のど真ん中で自信満々に使った時",
-        "usageExample": "This dialect is a global standard!",
-        "usageExampleTranslation": "この方言は世界標準なんだ！",
-        "usagePunchline": "Stranger: 404 Not Found",
-        "usagePunchlineTranslation": "通行人：見つかりません（知らねーよ）"
-    },
-    {
         "targetWord": "Static",
         "errorMessage": "non-static variable cannot be referenced from a static context",
         "messageTranslation": "静的でない変数を、静的なコンテキストから参照することはできません",
