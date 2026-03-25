@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Static",
-        "errorMessage": "non-static variable cannot be referenced from a static context",
-        "messageTranslation": "静的でない変数を、静的なコンテキストから参照することはできません",
-        "generalMeaning": "【形】静的な、変化のない、活気のない",
-        "generalExample": "Static electricity (静電気)",
-        "techMeaning": "「みんなの共有物（Static）」を扱う場所で、自分専用の「プライベートな私物」を勝手に使おうとして、規律に厳しい風紀委員に怒られている状態。",
-        "explanation": "クラス全体で1つの『Static』な世界からは、個々のインスタンスが持つデータは見えません。公私混同を許さない、プログラム界の厳しいルールです。",
-        "usageContext": "公共の図書館に、勝手に自分の家のソファを持ち込んでくつろごうとした時",
-        "usageExample": "I want to use my personal sofa here.",
-        "usageExampleTranslation": "ここでマイ・ソファを使いたいんだけど。",
-        "usagePunchline": "Librarian: 403 Forbidden",
-        "usagePunchlineTranslation": "司書：私物の持ち込み、ダメ。ゼッタイ。（アクセス拒否）"
-    },
-    {
         "targetWord": "Constructor",
         "errorMessage": "TypeError: Class constructor User cannot be invoked without 'new'",
         "messageTranslation": "型エラー：クラスのコンストラクタ User は 'new' なしで呼び出すことはできません",

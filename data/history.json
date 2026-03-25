@@ -347,5 +347,6 @@
     "Pipe",
     "Loop",
     "Zero",
-    "Global"
+    "Global",
+    "Static"
 ]
