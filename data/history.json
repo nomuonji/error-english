@@ -348,5 +348,6 @@
     "Loop",
     "Zero",
     "Global",
-    "Static"
+    "Static",
+    "Constructor"
 ]

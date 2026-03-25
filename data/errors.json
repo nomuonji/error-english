@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Constructor",
-        "errorMessage": "TypeError: Class constructor User cannot be invoked without 'new'",
-        "messageTranslation": "型エラー：クラスのコンストラクタ User は 'new' なしで呼び出すことはできません",
-        "generalMeaning": "【名】建設者、製造者",
-        "generalExample": "A bridge constructor (橋の建設者)",
-        "techMeaning": "新しい命を吹き込む儀式（new）をサボって、無理やり実体化させようとした罰。実体のない幽霊を無理やり働かせようとしている状態。",
-        "explanation": "オブジェクトを作る時は『new』を使ってちゃんと初期化（コンストラクト）しましょう。準備を飛ばして結果だけ得ようとするのは、コンピュータの世界では重罪です。",
-        "usageContext": "入社手続きも自己紹介も飛ばして、いきなり会議室の真ん中に座って仕事をし始めた時",
-        "usageExample": "I am working here now!",
-        "usageExampleTranslation": "今からここで働くからよろしく！",
-        "usagePunchline": "Security: 401 Unauthorized",
-        "usagePunchlineTranslation": "警備員：お前誰だよ（認証失敗・つまみ出し）"
-    },
-    {
         "targetWord": "Local",
         "errorMessage": "UnboundLocalError: local variable 'count' referenced before assignment",
         "messageTranslation": "未割当ローカルエラー：ローカル変数 'count' が割り当て前に参照されました",
