@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Local",
-        "errorMessage": "UnboundLocalError: local variable 'count' referenced before assignment",
-        "messageTranslation": "未割当ローカルエラー：ローカル変数 'count' が割り当て前に参照されました",
-        "generalMeaning": "【形】地元の、各駅停車の、局所的な",
-        "generalExample": "A local train (各駅停車)",
-        "techMeaning": "自分の部屋の中（関数内）にあるはずのスマホを探しているのに、そもそもまだ買ってさえいない（代入してない）ことに気づいてパニックになっている状態。",
-        "explanation": "「そこにあるはず！」と思い込む前に、まずは値を入れましょう。関数の中だけで有効な『ローカル変数』は、使う直前の準備が何より大切です。",
-        "usageContext": "実家でしか通じない『お母さん、アレ取って』という魔法の言葉を、一人暮らしの部屋で虚しく叫んだ時",
-        "usageExample": "Where is my local 'Ale'?",
-        "usageExampleTranslation": "僕のローカルな『アレ』はどこ？",
-        "usagePunchline": "Room: 404 Not Found",
-        "usagePunchlineTranslation": "部屋：そんなもの（アレ）は存在しません"
-    },
-    {
         "targetWord": "Mangled",
         "errorMessage": "Error: Name mangling mismatch during linking",
         "messageTranslation": "エラー：リンク中に名前のマングリング（名前の修飾）の不一致が発生しました",

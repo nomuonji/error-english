@@ -349,5 +349,6 @@
     "Zero",
     "Global",
     "Static",
-    "Constructor"
+    "Constructor",
+    "Local"
 ]
