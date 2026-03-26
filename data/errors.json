@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Blocked",
-        "errorMessage": "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource",
-        "messageTranslation": "クロスオリジンリクエストが遮断されました：同一生成元ポリシーによりリモートリソースの読み取りは許可されていません",
-        "generalMeaning": "【形】ふさがれた、妨げられた、遮断された",
-        "generalExample": "The road is blocked by a fallen tree. (道が倒木でふさがれている。)",
-        "techMeaning": "セキュリティポリス（ブラウザなど）が「怪しい奴は一歩も通さん！」と門前払いしている状態",
-        "explanation": "初心者が一番最初に絶望する「CORSエラー」の正体。別のサイトから勝手にデータを盗まれないように、ブラウザが鉄壁のガードを固めているんです。設定を見直さないと一生通してくれません。",
-        "usageContext": "SNSで元カレ・元カノに連絡しようとしたら、アイコンが消えていた時",
-        "usageExample": "Wait, am I blocked on your Instagram?",
-        "usageExampleTranslation": "あれ、もしかしてインスタでブロックされてる？",
-        "usagePunchline": "Status: 403 Forbidden",
-        "usagePunchlineTranslation": "ステータス：立ち入り禁止（許可されていません）"
-    },
-    {
         "targetWord": "Stripped",
         "errorMessage": "Warning: binary has been stripped of debug symbols",
         "messageTranslation": "警告：バイナリからデバッグシンボルが剥ぎ取られています",
