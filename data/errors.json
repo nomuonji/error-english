@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mangled",
-        "errorMessage": "Error: Name mangling mismatch during linking",
-        "messageTranslation": "エラー：リンク中に名前のマングリング（名前の修飾）の不一致が発生しました",
-        "generalMeaning": "【動・形】（形が分からなくなるほど）めちゃくちゃにされた、台無しにされた",
-        "generalExample": "The car was mangled in the crash. (その車は衝突事故でめちゃくちゃに潰れた。)",
-        "techMeaning": "コンピュータが読みやすいように、関数の名前を勝手に「暗号のような呪文」に書き換えた状態",
-        "explanation": "人間が書いた「Hello」という関数を、コンピュータが管理しやすいように「_Z5HelloV」みたいに変えちゃうこと。名前が合わなくなると「お前の名前、聞いてたのと違うぞ！」と怒られます。",
-        "usageContext": "洗濯機で大事な服がボロボロになって、もはや雑巾にしか見えない時",
-        "usageExample": "My favorite sweater got mangled in the laundry...",
-        "usageExampleTranslation": "お気に入りのセーターが洗濯で見るも無残な姿に…",
-        "usagePunchline": "Response: 406 Not Acceptable",
-        "usagePunchlineTranslation": "返答：受け入れがたい外見です（受理不能）"
-    },
-    {
         "targetWord": "Polluted",
         "errorMessage": "Warning: Global namespace polluted by multiple libraries",
         "messageTranslation": "警告：複数のライブラリによってグローバルな名前空間が汚染されています",

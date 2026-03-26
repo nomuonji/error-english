@@ -350,5 +350,6 @@
     "Global",
     "Static",
     "Constructor",
-    "Local"
+    "Local",
+    "Mangled"
 ]
