@@ -351,5 +351,6 @@
     "Static",
     "Constructor",
     "Local",
-    "Mangled"
+    "Mangled",
+    "Polluted"
 ]

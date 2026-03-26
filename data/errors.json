@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Polluted",
-        "errorMessage": "Warning: Global namespace polluted by multiple libraries",
-        "messageTranslation": "警告：複数のライブラリによってグローバルな名前空間が汚染されています",
-        "generalMeaning": "【形】汚染された、汚された",
-        "generalExample": "The river is heavily polluted. (その川はひどく汚染されている。)",
-        "techMeaning": "みんなが使う共有スペース（グローバル変数）に、勝手に私物を置きまくってカオスな状態",
-        "explanation": "公園（共有スコープ）に全員がゴミを捨てたら、どれが自分の弁当箱か分からなくなりますよね。変数をどこでも使えるようにしすぎると、この「汚染」が起きてバグの温床になります。",
-        "usageContext": "共有の冷蔵庫に、誰のものか分からない賞味期限切れのパックが溢れている時",
-        "usageExample": "The office fridge is totally polluted with old food.",
-        "usageExampleTranslation": "オフィスの冷蔵庫、古い食べ物で完全に汚染されてるね。",
-        "usagePunchline": "Action: Purge 500 Internal Server Error",
-        "usagePunchlineTranslation": "対策：一掃しろ（サーバー内部エラーにつき全消去）"
-    },
-    {
         "targetWord": "Blocked",
         "errorMessage": "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource",
         "messageTranslation": "クロスオリジンリクエストが遮断されました：同一生成元ポリシーによりリモートリソースの読み取りは許可されていません",
