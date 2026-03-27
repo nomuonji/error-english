@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unused",
-        "errorMessage": "Warning: 'api_key' is defined but never used",
-        "messageTranslation": "警告：'api_key'は定義されましたが、一度も使われていません",
-        "generalMeaning": "【形】使われていない、未使用の",
-        "generalExample": "The equipment remains unused in the corner. (その備品は隅で使われないままになっている。)",
-        "techMeaning": "パーティーに招待されたのに、隅っこで誰とも喋らずに帰る「壁の花」状態の変数。",
-        "explanation": "メモリの無駄だとプログラムに怒られています。「いつか使うかも」という浮気心は捨てて、使わないなら消してあげましょう。",
-        "usageContext": "ダイエットのために買ったのに、一度も使わずホコリを被っている高級な腹筋ローラーを見つけた時",
-        "usageExample": "This fitness roller is still unused...",
-        "usageExampleTranslation": "この腹筋ローラー、まだ一回も使ってないんだよね…",
-        "usagePunchline": "Wallet: 402 Payment Required",
-        "usagePunchlineTranslation": "財布：金の無駄遣い（支払いが必要です）"
-    },
-    {
         "targetWord": "Suspicious",
         "errorMessage": "Warning: Suspicious semicolon at end of 'if' statement",
         "messageTranslation": "警告：if文の末尾にあるセミコロンが怪しいです",

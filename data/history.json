@@ -355,5 +355,6 @@
     "Polluted",
     "Blocked",
     "Stripped",
-    "Minified"
+    "Minified",
+    "Unused"
 ]
