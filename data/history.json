@@ -353,5 +353,6 @@
     "Local",
     "Mangled",
     "Polluted",
-    "Blocked"
+    "Blocked",
+    "Stripped"
 ]

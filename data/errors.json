@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Stripped",
-        "errorMessage": "Warning: binary has been stripped of debug symbols",
-        "messageTranslation": "警告：バイナリからデバッグシンボルが剥ぎ取られています",
-        "generalMeaning": "【動・形】（服や覆いを）剥ぎ取られた、中身を露出させた",
-        "generalExample": "The wallpaper was stripped off. (壁紙が剥がされた。)",
-        "techMeaning": "プログラムを軽くするために、人間向けの「ヒント（変数名など）」を全部捨てて裸にした状態",
-        "explanation": "本から「目次」や「ページ番号」を全部破り捨てて、文字だけにしたようなもの。動くけど、エラーが起きた時に「何行目の何ていう変数か」が人間には全く分からなくなります。デバッグは地獄。",
-        "usageContext": "オシャレにこだわった結果、機能性がゼロになったミニマリストの部屋",
-        "usageExample": "This room is so stripped down, there's nowhere to sit!",
-        "usageExampleTranslation": "この部屋、削ぎ落としすぎて座る場所すらないよ！",
-        "usagePunchline": "Error: 404 Not Found (Labels missing)",
-        "usagePunchlineTranslation": "エラー：ラベルが見つかりません（何もかも分からない）"
-    },
-    {
         "targetWord": "Minified",
         "errorMessage": "Uncaught Error: Exception in minified function a(e,t)",
         "messageTranslation": "未捕捉のエラー：縮小化された関数 a(e,t) 内で例外が発生しました",
