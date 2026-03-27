@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Minified",
-        "errorMessage": "Uncaught Error: Exception in minified function a(e,t)",
-        "messageTranslation": "未捕捉のエラー：縮小化された関数 a(e,t) 内で例外が発生しました",
-        "generalMeaning": "【動】（可能な限り）小さくされた、縮小された",
-        "generalExample": "The image was minified for the website. (画像がウェブサイト用に縮小された。)",
-        "techMeaning": "ソースコードの空白や改行を全部消して、変数名を「a」とか「b」に圧縮した、人間には読めないギチギチの状態",
-        "explanation": "プログラムの読み込みを速くするために、機械が「読みやすさ」を犠牲にして圧縮した姿です。エラーが出ても「関数aのx行目」とか言われるので、解読するには「ソースマップ」という地図が必要になります。",
-        "usageContext": "旅行の荷物を圧縮袋でガチガチに固めて、何がどこにあるか分からなくなった時",
-        "usageExample": "My luggage is so minified, I can't find my toothbrush.",
-        "usageExampleTranslation": "荷物を圧縮しすぎて、歯ブラシがどこか分からないよ。",
-        "usagePunchline": "Response: 413 Payload Too Large (Even after minification?)",
-        "usagePunchlineTranslation": "返答：まだデカいんかい（これだけ縮めても容量オーバー）"
-    },
-    {
         "targetWord": "Unused",
         "errorMessage": "Warning: 'api_key' is defined but never used",
         "messageTranslation": "警告：'api_key'は定義されましたが、一度も使われていません",
