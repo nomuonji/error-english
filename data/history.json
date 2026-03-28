@@ -357,5 +357,6 @@
     "Stripped",
     "Minified",
     "Unused",
-    "Suspicious"
+    "Suspicious",
+    "Unbalanced"
 ]
