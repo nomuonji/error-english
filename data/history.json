@@ -358,5 +358,6 @@
     "Minified",
     "Unused",
     "Suspicious",
-    "Unbalanced"
+    "Unbalanced",
+    "Primitive"
 ]

@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Primitive",
-        "errorMessage": "TypeError: Cannot create property 'id' on primitive string",
-        "messageTranslation": "型エラー：プリミティブな文字列に'id'プロパティを作成できません",
-        "generalMeaning": "【形】原始的な、単純な、原始の",
-        "generalExample": "Primitive tribes lived in caves. (原始的な部族は洞窟で暮らしていた。)",
-        "techMeaning": "ただの数字や文字という「単細胞生物」に、無理やり最新装備（プロパティ）を付けようとして拒否された状態。",
-        "explanation": "数値や文字列はシンプルさが売り。石ころに無理やりエアコンを取り付けようとするのはやめましょう。",
-        "usageContext": "ガラケーを使っている友人に、必死でAirDropの便利さを説明しようとした時",
-        "usageExample": "This phone is too primitive to use that app.",
-        "usageExampleTranslation": "このスマホ、原始的すぎてそのアプリ使えないよ。",
-        "usagePunchline": "Friend: 505 HTTP Version Not Supported",
-        "usagePunchlineTranslation": "友人：時代が追いついてない（サポートされていないバージョン）"
-    },
-    {
         "targetWord": "Native",
         "errorMessage": "Error: Illegal access to native code",
         "messageTranslation": "エラー：ネイティブコードへの不正なアクセスです",
