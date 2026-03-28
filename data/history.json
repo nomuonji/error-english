@@ -356,5 +356,6 @@
     "Blocked",
     "Stripped",
     "Minified",
-    "Unused"
+    "Unused",
+    "Suspicious"
 ]

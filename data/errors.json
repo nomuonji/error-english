@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Suspicious",
-        "errorMessage": "Warning: Suspicious semicolon at end of 'if' statement",
-        "messageTranslation": "警告：if文の末尾にあるセミコロンが怪しいです",
-        "generalMeaning": "【形】疑わしい、怪しい、不審な",
-        "generalExample": "A suspicious man was hanging around. (不審な男がうろついていた。)",
-        "techMeaning": "プログラムが「お前、今わざとバグ仕込もうとしただろ？」とジト目で職務質問してきている状態。",
-        "explanation": "エラーではないけれど、明らかに意図と違う動き（無限ループとか）をしそうな時に出ます。プログラムの直感は意外と鋭いですよ。",
-        "usageContext": "深夜にフードを目深に被って、ATMの前でキョロキョロしながら電話している時",
-        "usageExample": "You look very suspicious tonight.",
-        "usageExampleTranslation": "今夜の君、すごく怪しいよ。",
-        "usagePunchline": "Police: 401 Unauthorized",
-        "usagePunchlineTranslation": "警察：ちょっと署まで来てもらおうか（認証されていません）"
-    },
-    {
         "targetWord": "Unbalanced",
         "errorMessage": "Error: Unbalanced parentheses in expression",
         "messageTranslation": "エラー：式の中の括弧の対応が取れていません",
