@@ -359,5 +359,6 @@
     "Unused",
     "Suspicious",
     "Unbalanced",
-    "Primitive"
+    "Primitive",
+    "Native"
 ]

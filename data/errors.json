@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Native",
-        "errorMessage": "Error: Illegal access to native code",
-        "messageTranslation": "エラー：ネイティブコードへの不正なアクセスです",
-        "generalMeaning": "【形】その土地固有の、生まれつきの、本来の",
-        "generalExample": "He is a native speaker of English. (彼は英語のネイティブスピーカーだ。)",
-        "techMeaning": "開発者が作った「一般人」ではなく、言語やOSが用意した「特権階級（本家）」の聖域に土足で踏み込んだ状態。",
-        "explanation": "プログラミング言語の心臓部は、僕らが触れない「禁足地」。初心者が中身を魔改造しようとすると、神（OS）の鉄槌が下ります。",
-        "usageContext": "海外旅行で「現地の人（ネイティブ）」だと思って道を聞いたら、相手もただの観光客だった時",
-        "usageExample": "I thought she was a native but she's just a tourist!",
-        "usageExampleTranslation": "彼女、地元の人だと思ったのにただの観光客かよ！",
-        "usagePunchline": "Me: 406 Not Acceptable",
-        "usagePunchlineTranslation": "自分：偽物は受け付けられません（受理不可）"
-    },
-    {
         "targetWord": "Cyclic",
         "errorMessage": "Error: Cyclic dependency detected",
         "messageTranslation": "エラー：循環参照（ループ）が検出されました",
