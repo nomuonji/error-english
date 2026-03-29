@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unassigned",
-        "errorMessage": "Use of unassigned local variable 'score'",
-        "messageTranslation": "割り当てられていないローカル変数 'score' が使用されました",
-        "generalMeaning": "【形】割り当てられていない、任命されていない",
-        "generalExample": "An unassigned seat (指定されていない席)",
-        "techMeaning": "魂の入っていない人形。名前だけ決まっていて、中身（値）が空っぽの「エアー」な状態。",
-        "explanation": "箱だけ用意して、中身を入れるのを忘れています。中身がないのに「それ取って！」と言われて、プログラムが困惑しています。",
-        "usageContext": "合コンで、誰も座っていない席に話しかけている人を見た時",
-        "usageExample": "He is talking to an unassigned seat.",
-        "usageExampleTranslation": "あいつ、誰もいない席に話しかけてるぞ。",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "中身が見つかりません（存在しない記憶）"
-    },
-    {
         "targetWord": "Dropped",
         "errorMessage": "Connection dropped by remote host",
         "messageTranslation": "リモートホストによって接続が切断されました",

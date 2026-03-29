@@ -361,5 +361,6 @@
     "Unbalanced",
     "Primitive",
     "Native",
-    "Cyclic"
+    "Cyclic",
+    "Unassigned"
 ]
