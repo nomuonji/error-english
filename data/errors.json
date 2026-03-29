@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Cyclic",
-        "errorMessage": "Error: Cyclic dependency detected",
-        "messageTranslation": "エラー：循環参照（ループ）が検出されました",
-        "generalMeaning": "【形】周期的な、循環的な",
-        "generalExample": "The cyclic nature of the seasons. (季節の循環する性質)",
-        "techMeaning": "「卵が先か鶏が先か」状態。AがBを呼び、BがAを呼ぶ、終わらない愛のメンヘラループ。",
-        "explanation": "お互いを必要としすぎて、一歩も前に進めなくなっています。どちらかが身を引く（参照を断つ）まで、コンピュータは悩み続けます。",
-        "usageContext": "友達同士で「何食べたい？」「何でもいいよ、お前は？」「俺も何でもいいよ」という会話が続いた時",
-        "usageExample": "Our conversation is getting cyclic.",
-        "usageExampleTranslation": "うちらの会話、ループしてない？",
-        "usagePunchline": "408 Request Timeout",
-        "usagePunchlineTranslation": "タイムアウト（待ってられん、マックでいいわ）"
-    },
-    {
         "targetWord": "Unassigned",
         "errorMessage": "Use of unassigned local variable 'score'",
         "messageTranslation": "割り当てられていないローカル変数 'score' が使用されました",

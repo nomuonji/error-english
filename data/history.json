@@ -360,5 +360,6 @@
     "Suspicious",
     "Unbalanced",
     "Primitive",
-    "Native"
+    "Native",
+    "Cyclic"
 ]
