@@ -364,5 +364,6 @@
     "Cyclic",
     "Unassigned",
     "Dropped",
-    "Undeclared"
+    "Undeclared",
+    "Unstaged"
 ]

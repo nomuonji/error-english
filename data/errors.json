@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Unstaged",
-        "errorMessage": "Changes not staged for commit",
-        "messageTranslation": "コミット用にステージングされていない変更があります",
-        "generalMeaning": "【形】上演（準備）されていない、舞台に乗っていない",
-        "generalExample": "The play remained unstaged. (その劇は上演されないままだった)",
-        "techMeaning": "楽屋でまだ着替えている最中。舞台（コミット）に上がる心の準備ができていない、もじもじした状態。",
-        "explanation": "作業はしたけれど、まだ「これを保存します！」という列に並んでいません。まずは「ステージ」に上げてあげましょう。",
-        "usageContext": "部屋を片付けたのに、ゴミ袋を玄関に出し忘れて、ゴミ収集車が行ってしまった時",
-        "usageExample": "The trash was still unstaged.",
-        "usageExampleTranslation": "ゴミがまだステージングされてなかった（出し忘れた）。",
-        "usagePunchline": "Rollback initiated",
-        "usagePunchlineTranslation": "巻き戻し開始（もう一週間、ゴミと同居確定）"
-    },
-    {
         "targetWord": "Subscript",
         "errorMessage": "IndexError: list subscript out of range",
         "messageTranslation": "インデックスエラー：リストの添え字が範囲外です",
