@@ -363,5 +363,6 @@
     "Native",
     "Cyclic",
     "Unassigned",
-    "Dropped"
+    "Dropped",
+    "Undeclared"
 ]

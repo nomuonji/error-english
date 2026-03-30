@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Undeclared",
-        "errorMessage": "ReferenceError: 'x' is undeclared",
-        "messageTranslation": "リファレンスエラー：'x' は宣言されていません",
-        "generalMeaning": "【形】申告されていない、宣言されていない",
-        "generalExample": "Undeclared baggage (無申告の手荷物)",
-        "techMeaning": "「誰それ？」状態。紹介もされていない不審者がいきなり現れて、プログラムがパニックを起こしている状態。",
-        "explanation": "使う前に「これからこいつ（変数）を使います！」という自己紹介（宣言）が必要です。いきなりタメ口で話しかけるのはやめましょう。",
-        "usageContext": "知らない人が親しげに「よっ！」と話しかけてきた時",
-        "usageExample": "Wait, you are an undeclared person!",
-        "usageExampleTranslation": "ちょっと待て、お前、誰だよ（宣言されてないぞ）！",
-        "usagePunchline": "401 Unauthorized",
-        "usagePunchlineTranslation": "認証失敗（お前のようなやつは知らん）"
-    },
-    {
         "targetWord": "Unstaged",
         "errorMessage": "Changes not staged for commit",
         "messageTranslation": "コミット用にステージングされていない変更があります",
