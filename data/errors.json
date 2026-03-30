@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Dropped",
-        "errorMessage": "Connection dropped by remote host",
-        "messageTranslation": "リモートホストによって接続が切断されました",
-        "generalMeaning": "【動】落とした、中断した、やめた",
-        "generalExample": "I dropped my phone. (スマホを落とした)",
-        "techMeaning": "デジタルな絶縁状。既読スルーどころか、会話の途中でいきなり受話器を叩きつけられた状態。",
-        "explanation": "相手側が「もうお前とは話したくない！」と通信を強制終了しました。サーバーが重すぎるか、あなたが嫌われたかのどちらかです。",
-        "usageContext": "デートの誘いをした瞬間に、LINEの既読がつかなくなった時",
-        "usageExample": "She dropped the connection...",
-        "usageExampleTranslation": "彼女に接続を切られた（ブロックされた）…",
-        "usagePunchline": "503 Service Unavailable",
-        "usagePunchlineTranslation": "サービス利用不可（現在、あなたの相手をする余裕はありません）"
-    },
-    {
         "targetWord": "Undeclared",
         "errorMessage": "ReferenceError: 'x' is undeclared",
         "messageTranslation": "リファレンスエラー：'x' は宣言されていません",

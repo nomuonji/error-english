@@ -362,5 +362,6 @@
     "Primitive",
     "Native",
     "Cyclic",
-    "Unassigned"
+    "Unassigned",
+    "Dropped"
 ]
