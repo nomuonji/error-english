@@ -365,5 +365,6 @@
     "Unassigned",
     "Dropped",
     "Undeclared",
-    "Unstaged"
+    "Unstaged",
+    "Subscript"
 ]

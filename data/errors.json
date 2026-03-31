@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Subscript",
-        "errorMessage": "IndexError: list subscript out of range",
-        "messageTranslation": "インデックスエラー：リストの添え字が範囲外です",
-        "generalMeaning": "【名】添え字、（化学式などの）下付き文字",
-        "generalExample": "A subscript in a chemical formula (化学式の添え字)",
-        "techMeaning": "「何番目か」を指す数字。0から数え始めるルールを忘れると、存在しない場所を指して怒られるやつ。",
-        "explanation": "3人しかいない列で「4番目の人！」と呼ぶようなもの。プログラミング界では「0番目、1番目、2番目」と数えるので、3人目は2番。初心者が必ず一回はキレるポイントです。",
-        "usageContext": "合コンで3人組の女子に、いないはずの4人目の名前を聞いた時",
-        "usageExample": "Wait, what is the name of the fourth person (subscript 3)?",
-        "usageExampleTranslation": "待って、4人目（添え字の3）の名前は何？",
-        "usagePunchline": "404 Not Found",
-        "usagePunchlineTranslation": "そんな奴はおらん（未検出）"
-    },
-    {
         "targetWord": "Boundary",
         "errorMessage": "Boundary condition check failed",
         "messageTranslation": "境界条件のチェックに失敗しました",
