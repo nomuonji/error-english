@@ -366,5 +366,6 @@
     "Dropped",
     "Undeclared",
     "Unstaged",
-    "Subscript"
+    "Subscript",
+    "Boundary"
 ]

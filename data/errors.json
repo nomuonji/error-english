@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Boundary",
-        "errorMessage": "Boundary condition check failed",
-        "messageTranslation": "境界条件のチェックに失敗しました",
-        "generalMeaning": "【名】境界、限界、端っこ",
-        "generalExample": "The boundary between two countries (二国間の国境)",
-        "techMeaning": "プログラムが動いていい「縄張り」。端っこギリギリを攻めすぎると、ガードマン（OS）に止められる。",
-        "explanation": "「100円までOK」と言われたのに、100.00001円使おうとすると出るエラー。この「境界線」ギリギリでバグが起きやすいので、エンジニアはいつも端っこを気にして生きています。",
-        "usageContext": "食べ放題で「皿の境界線」を超えて料理を山盛りにした時",
-        "usageExample": "I think I crossed the boundary of this plate...",
-        "usageExampleTranslation": "皿の限界（境界）を超えちゃった気がする…",
-        "usagePunchline": "413 Payload Too Large",
-        "usagePunchlineTranslation": "盛りすぎ（リクエスト実体が大きすぎます）"
-    },
-    {
         "targetWord": "Precedence",
         "errorMessage": "Operator precedence ambiguity detected",
         "messageTranslation": "演算子の優先順位の曖昧さが検出されました",
