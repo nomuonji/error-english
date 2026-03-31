@@ -367,5 +367,6 @@
     "Undeclared",
     "Unstaged",
     "Subscript",
-    "Boundary"
+    "Boundary",
+    "Precedence"
 ]

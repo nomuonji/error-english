@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Precedence",
-        "errorMessage": "Operator precedence ambiguity detected",
-        "messageTranslation": "演算子の優先順位の曖昧さが検出されました",
-        "generalMeaning": "【名】優先、先行、上位であること",
-        "generalExample": "Safety takes precedence over speed. (安全は速度に優先する)",
-        "techMeaning": "「どっちの処理を先にやるか」という計算界のヒエラルキー（身分制度）。",
-        "explanation": "足し算より掛け算が強い、みたいなルールのこと。カッコを付け忘れると、意図しない計算結果になって「俺の給料が10倍にならない！」といった悲劇が起きます。",
-        "usageContext": "デザートをメインディッシュより先に食べようとして怒られた時",
-        "usageExample": "Does dessert have precedence over dinner?",
-        "usageExampleTranslation": "デザートは夕食より優先順位が高いの？",
-        "usagePunchline": "400 Bad Request",
-        "usagePunchlineTranslation": "順番が違うわ（不正なリクエスト）"
-    },
-    {
         "targetWord": "Livelock",
         "errorMessage": "Livelock detected: threads are active but no progress is made",
         "messageTranslation": "ライブロックを検出：スレッドは動いていますが、一歩も進んでいません",
