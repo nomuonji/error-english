@@ -370,5 +370,6 @@
     "Boundary",
     "Precedence",
     "Livelock",
-    "Leading"
+    "Leading",
+    "Warning"
 ]

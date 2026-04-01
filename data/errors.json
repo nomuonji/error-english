@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Warning",
-        "errorMessage": "Warning: Each child in a list should have a unique 'key' prop.",
-        "messageTranslation": "警告：リスト内の各要素には一意の「key」プロパティを設定してください。",
-        "generalMeaning": "【名】警告、注意、前触れ",
-        "generalExample": "A storm warning (暴風警報)",
-        "techMeaning": "「今は動いてるけど、後で痛い目見るよ？」というプログラムからの小姑のような忠告。",
-        "explanation": "エラーと違ってプログラムは止まりませんが、無視し続けると後でバグの温床になります。人間関係で言うところの「怒ってないよ（怒）」の状態に近いです。",
-        "usageContext": "パートナーが静かに怒り始めた時",
-        "usageExample": "My wife gave me a final warning because I forgot our anniversary.",
-        "usageExampleTranslation": "記念日を忘れたから、妻から最終警告を食らっちゃったよ。",
-        "usagePunchline": "429 Too Many Requests",
-        "usagePunchlineTranslation": "言い訳の回数制限を超えました（アクセス過多）"
-    },
-    {
         "targetWord": "Failed",
         "errorMessage": "Build failed with 2 errors and 0 warnings.",
         "messageTranslation": "ビルドに失敗しました（エラー2、警告0）。",
