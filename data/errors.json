@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Livelock",
-        "errorMessage": "Livelock detected: threads are active but no progress is made",
-        "messageTranslation": "ライブロックを検出：スレッドは動いていますが、一歩も進んでいません",
-        "generalMeaning": "【名】ライブロック（お互いに譲り合って進まない状態）",
-        "generalExample": "A livelock in the hallway (廊下でのお互いの譲り合い)",
-        "techMeaning": "全員が気を使いすぎて、結果的に一歩も進まない「丁寧すぎるフリーズ」。",
-        "explanation": "デッドロックが「ガチガチに固まる」なら、ライブロックは「お先にどうぞ」「いえ、お先にどうぞ」と高速で譲り合って、結局誰も通れない状態。無駄に動いている分、タチが悪い！",
-        "usageContext": "狭い道で対面した人と、右に左にと同時に動いてずっと通れない時",
-        "usageExample": "We are stuck in a livelock here!",
-        "usageExampleTranslation": "うちらライブロック状態でハマってるね！",
-        "usagePunchline": "504 Gateway Timeout",
-        "usagePunchlineTranslation": "いつまでやってんねん（タイムアウト）"
-    },
-    {
         "targetWord": "Leading",
         "errorMessage": "Leading zeros are not allowed in this format",
         "messageTranslation": "この形式では先頭のゼロは許可されていません",
