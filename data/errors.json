@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Leading",
-        "errorMessage": "Leading zeros are not allowed in this format",
-        "messageTranslation": "この形式では先頭のゼロは許可されていません",
-        "generalMeaning": "【形】先頭の、主要な",
-        "generalExample": "A leading company (一流企業)",
-        "techMeaning": "「一番前にある」ということ。大抵は「余計なスペースや数字を頭に付けるな」と怒る時に出てくる。",
-        "explanation": "数字の「7」を「07」と書いたりすると、コンピューターが「えっ、何この0？ 呪文？」と混乱してエラーを吐きます。几帳面すぎて怒られるパターンです。",
-        "usageContext": "テストの名前欄の前に、勝手に「イケメンの」と付け足した時",
-        "usageExample": "Why did you add a leading adjective to your name?",
-        "usageExampleTranslation": "なんで名前に先頭形容詞を付けたの？",
-        "usagePunchline": "422 Unprocessable Entity",
-        "usagePunchlineTranslation": "処理不能（そんなキャラじゃない）"
-    },
-    {
         "targetWord": "Warning",
         "errorMessage": "Warning: Each child in a list should have a unique 'key' prop.",
         "messageTranslation": "警告：リスト内の各要素には一意の「key」プロパティを設定してください。",
