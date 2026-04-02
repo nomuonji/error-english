@@ -371,5 +371,6 @@
     "Precedence",
     "Livelock",
     "Leading",
-    "Warning"
+    "Warning",
+    "Failed"
 ]

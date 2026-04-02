@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Failed",
-        "errorMessage": "Build failed with 2 errors and 0 warnings.",
-        "messageTranslation": "ビルドに失敗しました（エラー2、警告0）。",
-        "generalMeaning": "【動】失敗した、不合格になった、（期待に）応えられなかった",
-        "generalExample": "I failed the driving test. (運転免許の試験に落ちた。)",
-        "techMeaning": "「もう無理、やってられんわ！」とプログラムがストライキを起こして、座り込みを始めた状態。",
-        "explanation": "何かが原因で作業が完遂できなかった状態です。原因（Reason）をセットで探してあげないと、彼は二度と立ち上がってくれません。",
-        "usageContext": "ダイエット中に誘惑に負けてラーメンを食べた時",
-        "usageExample": "I failed my diet because of this delicious ramen...",
-        "usageExampleTranslation": "この美味しいラーメンのせいで、ダイエットに失敗しちゃった…",
-        "usagePunchline": "402 Payment Required",
-        "usagePunchlineTranslation": "（ラーメン代の）支払いが必要です"
-    },
-    {
         "targetWord": "Critical",
         "errorMessage": "CRITICAL ERROR: Database connection lost.",
         "messageTranslation": "致命的なエラー：データベースとの接続が失われました。",
