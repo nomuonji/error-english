@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Critical",
-        "errorMessage": "CRITICAL ERROR: Database connection lost.",
-        "messageTranslation": "致命的なエラー：データベースとの接続が失われました。",
-        "generalMeaning": "【形】重大な、危機的な、批判的な",
-        "generalExample": "The patient is in critical condition. (患者は危篤状態です。)",
-        "techMeaning": "「絶体絶命」。プログラムが白目を剥いて倒れる寸前の、極めてヤバい状態。",
-        "explanation": "Fatal（即死）の一歩手前。放置するとシステム全体が崩壊する可能性があるため、最優先でレスキュー（修正）が必要です。",
-        "usageContext": "スマホの充電が残り1%で、充電器が手元にない時",
-        "usageExample": "My battery is at a critical level! Where is the charger?",
-        "usageExampleTranslation": "バッテリーが危機的状況だ！充電器はどこ！？",
-        "usagePunchline": "503 Service Unavailable",
-        "usagePunchlineTranslation": "サービス利用不可（電源が落ちました）"
-    },
-    {
         "targetWord": "Verify",
         "errorMessage": "Could not verify the identity of the server.",
         "messageTranslation": "サーバーの身元を検証（確認）できませんでした。",

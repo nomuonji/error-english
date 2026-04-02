@@ -372,5 +372,6 @@
     "Livelock",
     "Leading",
     "Warning",
-    "Failed"
+    "Failed",
+    "Critical"
 ]
