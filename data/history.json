@@ -373,5 +373,6 @@
     "Leading",
     "Warning",
     "Failed",
-    "Critical"
+    "Critical",
+    "Verify"
 ]

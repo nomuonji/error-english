@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Verify",
-        "errorMessage": "Could not verify the identity of the server.",
-        "messageTranslation": "サーバーの身元を検証（確認）できませんでした。",
-        "generalMeaning": "【動】確かめる、実証する、照合する",
-        "generalExample": "Please verify your flight schedule. (フライトの予定を確認してください。)",
-        "techMeaning": "「お前、本当に本人か？」と、プログラムが疑いの眼差しでジロジロ見てくる職務質問。",
-        "explanation": "データが正しいか、改ざんされていないかをチェックすること。これが通らないと、怪しいヤツとして門前払いされます。",
-        "usageContext": "夜のクラブの入り口で年齢確認をされる時",
-        "usageExample": "The bouncer needs to verify my ID before I enter.",
-        "usageExampleTranslation": "入る前に、用心棒が俺の身分証を確認する必要があるんだ。",
-        "usagePunchline": "401 Unauthorized",
-        "usagePunchlineTranslation": "未認証（お帰りください）"
-    },
-    {
         "targetWord": "Disabled",
         "errorMessage": "Error: JavaScript is disabled in your browser.",
         "messageTranslation": "エラー：ブラウザのJavaScriptが無効になっています。",
