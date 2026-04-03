@@ -375,5 +375,6 @@
     "Failed",
     "Critical",
     "Verify",
-    "Disabled"
+    "Disabled",
+    "Cascade"
 ]

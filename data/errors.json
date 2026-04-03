@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Cascade",
-        "errorMessage": "CRITICAL: Cascading failure detected in microservices",
-        "messageTranslation": "致命的：マイクロサービスで連鎖的な失敗が検出されました",
-        "generalMeaning": "【名】小さな滝、次々とつながる連鎖",
-        "generalExample": "A cascade of events (立て続けに起こる出来事)",
-        "techMeaning": "一人がバグると全員道連れ。ドミノ倒し状態の絶望。主にCSSや大規模システムで暴れる。",
-        "explanation": "一つのミスが次のエラーを呼び、最終的にシステム全体を沈黙させる恐怖の連鎖です。CSSで「一箇所直したつもりが全部崩れた」のもこれ。原因の親玉を探すのが大変！",
-        "usageContext": "キッチンで棚のボウルを一個落とした時",
-        "usageExample": "It's a cascade of falling dishes!",
-        "usageExampleTranslation": "皿の連鎖（ドミノ倒し）が止まらない！",
-        "usagePunchline": "500 Internal Server Error",
-        "usagePunchlineTranslation": "サーバー内部で壊滅しました（後片付けは明日）"
-    },
-    {
         "targetWord": "Fallback",
         "errorMessage": "Warning: Using fallback implementation for 'Geolocation'",
         "messageTranslation": "警告：位置情報に代替（フォールバック）実装を使用しています",
