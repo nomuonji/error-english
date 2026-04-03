@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Fallback",
-        "errorMessage": "Warning: Using fallback implementation for 'Geolocation'",
-        "messageTranslation": "警告：位置情報に代替（フォールバック）実装を使用しています",
-        "generalMeaning": "【名】後退、棄権、代替案（プランB）",
-        "generalExample": "A fallback plan (予備の計画)",
-        "techMeaning": "第一志望に振られた時の「滑り止め」。メインがダメな時の緊急用スペアタイヤ。",
-        "explanation": "最新機能が使えない古い環境や、ネットが切れた時のために用意しておく「予備ルート」のこと。これがないと、エラーが出た瞬間にプログラムは思考停止します。",
-        "usageContext": "お目当てのレストランが定休日だった時",
-        "usageExample": "Let's use our fallback: convenience store rice balls.",
-        "usageExampleTranslation": "プランBで行こう。コンビニのおにぎりだ。",
-        "usagePunchline": "302 Found (but redirected)",
-        "usagePunchlineTranslation": "別の場所（コンビニ）で見つかりました"
-    },
-    {
         "targetWord": "Polyfill",
         "errorMessage": "ReferenceError: Polyfill required for 'Array.prototype.flat'",
         "messageTranslation": "参照エラー：'Array.prototype.flat' にはポリフィルが必要です",
