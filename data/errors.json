@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Disabled",
-        "errorMessage": "Error: JavaScript is disabled in your browser.",
-        "messageTranslation": "エラー：ブラウザのJavaScriptが無効になっています。",
-        "generalMeaning": "【形】無効にされた、身体障害のある",
-        "generalExample": "A disabled vehicle (故障車)",
-        "techMeaning": "「やる気スイッチ」がオフにされていて、ピクリとも動かない状態。",
-        "explanation": "機能自体は存在するけれど、設定や安全上の理由でわざと使えないようにされています。無理やり動かそうとしても反応しません。",
-        "usageContext": "月曜日の朝、どうしても布団から出られない時",
-        "usageExample": "My motivation is currently disabled. Please come back later.",
-        "usageExampleTranslation": "現在、私のやる気は無効化されています。後で来てください。",
-        "usagePunchline": "501 Not Implemented",
-        "usagePunchlineTranslation": "未実装（やる気は実装されていません）"
-    },
-    {
         "targetWord": "Cascade",
         "errorMessage": "CRITICAL: Cascading failure detected in microservices",
         "messageTranslation": "致命的：マイクロサービスで連鎖的な失敗が検出されました",

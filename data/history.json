@@ -374,5 +374,6 @@
     "Warning",
     "Failed",
     "Critical",
-    "Verify"
+    "Verify",
+    "Disabled"
 ]
