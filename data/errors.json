@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Provider",
-        "errorMessage": "Error: No Provider found for 'UserContext'",
-        "messageTranslation": "エラー：'UserContext' の提供者（プロバイダー）が見つかりません",
-        "generalMeaning": "【名】供給者、提供者、養育者",
-        "generalExample": "An internet service provider (プロバイダ)",
-        "techMeaning": "データという名の「お小遣い」を配ってくれる、一家の大黒柱（親要素）。",
-        "explanation": "ReactやFlutterなどでよく見るエラー。「データを配る係」がいないのに、子供（子要素）が「データちょうだい！」と叫んでいる状態。大黒柱を設置し忘れて家族崩壊しています。",
-        "usageContext": "給料日前に財布が空っぽになった時",
-        "usageExample": "I need a new cash provider.",
-        "usageExampleTranslation": "新しい現金の供給源（プロバイダー）が必要だ。",
-        "usagePunchline": "402 Payment Required",
-        "usagePunchlineTranslation": "支払が必要です（まずは働け）"
-    },
-    {
         "targetWord": "Revoked",
         "errorMessage": "SSL Certificate Revoked",
         "messageTranslation": "SSL証明書が失効しました",
