@@ -377,5 +377,6 @@
     "Verify",
     "Disabled",
     "Cascade",
-    "Fallback"
+    "Fallback",
+    "Polyfill"
 ]

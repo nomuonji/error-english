@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Polyfill",
-        "errorMessage": "ReferenceError: Polyfill required for 'Array.prototype.flat'",
-        "messageTranslation": "参照エラー：'Array.prototype.flat' にはポリフィルが必要です",
-        "generalMeaning": "【名】（壁などの）隙間を埋める素材（パテ）",
-        "generalExample": "Fill the cracks with polyfill (パテでヒビを埋める)",
-        "techMeaning": "最新トレンドについていけない「おじいちゃんブラウザ」に、無理やり最新機能を教え込む補聴器。",
-        "explanation": "新しいJavaScriptの書き方を古いブラウザが理解できない時、その「穴」を埋めるためのコードのこと。古い環境を無理やり動かすための、涙ぐましいドーピングです。",
-        "usageContext": "最新の流行語が通じない上司と話す時",
-        "usageExample": "I need a polyfill to explain this slang to my boss.",
-        "usageExampleTranslation": "この流行語を上司に説明するための「補完」が必要だ。",
-        "usagePunchline": "Error: 410 Gone (Legacy Support)",
-        "usagePunchlineTranslation": "エラー：もうそのブラウザ（世代）は消滅しました"
-    },
-    {
         "targetWord": "Mock",
         "errorMessage": "MockingError: No stub found for the method 'sendEmail'",
         "messageTranslation": "モックエラー：'sendEmail' メソッドのスタブ（代役）が見つかりません",
