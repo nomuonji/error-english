@@ -378,5 +378,6 @@
     "Disabled",
     "Cascade",
     "Fallback",
-    "Polyfill"
+    "Polyfill",
+    "Mock"
 ]

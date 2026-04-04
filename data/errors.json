@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Mock",
-        "errorMessage": "MockingError: No stub found for the method 'sendEmail'",
-        "messageTranslation": "モックエラー：'sendEmail' メソッドのスタブ（代役）が見つかりません",
-        "generalMeaning": "【動】あざける、模造する 【形】偽の、模擬の",
-        "generalExample": "A mock exam (模擬試験)",
-        "techMeaning": "本物のフリをしているけど、中身は空っぽの「身代わり人形」。テストの時だけ現れる。",
-        "explanation": "本物のデータベースやメール送信機能を使うと大変なので、テストの時だけ「送ったフリ」をする偽物を用意します。偽物相手に無茶振りをすると、このエラーで怒られます。",
-        "usageContext": "推しの等身大パネルに話しかけている時",
-        "usageExample": "I'm dating a mock object of my favorite idol.",
-        "usageExampleTranslation": "推しのモック（パネル）とデート中だよ。",
-        "usagePunchline": "401 Unauthorized (Imposter!)",
-        "usagePunchlineTranslation": "認証失敗（お前、ニセモノだな！？）"
-    },
-    {
         "targetWord": "Provider",
         "errorMessage": "Error: No Provider found for 'UserContext'",
         "messageTranslation": "エラー：'UserContext' の提供者（プロバイダー）が見つかりません",
