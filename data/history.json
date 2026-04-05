@@ -380,5 +380,6 @@
     "Fallback",
     "Polyfill",
     "Mock",
-    "Provider"
+    "Provider",
+    "Revoked"
 ]

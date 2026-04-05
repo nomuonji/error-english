@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Revoked",
-        "errorMessage": "SSL Certificate Revoked",
-        "messageTranslation": "SSL証明書が失効しました",
-        "generalMeaning": "【動】（許可・特権などを）取り消す、無効にする",
-        "generalExample": "His driver's license was revoked. (彼の運転免許が取り消された)",
-        "techMeaning": "合鍵を没収された状態。さっきまで使えてたパスポートがシュレッダーにかけられた感じ。",
-        "explanation": "セキュリティ上の理由で「お前のことはもう信用しない！」と絶縁宣言された状態。悪いことをした自覚がなくても、有効期限切れや設定ミスで起こるから、泣かずに新しい証明書を発行しよう。",
-        "usageContext": "元カノにサブスクのファミリープランから外された時",
-        "usageExample": "Wait, my access to Netflix was revoked?",
-        "usageExampleTranslation": "あれ、ネトフリのアクセス権が消されてる？",
-        "usagePunchline": "Ex-Girlfriend: 401 Unauthorized",
-        "usagePunchlineTranslation": "元カノ：お前はもう部外者だ（未認証）"
-    },
-    {
         "targetWord": "Overhead",
         "errorMessage": "Performance degradation due to high system overhead",
         "messageTranslation": "高いシステムオーバーヘッドによるパフォーマンスの低下",
