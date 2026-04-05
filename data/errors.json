@@ -1,19 +1,5 @@
 [
     {
-        "targetWord": "Overhead",
-        "errorMessage": "Performance degradation due to high system overhead",
-        "messageTranslation": "高いシステムオーバーヘッドによるパフォーマンスの低下",
-        "generalMeaning": "【名】（ビジネスの）諸経費、頭上の",
-        "generalExample": "Reduce administrative overhead. (管理費を削減する)",
-        "techMeaning": "本番の作業そのものより、準備や片付けに時間がかかりすぎて、やる気が死んでる状態。",
-        "explanation": "コンビニにガムを買いに行くのに、フル装備の鎧を着て大型トラックで行くようなもの。無駄な手続きや重すぎる機能を盛り込みすぎると、プログラムが「もう動きたくない…」とボイコットを始めるよ。",
-        "usageContext": "一泊二日の旅行なのに、不安すぎてスーツケース3個持ってきた友達に対して",
-        "usageExample": "The packing overhead is killing our schedule!",
-        "usageExampleTranslation": "準備のオーバーヘッド（無駄な荷造り）のせいでスケジュールが崩壊してるよ！",
-        "usagePunchline": "Friend: 413 Payload Too Large",
-        "usagePunchlineTranslation": "友：荷物がデカすぎます（リクエストエンティティ過大）"
-    },
-    {
         "targetWord": "Prerequisite",
         "errorMessage": "Prerequisite not met: Node.js version >= 18",
         "messageTranslation": "前提条件が満たされていません：Node.js 18以上が必要です",
