@@ -2,7 +2,7 @@ name: Replenish Stock
 
 on:
   schedule:
-    - cron: '0 15 * * *' # 15:00 UTC = 00:00 JST
+    # - cron: '0 15 * * *' # 15:00 UTC = 00:00 JST
   workflow_dispatch:
 
 permissions:
