@@ -1,0 +1,105 @@
+name: Publish English YouTube approved final
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "publish-requests/english-youtube/*.json"
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - name: Checkout publishing repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find publish request added in this commit
+        id: request
+        shell: bash
+        run: |
+          set -euo pipefail
+          request="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^publish-requests/english-youtube/[A-Za-z0-9._-]+\.json$' | head -n 1 || true)"
+          if [ -z "$request" ]; then
+            echo "No English YouTube publish request added in head commit" >&2
+            exit 2
+          fi
+          source_repo="$(node -e 'const fs=require("fs");const r=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));process.stdout.write(r.sourceRepo)' "$request")"
+          source_sha="$(node -e 'const fs=require("fs");const r=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));process.stdout.write(r.sourceSha)' "$request")"
+          asset_name="$(node -e 'const fs=require("fs");const r=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));process.stdout.write(r.assetName)' "$request")"
+          if [ "$source_repo" != "nomuonji/english-youtube" ]; then
+            echo "Unexpected source repository: $source_repo" >&2
+            exit 2
+          fi
+          if ! [[ "$source_sha" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "Invalid source SHA" >&2
+            exit 2
+          fi
+          if ! [[ "$asset_name" =~ ^[A-Za-z0-9._-]+\.mp4$ ]]; then
+            echo "Invalid asset name" >&2
+            exit 2
+          fi
+          echo "path=$request" >> "$GITHUB_OUTPUT"
+          echo "source_sha=$source_sha" >> "$GITHUB_OUTPUT"
+          echo "asset_name=$asset_name" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Download immutable approved final release asset
+        env:
+          SOURCE_SHA: ${{ steps.request.outputs.source_sha }}
+          ASSET_NAME: ${{ steps.request.outputs.asset_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          url="https://github.com/nomuonji/english-youtube/releases/download/approved-$SOURCE_SHA/$ASSET_NAME"
+          success=false
+          for attempt in $(seq 1 120); do
+            echo "Download attempt $attempt: $url"
+            rm -f out/final.mp4.tmp
+            if curl -fL --connect-timeout 20 --max-time 900 "$url" -o out/final.mp4.tmp; then
+              mv out/final.mp4.tmp out/final.mp4
+              success=true
+              break
+            fi
+            sleep 15
+          done
+          if [ "$success" != "true" ]; then
+            echo "Approved final release asset did not become available" >&2
+            exit 2
+          fi
+          test -s out/final.mp4
+          bytes="$(stat -c%s out/final.mp4)"
+          if [ "$bytes" -lt 1000000 ]; then
+            echo "Downloaded file is unexpectedly small: $bytes bytes" >&2
+            exit 2
+          fi
+          echo "Downloaded $bytes bytes"
+
+      - name: Upload approved final to existing Error English YouTube channel
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/publish-external-video.ts "${{ steps.request.outputs.path }}" out/final.mp4
+
+      - name: Preserve publish result
+        if: always() && hashFiles('publish-result.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-youtube-publish-result-${{ steps.request.outputs.source_sha }}
+          path: publish-result.json
+          retention-days: 30
