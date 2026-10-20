@@ -1,0 +1,51 @@
+name: Publish queued English lessons
+
+# Publishes the next item in publish-queue/pending/ to the Error English channel.
+# Controlled by publish-queue/config.json (enabled, perRun, maxPerDayJst).
+# Manual dispatch with force=true publishes one even when disabled (owner's explicit action).
+on:
+  schedule:
+    - cron: "47 2 * * *"   # 11:47 JST
+    - cron: "47 10 * * *"  # 19:47 JST
+  workflow_dispatch:
+    inputs:
+      force:
+        description: publish even if config.enabled is false
+        type: choice
+        default: "false"
+        options: ["false", "true"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-queue
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - name: Publish next queued lesson
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          FORCE: ${{ github.event.inputs.force || 'false' }}
+        run: npx tsx scripts/publish-queue.ts
+      - name: Record the queue state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add -A publish-queue
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "publish-queue: published next lesson [skip ci]"
+          git push

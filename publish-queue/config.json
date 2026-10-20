@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "perRun": 1,
+  "maxPerDayJst": 2,
+  "note": "Scheduled publisher for English lesson Shorts. enabled=false stops it. Items in pending/ are published oldest-name-first; name them NNNN-<id>.request.json with <id>.mp4 next to it."
+}
