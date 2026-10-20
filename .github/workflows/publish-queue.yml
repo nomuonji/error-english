@@ -1,8 +1,12 @@
 name: Publish queued English lessons
 
-# Publishes the next item in publish-queue/pending/ to the Error English channel.
-# Controlled by publish-queue/config.json (enabled, perRun, maxPerDayJst).
-# Manual dispatch with force=true publishes one even when disabled (owner's explicit action).
+# Owner-approved (2026-10-20): fully automatic, no human review step.
+# Put a lesson script (Animation Factory lesson spec) into publish-queue/scripts/NNNN-<id>.json
+# and push. At each scheduled time this workflow takes the next item, renders it with
+# nomuonji/animation-factory (public, read-only), runs automatic gates, uploads it PUBLIC to
+# the Error English channel and records it. Already-rendered videos in publish-queue/pending/
+# go first. Control: publish-queue/config.json (enabled, maxPerDayJst). A failed render or gate
+# moves the script to publish-queue/failed/ with the reason; a failed upload is never retried.
 on:
   schedule:
     - cron: "47 2 * * *"   # 11:47 JST
@@ -10,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: publish even if config.enabled is false
+        description: publish one even if disabled or over the daily cap
         type: choice
         default: "false"
         options: ["false", "true"]
@@ -25,27 +29,96 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 60
+    env:
+      FORCE: ${{ github.event.inputs.force || 'false' }}
     steps:
       - uses: actions/checkout@v4
+      - name: What to do this run
+        id: next
+        run: python3 scripts/queue_next.py | tee -a "$GITHUB_OUTPUT"
+
+      - name: Check out Animation Factory (read-only)
+        if: steps.next.outputs.kind == 'script'
+        uses: actions/checkout@v4
+        with:
+          repository: nomuonji/animation-factory
+          path: af
+      - uses: actions/setup-python@v5
+        if: steps.next.outputs.kind == 'script'
+        with:
+          python-version: "3.12"
+      - name: Media dependencies and voices
+        if: steps.next.outputs.kind == 'script'
+        run: |
+          git -C af rev-parse HEAD > af/.sha
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk
+          pip install --quiet numpy pillow opencv-python-headless kokoro-onnx==0.6.1 soundfile==0.14.0
+          docker run -d --rm --name vv -p 127.0.0.1:50021:50021 voicevox/voicevox_engine:cpu-latest
+          for i in $(seq 1 120); do curl -fsS http://127.0.0.1:50021/version && exit 0; sleep 2; done; docker logs vv; exit 1
+      - name: Render the lesson
+        id: render
+        if: steps.next.outputs.kind == 'script'
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="${{ steps.next.outputs.file }}"
+          id=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['id'])" "publish-queue/scripts/$file")
+          [[ "$id" =~ ^[a-z0-9][a-z0-9-]{2,63}$ ]] || { echo "bad id" > gate-failure.txt; exit 3; }
+          cp "publish-queue/scripts/$file" "af/lessons/$id.json"
+          cd af
+          python tools/shorts/shorts.py lesson "lessons/$id.json"
+          python tools/shorts/shorts.py lock "productions/$id/short.json"
+          python tools/shorts/shorts.py check "productions/$id/short.json"
+          python tools/shorts/shorts.py render "productions/$id/short.json"
+          cd ..
+          python3 scripts/script_to_request.py "$file" af
+          echo "request=${file%.json}.request.json" >> "$GITHUB_OUTPUT"
+      - name: Park a script that failed to render or pass the gates
+        if: failure() && steps.next.outputs.kind == 'script'
+        shell: bash
+        run: |
+          mkdir -p publish-queue/failed
+          file="${{ steps.next.outputs.file }}"
+          [ -f "publish-queue/scripts/$file" ] && git mv "publish-queue/scripts/$file" "publish-queue/failed/$file"
+          { echo "run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"; cat gate-failure.txt 2>/dev/null || echo "render failed (see run log)"; } > "publish-queue/failed/${file%.json}.reason.txt"
+      - name: Keep review files of the render
+        if: always() && steps.next.outputs.kind == 'script'
+        uses: actions/upload-artifact@v4
+        with:
+          name: lesson-render-${{ github.run_id }}
+          path: |
+            af/outputs/shorts/*/review/
+            af/outputs/shorts/*/report.json
+            af/outputs/shorts/*/captions.srt
+          retention-days: 30
+
       - uses: actions/setup-node@v4
+        if: steps.next.outputs.kind != 'none'
         with:
           node-version: '20'
           cache: npm
-      - run: npm ci
-      - name: Publish next queued lesson
+      - if: steps.next.outputs.kind != 'none'
+        run: npm ci
+      - name: Upload to the Error English channel (public)
+        if: steps.next.outputs.kind != 'none'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          FORCE: ${{ github.event.inputs.force || 'false' }}
+          ONLY_FILE: ${{ steps.next.outputs.kind == 'video' && steps.next.outputs.file || steps.render.outputs.request }}
+          FORCE: "true"   # the guards were applied by queue_next.py
         run: npx tsx scripts/publish-queue.ts
+
       - name: Record the queue state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          rm -rf af
           git add -A publish-queue
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
-          git commit -m "publish-queue: published next lesson [skip ci]"
+          git commit -m "publish-queue: ${{ steps.next.outputs.kind }} ${{ steps.next.outputs.file }} [skip ci]"
+          git pull --rebase -q || true
           git push
