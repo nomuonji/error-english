@@ -6,7 +6,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { uploadVideo } from './upload-youtube';
 
-type Req = { script?: string; assetName: string; sha256: string; title: string; description: string; tags?: string[]; categoryId?: string; sourceRepo: string; sourceSha: string };
+type Req = { script?: string; scriptDir?: string; assetName: string; sha256: string; title: string; description: string; tags?: string[]; categoryId?: string; sourceRepo: string; sourceSha: string };
 type LogEntry = { file: string; assetName: string; sha256: string; youtubeVideoId: string; publishedAt: string };
 
 const Q = path.resolve('publish-queue');
@@ -25,7 +25,9 @@ async function main() {
   }
   const today = jstDay(new Date());
   const doneToday = log.filter((e) => jstDay(new Date(e.publishedAt)) === today).length;
-  let budget = Math.min(Number(cfg.perRun ?? 1), Number(cfg.maxPerDayJst ?? 2) - doneToday);
+  // Long-form episodes have their own weekly slot and do not use the daily Shorts cap.
+  let budget = process.env.IGNORE_DAILY_CAP === 'true' ? 1
+    : Math.min(Number(cfg.perRun ?? 1), Number(cfg.maxPerDayJst ?? 2) - doneToday);
   if (budget <= 0) {
     console.log(`Daily cap reached (${doneToday} today).`);
     return;
@@ -65,8 +67,9 @@ async function main() {
       budget -= 1;
     }
     fs.renameSync(reqPath, path.join(Q, 'published', file));
-    if (req.script && fs.existsSync(path.join(Q, 'scripts', req.script))) {
-      fs.renameSync(path.join(Q, 'scripts', req.script), path.join(Q, 'published', req.script.replace('.json', '.script.json')));
+    const dir = req.scriptDir ?? 'scripts';
+    if (req.script && fs.existsSync(path.join(Q, dir, req.script))) {
+      fs.renameSync(path.join(Q, dir, req.script), path.join(Q, 'published', req.script.replace('.json', '.script.json')));
     }
     fs.unlinkSync(video); // the video stays in git history; the queue keeps only what is pending
   }
