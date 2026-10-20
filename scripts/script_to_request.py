@@ -51,6 +51,7 @@ if p == "vs":
     tags += [spec["a"]["word"], spec["b"]["word"]]
 if p == "phrase":
     tags.append(spec["answer"]["en"])
+(Q / "pending").mkdir(parents=True, exist_ok=True)  # empty dirs are not kept in git
 mp4 = Q / "pending" / f"{pid}.mp4"
 shutil.copy(out / "video.mp4", mp4)
 req = {"sourceRepo": "nomuonji/animation-factory", "sourceSha": (af / ".sha").read_text().strip(),
