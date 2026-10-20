@@ -1,0 +1,28 @@
+name: Update channel branding
+
+# Owner-requested channel rename (2026-10-20). Runs when channel/branding.json changes on main.
+on:
+  push:
+    branches: [main]
+    paths: ["channel/branding.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  branding:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/update-channel-branding.ts
