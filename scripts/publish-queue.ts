@@ -6,7 +6,7 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { uploadVideo } from './upload-youtube';
 
-type Req = { assetName: string; sha256: string; title: string; description: string; tags?: string[]; categoryId?: string; sourceRepo: string; sourceSha: string };
+type Req = { script?: string; assetName: string; sha256: string; title: string; description: string; tags?: string[]; categoryId?: string; sourceRepo: string; sourceSha: string };
 type LogEntry = { file: string; assetName: string; sha256: string; youtubeVideoId: string; publishedAt: string };
 
 const Q = path.resolve('publish-queue');
@@ -30,7 +30,8 @@ async function main() {
     console.log(`Daily cap reached (${doneToday} today).`);
     return;
   }
-  const pending = fs.readdirSync(path.join(Q, 'pending')).filter((f) => f.endsWith('.request.json')).sort();
+  const only = process.env.ONLY_FILE;
+  const pending = fs.readdirSync(path.join(Q, 'pending')).filter((f) => f.endsWith('.request.json') && (!only || f === only)).sort();
   if (!pending.length) {
     console.log('Queue is empty.');
     return;
@@ -64,6 +65,9 @@ async function main() {
       budget -= 1;
     }
     fs.renameSync(reqPath, path.join(Q, 'published', file));
+    if (req.script && fs.existsSync(path.join(Q, 'scripts', req.script))) {
+      fs.renameSync(path.join(Q, 'scripts', req.script), path.join(Q, 'published', req.script.replace('.json', '.script.json')));
+    }
     fs.unlinkSync(video); // the video stays in git history; the queue keeps only what is pending
   }
 }
