@@ -9,6 +9,8 @@ type PublishRequest = {
   title: string;
   description: string;
   tags?: string[];
+  categoryId?: string;
+  sha256?: string;
 };
 
 const requestPath = process.argv[2];
@@ -26,8 +28,14 @@ if (!/^[A-Za-z0-9._-]+\.mp4$/.test(request.assetName)) throw new Error('Invalid 
 if (!request.title || request.title.length > 100) throw new Error('YouTube title must be 1-100 characters');
 if (!request.description || request.description.length > 5000) throw new Error('YouTube description must be 1-5000 characters');
 if (!fs.existsSync(videoPath)) throw new Error(`Video not found: ${videoPath}`);
+if (request.categoryId && !/^\d{1,2}$/.test(request.categoryId)) throw new Error('Invalid categoryId');
+if (request.sha256) {
+  const { createHash } = await import('node:crypto');
+  const digest = createHash('sha256').update(fs.readFileSync(videoPath)).digest('hex');
+  if (digest !== request.sha256) throw new Error(`sha256 mismatch: ${digest}`);
+}
 
-const result = await uploadVideo(videoPath, request.title, request.description, request.tags ?? []);
+const result = await uploadVideo(videoPath, request.title, request.description, request.tags ?? [], request.categoryId ?? '28');
 const output = {
   sourceRepo: request.sourceRepo,
   sourceSha: request.sourceSha,

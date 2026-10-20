@@ -1,0 +1,71 @@
+name: Publish Animation Factory approved Short
+
+# Push-to-main of a NEW publish-requests/animation-factory/<id>.json (with <id>.mp4 next
+# to it) uploads that video publicly to the Error English channel. Adding the request is
+# the owner's publish approval.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "publish-requests/animation-factory/*.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-animation-factory
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Find publish request added in this commit
+        id: request
+        shell: bash
+        run: |
+          set -euo pipefail
+          request="$(git diff-tree --no-commit-id --name-only --diff-filter=A -r "$GITHUB_SHA" | grep -E '^publish-requests/animation-factory/[A-Za-z0-9._-]+\.json$' | head -n 1 || true)"
+          if [ -z "$request" ]; then
+            echo "No new Animation Factory publish request in head commit; nothing to publish"
+            echo "path=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          source_repo="$(node -e 'const r=require("./"+process.argv[1]);process.stdout.write(r.sourceRepo)' "$request")"
+          asset="$(node -e 'const r=require("./"+process.argv[1]);process.stdout.write(r.assetName)' "$request")"
+          [ "$source_repo" = "nomuonji/animation-factory" ] || { echo "Unexpected source repository: $source_repo" >&2; exit 2; }
+          [[ "$asset" =~ ^[A-Za-z0-9._-]+\.mp4$ ]] || { echo "Invalid asset name" >&2; exit 2; }
+          test -s "publish-requests/animation-factory/$asset"
+          echo "path=$request" >> "$GITHUB_OUTPUT"
+          echo "video=publish-requests/animation-factory/$asset" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@v4
+        if: steps.request.outputs.path != ''
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install locked dependencies
+        if: steps.request.outputs.path != ''
+        run: npm ci
+
+      - name: Upload to the Error English YouTube channel
+        if: steps.request.outputs.path != ''
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/publish-external-video.ts "${{ steps.request.outputs.path }}" "${{ steps.request.outputs.video }}"
+
+      - name: Preserve publish result
+        if: always() && hashFiles('publish-result.json') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: animation-factory-publish-result-${{ github.sha }}
+          path: publish-result.json
+          retention-days: 90

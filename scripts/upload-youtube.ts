@@ -23,7 +23,8 @@ export async function uploadVideo(
     filePath: string,
     title: string,
     description: string,
-    tags: string[]
+    tags: string[],
+    categoryId: string = '28'
 ) {
     if (!fs.existsSync(filePath)) {
         throw new Error(`File not found: ${filePath}`);
@@ -39,7 +40,7 @@ export async function uploadVideo(
                     title,
                     description,
                     tags,
-                    categoryId: '28', // Science & Technology
+                    categoryId, // default 28 Science & Technology; 27 Education
                 },
                 status: {
                     privacyStatus: 'public', // Change to 'private' or 'unlisted' if needed
