@@ -26,5 +26,12 @@
     "sha256": "4379a520860dda973602d4bd581eed2954f9e290121a0709b7a6cc3feb351616",
     "youtubeVideoId": "9IMLyulMT4g",
     "publishedAt": "2026-10-21T08:04:57.629Z"
+  },
+  {
+    "file": "0005-en-word-schadenfreude.request.json",
+    "assetName": "en-word-schadenfreude.mp4",
+    "sha256": "dee572f1e6bd5620604df94dac6dc4fa12ad2c1b6605ede8bb3100d20e5f2206",
+    "youtubeVideoId": "WenNQVrmvxA",
+    "publishedAt": "2026-10-21T15:43:06.131Z"
   }
 ]
