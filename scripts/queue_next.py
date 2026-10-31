@@ -40,9 +40,7 @@ else:
     if videos:
         out(kind="video", file=videos[0], reason="rendered video waiting")
     elif scripts:
-        pattern = json.loads((Q / "scripts" / scripts[0]).read_text(encoding="utf-8")).get("pattern", "")
-        # "beat" = beat-synced vocabulary Short rendered in this repo (beat-shorts/);
-        # everything else is an Animation Factory lesson.
-        out(kind="script", file=scripts[0], engine="beat" if pattern == "beat" else "af", reason="lesson script waiting")
+        # every pattern renders in this repo with beat-shorts/
+        out(kind="script", file=scripts[0], engine="beat", reason="lesson script waiting")
     else:
         out(kind="none", file="", reason="queue empty")

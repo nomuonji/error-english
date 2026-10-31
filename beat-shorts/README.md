@@ -1,52 +1,54 @@
-# beat-shorts — 音ハメ英単語Shorts
+# beat-shorts — ドパ英語 Shorts engine
 
-A three.js scene, synced to a Suno track's beat map, showing 8 advanced words
-(英検1級 / CEFR C1–C2). Rendered frame by frame in headless Chromium and published
-by the regular queue (`.github/workflows/publish-queue.yml`).
+Every Short on the channel is rendered here: a three.js background synced to the music's
+beat map, text that lands on the beat, English pronunciation by Kokoro, and the channel
+mascot. Published by the regular queue (`.github/workflows/publish-queue.yml`).
+Animation Factory is not used any more (owner decision 2026-11-01).
 
-## Add a video to the queue
+## Templates (`templates.js`, field `pattern` of a queue script)
 
-Put `publish-queue/scripts/NNNN-beat-<name>.json` on main:
+| pattern  | what the viewer gets (≈30 s unless noted) |
+|----------|--------------------------------------------|
+| `beat`   | 8 words, one per 2 bars, recap one per beat (≈46 s) |
+| `word`   | one word → 3-2-1 → meaning, 2 examples, quiz, recap |
+| `phrase` | 「日本語」→ 3-2-1 → the English phrase, 2 examples, quiz, recap |
+| `upgrade`| very X → 3-2-1 → the stronger word, 2 examples, quiz, recap |
+| `vs`     | A vs B → 3-2-1 → how to tell them apart, an example each, quiz, recap |
 
-```json
-{
-  "id": "beat-eiken1-04",
-  "pattern": "beat",
-  "track": "lexicon-drop",
-  "level": "英検1級",
-  "title": "英検1級の単語、何個わかる？ … 【音ハメ英単語 #4】",
-  "summary": "one line for the description",
-  "words": [
-    { "w": "eschew", "ipa": "/ɪsˈtʃuː/", "pos": "動", "ja": "（意図的に）避ける",
-      "ex": "She *eschews* social media entirely.", "exJa": "彼女はSNSを一切避けている。" }
-  ]
-}
-```
+`word / phrase / upgrade / vs` read the lesson specs that used to go to Animation Factory
+unchanged (`examples[].en/ja`, `quiz.prompt/answer/answerJa`, `meaning[].cap`, ...).
+`beat` specs: see `publish-queue/scripts/*-beat-*.json` (`*word*` marks the highlight).
 
-Exactly `track.layout.words` words (8 for lexicon-drop). Mark the word in `ex` with `*…*`.
-Limits checked by `scripts/beat_to_request.py check`: meaning ≤ 14 chars, translation ≤ 30,
-example ≤ 60, headword 2–16 latin letters, no duplicates.
+Times in a template are units of ~0.48 s; the engine snaps each unit to the nearest beat of
+the chosen track, so a template works at 127 BPM and at 161 BPM.
 
-## Per-word timing (8 beats = 2 bars)
+## Styles: many looks, each used thinly (`styles.json`)
 
-beat 1 word slam + shockwave + camera shake · 2 IPA · 3 part of speech + meaning
-(the viewer has one beat to guess) · 5 example · 6 highlight pulse · 7 translation · 8 exit.
-Intro 2 bars, recap 1 word per beat, outro 4 bars.
+Each render picks one value per dimension: background scene (core / grid / galaxy / city),
+palette (8), Japanese display font (2), track excerpt (lexicon-drop, error-bgm @0/54/92 s).
+`render.js` chooses the **least recently used** value of each dimension from the `style`
+stored in earlier publish requests, so consecutive videos never share a look. Add a scene to
+`scenes.js`, a palette to `styles.json` or a track to `tracks/` to widen the pool.
 
-## Tracks
+## Tracks (`tracks/<id>/`)
 
-`tracks/<id>/` holds `song.mp3`, `beats.json` (Suno `audio-analysis` beat times),
-`spectrum.json` (24-band per-frame energies, 30 fps), and `track.json`
-(`beatOffset`, `duration`, `layout`, `credit`, `license`).
-`beatOffset` is measured against kick transients, because Suno's beat times sat ~80 ms early.
+`song.mp3`, `beats.json`, `spectrum.json`, `track.json` (`beatOffset`, `period`, `duration`,
+`excerpts`, `credit`, `license`). Add one with `python3 tools/analyze_track.py tracks/<id>`
+(needs librosa locally) and copy the printed `beatOffset`/`period` into `track.json`.
 
-**lexicon-drop was made on the Suno free plan: non-commercial use only, with attribution.**
-Replace it with a track made on a paid plan before the channel is monetized.
+- lexicon-drop: Suno **free plan** — non-commercial use only, credit Suno. Replace before monetising.
+- error-bgm: the BGM of the channel's earlier error-message series; source not recorded.
+
+## Assets from the earlier series
+
+`assets/mascot/` (the channel character: smile / talk / cry) and `assets/se/` (pop,
+follow_me, ...) come from `public/` of the old Remotion series.
 
 ## Local preview
 
 ```bash
 cd beat-shorts && npm ci && npx playwright install chromium
-node render.js ../publish-queue/scripts/0016-beat-eiken1-01.json /tmp/pv --preview 4.6,7.5,35
-node render.js ../publish-queue/scripts/0016-beat-eiken1-01.json out/video.mp4
+pip install kokoro-onnx==0.6.1 soundfile numpy
+node render.js ../publish-queue/scripts/<file>.json /tmp/pv --preview 1,4,9,20 [--style core,neon,NotoJP,error-bgm,54]
+node render.js ../publish-queue/scripts/<file>.json out/video.mp4
 ```

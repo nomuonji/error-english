@@ -9,7 +9,17 @@
   "credit": "音楽: Lexicon Drop（Suno で生成）",
   "bpm": 126.9,
   "duration": 45.6,
-  "beatOffset": 0.08,
-  "beatOffsetNote": "Suno audio-analysis beats land ~80 ms before the kick transients in the decoded mp3 (measured with an onset envelope).",
-  "layout": { "introBeats": 8, "beatsPerWord": 8, "words": 8, "recapBeats": 8, "outroBeats": 16 }
+  "beatOffset": 0.03,
+  "beatOffsetNote": "Measured with librosa onset strength (spectral flux, kick attack). An earlier RMS-rise measure gave 0.08 s, which tracks the kick body, ~50 ms late.",
+  "layout": {
+    "introBeats": 8,
+    "beatsPerWord": 8,
+    "words": 8,
+    "recapBeats": 8,
+    "outroBeats": 16
+  },
+  "excerpts": [
+    0
+  ],
+  "period": 0.4732
 }

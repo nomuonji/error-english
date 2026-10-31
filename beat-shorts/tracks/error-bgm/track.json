@@ -1,0 +1,17 @@
+{
+  "id": "error-bgm",
+  "title": "Error English BGM",
+  "source": "the channel's earlier error-message series (public/bgm.mp3)",
+  "license": "Used on this channel since 2025; original source not recorded in the repo.",
+  "credit": "",
+  "bpm": 161.5,
+  "period": 0.3715,
+  "duration": 146.26,
+  "beatOffset": 0.0,
+  "excerpts": [
+    0,
+    54,
+    92
+  ],
+  "excerptNote": "Start points right after the quiet dips (~52 s, ~90 s), so every excerpt starts on a full section."
+}
