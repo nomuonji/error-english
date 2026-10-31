@@ -1,0 +1,226 @@
+{
+  "id": "quiz-mix-03",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ boondoggle・pithy・lackadaisical",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "id": "en-word-boondoggle",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "boondoggle の意味わかる？｜お金と時間のムダな計画",
+      "word": "boondoggle",
+      "pos": "名詞",
+      "ja": "お金と時間ばかりかかるムダな事業",
+      "meaning": [
+        {
+          "cap": "役に立たないのに、お金と時間ばかりかかる",
+          "say": "役に立たないのに、お金と時間ばかりかかる計画のことです。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "主にアメリカ英語",
+          "say": "主にアメリカで、"
+        },
+        {
+          "cap": "税金のムダづかいを批判する時に",
+          "say": "税金のムダづかいを批判する時によく使います。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "大きな事業を批判するなら",
+          "scene": "construction",
+          "en": [
+            "The new stadium turned out to be a boondoggle."
+          ],
+          "ja": [
+            "新スタジアムは結局ムダな事業だった"
+          ]
+        },
+        {
+          "intro": "会社の計画にも",
+          "scene": "office-desk",
+          "en": [
+            "This project is a total boondoggle."
+          ],
+          "ja": [
+            "この計画は完全にムダだ"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "station-platform",
+        "prompt": [
+          {
+            "cap": "It cost millions and nobody uses it. What a ___!",
+            "say": "何億もかけたのに、誰も使わない。一語で言うと？"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "What a boondoggle!",
+        "answerJa": "なんてムダな事業だ"
+      },
+      "scenes": {
+        "hook": "construction",
+        "meaning": "construction"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/boondoggle"
+      ]
+    },
+    {
+      "id": "en-word-pithy",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "pithy の意味わかる？｜短くて、核心をつく",
+      "word": "pithy",
+      "pos": "形容詞",
+      "ja": "短くて要点をついた",
+      "meaning": [
+        {
+          "cap": "言葉は少ないのに、核心をついている",
+          "say": "言葉は少ないのに、核心をついている、という意味です。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "ほめ言葉",
+          "say": "ほめ言葉で、"
+        },
+        {
+          "cap": "スピーチ・名言・コメントに",
+          "say": "スピーチや名言、コメントによく使います。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "答え方をほめるなら",
+          "scene": "classroom",
+          "en": [
+            "She gave a pithy answer."
+          ],
+          "ja": [
+            "彼女は短く的確に答えた"
+          ]
+        },
+        {
+          "intro": "好きな書き手について",
+          "scene": "smartphone",
+          "en": [
+            "I love his pithy comments."
+          ],
+          "ja": [
+            "彼の短くて鋭いコメントが好きだ"
+          ]
+        },
+        {
+          "intro": "名言を紹介するなら",
+          "scene": "library",
+          "en": [
+            "It's a pithy quote."
+          ],
+          "ja": [
+            "短くて要点をついた名言だ"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "notebook-writing",
+        "prompt": [
+          {
+            "cap": "Keep your speech short and ___.",
+            "say": "スピーチは、短く、要点をついて。"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "Keep your speech short and pithy.",
+        "answerJa": "スピーチは短く、要点をついて"
+      },
+      "scenes": {
+        "hook": "notebook-writing",
+        "meaning": "meeting"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/pithy"
+      ]
+    },
+    {
+      "id": "en-word-lackadaisical",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "lackadaisical の意味わかる？｜やる気のない、だらっとした",
+      "word": "lackadaisical",
+      "pos": "形容詞",
+      "ja": "気の抜けた・いい加減な",
+      "meaning": [
+        {
+          "cap": "やる気がなく、だらっとしている",
+          "say": "やる気がなくて、だらっとしている様子です。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "怠け者というより",
+          "say": "怠け者というより、"
+        },
+        {
+          "cap": "熱意が足りない感じ",
+          "say": "熱意が足りない、という感じです。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "チームのことを話すなら",
+          "scene": "classroom",
+          "en": [
+            "His lackadaisical attitude annoyed the coach."
+          ],
+          "ja": [
+            "彼のやる気のない態度に、コーチはいら立った"
+          ]
+        },
+        {
+          "intro": "お店の感想なら",
+          "scene": "cafe",
+          "en": [
+            "The service was a bit lackadaisical."
+          ],
+          "ja": [
+            "サービスがちょっといい加減だった"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "desk-flatlay",
+        "prompt": [
+          {
+            "cap": "Don't be so ___ about your homework.",
+            "say": "宿題に、そんなにやる気をなくさないで。"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "Don't be so lackadaisical about your homework.",
+        "answerJa": "宿題にそんなにいい加減にならないで"
+      },
+      "scenes": {
+        "hook": "stretch-desk",
+        "meaning": "stretch-desk"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/lackadaisical"
+      ]
+    }
+  ]
+}

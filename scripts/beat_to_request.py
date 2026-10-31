@@ -20,10 +20,10 @@ import subprocess
 import sys
 
 Q = pathlib.Path("publish-queue")
-PATTERNS = ("beat", "word", "phrase", "upgrade", "vs")
-SERIES = {"beat": "音ハメ英単語", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
+PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs")
+SERIES = {"beat": "音ハメ英単語", "quiz": "英語クイズ", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
           "upgrade": "very から卒業", "vs": "どっちを使う？"}
-TAGS = {"beat": "#英単語 #英検1級 #語彙力", "word": "#英単語 #語彙力 #英語学習", "phrase": "#英語フレーズ #英会話 #英語学習",
+TAGS = {"beat": "#英単語 #英検1級 #語彙力", "quiz": "#英語クイズ #英単語 #英語学習", "word": "#英単語 #語彙力 #英語学習", "phrase": "#英語フレーズ #英会話 #英語学習",
         "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習"}
 
 
@@ -55,6 +55,17 @@ def check_spec(spec):
         return p + [f"pattern must be one of {PATTERNS}"]
     if not spec.get("title") or len(spec["title"]) > 90:
         p.append("title missing or over 90 chars (series tag is appended)")
+    if pat == "quiz":
+        items = spec.get("items") or []
+        if not 3 <= len(items) <= 4:
+            p.append(f"{len(items)} items; a quiz holds 3-4 questions")
+        for i, it in enumerate(items, 1):
+            if it.get("pattern") not in ("word", "phrase", "upgrade", "vs"):
+                p.append(f"item {i}: pattern must be word/phrase/upgrade/vs")
+                continue
+            sub = dict(it, title=it.get("title") or "x")
+            p += [f"item {i} ({it.get('id')}): {x}" for x in check_spec(sub)]
+        return p
     if pat == "beat":
         words = spec.get("words") or []
         if len(words) != 8:
@@ -115,6 +126,11 @@ def duration(path):
 def study_notes(spec):
     pat = spec["pattern"]
     out = []
+    if pat == "quiz":
+        for i, it in enumerate(spec["items"], 1):
+            out.append(f"Q{i}")
+            out += study_notes(it)
+        return out
     if pat == "beat":
         for w in spec["words"]:
             out.append(f"・{w['w']} {w['ipa']}（{w['pos']}）＝ {w['ja']}\n  {w['ex'].replace('*', '')}（{w['exJa']}）")
@@ -160,11 +176,16 @@ def main():
     style = json.loads(style_path.read_text()) if style_path.exists() else None
     track = json.loads(pathlib.Path(f"beat-shorts/tracks/{style['track']}/track.json").read_text()) if style else {}
     pat = spec["pattern"]
-    sources = [f"意味の確認: {s}" for s in spec.get("sources", [])] or ["意味の確認: https://dictionary.cambridge.org/"]
+    srcs = spec.get("sources", []) + [u for it in spec.get("items", []) for u in it.get("sources", [])]
+    sources = [f"意味の確認: {s}" for s in srcs] or ["意味の確認: https://dictionary.cambridge.org/"]
     credits = ["英語音声: Kokoro-82M (Apache-2.0) による合成音声"] + ([track["credit"]] if track.get("credit") else [])
     body = "\n".join([spec.get("summary", ""), "", *study_notes(spec), "", *sources, "",
                       "— クレジット —", *credits, "", TAGS[pat] + " #ドパ英語 #shorts"]).strip()
+    def targets(x):
+        return [x[k] for k in ("word", "basic") if x.get(k)] + ([x["answer"]["en"]] if x["pattern"] == "phrase" else []) + \
+            ([x["a"]["word"], x["b"]["word"]] if x["pattern"] == "vs" else [])
     words = [w["w"] for w in spec["words"]] if pat == "beat" else \
+        [t for it in spec["items"] for t in targets(it)] if pat == "quiz" else \
         [spec[k] for k in ("word", "basic") if spec.get(k)] + ([spec["answer"]["en"]] if pat == "phrase" else []) + \
         ([spec["a"]["word"], spec["b"]["word"]] if pat == "vs" else [])
     tags = ["ドパ英語", "英語学習", SERIES[pat], "英単語", "English vocabulary", "advanced English", *words]

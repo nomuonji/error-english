@@ -1,5 +1,6 @@
 // Beat-synced Shorts renderer (three.js scene captured frame by frame, audio mixed with ffmpeg).
-// usage: node render.js <spec.json> <out.mp4> [--preview t1,t2,...] [--style scene,palette,jpFont,track,excerpt]
+// usage: node render.js <spec.json> <out.mp4> [--preview t1,t2,...] [--style ...]
+//   --style neon: scene,palette,jpFont,track,excerpt   card (pattern quiz): palette,motif,track,excerpt
 //
 // 1. style: least recently used scene / palette / font / track excerpt (from the publish log)
 // 2. schedule: templates.js turns the spec into timed items; the engine snaps them to the beats
@@ -38,23 +39,26 @@ function history() {
   }
   return out.sort((a, b) => a.name.localeCompare(b.name)).map(x => x.style); // queue order = publish order
 }
+const SKIN = spec.pattern === "quiz" ? "card" : "neon";
 function pickStyle() {
   if (opt("--style")) {
-    const [scene, palette, jpFont, trk, excerpt] = opt("--style").split(",");
-    return { scene, palette, jpFont, track: trk, excerpt: Number(excerpt || 0) };
+    const v = opt("--style").split(",");
+    return SKIN === "card"
+      ? { skin: "card", palette: v[0], motif: v[1], track: v[2], excerpt: Number(v[3] || 0) }
+      : { skin: "neon", scene: v[0], palette: v[1], jpFont: v[2], track: v[3], excerpt: Number(v[4] || 0) };
   }
-  const h = history(), seed = parseInt(crypto.createHash("sha1").update(spec.id).digest("hex").slice(0, 8), 16);
+  const h = history().filter(s => (s.skin || "neon") === SKIN);
+  const seed = parseInt(crypto.createHash("sha1").update(spec.id).digest("hex").slice(0, 8), 16);
   const lastUse = (key, val) => { for (let i = h.length - 1; i >= 0; i--) if (key(h[i]) === val) return i; return -1; };
   const choose = (vals, key) => vals.map((v, i) => [lastUse(key, v), (seed + i * 7919) % 1000, v]).sort((a, b) => a[0] - b[0] || a[1] - b[1])[0][2];
-  const minDur = spec.pattern === "beat" ? 47 : 32;
-  const trackExcerpts = STYLES.tracks.flatMap(t => track(t).excerpts.filter(e => track(t).duration - e >= minDur - 1.2).map(e => `${t}@${e}`));
-  const te = choose(trackExcerpts, s => `${s.track}@${s.excerpt}`);
-  return {
-    scene: choose(STYLES.scenes, s => s.scene),
-    palette: choose(Object.keys(STYLES.palettes), s => s.palette),
-    jpFont: choose(STYLES.jpFonts, s => s.jpFont),
-    track: te.split("@")[0], excerpt: Number(te.split("@")[1]),
-  };
+  const minDur = spec.pattern === "beat" ? 47 : spec.pattern === "quiz" ? 8 + 16 * spec.items.length * 0.5 : 32;
+  const pool = STYLES.trackPools[SKIN];
+  const te = choose(pool.flatMap(t => track(t).excerpts.filter(e => track(t).duration - e >= minDur).map(e => `${t}@${e}`)),
+    s => `${s.track}@${s.excerpt}`);
+  const base = { skin: SKIN, track: te.split("@")[0], excerpt: Number(te.split("@")[1]) };
+  if (SKIN === "card") return { ...base, palette: choose(Object.keys(STYLES.cardPalettes), s => s.palette), motif: choose(STYLES.motifs, s => s.motif) };
+  return { ...base, scene: choose(STYLES.scenes, s => s.scene), palette: choose(Object.keys(STYLES.palettes), s => s.palette),
+    jpFont: choose(STYLES.jpFonts, s => s.jpFont) };
 }
 
 const style = pickStyle();
@@ -102,7 +106,7 @@ function mix(info, video, out) {
   se.forEach((a, i) => {
     inputs.push("-i", path.join(ROOT, "assets", "se", `${a.se}.mp3`));
     const ms = Math.max(0, Math.round(a.t * 1000)), idx = 2 + tts.length + i;
-    f.push(`[${idx}:a]aresample=48000,aformat=channel_layouts=stereo,adelay=${ms}|${ms},volume=${a.se === "follow_me" ? 0.8 : 0.55}[s${i}]`);
+    f.push(`[${idx}:a]aresample=48000,aformat=channel_layouts=stereo,adelay=${ms}|${ms},volume=${a.se === "tick" ? 0.35 : 0.55}[s${i}]`);
     slabels.push(`[s${i}]`);
   });
   let final;
@@ -125,7 +129,7 @@ function mix(info, video, out) {
   const errors = [];
   page.on("pageerror", e => errors.push(e.message));
   page.on("console", m => { if (m.type() === "error") errors.push(m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/index.html`);
+  await page.goto(`http://127.0.0.1:${port}/${SKIN === "card" ? "card.html" : "index.html"}`);
   await page.waitForFunction(() => window.READY === true, null, { timeout: 120000 }).catch(() => {});
   if (errors.length || !(await page.evaluate(() => window.READY === true))) throw new Error("scene failed to load: " + errors.join(" | "));
   const info = await page.evaluate(() => window.INFO);

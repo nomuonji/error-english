@@ -1,0 +1,218 @@
+{
+  "id": "quiz-mix-01",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ petrichor・flabbergasted・on tenterhooks",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "id": "en-word-petrichor",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "petrichor の意味わかる？｜雨の降り始めの、あの匂い",
+      "word": "petrichor",
+      "pos": "名詞",
+      "ja": "雨が降り始めた時の土の匂い",
+      "meaning": [
+        {
+          "cap": "乾いた地面に雨が落ちた時の、あの匂い",
+          "say": "乾いた地面に雨が落ちた時の、あの独特の匂いです。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "1964年、オーストラリアの研究者が命名",
+          "say": "千九百六十四年に、オーストラリアの研究者が名付けた、"
+        },
+        {
+          "cap": "比較的新しい言葉",
+          "say": "比較的新しい言葉です。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "好きなものを話すなら",
+          "scene": "rain-street",
+          "en": [
+            "I love the smell of petrichor."
+          ],
+          "ja": [
+            "雨の降り始めの匂いが好きだ"
+          ]
+        },
+        {
+          "intro": "嵐の後の描写に",
+          "scene": "city-night",
+          "en": [
+            "After the storm, the air was full of petrichor."
+          ],
+          "ja": [
+            "嵐の後、雨の匂いが立ちこめていた"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "cafe",
+        "prompt": [
+          {
+            "cap": "That smell after rain is called ___.",
+            "say": "雨が降り始めた時の、あの匂い。一語で言うと？"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "That smell after rain is called petrichor.",
+        "answerJa": "雨のあの匂いを petrichor と言う"
+      },
+      "scenes": {
+        "hook": "rain-street",
+        "meaning": "rain-street"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/petrichor"
+      ]
+    },
+    {
+      "id": "en-upgrade-flabbergasted",
+      "pattern": "upgrade",
+      "level": "英検1級超",
+      "title": "very surprised より強い「仰天」｜flabbergasted",
+      "basic": "very surprised",
+      "word": "flabbergasted",
+      "ja": "仰天した・あっけにとられた",
+      "hookLines": [
+        {
+          "cap": "すごく驚いた = very surprised",
+          "say": "すごく驚いた。ベリー・サプライズドでも通じますが、"
+        },
+        "もっと強く言えますか？"
+      ],
+      "meaning": [
+        {
+          "cap": "信じられなくて、口がぽかん",
+          "say": "信じられなくて、口をぽかんと開けている感じです。"
+        },
+        {
+          "cap": "響きも大げさで、少しユーモラス",
+          "say": "響きも大げさで、少しユーモラスです。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "ニュースを見て",
+          "scene": "smartphone",
+          "en": [
+            "I was flabbergasted by the news."
+          ],
+          "ja": [
+            "そのニュースに仰天した"
+          ]
+        },
+        {
+          "intro": "まわりの反応なら",
+          "scene": "office-desk",
+          "en": [
+            "Everyone was flabbergasted when she quit."
+          ],
+          "ja": [
+            "彼女が辞めた時、みんな唖然とした"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "cafe",
+        "prompt": [
+          "その値段に、仰天した",
+          "英語で言ってみて"
+        ],
+        "emphasis": [
+          "仰天"
+        ],
+        "answer": "I was flabbergasted by the price.",
+        "answerJa": "その値段に仰天した"
+      },
+      "recapSay": "すごく驚いた、をもっと強く言うなら、",
+      "scenes": {
+        "hook": "watch-woman",
+        "answer": "thinking",
+        "meaning": "smartphone"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/flabbergasted"
+      ]
+    },
+    {
+      "id": "en-phrase-on-tenterhooks",
+      "pattern": "phrase",
+      "level": "英検1級超",
+      "title": "「ハラハラしながら待つ」を英語で｜on tenterhooks",
+      "jp": "ハラハラしながら待ってる",
+      "situation": "試験の結果を、ドキドキしながら待っている。",
+      "answer": {
+        "en": "I'm on tenterhooks.",
+        "ja": "ハラハラしながら待ってる"
+      },
+      "emphasis": [
+        "on tenterhooks"
+      ],
+      "meaning": [
+        {
+          "cap": "tenterhook ＝ 布をピンと張るかぎ",
+          "say": "テンターフックは、昔、布をピンと張るために使ったかぎ。"
+        },
+        {
+          "cap": "引っぱられたまま、落ち着かない",
+          "say": "引っぱられたまま、落ち着かない状態です。"
+        }
+      ],
+      "meaningEmphasis": [
+        "落ち着かない"
+      ],
+      "examples": [
+        {
+          "intro": "待っていた時間のことなら",
+          "scene": "city-night",
+          "en": [
+            "We were on tenterhooks all night."
+          ],
+          "ja": [
+            "一晩中ハラハラしていた"
+          ]
+        },
+        {
+          "intro": "じらされている時に",
+          "scene": "cafe",
+          "en": [
+            "Don't keep me on tenterhooks!"
+          ],
+          "ja": [
+            "じらさないで教えて！"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "smartphone",
+        "prompt": [
+          "合否の連絡を、ハラハラして待っている",
+          "英語で言ってみて"
+        ],
+        "emphasis": [
+          "ハラハラ"
+        ],
+        "answer": "I'm on tenterhooks waiting for the results.",
+        "answerJa": "結果をハラハラしながら待っている"
+      },
+      "recapLead": "ハラハラしながら待つ時は、この一言。",
+      "scenes": {
+        "hook": "phone-call",
+        "answer": "thinking",
+        "meaning": "desk-flatlay"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/be-on-tenterhooks"
+      ]
+    }
+  ]
+}

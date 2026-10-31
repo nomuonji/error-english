@@ -127,11 +127,10 @@ window.renderAt = function (t) {
   // mascot: talk alternates mouth on every beat; cry/smile hold
   const m = S.mascot.find(x => t >= T(x.at) && t < T(x.until));
   if (m) {
-    const face = m.face === "talk" ? (bi % 2 ? "talk" : "smile") : m.face;
-    if (mascot.dataset.face !== face) { mascot.src = FACES[face]; mascot.dataset.face = face; }
-    const d = t - T(m.at), out = clamp((T(m.until) - t) / 0.15);
-    mascot.style.opacity = clamp(d / 0.12) * out;
-    mascot.style.transform = `translateY(${(1 - easeOut(d / 0.25)) * 120 + (1 - out) * 120}px) scale(${1 + kick * 0.05}, ${1 - kick * 0.04})`;
+    // only on the closing card; fades in where it stands (no slide, no bounce)
+    if (mascot.dataset.face !== m.face) { mascot.src = FACES[m.face]; mascot.dataset.face = m.face; }
+    mascot.style.opacity = clamp((t - T(m.at)) / 0.4) * clamp((T(m.until) - t) / 0.2);
+    mascot.style.transform = "";
   } else mascot.style.opacity = 0;
 
   // shake on slams that land on a beat
