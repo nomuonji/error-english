@@ -2,5 +2,6 @@
   "enabled": true,
   "perRun": 1,
   "maxPerDayJst": 2,
-  "note": "Owner-approved 2026-10-20: fully automatic, no review. Put lesson scripts in scripts/NNNN-<id>.json; rendered videos in pending/ go first. 11:47 and 19:47 JST, max 2 per JST day. Set enabled=false to stop."
+  "note": "Owner-approved 2026-10-20: fully automatic, no review. Put lesson scripts in scripts/NNNN-<id>.json; rendered videos in pending/ go first. 11:47 and 19:47 JST, max 2 per JST day. Set enabled=false to stop. instagram=true cross-posts each published Short to Instagram Reels (best effort; skipped when the token check fails).",
+  "instagram": true
 }

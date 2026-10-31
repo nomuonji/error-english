@@ -5,9 +5,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { uploadVideo } from './upload-youtube';
+import { postReel } from './instagram-reels';
 
 type Req = { script?: string; assetName: string; sha256: string; title: string; description: string; tags?: string[]; categoryId?: string; sourceRepo: string; sourceSha: string };
-type LogEntry = { file: string; assetName: string; sha256: string; youtubeVideoId: string; publishedAt: string };
+type LogEntry = { file: string; assetName: string; sha256: string; youtubeVideoId: string; publishedAt: string; instagramMediaId?: string; instagramError?: string };
 
 const Q = path.resolve('publish-queue');
 const cfg = JSON.parse(fs.readFileSync(path.join(Q, 'config.json'), 'utf8'));
@@ -16,6 +17,15 @@ const log: LogEntry[] = JSON.parse(fs.readFileSync(logPath, 'utf8'));
 
 function jstDay(d: Date) {
   return new Date(d.getTime() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+function igCaption(req: Req): string {
+  // title + study notes (no credits block) + hashtags from the description
+  const desc = req.description.split('\n');
+  const cut = desc.findIndex((l) => l.startsWith('— クレジット —'));
+  const notes = (cut >= 0 ? desc.slice(0, cut) : desc).join('\n').trim();
+  const tags = desc.filter((l) => l.trim().startsWith('#')).join(' ').replace('#shorts', '#reels');
+  return `${req.title}\n\n${notes}\n\n${tags}`.slice(0, 2200);
 }
 
 async function main() {
@@ -66,9 +76,22 @@ async function main() {
           `upload failed ${new Date().toISOString()}\n${String((error as any)?.message ?? error).slice(0, 2000)}\n`);
         throw error;
       }
-      log.push({ file, assetName: req.assetName, sha256: digest, youtubeVideoId: String(res.id), publishedAt: new Date().toISOString() });
+      const entry: LogEntry = { file, assetName: req.assetName, sha256: digest, youtubeVideoId: String(res.id), publishedAt: new Date().toISOString() };
+      log.push(entry);
       fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
       console.log(`Published ${file}: https://youtube.com/shorts/${res.id}`);
+      // Instagram Reels cross-post: best effort, never retried, never blocks YouTube.
+      if (cfg.instagram !== false && process.env.INSTAGRAM_OK === 'true') {
+        try {
+          const caption = igCaption(req);
+          entry.instagramMediaId = await postReel(video, caption);
+          console.log(`Instagram Reel published: ${entry.instagramMediaId}`);
+        } catch (e: any) {
+          entry.instagramError = String(e?.message ?? e).slice(0, 500);
+          console.log(`::warning title=Instagram cross-post failed::${entry.instagramError}`);
+        }
+        fs.writeFileSync(logPath, JSON.stringify(log, null, 2) + '\n');
+      }
       budget -= 1;
     }
     fs.renameSync(reqPath, path.join(Q, 'published', file));

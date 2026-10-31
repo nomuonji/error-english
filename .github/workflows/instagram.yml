@@ -1,0 +1,44 @@
+name: Instagram token
+
+# check  : is the Instagram token usable? (also run by every publish)
+# refresh: Instagram Login tokens ("IG...") last 60 days; refresh weekly and keep the
+#          refreshed copy in the Actions cache (data/instagram-token.json), which the
+#          publish queue restores. Facebook Page tokens do not expire and are left as is.
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 12:17 JST
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        default: check
+        options: [check, refresh]
+
+permissions:
+  contents: read
+
+jobs:
+  instagram:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+      INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+      MODE: ${{ github.event.inputs.mode || 'refresh' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache@v4
+        with:
+          path: data/instagram-token.json
+          key: instagram-token-${{ github.run_id }}
+          restore-keys: instagram-token-
+      - name: Check
+        run: npx tsx scripts/instagram.ts preflight
+      - name: Refresh
+        if: env.MODE == 'refresh'
+        run: npx tsx scripts/instagram.ts refresh

@@ -50,6 +50,20 @@ jobs:
           cache: npm
       - if: steps.next.outputs.kind != 'none'
         run: npm ci
+      - name: Restore Instagram token (refreshed copy)
+        if: steps.next.outputs.kind != 'none'
+        uses: actions/cache@v4
+        with:
+          path: data/instagram-token.json
+          key: instagram-token-${{ github.run_id }}
+          restore-keys: instagram-token-
+      - name: Instagram auth preflight (never blocks YouTube)
+        id: ig
+        if: steps.next.outputs.kind != 'none'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+        run: npx tsx scripts/instagram.ts preflight
       # Check YouTube auth BEFORE rendering: with an expired refresh token every run used to
       # render, fail the upload and consume a script. Failing here leaves the queue untouched.
       - name: YouTube auth preflight
@@ -117,6 +131,9 @@ jobs:
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           ONLY_FILE: ${{ steps.next.outputs.kind == 'video' && steps.next.outputs.file || steps.beat.outputs.request }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          INSTAGRAM_OK: ${{ steps.ig.outputs.ok }}
           FORCE: "true"   # the guards were applied by queue_next.py
         run: npx tsx scripts/publish-queue.ts
 
