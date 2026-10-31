@@ -83,3 +83,11 @@ phrase is already there, ignoring case, punctuation and simple inflections (esch
 placate = placated, "I'm on tenterhooks" = "on tenterhooks"). A deliberate review lists the
 words in `"repeatOk": [...]`. `python3 scripts/content_ledger.py list` prints the ledger for
 whoever writes the next scripts.
+
+## Automatic scripts (OpenCode Go)
+
+`.github/workflows/replenish-queue.yml` (00:07 JST daily) runs `scripts/replenish.py`: when fewer
+than 6 scripts are queued it drafts new ones (beat and quiz alternately) with OpenCode Go
+(`deepseek-v4.1-flash`, override with the `OPENCODE_GO_MODEL` repository variable), has a second
+call check meanings / IPA / examples, and commits only drafts that pass the render gate and the
+content ledger. Secret: `OPENCODE_GO_API_KEY`. `dry_run=true` prints one draft without committing.
