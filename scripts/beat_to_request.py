@@ -19,6 +19,9 @@ import shutil
 import subprocess
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import content_ledger  # noqa: E402
+
 Q = pathlib.Path("publish-queue")
 PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs")
 SERIES = {"beat": "音ハメ英単語", "quiz": "英語クイズ", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
@@ -155,7 +158,7 @@ def study_notes(spec):
 def main():
     mode, name = sys.argv[1], sys.argv[2]
     spec = json.loads((Q / "scripts" / name).read_text(encoding="utf-8"))
-    problems = check_spec(spec)
+    problems = check_spec(spec) + content_ledger.repeats(spec, Q / "scripts" / name)
     if problems:
         fail(problems)
     if mode == "check":
