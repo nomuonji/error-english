@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-05",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ ebullient / sycophant / exculpate ほか【音ハメ英単語 #5】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "ebullient",
+      "ipa": "/ɪˈbʊliənt/",
+      "pos": "形",
+      "ja": "元気いっぱいの",
+      "ex": "She was *ebullient* after the win.",
+      "exJa": "勝利の後、彼女は大はしゃぎだった。"
+    },
+    {
+      "w": "sycophant",
+      "ipa": "/ˈsɪkəfænt/",
+      "pos": "名",
+      "ja": "おべっか使い",
+      "ex": "He's surrounded by *sycophants*.",
+      "exJa": "彼の周りはおべっか使いばかりだ。"
+    },
+    {
+      "w": "exculpate",
+      "ipa": "/ˈekskʌlpeɪt/",
+      "pos": "動",
+      "ja": "無実を証明する",
+      "ex": "New evidence *exculpated* him.",
+      "exJa": "新しい証拠で彼の無実が証明された。"
+    },
+    {
+      "w": "abstruse",
+      "ipa": "/æbˈstruːs/",
+      "pos": "形",
+      "ja": "難解な",
+      "ex": "The lecture was too *abstruse* for me.",
+      "exJa": "その講義は私には難しすぎた。"
+    },
+    {
+      "w": "impecunious",
+      "ipa": "/ˌɪmpɪˈkjuːniəs/",
+      "pos": "形",
+      "ja": "お金のない",
+      "ex": "As *impecunious* students, we lived on noodles.",
+      "exJa": "金欠学生だった私たちは麺ばかり食べていた。"
+    },
+    {
+      "w": "fractious",
+      "ipa": "/ˈfrækʃəs/",
+      "pos": "形",
+      "ja": "機嫌が悪く扱いにくい",
+      "ex": "The kids get *fractious* when they're hungry.",
+      "exJa": "子どもたちはお腹がすくと機嫌が悪くなる。"
+    },
+    {
+      "w": "proclivity",
+      "ipa": "/prəˈklɪvəti/",
+      "pos": "名",
+      "ja": "（よくない）傾向・癖",
+      "ex": "He has a *proclivity* for exaggeration.",
+      "exJa": "彼には話を盛る癖がある。"
+    },
+    {
+      "w": "enervate",
+      "ipa": "/ˈenərveɪt/",
+      "pos": "動",
+      "ja": "気力を奪う",
+      "ex": "The heat *enervated* everyone.",
+      "exJa": "その暑さで皆ぐったりした。"
+    }
+  ]
+}

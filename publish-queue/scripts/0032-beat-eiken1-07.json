@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-07",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ histrionic / disparage / redolent ほか【音ハメ英単語 #7】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "histrionic",
+      "ipa": "/ˌhɪstriˈɑːnɪk/",
+      "pos": "形",
+      "ja": "芝居がかった・大げさな",
+      "ex": "Stop being so *histrionic*.",
+      "exJa": "そんなに大げさに騒がないで。"
+    },
+    {
+      "w": "disparage",
+      "ipa": "/dɪˈspærɪdʒ/",
+      "pos": "動",
+      "ja": "けなす",
+      "ex": "Don't *disparage* your coworkers.",
+      "exJa": "同僚をけなさないで。"
+    },
+    {
+      "w": "redolent",
+      "ipa": "/ˈredələnt/",
+      "pos": "形",
+      "ja": "（〜の）香りがする",
+      "ex": "The kitchen was *redolent* of garlic.",
+      "exJa": "台所はニンニクの香りがした。"
+    },
+    {
+      "w": "assiduous",
+      "ipa": "/əˈsɪdʒuəs/",
+      "pos": "形",
+      "ja": "勤勉な・念入りな",
+      "ex": "She's an *assiduous* note-taker.",
+      "exJa": "彼女はこまめにメモをとる人だ。"
+    },
+    {
+      "w": "vituperative",
+      "ipa": "/vaɪˈtuːpərətɪv/",
+      "pos": "形",
+      "ja": "口汚い・罵倒する",
+      "ex": "The comments were *vituperative*.",
+      "exJa": "コメントは罵詈雑言だらけだった。"
+    },
+    {
+      "w": "quixotic",
+      "ipa": "/kwɪkˈsɑːtɪk/",
+      "pos": "形",
+      "ja": "夢想的で非現実的な",
+      "ex": "It was a *quixotic* plan from the start.",
+      "exJa": "最初から非現実的な計画だった。"
+    },
+    {
+      "w": "languid",
+      "ipa": "/ˈlæŋɡwɪd/",
+      "pos": "形",
+      "ja": "けだるい",
+      "ex": "We spent a *languid* afternoon by the pool.",
+      "exJa": "プールサイドでけだるい午後を過ごした。"
+    },
+    {
+      "w": "temerity",
+      "ipa": "/təˈmerəti/",
+      "pos": "名",
+      "ja": "厚かましさ・無謀さ",
+      "ex": "He had the *temerity* to ask for a raise.",
+      "exJa": "彼は厚かましくも昇給を求めた。"
+    }
+  ]
+}

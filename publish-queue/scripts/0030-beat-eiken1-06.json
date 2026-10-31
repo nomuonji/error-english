@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-06",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ officious / penchant / deleterious ほか【音ハメ英単語 #6】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "officious",
+      "ipa": "/əˈfɪʃəs/",
+      "pos": "形",
+      "ja": "おせっかいな・偉そうな",
+      "ex": "An *officious* guard checked our bags twice.",
+      "exJa": "おせっかいな警備員がカバンを2回調べた。"
+    },
+    {
+      "w": "penchant",
+      "ipa": "/ˈpentʃənt/",
+      "pos": "名",
+      "ja": "好み・目がないこと",
+      "ex": "She has a *penchant* for spicy food.",
+      "exJa": "彼女は辛いものに目がない。"
+    },
+    {
+      "w": "deleterious",
+      "ipa": "/ˌdeləˈtɪriəs/",
+      "pos": "形",
+      "ja": "有害な",
+      "ex": "Lack of sleep has *deleterious* effects.",
+      "exJa": "睡眠不足は体に悪影響をもたらす。"
+    },
+    {
+      "w": "foment",
+      "ipa": "/foʊˈment/",
+      "pos": "動",
+      "ja": "（争いを）あおる",
+      "ex": "He was accused of *fomenting* unrest.",
+      "exJa": "彼は騒乱をあおったとして非難された。"
+    },
+    {
+      "w": "querulous",
+      "ipa": "/ˈkwerələs/",
+      "pos": "形",
+      "ja": "不平がましい",
+      "ex": "He answered in a *querulous* tone.",
+      "exJa": "彼は不満げな口調で答えた。"
+    },
+    {
+      "w": "magnanimous",
+      "ipa": "/mæɡˈnænɪməs/",
+      "pos": "形",
+      "ja": "寛大な",
+      "ex": "She was *magnanimous* in victory.",
+      "exJa": "彼女は勝っても相手に寛大だった。"
+    },
+    {
+      "w": "parsimonious",
+      "ipa": "/ˌpɑːrsəˈmoʊniəs/",
+      "pos": "形",
+      "ja": "けちな",
+      "ex": "My *parsimonious* boss never buys lunch.",
+      "exJa": "けちな上司は一度もランチをおごらない。"
+    },
+    {
+      "w": "inimical",
+      "ipa": "/ɪˈnɪmɪkəl/",
+      "pos": "形",
+      "ja": "不利な・害になる",
+      "ex": "Stress is *inimical* to good sleep.",
+      "exJa": "ストレスは良い睡眠の敵だ。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-04",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ obstreperous / pusillanimous / obviate ほか【音ハメ英単語 #4】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "obstreperous",
+      "ipa": "/əbˈstrepərəs/",
+      "pos": "形",
+      "ja": "騒がしく手に負えない",
+      "ex": "The *obstreperous* crowd booed the referee.",
+      "exJa": "手に負えない観衆が審判にブーイングした。"
+    },
+    {
+      "w": "pusillanimous",
+      "ipa": "/ˌpjuːsɪˈlænɪməs/",
+      "pos": "形",
+      "ja": "臆病な・意気地のない",
+      "ex": "It was a *pusillanimous* decision.",
+      "exJa": "意気地のない決断だった。"
+    },
+    {
+      "w": "obviate",
+      "ipa": "/ˈɑːbvieɪt/",
+      "pos": "動",
+      "ja": "不要にする",
+      "ex": "The new system *obviates* the need for paperwork.",
+      "exJa": "新システムで書類仕事が要らなくなる。"
+    },
+    {
+      "w": "laconic",
+      "ipa": "/ləˈkɑːnɪk/",
+      "pos": "形",
+      "ja": "言葉少なな・そっけない",
+      "ex": "His reply was *laconic*: just \"No.\"",
+      "exJa": "彼の返事はそっけなく「ノー」だけだった。"
+    },
+    {
+      "w": "garrulous",
+      "ipa": "/ˈɡærələs/",
+      "pos": "形",
+      "ja": "おしゃべりな",
+      "ex": "Our *garrulous* driver talked the whole way.",
+      "exJa": "おしゃべりな運転手はずっと話していた。"
+    },
+    {
+      "w": "insouciant",
+      "ipa": "/ɪnˈsuːsiənt/",
+      "pos": "形",
+      "ja": "のんきな・無頓着な",
+      "ex": "She gave an *insouciant* shrug.",
+      "exJa": "彼女は平然と肩をすくめた。"
+    },
+    {
+      "w": "cogent",
+      "ipa": "/ˈkoʊdʒənt/",
+      "pos": "形",
+      "ja": "説得力のある",
+      "ex": "She made a *cogent* argument.",
+      "exJa": "彼女は説得力のある主張をした。"
+    },
+    {
+      "w": "mollify",
+      "ipa": "/ˈmɑːlɪfaɪ/",
+      "pos": "動",
+      "ja": "（怒りを）和らげる",
+      "ex": "He tried to *mollify* his angry neighbor.",
+      "exJa": "彼は怒った隣人をなだめようとした。"
+    }
+  ]
+}
