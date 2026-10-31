@@ -34,7 +34,7 @@ jobs:
         env:
           OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
           OPENCODE_GO_MODEL: ${{ vars.OPENCODE_GO_MODEL || 'deepseek-v4.1-flash' }}
-        run: python3 scripts/replenish.py --min 6 --max-new 2 ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+        run: python3 scripts/replenish.py --max-new 2 ${{ github.event.inputs.dry_run == 'true' && '--min 99 --dry-run' || '--min 6' }}
       - name: Commit
         if: github.event.inputs.dry_run != 'true'
         run: |
