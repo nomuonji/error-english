@@ -57,6 +57,13 @@ async function main() {
         fs.mkdirSync(path.join(Q, 'failed'), { recursive: true });
         fs.renameSync(reqPath, path.join(Q, 'failed', file));
         fs.renameSync(video, path.join(Q, 'failed', req.assetName));
+        // Park the lesson script too: left in scripts/, every later run re-rendered and
+        // re-uploaded the same item (0006/0007 looped from 2026-10-22) and the queue stalled.
+        if (req.script && fs.existsSync(path.join(Q, 'scripts', req.script))) {
+          fs.renameSync(path.join(Q, 'scripts', req.script), path.join(Q, 'failed', req.script));
+        }
+        fs.writeFileSync(path.join(Q, 'failed', file.replace('.request.json', '.reason.txt')),
+          `upload failed ${new Date().toISOString()}\n${String((error as any)?.message ?? error).slice(0, 2000)}\n`);
         throw error;
       }
       log.push({ file, assetName: req.assetName, sha256: digest, youtubeVideoId: String(res.id), publishedAt: new Date().toISOString() });

@@ -1,0 +1,15 @@
+{
+  "id": "lexicon-drop",
+  "title": "Lexicon Drop",
+  "source": "Suno",
+  "sunoClipId": "7d4a9b03-a326-43f4-9dc9-b2d0533f4ccf",
+  "createdOn": "2026-10-31",
+  "plan": "free",
+  "license": "Suno free plan: non-commercial use only, attribution to Suno required. Do not use on a monetized channel.",
+  "credit": "音楽: Lexicon Drop（Suno で生成）",
+  "bpm": 126.9,
+  "duration": 45.6,
+  "beatOffset": 0.08,
+  "beatOffsetNote": "Suno audio-analysis beats land ~80 ms before the kick transients in the decoded mp3 (measured with an onset envelope).",
+  "layout": { "introBeats": 8, "beatsPerWord": 8, "words": 8, "recapBeats": 8, "outroBeats": 16 }
+}

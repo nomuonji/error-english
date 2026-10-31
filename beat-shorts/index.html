@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Archivo Black"; src: url(./node_modules/@fontsource/archivo-black/files/archivo-black-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoJP"; font-weight: 900; src: url(./node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-900-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoJP"; font-weight: 700; src: url(./node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoLatin"; font-weight: 700; src: url(./node_modules/@fontsource/noto-sans/files/noto-sans-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoLatin"; font-weight: 400; src: url(./node_modules/@fontsource/noto-sans/files/noto-sans-latin-400-normal.woff2) format("woff2"); }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #05060d; }
+canvas { position: absolute; inset: 0; }
+#ui { position: absolute; inset: 0; color: #fff; font-family: "NotoLatin", "NotoJP", sans-serif; }
+.abs { position: absolute; left: 0; right: 0; text-align: center; will-change: transform, opacity; }
+#counter { top: 230px; font-family: "Archivo Black"; font-size: 46px; letter-spacing: 8px; color: rgba(255,255,255,.85); }
+#counter b { color: var(--c); }
+#tag { top: 300px; font-family: "NotoJP"; font-weight: 900; font-size: 40px; letter-spacing: 6px; }
+#tag span { background: var(--c); color: #05060d; padding: 6px 22px; border-radius: 8px; }
+#word { top: 640px; font-family: "Archivo Black"; font-size: 150px; line-height: 1; letter-spacing: -2px;
+        text-shadow: 0 0 30px var(--c), 0 0 80px var(--c), 0 6px 0 rgba(0,0,0,.6); }
+#ipa { top: 830px; font-family: "DejaVu Sans", sans-serif; font-size: 56px; color: rgba(255,255,255,.9); }
+#mean { top: 950px; font-family: "NotoJP"; font-weight: 900; font-size: 74px; text-shadow: 0 4px 24px rgba(0,0,0,.9); }
+#mean .pos { display: inline-block; font-size: 46px; border: 4px solid var(--c); color: var(--c); border-radius: 12px;
+             padding: 0 14px; margin-right: 18px; transform: translateY(-8px); }
+#ex { top: 1150px; padding: 0 70px; font-size: 54px; font-weight: 700; line-height: 1.35; text-shadow: 0 3px 18px rgba(0,0,0,.95); }
+#ex .hl { color: #05060d; background: var(--c); padding: 0 10px; border-radius: 8px; }
+#exJa { top: 1330px; padding: 0 70px; font-family: "NotoJP"; font-weight: 700; font-size: 40px; color: rgba(255,255,255,.82); text-shadow: 0 3px 14px rgba(0,0,0,.95); }
+#big { top: 700px; font-family: "NotoJP"; font-weight: 900; font-size: 130px; line-height: 1.15; text-shadow: 0 0 40px var(--c), 0 6px 0 rgba(0,0,0,.6); }
+#sub { top: 1000px; font-family: "NotoJP"; font-weight: 900; font-size: 72px; text-shadow: 0 4px 24px rgba(0,0,0,.9); }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+#bar { position: absolute; left: 90px; right: 90px; top: 200px; height: 8px; background: rgba(255,255,255,.15); border-radius: 4px; overflow: hidden; }
+#bar i { display: block; height: 100%; width: 0; background: var(--c); box-shadow: 0 0 20px var(--c); }
+</style>
+<script type="importmap">{ "imports": { "three": "./node_modules/three/build/three.module.js", "three/addons/": "./node_modules/three/examples/jsm/" } }</script>
+</head>
+<body>
+<div id="ui">
+  <div id="bar"><i></i></div>
+  <div class="abs" id="counter"></div>
+  <div class="abs" id="tag"></div>
+  <div class="abs" id="word"></div>
+  <div class="abs" id="ipa"></div>
+  <div class="abs" id="mean"></div>
+  <div class="abs" id="ex"></div>
+  <div class="abs" id="exJa"></div>
+  <div class="abs" id="big"></div>
+  <div class="abs" id="sub"></div>
+  <div id="flash"></div>
+</div>
+<script type="module">
+import * as THREE from "three";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+const W = 1080, H = 1920;
+const JOB = await fetch(".job/spec.json").then(r => r.json());
+const TDIR = `tracks/${JOB.track}/`;
+const [TRACK, beatsRaw, spec] = await Promise.all(["track.json", "beats.json", "spectrum.json"].map(f => fetch(TDIR + f).then(r => r.json())));
+const B = beatsRaw.map(b => b + TRACK.beatOffset);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const WORDS = JOB.words.map(w => { const m = w.ex.match(/^(.*?)\*(.+?)\*(.*)$/); return { ...w, ex: m ? [m[1], m[2], m[3]] : [w.ex, "", ""] }; });
+const PAL = [0x00e5ff, 0xff2bd6, 0xffd400, 0x7cff4f, 0xff6a00, 0xa66bff, 0x00ffa8, 0xff3b5c];
+const L = TRACK.layout;
+const INTRO = L.introBeats, PER = L.beatsPerWord, RECAP = INTRO + PER * WORDS.length, OUTRO = RECAP + L.recapBeats;
+const LEVEL = esc(JOB.level || "英検1級"), NW = String(WORDS.length).padStart(2, "0");
+window.DURATION = TRACK.duration;
+
+// ---------- helpers ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const easeOut = x => 1 - Math.pow(1 - clamp(x), 3);
+const easeBack = x => { x = clamp(x); const c = 2.2; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+function beatIndex(t) { let i = 0; while (i + 1 < B.length && B[i + 1] <= t) i++; return t < B[0] ? -1 : i; }
+const bt = i => i < B.length ? B[i] : B[B.length - 1] + (i - B.length + 1) * 0.47;
+const hex = c => "#" + c.toString(16).padStart(6, "0");
+
+// ---------- three ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x05060d);
+scene.fog = new THREE.FogExp2(0x05060d, 0.018);
+const camera = new THREE.PerspectiveCamera(62, W / H, 0.1, 400);
+camera.position.set(0, 0, 18);
+
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.8, 0.5, 0.35);
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+
+// core shape
+const core = new THREE.Group(); scene.add(core); core.position.y = 2.2;
+const wireMat = new THREE.LineBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.9 });
+const wire = new THREE.LineSegments(new THREE.WireframeGeometry(new THREE.IcosahedronGeometry(4.2, 1)), wireMat);
+const innerMat = new THREE.MeshBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.08 });
+const inner = new THREE.Mesh(new THREE.IcosahedronGeometry(3.0, 0), innerMat);
+const innerWireMat = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.5 });
+const innerWire = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.IcosahedronGeometry(3.0, 0)), innerWireMat);
+core.add(wire, inner, innerWire);
+
+// spectrum ring
+const NB = spec.bands[0].length, NBAR = NB * 2;
+const barGeo = new THREE.BoxGeometry(0.16, 1, 0.16); barGeo.translate(0, 0.5, 0);
+const barMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const bars = new THREE.InstancedMesh(barGeo, barMat, NBAR); scene.add(bars); bars.position.y = 2.2;
+const dummy = new THREE.Object3D();
+
+// shockwave rings
+const shocks = [];
+for (let i = 0; i < 3; i++) {
+  const m = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0, side: THREE.DoubleSide });
+  const r = new THREE.Mesh(new THREE.RingGeometry(0.96, 1, 128), m); r.position.y = 2.2; scene.add(r); shocks.push(r);
+}
+
+// tunnel of rings
+const tunnel = new THREE.Group(); scene.add(tunnel);
+const TN = 28, TSP = 6;
+const tunnelMats = [];
+for (let i = 0; i < TN; i++) {
+  const sides = 6;
+  const pts = []; for (let k = 0; k <= sides; k++) { const a = k / sides * Math.PI * 2 + Math.PI / 6; pts.push(new THREE.Vector3(Math.cos(a) * 14, Math.sin(a) * 22, 0)); }
+  const m = new THREE.LineBasicMaterial({ color: 0x00e5ff, transparent: true, opacity: 0.6 });
+  tunnelMats.push(m);
+  const l = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), m); tunnel.add(l);
+}
+
+// particles
+const PN = 2500, pPos = new Float32Array(PN * 3), seeds = [];
+let _s = 20261031; const rnd = () => { _s |= 0; _s = _s + 0x6D2B79F5 | 0; let t = Math.imul(_s ^ _s >>> 15, 1 | _s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+for (let i = 0; i < PN; i++) { seeds.push([rnd() * 2 - 1, rnd() * 2 - 1, rnd()]); }
+const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute("position", new THREE.BufferAttribute(pPos, 3));
+const pMat = new THREE.PointsMaterial({ color: 0xffffff, size: 0.12, transparent: true, opacity: 0.85 });
+scene.add(new THREE.Points(pGeo, pMat));
+
+// ---------- DOM ----------
+const $ = id => document.getElementById(id);
+const el = { counter: $("counter"), tag: $("tag"), word: $("word"), ipa: $("ipa"), mean: $("mean"), ex: $("ex"), exJa: $("exJa"), big: $("big"), sub: $("sub"), flash: $("flash"), barFill: document.querySelector("#bar i"), ui: $("ui") };
+function show(e, op, tf = "") { e.style.opacity = op; e.style.transform = tf; }
+function hideAll() { for (const k of ["counter", "tag", "word", "ipa", "mean", "ex", "exJa", "big", "sub"]) show(el[k], 0); }
+let lastHtml = {};
+function setHTML(k, h) { if (lastHtml[k] !== h) { el[k].innerHTML = h; lastHtml[k] = h;
+  const fit = { word: [150, 940], mean: [74, 960] }[k];
+  if (fit) { const e = el[k]; e.style.fontSize = fit[0] + "px"; const r = document.createRange(); r.selectNodeContents(e);
+    const w = r.getBoundingClientRect().width / (e.getBoundingClientRect().width / e.offsetWidth || 1); if (w > fit[1]) e.style.fontSize = Math.floor(fit[0] * fit[1] / w) + "px"; } } }
+
+// pop-in: appear at beat time tb, scale punch
+function pop(e, t, tb, opts = {}) {
+  const d = t - tb; if (d < 0) { show(e, 0); return; }
+  const p = easeBack(d / (opts.dur || 0.22));
+  const s = opts.from != null ? opts.from + (1 - opts.from) * p : 0.6 + 0.4 * p;
+  const y = (opts.dy || 0) * (1 - easeOut(d / 0.25));
+  show(e, clamp(d / 0.06), `translateY(${y}px) scale(${s})`);
+}
+function exitMul(t, tEnd) { const d = tEnd - t; return clamp(d / 0.12); }
+
+// ---------- main render ----------
+window.renderAt = function (t) {
+  const bi = beatIndex(t);
+  const tb = bi >= 0 ? bt(bi) : 0;
+  const since = bi >= 0 ? t - tb : 99;
+  const isDown = bi >= 0 && bi % 4 === 0;
+  let kick = Math.exp(-since / 0.11) * (isDown ? 1.0 : 0.65);
+  const fi = Math.min(spec.rms.length - 1, Math.max(0, Math.round(t * spec.fps)));
+  const rms = spec.rms[fi], bands = spec.bands[fi];
+
+  // which segment
+  let color = PAL[0], wordIdx = -1;
+  hideAll(); el.flash.style.opacity = 0;
+  if (bi < INTRO) {
+    color = PAL[(Math.max(0, bi) >> 1) % PAL.length];
+    setHTML("big", bi < 4 ? LEVEL.replace(/(\d+)/g, "<span style='font-family:Archivo Black'>$1</span>") : "何個<br>わかる？");
+    setHTML("sub", bi < 4 ? `<span style='font-family:Archivo Black;letter-spacing:6px'>${WORDS.length} WORDS</span>` : "<span style='font-size:52px'>意味が出る前に答えて</span>");
+    const g = bi < 4 ? 0 : 4;
+    pop(el.big, t, bt(g), { from: 2.0 });
+    pop(el.sub, t, bt(g + 2), { dy: 40 });
+    if (bi === 7) { const m = exitMul(t, bt(8)); el.big.style.opacity *= m; el.sub.style.opacity *= m; }
+  } else if (bi < RECAP) {
+    wordIdx = Math.floor((bi - INTRO) / PER);
+    const W0 = WORDS[wordIdx], b0 = INTRO + wordIdx * PER, end = bt(b0 + PER);
+    color = PAL[wordIdx % PAL.length];
+    setHTML("counter", `<b>${String(wordIdx + 1).padStart(2, "0")}</b> / ${NW}`);
+    setHTML("tag", `<span>${LEVEL}</span>`);
+    setHTML("word", esc(W0.w));
+    setHTML("ipa", esc(W0.ipa));
+    setHTML("mean", `<span class="pos">${esc(W0.pos)}</span>${esc(W0.ja)}`);
+    setHTML("ex", `${esc(W0.ex[0])}<span class="hl">${esc(W0.ex[1])}</span>${esc(W0.ex[2])}`);
+    setHTML("exJa", esc(W0.exJa));
+    const m = exitMul(t, end);
+    show(el.counter, m); show(el.tag, m);
+    pop(el.word, t, bt(b0), { from: 1.7, dur: 0.2 });
+    pop(el.ipa, t, bt(b0 + 1), { dy: 30 });
+    pop(el.mean, t, bt(b0 + 2), { from: 0.4 });
+    pop(el.ex, t, bt(b0 + 4), { dy: 50 });
+    pop(el.exJa, t, bt(b0 + 6), { dy: 30 });
+    // highlight pulse on beat 5
+    const hl = el.ex.querySelector(".hl");
+    if (hl) { const d = t - bt(b0 + 5); hl.style.boxShadow = d >= 0 ? `0 0 ${40 * Math.exp(-d / 0.2) + 12}px ${hex(color)}` : "none"; }
+    for (const k of ["word", "ipa", "mean", "ex", "exJa"]) el[k].style.opacity *= m;
+    // word slam: horizontal squash wobble on downbeats within the word
+    if (bi > b0 && isDown) el.word.style.transform += ` scale(${1 + 0.06 * kick})`;
+    if (t >= bt(b0) && t - bt(b0) < 0.07) el.flash.style.opacity = 0.18 * (1 - (t - bt(b0)) / 0.07);
+  } else if (bi < OUTRO) {
+    const k = bi - RECAP; wordIdx = k; color = PAL[k % PAL.length];
+    setHTML("tag", "<span>RECAP</span>"); show(el.tag, 1);
+    setHTML("word", esc(WORDS[k].w)); setHTML("mean", esc(WORDS[k].ja));
+    setHTML("counter", `<b>${String(k + 1).padStart(2, "0")}</b> / ${NW}`); show(el.counter, 1);
+    pop(el.word, t, bt(bi), { from: 1.8, dur: 0.14 });
+    pop(el.mean, t, bt(bi) + 0.05, { from: 0.7, dur: 0.14 });
+    if (since < 0.05) el.flash.style.opacity = 0.18 * (1 - since / 0.05);
+  } else {
+    const k = bi - OUTRO; color = PAL[(k >> 2) % PAL.length];
+    if (k < 8) {
+      setHTML("big", "全部<br>わかった？"); pop(el.big, t, bt(OUTRO), { from: 2.0 });
+      setHTML("sub", "<span style='font-size:58px'>何個わかったかコメントで</span>"); pop(el.sub, t, bt(OUTRO + 2), { dy: 40 });
+      if (k === 7) { const m = exitMul(t, bt(OUTRO + 8)); el.big.style.opacity *= m; el.sub.style.opacity *= m; }
+    } else {
+      setHTML("big", "保存して<br>復習しよう"); pop(el.big, t, bt(OUTRO + 8), { from: 2.0 });
+      setHTML("sub", `<span style='font-size:52px'>${esc(JOB.outro || "毎日、" + (JOB.level || "英検1級") + "の単語を音ハメで")}</span>`); pop(el.sub, t, bt(OUTRO + 10), { dy: 40 });
+    }
+  }
+  if (isDown && since < 0.05 && bi >= OUTRO && (bi - OUTRO) % 8 === 0) el.flash.style.opacity = 0.3 * (1 - since / 0.05);
+
+  const c = new THREE.Color(color);
+  el.ui.style.setProperty("--c", hex(color));
+  const prog = clamp((t - bt(INTRO)) / (bt(RECAP) - bt(INTRO)));
+  el.barFill.style.width = (prog * 100) + "%";
+  document.getElementById("bar").style.opacity = bi >= INTRO && bi < OUTRO ? 1 : 0;
+
+  // ---- 3D ----
+  const energy = 0.4 + rms * 0.9;
+  core.rotation.y = t * 0.45 + kick * 0.12;
+  core.rotation.x = t * 0.21;
+  const s = 1 + kick * 0.22 + rms * 0.08;
+  wire.scale.setScalar(s); innerWire.scale.setScalar(1 + kick * 0.35); inner.scale.setScalar(1 + kick * 0.35);
+  innerWire.rotation.y = -t * 1.1;
+  wireMat.color.copy(c); innerMat.color.copy(c); innerMat.opacity = 0.04 + kick * 0.1;
+  wireMat.opacity = 0.3 + kick * 0.35;
+  // text-heavy segments: dim core
+  const textHeavy = wordIdx >= 0 && bi < RECAP && t - bt(INTRO + wordIdx * PER + 4) > 0;
+  core.position.y = 2.2; core.scale.setScalar(textHeavy ? 0.85 : 1);
+
+  for (let i = 0; i < NBAR; i++) {
+    const b = bands[i < NB ? i : NBAR - 1 - i];
+    const a = i / NBAR * Math.PI * 2;
+    dummy.position.set(Math.cos(a) * 6.6, Math.sin(a) * 6.6, 0);
+    dummy.rotation.set(0, 0, a - Math.PI / 2);
+    dummy.scale.set(1, 0.2 + b * b * 3.2 * energy, 1);
+    dummy.updateMatrix(); bars.setMatrixAt(i, dummy.matrix);
+    bars.setColorAt(i, new THREE.Color(color).lerp(new THREE.Color(0xffffff), b * 0.6));
+  }
+  bars.instanceMatrix.needsUpdate = true; bars.instanceColor.needsUpdate = true;
+  bars.rotation.set(0, 0, t * 0.2);
+
+  // shockwaves on last 3 downbeats
+  for (let j = 0; j < 3; j++) {
+    let db = bi - (bi % 4) - j * 4; if (db < 0) { shocks[j].material.opacity = 0; continue; }
+    const d = t - bt(db);
+    shocks[j].scale.setScalar(4 + d * 26);
+    shocks[j].material.opacity = Math.max(0, 0.55 - d * 0.5);
+    shocks[j].material.color.copy(c);
+  }
+
+  // tunnel: travel distance accumulates, faster with kick (analytic: base + bump per beat)
+  const travel = t * 9 + Math.max(0, bi) * 1.6 + (1 - Math.exp(-since / 0.15)) * 1.6;
+  for (let i = 0; i < TN; i++) {
+    const l = tunnel.children[i];
+    const z = ((i * TSP + travel) % (TN * TSP)) - (TN * TSP - 20);
+    l.position.z = z;
+    l.rotation.z = i * 0.12 + t * 0.15;
+    tunnelMats[i].color.copy(c).lerp(new THREE.Color(0xffffff), kick * 0.4);
+    tunnelMats[i].opacity = 0.2 + kick * 0.35;
+  }
+
+  for (let i = 0; i < PN; i++) {
+    const sd = seeds[i];
+    const z = ((sd[2] * 160 + travel * 1.5) % 160) - 140;
+    pPos[i * 3] = sd[0] * 40; pPos[i * 3 + 1] = sd[1] * 60; pPos[i * 3 + 2] = z;
+  }
+  pGeo.attributes.position.needsUpdate = true;
+  pMat.size = 0.1 + kick * 0.12;
+
+  // camera shake on downbeats
+  const sh = isDown ? Math.exp(-since / 0.08) : 0;
+  camera.position.x = Math.sin(t * 53) * 0.35 * sh;
+  camera.position.y = Math.cos(t * 47) * 0.35 * sh;
+  camera.fov = 62 - kick * 3; camera.updateProjectionMatrix();
+  bloom.strength = 0.7 + kick * 0.45;
+
+  // UI shake
+  el.ui.style.transform = sh > 0.01 ? `translate(${Math.sin(t * 61) * 10 * sh}px, ${Math.cos(t * 59) * 10 * sh}px)` : "";
+
+  composer.render();
+};
+await document.fonts.ready;
+await Promise.all([...document.fonts].map(f => f.load()));
+window.READY = true;
+window.renderAt(0);
+</script>
+</body>
+</html>

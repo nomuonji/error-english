@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-03",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ sanguine / capricious / ameliorate ほか【音ハメ英単語 #3】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "sanguine",
+      "ipa": "/ˈsæŋɡwɪn/",
+      "pos": "形",
+      "ja": "楽観的な",
+      "ex": "She's *sanguine* about the results.",
+      "exJa": "彼女は結果について楽観的だ。"
+    },
+    {
+      "w": "capricious",
+      "ipa": "/kəˈprɪʃəs/",
+      "pos": "形",
+      "ja": "気まぐれな",
+      "ex": "The weather here is *capricious*.",
+      "exJa": "ここの天気は気まぐれだ。"
+    },
+    {
+      "w": "ameliorate",
+      "ipa": "/əˈmiːliəreɪt/",
+      "pos": "動",
+      "ja": "（状況を）改善する",
+      "ex": "The plan aims to *ameliorate* poverty.",
+      "exJa": "その計画は貧困の改善を目指している。"
+    },
+    {
+      "w": "desultory",
+      "ipa": "/ˈdesəltɔːri/",
+      "pos": "形",
+      "ja": "とりとめのない",
+      "ex": "We had a *desultory* chat about work.",
+      "exJa": "仕事についてとりとめのない話をした。"
+    },
+    {
+      "w": "ingratiate",
+      "ipa": "/ɪnˈɡreɪʃieɪt/",
+      "pos": "動",
+      "ja": "（人に）取り入る",
+      "ex": "He tried to *ingratiate* himself with the boss.",
+      "exJa": "彼は上司に取り入ろうとした。"
+    },
+    {
+      "w": "surreptitious",
+      "ipa": "/ˌsɜːrəpˈtɪʃəs/",
+      "pos": "形",
+      "ja": "こっそりした",
+      "ex": "She took a *surreptitious* look at her phone.",
+      "exJa": "彼女はこっそりスマホを見た。"
+    },
+    {
+      "w": "intransigent",
+      "ipa": "/ɪnˈtrænsɪdʒənt/",
+      "pos": "形",
+      "ja": "頑として譲らない",
+      "ex": "Both sides remain *intransigent*.",
+      "exJa": "両者とも頑として譲らない。"
+    },
+    {
+      "w": "effusive",
+      "ipa": "/ɪˈfjuːsɪv/",
+      "pos": "形",
+      "ja": "感情たっぷりの・大げさな",
+      "ex": "He was *effusive* in his praise.",
+      "exJa": "彼は惜しみなく褒めちぎった。"
+    }
+  ]
+}

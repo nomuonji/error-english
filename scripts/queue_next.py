@@ -2,7 +2,7 @@
 """Decide what the scheduled publisher does this run.
 
 Prints key=value lines for $GITHUB_OUTPUT:
-  kind=none|video|script, file=<name>, reason=<text>
+  kind=none|video|script, file=<name>, engine=af|beat (scripts only), reason=<text>
 Order: already-rendered videos in pending/ first (reviewed earlier), then lesson
 scripts in scripts/ (rendered on the fly). Guards: config.enabled (unless FORCE),
 JST daily cap from published/log.json.
@@ -40,6 +40,9 @@ else:
     if videos:
         out(kind="video", file=videos[0], reason="rendered video waiting")
     elif scripts:
-        out(kind="script", file=scripts[0], reason="lesson script waiting")
+        pattern = json.loads((Q / "scripts" / scripts[0]).read_text(encoding="utf-8")).get("pattern", "")
+        # "beat" = beat-synced vocabulary Short rendered in this repo (beat-shorts/);
+        # everything else is an Animation Factory lesson.
+        out(kind="script", file=scripts[0], engine="beat" if pattern == "beat" else "af", reason="lesson script waiting")
     else:
         out(kind="none", file="", reason="queue empty")
