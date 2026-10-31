@@ -1,0 +1,47 @@
+name: Replenish the publish queue
+
+# Writes new scripts with OpenCode Go when fewer than 6 are queued (beat and quiz
+# alternately). Every draft is checked by a second call and must pass the render gate and
+# the content ledger (no repeated words) before it is committed to publish-queue/scripts/.
+on:
+  schedule:
+    - cron: "7 15 * * *"   # 00:07 JST
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: print one draft instead of committing
+        type: choice
+        default: "false"
+        options: ["false", "true"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-queue
+  cancel-in-progress: false
+
+jobs:
+  replenish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Write new scripts
+        env:
+          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
+          OPENCODE_GO_MODEL: ${{ vars.OPENCODE_GO_MODEL || 'deepseek-v4.1-flash' }}
+        run: python3 scripts/replenish.py --min 6 --max-new 2 ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+      - name: Commit
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          rm -f gate-failure.txt
+          git add publish-queue/scripts
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "publish-queue: replenish scripts (OpenCode Go) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && exit 0; sleep 5; done; exit 1
