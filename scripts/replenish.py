@@ -113,7 +113,7 @@ def draft(kind, used, feedback=""):
     schema = BEAT_SCHEMA if kind == "beat" else QUIZ_SCHEMA
     task = ("音ハメ英単語（8語）の台本を作ってください。8語は品詞が偏らないように。ex では見出し語の形を *語* で囲む。pos は 動/形/名/副 の1文字。"
             if kind == "beat" else
-            "英語クイズ（3問）の台本を作ってください。1問目は word、2・3問目は phrase / upgrade / vs から異なる2つ。id は en-<pattern>-<見出し語> の英小文字とハイフン。例は形の見本で、中身は使わないこと。")
+            "英語クイズ（3問）の台本を作ってください。1問目は word、2・3問目は phrase / upgrade / vs から異なる2つ。必須項目: word は word・pos・ja・examples・quiz、phrase は jp（日本語の言いたいこと）・answer・examples・quiz、upgrade は basic・word・ja・examples・quiz、vs は a・b・rule・quiz。id は en-<pattern>-<見出し語> の英小文字とハイフン。例は形の見本で、中身は使わないこと。")
     msgs = [{"role": "system", "content": "あなたは英語教材の編集者です。正確さを最優先します。"},
             {"role": "user", "content": f"{task}\n\n{RULES}\n\n使用済み（使わない）:\n{', '.join(used)}\n\nJSONの形:\n{schema}"
              + (f"\n\n前回の案は次の理由で不合格でした。直して全体を出し直してください:\n{feedback}" if feedback else "")}]
