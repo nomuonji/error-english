@@ -1,10 +1,10 @@
 name: Publish queued English lessons
 
 # Owner-approved (2026-10-20): fully automatic, no human review step.
-# Put a lesson script (Animation Factory lesson spec) into publish-queue/scripts/NNNN-<id>.json
+# Put a lesson script (pattern beat|word|phrase|upgrade|vs, see beat-shorts/README.md) into publish-queue/scripts/NNNN-<id>.json
 # and push. At each scheduled time this workflow takes the next item, renders it with
-# nomuonji/animation-factory (public, read-only), runs automatic gates, uploads it PUBLIC to
-# the Error English channel and records it. Already-rendered videos in publish-queue/pending/
+# beat-shorts/ (this repo), runs automatic gates, uploads it PUBLIC to
+# the channel (ドパ英語, formerly エラーで学ぶ英語) and records it. Already-rendered videos in publish-queue/pending/
 # go first. Control: publish-queue/config.json (enabled, maxPerDayJst). A failed render or gate
 # moves the script to publish-queue/failed/ with the reason; a failed upload is never retried.
 on:
@@ -15,6 +15,11 @@ on:
     inputs:
       force:
         description: publish one even if disabled or over the daily cap
+        type: choice
+        default: "false"
+        options: ["false", "true"]
+      dry_run:
+        description: render the next script and keep the video as an artifact; no upload, queue untouched
         type: choice
         default: "false"
         options: ["false", "true"]
@@ -32,6 +37,7 @@ jobs:
     timeout-minutes: 60
     env:
       FORCE: ${{ github.event.inputs.force || 'false' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
     steps:
       - uses: actions/checkout@v4
       - name: What to do this run
@@ -47,61 +53,35 @@ jobs:
       # Check YouTube auth BEFORE rendering: with an expired refresh token every run used to
       # render, fail the upload and consume a script. Failing here leaves the queue untouched.
       - name: YouTube auth preflight
-        if: steps.next.outputs.kind != 'none'
+        if: steps.next.outputs.kind != 'none' && env.DRY_RUN != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: npx tsx scripts/youtube-preflight.ts
 
-      - name: Check out Animation Factory (read-only)
-        if: steps.next.outputs.kind == 'script' && steps.next.outputs.engine != 'beat'
-        uses: actions/checkout@v4
-        with:
-          repository: nomuonji/animation-factory
-          path: af
+      # Every lesson pattern renders here with beat-shorts (three.js + beat map + Kokoro voice).
+      # Animation Factory is no longer used (owner decision 2026-11-01).
       - uses: actions/setup-python@v5
-        if: steps.next.outputs.kind == 'script' && steps.next.outputs.engine != 'beat'
+        if: steps.next.outputs.kind == 'script'
         with:
           python-version: "3.12"
-      - name: Media dependencies and voices
-        if: steps.next.outputs.kind == 'script' && steps.next.outputs.engine != 'beat'
-        run: |
-          git -C af rev-parse HEAD > af/.sha
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-noto-cjk
-          pip install --quiet numpy pillow opencv-python-headless kokoro-onnx==0.6.1 soundfile==0.14.0
-          docker run -d --rm --name vv -p 127.0.0.1:50021:50021 voicevox/voicevox_engine:cpu-latest
-          for i in $(seq 1 120); do curl -fsS http://127.0.0.1:50021/version && exit 0; sleep 2; done; docker logs vv; exit 1
-      - name: Render the lesson
-        id: render
-        if: steps.next.outputs.kind == 'script' && steps.next.outputs.engine != 'beat'
-        shell: bash
-        run: |
-          set -euo pipefail
-          file="${{ steps.next.outputs.file }}"
-          id=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['id'])" "publish-queue/scripts/$file")
-          [[ "$id" =~ ^[a-z0-9][a-z0-9-]{2,63}$ ]] || { echo "bad id" > gate-failure.txt; exit 3; }
-          cp "publish-queue/scripts/$file" "af/lessons/$id.json"
-          cd af
-          python tools/shorts/shorts.py lesson "lessons/$id.json"
-          python tools/shorts/shorts.py lock "productions/$id/short.json"
-          python tools/shorts/shorts.py check "productions/$id/short.json"
-          python tools/shorts/shorts.py render "productions/$id/short.json"
-          cd ..
-          python3 scripts/script_to_request.py "$file" af
-          echo "request=${file%.json}.request.json" >> "$GITHUB_OUTPUT"
-      # Beat-synced vocabulary Shorts (pattern "beat"): three.js scene in beat-shorts/,
-      # music + beat map from beat-shorts/tracks/<track>/, rendered frame by frame.
-      - name: Render the beat Short
+      - name: Cache Kokoro voice model
+        if: steps.next.outputs.kind == 'script'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1.0-int8
+      - name: Render the Short
         id: beat
-        if: steps.next.outputs.kind == 'script' && steps.next.outputs.engine == 'beat'
+        if: steps.next.outputs.kind == 'script'
         shell: bash
         run: |
           set -euo pipefail
           file="${{ steps.next.outputs.file }}"
           python3 scripts/beat_to_request.py check "$file"
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install --quiet numpy soundfile==0.14.0 kokoro-onnx==0.6.1
           cd beat-shorts
           npm ci --no-audit --no-fund
           npx playwright install --with-deps chromium
@@ -111,7 +91,7 @@ jobs:
           python3 scripts/beat_to_request.py request "$file" beat-shorts/out/video.mp4
           echo "request=${file%.json}.request.json" >> "$GITHUB_OUTPUT"
       - name: Park a script that failed to render or pass the gates
-        if: failure() && steps.next.outputs.kind == 'script'
+        if: failure() && steps.next.outputs.kind == 'script' && env.DRY_RUN != 'true'
         shell: bash
         run: |
           mkdir -p publish-queue/failed
@@ -124,29 +104,28 @@ jobs:
         with:
           name: lesson-render-${{ github.run_id }}
           path: |
-            af/outputs/shorts/*/review/
-            af/outputs/shorts/*/report.json
-            af/outputs/shorts/*/captions.srt
             beat-shorts/out/*.sheet.jpg
+            beat-shorts/out/*.style.json
+            ${{ env.DRY_RUN == 'true' && 'beat-shorts/out/video.mp4' || '' }}
           if-no-files-found: ignore
           retention-days: 30
 
-      - name: Upload to the Error English channel (public)
-        if: steps.next.outputs.kind != 'none'
+      - name: Upload to the channel (public)
+        if: steps.next.outputs.kind != 'none' && env.DRY_RUN != 'true'
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          ONLY_FILE: ${{ steps.next.outputs.kind == 'video' && steps.next.outputs.file || steps.render.outputs.request || steps.beat.outputs.request }}
+          ONLY_FILE: ${{ steps.next.outputs.kind == 'video' && steps.next.outputs.file || steps.beat.outputs.request }}
           FORCE: "true"   # the guards were applied by queue_next.py
         run: npx tsx scripts/publish-queue.ts
 
       - name: Record the queue state
-        if: always()
+        if: always() && env.DRY_RUN != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          rm -rf af beat-shorts/out beat-shorts/node_modules beat-shorts/.job
+          rm -rf beat-shorts/out beat-shorts/node_modules beat-shorts/.job
           git add -A publish-queue
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
           git commit -m "publish-queue: ${{ steps.next.outputs.kind }} ${{ steps.next.outputs.file }} [skip ci]"
