@@ -1,0 +1,11 @@
+{
+  "note": "Targets already taught on the channel whose scripts are not in publish-queue/ (published before the queue or outside it). content_ledger.py reads this together with the queue.",
+  "entries": [
+    { "source": "0001 I'm running late (publish-queue/published/0001-en-running-late.request.json)", "terms": ["running late"] },
+    { "source": "Apollo 13 pilot (publish-requests/animation-factory/apollo13-weve-had-a-problem)", "terms": ["we've had a problem", "say again"] },
+    { "source": "まとめて覚える #1 long-form (publish-requests/animation-factory/en-review-vol1)", "terms": [
+      "shenanigans", "discombobulated", "persnickety", "humdrum", "gumption",
+      "chutzpah", "bugbear", "comeuppance", "rigmarole", "wheelhouse"
+    ] }
+  ]
+}

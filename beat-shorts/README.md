@@ -73,3 +73,13 @@ pip install kokoro-onnx==0.6.1 soundfile numpy
 node render.js ../publish-queue/scripts/<file>.json /tmp/pv --preview 1,4,9,20 [--style core,neon,NotoJP,error-bgm,54]
 node render.js ../publish-queue/scripts/<file>.json out/video.mp4
 ```
+
+## No repeated words (content ledger)
+
+`scripts/content_ledger.py` collects every taught or queued target: published scripts,
+queued scripts and `publish-queue/ledger-extra.json` (videos made outside the queue, e.g. the
+long-form 10 words). The render gate (`beat_to_request.py check`) stops a script whose word or
+phrase is already there, ignoring case, punctuation and simple inflections (eschew = eschews,
+placate = placated, "I'm on tenterhooks" = "on tenterhooks"). A deliberate review lists the
+words in `"repeatOk": [...]`. `python3 scripts/content_ledger.py list` prints the ledger for
+whoever writes the next scripts.
