@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-01",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ eschew / cajole / quell ほか【音ハメ英単語 #1】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "eschew",
+      "ipa": "/ɪsˈtʃuː/",
+      "pos": "動",
+      "ja": "（意図的に）避ける",
+      "ex": "She *eschews* social media entirely.",
+      "exJa": "彼女はSNSを一切避けている。"
+    },
+    {
+      "w": "cajole",
+      "ipa": "/kəˈdʒoʊl/",
+      "pos": "動",
+      "ja": "おだてて〜させる",
+      "ex": "We *cajoled* him into singing.",
+      "exJa": "私たちは彼をおだてて歌わせた。"
+    },
+    {
+      "w": "quell",
+      "ipa": "/kwel/",
+      "pos": "動",
+      "ja": "鎮める・抑える",
+      "ex": "The CEO tried to *quell* investors' fears.",
+      "exJa": "CEOは投資家の不安を鎮めようとした。"
+    },
+    {
+      "w": "obfuscate",
+      "ipa": "/ˈɑːbfʌskeɪt/",
+      "pos": "動",
+      "ja": "わかりにくくする・ぼかす",
+      "ex": "Don't *obfuscate* the issue.",
+      "exJa": "問題をぼかさないで。"
+    },
+    {
+      "w": "placate",
+      "ipa": "/ˈpleɪkeɪt/",
+      "pos": "動",
+      "ja": "なだめる",
+      "ex": "Nothing could *placate* the angry fans.",
+      "exJa": "怒ったファンをなだめるものは何もなかった。"
+    },
+    {
+      "w": "lambaste",
+      "ipa": "/læmˈbeɪst/",
+      "pos": "動",
+      "ja": "激しく非難する・酷評する",
+      "ex": "Critics *lambasted* the film.",
+      "exJa": "批評家たちはその映画を酷評した。"
+    },
+    {
+      "w": "fastidious",
+      "ipa": "/fæˈstɪdiəs/",
+      "pos": "形",
+      "ja": "細かいことにうるさい",
+      "ex": "He's *fastidious* about hygiene.",
+      "exJa": "彼は衛生面にとても細かい。"
+    },
+    {
+      "w": "reticent",
+      "ipa": "/ˈretɪsənt/",
+      "pos": "形",
+      "ja": "口数が少ない・話したがらない",
+      "ex": "She was *reticent* about her past.",
+      "exJa": "彼女は自分の過去について話したがらなかった。"
+    }
+  ]
+}

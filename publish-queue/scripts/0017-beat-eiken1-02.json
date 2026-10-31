@@ -1,0 +1,74 @@
+{
+  "id": "beat-eiken1-02",
+  "pattern": "beat",
+  "track": "lexicon-drop",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ vacillate / obsequious / assuage ほか【音ハメ英単語 #2】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "vacillate",
+      "ipa": "/ˈvæsəleɪt/",
+      "pos": "動",
+      "ja": "迷う・気持ちがぐらつく",
+      "ex": "He *vacillated* between two job offers.",
+      "exJa": "彼は2つの内定の間で迷い続けた。"
+    },
+    {
+      "w": "obsequious",
+      "ipa": "/əbˈsiːkwiəs/",
+      "pos": "形",
+      "ja": "こびへつらう",
+      "ex": "The waiter was almost *obsequious*.",
+      "exJa": "そのウェイターはへつらうほど低姿勢だった。"
+    },
+    {
+      "w": "assuage",
+      "ipa": "/əˈsweɪdʒ/",
+      "pos": "動",
+      "ja": "（不安・罪悪感を）和らげる",
+      "ex": "Nothing could *assuage* her guilt.",
+      "exJa": "何をしても彼女の罪悪感は和らがなかった。"
+    },
+    {
+      "w": "equivocate",
+      "ipa": "/ɪˈkwɪvəkeɪt/",
+      "pos": "動",
+      "ja": "言葉を濁す",
+      "ex": "Stop *equivocating* and answer me.",
+      "exJa": "はぐらかさずに答えて。"
+    },
+    {
+      "w": "inveterate",
+      "ipa": "/ɪnˈvetərət/",
+      "pos": "形",
+      "ja": "根っからの・常習的な",
+      "ex": "He's an *inveterate* gambler.",
+      "exJa": "彼は根っからのギャンブラーだ。"
+    },
+    {
+      "w": "perfunctory",
+      "ipa": "/pərˈfʌŋktəri/",
+      "pos": "形",
+      "ja": "おざなりな",
+      "ex": "She gave a *perfunctory* nod.",
+      "exJa": "彼女はおざなりにうなずいた。"
+    },
+    {
+      "w": "truculent",
+      "ipa": "/ˈtrʌkjələnt/",
+      "pos": "形",
+      "ja": "けんか腰の",
+      "ex": "He gets *truculent* when he's tired.",
+      "exJa": "彼は疲れるとけんか腰になる。"
+    },
+    {
+      "w": "recalcitrant",
+      "ipa": "/rɪˈkælsɪtrənt/",
+      "pos": "形",
+      "ja": "言うことを聞かない",
+      "ex": "The *recalcitrant* printer jammed again.",
+      "exJa": "言うことを聞かないプリンターがまた詰まった。"
+    }
+  ]
+}
