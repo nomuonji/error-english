@@ -42,24 +42,25 @@ def chat(messages, model=MODEL, effort="low", max_tokens=8192):
     key = os.environ.get("OPENCODE_GO_API_KEY", "").strip()
     if not key:
         raise SystemExit("OPENCODE_GO_API_KEY is not set")
-    body = json.dumps({"model": model, "messages": messages, "reasoning_effort": effort,
-                       "temperature": 0.9, "max_tokens": max_tokens}).encode()
-    req = urllib.request.Request(BASE, data=body, headers={
-        "Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json",
-        "User-Agent": "error-english-replenish/1.0", "x-opencode-session": SESSION})
-    for attempt in range(3):
+    for attempt in range(4):
+        body = json.dumps({"model": model, "messages": messages, "reasoning_effort": effort,
+                           "temperature": 0.9, "max_tokens": max_tokens}).encode()
+        req = urllib.request.Request(BASE, data=body, headers={
+            "Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json",
+            "User-Agent": "error-english-replenish/1.0", "x-opencode-session": SESSION})
         try:
-            with urllib.request.urlopen(req, timeout=240) as r:
+            with urllib.request.urlopen(req, timeout=300) as r:
                 data = json.loads(r.read())
             text = (data["choices"][0]["message"].get("content") or "").strip()
             if text:
                 return text
-            raise RuntimeError("empty content")
-        except (urllib.error.URLError, RuntimeError, KeyError, TimeoutError) as e:
-            if attempt == 2:
-                raise
+            # reasoning used the whole budget: give it more room
+            max_tokens = min(max_tokens * 2, 32768)
+            print(f"  empty content; retrying with max_tokens={max_tokens}", flush=True)
+        except (urllib.error.URLError, KeyError, TimeoutError) as e:
             print(f"  retry after {e}", flush=True)
             time.sleep(4 * (attempt + 1))
+    raise RuntimeError("OpenCode Go returned no content")
 
 
 def parse_json(text):
@@ -124,7 +125,7 @@ def verify(kind, body):
             {"role": "user", "content": "次の英語教材JSONを校閲してください。各項目の意味・品詞・発音記号・例文の自然さ・和訳・*語* の囲み・クイズの答えが正しいか確認し、"
              "誤りがあれば直したJSON全体を返してください。形式: {\"ok\": true/false, \"problems\": [\"...\"], \"fixed\": <直したJSON全体。直す必要がなければ null>}\n\n"
              + json.dumps(body, ensure_ascii=False)}]
-    return parse_json(chat(msgs, model=VERIFY_MODEL, effort="high"))
+    return parse_json(chat(msgs, model=VERIFY_MODEL, effort="high", max_tokens=16384))
 
 
 def queued():
@@ -172,8 +173,9 @@ def make(kind, day):
             if v.get("fixed"):
                 body = v["fixed"]
             spec = build(kind, body, day)
-        except (json.JSONDecodeError, KeyError, TypeError, ValueError) as e:
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError, RuntimeError) as e:
             feedback = f"JSONが読めない/欠けている: {e}"
+            print("  failed:", e, flush=True)
             continue
         problems = gate.check_spec(spec) + content_ledger.repeats(spec, None)
         if not problems:
