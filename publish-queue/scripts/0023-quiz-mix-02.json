@@ -1,0 +1,255 @@
+{
+  "id": "quiz-mix-02",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ flummoxed・disinterested / uninterested・curmudgeon",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "id": "en-word-flummoxed",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "flummoxed の意味わかる？｜confused より「お手上げ」",
+      "word": "flummoxed",
+      "pos": "形容詞",
+      "ja": "すっかり困惑した・お手上げの",
+      "meaning": [
+        {
+          "cap": "どうしていいか分からず、頭が真っ白",
+          "say": "どうしていいか分からず、頭が真っ白な状態です。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "confused より強い",
+          "say": "コンフューズドより強く、"
+        },
+        {
+          "cap": "ちょっとユーモラスな響き",
+          "say": "少しユーモラスな響きがあります。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "難しい質問をされて",
+          "scene": "classroom",
+          "en": [
+            "I was completely flummoxed by the question."
+          ],
+          "ja": [
+            "その質問にすっかり困ってしまった"
+          ]
+        },
+        {
+          "intro": "新しい機械に",
+          "scene": "smartphone",
+          "en": [
+            "The new TV remote has me flummoxed."
+          ],
+          "ja": [
+            "新しいテレビのリモコン、お手上げだ"
+          ]
+        },
+        {
+          "intro": "周りの様子にも",
+          "scene": "office-desk",
+          "en": [
+            "Even the teacher looked flummoxed."
+          ],
+          "ja": [
+            "先生でさえ困った顔をしていた"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "notebook-writing",
+        "prompt": [
+          {
+            "cap": "The instructions left me ___.",
+            "say": "説明書を読んでも、さっぱり分からなかった。"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "The instructions left me flummoxed.",
+        "answerJa": "説明書を読んでも、お手上げだった"
+      },
+      "scenes": {
+        "hook": "thinking",
+        "meaning": "frustrated"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/flummoxed"
+      ]
+    },
+    {
+      "id": "en-vs-disinterested-uninterested",
+      "pattern": "vs",
+      "level": "英検1級超",
+      "title": "disinterested と uninterested の違い｜「興味がない」はどっち？",
+      "a": {
+        "word": "disinterested",
+        "ja": "利害関係のない・公平な",
+        "scene": "classroom",
+        "example": "We need a disinterested judge.",
+        "exampleJa": "公平な審判が必要だ"
+      },
+      "b": {
+        "word": "uninterested",
+        "ja": "興味がない",
+        "scene": "living-room",
+        "example": "He seemed uninterested in the movie.",
+        "exampleJa": "彼は映画に興味がなさそうだった"
+      },
+      "hookLines": [
+        {
+          "cap": "「興味がない」はどっち？",
+          "say": "興味がない、と言いたい時、どっちを使いますか？"
+        }
+      ],
+      "rule": [
+        {
+          "cap": "disinterested ＝ 利害がない → 公平",
+          "say": "ディスインタレステッドは、利害関係がない、つまり公平。"
+        },
+        {
+          "cap": "uninterested ＝ 興味がない",
+          "say": "アンインタレステッドが、興味がない、です。"
+        },
+        {
+          "cap": "ネイティブでも混同する",
+          "say": "ネイティブでも混同しますが、"
+        },
+        {
+          "cap": "きちんとした文章では区別する",
+          "say": "きちんとした文章では区別します。"
+        }
+      ],
+      "ruleEmphasis": [
+        "公平",
+        "興味がない"
+      ],
+      "quiz": {
+        "scene": "office-desk",
+        "prompt": [
+          {
+            "cap": "We want a ___ third party.",
+            "say": "公平な第三者の意見が欲しい。"
+          },
+          {
+            "cap": "dis？ un？",
+            "say": "空欄はどっち？"
+          }
+        ],
+        "answer": "We want a disinterested third party.",
+        "answerJa": "公平な第三者に入ってほしい",
+        "why": [
+          {
+            "cap": "公平 → disinterested",
+            "say": "公平という意味なので、ディスインタレステッドです。"
+          }
+        ]
+      },
+      "recap": [
+        {
+          "cap": "disinterested ＝ 公平",
+          "say": "ディスインタレステッドは、公平。"
+        },
+        {
+          "cap": "uninterested ＝ 興味がない",
+          "say": "アンインタレステッドは、興味がない。"
+        }
+      ],
+      "scenes": {
+        "hook": "classroom",
+        "meaning": "library"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/disinterested",
+        "https://dictionary.cambridge.org/dictionary/english/uninterested"
+      ],
+      "overlayY": 0.4
+    },
+    {
+      "id": "en-word-curmudgeon",
+      "pattern": "word",
+      "level": "英検1級超",
+      "title": "curmudgeon の意味わかる？｜何にでも文句を言う人",
+      "word": "curmudgeon",
+      "pos": "名詞",
+      "ja": "気難しい頑固者",
+      "meaning": [
+        {
+          "cap": "いつも不機嫌で、何にでも文句",
+          "say": "いつも不機嫌で、何にでも文句を言う人のことです。"
+        }
+      ],
+      "memo": [
+        {
+          "cap": "年配の人に使うことが多い",
+          "say": "年配の人に使うことが多く、"
+        },
+        {
+          "cap": "愛嬌をこめて言うことも",
+          "say": "少し愛嬌をこめて言うこともあります。"
+        }
+      ],
+      "examples": [
+        {
+          "intro": "家族のことを話すなら",
+          "scene": "elderly",
+          "en": [
+            "My grandfather is a lovable old curmudgeon."
+          ],
+          "ja": [
+            "祖父は憎めない頑固じいさんだ"
+          ]
+        },
+        {
+          "intro": "相手をたしなめるなら",
+          "scene": "cafe",
+          "en": [
+            "Don't be such a curmudgeon."
+          ],
+          "ja": [
+            "そんなに不機嫌にならないで"
+          ]
+        },
+        {
+          "intro": "こだわりの強い人に",
+          "scene": "library",
+          "en": [
+            "He's a curmudgeon about modern music."
+          ],
+          "ja": [
+            "彼は最近の音楽にいちいち文句を言う"
+          ]
+        }
+      ],
+      "quiz": {
+        "scene": "street-waiting",
+        "prompt": [
+          {
+            "cap": "He complains about everything. He's a real ___.",
+            "say": "何にでも文句を言う人。一語で言うと？"
+          },
+          {
+            "cap": "空欄に入る単語は？",
+            "say": "空欄に入る単語は？"
+          }
+        ],
+        "answer": "He's a real curmudgeon.",
+        "answerJa": "あの人は本当に気難しい"
+      },
+      "scenes": {
+        "hook": "elderly",
+        "meaning": "frustrated"
+      },
+      "sources": [
+        "https://dictionary.cambridge.org/dictionary/english/curmudgeon"
+      ]
+    }
+  ]
+}

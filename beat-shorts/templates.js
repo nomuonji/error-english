@@ -39,7 +39,6 @@ class Sched {
 function countdown(s, at, label) {
   // three beats: 3, 2, 1 — the viewer answers in their head
   ["3", "2", "1"].forEach((n, k) => s.add("count", n, at + k, at + k + 1, "slam"));
-  s.face(at, at + 3, "cry");
   if (label) s.add("cue", esc(label), at, at + 3, "fade");
 }
 
@@ -66,15 +65,13 @@ function quiz(s, q, at, terms) {
   s.add("line1", hl(q.answer, terms), at + 8, at + 12, "slam");
   s.say(at + 8, q.answer, 0.95);
   s.add("line2", esc(q.answerJa || ""), at + 9, at + 12, "up");
-  s.face(at + 8, at + 12, "smile");
 }
 
 function outro(s, at, level) {
   s.color(at, 0);
   s.add("big", "保存して<br>復習しよう", at, at + 8, "slam");
   s.add("sub", `${esc(level || "英検1級")}の単語を毎日、音ハメで`, at + 2, at + 8, "up");
-  s.face(at, at + 8, "talk");
-  s.se(at + 1, "follow_me");
+  s.face(at + 1, at + 8, "smile");
 }
 
 // --------------------------------------------------------------- one word
@@ -85,13 +82,11 @@ function word(spec) {
   s.add("hero", esc(w), 0, 32, "slam");
   s.say(1, w, 1.0);
   s.add("cue", "この単語、意味わかる？", 1, 4, "fade");
-  s.face(0, 4, "talk");
   countdown(s, 4);
   s.flash(8).se(8, "pop");
   s.add("mean", `<span class="pos">${esc((spec.pos || "").slice(0, 1))}</span>${esc(spec.ja)}`, 8, 32, "slam");
   s.add("line1", esc(cap(spec.meaning?.[0])), 10, 16, "up");
   s.say(12, w, 0.8);
-  s.face(8, 12, "smile");
   examples(s, spec.examples, 16, terms);
   quiz(s, spec.quiz, 32, terms);
   s.color(44, 0);
@@ -109,7 +104,6 @@ function phrase(spec) {
   s.color(0, 0);
   s.add("big", `「${esc(spec.jp)}」`, 0, 8, "slam");
   s.add("cue", "英語で言える？", 1, 4, "fade");
-  s.face(0, 4, "talk");
   countdown(s, 4);
   s.flash(8).se(8, "pop");
   s.add("tag", "答え", 8, 16, "fade");
@@ -136,7 +130,6 @@ function upgrade(spec) {
   s.add("hero", esc(spec.basic), 0, 8, "slam");
   s.say(1, spec.basic, 1.0, "am_michael");
   s.add("cue", "もっと強く言うと？", 1, 4, "fade");
-  s.face(0, 4, "talk");
   countdown(s, 4);
   s.flash(8).se(8, "pop");
   s.add("ipa", `<s>${esc(spec.basic)}</s> →`, 8, 32, "up");
@@ -164,13 +157,11 @@ function vs(spec) {
   s.add("vs", "VS", 1, 44, "pop");
   s.add("heroB", esc(B.word), 1, 44, "slam");
   s.add("cue", esc(cap(spec.hookLines?.[0]) || "どっちを使う？"), 2, 4, "fade");
-  s.face(0, 4, "talk");
   countdown(s, 4);
   s.flash(8).se(8, "pop");
   s.add("tag", "見分け方", 8, 16, "fade");
   s.add("line1", esc(cap(spec.rule?.[0])), 8, 16, "up");
   s.add("line2", esc(cap(spec.rule?.[1])), 10, 16, "up");
-  s.face(8, 12, "smile");
   [[A, 16, "af_heart"], [B, 24, "am_michael"]].forEach(([x, t, v], i) => {
     s.color(t, i + 1);
     s.add("tag", esc(`${x.word} ＝ ${x.ja}`), t, t + 8, "fade");
@@ -202,7 +193,6 @@ function vocab8(spec) {
   s.add("sub", `<span class='en'>${N} WORDS</span>`, 2, 4, "up");
   s.add("big", "何個<br>わかる？", 4, 8, "slam");
   s.add("sub", "意味が出る前に答えて", 6, 8, "up");
-  s.face(0, 8, "talk");
   W.forEach((w, j) => {
     const t = 8 + j * 8;
     s.color(t, j);
@@ -227,7 +217,6 @@ function vocab8(spec) {
   const o = r + N;
   s.add("big", "全部<br>わかった？", o, o + 8, "slam");
   s.add("sub", "何個わかったかコメントで", o + 2, o + 8, "up");
-  s.face(o, o + 8, "talk");
   outro(s, o + 8, spec.level);
   s.progress = [8, r];
   return s;

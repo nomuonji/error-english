@@ -1,16 +1,189 @@
 {
-  "note": "Every video gets one value per dimension. render.js picks the least recently used combination (from publish-queue/published/*.request.json `style`), so a look comes back only after the others have been used.",
-  "scenes": ["core", "grid", "galaxy", "city"],
+  "note": "Two skins that must not look alike. neon (pattern beat): three.js, dark. card (pattern quiz): flat 2D, light. Every video gets one value per dimension of its skin; render.js picks the least recently used combination (from publish-queue/*/*.request.json `style`).",
+  "scenes": [
+    "core",
+    "grid",
+    "galaxy",
+    "city"
+  ],
   "palettes": {
-    "neon":     { "bg": "#05060d", "colors": ["#00e5ff", "#ff2bd6", "#ffd400", "#7cff4f", "#ff6a00", "#a66bff", "#00ffa8", "#ff3b5c"] },
-    "sunset":   { "bg": "#0d0610", "colors": ["#ff7a59", "#ffcf5c", "#ff4f8b", "#c86bff", "#ff9e3d", "#ffd6a5", "#ff5f6d", "#ffc371"] },
-    "ice":      { "bg": "#040a12", "colors": ["#7df9ff", "#9ab8ff", "#e0f7ff", "#5ce1e6", "#b5a8ff", "#6ef3d6", "#a0e9ff", "#c2d8ff"] },
-    "acid":     { "bg": "#060a04", "colors": ["#c6ff00", "#00ff95", "#f6ff4a", "#00e1ff", "#9dff3a", "#ffe600", "#38ffd0", "#d4ff6b"] },
-    "candy":    { "bg": "#0c0610", "colors": ["#ff8ad8", "#8ae1ff", "#fff38a", "#b28aff", "#8affc1", "#ffb38a", "#ff8a8a", "#8aa9ff"] },
-    "ember":    { "bg": "#0e0604", "colors": ["#ff5a1f", "#ffb800", "#ff2e2e", "#ff8f3f", "#ffd25a", "#ff6b6b", "#ffa94d", "#ff4d00"] },
-    "ocean":    { "bg": "#030912", "colors": ["#00b4ff", "#00ffd5", "#4d7cff", "#36e0ff", "#7a5cff", "#00e0a4", "#5fb8ff", "#3dffb4"] },
-    "royal":    { "bg": "#07050f", "colors": ["#b388ff", "#ffd740", "#ff80ab", "#80d8ff", "#ea80fc", "#ffab40", "#84ffff", "#ff8a80"] }
+    "neon": {
+      "bg": "#05060d",
+      "colors": [
+        "#00e5ff",
+        "#ff2bd6",
+        "#ffd400",
+        "#7cff4f",
+        "#ff6a00",
+        "#a66bff",
+        "#00ffa8",
+        "#ff3b5c"
+      ]
+    },
+    "sunset": {
+      "bg": "#0d0610",
+      "colors": [
+        "#ff7a59",
+        "#ffcf5c",
+        "#ff4f8b",
+        "#c86bff",
+        "#ff9e3d",
+        "#ffd6a5",
+        "#ff5f6d",
+        "#ffc371"
+      ]
+    },
+    "ice": {
+      "bg": "#040a12",
+      "colors": [
+        "#7df9ff",
+        "#9ab8ff",
+        "#e0f7ff",
+        "#5ce1e6",
+        "#b5a8ff",
+        "#6ef3d6",
+        "#a0e9ff",
+        "#c2d8ff"
+      ]
+    },
+    "acid": {
+      "bg": "#060a04",
+      "colors": [
+        "#c6ff00",
+        "#00ff95",
+        "#f6ff4a",
+        "#00e1ff",
+        "#9dff3a",
+        "#ffe600",
+        "#38ffd0",
+        "#d4ff6b"
+      ]
+    },
+    "candy": {
+      "bg": "#0c0610",
+      "colors": [
+        "#ff8ad8",
+        "#8ae1ff",
+        "#fff38a",
+        "#b28aff",
+        "#8affc1",
+        "#ffb38a",
+        "#ff8a8a",
+        "#8aa9ff"
+      ]
+    },
+    "ember": {
+      "bg": "#0e0604",
+      "colors": [
+        "#ff5a1f",
+        "#ffb800",
+        "#ff2e2e",
+        "#ff8f3f",
+        "#ffd25a",
+        "#ff6b6b",
+        "#ffa94d",
+        "#ff4d00"
+      ]
+    },
+    "ocean": {
+      "bg": "#030912",
+      "colors": [
+        "#00b4ff",
+        "#00ffd5",
+        "#4d7cff",
+        "#36e0ff",
+        "#7a5cff",
+        "#00e0a4",
+        "#5fb8ff",
+        "#3dffb4"
+      ]
+    },
+    "royal": {
+      "bg": "#07050f",
+      "colors": [
+        "#b388ff",
+        "#ffd740",
+        "#ff80ab",
+        "#80d8ff",
+        "#ea80fc",
+        "#ffab40",
+        "#84ffff",
+        "#ff8a80"
+      ]
+    }
   },
-  "jpFonts": ["NotoJP", "Dela Gothic One"],
-  "tracks": ["lexicon-drop", "error-bgm"]
+  "jpFonts": [
+    "NotoJP",
+    "Dela Gothic One"
+  ],
+  "tracks": [
+    "lexicon-drop",
+    "error-bgm"
+  ],
+  "trackPools": {
+    "neon": [
+      "lexicon-drop",
+      "error-bgm"
+    ],
+    "card": [
+      "error-bgm"
+    ]
+  },
+  "motifs": [
+    "circles",
+    "blocks",
+    "rings",
+    "stripes",
+    "dots"
+  ],
+  "cardPalettes": {
+    "peach": {
+      "bg1": "#fff1e6",
+      "bg2": "#ffd6c2",
+      "ink": "#2b2d42",
+      "a1": "#ff6b6b",
+      "a2": "#ffa94d",
+      "a3": "#ffe066"
+    },
+    "mint": {
+      "bg1": "#e9fbf3",
+      "bg2": "#c7f0e0",
+      "ink": "#1f3b4d",
+      "a1": "#12b886",
+      "a2": "#4dabf7",
+      "a3": "#b2f2bb"
+    },
+    "sky": {
+      "bg1": "#eaf4ff",
+      "bg2": "#cfe3ff",
+      "ink": "#1c2541",
+      "a1": "#3b82f6",
+      "a2": "#f59f00",
+      "a3": "#a5d8ff"
+    },
+    "lemon": {
+      "bg1": "#fffbe6",
+      "bg2": "#fff0a8",
+      "ink": "#2f2a1d",
+      "a1": "#f08c00",
+      "a2": "#e64980",
+      "a3": "#ffe066"
+    },
+    "lilac": {
+      "bg1": "#f5efff",
+      "bg2": "#e0d4ff",
+      "ink": "#2d1e4a",
+      "a1": "#845ef7",
+      "a2": "#f06595",
+      "a3": "#d0bfff"
+    },
+    "coral": {
+      "bg1": "#fff0f3",
+      "bg2": "#ffd1dc",
+      "ink": "#3d1f2b",
+      "a1": "#e8590c",
+      "a2": "#1c7ed6",
+      "a3": "#ffc9c9"
+    }
+  }
 }
