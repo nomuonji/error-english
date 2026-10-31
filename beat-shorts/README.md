@@ -47,6 +47,6 @@ Replace it with a track made on a paid plan before the channel is monetized.
 
 ```bash
 cd beat-shorts && npm ci && npx playwright install chromium
-node render.js ../publish-queue/scripts/0015-beat-eiken1-01.json /tmp/pv --preview 4.6,7.5,35
-node render.js ../publish-queue/scripts/0015-beat-eiken1-01.json out/video.mp4
+node render.js ../publish-queue/scripts/0016-beat-eiken1-01.json /tmp/pv --preview 4.6,7.5,35
+node render.js ../publish-queue/scripts/0016-beat-eiken1-01.json out/video.mp4
 ```
