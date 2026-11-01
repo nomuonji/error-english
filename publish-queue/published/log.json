@@ -48,5 +48,13 @@
     "youtubeVideoId": "bi-mRc6O11Q",
     "publishedAt": "2026-11-01T09:59:45.870Z",
     "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  },
+  {
+    "file": "0021-quiz-mix-01.request.json",
+    "assetName": "quiz-mix-01.mp4",
+    "sha256": "57156ca6e7895170f1e3cdd766495de7fcb201311751a3645f2c43b95851b0e7",
+    "youtubeVideoId": "4MWulYNcUsw",
+    "publishedAt": "2026-11-01T16:59:30.161Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]

@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "061bf138ca901109f7c3ae8000570bcfde0209d1",
+  "assetName": "quiz-mix-01.mp4",
+  "sha256": "57156ca6e7895170f1e3cdd766495de7fcb201311751a3645f2c43b95851b0e7",
+  "title": "英語クイズ3問、何問わかる？ petrichor・flabbergasted・on tenterhooks【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・petrichor（名詞）＝ 雨が降り始めた時の土の匂い\n・I love the smell of petrichor. ＝ 雨の降り始めの匂いが好きだ\n・After the storm, the air was full of petrichor. ＝ 嵐の後、雨の匂いが立ちこめていた\n・That smell after rain is called petrichor. ＝ 雨のあの匂いを petrichor と言う\nQ2\n・very surprised → flabbergasted ＝ 仰天した・あっけにとられた\n・I was flabbergasted by the news. ＝ そのニュースに仰天した\n・Everyone was flabbergasted when she quit. ＝ 彼女が辞めた時、みんな唖然とした\n・I was flabbergasted by the price. ＝ その値段に仰天した\nQ3\n・I'm on tenterhooks. ＝ ハラハラしながら待ってる\n・We were on tenterhooks all night. ＝ 一晩中ハラハラしていた\n・Don't keep me on tenterhooks! ＝ じらさないで教えて！\n・I'm on tenterhooks waiting for the results. ＝ 結果をハラハラしながら待っている\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/petrichor\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flabbergasted\n意味の確認: https://dictionary.cambridge.org/dictionary/english/be-on-tenterhooks\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "petrichor",
+    "flabbergasted",
+    "very surprised",
+    "I'm on tenterhooks."
+  ],
+  "script": "0021-quiz-mix-01.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "palette": "coral",
+    "motif": "dots"
+  }
+}
