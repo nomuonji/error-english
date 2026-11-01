@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "645ec3c69c65fd41d774ad2227a895efe7e617e4",
+  "assetName": "beat-eiken1-01.mp4",
+  "sha256": "350bf0a0209801c437ce2da0a09c871df98b751e7c07235ae34cd88487612360",
+  "title": "英検1級の単語、何個わかる？ eschew / cajole / quell ほか【音ハメ英単語 #1】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・eschew /ɪsˈtʃuː/（動）＝ （意図的に）避ける\n  She eschews social media entirely.（彼女はSNSを一切避けている。）\n・cajole /kəˈdʒoʊl/（動）＝ おだてて〜させる\n  We cajoled him into singing.（私たちは彼をおだてて歌わせた。）\n・quell /kwel/（動）＝ 鎮める・抑える\n  The CEO tried to quell investors' fears.（CEOは投資家の不安を鎮めようとした。）\n・obfuscate /ˈɑːbfʌskeɪt/（動）＝ わかりにくくする・ぼかす\n  Don't obfuscate the issue.（問題をぼかさないで。）\n・placate /ˈpleɪkeɪt/（動）＝ なだめる\n  Nothing could placate the angry fans.（怒ったファンをなだめるものは何もなかった。）\n・lambaste /læmˈbeɪst/（動）＝ 激しく非難する・酷評する\n  Critics lambasted the film.（批評家たちはその映画を酷評した。）\n・fastidious /fæˈstɪdiəs/（形）＝ 細かいことにうるさい\n  He's fastidious about hygiene.（彼は衛生面にとても細かい。）\n・reticent /ˈretɪsənt/（形）＝ 口数が少ない・話したがらない\n  She was reticent about her past.（彼女は自分の過去について話したがらなかった。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "eschew",
+    "cajole",
+    "quell",
+    "obfuscate",
+    "placate",
+    "lambaste",
+    "fastidious",
+    "reticent"
+  ],
+  "script": "0020-beat-eiken1-01.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "scene": "grid",
+    "palette": "sunset",
+    "jpFont": "Dela Gothic One"
+  }
+}
