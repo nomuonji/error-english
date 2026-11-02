@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "5d1608dbed9510b9426399b94be6e8e94f03d5b3",
+  "assetName": "beat-eiken1-02.mp4",
+  "sha256": "ff2e33b3d722491c002242233a469e5c277619ed6f5285829d925bf3b685f5fa",
+  "title": "英検1級の単語、何個わかる？ vacillate / obsequious / assuage ほか【音ハメ英単語 #2】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・vacillate /ˈvæsəleɪt/（動）＝ 迷う・気持ちがぐらつく\n  He vacillated between two job offers.（彼は2つの内定の間で迷い続けた。）\n・obsequious /əbˈsiːkwiəs/（形）＝ こびへつらう\n  The waiter was almost obsequious.（そのウェイターはへつらうほど低姿勢だった。）\n・assuage /əˈsweɪdʒ/（動）＝ （不安・罪悪感を）和らげる\n  Nothing could assuage her guilt.（何をしても彼女の罪悪感は和らがなかった。）\n・equivocate /ɪˈkwɪvəkeɪt/（動）＝ 言葉を濁す\n  Stop equivocating and answer me.（はぐらかさずに答えて。）\n・inveterate /ɪnˈvetərət/（形）＝ 根っからの・常習的な\n  He's an inveterate gambler.（彼は根っからのギャンブラーだ。）\n・perfunctory /pərˈfʌŋktəri/（形）＝ おざなりな\n  She gave a perfunctory nod.（彼女はおざなりにうなずいた。）\n・truculent /ˈtrʌkjələnt/（形）＝ けんか腰の\n  He gets truculent when he's tired.（彼は疲れるとけんか腰になる。）\n・recalcitrant /rɪˈkælsɪtrənt/（形）＝ 言うことを聞かない\n  The recalcitrant printer jammed again.（言うことを聞かないプリンターがまた詰まった。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "vacillate",
+    "obsequious",
+    "assuage",
+    "equivocate",
+    "inveterate",
+    "perfunctory",
+    "truculent",
+    "recalcitrant"
+  ],
+  "script": "0022-beat-eiken1-02.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "city",
+    "palette": "royal",
+    "jpFont": "NotoJP"
+  }
+}
