@@ -80,5 +80,13 @@
     "youtubeVideoId": "d9TJ1zP9H_g",
     "publishedAt": "2026-11-03T10:22:35.081Z",
     "instagramError": "POST https://graph.facebook.com/v21.0/17841477867553010/media_publish -> 400: Media ID is not available"
+  },
+  {
+    "file": "0025-quiz-mix-03.request.json",
+    "assetName": "quiz-mix-03.mp4",
+    "sha256": "a9466e3b8370b0d2ab28da5f0bedf2fcc5dae3b5dd3a3cbe830ef5b0aa3ee48a",
+    "youtubeVideoId": "EnhK6a3QJM4",
+    "publishedAt": "2026-11-03T18:11:15.183Z",
+    "instagramMediaId": "18101351978399392"
   }
 ]

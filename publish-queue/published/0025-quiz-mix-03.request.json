@@ -1,0 +1,29 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "7bc8489e7fb48e07ec2d8b52724e3eb9022b68c2",
+  "assetName": "quiz-mix-03.mp4",
+  "sha256": "a9466e3b8370b0d2ab28da5f0bedf2fcc5dae3b5dd3a3cbe830ef5b0aa3ee48a",
+  "title": "英語クイズ3問、何問わかる？ boondoggle・pithy・lackadaisical【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・boondoggle（名詞）＝ お金と時間ばかりかかるムダな事業\n・The new stadium turned out to be a boondoggle. ＝ 新スタジアムは結局ムダな事業だった\n・This project is a total boondoggle. ＝ この計画は完全にムダだ\n・What a boondoggle! ＝ なんてムダな事業だ\nQ2\n・pithy（形容詞）＝ 短くて要点をついた\n・She gave a pithy answer. ＝ 彼女は短く的確に答えた\n・I love his pithy comments. ＝ 彼の短くて鋭いコメントが好きだ\n・It's a pithy quote. ＝ 短くて要点をついた名言だ\n・Keep your speech short and pithy. ＝ スピーチは短く、要点をついて\nQ3\n・lackadaisical（形容詞）＝ 気の抜けた・いい加減な\n・His lackadaisical attitude annoyed the coach. ＝ 彼のやる気のない態度に、コーチはいら立った\n・The service was a bit lackadaisical. ＝ サービスがちょっといい加減だった\n・Don't be so lackadaisical about your homework. ＝ 宿題にそんなにいい加減にならないで\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/boondoggle\n意味の確認: https://dictionary.cambridge.org/dictionary/english/pithy\n意味の確認: https://dictionary.cambridge.org/dictionary/english/lackadaisical\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "boondoggle",
+    "pithy",
+    "lackadaisical"
+  ],
+  "script": "0025-quiz-mix-03.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "palette": "lemon",
+    "motif": "rings"
+  }
+}
