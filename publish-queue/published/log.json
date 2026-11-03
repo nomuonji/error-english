@@ -72,5 +72,13 @@
     "youtubeVideoId": "G7CilQsLiwI",
     "publishedAt": "2026-11-02T20:36:28.778Z",
     "instagramMediaId": "17887280745689774"
+  },
+  {
+    "file": "0024-beat-eiken1-03.request.json",
+    "assetName": "beat-eiken1-03.mp4",
+    "sha256": "237441a8b98b64e03d7a8539953179e8ec897a3b72b3cfb90784a9678c253cb8",
+    "youtubeVideoId": "d9TJ1zP9H_g",
+    "publishedAt": "2026-11-03T10:22:35.081Z",
+    "instagramError": "POST https://graph.facebook.com/v21.0/17841477867553010/media_publish -> 400: Media ID is not available"
   }
 ]

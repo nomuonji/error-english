@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "35b5d1dbe3edc8584feee05e0d67cd4c46ea655e",
+  "assetName": "beat-eiken1-03.mp4",
+  "sha256": "237441a8b98b64e03d7a8539953179e8ec897a3b72b3cfb90784a9678c253cb8",
+  "title": "英検1級の単語、何個わかる？ sanguine / capricious / ameliorate ほか【音ハメ英単語 #3】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・sanguine /ˈsæŋɡwɪn/（形）＝ 楽観的な\n  She's sanguine about the results.（彼女は結果について楽観的だ。）\n・capricious /kəˈprɪʃəs/（形）＝ 気まぐれな\n  The weather here is capricious.（ここの天気は気まぐれだ。）\n・ameliorate /əˈmiːliəreɪt/（動）＝ （状況を）改善する\n  The plan aims to ameliorate poverty.（その計画は貧困の改善を目指している。）\n・desultory /ˈdesəltɔːri/（形）＝ とりとめのない\n  We had a desultory chat about work.（仕事についてとりとめのない話をした。）\n・ingratiate /ɪnˈɡreɪʃieɪt/（動）＝ （人に）取り入る\n  He tried to ingratiate himself with the boss.（彼は上司に取り入ろうとした。）\n・surreptitious /ˌsɜːrəpˈtɪʃəs/（形）＝ こっそりした\n  She took a surreptitious look at her phone.（彼女はこっそりスマホを見た。）\n・intransigent /ɪnˈtrænsɪdʒənt/（形）＝ 頑として譲らない\n  Both sides remain intransigent.（両者とも頑として譲らない。）\n・effusive /ɪˈfjuːsɪv/（形）＝ 感情たっぷりの・大げさな\n  He was effusive in his praise.（彼は惜しみなく褒めちぎった。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "sanguine",
+    "capricious",
+    "ameliorate",
+    "desultory",
+    "ingratiate",
+    "surreptitious",
+    "intransigent",
+    "effusive"
+  ],
+  "script": "0024-beat-eiken1-03.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "scene": "galaxy",
+    "palette": "ocean",
+    "jpFont": "Dela Gothic One"
+  }
+}
