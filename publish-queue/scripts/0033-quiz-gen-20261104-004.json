@@ -1,0 +1,96 @@
+{
+  "id": "quiz-gen-20261104-004",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ gloat・Take it with a grain of salt・ravenous",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-gloat",
+      "word": "gloat",
+      "pos": "動詞",
+      "ja": "ほくそ笑む",
+      "examples": [
+        {
+          "en": [
+            "Don't gloat over your rival's mistake."
+          ],
+          "ja": [
+            "相手の失敗にほくそ笑むな"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "Don't ___ over your rival's mistake.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "gloat",
+        "answerJa": "ほくそ笑む"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-take-it-with-a-grain-of-salt",
+      "jp": "話半分に聞く",
+      "answer": {
+        "en": "Take it with a grain of salt.",
+        "ja": "話半分に聞いておいて"
+      },
+      "emphasis": [
+        "Take it with a grain of salt"
+      ],
+      "examples": [
+        {
+          "en": [
+            "Take his advice with a grain of salt."
+          ],
+          "ja": [
+            "彼の助言は話半分に聞いて"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "彼の話は、話半分に聞いておいて",
+          "英語で言ってみて"
+        ],
+        "answer": "Take what he says with a grain of salt.",
+        "answerJa": "彼の話は話半分に聞いておいて"
+      }
+    },
+    {
+      "pattern": "upgrade",
+      "id": "en-upgrade-ravenous",
+      "basic": "very hungry",
+      "word": "ravenous",
+      "pos": "形容詞",
+      "ja": "腹ペコの",
+      "hookLines": [
+        {
+          "cap": "very hungry = ravenous"
+        }
+      ],
+      "examples": [
+        {
+          "en": [
+            "After the hike, I was ravenous."
+          ],
+          "ja": [
+            "ハイキングの後、腹ペコだった"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "ハイキングの後、腹ペコだった",
+          "英語で言ってみて"
+        ],
+        "answer": "After the hike, I was ravenous.",
+        "answerJa": "ハイキングの後、腹ペコだった"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

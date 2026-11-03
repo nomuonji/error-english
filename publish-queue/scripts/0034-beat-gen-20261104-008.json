@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261104-008",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ balk / wary / quirk ほか【音ハメ英単語 #8】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "balk",
+      "ipa": "/bɔːk/",
+      "pos": "動",
+      "ja": "ためらう",
+      "ex": "He *balked* at the price.",
+      "exJa": "彼は値段に尻込みした。"
+    },
+    {
+      "w": "wary",
+      "ipa": "/ˈweri/",
+      "pos": "形",
+      "ja": "用心深い",
+      "ex": "Be *wary* of strangers online.",
+      "exJa": "ネット上の見知らぬ人には用心して。"
+    },
+    {
+      "w": "quirk",
+      "ipa": "/kwɜːrk/",
+      "pos": "名",
+      "ja": "変わった癖",
+      "ex": "He has a *quirk* of tapping his pen.",
+      "exJa": "彼はペンをトントン叩くという変わった癖がある。"
+    },
+    {
+      "w": "blatantly",
+      "ipa": "/ˈbleɪtəntli/",
+      "pos": "副",
+      "ja": "露骨に",
+      "ex": "He *blatantly* ignored the rules.",
+      "exJa": "彼は露骨に規則を無視した。"
+    },
+    {
+      "w": "relish",
+      "ipa": "/ˈrelɪʃ/",
+      "pos": "動",
+      "ja": "大いに楽しむ",
+      "ex": "She *relishes* the challenge.",
+      "exJa": "彼女はその挑戦を大いに楽しむ。"
+    },
+    {
+      "w": "stark",
+      "ipa": "/stɑːrk/",
+      "pos": "形",
+      "ja": "殺風景な",
+      "ex": "The room was *stark* and empty.",
+      "exJa": "部屋は殺風景で空っぽだった。"
+    },
+    {
+      "w": "hunch",
+      "ipa": "/hʌntʃ/",
+      "pos": "名",
+      "ja": "直感",
+      "ex": "I have a *hunch* she'll win.",
+      "exJa": "彼女が勝つという直感がある。"
+    },
+    {
+      "w": "utterly",
+      "ipa": "/ˈʌtərli/",
+      "pos": "副",
+      "ja": "完全に",
+      "ex": "I was *utterly* exhausted.",
+      "exJa": "私は完全に疲れ果てていた。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
