@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "d72eb73b9250030f351a73baf1eb8837904160fd",
+  "assetName": "beat-eiken1-04.mp4",
+  "sha256": "a3b8b7d4cf36f9a38417d9398fce1410482ca6decb84bfda13e4452ec860a310",
+  "title": "英検1級の単語、何個わかる？ obstreperous / pusillanimous / obviate ほか【音ハメ英単語 #4】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・obstreperous /əbˈstrepərəs/（形）＝ 騒がしく手に負えない\n  The obstreperous crowd booed the referee.（手に負えない観衆が審判にブーイングした。）\n・pusillanimous /ˌpjuːsɪˈlænɪməs/（形）＝ 臆病な・意気地のない\n  It was a pusillanimous decision.（意気地のない決断だった。）\n・obviate /ˈɑːbvieɪt/（動）＝ 不要にする\n  The new system obviates the need for paperwork.（新システムで書類仕事が要らなくなる。）\n・laconic /ləˈkɑːnɪk/（形）＝ 言葉少なな・そっけない\n  His reply was laconic: just \"No.\"（彼の返事はそっけなく「ノー」だけだった。）\n・garrulous /ˈɡærələs/（形）＝ おしゃべりな\n  Our garrulous driver talked the whole way.（おしゃべりな運転手はずっと話していた。）\n・insouciant /ɪnˈsuːsiənt/（形）＝ のんきな・無頓着な\n  She gave an insouciant shrug.（彼女は平然と肩をすくめた。）\n・cogent /ˈkoʊdʒənt/（形）＝ 説得力のある\n  She made a cogent argument.（彼女は説得力のある主張をした。）\n・mollify /ˈmɑːlɪfaɪ/（動）＝ （怒りを）和らげる\n  He tried to mollify his angry neighbor.（彼は怒った隣人をなだめようとした。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "obstreperous",
+    "pusillanimous",
+    "obviate",
+    "laconic",
+    "garrulous",
+    "insouciant",
+    "cogent",
+    "mollify"
+  ],
+  "script": "0026-beat-eiken1-04.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "scene": "core",
+    "palette": "ember",
+    "jpFont": "NotoJP"
+  }
+}
