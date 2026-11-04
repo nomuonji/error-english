@@ -60,6 +60,18 @@ stored in earlier publish requests, so consecutive videos never share a look. Ad
 - lexicon-drop: Suno **free plan** — non-commercial use only, credit Suno. Replace before monetising.
 - error-bgm: the BGM of the channel's earlier error-message series; source not recorded.
 
+### Finding replacement music / SFX, and checking audio you cannot hear
+
+Two optional tools for agents (full guide: [asset-sources.md](https://github.com/nomuonji/animation-factory/blob/main/docs/asset-sources.md)):
+
+- **Openverse** — keyless search of CC / public-domain audio. Music: `source=jamendo&license_type=commercial,modification`
+  (a candidate to replace the non-commercial `lexicon-drop` and the unrecorded `error-bgm`); SFX: `source=freesound&license=cc0`.
+  Check the licence on `foreign_landing_url` and write `credit` / `license` into `track.json` before use.
+- **earshot** — measures audio for an agent: `rank` / `find` to pick and trim a sound, `measure` for loudness,
+  `timeline --video` to check that sounds land on the beat and the cuts, `sfx` / `kit` for code-made effects
+  (no licence). Install from GitHub (`git+https://github.com/Leonxlnx/earshot@v0.4.0`), **not** `pip install earshot`
+  (that PyPI name is a different library). A reading is a measurement, not a human listening check.
+
 ## Assets from the earlier series
 
 `assets/mascot/` (the channel character: smile / talk / cry) and `assets/se/` (pop,
