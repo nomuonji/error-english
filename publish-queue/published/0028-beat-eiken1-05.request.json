@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "ed3292871c3e37603881cf0a6bb74830dc952bce",
+  "assetName": "beat-eiken1-05.mp4",
+  "sha256": "9825b64eee25637b7b8a006ff2eecddaeb74222d4cb7983b15b60608c4c4a67a",
+  "title": "英検1級の単語、何個わかる？ ebullient / sycophant / exculpate ほか【音ハメ英単語 #5】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・ebullient /ɪˈbʊliənt/（形）＝ 元気いっぱいの\n  She was ebullient after the win.（勝利の後、彼女は大はしゃぎだった。）\n・sycophant /ˈsɪkəfænt/（名）＝ おべっか使い\n  He's surrounded by sycophants.（彼の周りはおべっか使いばかりだ。）\n・exculpate /ˈekskʌlpeɪt/（動）＝ 無実を証明する\n  New evidence exculpated him.（新しい証拠で彼の無実が証明された。）\n・abstruse /æbˈstruːs/（形）＝ 難解な\n  The lecture was too abstruse for me.（その講義は私には難しすぎた。）\n・impecunious /ˌɪmpɪˈkjuːniəs/（形）＝ お金のない\n  As impecunious students, we lived on noodles.（金欠学生だった私たちは麺ばかり食べていた。）\n・fractious /ˈfrækʃəs/（形）＝ 機嫌が悪く扱いにくい\n  The kids get fractious when they're hungry.（子どもたちはお腹がすくと機嫌が悪くなる。）\n・proclivity /prəˈklɪvəti/（名）＝ （よくない）傾向・癖\n  He has a proclivity for exaggeration.（彼には話を盛る癖がある。）\n・enervate /ˈenərveɪt/（動）＝ 気力を奪う\n  The heat enervated everyone.（その暑さで皆ぐったりした。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "ebullient",
+    "sycophant",
+    "exculpate",
+    "abstruse",
+    "impecunious",
+    "fractious",
+    "proclivity",
+    "enervate"
+  ],
+  "script": "0028-beat-eiken1-05.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "grid",
+    "palette": "candy",
+    "jpFont": "Dela Gothic One"
+  }
+}

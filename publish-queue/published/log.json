@@ -96,5 +96,13 @@
     "youtubeVideoId": "g256nBdnlnQ",
     "publishedAt": "2026-11-04T10:10:06.872Z",
     "instagramMediaId": "18235463038321903"
+  },
+  {
+    "file": "0028-beat-eiken1-05.request.json",
+    "assetName": "beat-eiken1-05.mp4",
+    "sha256": "9825b64eee25637b7b8a006ff2eecddaeb74222d4cb7983b15b60608c4c4a67a",
+    "youtubeVideoId": "EsEm2SkFveE",
+    "publishedAt": "2026-11-04T18:23:31.057Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]
