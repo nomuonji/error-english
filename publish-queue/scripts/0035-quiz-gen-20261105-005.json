@@ -1,0 +1,100 @@
+{
+  "id": "quiz-gen-20261105-005",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ bask・I have a soft spot for this song・precede / proceed",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-bask",
+      "word": "bask",
+      "pos": "動詞",
+      "pron": "/bæsk/",
+      "ja": "心地よく浴びる",
+      "examples": [
+        {
+          "en": [
+            "We basked in the warm sun."
+          ],
+          "ja": [
+            "暖かな日差しを浴びた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "They ___ in the warm sun.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "They basked in the warm sun.",
+        "answerJa": "彼らは暖かな日差しを浴びた"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-have-a-soft-spot-for",
+      "jp": "この曲が大好きだ",
+      "answer": {
+        "en": "I have a soft spot for this song.",
+        "ja": "この曲が大好きだ"
+      },
+      "emphasis": [
+        "have a soft spot for"
+      ],
+      "examples": [
+        {
+          "en": [
+            "She has a soft spot for cats."
+          ],
+          "ja": [
+            "彼女は猫が大好きだ"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "この曲が大好きだ",
+          "英語で言ってみて"
+        ],
+        "answer": "I have a soft spot for this song.",
+        "answerJa": "この曲が大好きだ"
+      }
+    },
+    {
+      "pattern": "vs",
+      "id": "en-vs-precede-proceed",
+      "a": {
+        "word": "precede",
+        "pron": "/prɪˈsiːd/",
+        "ja": "先に起こる・先行する",
+        "example": "The speech preceded the dinner.",
+        "exampleJa": "スピーチは夕食の前に行われた"
+      },
+      "b": {
+        "word": "proceed",
+        "pron": "/prəˈsiːd/",
+        "ja": "進む・続行する",
+        "example": "Please proceed to the gate.",
+        "exampleJa": "ゲートへ進んでください"
+      },
+      "rule": [
+        {
+          "cap": "precede ＝ 時間・順序で先に来る"
+        },
+        {
+          "cap": "proceed ＝ 前に進む・続ける"
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "The speech ___ the dinner.",
+          "precede？ proceed？"
+        ],
+        "answer": "The speech preceded the dinner.",
+        "answerJa": "スピーチは夕食の前に行われた"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

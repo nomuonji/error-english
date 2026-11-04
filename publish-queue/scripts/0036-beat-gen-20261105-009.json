@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261105-009",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ squelch / irk / snub ほか【音ハメ英単語 #9】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "squelch",
+      "ipa": "/skweltʃ/",
+      "pos": "動",
+      "ja": "音を立てて潰す",
+      "ex": "He *squelched* the bug under his shoe.",
+      "exJa": "彼は靴で虫をぐしゃっと潰した。"
+    },
+    {
+      "w": "irk",
+      "ipa": "/ɝːk/",
+      "pos": "動",
+      "ja": "いら立たせる",
+      "ex": "It *irks* me when he interrupts.",
+      "exJa": "彼に遮られるとイラッとする。"
+    },
+    {
+      "w": "snub",
+      "ipa": "/snʌb/",
+      "pos": "動",
+      "ja": "無視する",
+      "ex": "She *snubbed* him at the party.",
+      "exJa": "彼女はパーティーで彼を無視した。"
+    },
+    {
+      "w": "brisk",
+      "ipa": "/brɪsk/",
+      "pos": "形",
+      "ja": "きびきびした",
+      "ex": "We took a *brisk* walk before breakfast.",
+      "exJa": "朝食前にきびきび歩いた。"
+    },
+    {
+      "w": "iffy",
+      "ipa": "/ˈɪfi/",
+      "pos": "形",
+      "ja": "怪しい",
+      "ex": "The plan sounds a bit *iffy* to me.",
+      "exJa": "その計画は少し怪しく思える。"
+    },
+    {
+      "w": "outage",
+      "ipa": "/ˈaʊtɪdʒ/",
+      "pos": "名",
+      "ja": "停電",
+      "ex": "The storm caused a power *outage*.",
+      "exJa": "嵐で停電が起きた。"
+    },
+    {
+      "w": "backlash",
+      "ipa": "/ˈbæklæʃ/",
+      "pos": "名",
+      "ja": "反発",
+      "ex": "The ad drew a fierce *backlash*.",
+      "exJa": "その広告は激しい反発を招いた。"
+    },
+    {
+      "w": "downright",
+      "ipa": "/ˈdaʊnraɪt/",
+      "pos": "副",
+      "ja": "全く",
+      "ex": "The movie was *downright* boring.",
+      "exJa": "その映画はまったく退屈だった。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
