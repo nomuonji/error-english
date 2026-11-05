@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "817d271a2274611d9498bfc56bb75917c3ed1017",
+  "assetName": "beat-eiken1-06.mp4",
+  "sha256": "68bb784c5ff4b82500e8cb30cdf32e2814213976e3d497fc1e8739badef4613b",
+  "title": "英検1級の単語、何個わかる？ officious / penchant / deleterious ほか【音ハメ英単語 #6】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・officious /əˈfɪʃəs/（形）＝ おせっかいな・偉そうな\n  An officious guard checked our bags twice.（おせっかいな警備員がカバンを2回調べた。）\n・penchant /ˈpentʃənt/（名）＝ 好み・目がないこと\n  She has a penchant for spicy food.（彼女は辛いものに目がない。）\n・deleterious /ˌdeləˈtɪriəs/（形）＝ 有害な\n  Lack of sleep has deleterious effects.（睡眠不足は体に悪影響をもたらす。）\n・foment /foʊˈment/（動）＝ （争いを）あおる\n  He was accused of fomenting unrest.（彼は騒乱をあおったとして非難された。）\n・querulous /ˈkwerələs/（形）＝ 不平がましい\n  He answered in a querulous tone.（彼は不満げな口調で答えた。）\n・magnanimous /mæɡˈnænɪməs/（形）＝ 寛大な\n  She was magnanimous in victory.（彼女は勝っても相手に寛大だった。）\n・parsimonious /ˌpɑːrsəˈmoʊniəs/（形）＝ けちな\n  My parsimonious boss never buys lunch.（けちな上司は一度もランチをおごらない。）\n・inimical /ɪˈnɪmɪkəl/（形）＝ 不利な・害になる\n  Stress is inimical to good sleep.（ストレスは良い睡眠の敵だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "officious",
+    "penchant",
+    "deleterious",
+    "foment",
+    "querulous",
+    "magnanimous",
+    "parsimonious",
+    "inimical"
+  ],
+  "script": "0030-beat-eiken1-06.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "scene": "city",
+    "palette": "ice",
+    "jpFont": "NotoJP"
+  }
+}
