@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261106-010",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ vouch / haggle / brink ほか【音ハメ英単語 #10】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "vouch",
+      "ipa": "/vaʊtʃ/",
+      "pos": "動",
+      "ja": "保証する",
+      "ex": "I can *vouch* for her honesty.",
+      "exJa": "私は彼女の正直さを保証できる。"
+    },
+    {
+      "w": "haggle",
+      "ipa": "/ˈhæɡəl/",
+      "pos": "動",
+      "ja": "値切る",
+      "ex": "She *haggled* over the price for ten minutes.",
+      "exJa": "彼女は10分間値切った。"
+    },
+    {
+      "w": "brink",
+      "ipa": "/brɪŋk/",
+      "pos": "名",
+      "ja": "瀬戸際",
+      "ex": "The company is on the *brink* of collapse.",
+      "exJa": "会社は崩壊の瀬戸際だ。"
+    },
+    {
+      "w": "stint",
+      "ipa": "/stɪnt/",
+      "pos": "名",
+      "ja": "一時的な期間",
+      "ex": "She did a short *stint* as a teacher.",
+      "exJa": "彼女は短期間教師をした。"
+    },
+    {
+      "w": "candid",
+      "ipa": "/ˈkændɪd/",
+      "pos": "形",
+      "ja": "率直な",
+      "ex": "She gave a *candid* answer.",
+      "exJa": "彼女は率直に答えた。"
+    },
+    {
+      "w": "bland",
+      "ipa": "/blænd/",
+      "pos": "形",
+      "ja": "味気ない",
+      "ex": "The soup tasted a bit *bland*.",
+      "exJa": "スープは少し味気なかった。"
+    },
+    {
+      "w": "arguably",
+      "ipa": "/ˈɑrɡjuəbli/",
+      "pos": "副",
+      "ja": "おそらく",
+      "ex": "This is *arguably* her best album.",
+      "exJa": "これはおそらく彼女の最高作だ。"
+    },
+    {
+      "w": "readily",
+      "ipa": "/ˈrɛdɪli/",
+      "pos": "副",
+      "ja": "快く",
+      "ex": "He *readily* agreed to help us.",
+      "exJa": "彼は快く私たちを手伝ってくれることに同意した。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "quiz-gen-20261106-006",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ sardonic・That's beside the point・flounder / founder",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-sardonic",
+      "word": "sardonic",
+      "pos": "形容詞",
+      "pron": "/sɑːˈdɒnɪk/ (BrE), /sɑːrˈdɑːnɪk/ (AmE)",
+      "ja": "冷笑的な",
+      "examples": [
+        {
+          "en": [
+            "She gave a sardonic smile."
+          ],
+          "ja": [
+            "彼女は冷笑的な笑みを浮かべた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "She gave a ___ smile.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "She gave a sardonic smile.",
+        "answerJa": "彼女は冷笑的な笑みを浮かべた"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-beside-the-point",
+      "jp": "それは的外れだ",
+      "pron": "/bɪˌsaɪd ðə ˈpɔɪnt/",
+      "answer": {
+        "en": "That's beside the point.",
+        "ja": "それは的外れだ"
+      },
+      "emphasis": [
+        "beside the point"
+      ],
+      "examples": [
+        {
+          "en": [
+            "Your age is beside the point."
+          ],
+          "ja": [
+            "年齢は関係ない"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "それは的外れだ",
+          "英語で言ってみて"
+        ],
+        "answer": "That's beside the point.",
+        "answerJa": "それは的外れだ"
+      }
+    },
+    {
+      "pattern": "vs",
+      "id": "en-vs-flounder-founder",
+      "a": {
+        "word": "flounder",
+        "pron": "/ˈflaʊndə(r)/",
+        "ja": "もがく・苦戦する",
+        "example": "He floundered during the interview.",
+        "exampleJa": "面接で苦戦した"
+      },
+      "b": {
+        "word": "founder",
+        "pron": "/ˈfaʊndə(r)/",
+        "ja": "沈没する・頓挫する",
+        "example": "The plan foundered.",
+        "exampleJa": "計画は頓挫した"
+      },
+      "rule": [
+        {
+          "cap": "flounder ＝ もがく・苦戦する"
+        },
+        {
+          "cap": "founder ＝ 沈没する・頓挫する"
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "The ship ___ in the storm.",
+          "flounder？ founder？"
+        ],
+        "answer": "The ship foundered in the storm.",
+        "answerJa": "船は嵐で沈没した"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
