@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "c6d04c902ecb7e4dc4640f4fe06c2af7982200af",
+  "assetName": "beat-gen-20261104-008.mp4",
+  "sha256": "f992ee2ee4c6709958547baa19927a559dcfbe1d23bdc2f39bd0964dd8e36a94",
+  "title": "英検1級の単語、何個わかる？ balk / wary / quirk ほか【音ハメ英単語 #8】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・balk /bɔːk/（動）＝ ためらう\n  He balked at the price.（彼は値段に尻込みした。）\n・wary /ˈweri/（形）＝ 用心深い\n  Be wary of strangers online.（ネット上の見知らぬ人には用心して。）\n・quirk /kwɜːrk/（名）＝ 変わった癖\n  He has a quirk of tapping his pen.（彼はペンをトントン叩くという変わった癖がある。）\n・blatantly /ˈbleɪtəntli/（副）＝ 露骨に\n  He blatantly ignored the rules.（彼は露骨に規則を無視した。）\n・relish /ˈrelɪʃ/（動）＝ 大いに楽しむ\n  She relishes the challenge.（彼女はその挑戦を大いに楽しむ。）\n・stark /stɑːrk/（形）＝ 殺風景な\n  The room was stark and empty.（部屋は殺風景で空っぽだった。）\n・hunch /hʌntʃ/（名）＝ 直感\n  I have a hunch she'll win.（彼女が勝つという直感がある。）\n・utterly /ˈʌtərli/（副）＝ 完全に\n  I was utterly exhausted.（私は完全に疲れ果てていた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "balk",
+    "wary",
+    "quirk",
+    "blatantly",
+    "relish",
+    "stark",
+    "hunch",
+    "utterly"
+  ],
+  "script": "0034-beat-gen-20261104-008.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "core",
+    "palette": "neon",
+    "jpFont": "NotoJP"
+  }
+}
