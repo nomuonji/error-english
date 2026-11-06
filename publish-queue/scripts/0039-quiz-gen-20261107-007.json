@@ -1,0 +1,94 @@
+{
+  "id": "quiz-gen-20261107-007",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ finagle・Can I take a rain check?・skeptic / cynic",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-finagle",
+      "word": "finagle",
+      "pos": "動詞",
+      "ja": "ずる賢く手に入れる",
+      "examples": [
+        {
+          "en": [
+            "He finagled a free upgrade."
+          ],
+          "ja": [
+            "無料アップグレードをうまく取った"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "He ___ a free upgrade.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "He finagled a free upgrade.",
+        "answerJa": "彼は無料アップグレードをうまく取った"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-take-a-rain-check",
+      "jp": "また今度にしてもいい？",
+      "answer": {
+        "en": "Can I take a rain check?",
+        "ja": "また今度にしてもいい？"
+      },
+      "examples": [
+        {
+          "en": [
+            "I'll take a rain check on dinner."
+          ],
+          "ja": [
+            "夕食はまた今度にするよ"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "今夜は無理だから、また今度でいい？",
+          "英語で言ってみて"
+        ],
+        "answer": "Can I take a rain check?",
+        "answerJa": "また今度にしてもいい？"
+      }
+    },
+    {
+      "pattern": "vs",
+      "id": "en-vs-skeptic-cynic",
+      "a": {
+        "word": "skeptic",
+        "ja": "懐疑派・疑う人",
+        "example": "She's a skeptic, but she listens.",
+        "exampleJa": "彼女は疑い深いが話は聞く"
+      },
+      "b": {
+        "word": "cynic",
+        "ja": "人間不信の人・皮肉屋",
+        "example": "Don't be such a cynic.",
+        "exampleJa": "そんなに人間不信にならないで"
+      },
+      "rule": [
+        {
+          "cap": "skeptic ＝ 主張を簡単に信じず疑う人"
+        },
+        {
+          "cap": "cynic ＝ 人の善意を信じない人"
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "He doubts claims but still trusts people.",
+          "skeptic？ cynic？"
+        ],
+        "answer": "He's a skeptic, not a cynic.",
+        "answerJa": "彼は皮肉屋ではなく懐疑派だ"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

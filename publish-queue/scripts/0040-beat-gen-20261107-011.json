@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261107-011",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "bemoan",
+      "ipa": "/bɪˈmoʊn/",
+      "pos": "動",
+      "ja": "嘆く",
+      "ex": "Critics *bemoan* the loss of local shops.",
+      "exJa": "評論家は地元商店の喪失を嘆く。"
+    },
+    {
+      "w": "grapple",
+      "ipa": "/ˈɡræpəl/",
+      "pos": "動",
+      "ja": "取り組む",
+      "ex": "We *grapple* with new rules daily.",
+      "exJa": "私たちは毎日新しい規則と格闘する。"
+    },
+    {
+      "w": "stilted",
+      "ipa": "/ˈstɪltɪd/",
+      "pos": "形",
+      "ja": "不自然な",
+      "ex": "His apology sounded *stilted* and forced.",
+      "exJa": "彼の謝罪は不自然で無理があった。"
+    },
+    {
+      "w": "tepid",
+      "ipa": "/ˈtepɪd/",
+      "pos": "形",
+      "ja": "熱意のない",
+      "ex": "The audience gave *tepid* applause.",
+      "exJa": "観客の拍手は熱意に欠けた。"
+    },
+    {
+      "w": "gist",
+      "ipa": "/dʒɪst/",
+      "pos": "名",
+      "ja": "要点",
+      "ex": "I missed the *gist* of his argument.",
+      "exJa": "彼の議論の要点をつかみ損ねた。"
+    },
+    {
+      "w": "rift",
+      "ipa": "/rɪft/",
+      "pos": "名",
+      "ja": "不和",
+      "ex": "The *rift* between them never healed.",
+      "exJa": "二人の不和は決して解消されなかった。"
+    },
+    {
+      "w": "outright",
+      "ipa": "/ˌaʊtˈraɪt/",
+      "pos": "副",
+      "ja": "完全に",
+      "ex": "He *outright* denied the rumor.",
+      "exJa": "彼はその噂を完全に否定した。"
+    },
+    {
+      "w": "decidedly",
+      "ipa": "/dɪˈsaɪdɪdli/",
+      "pos": "副",
+      "ja": "明らかに",
+      "ex": "The plan is *decidedly* risky.",
+      "exJa": "その計画は明らかに危険だ。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
