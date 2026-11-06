@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "ebd7f60d77ed2ba373f99e93747b45804af1bb47",
+  "assetName": "quiz-gen-20261104-004.mp4",
+  "sha256": "3f652872e5c565d957e6a66147012d6d0d0768230ddea1c98995e743da272591",
+  "title": "英語クイズ3問、何問わかる？ gloat・Take it with a grain of salt・ravenous【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・gloat（動詞）＝ ほくそ笑む\n・Don't gloat over your rival's mistake. ＝ 相手の失敗にほくそ笑むな\n・gloat ＝ ほくそ笑む\nQ2\n・Take it with a grain of salt. ＝ 話半分に聞いておいて\n・Take his advice with a grain of salt. ＝ 彼の助言は話半分に聞いて\n・Take what he says with a grain of salt. ＝ 彼の話は話半分に聞いておいて\nQ3\n・very hungry → ravenous ＝ 腹ペコの\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "gloat",
+    "Take it with a grain of salt.",
+    "ravenous",
+    "very hungry"
+  ],
+  "script": "0033-quiz-gen-20261104-004.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "palette": "mint",
+    "motif": "blocks"
+  }
+}
