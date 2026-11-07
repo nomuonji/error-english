@@ -1,0 +1,97 @@
+{
+  "id": "quiz-gen-20261108-008",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ hubris・Let's cut to the chase・comprise / compose",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-hubris",
+      "word": "hubris",
+      "pos": "名詞",
+      "ja": "傲慢・過信",
+      "examples": [
+        {
+          "en": [
+            "His *hubris* brought down the whole team."
+          ],
+          "ja": [
+            "彼の傲慢さがチームを崩壊させた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "His ___ cost him everything.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "His hubris cost him everything.",
+        "answerJa": "彼の傲慢さが全てを奪った"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-cut-to-the-chase",
+      "jp": "本題に入る",
+      "answer": {
+        "en": "Let's cut to the chase.",
+        "ja": "本題に入ろう"
+      },
+      "emphasis": [
+        "cut to the chase"
+      ],
+      "examples": [
+        {
+          "en": [
+            "Let's *cut to the chase* and decide."
+          ],
+          "ja": [
+            "本題に入って決めよう"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "遠回しに言わず、本題に入ろう",
+          "英語で言ってみて"
+        ],
+        "answer": "Let's cut to the chase.",
+        "answerJa": "本題に入ろう"
+      }
+    },
+    {
+      "pattern": "vs",
+      "id": "en-vs-comprise-compose",
+      "a": {
+        "word": "comprise",
+        "ja": "〜から成る",
+        "example": "The team *comprises* five members.",
+        "exampleJa": "チームは5人から成る"
+      },
+      "b": {
+        "word": "compose",
+        "ja": "〜を構成する",
+        "example": "Five members *compose* the team.",
+        "exampleJa": "5人がチームを構成する"
+      },
+      "rule": [
+        {
+          "cap": "comprise ＝ 全体が部分を含む（全体 comprises 部分）"
+        },
+        {
+          "cap": "compose ＝ 部分が全体を作る（部分 compose 全体）"
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "The team ___ five members.",
+          "comprise？ compose？"
+        ],
+        "answer": "The team comprises five members.",
+        "answerJa": "チームは5人から成る"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

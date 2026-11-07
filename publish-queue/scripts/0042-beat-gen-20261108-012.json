@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261108-012",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ bicker / eavesdrop / leery ほか【音ハメ英単語 #12】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "bicker",
+      "ipa": "/ˈbɪkər/",
+      "pos": "動",
+      "ja": "口論する",
+      "ex": "They *bicker* over small things.",
+      "exJa": "彼らは些細なことで口論する。"
+    },
+    {
+      "w": "eavesdrop",
+      "ipa": "/ˈiːvzdrɑːp/",
+      "pos": "動",
+      "ja": "盗み聞きする",
+      "ex": "Don't *eavesdrop* on their conversation.",
+      "exJa": "彼らの会話を盗み聞きしないで。"
+    },
+    {
+      "w": "leery",
+      "ipa": "/ˈlɪri/",
+      "pos": "形",
+      "ja": "疑い深い",
+      "ex": "I'm *leery* of online deals.",
+      "exJa": "私はネット取引には警戒している。"
+    },
+    {
+      "w": "stodgy",
+      "ipa": "/ˈstɑːdʒi/",
+      "pos": "形",
+      "ja": "古臭い",
+      "ex": "The club has a *stodgy* image.",
+      "exJa": "そのクラブは古臭い印象だ。"
+    },
+    {
+      "w": "quandary",
+      "ipa": "/ˈkwɑːndəri/",
+      "pos": "名",
+      "ja": "困惑",
+      "ex": "She's in a *quandary* about the offer.",
+      "exJa": "彼女はその申し出について困惑している。"
+    },
+    {
+      "w": "perk",
+      "ipa": "/pɝːk/",
+      "pos": "名",
+      "ja": "特典",
+      "ex": "Free coffee is a nice *perk*.",
+      "exJa": "無料コーヒーは嬉しい特典だ。"
+    },
+    {
+      "w": "oddly",
+      "ipa": "/ˈɑːdli/",
+      "pos": "副",
+      "ja": "奇妙に",
+      "ex": "He, *oddly*, refused the free meal.",
+      "exJa": "奇妙なことに、彼は無料の食事を断った。"
+    },
+    {
+      "w": "admittedly",
+      "ipa": "/ədˈmɪtɪdli/",
+      "pos": "副",
+      "ja": "確かに",
+      "ex": "He, *admittedly*, lied to us.",
+      "exJa": "確かに、彼は私たちに嘘をついた。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
