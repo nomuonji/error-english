@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "d100f9cd372cb0fab6459de040ee02e9e3b77057",
+  "assetName": "beat-gen-20261105-009.mp4",
+  "sha256": "451565ce436c0306ef2d4333832d3ede56bdb66b004e9a43994dcd689f28b1f8",
+  "title": "英検1級の単語、何個わかる？ squelch / irk / snub ほか【音ハメ英単語 #9】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・squelch /skweltʃ/（動）＝ 音を立てて潰す\n  He squelched the bug under his shoe.（彼は靴で虫をぐしゃっと潰した。）\n・irk /ɝːk/（動）＝ いら立たせる\n  It irks me when he interrupts.（彼に遮られるとイラッとする。）\n・snub /snʌb/（動）＝ 無視する\n  She snubbed him at the party.（彼女はパーティーで彼を無視した。）\n・brisk /brɪsk/（形）＝ きびきびした\n  We took a brisk walk before breakfast.（朝食前にきびきび歩いた。）\n・iffy /ˈɪfi/（形）＝ 怪しい\n  The plan sounds a bit iffy to me.（その計画は少し怪しく思える。）\n・outage /ˈaʊtɪdʒ/（名）＝ 停電\n  The storm caused a power outage.（嵐で停電が起きた。）\n・backlash /ˈbæklæʃ/（名）＝ 反発\n  The ad drew a fierce backlash.（その広告は激しい反発を招いた。）\n・downright /ˈdaʊnraɪt/（副）＝ 全く\n  The movie was downright boring.（その映画はまったく退屈だった。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "squelch",
+    "irk",
+    "snub",
+    "brisk",
+    "iffy",
+    "outage",
+    "backlash",
+    "downright"
+  ],
+  "script": "0036-beat-gen-20261105-009.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "scene": "grid",
+    "palette": "sunset",
+    "jpFont": "Dela Gothic One"
+  }
+}
