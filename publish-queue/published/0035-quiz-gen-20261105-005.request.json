@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "c4529fe6c13d0d4619abf385d1630b048bed6baa",
+  "assetName": "quiz-gen-20261105-005.mp4",
+  "sha256": "1c2ba8906c0763788a99b69f34dbdf25441c0196c1ca151457c7601b176dd92b",
+  "title": "英語クイズ3問、何問わかる？ bask・I have a soft spot for this song・precede / proceed【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・bask（動詞）＝ 心地よく浴びる\n・We basked in the warm sun. ＝ 暖かな日差しを浴びた\n・They basked in the warm sun. ＝ 彼らは暖かな日差しを浴びた\nQ2\n・I have a soft spot for this song. ＝ この曲が大好きだ\n・She has a soft spot for cats. ＝ 彼女は猫が大好きだ\n・I have a soft spot for this song. ＝ この曲が大好きだ\nQ3\n・precede ＝ 先に起こる・先行する　例: The speech preceded the dinner.（スピーチは夕食の前に行われた）\n・proceed ＝ 進む・続行する　例: Please proceed to the gate.（ゲートへ進んでください）\n・The speech preceded the dinner. ＝ スピーチは夕食の前に行われた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "bask",
+    "I have a soft spot for this song.",
+    "precede",
+    "proceed"
+  ],
+  "script": "0035-quiz-gen-20261105-005.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "palette": "sky",
+    "motif": "circles"
+  }
+}
