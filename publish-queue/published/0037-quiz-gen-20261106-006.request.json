@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "17030f1a2a213add1003d5810fb70cc2342453be",
+  "assetName": "quiz-gen-20261106-006.mp4",
+  "sha256": "81697ef16ce2a2a9c37dbab00a334fa6ed67b6c59e231df75531b5791cef11e9",
+  "title": "英語クイズ3問、何問わかる？ sardonic・That's beside the point・flounder / founder【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・sardonic（形容詞）＝ 冷笑的な\n・She gave a sardonic smile. ＝ 彼女は冷笑的な笑みを浮かべた\n・She gave a sardonic smile. ＝ 彼女は冷笑的な笑みを浮かべた\nQ2\n・That's beside the point. ＝ それは的外れだ\n・Your age is beside the point. ＝ 年齢は関係ない\n・That's beside the point. ＝ それは的外れだ\nQ3\n・flounder ＝ もがく・苦戦する　例: He floundered during the interview.（面接で苦戦した）\n・founder ＝ 沈没する・頓挫する　例: The plan foundered.（計画は頓挫した）\n・The ship foundered in the storm. ＝ 船は嵐で沈没した\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "sardonic",
+    "That's beside the point.",
+    "flounder",
+    "founder"
+  ],
+  "script": "0037-quiz-gen-20261106-006.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "palette": "peach",
+    "motif": "dots"
+  }
+}
