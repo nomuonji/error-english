@@ -1,0 +1,98 @@
+{
+  "id": "quiz-gen-20261109-009",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ cavalier・It slipped my mind・compliment / complement",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-cavalier",
+      "word": "cavalier",
+      "pos": "形容詞",
+      "pron": "/ˌkævəˈlɪr/",
+      "ja": "無頓着な",
+      "examples": [
+        {
+          "en": [
+            "He was cavalier about the risks."
+          ],
+          "ja": [
+            "彼はリスクに無頓着だった"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "He was ___ about the risks.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "He was cavalier about the risks.",
+        "answerJa": "彼はリスクに無頓着だった"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-it-slipped-my-mind",
+      "jp": "うっかり忘れてた",
+      "answer": {
+        "en": "It slipped my mind.",
+        "ja": "うっかり忘れてた"
+      },
+      "emphasis": [
+        "slipped my mind"
+      ],
+      "examples": [
+        {
+          "en": [
+            "Sorry, it slipped my mind."
+          ],
+          "ja": [
+            "ごめん、うっかり忘れてた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "その件、うっかり忘れてた",
+          "英語で言ってみて"
+        ],
+        "answer": "It slipped my mind.",
+        "answerJa": "うっかり忘れてた"
+      }
+    },
+    {
+      "pattern": "vs",
+      "id": "en-vs-compliment-complement",
+      "a": {
+        "word": "compliment",
+        "ja": "褒め言葉",
+        "example": "She took the compliment well.",
+        "exampleJa": "彼女は褒め言葉を素直に受け取った"
+      },
+      "b": {
+        "word": "complement",
+        "ja": "補完する、引き立てる",
+        "example": "The wine complements the meal.",
+        "exampleJa": "そのワインは料理を引き立てる"
+      },
+      "rule": [
+        {
+          "cap": "compliment ＝ 褒める・褒め言葉"
+        },
+        {
+          "cap": "complement ＝ 補完する・引き立てる"
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "That scarf ___ your outfit.",
+          "complement？ compliment？"
+        ],
+        "answer": "That scarf complements your outfit.",
+        "answerJa": "そのスカーフは服を引き立てる"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

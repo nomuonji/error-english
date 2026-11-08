@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261109-013",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ mull / lukewarm / grievance ほか【音ハメ英単語 #13】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "mull",
+      "ipa": "/mʌl/",
+      "pos": "動",
+      "ja": "じっくり考える",
+      "ex": "I need time to *mull* it over.",
+      "exJa": "じっくり考える時間が必要だ。"
+    },
+    {
+      "w": "lukewarm",
+      "ipa": "/ˈluːkwɔːrm/",
+      "pos": "形",
+      "ja": "生ぬるい",
+      "ex": "The coffee's gone *lukewarm*.",
+      "exJa": "コーヒーがぬるくなった。"
+    },
+    {
+      "w": "grievance",
+      "ipa": "/ˈɡriːvəns/",
+      "pos": "名",
+      "ja": "不平不満",
+      "ex": "He filed a *grievance* with HR.",
+      "exJa": "彼は人事に不満を申し立てた。"
+    },
+    {
+      "w": "sparingly",
+      "ipa": "/ˈsperɪŋli/",
+      "pos": "副",
+      "ja": "控えめに",
+      "ex": "Use the hot sauce *sparingly*.",
+      "exJa": "辛いソースは控えめに。"
+    },
+    {
+      "w": "curb",
+      "ipa": "/kɝːb/",
+      "pos": "動",
+      "ja": "抑える",
+      "ex": "We need to *curb* our spending.",
+      "exJa": "出費を抑える必要がある。"
+    },
+    {
+      "w": "canny",
+      "ipa": "/ˈkæni/",
+      "pos": "形",
+      "ja": "抜け目ない",
+      "ex": "She's a *canny* negotiator.",
+      "exJa": "彼女は抜け目ない交渉者だ。"
+    },
+    {
+      "w": "plight",
+      "ipa": "/plaɪt/",
+      "pos": "名",
+      "ja": "苦境",
+      "ex": "The refugees' *plight* drew attention.",
+      "exJa": "避難民の苦境が注目を集めた。"
+    },
+    {
+      "w": "bluntly",
+      "ipa": "/ˈblʌntli/",
+      "pos": "副",
+      "ja": "率直に",
+      "ex": "She *bluntly* told him to leave.",
+      "exJa": "彼女は彼に出て行けと率直に言った。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
