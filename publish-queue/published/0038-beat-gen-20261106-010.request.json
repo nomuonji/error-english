@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "4289c84085a6d0837aa37b395f6574dd071818d8",
+  "assetName": "beat-gen-20261106-010.mp4",
+  "sha256": "74321f58efd423bc2562a6e2c096fe220ec59b35822c3909c61d7c46545d48ae",
+  "title": "英検1級の単語、何個わかる？ vouch / haggle / brink ほか【音ハメ英単語 #10】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・vouch /vaʊtʃ/（動）＝ 保証する\n  I can vouch for her honesty.（私は彼女の正直さを保証できる。）\n・haggle /ˈhæɡəl/（動）＝ 値切る\n  She haggled over the price for ten minutes.（彼女は10分間値切った。）\n・brink /brɪŋk/（名）＝ 瀬戸際\n  The company is on the brink of collapse.（会社は崩壊の瀬戸際だ。）\n・stint /stɪnt/（名）＝ 一時的な期間\n  She did a short stint as a teacher.（彼女は短期間教師をした。）\n・candid /ˈkændɪd/（形）＝ 率直な\n  She gave a candid answer.（彼女は率直に答えた。）\n・bland /blænd/（形）＝ 味気ない\n  The soup tasted a bit bland.（スープは少し味気なかった。）\n・arguably /ˈɑrɡjuəbli/（副）＝ おそらく\n  This is arguably her best album.（これはおそらく彼女の最高作だ。）\n・readily /ˈrɛdɪli/（副）＝ 快く\n  He readily agreed to help us.（彼は快く私たちを手伝ってくれることに同意した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "vouch",
+    "haggle",
+    "brink",
+    "stint",
+    "candid",
+    "bland",
+    "arguably",
+    "readily"
+  ],
+  "script": "0038-beat-gen-20261106-010.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "scene": "city",
+    "palette": "royal",
+    "jpFont": "NotoJP"
+  }
+}
