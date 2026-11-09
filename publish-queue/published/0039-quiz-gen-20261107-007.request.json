@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "be0bb0e6b2400b06b5d14566b5a404b3070ec8ed",
+  "assetName": "quiz-gen-20261107-007.mp4",
+  "sha256": "d388721f49435ff1a3a67c6a48a0ffc6b8bfaf875b588997305b3e90e68a511e",
+  "title": "英語クイズ3問、何問わかる？ finagle・Can I take a rain check?・skeptic / cynic【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・finagle（動詞）＝ ずる賢く手に入れる\n・He finagled a free upgrade. ＝ 無料アップグレードをうまく取った\n・He finagled a free upgrade. ＝ 彼は無料アップグレードをうまく取った\nQ2\n・Can I take a rain check? ＝ また今度にしてもいい？\n・I'll take a rain check on dinner. ＝ 夕食はまた今度にするよ\n・Can I take a rain check? ＝ また今度にしてもいい？\nQ3\n・skeptic ＝ 懐疑派・疑う人　例: She's a skeptic, but she listens.（彼女は疑い深いが話は聞く）\n・cynic ＝ 人間不信の人・皮肉屋　例: Don't be such a cynic.（そんなに人間不信にならないで）\n・He's a skeptic, not a cynic. ＝ 彼は皮肉屋ではなく懐疑派だ\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "finagle",
+    "Can I take a rain check?",
+    "skeptic",
+    "cynic"
+  ],
+  "script": "0039-quiz-gen-20261107-007.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "palette": "coral",
+    "motif": "stripes"
+  }
+}
