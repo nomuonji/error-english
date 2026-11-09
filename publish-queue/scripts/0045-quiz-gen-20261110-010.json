@@ -1,0 +1,95 @@
+{
+  "id": "quiz-gen-20261110-010",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ schlep・Let's give her the benefit of the doubt・knackered",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-schlep",
+      "word": "schlep",
+      "pos": "動詞",
+      "ja": "重い物を苦労して運ぶ",
+      "examples": [
+        {
+          "en": [
+            "I had to schlep my bags up the stairs."
+          ],
+          "ja": [
+            "重い荷物を苦労して階段の上まで運ばなければならなかった"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "I had to ___ my bags upstairs.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "I had to schlep my bags upstairs.",
+        "answerJa": "私は荷物を苦労して二階へ運ばなければならなかった"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-give-someone-the-benefit-of-the-doubt",
+      "jp": "疑わずに信じる",
+      "answer": {
+        "en": "Let's give her the benefit of the doubt.",
+        "ja": "彼女のことは疑わずに信じよう"
+      },
+      "emphasis": [
+        "benefit of the doubt"
+      ],
+      "examples": [
+        {
+          "en": [
+            "I gave him the benefit of the doubt."
+          ],
+          "ja": [
+            "彼を疑わずに信じた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "彼女のことは疑わずに信じよう",
+          "英語で言ってみて"
+        ],
+        "answer": "Let's give her the benefit of the doubt.",
+        "answerJa": "彼女のことは疑わずに信じよう"
+      }
+    },
+    {
+      "pattern": "upgrade",
+      "id": "en-upgrade-knackered",
+      "basic": "very tired",
+      "word": "knackered",
+      "ja": "へとへとに疲れた",
+      "hookLines": [
+        {
+          "cap": "すごく疲れた = very tired"
+        }
+      ],
+      "examples": [
+        {
+          "en": [
+            "I'm absolutely knackered after work."
+          ],
+          "ja": [
+            "仕事の後はへとへとだ"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "仕事の後で、へとへとに疲れた",
+          "英語で言ってみて"
+        ],
+        "answer": "I'm absolutely knackered after work.",
+        "answerJa": "仕事の後でへとへとに疲れた"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

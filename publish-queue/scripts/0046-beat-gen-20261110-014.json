@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261110-014",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ faze / tout / furtive ほか【音ハメ英単語 #14】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "faze",
+      "ipa": "/feɪz/",
+      "pos": "動",
+      "ja": "動じさせる",
+      "ex": "The heckling didn't *faze* her at all.",
+      "exJa": "野次にも全く動じなかった。"
+    },
+    {
+      "w": "tout",
+      "ipa": "/taʊt/",
+      "pos": "動",
+      "ja": "売り込む",
+      "ex": "The company *touts* the app as a game changer.",
+      "exJa": "会社はアプリを画期的だと宣伝する。"
+    },
+    {
+      "w": "furtive",
+      "ipa": "/ˈfɝːtɪv/",
+      "pos": "形",
+      "ja": "こそこそした",
+      "ex": "She gave him a *furtive* glance.",
+      "exJa": "彼女は彼をこっそり一瞥した。"
+    },
+    {
+      "w": "tenuous",
+      "ipa": "/ˈtenjuəs/",
+      "pos": "形",
+      "ja": "希薄な",
+      "ex": "Their claim has a *tenuous* link to the facts.",
+      "exJa": "その主張は事実とほとんど結びつかない。"
+    },
+    {
+      "w": "snag",
+      "ipa": "/snæɡ/",
+      "pos": "名",
+      "ja": "小さな障害",
+      "ex": "We hit a *snag* with the booking.",
+      "exJa": "予約でちょっとした問題が起きた。"
+    },
+    {
+      "w": "backlog",
+      "ipa": "/ˈbæklɔːɡ/",
+      "pos": "名",
+      "ja": "未処理の山",
+      "ex": "The team is working through a *backlog* of tickets.",
+      "exJa": "チームは未処理のチケットを片付けている。"
+    },
+    {
+      "w": "promptly",
+      "ipa": "/ˈprɑːmptli/",
+      "pos": "副",
+      "ja": "すぐに",
+      "ex": "She *promptly* apologized for the mistake.",
+      "exJa": "彼女はすぐに間違いを謝った。"
+    },
+    {
+      "w": "allegedly",
+      "ipa": "/əˈledʒɪdli/",
+      "pos": "副",
+      "ja": "伝えられるところでは",
+      "ex": "He *allegedly* lied to the board.",
+      "exJa": "彼は取締役会に嘘をついたとされる。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
