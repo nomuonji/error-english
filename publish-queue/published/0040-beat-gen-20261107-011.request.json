@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "843a863235a18dc182d42c1151e9414eb6135259",
+  "assetName": "beat-gen-20261107-011.mp4",
+  "sha256": "ee5342fc045f2ff8eba05709b44cae8633388dad87c25b2e0390f28a84cba5eb",
+  "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "bemoan",
+    "grapple",
+    "stilted",
+    "tepid",
+    "gist",
+    "rift",
+    "outright",
+    "decidedly"
+  ],
+  "script": "0040-beat-gen-20261107-011.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "galaxy",
+    "palette": "ocean",
+    "jpFont": "Dela Gothic One"
+  }
+}
