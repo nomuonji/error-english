@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "2d1e1e3145489cade55049f75376937fd3caae06",
+  "assetName": "quiz-gen-20261108-008.mp4",
+  "sha256": "f863cd725ab553d2f7f08db184ac37f752e373eb6fd8c0e75bb2a68baf2473c2",
+  "title": "英語クイズ3問、何問わかる？ hubris・Let's cut to the chase・comprise / compose【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・hubris（名詞）＝ 傲慢・過信\n・His *hubris* brought down the whole team. ＝ 彼の傲慢さがチームを崩壊させた\n・His hubris cost him everything. ＝ 彼の傲慢さが全てを奪った\nQ2\n・Let's cut to the chase. ＝ 本題に入ろう\n・Let's *cut to the chase* and decide. ＝ 本題に入って決めよう\n・Let's cut to the chase. ＝ 本題に入ろう\nQ3\n・comprise ＝ 〜から成る　例: The team *comprises* five members.（チームは5人から成る）\n・compose ＝ 〜を構成する　例: Five members *compose* the team.（5人がチームを構成する）\n・The team comprises five members. ＝ チームは5人から成る\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "hubris",
+    "Let's cut to the chase.",
+    "comprise",
+    "compose"
+  ],
+  "script": "0041-quiz-gen-20261108-008.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "palette": "lilac",
+    "motif": "rings"
+  }
+}
