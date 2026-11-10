@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "bd46649e3d9d0b2dd4c4ddf34462fb4b2eddd16f",
+  "assetName": "beat-gen-20261108-012.mp4",
+  "sha256": "1f6a70a2e887505357372c92b0a9fdd53f15b022c2f148578313724048823d67",
+  "title": "英検1級の単語、何個わかる？ bicker / eavesdrop / leery ほか【音ハメ英単語 #12】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bicker /ˈbɪkər/（動）＝ 口論する\n  They bicker over small things.（彼らは些細なことで口論する。）\n・eavesdrop /ˈiːvzdrɑːp/（動）＝ 盗み聞きする\n  Don't eavesdrop on their conversation.（彼らの会話を盗み聞きしないで。）\n・leery /ˈlɪri/（形）＝ 疑い深い\n  I'm leery of online deals.（私はネット取引には警戒している。）\n・stodgy /ˈstɑːdʒi/（形）＝ 古臭い\n  The club has a stodgy image.（そのクラブは古臭い印象だ。）\n・quandary /ˈkwɑːndəri/（名）＝ 困惑\n  She's in a quandary about the offer.（彼女はその申し出について困惑している。）\n・perk /pɝːk/（名）＝ 特典\n  Free coffee is a nice perk.（無料コーヒーは嬉しい特典だ。）\n・oddly /ˈɑːdli/（副）＝ 奇妙に\n  He, oddly, refused the free meal.（奇妙なことに、彼は無料の食事を断った。）\n・admittedly /ədˈmɪtɪdli/（副）＝ 確かに\n  He, admittedly, lied to us.（確かに、彼は私たちに嘘をついた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "bicker",
+    "eavesdrop",
+    "leery",
+    "stodgy",
+    "quandary",
+    "perk",
+    "oddly",
+    "admittedly"
+  ],
+  "script": "0042-beat-gen-20261108-012.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "scene": "core",
+    "palette": "ember",
+    "jpFont": "NotoJP"
+  }
+}
