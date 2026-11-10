@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261111-015",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ fathom / savor / innocuous ほか【音ハメ英単語 #15】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "fathom",
+      "ipa": "/ˈfæðəm/",
+      "pos": "動",
+      "ja": "理解する",
+      "ex": "I can't *fathom* why he'd lie about that.",
+      "exJa": "なぜ彼がそんな嘘をついたのか理解できない。"
+    },
+    {
+      "w": "savor",
+      "ipa": "/ˈseɪvər/",
+      "pos": "動",
+      "ja": "味わう",
+      "ex": "Take time to *savor* this warm bread.",
+      "exJa": "この温かいパンをゆっくり味わって。"
+    },
+    {
+      "w": "innocuous",
+      "ipa": "/ɪˈnɑːkjuəs/",
+      "pos": "形",
+      "ja": "無害な",
+      "ex": "It was an *innocuous* joke, not an insult.",
+      "exJa": "それは侮辱ではなく無害な冗談だった。"
+    },
+    {
+      "w": "outlandish",
+      "ipa": "/aʊtˈlændɪʃ/",
+      "pos": "形",
+      "ja": "奇妙な",
+      "ex": "He wore an *outlandish* hat to the party.",
+      "exJa": "彼はパーティーに奇妙な帽子をかぶって行った。"
+    },
+    {
+      "w": "stigma",
+      "ipa": "/ˈstɪɡmə/",
+      "pos": "名",
+      "ja": "偏見",
+      "ex": "There's still a *stigma* around therapy.",
+      "exJa": "セラピーにはまだ偏見がある。"
+    },
+    {
+      "w": "caveat",
+      "ipa": "/ˈkæviɑːt/",
+      "pos": "名",
+      "ja": "注意事項",
+      "ex": "One *caveat*: the tickets are nonrefundable.",
+      "exJa": "注意点が一つ：チケットは返金不可です。"
+    },
+    {
+      "w": "invariably",
+      "ipa": "/ɪnˈveriəbli/",
+      "pos": "副",
+      "ja": "必ず",
+      "ex": "She *invariably* arrives ten minutes early.",
+      "exJa": "彼女は必ず10分早く着く。"
+    },
+    {
+      "w": "ostensibly",
+      "ipa": "/ɑːˈstensəbli/",
+      "pos": "副",
+      "ja": "表向きは",
+      "ex": "He *ostensibly* quit but still runs the team.",
+      "exJa": "彼は表向きは辞めたが、まだチームを仕切っている。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

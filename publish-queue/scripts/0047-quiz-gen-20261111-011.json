@@ -1,0 +1,98 @@
+{
+  "id": "quiz-gen-20261111-011",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ brouhaha・Let's call it a day・peckish",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-brouhaha",
+      "word": "brouhaha",
+      "pos": "名詞",
+      "ipa": "/ˈbruːhɑːhɑː/",
+      "ja": "大騒ぎ",
+      "examples": [
+        {
+          "en": [
+            "There was a brouhaha over the new policy."
+          ],
+          "ja": [
+            "新しい政策で大騒ぎになった"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "The meeting caused a huge ___.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "The meeting caused a huge brouhaha.",
+        "answerJa": "その会議は大騒ぎを引き起こした"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-call-it-a-day",
+      "jp": "今日はもう終わりにする",
+      "answer": {
+        "en": "Let's call it a day.",
+        "ja": "今日はもう終わりにしよう"
+      },
+      "emphasis": [
+        "call it a day"
+      ],
+      "examples": [
+        {
+          "en": [
+            "It's late. Let's call it a day."
+          ],
+          "ja": [
+            "遅いし、今日はもう終わりにしよう"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "もう遅いから、今日は終わりにしよう",
+          "英語で言ってみて"
+        ],
+        "answer": "It's late, so let's call it a day.",
+        "answerJa": "遅いから今日はもう終わりにしよう"
+      }
+    },
+    {
+      "pattern": "upgrade",
+      "id": "en-upgrade-peckish",
+      "basic": "a little hungry",
+      "word": "peckish",
+      "pos": "形容詞",
+      "ipa": "/ˈpekɪʃ/",
+      "ja": "小腹がすいた",
+      "hookLines": [
+        {
+          "cap": "a little hungry = peckish"
+        }
+      ],
+      "examples": [
+        {
+          "en": [
+            "I'm a bit peckish."
+          ],
+          "ja": [
+            "ちょっと小腹がすいた"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "ちょっと小腹がすいた",
+          "英語で言ってみて"
+        ],
+        "answer": "I'm a bit peckish.",
+        "answerJa": "ちょっと小腹がすいた"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
