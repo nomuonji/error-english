@@ -1,0 +1,96 @@
+{
+  "id": "quiz-gen-20261112-012",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ aplomb・I can't be bothered・drained",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-aplomb",
+      "word": "aplomb",
+      "ipa": "/əˈplɑːm/",
+      "pos": "名詞",
+      "ja": "落ち着きと自信",
+      "examples": [
+        {
+          "en": [
+            "She handled the crisis with aplomb."
+          ],
+          "ja": [
+            "彼女は危機を落ち着いて対処した"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "She handled the crisis with ___.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "aplomb",
+        "answerJa": "落ち着きと自信"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-cant-be-bothered",
+      "jp": "やる気が起きない",
+      "answer": {
+        "en": "I can't be bothered.",
+        "ja": "やる気が起きない"
+      },
+      "emphasis": [
+        "can't be bothered"
+      ],
+      "examples": [
+        {
+          "en": [
+            "I can't be bothered to cook tonight."
+          ],
+          "ja": [
+            "今夜は料理する気が起きない"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "今夜は料理する気が起きない",
+          "英語で言ってみて"
+        ],
+        "answer": "I can't be bothered to cook tonight.",
+        "answerJa": "今夜は料理する気が起きない"
+      }
+    },
+    {
+      "pattern": "upgrade",
+      "id": "en-upgrade-drained",
+      "basic": "very tired",
+      "word": "drained",
+      "ja": "へとへとで",
+      "hookLines": [
+        {
+          "cap": "とても疲れた = very tired"
+        }
+      ],
+      "examples": [
+        {
+          "en": [
+            "I felt drained after the meeting."
+          ],
+          "ja": [
+            "会議の後はへとへとだった"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "会議の後、へとへとだった",
+          "英語で言ってみて"
+        ],
+        "answer": "I felt drained after the meeting.",
+        "answerJa": "会議の後はへとへとだった"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

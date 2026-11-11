@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261112-016",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "budge",
+      "ipa": "/bʌdʒ/",
+      "pos": "動",
+      "ja": "少し動く",
+      "ex": "The door won't *budge* at all.",
+      "exJa": "ドアはびくともしない。"
+    },
+    {
+      "w": "chide",
+      "ipa": "/tʃaɪd/",
+      "pos": "動",
+      "ja": "たしなめる",
+      "ex": "She *chided* him for being late again.",
+      "exJa": "彼女は彼がまた遅刻したのでたしなめた。"
+    },
+    {
+      "w": "curt",
+      "ipa": "/kɝːt/",
+      "pos": "形",
+      "ja": "そっけない",
+      "ex": "His *curt* reply ended the chat.",
+      "exJa": "彼のそっけない返事で会話が終わった。"
+    },
+    {
+      "w": "fickle",
+      "ipa": "/ˈfɪkəl/",
+      "pos": "形",
+      "ja": "気まぐれな",
+      "ex": "Fans can be *fickle* about new bands.",
+      "exJa": "ファンは新しいバンドに対して気まぐれな態度をとりがちだ。"
+    },
+    {
+      "w": "gripe",
+      "ipa": "/ɡraɪp/",
+      "pos": "名",
+      "ja": "不満",
+      "ex": "He always has a *gripe* about the boss.",
+      "exJa": "彼はいつも上司への不満を言う。"
+    },
+    {
+      "w": "ploy",
+      "ipa": "/plɔɪ/",
+      "pos": "名",
+      "ja": "策略",
+      "ex": "The discount was a *ploy* to attract buyers.",
+      "exJa": "その割引は客を引く策略だった。"
+    },
+    {
+      "w": "aptly",
+      "ipa": "/ˈæptli/",
+      "pos": "副",
+      "ja": "適切に",
+      "ex": "She *aptly* named the cat Mischief.",
+      "exJa": "彼女は猫をミスチーフと適切に名付けた。"
+    },
+    {
+      "w": "deftly",
+      "ipa": "/ˈdeftli/",
+      "pos": "副",
+      "ja": "巧みに",
+      "ex": "He *deftly* changed the subject.",
+      "exJa": "彼は巧みに話題を変えた。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
