@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "03863cf60d09ce619be2a606fb58bb7237fc4944",
+  "assetName": "quiz-gen-20261109-009.mp4",
+  "sha256": "9dd4d03a4651c6e36f3b635dc2ac5bd6265a56805ef6a28f70eab195ac4a440a",
+  "title": "英語クイズ3問、何問わかる？ cavalier・It slipped my mind・compliment / complement【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・cavalier（形容詞）＝ 無頓着な\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\nQ2\n・It slipped my mind. ＝ うっかり忘れてた\n・Sorry, it slipped my mind. ＝ ごめん、うっかり忘れてた\n・It slipped my mind. ＝ うっかり忘れてた\nQ3\n・compliment ＝ 褒め言葉　例: She took the compliment well.（彼女は褒め言葉を素直に受け取った）\n・complement ＝ 補完する、引き立てる　例: The wine complements the meal.（そのワインは料理を引き立てる）\n・That scarf complements your outfit. ＝ そのスカーフは服を引き立てる\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "cavalier",
+    "It slipped my mind.",
+    "compliment",
+    "complement"
+  ],
+  "script": "0043-quiz-gen-20261109-009.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "palette": "lemon",
+    "motif": "blocks"
+  }
+}
