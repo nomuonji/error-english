@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "e46f2fc6a32cc7de40c246464936365214e366e8",
+  "assetName": "beat-gen-20261109-013.mp4",
+  "sha256": "5e38c51cf0ac3684618ebd4c97bee27ba1fb97643488a26727af0fc528dd8a78",
+  "title": "英検1級の単語、何個わかる？ mull / lukewarm / grievance ほか【音ハメ英単語 #13】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・mull /mʌl/（動）＝ じっくり考える\n  I need time to mull it over.（じっくり考える時間が必要だ。）\n・lukewarm /ˈluːkwɔːrm/（形）＝ 生ぬるい\n  The coffee's gone lukewarm.（コーヒーがぬるくなった。）\n・grievance /ˈɡriːvəns/（名）＝ 不平不満\n  He filed a grievance with HR.（彼は人事に不満を申し立てた。）\n・sparingly /ˈsperɪŋli/（副）＝ 控えめに\n  Use the hot sauce sparingly.（辛いソースは控えめに。）\n・curb /kɝːb/（動）＝ 抑える\n  We need to curb our spending.（出費を抑える必要がある。）\n・canny /ˈkæni/（形）＝ 抜け目ない\n  She's a canny negotiator.（彼女は抜け目ない交渉者だ。）\n・plight /plaɪt/（名）＝ 苦境\n  The refugees' plight drew attention.（避難民の苦境が注目を集めた。）\n・bluntly /ˈblʌntli/（副）＝ 率直に\n  She bluntly told him to leave.（彼女は彼に出て行けと率直に言った。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "mull",
+    "lukewarm",
+    "grievance",
+    "sparingly",
+    "curb",
+    "canny",
+    "plight",
+    "bluntly"
+  ],
+  "script": "0044-beat-gen-20261109-013.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "scene": "grid",
+    "palette": "candy",
+    "jpFont": "Dela Gothic One"
+  }
+}
