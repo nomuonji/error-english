@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "5e45a41aee0b6177c8e817b868b258b27d1f4278",
+  "assetName": "beat-gen-20261110-014.mp4",
+  "sha256": "2eeec5dc1d026a11dd4376e0f945149712cc50f687fa68cf462ee7211b292b61",
+  "title": "英検1級の単語、何個わかる？ faze / tout / furtive ほか【音ハメ英単語 #14】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・faze /feɪz/（動）＝ 動じさせる\n  The heckling didn't faze her at all.（野次にも全く動じなかった。）\n・tout /taʊt/（動）＝ 売り込む\n  The company touts the app as a game changer.（会社はアプリを画期的だと宣伝する。）\n・furtive /ˈfɝːtɪv/（形）＝ こそこそした\n  She gave him a furtive glance.（彼女は彼をこっそり一瞥した。）\n・tenuous /ˈtenjuəs/（形）＝ 希薄な\n  Their claim has a tenuous link to the facts.（その主張は事実とほとんど結びつかない。）\n・snag /snæɡ/（名）＝ 小さな障害\n  We hit a snag with the booking.（予約でちょっとした問題が起きた。）\n・backlog /ˈbæklɔːɡ/（名）＝ 未処理の山\n  The team is working through a backlog of tickets.（チームは未処理のチケットを片付けている。）\n・promptly /ˈprɑːmptli/（副）＝ すぐに\n  She promptly apologized for the mistake.（彼女はすぐに間違いを謝った。）\n・allegedly /əˈledʒɪdli/（副）＝ 伝えられるところでは\n  He allegedly lied to the board.（彼は取締役会に嘘をついたとされる。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "faze",
+    "tout",
+    "furtive",
+    "tenuous",
+    "snag",
+    "backlog",
+    "promptly",
+    "allegedly"
+  ],
+  "script": "0046-beat-gen-20261110-014.json",
+  "pattern": "beat",
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "city",
+    "palette": "ice",
+    "jpFont": "NotoJP"
+  }
+}
