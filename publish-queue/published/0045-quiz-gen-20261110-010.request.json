@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "03e9915ba25a0ee6b70e8f52fd2cf7c8f9a1af01",
+  "assetName": "quiz-gen-20261110-010.mp4",
+  "sha256": "bea5904698f37b818f644f5b5680de927a74e0d09fc07113d694300477287f2c",
+  "title": "英語クイズ3問、何問わかる？ schlep・Let's give her the benefit of the doubt・knackered【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・schlep（動詞）＝ 重い物を苦労して運ぶ\n・I had to schlep my bags up the stairs. ＝ 重い荷物を苦労して階段の上まで運ばなければならなかった\n・I had to schlep my bags upstairs. ＝ 私は荷物を苦労して二階へ運ばなければならなかった\nQ2\n・Let's give her the benefit of the doubt. ＝ 彼女のことは疑わずに信じよう\n・I gave him the benefit of the doubt. ＝ 彼を疑わずに信じた\n・Let's give her the benefit of the doubt. ＝ 彼女のことは疑わずに信じよう\nQ3\n・very tired → knackered ＝ へとへとに疲れた\n・I'm absolutely knackered after work. ＝ 仕事の後はへとへとだ\n・I'm absolutely knackered after work. ＝ 仕事の後でへとへとに疲れた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "schlep",
+    "Let's give her the benefit of the doubt.",
+    "knackered",
+    "very tired"
+  ],
+  "script": "0045-quiz-gen-20261110-010.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "palette": "mint",
+    "motif": "circles"
+  }
+}
