@@ -1,0 +1,96 @@
+{
+  "id": "quiz-gen-20261113-013",
+  "pattern": "quiz",
+  "level": "英検1級",
+  "title": "英語クイズ3問、何問わかる？ snide・I have a lot on my plate・spooked",
+  "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。",
+  "items": [
+    {
+      "pattern": "word",
+      "id": "en-word-snide",
+      "word": "snide",
+      "pos": "形容詞",
+      "ja": "嫌味な",
+      "examples": [
+        {
+          "en": [
+            "He made a *snide* remark about my car."
+          ],
+          "ja": [
+            "私の車について嫌味を言った"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "That was a ___ remark.",
+          "空欄に入る単語は？"
+        ],
+        "answer": "That was a snide remark.",
+        "answerJa": "それは嫌味な一言だった"
+      }
+    },
+    {
+      "pattern": "phrase",
+      "id": "en-phrase-a-lot-on-my-plate",
+      "jp": "やることが山ほどある",
+      "answer": {
+        "en": "I have a lot on my plate.",
+        "ja": "やることが山ほどある"
+      },
+      "emphasis": [
+        "a lot on my plate"
+      ],
+      "examples": [
+        {
+          "en": [
+            "She has *a lot on her plate* right now."
+          ],
+          "ja": [
+            "彼女は今、やることが山ほどある"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "今週はやることが山ほどある",
+          "英語で言ってみて"
+        ],
+        "answer": "I have a lot on my plate this week.",
+        "answerJa": "今週はやることが山ほどある"
+      }
+    },
+    {
+      "pattern": "upgrade",
+      "id": "en-upgrade-spooked",
+      "basic": "scared",
+      "word": "spooked",
+      "pos": "形容詞",
+      "ja": "怖気づいた",
+      "hookLines": [
+        {
+          "cap": "scared を一段アップ"
+        }
+      ],
+      "examples": [
+        {
+          "en": [
+            "I got *spooked* by a sudden noise."
+          ],
+          "ja": [
+            "突然の物音にびっくりした"
+          ]
+        }
+      ],
+      "quiz": {
+        "prompt": [
+          "突然の物音に怖気づいた",
+          "英語で言ってみて"
+        ],
+        "answer": "I got spooked by a sudden noise.",
+        "answerJa": "突然の物音に怖気づいた"
+      }
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}

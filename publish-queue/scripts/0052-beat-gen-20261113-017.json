@@ -1,0 +1,74 @@
+{
+  "id": "beat-gen-20261113-017",
+  "pattern": "beat",
+  "level": "英検1級",
+  "title": "英検1級の単語、何個わかる？ galvanize / curtail / sporadic ほか【音ハメ英単語 #17】",
+  "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。",
+  "words": [
+    {
+      "w": "galvanize",
+      "ipa": "/ˈɡælvənaɪz/",
+      "pos": "動",
+      "ja": "奮起させる",
+      "ex": "The speech helped *galvanize* the community.",
+      "exJa": "その演説は地域社会を奮起させるのに役立った。"
+    },
+    {
+      "w": "curtail",
+      "ipa": "/kɜːrˈteɪl/",
+      "pos": "動",
+      "ja": "切り詰める",
+      "ex": "We must *curtail* spending to save the project.",
+      "exJa": "プロジェクトを救うため支出を切り詰めねば。"
+    },
+    {
+      "w": "sporadic",
+      "ipa": "/spəˈrædɪk/",
+      "pos": "形",
+      "ja": "散発的な",
+      "ex": "Her *sporadic* efforts yielded little progress.",
+      "exJa": "彼女の散発的な努力は成果が乏しかった。"
+    },
+    {
+      "w": "haphazard",
+      "ipa": "/ˌhæpˈhæzərd/",
+      "pos": "形",
+      "ja": "場当たり的な",
+      "ex": "The *haphazard* filing system wastes our time.",
+      "exJa": "場当たり的な書類整理は時間の無駄だ。"
+    },
+    {
+      "w": "pitfall",
+      "ipa": "/ˈpɪtfɔːl/",
+      "pos": "名",
+      "ja": "落とし穴",
+      "ex": "One major *pitfall* is overlooking hidden fees.",
+      "exJa": "大きな落とし穴の一つは、隠れた手数料を見逃すことだ。"
+    },
+    {
+      "w": "ordeal",
+      "ipa": "/ɔːrˈdiːl/",
+      "pos": "名",
+      "ja": "試練",
+      "ex": "The whole *ordeal* left her exhausted for weeks.",
+      "exJa": "その試練で彼女は何週間も疲弊した。"
+    },
+    {
+      "w": "inadvertently",
+      "ipa": "/ˌɪnədˈvɜːrtəntli/",
+      "pos": "副",
+      "ja": "うっかりと",
+      "ex": "He *inadvertently* deleted the entire folder.",
+      "exJa": "彼はうっかりフォルダ全体を削除した。"
+    },
+    {
+      "w": "vehemently",
+      "ipa": "/ˈviːəməntli/",
+      "pos": "副",
+      "ja": "激しく",
+      "ex": "She *vehemently* denied the accusation in court.",
+      "exJa": "彼女は法廷でその告発を激しく否定した。"
+    }
+  ],
+  "generatedBy": "deepseek-v4.1-flash"
+}
