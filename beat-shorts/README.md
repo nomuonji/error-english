@@ -39,6 +39,23 @@ timer drains over 3 beats (ticks) → card flips to the answer, pronounced → e
 unchanged (`examples[].en/ja`, `quiz.prompt/answer/answerJa`, `meaning[].cap`, ...).
 `beat` specs: see `publish-queue/scripts/*-beat-*.json` (`*word*` marks the highlight).
 
+## AI-directed storyboard (`pattern: "story"`)
+
+The editorial agent may create a full sequence rather than filling a fixed lesson template.
+Each `storyboard[]` event controls its own `at` / `until` timing, plain-text copy, upper/center/lower
+position, small/medium/large/huge type size, left/center alignment, animation, highlighted phrase,
+Kokoro voice cue and speed, sound effect, flash, accent, and mascot face. Events may use different
+orders and durations; they do not have to follow a quiz or recap sequence.
+
+The renderer deliberately accepts only these whitelisted primitives. Story copy is escaped as
+text; generated HTML, CSS, JavaScript, arbitrary tags, external scripts, and custom assets are not
+executed. The same spec gate still checks duration (42-240 units), event count, overlaps, copy length,
+voice, speed, timing offsets, and allowed effects. `learningTargets` enter the same content ledger
+as the legacy word/phrase targets. Every experimental format carries a `formatId` and
+`experimentId`, which are preserved with published-video metadata for later Analytics comparisons.
+
+See `format-lab/story-example.json` for a complete example.
+
 Times in a template are units of ~0.48 s; the engine snaps each unit to the nearest beat of
 the chosen track, so a template works at 127 BPM and at 161 BPM.
 
