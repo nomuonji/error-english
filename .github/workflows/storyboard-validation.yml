@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate storyboard schema and ledger integration
-        run: python3 -m unittest tests/test_storyboard_format.py -v
+        run: python3 -m unittest discover -s tests -p 'test_storyboard_format.py' -v
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
