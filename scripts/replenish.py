@@ -150,9 +150,9 @@ def draft(kind, used, feedback="", analytics_feedback=None):
             "limitations": analytics_feedback.get("limitations", []),
         }
         analytics_context = (
-            "\\n\\n## YouTube実測フィードバック（最新スナップショット由来）\\n"
+            "\n\n## YouTube実測フィードバック（最新スナップショット由来）\n"
             + json.dumps(compact_feedback, ensure_ascii=False)
-            + "\\n\\n反映ルール: 既存の動画パターン・JSONスキーマ・英語の正確さは維持する。"
+            + "\n\n反映ルール: 既存の動画パターン・JSONスキーマ・英語の正確さは維持する。"
             "観測に根拠のある実験だけ、今回の台本で実行可能な範囲に限って反映する。"
             "動画構成テンプレートの改修が必要な提案は勝手に実装せず、指示や内容を変えない。"
             "同じ実験を何度も繰り返さず、feedback に示された比較条件を守る。"
@@ -163,6 +163,7 @@ def draft(kind, used, feedback="", analytics_feedback=None):
             "英語クイズ（3問）の台本を作ってください。1問目は word、2・3問目は phrase / upgrade / vs から異なる2つ。必須項目: word は word・pos・ja・examples・quiz、phrase は jp（日本語の言いたいこと）・answer・examples・quiz、upgrade は basic・word・ja・examples・quiz、vs は a・b・rule・quiz。id は en-<pattern>-<見出し語> の英小文字とハイフン。例は形の見本で、中身は使わないこと。")
     msgs = [{"role": "system", "content": "あなたは英語教材の編集者です。正確さを最優先します。"},
             {"role": "user", "content": f"{task}\n\n{RULES}\n\n使用済み（使わない）:\n{', '.join(used)}\n\nJSONの形:\n{schema}"
+             + analytics_context
              + (f"\n\n前回の案は次の理由で不合格でした。直して全体を出し直してください:\n{feedback}" if feedback else "")}]
     return parse_json(chat(msgs))
 
