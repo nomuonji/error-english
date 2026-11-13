@@ -160,11 +160,9 @@ def clean_and_validate(snapshot, raw):
             "implementation": experiment.get("implementation") if experiment.get("implementation") in ("台本内で試せる", "テンプレート改修が必要") else "台本内で試せる",
         })
 
-    if not valid_findings:
-        raise ValueError("No findings had verifiable evidence coordinates; refusing to save unsupported analysis")
-
     return {
         "schemaVersion": 1,
+        "status": "ready" if valid_findings else "insufficient_data",
         "generatedAt": utc_now().isoformat(),
         "analysisModel": MODEL,
         "basedOnCollectedAt": snapshot["collectedAt"],
