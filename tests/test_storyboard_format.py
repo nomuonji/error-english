@@ -33,6 +33,16 @@ class StoryboardFormatTests(unittest.TestCase):
         spec["storyboard"][2]["speech"]["voice"] = "unknown-voice"
         self.assertTrue(any("unsupported voice" in p for p in beat_to_request.check_spec(spec)))
 
+    def test_malformed_learning_target_is_rejected_without_exception(self):
+        spec = json.loads(json.dumps(self.spec))
+        spec["learningTargets"][0] = "not-an-object"
+        self.assertTrue(any("must be an object" in p for p in beat_to_request.check_spec(spec)))
+
+    def test_story_requires_experiment_metadata(self):
+        spec = json.loads(json.dumps(self.spec))
+        spec.pop("experimentId")
+        self.assertTrue(any("valid experimentId" in p for p in beat_to_request.check_spec(spec)))
+
 
 if __name__ == "__main__":
     unittest.main()
