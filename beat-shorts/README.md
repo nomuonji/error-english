@@ -15,9 +15,9 @@ Animation Factory is not used any more (owner decision 2026-11-01).
 | type | Archivo Black + Noto/Dela Gothic | Nunito + M PLUS Rounded |
 | music | lexicon-drop, error-bgm | error-bgm |
 
-The channel posts both kinds alternately; keeping them visibly different (and each look used
-thinly, below) is what keeps the channel from reading as one template repeated.
-The mascot appears only on the closing card, fading in where it stands.
+The existing queue historically alternated between these skins. The editorial agent is no
+longer required to alternate formats: it chooses the lesson structure from measured results and
+the learning objective. The mascot appears only on the closing card in the legacy templates.
 
 ## quiz (card skin)
 
