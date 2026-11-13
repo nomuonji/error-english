@@ -56,6 +56,9 @@ function readPublishedVideos(): Array<{
   title?: string;
   description?: string;
   assetName?: string;
+  pattern?: string;
+  scriptId?: string;
+  summary?: string;
 }> {
   const queueDir = path.resolve('publish-queue/published');
   const logFile = path.join(queueDir, 'log.json');
@@ -76,6 +79,17 @@ function readPublishedVideos(): Array<{
     .filter((entry) => typeof entry.youtubeVideoId === 'string' && typeof entry.publishedAt === 'string')
     .map((entry) => {
       const request = requestByFile.get(entry.file) ?? {};
+      const scriptFile = typeof request.script === 'string'
+        ? request.script.replace(/\.json$/, '.script.json')
+        : undefined;
+      let script: any = {};
+      if (scriptFile) {
+        try {
+          script = JSON.parse(fs.readFileSync(path.join(queueDir, scriptFile), 'utf8'));
+        } catch {
+          // Historical entries may predate the structured script archive.
+        }
+      }
       return {
         videoId: entry.youtubeVideoId,
         publishedAt: entry.publishedAt,
@@ -83,6 +97,9 @@ function readPublishedVideos(): Array<{
         title: typeof request.title === 'string' ? request.title : undefined,
         description: typeof request.description === 'string' ? request.description : undefined,
         assetName: typeof entry.assetName === 'string' ? entry.assetName : undefined,
+        pattern: typeof request.pattern === 'string' ? request.pattern : (typeof script.pattern === 'string' ? script.pattern : undefined),
+        scriptId: typeof script.id === 'string' ? script.id : undefined,
+        summary: typeof script.summary === 'string' ? script.summary : undefined,
       };
     })
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
