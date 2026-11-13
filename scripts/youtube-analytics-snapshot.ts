@@ -57,6 +57,8 @@ function readPublishedVideos(): Array<{
   description?: string;
   assetName?: string;
   pattern?: string;
+  formatId?: string;
+  experimentId?: string;
   scriptId?: string;
   summary?: string;
 }> {
@@ -98,6 +100,8 @@ function readPublishedVideos(): Array<{
         description: typeof request.description === 'string' ? request.description : undefined,
         assetName: typeof entry.assetName === 'string' ? entry.assetName : undefined,
         pattern: typeof request.pattern === 'string' ? request.pattern : (typeof script.pattern === 'string' ? script.pattern : undefined),
+        formatId: typeof request.formatId === 'string' ? request.formatId : (typeof script.formatId === 'string' ? script.formatId : undefined),
+        experimentId: typeof request.experimentId === 'string' ? request.experimentId : (typeof script.experimentId === 'string' ? script.experimentId : undefined),
         scriptId: typeof script.id === 'string' ? script.id : undefined,
         summary: typeof script.summary === 'string' ? script.summary : undefined,
       };
