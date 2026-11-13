@@ -97,6 +97,15 @@ await document.fonts.ready;
 await Promise.all([...document.fonts].map(f => f.load().catch(() => {})));
 // shrink one-line slots that would overflow the safe width
 for (const it of items) {
+  if (it.slot === "story") {
+    const maxWidth = 900, maxHeight = (it.position === "upper" ? 390 : it.position === "center" ? 520 : 460);
+    let fs = parseFloat(getComputedStyle(it.el).fontSize);
+    while ((it.el.scrollWidth > maxWidth || it.el.scrollHeight > maxHeight) && fs > 38) {
+      fs -= 2;
+      it.el.style.fontSize = fs + "px";
+    }
+    continue;
+  }
   if (!["hero", "heroA", "heroB", "mean", "cue", "count"].includes(it.slot)) continue;
   it.el.style.whiteSpace = "nowrap";
   const fs = parseFloat(getComputedStyle(it.el).fontSize), r = document.createRange(); r.selectNodeContents(it.el);
