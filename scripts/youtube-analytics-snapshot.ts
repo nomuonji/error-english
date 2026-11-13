@@ -153,7 +153,6 @@ async function main() {
         dimensions: 'elapsedVideoTimeRatio',
         metrics: 'audienceWatchRatio,relativeRetentionPerformance',
         filters: 'video==' + videoId,
-        sort: 'elapsedVideoTimeRatio',
         maxResults: 200,
       });
       retention.push({
