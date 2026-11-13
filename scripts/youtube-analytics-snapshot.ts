@@ -79,7 +79,7 @@ function readPublishedVideos(): Array<{
     .filter((entry) => typeof entry.youtubeVideoId === 'string' && typeof entry.publishedAt === 'string')
     .map((entry) => {
       const request = requestByFile.get(entry.file) ?? {};
-      const scriptFile = typeof request.script === 'string'
+      const scriptFile = typeof request.script === 'string' && /^[A-Za-z0-9._-]+\.json$/.test(request.script)
         ? request.script.replace(/\.json$/, '.script.json')
         : undefined;
       let script: any = {};
@@ -149,7 +149,9 @@ async function main() {
   const channel = rowsFrom(channelResponse);
   const videoReport = rowsFrom(videoResponse);
   const publishedVideos = readPublishedVideos();
-  const metadataById = new Map(publishedVideos.map((video) => [video.videoId, video]));
+  const metadataById = new Map<string, (typeof publishedVideos)[number]>(
+    publishedVideos.map((video) => [video.videoId, video] as const),
+  );
 
   const topVideoIds = videoReport.rows
     .map((row) => String(row.video ?? ''))
