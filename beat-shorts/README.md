@@ -96,10 +96,8 @@ placate = placated, "I'm on tenterhooks" = "on tenterhooks"). A deliberate revie
 words in `"repeatOk": [...]`. `python3 scripts/content_ledger.py list` prints the ledger for
 whoever writes the next scripts.
 
-## Automatic scripts (OpenCode Go)
+## Automatic scripts (My Portal)
 
-`.github/workflows/replenish-queue.yml` (00:07 JST daily) runs `scripts/replenish.py`: when fewer
-than 6 scripts are queued it drafts new ones (beat and quiz alternately) with OpenCode Go
-(`deepseek-v4.1-flash`, override with the `OPENCODE_GO_MODEL` repository variable), has a second
-call check meanings / IPA / examples, and commits only drafts that pass the render gate and the
-content ledger. Secret: `OPENCODE_GO_API_KEY`. `dry_run=true` prints one draft without committing.
+The daily My Portal routine job `dopaeigo-editorial-director` reads YouTube Analytics feedback and replenishes the queue directly through the GitHub connection. It chooses between existing lesson patterns and the agent-directed `story` storyboard format instead of alternating beat/quiz mechanically. GitHub Actions no longer calls an external LLM API for analysis or script generation.
+
+The agent must pass each script through the same `scripts/beat_to_request.py check` contract and `scripts/content_ledger.py` duplicate check before adding it. Storyboard formats are tested and rendered as preview frames by `.github/workflows/storyboard-validation.yml` on PRs.
