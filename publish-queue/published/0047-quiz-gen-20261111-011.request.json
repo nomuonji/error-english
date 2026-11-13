@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "dfe2317d1e60b2fb084d930544537c3346293000",
+  "assetName": "quiz-gen-20261111-011.mp4",
+  "sha256": "f3856f419362cba8b28bff0b4af13f6e3c0985e30d597f7ca6c8f8b9344bab74",
+  "title": "英語クイズ3問、何問わかる？ brouhaha・Let's call it a day・peckish【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・brouhaha（名詞）＝ 大騒ぎ\n・There was a brouhaha over the new policy. ＝ 新しい政策で大騒ぎになった\n・The meeting caused a huge brouhaha. ＝ その会議は大騒ぎを引き起こした\nQ2\n・Let's call it a day. ＝ 今日はもう終わりにしよう\n・It's late. Let's call it a day. ＝ 遅いし、今日はもう終わりにしよう\n・It's late, so let's call it a day. ＝ 遅いから今日はもう終わりにしよう\nQ3\n・a little hungry → peckish ＝ 小腹がすいた\n・I'm a bit peckish. ＝ ちょっと小腹がすいた\n・I'm a bit peckish. ＝ ちょっと小腹がすいた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "brouhaha",
+    "Let's call it a day.",
+    "peckish",
+    "a little hungry"
+  ],
+  "script": "0047-quiz-gen-20261111-011.json",
+  "pattern": "quiz",
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "palette": "sky",
+    "motif": "dots"
+  }
+}

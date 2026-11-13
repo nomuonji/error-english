@@ -232,5 +232,13 @@
     "youtubeVideoId": "85tsUYEPn2k",
     "publishedAt": "2026-11-12T18:50:32.051Z",
     "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  },
+  {
+    "file": "0047-quiz-gen-20261111-011.request.json",
+    "assetName": "quiz-gen-20261111-011.mp4",
+    "sha256": "f3856f419362cba8b28bff0b4af13f6e3c0985e30d597f7ca6c8f8b9344bab74",
+    "youtubeVideoId": "W0ZrgOLhue0",
+    "publishedAt": "2026-11-13T10:07:55.819Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]
