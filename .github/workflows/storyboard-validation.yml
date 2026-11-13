@@ -1,0 +1,54 @@
+name: Validate and preview AI-directed storyboards
+
+on:
+  pull_request:
+    paths:
+      - "beat-shorts/**"
+      - "scripts/beat_to_request.py"
+      - "scripts/content_ledger.py"
+      - "format-lab/**"
+      - "tests/test_storyboard_format.py"
+      - ".github/workflows/storyboard-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate storyboard schema and ledger integration
+        run: python3 -m unittest tests/test_storyboard_format.py -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: beat-shorts/package-lock.json
+      - name: Check JavaScript module syntax
+        run: |
+          node --input-type=module --check < beat-shorts/templates.js
+          node --input-type=module --check < beat-shorts/engine.js
+          node --check beat-shorts/render.js
+      - name: Install renderer dependencies
+        working-directory: beat-shorts
+        run: |
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Render storyboard preview frames (no YouTube upload)
+        working-directory: beat-shorts
+        run: |
+          mkdir -p "$RUNNER_TEMP/story-preview"
+          node render.js ../format-lab/story-example.json "$RUNNER_TEMP/story-preview" --preview 0,5,10,15,20,25,30,35,40
+      - name: Keep preview frames for editorial inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: storyboard-preview-${{ github.event.pull_request.number }}
+          path: ${{ runner.temp }}/story-preview/*.jpg
+          if-no-files-found: warn
+          retention-days: 14
