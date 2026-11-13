@@ -78,8 +78,9 @@ const items = S.items.map(it => {
     el.style.left = "80px";
     el.style.right = "80px";
     el.style.display = "flex";
-    el.style.alignItems = "center";
-    el.style.justifyContent = it.align === "left" ? "flex-start" : "center";
+    el.style.flexDirection = "column";
+    el.style.alignItems = it.align === "left" ? "flex-start" : "center";
+    el.style.justifyContent = "center";
     el.style.textAlign = it.align === "left" ? "left" : "center";
     el.style.fontSize = (sizes[it.size] || sizes.large) + "px";
     el.style.whiteSpace = "normal";
