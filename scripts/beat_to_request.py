@@ -202,6 +202,10 @@ def duration(path):
 def study_notes(spec):
     pat = spec["pattern"]
     out = []
+    if pat == "story":
+        for target in spec.get("learningTargets", []):
+            out.append(f"・{target['term']} ＝ {target.get('meaning', '')}")
+        return out
     if pat == "quiz":
         for i, it in enumerate(spec["items"], 1):
             out.append(f"Q{i}")
@@ -262,6 +266,7 @@ def main():
             ([x["a"]["word"], x["b"]["word"]] if x["pattern"] == "vs" else [])
     words = [w["w"] for w in spec["words"]] if pat == "beat" else \
         [t for it in spec["items"] for t in targets(it)] if pat == "quiz" else \
+        [target["term"] for target in spec.get("learningTargets", [])] if pat == "story" else \
         [spec[k] for k in ("word", "basic") if spec.get(k)] + ([spec["answer"]["en"]] if pat == "phrase" else []) + \
         ([spec["a"]["word"], spec["b"]["word"]] if pat == "vs" else [])
     tags = ["ドパ英語", "英語学習", SERIES[pat], "英単語", "English vocabulary", "advanced English", *words]
@@ -273,7 +278,8 @@ def main():
     req = {"sourceRepo": "nomuonji/error-english (beat-shorts)", "sourceSha": sha,
            "assetName": mp4.name, "sha256": hashlib.sha256(mp4.read_bytes()).hexdigest(),
            "title": title[:100], "description": body[:5000], "categoryId": "27", "tags": tags,
-           "script": name, "pattern": pat, "style": style}
+           "script": name, "pattern": pat, "formatId": spec.get("formatId", f"{pat}-v1"),
+           "experimentId": spec.get("experimentId"), "style": style}
     (Q / "pending" / name.replace(".json", ".request.json")).write_text(
         json.dumps(req, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"request written for {spec['id']}: {sec:.1f}s {lufs} LUFS {mb:.1f} MB style={style}")
