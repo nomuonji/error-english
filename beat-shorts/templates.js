@@ -229,7 +229,7 @@ function story(spec) {
   const s = new Sched();
   for (const event of spec.storyboard) {
     let html = event.highlight?.length ? hl(event.text, event.highlight) : esc(event.text);
-    html = html.replace(/\\r?\\n/g, "<br>");
+    html = html.replace(/\r?\n/g, "<br>");
     s.add("story", html, event.at, event.until, event.animation || "fade");
     Object.assign(s.items[s.items.length - 1], {
       position: event.position || "center",
