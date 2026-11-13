@@ -65,6 +65,27 @@ await Promise.all(Object.values(FACES).map(src => new Promise(r => { const i = n
 const items = S.items.map(it => {
   const el = document.createElement("div");
   el.className = `slot ${it.slot}`;
+  if (it.slot === "story") {
+    const positions = {
+      upper: { top: 340, height: 430 },
+      center: { top: 690, height: 560 },
+      lower: { top: 1040, height: 500 },
+    };
+    const sizes = { small: 46, medium: 62, large: 82, huge: 112 };
+    const p = positions[it.position] || positions.center;
+    el.style.top = p.top + "px";
+    el.style.height = p.height + "px";
+    el.style.left = "80px";
+    el.style.right = "80px";
+    el.style.display = "flex";
+    el.style.flexDirection = "column";
+    el.style.alignItems = it.align === "left" ? "flex-start" : "center";
+    el.style.justifyContent = "center";
+    el.style.textAlign = it.align === "left" ? "left" : "center";
+    el.style.fontSize = (sizes[it.size] || sizes.large) + "px";
+    el.style.whiteSpace = "normal";
+    el.style.lineHeight = "1.2";
+  }
   if (it.slot === "tag") el.innerHTML = `<span>${it.html}</span>`;
   else if (it.anim === "type") {
     const words = it.html.split(/ (?![^<]*>)/);
@@ -77,6 +98,15 @@ await document.fonts.ready;
 await Promise.all([...document.fonts].map(f => f.load().catch(() => {})));
 // shrink one-line slots that would overflow the safe width
 for (const it of items) {
+  if (it.slot === "story") {
+    const maxWidth = 900, maxHeight = (it.position === "upper" ? 390 : it.position === "center" ? 520 : 460);
+    let fs = parseFloat(getComputedStyle(it.el).fontSize);
+    while ((it.el.scrollWidth > maxWidth || it.el.scrollHeight > maxHeight) && fs > 38) {
+      fs -= 2;
+      it.el.style.fontSize = fs + "px";
+    }
+    continue;
+  }
   if (!["hero", "heroA", "heroB", "mean", "cue", "count"].includes(it.slot)) continue;
   it.el.style.whiteSpace = "nowrap";
   const fs = parseFloat(getComputedStyle(it.el).fontSize), r = document.createRange(); r.selectNodeContents(it.el);

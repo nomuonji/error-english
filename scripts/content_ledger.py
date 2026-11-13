@@ -32,6 +32,8 @@ def targets(spec: dict) -> list[str]:
         return [spec["answer"]["en"]]
     if p == "vs":
         return [spec["a"]["word"], spec["b"]["word"]]
+    if p == "story":
+        return [target["term"] for target in spec.get("learningTargets", []) if target.get("term")]
     return []
 
 

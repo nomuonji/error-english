@@ -1,0 +1,105 @@
+{
+  "id": "story-let-not-get-ahead-20261114",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "phrase-story-open-context-reveal-001",
+  "level": "日常で使える英語",
+  "title": "「先走らないで」を自然に伝える一言",
+  "summary": "話が決まる前に物事を進めすぎないように、やわらかく止める表現を学ぶ。",
+  "learningTargets": [
+    {
+      "term": "Let's not get ahead of ourselves.",
+      "meaning": "まだ先走らないで"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 10,
+      "text": "もう会場まで予約したの？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 2,
+      "flash": 0.18
+    },
+    {
+      "at": 10,
+      "until": 22,
+      "text": "候補を見つけただけ。\nまだ誰も決めていない。",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "up",
+      "speech": {
+        "text": "We haven't agreed on anything yet.",
+        "speed": 0.98,
+        "voice": "am_michael"
+      }
+    },
+    {
+      "at": 22,
+      "until": 38,
+      "text": "Let's not get ahead of ourselves.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Let's not get ahead of ourselves"
+      ],
+      "speech": {
+        "text": "Let's not get ahead of ourselves.",
+        "speed": 0.92,
+        "voice": "af_heart"
+      },
+      "sfx": "pop",
+      "flash": 0.22,
+      "accent": 4
+    },
+    {
+      "at": 38,
+      "until": 54,
+      "text": "「まだ先走らないで」\n決定前に話を進めすぎる相手へ。",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade",
+      "accent": 1
+    },
+    {
+      "at": 54,
+      "until": 70,
+      "text": "We haven't signed anything yet.\nLet's not get ahead of ourselves.",
+      "position": "center",
+      "size": "medium",
+      "align": "left",
+      "animation": "type",
+      "highlight": [
+        "Let's not get ahead of ourselves"
+      ],
+      "speech": {
+        "text": "We haven't signed anything yet. Let's not get ahead of ourselves.",
+        "speed": 0.95,
+        "voice": "am_michael"
+      }
+    },
+    {
+      "at": 70,
+      "until": 84,
+      "text": "結論：まだ決まっていないなら\nLet's not get ahead of ourselves.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "Let's not get ahead of ourselves"
+      ],
+      "accent": 3,
+      "mascot": "smile"
+    }
+  ],
+  "sources": [],
+  "generatedBy": "format-lab-example"
+}

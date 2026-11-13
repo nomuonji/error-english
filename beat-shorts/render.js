@@ -51,7 +51,9 @@ function pickStyle() {
   const seed = parseInt(crypto.createHash("sha1").update(spec.id).digest("hex").slice(0, 8), 16);
   const lastUse = (key, val) => { for (let i = h.length - 1; i >= 0; i--) if (key(h[i]) === val) return i; return -1; };
   const choose = (vals, key) => vals.map((v, i) => [lastUse(key, v), (seed + i * 7919) % 1000, v]).sort((a, b) => a[0] - b[0] || a[1] - b[1])[0][2];
-  const minDur = spec.pattern === "beat" ? 47 : spec.pattern === "quiz" ? 8 + 16 * spec.items.length * 0.5 : 32;
+  const storyUnits = spec.pattern === "story" ? Math.max(...spec.storyboard.map(event => event.until)) : 0;
+  const minDur = spec.pattern === "beat" ? 47 : spec.pattern === "quiz" ? 8 + 16 * spec.items.length * 0.5 :
+    spec.pattern === "story" ? storyUnits * 0.48 + 2 : 32;
   const pool = STYLES.trackPools[SKIN];
   const te = choose(pool.flatMap(t => track(t).excerpts.filter(e => track(t).duration - e >= minDur).map(e => `${t}@${e}`)),
     s => `${s.track}@${s.excerpt}`);

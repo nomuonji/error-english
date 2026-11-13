@@ -23,11 +23,12 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import content_ledger  # noqa: E402
 
 Q = pathlib.Path("publish-queue")
-PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs")
+PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs", "story")
 SERIES = {"beat": "音ハメ英単語", "quiz": "英語クイズ", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
-          "upgrade": "very から卒業", "vs": "どっちを使う？"}
+          "upgrade": "very から卒業", "vs": "どっちを使う？", "story": "英語の使いどころ"}
 TAGS = {"beat": "#英単語 #英検1級 #語彙力", "quiz": "#英語クイズ #英単語 #英語学習", "word": "#英単語 #語彙力 #英語学習", "phrase": "#英語フレーズ #英会話 #英語学習",
-        "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習"}
+        "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習",
+        "story": "#英語フレーズ #英会話 #英語学習"}
 
 
 def fail(problems):
@@ -68,6 +69,96 @@ def check_spec(spec):
                 continue
             sub = dict(it, title=it.get("title") or "x")
             p += [f"item {i} ({it.get('id')}): {x}" for x in check_spec(sub)]
+        return p
+    if pat == "story":
+        for field in ("formatId", "experimentId"):
+            value = spec.get(field)
+            if not isinstance(value, str) or not re.fullmatch(r"[a-z0-9][a-z0-9._-]{2,63}", value):
+                p.append(f"story requires a valid {field}")
+        targets = spec.get("learningTargets") or []
+        if not isinstance(targets, list) or not 1 <= len(targets) <= 4:
+            p.append("story needs 1-4 learningTargets")
+            targets = targets if isinstance(targets, list) else []
+        seen_targets = set()
+        for i, target in enumerate(targets, 1):
+            if not isinstance(target, dict):
+                p.append(f"learning target {i}: must be an object")
+                continue
+            raw_term = target.get("term")
+            term = raw_term.strip() if isinstance(raw_term, str) else ""
+            if not term or len(term) > 80:
+                p.append(f"learning target {i}: term missing or over 80 chars")
+            if term.casefold() in seen_targets:
+                p.append(f"learning target {i}: duplicate term")
+            seen_targets.add(term.casefold())
+            meaning = target.get("meaning", "")
+            if not isinstance(meaning, str) or len(meaning) > 100:
+                p.append(f"learning target {i}: meaning missing or over 100 chars")
+        events = spec.get("storyboard") or []
+        if not isinstance(events, list) or not 4 <= len(events) <= 24:
+            p.append("storyboard must contain 4-24 events")
+            events = events if isinstance(events, list) else []
+        positions = {"upper", "center", "lower"}
+        sizes = {"small", "medium", "large", "huge"}
+        alignments = {"left", "center"}
+        animations = {"slam", "pop", "up", "type", "fade"}
+        faces = {"smile", "talk", "cry"}
+        max_until = 0
+        timed_events = []
+        for i, event in enumerate(events, 1):
+            prefix = f"story event {i}: "
+            if not isinstance(event, dict):
+                p.append(prefix + "must be an object")
+                continue
+            at, until = event.get("at"), event.get("until")
+            if type(at) is not int or type(until) is not int or at < 0 or until <= at:
+                p.append(prefix + "at/until must be increasing non-negative integers")
+                continue
+            max_until = max(max_until, until)
+            timed_events.append((event.get("position", "center"), at, until))
+            if not isinstance(event.get("text"), str) or not event["text"].strip() or len(event["text"]) > 220:
+                p.append(prefix + "text missing or over 220 chars")
+            if event.get("position", "center") not in positions:
+                p.append(prefix + "position must be upper/center/lower")
+            if event.get("size", "large") not in sizes:
+                p.append(prefix + "size must be small/medium/large/huge")
+            if event.get("align", "center") not in alignments:
+                p.append(prefix + "align must be left/center")
+            if event.get("animation", "fade") not in animations:
+                p.append(prefix + "unsupported animation")
+            highlights = event.get("highlight", [])
+            if not isinstance(highlights, list) or any(not isinstance(term, str) or not term.strip() or len(term) > 80 for term in highlights):
+                p.append(prefix + "highlight must be an array of short strings")
+            speech = event.get("speech")
+            if speech is not None:
+                if not isinstance(speech, dict) or not isinstance(speech.get("text"), str) or not speech["text"].strip() or len(speech["text"]) > 180:
+                    p.append(prefix + "speech.text missing or over 180 chars")
+                else:
+                    if speech.get("voice", "af_heart") not in ("af_heart", "am_michael"):
+                        p.append(prefix + "unsupported voice")
+                    speed = speech.get("speed", 1.0)
+                    if isinstance(speed, bool) or not isinstance(speed, (int, float)) or not 0.75 <= speed <= 1.2:
+                        p.append(prefix + "speech.speed must be 0.75-1.2")
+                    offset = speech.get("offset", 0)
+                    if type(offset) is not int or not 0 <= offset < until - at:
+                        p.append(prefix + "speech.offset outside event")
+            if event.get("sfx") not in (None, "pop", "tick"):
+                p.append(prefix + "sfx must be pop or tick")
+            flash = event.get("flash")
+            if flash is not None and (isinstance(flash, bool) or not isinstance(flash, (int, float)) or not 0 < flash <= 0.4):
+                p.append(prefix + "flash must be between 0 and 0.4")
+            accent = event.get("accent")
+            if accent is not None and (type(accent) is not int or not 0 <= accent <= 7):
+                p.append(prefix + "accent must be an integer from 0 to 7")
+            if event.get("mascot") is not None and event["mascot"] not in faces:
+                p.append(prefix + "unsupported mascot face")
+        if events and (max_until < 42 or max_until > 240):
+            p.append("storyboard duration must be 42-240 units (about 20-115 seconds)")
+        for i, (position_a, at_a, until_a) in enumerate(timed_events):
+            for position_b, at_b, until_b in timed_events[i + 1:]:
+                if position_a == position_b and max(at_a, at_b) < min(until_a, until_b):
+                    p.append("story events overlap in the same position")
+                    break
         return p
     if pat == "beat":
         words = spec.get("words") or []
@@ -129,6 +220,10 @@ def duration(path):
 def study_notes(spec):
     pat = spec["pattern"]
     out = []
+    if pat == "story":
+        for target in spec.get("learningTargets", []):
+            out.append(f"・{target['term']} ＝ {target.get('meaning', '')}")
+        return out
     if pat == "quiz":
         for i, it in enumerate(spec["items"], 1):
             out.append(f"Q{i}")
@@ -189,6 +284,7 @@ def main():
             ([x["a"]["word"], x["b"]["word"]] if x["pattern"] == "vs" else [])
     words = [w["w"] for w in spec["words"]] if pat == "beat" else \
         [t for it in spec["items"] for t in targets(it)] if pat == "quiz" else \
+        [target["term"] for target in spec.get("learningTargets", [])] if pat == "story" else \
         [spec[k] for k in ("word", "basic") if spec.get(k)] + ([spec["answer"]["en"]] if pat == "phrase" else []) + \
         ([spec["a"]["word"], spec["b"]["word"]] if pat == "vs" else [])
     tags = ["ドパ英語", "英語学習", SERIES[pat], "英単語", "English vocabulary", "advanced English", *words]
@@ -200,7 +296,8 @@ def main():
     req = {"sourceRepo": "nomuonji/error-english (beat-shorts)", "sourceSha": sha,
            "assetName": mp4.name, "sha256": hashlib.sha256(mp4.read_bytes()).hexdigest(),
            "title": title[:100], "description": body[:5000], "categoryId": "27", "tags": tags,
-           "script": name, "pattern": pat, "style": style}
+           "script": name, "pattern": pat, "formatId": spec.get("formatId", f"{pat}-v1"),
+           "experimentId": spec.get("experimentId"), "style": style}
     (Q / "pending" / name.replace(".json", ".request.json")).write_text(
         json.dumps(req, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"request written for {spec['id']}: {sec:.1f}s {lufs} LUFS {mb:.1f} MB style={style}")

@@ -15,9 +15,9 @@ Animation Factory is not used any more (owner decision 2026-11-01).
 | type | Archivo Black + Noto/Dela Gothic | Nunito + M PLUS Rounded |
 | music | lexicon-drop, error-bgm | error-bgm |
 
-The channel posts both kinds alternately; keeping them visibly different (and each look used
-thinly, below) is what keeps the channel from reading as one template repeated.
-The mascot appears only on the closing card, fading in where it stands.
+The existing queue historically alternated between these skins. The editorial agent is no
+longer required to alternate formats: it chooses the lesson structure from measured results and
+the learning objective. The mascot appears only on the closing card in the legacy templates.
 
 ## quiz (card skin)
 
@@ -38,6 +38,23 @@ timer drains over 3 beats (ticks) → card flips to the answer, pronounced → e
 `word / phrase / upgrade / vs` read the lesson specs that used to go to Animation Factory
 unchanged (`examples[].en/ja`, `quiz.prompt/answer/answerJa`, `meaning[].cap`, ...).
 `beat` specs: see `publish-queue/scripts/*-beat-*.json` (`*word*` marks the highlight).
+
+## AI-directed storyboard (`pattern: "story"`)
+
+The editorial agent may create a full sequence rather than filling a fixed lesson template.
+Each `storyboard[]` event controls its own `at` / `until` timing, plain-text copy, upper/center/lower
+position, small/medium/large/huge type size, left/center alignment, animation, highlighted phrase,
+Kokoro voice cue and speed, sound effect, flash, accent, and mascot face. Events may use different
+orders and durations; they do not have to follow a quiz or recap sequence.
+
+The renderer deliberately accepts only these whitelisted primitives. Story copy is escaped as
+text; generated HTML, CSS, JavaScript, arbitrary tags, external scripts, and custom assets are not
+executed. The same spec gate still checks duration (42-240 units), event count, overlaps, copy length,
+voice, speed, timing offsets, and allowed effects. `learningTargets` enter the same content ledger
+as the legacy word/phrase targets. Every experimental format carries a `formatId` and
+`experimentId`, which are preserved with published-video metadata for later Analytics comparisons.
+
+See `format-lab/story-example.json` for a complete example.
 
 Times in a template are units of ~0.48 s; the engine snaps each unit to the nearest beat of
 the chosen track, so a template works at 127 BPM and at 161 BPM.
@@ -96,10 +113,8 @@ placate = placated, "I'm on tenterhooks" = "on tenterhooks"). A deliberate revie
 words in `"repeatOk": [...]`. `python3 scripts/content_ledger.py list` prints the ledger for
 whoever writes the next scripts.
 
-## Automatic scripts (OpenCode Go)
+## Automatic scripts (My Portal)
 
-`.github/workflows/replenish-queue.yml` (00:07 JST daily) runs `scripts/replenish.py`: when fewer
-than 6 scripts are queued it drafts new ones (beat and quiz alternately) with OpenCode Go
-(`deepseek-v4.1-flash`, override with the `OPENCODE_GO_MODEL` repository variable), has a second
-call check meanings / IPA / examples, and commits only drafts that pass the render gate and the
-content ledger. Secret: `OPENCODE_GO_API_KEY`. `dry_run=true` prints one draft without committing.
+The daily My Portal routine job `dopaeigo-editorial-director` reads YouTube Analytics feedback and replenishes the queue directly through the GitHub connection. It chooses between existing lesson patterns and the agent-directed `story` storyboard format instead of alternating beat/quiz mechanically. GitHub Actions no longer calls an external LLM API for analysis or script generation.
+
+The agent must pass each script through the same `scripts/beat_to_request.py check` contract and `scripts/content_ledger.py` duplicate check before adding it. Storyboard formats are tested and rendered as preview frames by `.github/workflows/storyboard-validation.yml` on PRs.
