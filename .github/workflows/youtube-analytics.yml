@@ -1,0 +1,68 @@
+name: YouTube Analytics snapshot
+
+on:
+  pull_request:
+    paths:
+      - "scripts/youtube-analytics-snapshot.ts"
+      - ".github/workflows/youtube-analytics.yml"
+      - "analytics/README.md"
+  schedule:
+    - cron: "0 3 * * *" # 12:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-analytics-snapshot
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Type-check Analytics collector
+        run: npx tsc --noEmit --strict --target ES2020 --module commonjs --moduleResolution node --esModuleInterop --skipLibCheck scripts/youtube-analytics-snapshot.ts
+
+  collect:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Collect read-only YouTube Analytics reports
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/youtube-analytics-snapshot.ts
+      - name: Commit analytics snapshot
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analytics/latest.json analytics/snapshots
+          if git diff --cached --quiet; then
+            echo "No analytics snapshot changes."
+            exit 0
+          fi
+          git commit -m "analytics: daily YouTube snapshot [skip ci]"
+          git push

@@ -1,0 +1,66 @@
+name: Analyze YouTube performance and feed back into lessons
+
+on:
+  pull_request:
+    paths:
+      - "scripts/analyze-youtube-analytics.py"
+      - "scripts/replenish.py"
+      - "prompts/analyze-youtube-analytics.md"
+      - ".github/workflows/youtube-analytics-feedback.yml"
+  schedule:
+    - cron: "30 14 * * *" # 23:30 JST, before the 00:07 JST script replenisher
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-analytics-feedback
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile analytics feedback agent
+        run: python3 -m py_compile scripts/analyze-youtube-analytics.py scripts/replenish.py
+
+  analyze:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Analyze the latest evidence snapshot
+        env:
+          OPENCODE_GO_API_KEY: ${{ secrets.OPENCODE_GO_API_KEY }}
+          OPENCODE_GO_MODEL: ${{ vars.OPENCODE_GO_MODEL || 'deepseek-v4.1-flash' }}
+        run: python3 scripts/analyze-youtube-analytics.py
+      - name: Commit feedback for the lesson generator
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ ! -d analytics/feedback ]; then
+            echo "No analytics feedback directory yet."
+            exit 0
+          fi
+          git add analytics/feedback
+          if git diff --cached --quiet; then
+            echo "No new feedback for this snapshot."
+            exit 0
+          fi
+          git commit -m "analytics: save evidence-backed lesson feedback [skip ci]"
+          git push

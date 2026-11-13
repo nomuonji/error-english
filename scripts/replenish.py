@@ -73,6 +73,33 @@ def used_terms():
     return sorted({e["term"] for e in content_ledger.ledger()}, key=str.lower)
 
 
+def current_analytics_feedback():
+    snapshot_path = pathlib.Path("analytics/latest.json")
+    feedback_path = pathlib.Path("analytics/feedback/latest.json")
+    if not snapshot_path.exists():
+        raise RuntimeError("No YouTube Analytics snapshot exists yet; refusing to generate new scripts without measured feedback.")
+    if not feedback_path.exists():
+        raise RuntimeError("No analysis feedback exists for the latest Analytics snapshot; wait for the feedback agent run.")
+    snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    feedback = json.loads(feedback_path.read_text(encoding="utf-8"))
+    collected_at = snapshot.get("collectedAt")
+    if not collected_at or feedback.get("basedOnCollectedAt") != collected_at:
+        raise RuntimeError("Analytics feedback does not match the latest snapshot; refusing to use stale or mismatched feedback.")
+    collected = dt.datetime.fromisoformat(collected_at.replace("Z", "+00:00"))
+    now = dt.datetime.now(dt.timezone.utc)
+    if (now - collected.astimezone(dt.timezone.utc)).total_seconds() > 36 * 3600:
+        raise RuntimeError("Latest Analytics snapshot is older than 36 hours; refusing to generate from stale feedback.")
+    print(
+        "Using YouTube Analytics feedback:",
+        feedback.get("status", "unknown"),
+        "findings=" + str(len(feedback.get("findings", []))),
+        "experiments=" + str(len(feedback.get("nextExperiments", []))),
+        "basedOn=" + collected_at,
+        flush=True,
+    )
+    return feedback
+
+
 BEAT_SCHEMA = """{
   "words": [  // exactly 8
     {"w": "eschew", "ipa": "/ɪsˈtʃuː/", "pos": "動", "ja": "（意図的に）避ける",
@@ -109,13 +136,34 @@ RULES = f"""ルール:
 - 出力は指定のJSONだけ。説明文は書かない。"""
 
 
-def draft(kind, used, feedback=""):
+def draft(kind, used, feedback="", analytics_feedback=None):
     schema = BEAT_SCHEMA if kind == "beat" else QUIZ_SCHEMA
+    analytics_context = ""
+    if analytics_feedback:
+        compact_feedback = {
+            "status": analytics_feedback.get("status"),
+            "audienceSummary": analytics_feedback.get("audienceSummary"),
+            "findings": analytics_feedback.get("findings", []),
+            "nextExperiments": analytics_feedback.get("nextExperiments", []),
+            "keepDoing": analytics_feedback.get("keepDoing", []),
+            "avoidForNow": analytics_feedback.get("avoidForNow", []),
+            "limitations": analytics_feedback.get("limitations", []),
+        }
+        analytics_context = (
+            "\n\n## YouTube実測フィードバック（最新スナップショット由来）\n"
+            + json.dumps(compact_feedback, ensure_ascii=False)
+            + "\n\n反映ルール: 既存の動画パターン・JSONスキーマ・英語の正確さは維持する。"
+            "観測に根拠のある実験だけ、今回の台本で実行可能な範囲に限って反映する。"
+            "動画構成テンプレートの改修が必要な提案は勝手に実装せず、指示や内容を変えない。"
+            "同じ実験を何度も繰り返さず、feedback に示された比較条件を守る。"
+            "insufficient_data の場合は無理に最適化せず、現行の学習品質を優先する。"
+        )
     task = ("音ハメ英単語（8語）の台本を作ってください。8語は品詞が偏らないように。ex では見出し語の形を *語* で囲む。pos は 動/形/名/副 の1文字。"
             if kind == "beat" else
             "英語クイズ（3問）の台本を作ってください。1問目は word、2・3問目は phrase / upgrade / vs から異なる2つ。必須項目: word は word・pos・ja・examples・quiz、phrase は jp（日本語の言いたいこと）・answer・examples・quiz、upgrade は basic・word・ja・examples・quiz、vs は a・b・rule・quiz。id は en-<pattern>-<見出し語> の英小文字とハイフン。例は形の見本で、中身は使わないこと。")
     msgs = [{"role": "system", "content": "あなたは英語教材の編集者です。正確さを最優先します。"},
             {"role": "user", "content": f"{task}\n\n{RULES}\n\n使用済み（使わない）:\n{', '.join(used)}\n\nJSONの形:\n{schema}"
+             + analytics_context
              + (f"\n\n前回の案は次の理由で不合格でした。直して全体を出し直してください:\n{feedback}" if feedback else "")}]
     return parse_json(chat(msgs))
 
@@ -163,12 +211,12 @@ def build(kind, body, day):
             "items": body["items"], "generatedBy": MODEL}
 
 
-def make(kind, day):
+def make(kind, day, analytics_feedback):
     used, feedback = used_terms(), ""
     for attempt in range(4):
         print(f"[{kind}] draft {attempt + 1}", flush=True)
         try:
-            body = draft(kind, used, feedback)
+            body = draft(kind, used, feedback, analytics_feedback)
             v = verify(kind, body)
             if v.get("fixed"):
                 body = v["fixed"]
@@ -199,9 +247,10 @@ def main():
     last = json.loads(q[-1].read_text(encoding="utf-8")).get("pattern") if q else "quiz"
     kind = "quiz" if last == "beat" else "beat"
     day = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).strftime("%Y%m%d")
+    analytics_feedback = current_analytics_feedback()
     made = 0
     while len(queued()) < want and made < max_new:
-        spec = make(kind, day)
+        spec = make(kind, day, analytics_feedback)
         if spec is None:
             print(f"::warning title=Replenish failed::no {kind} draft passed the gate")
             break
