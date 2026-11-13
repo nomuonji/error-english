@@ -23,4 +23,4 @@ jobs:
       - name: Compile queue validators
         run: python3 -m py_compile scripts/beat_to_request.py scripts/content_ledger.py
       - name: Run storyboard format tests
-        run: python3 -m unittest tests/test_storyboard_format.py -v
+        run: python3 -m unittest discover -s tests -p 'test_storyboard_format.py' -v
