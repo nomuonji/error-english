@@ -1,0 +1,37 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "66d247e3e2946f040ee089831afc8cb5f3d82cb4",
+  "assetName": "beat-gen-20261111-015.mp4",
+  "sha256": "bd3caf4d0ef085aba22bd6f5d78e1e5449c2cd5d58f7cdb6c80517503c0a28b5",
+  "title": "英検1級の単語、何個わかる？ fathom / savor / innocuous ほか【音ハメ英単語 #15】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・fathom /ˈfæðəm/（動）＝ 理解する\n  I can't fathom why he'd lie about that.（なぜ彼がそんな嘘をついたのか理解できない。）\n・savor /ˈseɪvər/（動）＝ 味わう\n  Take time to savor this warm bread.（この温かいパンをゆっくり味わって。）\n・innocuous /ɪˈnɑːkjuəs/（形）＝ 無害な\n  It was an innocuous joke, not an insult.（それは侮辱ではなく無害な冗談だった。）\n・outlandish /aʊtˈlændɪʃ/（形）＝ 奇妙な\n  He wore an outlandish hat to the party.（彼はパーティーに奇妙な帽子をかぶって行った。）\n・stigma /ˈstɪɡmə/（名）＝ 偏見\n  There's still a stigma around therapy.（セラピーにはまだ偏見がある。）\n・caveat /ˈkæviɑːt/（名）＝ 注意事項\n  One caveat: the tickets are nonrefundable.（注意点が一つ：チケットは返金不可です。）\n・invariably /ɪnˈveriəbli/（副）＝ 必ず\n  She invariably arrives ten minutes early.（彼女は必ず10分早く着く。）\n・ostensibly /ɑːˈstensəbli/（副）＝ 表向きは\n  He ostensibly quit but still runs the team.（彼は表向きは辞めたが、まだチームを仕切っている。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "fathom",
+    "savor",
+    "innocuous",
+    "outlandish",
+    "stigma",
+    "caveat",
+    "invariably",
+    "ostensibly"
+  ],
+  "script": "0048-beat-gen-20261111-015.json",
+  "pattern": "beat",
+  "formatId": "beat-v1",
+  "experimentId": null,
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "scene": "galaxy",
+    "palette": "acid",
+    "jpFont": "Dela Gothic One"
+  }
+}
