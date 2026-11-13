@@ -222,7 +222,34 @@ function vocab8(spec) {
   return s;
 }
 
-export const TEMPLATES = { beat: vocab8, word, phrase, upgrade, vs };
+// ------------------------------------------------------- AI-directed storyboard
+// The agent controls the narrative order, pacing, text placement, emphasis and voice cues
+// as data. Text is escaped; only the renderer's fixed layout/animation primitives are usable.
+function story(spec) {
+  const s = new Sched();
+  for (const event of spec.storyboard) {
+    let html = event.highlight?.length ? hl(event.text, event.highlight) : esc(event.text);
+    html = html.replace(/\\r?\\n/g, "<br>");
+    s.add("story", html, event.at, event.until, event.animation || "fade");
+    Object.assign(s.items[s.items.length - 1], {
+      position: event.position || "center",
+      size: event.size || "large",
+      align: event.align || "center",
+    });
+    if (event.speech) {
+      s.say(event.at + (event.speech.offset || 0), event.speech.text,
+        event.speech.speed ?? 1.0, event.speech.voice || "af_heart");
+    }
+    if (event.sfx) s.se(event.at, event.sfx);
+    if (event.flash) s.flash(event.at, event.flash);
+    if (Number.isInteger(event.accent)) s.color(event.at, event.accent);
+    if (event.mascot) s.face(event.at, event.until, event.mascot);
+  }
+  s.progress = [0, s.units];
+  return s;
+}
+
+export const TEMPLATES = { beat: vocab8, word, phrase, upgrade, vs, story };
 
 export function build(spec) {
   const f = TEMPLATES[spec.pattern];
