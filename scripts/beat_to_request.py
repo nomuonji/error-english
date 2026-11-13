@@ -23,11 +23,12 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import content_ledger  # noqa: E402
 
 Q = pathlib.Path("publish-queue")
-PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs")
+PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs", "story")
 SERIES = {"beat": "音ハメ英単語", "quiz": "英語クイズ", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
-          "upgrade": "very から卒業", "vs": "どっちを使う？"}
+          "upgrade": "very から卒業", "vs": "どっちを使う？", "story": "英語の使いどころ"}
 TAGS = {"beat": "#英単語 #英検1級 #語彙力", "quiz": "#英語クイズ #英単語 #英語学習", "word": "#英単語 #語彙力 #英語学習", "phrase": "#英語フレーズ #英会話 #英語学習",
-        "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習"}
+        "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習",
+        "story": "#英語フレーズ #英会話 #英語学習"}
 
 
 def fail(problems):
@@ -68,6 +69,78 @@ def check_spec(spec):
                 continue
             sub = dict(it, title=it.get("title") or "x")
             p += [f"item {i} ({it.get('id')}): {x}" for x in check_spec(sub)]
+        return p
+    if pat == "story":
+        targets = spec.get("learningTargets") or []
+        if not 1 <= len(targets) <= 4:
+            p.append("story needs 1-4 learningTargets")
+        seen_targets = set()
+        for i, target in enumerate(targets, 1):
+            term = str(target.get("term", "")).strip()
+            if not term or len(term) > 80:
+                p.append(f"learning target {i}: term missing or over 80 chars")
+            if term.casefold() in seen_targets:
+                p.append(f"learning target {i}: duplicate term")
+            seen_targets.add(term.casefold())
+            if len(str(target.get("meaning", ""))) > 100:
+                p.append(f"learning target {i}: meaning over 100 chars")
+        events = spec.get("storyboard") or []
+        if not 4 <= len(events) <= 24:
+            p.append("storyboard must contain 4-24 events")
+        positions = {"upper", "center", "lower"}
+        sizes = {"small", "medium", "large", "huge"}
+        alignments = {"left", "center"}
+        animations = {"slam", "pop", "up", "type", "fade"}
+        faces = {"smile", "talk", "cry"}
+        max_until = 0
+        for i, event in enumerate(events, 1):
+            prefix = f"story event {i}: "
+            at, until = event.get("at"), event.get("until")
+            if not isinstance(at, int) or not isinstance(until, int) or at < 0 or until <= at:
+                p.append(prefix + "at/until must be increasing non-negative integers")
+                continue
+            max_until = max(max_until, until)
+            if not isinstance(event.get("text"), str) or not event["text"].strip() or len(event["text"]) > 220:
+                p.append(prefix + "text missing or over 220 chars")
+            if event.get("position", "center") not in positions:
+                p.append(prefix + "position must be upper/center/lower")
+            if event.get("size", "large") not in sizes:
+                p.append(prefix + "size must be small/medium/large/huge")
+            if event.get("align", "center") not in alignments:
+                p.append(prefix + "align must be left/center")
+            if event.get("animation", "fade") not in animations:
+                p.append(prefix + "unsupported animation")
+            if any(not isinstance(term, str) or len(term) > 80 for term in event.get("highlight", [])):
+                p.append(prefix + "highlight must contain short strings")
+            speech = event.get("speech")
+            if speech is not None:
+                if not isinstance(speech, dict) or not str(speech.get("text", "")).strip() or len(speech["text"]) > 180:
+                    p.append(prefix + "speech.text missing or over 180 chars")
+                else:
+                    if speech.get("voice", "af_heart") not in ("af_heart", "am_michael"):
+                        p.append(prefix + "unsupported voice")
+                    speed = speech.get("speed", 1.0)
+                    if not isinstance(speed, (int, float)) or not 0.75 <= speed <= 1.2:
+                        p.append(prefix + "speech.speed must be 0.75-1.2")
+                    offset = speech.get("offset", 0)
+                    if not isinstance(offset, int) or not 0 <= offset < until - at:
+                        p.append(prefix + "speech.offset outside event")
+            if event.get("sfx") not in (None, "pop", "tick"):
+                p.append(prefix + "sfx must be pop or tick")
+            if event.get("flash") is not None and (not isinstance(event["flash"], (int, float)) or not 0 < event["flash"] <= 0.4):
+                p.append(prefix + "flash must be between 0 and 0.4")
+            if event.get("accent") is not None and (not isinstance(event["accent"], int) or not 0 <= event["accent"] <= 7):
+                p.append(prefix + "accent must be an integer from 0 to 7")
+            if event.get("mascot") is not None and event["mascot"] not in faces:
+                p.append(prefix + "unsupported mascot face")
+        if events and (max_until < 42 or max_until > 240):
+            p.append("storyboard duration must be 42-240 units (about 20-115 seconds)")
+        for i, first in enumerate(events):
+            for second in events[i + 1:]:
+                if first.get("position", "center") == second.get("position", "center") and isinstance(first.get("until"), int) and isinstance(second.get("at"), int):
+                    if second["at"] < first["until"] and second["at"] >= first.get("at", 0):
+                        p.append("story events overlap in the same position")
+                        break
         return p
     if pat == "beat":
         words = spec.get("words") or []
