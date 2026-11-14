@@ -1,0 +1,32 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "3958c7827582d1b472064a21cbdf042096a9edf9",
+  "assetName": "quiz-gen-20261112-012.mp4",
+  "sha256": "91615f0e6a42f0996aa1c6172a061843a4ae0db1dc06b40fd602406bb7ee05f7",
+  "title": "英語クイズ3問、何問わかる？ aplomb・I can't be bothered・drained【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・aplomb（名詞）＝ 落ち着きと自信\n・She handled the crisis with aplomb. ＝ 彼女は危機を落ち着いて対処した\n・aplomb ＝ 落ち着きと自信\nQ2\n・I can't be bothered. ＝ やる気が起きない\n・I can't be bothered to cook tonight. ＝ 今夜は料理する気が起きない\n・I can't be bothered to cook tonight. ＝ 今夜は料理する気が起きない\nQ3\n・very tired → drained ＝ へとへとで\n・I felt drained after the meeting. ＝ 会議の後はへとへとだった\n・I felt drained after the meeting. ＝ 会議の後はへとへとだった\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "aplomb",
+    "I can't be bothered.",
+    "drained",
+    "very tired"
+  ],
+  "script": "0049-quiz-gen-20261112-012.json",
+  "pattern": "quiz",
+  "formatId": "quiz-v1",
+  "experimentId": null,
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "palette": "peach",
+    "motif": "stripes"
+  }
+}
