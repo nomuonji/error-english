@@ -1,0 +1,37 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "a40338f0e21f922c7bc7c209bedee77f770d377b",
+  "assetName": "beat-gen-20261112-016.mp4",
+  "sha256": "dc7805146a9072fddb1ec529d8e30fa53be50f31341f245c5f052831e1398223",
+  "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "budge",
+    "chide",
+    "curt",
+    "fickle",
+    "gripe",
+    "ploy",
+    "aptly",
+    "deftly"
+  ],
+  "script": "0050-beat-gen-20261112-016.json",
+  "pattern": "beat",
+  "formatId": "beat-v1",
+  "experimentId": null,
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "scene": "core",
+    "palette": "neon",
+    "jpFont": "NotoJP"
+  }
+}

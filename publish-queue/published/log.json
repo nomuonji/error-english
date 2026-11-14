@@ -256,5 +256,13 @@
     "youtubeVideoId": "5DP1tXjunuQ",
     "publishedAt": "2026-11-14T09:34:34.579Z",
     "instagramMediaId": "18124579120930524"
+  },
+  {
+    "file": "0050-beat-gen-20261112-016.request.json",
+    "assetName": "beat-gen-20261112-016.mp4",
+    "sha256": "dc7805146a9072fddb1ec529d8e30fa53be50f31341f245c5f052831e1398223",
+    "youtubeVideoId": "YjEycxp7F1Y",
+    "publishedAt": "2026-11-14T16:58:22.083Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]
