@@ -1,0 +1,116 @@
+{
+  "id": "story-a-bit-of-a-stretch-20261114",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "story-situation-reveal-002",
+  "level": "日常で使える英語",
+  "title": "「ちょっと言い過ぎ」を英語でやわらかく返す",
+  "summary": "相手の評価や主張が少し大げさなとき、強く否定せずに「それはちょっと言い過ぎかな」と返す表現を学ぶ。",
+  "learningTargets": [
+    {
+      "term": "That's a bit of a stretch.",
+      "meaning": "それはちょっと言い過ぎ／無理がある"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 10,
+      "text": "テストで7問正解！",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 2,
+      "flash": 0.16
+    },
+    {
+      "at": 10,
+      "until": 24,
+      "text": "友人「もう英語ペラペラじゃん！」",
+      "position": "upper",
+      "size": "medium",
+      "align": "left",
+      "animation": "up",
+      "speech": {
+        "text": "You're basically fluent now!",
+        "voice": "am_michael",
+        "speed": 0.98
+      }
+    },
+    {
+      "at": 24,
+      "until": 38,
+      "text": "That's a bit of a stretch.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "That's a bit of a stretch"
+      ],
+      "speech": {
+        "text": "That's a bit of a stretch.",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "sfx": "pop",
+      "flash": 0.18,
+      "accent": 4
+    },
+    {
+      "at": 38,
+      "until": 54,
+      "text": "「ちょっと言い過ぎ」\n「少し無理がある」",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade",
+      "accent": 1
+    },
+    {
+      "at": 54,
+      "until": 74,
+      "text": "Calling me fluent after one test is a bit of a stretch.",
+      "position": "center",
+      "size": "medium",
+      "align": "left",
+      "animation": "type",
+      "highlight": [
+        "a bit of a stretch"
+      ],
+      "speech": {
+        "text": "Calling me fluent after one test is a bit of a stretch.",
+        "voice": "am_michael",
+        "speed": 0.95
+      }
+    },
+    {
+      "at": 74,
+      "until": 88,
+      "text": "相手の主張が大げさなときに、強く否定せず使える。",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade"
+    },
+    {
+      "at": 88,
+      "until": 104,
+      "text": "結論：その評価はちょっと大げさ。\nThat's a bit of a stretch.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "That's a bit of a stretch"
+      ],
+      "accent": 3,
+      "mascot": "smile"
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/stretch"
+  ],
+  "generatedBy": "my-portal-routine-worker"
+}
