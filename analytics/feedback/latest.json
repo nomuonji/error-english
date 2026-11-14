@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "basedOnCollectedAt": "2026-11-13T15:17:31.048Z",
+  "status": "insufficient_data",
+  "audienceSummary": "28日窓（2026-10-15〜2026-11-11）のchannelDailyは20行、views 61、engagedViews 36、estimatedMinutesWatched 16。topVideosは37件だがmetadata付きは19件、patternを分類できるものは18件。分類済みの内訳はbeat 8本（10 views / 5 engagedViews）、quiz 5本（7 / 4）、word 2本（3 / 1）、phrase 1本（1 / 1）、vs 1本（4 / 2）、upgrade 1本（1 / 1）。retentionは15本を照会したが全件rows=0。likes/comments/shares/subscribersGainedは各0、subscribersLostは1。視聴者属性・形式の優劣・アルゴリズム原因は判断できない。",
+  "findings": [],
+  "nextExperiments": [
+    {
+      "findingIds": [],
+      "pattern": "story",
+      "hypothesis": "大げさな評価を受ける日常場面を先に見せ、返答表現を会話の中で提示すると、単語カードやクイズよりも表現の使いどころを一度で理解しやすい可能性がある。これは学習品質についての探索仮説であり、視聴パフォーマンスの優位を示すものではない。",
+      "singleChange": "1表現に絞り、状況→相手の大げさな発言→返答→意味→別の文脈での例文、という7イベントのストーリーボードにする。",
+      "successMetric": "将来の同程度の露出期間でaverageViewPercentageとretention曲線（取得できた場合）を確認する。学習品質は表現の意味・語用・例文が一度で理解できるかを別軸で確認する。",
+      "comparisonRule": "同程度の公開後経過時間・露出条件のphrase/quiz動画と比較する。1本だけで標準化せず、複数回の比較可能な観測が揃うまで探索形式として扱う。",
+      "implementation": "publish-queue/scripts/0053-story-a-bit-of-a-stretch-20261114.jsonを1本だけ補充。storyboard-v1 / story-situation-reveal-002。",
+      "failureCondition": "場面なしでも意味が同じ程度に伝わる、または複数回の比較で理解・視聴の改善が見られない場合は、story形式を標準化せず既存形式へ戻す。"
+    }
+  ],
+  "keepDoing": [
+    "日常会話で使う自然な表現を、具体的な状況と短い例文に結び付ける。",
+    "視聴指標と学習品質を別々に扱い、教材の自然さ・理解しやすさを落とさない。"
+  ],
+  "avoidForNow": [
+    "beatとquizの優劣を断定しない。",
+    "小標本のaverageViewPercentageを形式の勝敗として扱わない。",
+    "retentionデータがない状態で冒頭離脱や途中離脱の原因を推測しない。",
+    "単発のstory実験が成功したとして形式を標準化しない。"
+  ],
+  "limitations": [
+    "snapshot collectedAt=2026-11-13T15:17:31.048Z。実行時点から約16時間で36時間以内。",
+    "28日窓の総viewsは61、engagedViewsは36で小標本。",
+    "topVideos 37件中metadata付き19件。pattern分類可能なのは18件で、19件は比較に必要な形式情報が不足。",
+    "retentionは15 query・API errors 0だが返却rowsは全件0。",
+    "likes/comments/shares/subscribersGainedは各0。反応率の形式比較はできない。",
+    "視聴者属性、impressions、Viewed vs swiped away、スワイプ率、アルゴリズム原因はsnapshotに存在しない。"
+  ],
+  "formatDecision": {
+    "decision": "exploratory-test",
+    "selectedFormatId": "storyboard-v1",
+    "pattern": "story",
+    "experimentId": "story-situation-reveal-002",
+    "reason": "キューが4本で補充閾値6本未満のため1本を補充。現行データは形式選好を判断できないため、storyが優れるという結論ではなく、実用表現の使いどころを状況会話で伝える単発の探索実験として選択。",
+    "novelty": "状況→誇張発言→自然な返答→意味→別文脈の例文を7イベントで提示。",
+    "comparisonCondition": "今後、同程度の露出期間のphrase/quizと比較。複数回の観測前に標準化しない。",
+    "generatedPattern": "story"
+  },
+  "generatedScriptIds": [
+    "story-a-bit-of-a-stretch-20261114"
+  ],
+  "generatedFormatIds": [
+    "storyboard-v1"
+  ]
+}
