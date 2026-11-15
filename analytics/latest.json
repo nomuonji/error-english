@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "collectedAt": "2026-11-14T10:00:51.771Z",
+  "collectedAt": "2026-11-15T10:37:00.187Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-15",
-    "endDate": "2026-11-11",
+    "startDate": "2026-10-16",
+    "endDate": "2026-11-12",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -38,7 +38,7 @@
     "rows": [
       {
         "day": "2026-10-16",
-        "views": 1,
+        "views": 2,
         "engagedViews": 1,
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 5,
@@ -1205,8 +1205,50 @@
       }
     }
   ],
-  "publishedLogCount": 33,
+  "publishedLogCount": 35,
   "retention": [
+    {
+      "videoId": "uyupjtkkwqg",
+      "metadata": {
+        "videoId": "uyupjtkkwqg",
+        "publishedAt": "2026-11-15T10:01:14.203Z",
+        "requestFile": "0051-quiz-gen-20261113-013.request.json",
+        "title": "英語クイズ3問、何問わかる？ snide・I have a lot on my plate・spooked【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・snide（形容詞）＝ 嫌味な\n・He made a *snide* remark about my car. ＝ 私の車について嫌味を言った\n・That was a snide remark. ＝ それは嫌味な一言だった\nQ2\n・I have a lot on my plate. ＝ やることが山ほどある\n・She has *a lot on her plate* right now. ＝ 彼女は今、やることが山ほどある\n・I have a lot on my plate this week. ＝ 今週はやることが山ほどある\nQ3\n・scared → spooked ＝ 怖気づいた\n・I got *spooked* by a sudden noise. ＝ 突然の物音にびっくりした\n・I got spooked by a sudden noise. ＝ 突然の物音に怖気づいた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-gen-20261113-013.mp4",
+        "pattern": "quiz",
+        "formatId": "quiz-v1",
+        "scriptId": "quiz-gen-20261113-013",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
+      },
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
+    {
+      "videoId": "YjEycxp7F1Y",
+      "metadata": {
+        "videoId": "YjEycxp7F1Y",
+        "publishedAt": "2026-11-14T16:58:22.083Z",
+        "requestFile": "0050-beat-gen-20261112-016.request.json",
+        "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261112-016.mp4",
+        "pattern": "beat",
+        "formatId": "beat-v1",
+        "scriptId": "beat-gen-20261112-016",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
     {
       "videoId": "5DP1tXjunuQ",
       "metadata": {
@@ -1360,46 +1402,6 @@
         "assetName": "beat-gen-20261108-012.mp4",
         "pattern": "beat",
         "scriptId": "beat-gen-20261108-012",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
-      "videoId": "DYzD-dosGMg",
-      "metadata": {
-        "videoId": "DYzD-dosGMg",
-        "publishedAt": "2026-11-10T10:33:31.837Z",
-        "requestFile": "0041-quiz-gen-20261108-008.request.json",
-        "title": "英語クイズ3問、何問わかる？ hubris・Let's cut to the chase・comprise / compose【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・hubris（名詞）＝ 傲慢・過信\n・His *hubris* brought down the whole team. ＝ 彼の傲慢さがチームを崩壊させた\n・His hubris cost him everything. ＝ 彼の傲慢さが全てを奪った\nQ2\n・Let's cut to the chase. ＝ 本題に入ろう\n・Let's *cut to the chase* and decide. ＝ 本題に入って決めよう\n・Let's cut to the chase. ＝ 本題に入ろう\nQ3\n・comprise ＝ 〜から成る　例: The team *comprises* five members.（チームは5人から成る）\n・compose ＝ 〜を構成する　例: Five members *compose* the team.（5人がチームを構成する）\n・The team comprises five members. ＝ チームは5人から成る\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-gen-20261108-008.mp4",
-        "pattern": "quiz",
-        "scriptId": "quiz-gen-20261108-008",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
-      },
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
-      "videoId": "DhqBHx_Kfwc",
-      "metadata": {
-        "videoId": "DhqBHx_Kfwc",
-        "publishedAt": "2026-11-09T21:21:28.415Z",
-        "requestFile": "0040-beat-gen-20261107-011.request.json",
-        "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261107-011.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261107-011",
         "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
       },
       "headers": [
