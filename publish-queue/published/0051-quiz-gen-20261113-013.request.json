@@ -1,0 +1,32 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "99cb3c71fca4626cca06e0135ba6712c520e518a",
+  "assetName": "quiz-gen-20261113-013.mp4",
+  "sha256": "7633e552f6a81cb39221be4405a89f800487f8508f6a51d4f816bb38f97630fc",
+  "title": "英語クイズ3問、何問わかる？ snide・I have a lot on my plate・spooked【英語クイズ】",
+  "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・snide（形容詞）＝ 嫌味な\n・He made a *snide* remark about my car. ＝ 私の車について嫌味を言った\n・That was a snide remark. ＝ それは嫌味な一言だった\nQ2\n・I have a lot on my plate. ＝ やることが山ほどある\n・She has *a lot on her plate* right now. ＝ 彼女は今、やることが山ほどある\n・I have a lot on my plate this week. ＝ 今週はやることが山ほどある\nQ3\n・scared → spooked ＝ 怖気づいた\n・I got *spooked* by a sudden noise. ＝ 突然の物音にびっくりした\n・I got spooked by a sudden noise. ＝ 突然の物音に怖気づいた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語クイズ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "snide",
+    "I have a lot on my plate.",
+    "spooked",
+    "scared"
+  ],
+  "script": "0051-quiz-gen-20261113-013.json",
+  "pattern": "quiz",
+  "formatId": "quiz-v1",
+  "experimentId": null,
+  "style": {
+    "skin": "card",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "palette": "coral",
+    "motif": "rings"
+  }
+}
