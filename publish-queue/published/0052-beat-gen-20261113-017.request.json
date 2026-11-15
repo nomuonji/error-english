@@ -1,0 +1,37 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "e33d499c5332b317ea01b051c7e5984642df6987",
+  "assetName": "beat-gen-20261113-017.mp4",
+  "sha256": "543f37ebba6b60b4e05541eba91e72165e8a8900b49432a058e8b235954ef90b",
+  "title": "英検1級の単語、何個わかる？ galvanize / curtail / sporadic ほか【音ハメ英単語 #17】",
+  "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・galvanize /ˈɡælvənaɪz/（動）＝ 奮起させる\n  The speech helped galvanize the community.（その演説は地域社会を奮起させるのに役立った。）\n・curtail /kɜːrˈteɪl/（動）＝ 切り詰める\n  We must curtail spending to save the project.（プロジェクトを救うため支出を切り詰めねば。）\n・sporadic /spəˈrædɪk/（形）＝ 散発的な\n  Her sporadic efforts yielded little progress.（彼女の散発的な努力は成果が乏しかった。）\n・haphazard /ˌhæpˈhæzərd/（形）＝ 場当たり的な\n  The haphazard filing system wastes our time.（場当たり的な書類整理は時間の無駄だ。）\n・pitfall /ˈpɪtfɔːl/（名）＝ 落とし穴\n  One major pitfall is overlooking hidden fees.（大きな落とし穴の一つは、隠れた手数料を見逃すことだ。）\n・ordeal /ɔːrˈdiːl/（名）＝ 試練\n  The whole ordeal left her exhausted for weeks.（その試練で彼女は何週間も疲弊した。）\n・inadvertently /ˌɪnədˈvɜːrtəntli/（副）＝ うっかりと\n  He inadvertently deleted the entire folder.（彼はうっかりフォルダ全体を削除した。）\n・vehemently /ˈviːəməntli/（副）＝ 激しく\n  She vehemently denied the accusation in court.（彼女は法廷でその告発を激しく否定した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "音ハメ英単語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "galvanize",
+    "curtail",
+    "sporadic",
+    "haphazard",
+    "pitfall",
+    "ordeal",
+    "inadvertently",
+    "vehemently"
+  ],
+  "script": "0052-beat-gen-20261113-017.json",
+  "pattern": "beat",
+  "formatId": "beat-v1",
+  "experimentId": null,
+  "style": {
+    "skin": "neon",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "scene": "grid",
+    "palette": "sunset",
+    "jpFont": "Dela Gothic One"
+  }
+}
