@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "basedOnCollectedAt": "2026-11-15T10:37:00.187Z",
+  "status": "insufficient_data",
+  "audienceSummary": "28日窓2026-10-16〜2026-11-12。channelDaily 21日、views 66、engagedViews 36、likes/comments/shares 0。topVideos 40件、うちpattern分類可能21件（beat 9、quiz 7、word 2、vs 1、upgrade 1、phrase 1）。retention 15本すべてrows 0。動画ごとの露出期間・視聴母数が小さく、形式優劣は未確定。",
+  "findings": [],
+  "nextExperiments": [],
+  "keepDoing": [
+    "自然な日常表現を、使う状況と自然な和訳を伴って説明する",
+    "既存形式を正解と決めつけず、同条件の視聴データが蓄積するまで比較判断を保留する"
+  ],
+  "avoidForNow": [
+    "視聴数が少ない異なる公開日の動画を形式別の勝敗として扱わない",
+    "retention欠測を離脱率やスワイプ率として補完しない",
+    "Apollo 13試作で指摘された難解さ・唐突な結末を繰り返さない"
+  ],
+  "limitations": [
+    "retention 15件すべて空",
+    "pattern分類不能19/40件",
+    "形式別標本数と露出期間の差が大きい",
+    "公開キュー全体の一覧を取得できず在庫閾値と重複台帳を検証できないため本サイクルは新規台本なし"
+  ],
+  "formatDecision": {
+    "decision": "defer",
+    "selectedFormatId": null,
+    "rationale": "データ不足につき既存形式の優位性も新形式の優位性も認定しない。実験新規作成も保留。",
+    "novelty": "none",
+    "comparisonRule": "同一形式・近い公開年齢・同程度の露出期間の動画で比較可能になった時点で再評価",
+    "createdPattern": null
+  },
+  "generatedScriptIds": [],
+  "generatedFormatIds": []
+}
