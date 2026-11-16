@@ -280,5 +280,13 @@
     "youtubeVideoId": "c2kv4u3Pneo",
     "publishedAt": "2026-11-15T17:34:49.303Z",
     "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  },
+  {
+    "file": "0053-story-a-bit-of-a-stretch-20261114.request.json",
+    "assetName": "story-a-bit-of-a-stretch-20261114.mp4",
+    "sha256": "85dc70fc3d76d2841c4e31225bd3937d67ebe73efa803c605b0921c57250e0fd",
+    "youtubeVideoId": "hJrvB15uVj0",
+    "publishedAt": "2026-11-16T10:21:08.871Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]
