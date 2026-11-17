@@ -1,0 +1,12 @@
+{
+  "id": "method-v1",
+  "status": "running",
+  "startedAt": "2026-11-18",
+  "method": "docs/shorts-method.md",
+  "rule": "新しい台本はすべて pattern=drill（6〜8問、タイトルと一覧を常時表示、前置きなし、ラストが一番意外）。切り口（一言なのに詰まる／失礼に聞こえる／学校vsネイティブ／場面のとっさの一言／和製英語）は回して、切り口ごとの差を見る。skin は poster と paper を交互。",
+  "metric": "公開後72時間のShortsフィード流入（distribution.recentTraffic のSHORTS）。",
+  "hit": "1本がSHORTS流入10再生以上。",
+  "reproduce": "当たった切り口で次の2本を作り、3本中2本で再現とする。",
+  "stop": "8本公開して全本0なら、M3（人の声・顔）が足りないと判断して本人に相談する。",
+  "baseline": "2026-11-09〜11-14の直近10本はSHORTS流入0。"
+}

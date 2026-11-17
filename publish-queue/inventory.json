@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T19:28:32Z",
- "queuedCount": 1,
+ "generatedAt": "2026-11-17T20:02:51Z",
+ "queuedCount": 2,
  "pendingVideoCount": 0,
  "failedCount": 0,
- "nextSequence": "0056",
+ "nextSequence": "0057",
  "lastPublished": {
   "file": "0054-story-its-on-me-20261117.request.json",
   "assetName": "story-its-on-me-20261117.mp4",
@@ -23,11 +23,29 @@
    "targets": [
     "Let me sleep on it."
    ]
+  },
+  {
+   "file": "0056-drill-tossa-henji-8.json",
+   "id": "drill-tossa-henji-8",
+   "pattern": "drill",
+   "formatId": "drill-v1",
+   "experimentId": "method-v1",
+   "targets": [
+    "After you.",
+    "I'll leave it to you.",
+    "Take care.",
+    "Don't worry about it.",
+    "It is what it is.",
+    "You should've said so.",
+    "Do you need a hand?",
+    "Look who's talking."
+   ]
   }
  ],
  "usedTermKeys": [
   "abstrus",
   "admittedly",
+  "after you",
   "allegedly",
   "ameliorat",
   "aplomb",
@@ -77,6 +95,8 @@
   "discombobulat",
   "disinterest",
   "disparag",
+  "do you need a hand",
+  "don't worry about it",
   "downright",
   "drain",
   "eavesdrop",
@@ -117,6 +137,7 @@
   "i can't be bother",
   "i have a lot on my plat",
   "i have a soft spot for this song",
+  "i'll leav it to you",
   "iffy",
   "impecuniou",
   "inadvertently",
@@ -128,6 +149,7 @@
   "invariably",
   "inveterat",
   "irk",
+  "it is what it is",
   "it slipp my mind",
   "kerfuffl",
   "knacker",
@@ -141,6 +163,7 @@
   "let' cut to the chas",
   "let' give her the benefit of the doubt",
   "livid",
+  "look who' talk",
   "lukewarm",
   "magnanimou",
   "mollify",
@@ -213,6 +236,7 @@
   "stop moving the goalpost",
   "surreptitiou",
   "sycophant",
+  "take care",
   "take it with a grain of salt",
   "temerity",
   "tenuou",
@@ -229,11 +253,13 @@
   "vouch",
   "wary",
   "we'v had a problem",
-  "wheelhous"
+  "wheelhous",
+  "you should'v said so"
  ],
  "usedTerms": [
   "abstruse",
   "admittedly",
+  "After you.",
   "allegedly",
   "ameliorate",
   "aplomb",
@@ -283,6 +309,8 @@
   "discombobulated",
   "disinterested",
   "disparage",
+  "Do you need a hand?",
+  "Don't worry about it.",
   "downright",
   "drained",
   "eavesdrop",
@@ -323,6 +351,7 @@
   "I can't be bothered.",
   "I have a lot on my plate.",
   "I have a soft spot for this song.",
+  "I'll leave it to you.",
   "I'm on tenterhooks.",
   "iffy",
   "impecunious",
@@ -335,6 +364,7 @@
   "invariably",
   "inveterate",
   "irk",
+  "It is what it is.",
   "It slipped my mind.",
   "It's on me.",
   "It's on the house.",
@@ -350,6 +380,7 @@
   "Let's cut to the chase.",
   "Let's give her the benefit of the doubt.",
   "livid",
+  "Look who's talking.",
   "lukewarm",
   "magnanimous",
   "mollify",
@@ -419,6 +450,7 @@
   "Stop moving the goalposts.",
   "surreptitious",
   "sycophant",
+  "Take care.",
   "Take it with a grain of salt.",
   "temerity",
   "tenuous",
@@ -435,7 +467,8 @@
   "vouch",
   "wary",
   "we've had a problem",
-  "wheelhouse"
+  "wheelhouse",
+  "You should've said so."
  ],
  "howToAdd": "Write publish-queue/scripts/<nextSequence>-<id>.json. Keys in usedTermKeys must not be taught again (content_ledger.py key(): lowercase, punctuation removed, simple inflections stemmed) unless listed in the script's repeatOk."
 }
