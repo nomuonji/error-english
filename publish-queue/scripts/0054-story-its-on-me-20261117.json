@@ -1,0 +1,130 @@
+{
+  "id": "story-its-on-me-20261117",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-001",
+  "series": false,
+  "level": "日常で使える英語",
+  "title": "「ここは奢るよ」を英語で一言で言うと？",
+  "summary": "会計のときに「ここは私が払うよ」と伝える一言と、お店の「サービスです」の言い方を学ぶ。",
+  "learningTargets": [
+    {
+      "term": "It's on me.",
+      "meaning": "ここは私が払うよ／奢るよ"
+    },
+    {
+      "term": "It's on the house.",
+      "meaning": "（お店から）サービスです"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 8,
+      "text": "「奢るよ」\n英語で一言？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 2,
+      "flash": 0.18
+    },
+    {
+      "at": 8,
+      "until": 20,
+      "text": "友達「いくら払えばいい？」\nHow much do I owe you?",
+      "position": "upper",
+      "size": "medium",
+      "align": "left",
+      "animation": "up",
+      "speech": {
+        "text": "How much do I owe you?",
+        "voice": "am_michael",
+        "speed": 0.98
+      }
+    },
+    {
+      "at": 20,
+      "until": 32,
+      "text": "It's on me.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "It's on me"
+      ],
+      "speech": {
+        "text": "It's on me.",
+        "voice": "af_heart",
+        "speed": 0.92
+      },
+      "sfx": "pop",
+      "flash": 0.2,
+      "accent": 4
+    },
+    {
+      "at": 32,
+      "until": 44,
+      "text": "「私が払うよ」「奢りだよ」\non me ＝ 私の負担で",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade"
+    },
+    {
+      "at": 44,
+      "until": 60,
+      "text": "Put your wallet away.\nIt's on me.",
+      "position": "center",
+      "size": "medium",
+      "align": "left",
+      "animation": "type",
+      "highlight": [
+        "It's on me"
+      ],
+      "speech": {
+        "text": "Put your wallet away. It's on me.",
+        "voice": "am_michael",
+        "speed": 0.95
+      }
+    },
+    {
+      "at": 60,
+      "until": 72,
+      "text": "お店なら「サービスです」\nThis one's on the house.",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "on the house"
+      ],
+      "speech": {
+        "text": "This one's on the house.",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "sfx": "tick"
+    },
+    {
+      "at": 72,
+      "until": 86,
+      "text": "自分が払う →\nIt's on me.\nお店のサービス →\nIt's on the house.",
+      "position": "center",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "It's on me",
+        "It's on the house"
+      ],
+      "accent": 3
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/on-the-house",
+    "https://www.merriam-webster.com/dictionary/on%20me"
+  ],
+  "generatedBy": "claude-chat-2026-11-17"
+}

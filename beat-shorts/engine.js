@@ -86,11 +86,14 @@ const items = S.items.map(it => {
     el.style.whiteSpace = "normal";
     el.style.lineHeight = "1.2";
   }
+  // story text sits in ONE inner block: the slot is a flex column, so loose spans/text nodes
+  // would each become a flex row (one word per line, highlights split from their punctuation).
+  const wrap = h => it.slot === "story" ? `<div class="story-text">${h}</div>` : h;
   if (it.slot === "tag") el.innerHTML = `<span>${it.html}</span>`;
   else if (it.anim === "type") {
     const words = it.html.split(/ (?![^<]*>)/);
-    el.innerHTML = words.map(w => `<span class="w">${w}</span>`).join(" ");
-  } else el.innerHTML = it.html;
+    el.innerHTML = wrap(words.map(w => `<span class="w">${w}</span>`).join(" "));
+  } else el.innerHTML = wrap(it.html);
   ui.insertBefore(el, flash);
   return { ...it, el, t0: T(it.at), t1: T(it.until), words: it.anim === "type" ? [...el.querySelectorAll(".w")] : null };
 });
@@ -99,9 +102,12 @@ await Promise.all([...document.fonts].map(f => f.load().catch(() => {})));
 // shrink one-line slots that would overflow the safe width
 for (const it of items) {
   if (it.slot === "story") {
-    const maxWidth = 900, maxHeight = (it.position === "upper" ? 390 : it.position === "center" ? 520 : 460);
+    // measure the text block, not the slot: the slot itself is 920px wide, so comparing the slot
+    // against a 900px limit shrank every story text to the 38px floor (bug until 2026-11-17)
+    const inner = it.el.firstElementChild || it.el;
+    const maxWidth = it.el.clientWidth, maxHeight = (it.position === "upper" ? 390 : it.position === "center" ? 520 : 460);
     let fs = parseFloat(getComputedStyle(it.el).fontSize);
-    while ((it.el.scrollWidth > maxWidth || it.el.scrollHeight > maxHeight) && fs > 38) {
+    while ((inner.scrollWidth > maxWidth || inner.scrollHeight > maxHeight) && fs > 38) {
       fs -= 2;
       it.el.style.fontSize = fs + "px";
     }

@@ -288,7 +288,8 @@ def main():
         [spec[k] for k in ("word", "basic") if spec.get(k)] + ([spec["answer"]["en"]] if pat == "phrase" else []) + \
         ([spec["a"]["word"], spec["b"]["word"]] if pat == "vs" else [])
     tags = ["ドパ英語", "英語学習", SERIES[pat], "英単語", "English vocabulary", "advanced English", *words]
-    title = spec["title"] if "【" in spec["title"] else f"{spec['title']}【{SERIES[pat]}】"
+    # "series": false keeps the title as written (no 【series】 tag): part of the 2026-11 Shorts recovery experiment
+    title = spec["title"] if "【" in spec["title"] or spec.get("series") is False else f"{spec['title']}【{SERIES[pat]}】"
     (Q / "pending").mkdir(parents=True, exist_ok=True)  # empty dirs are not kept in git
     mp4 = Q / "pending" / f"{spec['id']}.mp4"
     shutil.copy(video, mp4)

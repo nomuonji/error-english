@@ -7,6 +7,7 @@ on:
       - "scripts/beat_to_request.py"
       - "scripts/content_ledger.py"
       - "format-lab/**"
+      - "publish-queue/scripts/**"
       - "tests/test_storyboard_format.py"
       - ".github/workflows/storyboard-validation.yml"
 
@@ -44,11 +45,19 @@ jobs:
         run: |
           mkdir -p "$RUNNER_TEMP/story-preview"
           node render.js ../format-lab/story-example.json "$RUNNER_TEMP/story-preview" --preview 0,5,10,15,20,25,30,35,40
+          # also preview every queued story script added in the PR
+          for f in ../publish-queue/scripts/*.json; do
+            [ -e "$f" ] || continue
+            grep -q '"pattern": *"story"' "$f" || continue
+            name=$(basename "$f" .json)
+            mkdir -p "$RUNNER_TEMP/story-preview/$name"
+            node render.js "$f" "$RUNNER_TEMP/story-preview/$name" --preview 1,5,11,16,22,28,33,38
+          done
       - name: Keep preview frames for editorial inspection
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: storyboard-preview-${{ github.event.pull_request.number }}
-          path: ${{ runner.temp }}/story-preview/*.jpg
+          path: ${{ runner.temp }}/story-preview/**/*.jpg
           if-no-files-found: warn
           retention-days: 14

@@ -1,0 +1,46 @@
+name: Queue inventory
+
+# Keeps publish-queue/inventory.json current so the My Portal editorial job (which can read
+# single files but cannot list directories) can see the queue, the next sequence number and
+# every term already taught. The publish workflow also refreshes it after each upload.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "publish-queue/scripts/**"
+      - "publish-queue/ledger-extra.json"
+  schedule:
+    - cron: "0 7 * * *" # 16:00 JST, before the 16:30 JST editorial job
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-queue
+  cancel-in-progress: false
+
+jobs:
+  inventory:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Write publish-queue/inventory.json
+        run: python3 scripts/queue_inventory.py
+      - name: Commit if the queue changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # generatedAt alone changing is not worth a commit
+          if git diff --quiet -I '"generatedAt"' -- publish-queue/inventory.json && git ls-files --error-unmatch publish-queue/inventory.json >/dev/null 2>&1; then
+            echo "inventory unchanged"; exit 0
+          fi
+          git add publish-queue/inventory.json
+          git commit -m "publish-queue: refresh inventory [skip ci]"
+          git pull --rebase -q
+          git push
