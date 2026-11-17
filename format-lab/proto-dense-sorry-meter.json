@@ -1,0 +1,178 @@
+{
+  "id": "proto-dense-sorry-meter",
+  "pattern": "story",
+  "skin": "poster",
+  "series": false,
+  "formatId": "storyboard-v1",
+  "experimentId": "proto",
+  "level": "日常で使える英語",
+  "title": "その「ごめん」英語だと重さが違う",
+  "summary": "My bad から I apologize まで、謝り方の重さ4段階。",
+  "learningTargets": [
+    {
+      "term": "My bad.",
+      "meaning": "軽いの謝罪"
+    },
+    {
+      "term": "Sorry about that.",
+      "meaning": "ふつうの謝罪"
+    },
+    {
+      "term": "I'm so sorry.",
+      "meaning": "重いの謝罪"
+    },
+    {
+      "term": "I apologize for the error.",
+      "meaning": "仕事・公式の謝罪"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 8,
+      "text": "その「ごめん」\n重さ合ってる？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 0,
+      "flash": 0.2
+    },
+    {
+      "at": 8,
+      "until": 14,
+      "text": "軽い → 公式\n4段階で言い分ける",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up"
+    },
+    {
+      "at": 14,
+      "until": 25,
+      "text": "軽い｜人の足をちょっと踏んだ",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 15,
+      "until": 25,
+      "text": "My bad.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "My bad"
+      ],
+      "speech": {
+        "text": "My bad.",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "accent": 0
+    },
+    {
+      "at": 25,
+      "until": 36,
+      "text": "ふつう｜返信が遅れた",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 26,
+      "until": 36,
+      "text": "Sorry about that.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Sorry about that"
+      ],
+      "speech": {
+        "text": "Sorry about that.",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "accent": 1
+    },
+    {
+      "at": 36,
+      "until": 47,
+      "text": "重い｜約束をすっぽかした",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 37,
+      "until": 47,
+      "text": "I'm so sorry.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "I'm so sorry"
+      ],
+      "speech": {
+        "text": "I'm so sorry.",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "accent": 2
+    },
+    {
+      "at": 47,
+      "until": 58,
+      "text": "仕事・公式｜取引先にミスを伝える",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 48,
+      "until": 58,
+      "text": "I apologize for the error.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "I apologize for the error"
+      ],
+      "speech": {
+        "text": "I apologize for the error.",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "accent": 3
+    },
+    {
+      "at": 58,
+      "until": 69,
+      "text": "My bad. を取引先に使うと\n軽すぎて逆に失礼",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade",
+      "accent": 1
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/my-bad",
+    "https://dictionary.cambridge.org/dictionary/english/apologize"
+  ],
+  "generatedBy": "claude-chat-2026-11-18"
+}

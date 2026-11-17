@@ -1,0 +1,204 @@
+{
+  "id": "proto-dense-otsukare-5",
+  "pattern": "story",
+  "skin": "paper",
+  "series": false,
+  "formatId": "storyboard-v1",
+  "experimentId": "proto",
+  "level": "日常で使える英語",
+  "title": "「お疲れさま」英語では5通りに言い分ける",
+  "summary": "相手が何をした人かで変わる「お疲れさま」の5つの言い方。",
+  "learningTargets": [
+    {
+      "term": "See you tomorrow!",
+      "meaning": "帰る同僚に"
+    },
+    {
+      "term": "Great job today!",
+      "meaning": "頑張った人に"
+    },
+    {
+      "term": "You must be exhausted.",
+      "meaning": "疲れてそうな人に"
+    },
+    {
+      "term": "Let's call it a day.",
+      "meaning": "仕事を切り上げる時"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 8,
+      "text": "「お疲れさま」\n英語に1語はない",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 0,
+      "flash": 0.2
+    },
+    {
+      "at": 8,
+      "until": 14,
+      "text": "相手が何をした人かで\n5通りに言い分ける",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up"
+    },
+    {
+      "at": 14,
+      "until": 24,
+      "text": "1. 帰る同僚に",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 15,
+      "until": 24,
+      "text": "See you tomorrow!",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "See you tomorrow"
+      ],
+      "speech": {
+        "text": "See you tomorrow!",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "accent": 1
+    },
+    {
+      "at": 24,
+      "until": 34,
+      "text": "2. 頑張った人に",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 25,
+      "until": 34,
+      "text": "Great job today!",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Great job today"
+      ],
+      "speech": {
+        "text": "Great job today!",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "accent": 2
+    },
+    {
+      "at": 34,
+      "until": 44,
+      "text": "3. 疲れてそうな人に",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 35,
+      "until": 44,
+      "text": "You must be exhausted.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "You must be exhausted"
+      ],
+      "speech": {
+        "text": "You must be exhausted.",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "accent": 3
+    },
+    {
+      "at": 44,
+      "until": 54,
+      "text": "4. 仕事を切り上げる時",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 45,
+      "until": 54,
+      "text": "Let's call it a day.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Let's call it a day"
+      ],
+      "speech": {
+        "text": "Let's call it a day.",
+        "voice": "af_heart",
+        "speed": 0.95
+      },
+      "accent": 1
+    },
+    {
+      "at": 54,
+      "until": 64,
+      "text": "5. 手伝ってくれた人に",
+      "position": "upper",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "sfx": "tick"
+    },
+    {
+      "at": 55,
+      "until": 64,
+      "text": "Thanks for your help today.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Thanks for your help today"
+      ],
+      "speech": {
+        "text": "Thanks for your help today.",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "accent": 2
+    },
+    {
+      "at": 64,
+      "until": 74,
+      "text": "日本語の「お疲れさま」は\n全部これ1語で済ませている",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade"
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/call-it-a-day"
+  ],
+  "generatedBy": "claude-chat-2026-11-18"
+}
