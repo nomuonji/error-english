@@ -40,7 +40,9 @@ for (const el of [...root.children]) if (!keep.includes(el.id)) el.remove();
 const flash = document.getElementById("flash");
 const barFill = document.querySelector("#bar i");
 // poster: the colour field changes with each accent cue
-const FIELDS = [[PAL.ink, PAL.a1, PAL.bg1, PAL.a3], [PAL.a1, PAL.ink, PAL.bg1, PAL.a3], [PAL.a2, PAL.ink, PAL.bg1, PAL.ink], [PAL.bg2, PAL.a1, PAL.ink, PAL.a1]];
+// [field, disc, text, underline]. Text always sits on the disc, so it must contrast with the disc
+// (an earlier mapping drew highlighted words in the disc colour and they vanished).
+const FIELDS = [[PAL.ink, PAL.a1, PAL.bg1, PAL.a3], [PAL.a1, PAL.ink, PAL.bg1, PAL.a3], [PAL.a2, PAL.ink, PAL.bg1, PAL.a1], [PAL.bg2, PAL.a1, PAL.bg1, PAL.ink]];
 const accentAt = t => { let i = 0; for (const a of S.accent) if (T(a.at) <= t) i = a.i; return i; };
 
 const events = SPEC.storyboard;
