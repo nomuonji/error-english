@@ -126,5 +126,6 @@
     "https://dictionary.cambridge.org/dictionary/english/on-the-house",
     "https://www.merriam-webster.com/dictionary/on%20me"
   ],
-  "generatedBy": "claude-chat-2026-11-17"
+  "generatedBy": "claude-chat-2026-11-17",
+  "skin": "chat"
 }

@@ -75,6 +75,8 @@ def check_spec(spec):
             value = spec.get(field)
             if not isinstance(value, str) or not re.fullmatch(r"[a-z0-9][a-z0-9._-]{2,63}", value):
                 p.append(f"story requires a valid {field}")
+        if spec.get("skin", "neon") not in ("neon", "chat", "paper", "poster"):
+            p.append("story skin must be neon/chat/paper/poster")
         targets = spec.get("learningTargets") or []
         if not isinstance(targets, list) or not 1 <= len(targets) <= 4:
             p.append("story needs 1-4 learningTargets")

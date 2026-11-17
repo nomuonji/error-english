@@ -46,7 +46,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/story-preview"
           node render.js ../format-lab/story-example.json "$RUNNER_TEMP/story-preview" --preview 0,5,10,15,20,25,30,35,40
           # also preview every queued story script added in the PR
-          for f in ../publish-queue/scripts/*.json; do
+          for f in ../publish-queue/scripts/*.json ../format-lab/story-*-example.json; do
             [ -e "$f" ] || continue
             grep -q '"pattern": *"story"' "$f" || continue
             name=$(basename "$f" .json)

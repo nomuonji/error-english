@@ -39,10 +39,12 @@ function history() {
   }
   return out.sort((a, b) => a.name.localeCompare(b.name)).map(x => x.style); // queue order = publish order
 }
-const SKIN = spec.pattern === "quiz" ? "card" : "neon";
+const FLAT = ["chat", "paper", "poster"]; // 2D story templates (story2d.html), added 2026-11-17
+const SKIN = spec.pattern === "quiz" ? "card" : spec.pattern === "story" && FLAT.includes(spec.skin) ? "flat" : "neon";
 function pickStyle() {
   if (opt("--style")) {
     const v = opt("--style").split(",");
+    if (SKIN === "flat") return { skin: "flat", theme: spec.skin, palette: v[0], track: v[1], excerpt: Number(v[2] || 0) };
     return SKIN === "card"
       ? { skin: "card", palette: v[0], motif: v[1], track: v[2], excerpt: Number(v[3] || 0) }
       : { skin: "neon", scene: v[0], palette: v[1], jpFont: v[2], track: v[3], excerpt: Number(v[4] || 0) };
@@ -58,6 +60,7 @@ function pickStyle() {
   const te = choose(pool.flatMap(t => track(t).excerpts.filter(e => track(t).duration - e >= minDur).map(e => `${t}@${e}`)),
     s => `${s.track}@${s.excerpt}`);
   const base = { skin: SKIN, track: te.split("@")[0], excerpt: Number(te.split("@")[1]) };
+  if (SKIN === "flat") return { ...base, theme: spec.skin, palette: choose(Object.keys(STYLES.cardPalettes), s => s.palette) };
   if (SKIN === "card") return { ...base, palette: choose(Object.keys(STYLES.cardPalettes), s => s.palette), motif: choose(STYLES.motifs, s => s.motif) };
   return { ...base, scene: choose(STYLES.scenes, s => s.scene), palette: choose(Object.keys(STYLES.palettes), s => s.palette),
     jpFont: choose(STYLES.jpFonts, s => s.jpFont) };
@@ -131,7 +134,7 @@ function mix(info, video, out) {
   const errors = [];
   page.on("pageerror", e => errors.push(e.message));
   page.on("console", m => { if (m.type() === "error") errors.push(m.text()); });
-  await page.goto(`http://127.0.0.1:${port}/${SKIN === "card" ? "card.html" : "index.html"}`);
+  await page.goto(`http://127.0.0.1:${port}/${SKIN === "card" ? "card.html" : SKIN === "flat" ? "story2d.html" : "index.html"}`);
   await page.waitForFunction(() => window.READY === true, null, { timeout: 120000 }).catch(() => {});
   if (errors.length || !(await page.evaluate(() => window.READY === true))) throw new Error("scene failed to load: " + errors.join(" | "));
   const info = await page.evaluate(() => window.INFO);
