@@ -1,0 +1,127 @@
+{
+  "id": "proto-tap-quiz-otsukare",
+  "pattern": "story",
+  "skin": "poster",
+  "series": false,
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-002-f",
+  "level": "日常で使える英語",
+  "title": "「お疲れさま」英語で言える？",
+  "summary": "直訳できない「お疲れさま」を、場面に合わせて言い換える。",
+  "learningTargets": [
+    {
+      "term": "Good work today!",
+      "meaning": "今日はお疲れさま（よく頑張ったね）"
+    },
+    {
+      "term": "See you tomorrow!",
+      "meaning": "（帰る人に）お疲れさま、また明日"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 10,
+      "text": "「お疲れさま」\n英語で言える？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 0,
+      "flash": 0.2
+    },
+    {
+      "at": 10,
+      "until": 16,
+      "text": "わかったら\n画面を2回タップ",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "pop"
+    },
+    {
+      "at": 16,
+      "until": 18,
+      "text": "3",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "sfx": "tick",
+      "accent": 1
+    },
+    {
+      "at": 18,
+      "until": 20,
+      "text": "2",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "sfx": "tick",
+      "accent": 0
+    },
+    {
+      "at": 20,
+      "until": 22,
+      "text": "1",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "sfx": "tick",
+      "accent": 1
+    },
+    {
+      "at": 22,
+      "until": 32,
+      "text": "Good work today!",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Good work today"
+      ],
+      "speech": {
+        "text": "Good work today!",
+        "voice": "af_heart",
+        "speed": 0.92
+      },
+      "sfx": "pop",
+      "flash": 0.25,
+      "accent": 2
+    },
+    {
+      "at": 32,
+      "until": 44,
+      "text": "帰る同僚には\nSee you tomorrow! でOK",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "See you tomorrow!"
+      ],
+      "speech": {
+        "text": "See you tomorrow!",
+        "voice": "am_michael",
+        "speed": 0.95
+      }
+    },
+    {
+      "at": 44,
+      "until": 54,
+      "text": "直訳しなくていい。\n場面で言い換える。",
+      "position": "center",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "accent": 3
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/good-work"
+  ],
+  "generatedBy": "claude-chat-2026-11-18"
+}

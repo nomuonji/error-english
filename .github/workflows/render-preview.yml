@@ -1,0 +1,57 @@
+name: Render preview videos
+
+# Renders lesson scripts to mp4 and keeps them as an artifact. Never uploads or touches the queue.
+# Used to show the owner prototypes before they enter the publish queue.
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: comma-separated script paths relative to the repo root
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cache Kokoro voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/kokoro
+          key: kokoro-v1.0-int8
+      - name: Render
+        shell: bash
+        env:
+          FILES: ${{ github.event.inputs.files }}
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          pip install --quiet numpy soundfile==0.14.0 kokoro-onnx==0.6.1
+          cd beat-shorts
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          mkdir -p out
+          IFS=',' read -ra list <<< "$FILES"
+          for f in "${list[@]}"; do
+            f="$(echo "$f" | xargs)"
+            name="$(basename "$f" .json)"
+            node render.js "../$f" "out/$name.mp4"
+          done
+          ls -la out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preview-videos
+          path: |
+            beat-shorts/out/*.mp4
+            beat-shorts/out/*.sheet.jpg
+          retention-days: 7
