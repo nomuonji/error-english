@@ -23,12 +23,12 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import content_ledger  # noqa: E402
 
 Q = pathlib.Path("publish-queue")
-PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs", "story")
+PATTERNS = ("beat", "quiz", "word", "phrase", "upgrade", "vs", "story", "drill")
 SERIES = {"beat": "音ハメ英単語", "quiz": "英語クイズ", "word": "1語で覚える", "phrase": "言えそうで言えない一言",
-          "upgrade": "very から卒業", "vs": "どっちを使う？", "story": "英語の使いどころ"}
+          "upgrade": "very から卒業", "vs": "どっちを使う？", "story": "英語の使いどころ", "drill": "言えそうで言えない英語"}
 TAGS = {"beat": "#英単語 #英検1級 #語彙力", "quiz": "#英語クイズ #英単語 #英語学習", "word": "#英単語 #語彙力 #英語学習", "phrase": "#英語フレーズ #英会話 #英語学習",
         "upgrade": "#英語表現 #語彙力 #英語学習", "vs": "#英語の違い #英単語 #英語学習",
-        "story": "#英語フレーズ #英会話 #英語学習"}
+        "story": "#英語フレーズ #英会話 #英語学習", "drill": "#英会話 #英語フレーズ #英語学習"}
 
 
 def fail(problems):
@@ -69,6 +69,29 @@ def check_spec(spec):
                 continue
             sub = dict(it, title=it.get("title") or "x")
             p += [f"item {i} ({it.get('id')}): {x}" for x in check_spec(sub)]
+        return p
+    if pat == "drill":
+        # method v1 (docs/shorts-method.md): 6-8 answerable items, no intro, persistent title/list
+        for field in ("formatId", "experimentId"):
+            if not isinstance(spec.get(field), str) or not re.fullmatch(r"[a-z0-9][a-z0-9._-]{2,63}", spec[field]):
+                p.append(f"drill requires a valid {field}")
+        if spec.get("skin", "poster") not in ("paper", "poster"):
+            p.append("drill skin must be paper/poster")
+        items = spec.get("items") or []
+        if not 6 <= len(items) <= 8:
+            p.append(f"{len(items)} items; a drill holds 6-8")
+        for i, it in enumerate(items, 1):
+            ja, en, key = it.get("ja", ""), it.get("en", ""), it.get("key", "")
+            if not ja or len(ja) > 9:
+                p.append(f"item {i}: ja missing or over 9 chars (it must fit the on-screen list)")
+            if not en or len(en) > 48:
+                p.append(f"item {i}: en missing or over 48 chars")
+            if not key or not re.search(r"(?<![\w'])" + re.escape(key) + r"(?![\w'])", en):
+                p.append(f"item {i}: key must be a whole word/phrase inside en")
+            if it.get("note") and len(it["note"]) > 26:
+                p.append(f"item {i}: note over 26 chars")
+        if len(str(spec.get("pin") or spec.get("title"))) > 40:
+            p.append("pin/title over 40 chars")
         return p
     if pat == "story":
         for field in ("formatId", "experimentId"):
@@ -222,6 +245,10 @@ def duration(path):
 def study_notes(spec):
     pat = spec["pattern"]
     out = []
+    if pat == "drill":
+        for it in spec["items"]:
+            out.append(f"・{it['ja']} ＝ {it['en']}" + (f"（{it['note']}）" if it.get("note") else ""))
+        return out
     if pat == "story":
         for target in spec.get("learningTargets", []):
             out.append(f"・{target['term']} ＝ {target.get('meaning', '')}")
@@ -287,6 +314,7 @@ def main():
     words = [w["w"] for w in spec["words"]] if pat == "beat" else \
         [t for it in spec["items"] for t in targets(it)] if pat == "quiz" else \
         [target["term"] for target in spec.get("learningTargets", [])] if pat == "story" else \
+        [it["en"] for it in spec["items"]] if pat == "drill" else \
         [spec[k] for k in ("word", "basic") if spec.get(k)] + ([spec["answer"]["en"]] if pat == "phrase" else []) + \
         ([spec["a"]["word"], spec["b"]["word"]] if pat == "vs" else [])
     tags = ["ドパ英語", "英語学習", SERIES[pat], "英単語", "English vocabulary", "advanced English", *words]

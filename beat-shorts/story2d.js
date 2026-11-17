@@ -45,10 +45,31 @@ const barFill = document.querySelector("#bar i");
 const FIELDS = [[PAL.ink, PAL.a1, PAL.bg1, PAL.a3], [PAL.a1, PAL.ink, PAL.bg1, PAL.a3], [PAL.a2, PAL.ink, PAL.bg1, PAL.a1], [PAL.bg2, PAL.a1, PAL.bg1, PAL.ink]];
 const accentAt = t => { let i = 0; for (const a of S.accent) if (T(a.at) <= t) i = a.i; return i; };
 
-const events = SPEC.storyboard;
+const DRILL = SPEC.pattern === "drill";
+const events = SPEC.storyboard || [];
 const storyItems = S.items.filter(i => i.slot === "story");
-let items;
-if (THEME === "chat") {
+let items, listEls = [], ctrEl = null;
+if (DRILL) {
+  // fixed slots; the pinned title and the prompt list are persistent DOM, not timed items
+  const pin = document.createElement("div"); pin.className = "pin";
+  pin.innerHTML = String(SPEC.pin || SPEC.title).split("\n").map(x => x.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c])).join("<br>");
+  root.insertBefore(pin, flash);
+  const list = document.createElement("div"); list.className = "list";
+  SPEC.items.forEach((it, i) => { const d = document.createElement("div"); d.textContent = `${i + 1}. ${it.ja}`; list.appendChild(d); listEls.push(d); });
+  root.insertBefore(list, flash);
+  const slots = { prompt: { top: 470, height: 250, size: 96 }, answer: { top: 730, height: 230, size: 78 }, count: { top: 970, height: 280, size: 210 }, note: { top: 1250, height: 130, size: 44 } };
+  items = S.items.filter(i => i.slot !== "counter").map(it => {
+    const p = slots[it.slot]; if (!p) return null;
+    const el = document.createElement("div");
+    el.className = `slot ${it.slot}`;
+    Object.assign(el.style, { top: p.top + "px", height: p.height + "px", alignItems: "center", textAlign: "center", fontSize: p.size + "px" });
+    el.innerHTML = `<div class="story-text">${it.html}</div>`;
+    root.insertBefore(el, flash);
+    return { el, t0: T(it.at), t1: T(it.until), anim: it.anim, position: "center", words: null };
+  }).filter(Boolean);
+  ctrEl = document.createElement("div"); ctrEl.className = "ctr"; root.insertBefore(ctrEl, flash);
+  window.DRILL_COUNTERS = S.items.filter(i => i.slot === "counter").map(i => ({ t0: T(i.at), t1: T(i.until), html: i.html }));
+} else if (THEME === "chat") {
   // every event is one message; it stays in the thread after its time (a chat keeps history)
   const feed = document.getElementById("feed");
   const sizes = { small: 44, medium: 52, large: 66, huge: 84 };
@@ -119,6 +140,12 @@ window.renderAt = function (t) {
     }
     const [p0, p1] = S.progress || [0, S.units];
     if (barFill) barFill.style.width = clamp((t - T(p0)) / (T(p1) - T(p0))) * 100 + "%";
+  }
+  if (DRILL) {
+    const c = window.DRILL_COUNTERS.find(x => t >= x.t0 && t < x.t1);
+    ctrEl.textContent = c ? c.html : "";
+    const cur = window.DRILL_COUNTERS.findIndex(x => t >= x.t0 && t < x.t1);
+    listEls.forEach((d, i) => { d.className = cur < 0 ? (t > 0 ? "done" : "") : i < cur ? "done" : i === cur ? "on" : ""; });
   }
   if (THEME === "poster") {
     const [field, disc, fg, hlc] = FIELDS[accentAt(t) % FIELDS.length];

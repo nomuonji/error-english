@@ -40,7 +40,8 @@ function history() {
   return out.sort((a, b) => a.name.localeCompare(b.name)).map(x => x.style); // queue order = publish order
 }
 const FLAT = ["chat", "paper", "poster"]; // 2D story templates (story2d.html), added 2026-11-17
-const SKIN = spec.pattern === "quiz" ? "card" : spec.pattern === "story" && FLAT.includes(spec.skin) ? "flat" : "neon";
+const SKIN = spec.pattern === "quiz" ? "card" : spec.pattern === "drill" || (spec.pattern === "story" && FLAT.includes(spec.skin)) ? "flat" : "neon";
+if (spec.pattern === "drill" && !["paper", "poster"].includes(spec.skin)) spec.skin = "poster";
 function pickStyle() {
   if (opt("--style")) {
     const v = opt("--style").split(",");
@@ -55,7 +56,7 @@ function pickStyle() {
   const choose = (vals, key) => vals.map((v, i) => [lastUse(key, v), (seed + i * 7919) % 1000, v]).sort((a, b) => a[0] - b[0] || a[1] - b[1])[0][2];
   const storyUnits = spec.pattern === "story" ? Math.max(...spec.storyboard.map(event => event.until)) : 0;
   const minDur = spec.pattern === "beat" ? 47 : spec.pattern === "quiz" ? 8 + 16 * spec.items.length * 0.5 :
-    spec.pattern === "story" ? storyUnits * 0.48 + 2 : 32;
+    spec.pattern === "story" ? storyUnits * 0.48 + 2 : spec.pattern === "drill" ? (spec.items.length * 10 + 6) * 0.48 + 2 : 32;
   const pool = STYLES.trackPools[SKIN];
   const te = choose(pool.flatMap(t => track(t).excerpts.filter(e => track(t).duration - e >= minDur).map(e => `${t}@${e}`)),
     s => `${s.track}@${s.excerpt}`);

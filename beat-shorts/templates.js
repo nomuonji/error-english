@@ -249,7 +249,36 @@ function story(spec) {
   return s;
 }
 
-export const TEMPLATES = { beat: vocab8, word, phrase, upgrade, vs, story };
+// ------------------------------------------------------- drill (method v1, 2026-11-18)
+// Built from the breakout-Shorts analysis (analytics/experiments/competitor-research-2026-11-18.json):
+// no intro (question 1 at second 0), the viewer answers 6-8 times (blank + 3-2-1), the title and
+// an n/N counter stay on screen, and the full list of prompts is visible from the start so the
+// viewer knows what is still coming. One item = 10 units (~4.8 s).
+export const DRILL_ITEM = 10;
+function drill(spec) {
+  const s = new Sched(), I = spec.items, N = I.length;
+  I.forEach((it, i) => {
+    const t = i * DRILL_ITEM, last = i === N - 1;
+    s.color(t, i % 4);
+    s.add("counter", last ? "LAST" : `${i + 1}/${N}`, t, t + DRILL_ITEM, "fade");
+    s.add("prompt", esc(it.ja), t, t + DRILL_ITEM, "slam");
+    const keyRe = new RegExp(`(?<![\\w'])${esc(it.key).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\w'])`);
+    const blank = esc(it.en).replace(keyRe, `<span class="blank">${"_".repeat(Math.max(3, Math.min(8, it.key.length)))}</span>`);
+    s.add("answer", blank, t + 1, t + 6, "up");
+    ["3", "2", "1"].forEach((n, k) => { s.add("count", n, t + 3 + k, t + 4 + k, "slam"); s.se(t + 3 + k, "tick"); });
+    s.add("answer", esc(it.en).replace(keyRe, `<span class="hl">${esc(it.key).replace(/ /g, "&nbsp;")}</span>`), t + 6, t + DRILL_ITEM, "slam");
+    s.say(t + 6, it.en, it.speed ?? 0.95, i % 2 ? "am_michael" : "af_heart");
+    s.se(t + 6, "pop"); s.flash(t + 6, 0.18);
+    if (it.note) s.add("note", esc(it.note), t + 7, t + DRILL_ITEM, "up");
+  });
+  const o = N * DRILL_ITEM;
+  s.add("prompt", esc(spec.cta || "何問わかった？"), o, o + 6, "slam");
+  s.add("note", esc(spec.ctaSub || "コメントで教えて"), o + 1, o + 6, "up");
+  s.progress = [0, o];
+  return s;
+}
+
+export const TEMPLATES = { beat: vocab8, word, phrase, upgrade, vs, story, drill };
 
 export function build(spec) {
   const f = TEMPLATES[spec.pattern];

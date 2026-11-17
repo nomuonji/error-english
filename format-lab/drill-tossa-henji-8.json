@@ -1,0 +1,71 @@
+{
+  "id": "drill-tossa-henji-8",
+  "pattern": "drill",
+  "skin": "poster",
+  "series": false,
+  "formatId": "drill-v1",
+  "experimentId": "method-v1-proto",
+  "level": "日常で使える英語",
+  "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
+  "pin": "とっさに言えない\n返事の英語8選",
+  "summary": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。",
+  "items": [
+    {
+      "ja": "お先にどうぞ",
+      "en": "After you.",
+      "key": "After",
+      "note": "ドアや順番をゆずる時"
+    },
+    {
+      "ja": "おまかせで",
+      "en": "I'll leave it to you.",
+      "key": "leave",
+      "note": "お店でも仕事でも使える"
+    },
+    {
+      "ja": "お大事に",
+      "en": "Take care.",
+      "key": "care",
+      "note": "体調の悪い人に"
+    },
+    {
+      "ja": "気にしないで",
+      "en": "Don't worry about it.",
+      "key": "worry",
+      "note": "Don't mind. は通じない"
+    },
+    {
+      "ja": "しょうがないね",
+      "en": "It is what it is.",
+      "key": "what it is",
+      "note": "あきらめ半分の決まり文句"
+    },
+    {
+      "ja": "早く言ってよ",
+      "en": "You should've said so.",
+      "key": "said",
+      "note": "軽く責めるニュアンス"
+    },
+    {
+      "ja": "手伝おうか？",
+      "en": "Do you need a hand?",
+      "key": "hand",
+      "note": "hand＝手助け"
+    },
+    {
+      "ja": "どの口が言う",
+      "en": "Look who's talking.",
+      "key": "who's talking",
+      "note": "自分のことを棚に上げた人に"
+    }
+  ],
+  "cta": "何問わかった？",
+  "ctaSub": "コメントで教えて",
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/after-you",
+    "https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is",
+    "https://dictionary.cambridge.org/dictionary/english/look-who-s-talking",
+    "https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand"
+  ],
+  "generatedBy": "claude-chat-2026-11-18"
+}
