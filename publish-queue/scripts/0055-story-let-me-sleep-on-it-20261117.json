@@ -23,7 +23,7 @@
       "until": 8,
       "text": "「一晩考えさせて」\n英語で言える？",
       "position": "center",
-      "size": "huge",
+      "size": "large",
       "align": "center",
       "animation": "slam",
       "accent": 2,
@@ -32,7 +32,7 @@
     {
       "at": 8,
       "until": 22,
-      "text": "同僚「今日中に決めちゃわない？」\nCan we decide on this today?",
+      "text": "同僚「今日決めちゃおう」\nCan we decide on this today?",
       "position": "upper",
       "size": "medium",
       "align": "left",
@@ -93,7 +93,7 @@
     {
       "at": 62,
       "until": 74,
-      "text": "断るわけじゃない。\n即答を避けたいときの保留の一言。",
+      "text": "断るわけじゃない。\n即答しないための\n保留の一言。",
       "position": "lower",
       "size": "medium",
       "align": "center",
@@ -102,7 +102,7 @@
     {
       "at": 74,
       "until": 88,
-      "text": "その場で決めたくない → Let me sleep on it.\nあとで返事する → I'll get back to you.",
+      "text": "決めたくない →\nLet me sleep on it.\nあとで返事 →\nI'll get back to you.",
       "position": "center",
       "size": "medium",
       "align": "center",

@@ -21,7 +21,7 @@
     {
       "at": 0,
       "until": 8,
-      "text": "「ここは奢るよ」\n英語で一言？",
+      "text": "「奢るよ」\n英語で一言？",
       "position": "center",
       "size": "huge",
       "align": "center",
@@ -92,7 +92,7 @@
     {
       "at": 60,
       "until": 72,
-      "text": "お店が言うなら「サービスです」\nThis one's on the house.",
+      "text": "お店なら「サービスです」\nThis one's on the house.",
       "position": "lower",
       "size": "medium",
       "align": "center",
@@ -110,7 +110,7 @@
     {
       "at": 72,
       "until": 86,
-      "text": "自分が払う → It's on me.\nお店のサービス → It's on the house.",
+      "text": "自分が払う →\nIt's on me.\nお店のサービス →\nIt's on the house.",
       "position": "center",
       "size": "medium",
       "align": "center",
