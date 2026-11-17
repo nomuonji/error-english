@@ -1,0 +1,122 @@
+{
+  "id": "story-let-me-sleep-on-it-20261117",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-001",
+  "series": false,
+  "level": "日常で使える英語",
+  "title": "「一晩考えさせて」を英語で角を立てずに言うと？",
+  "summary": "その場で決めたくないときに、断らずに返事を保留する一言を学ぶ。",
+  "learningTargets": [
+    {
+      "term": "Let me sleep on it.",
+      "meaning": "一晩考えさせて"
+    },
+    {
+      "term": "I'll get back to you.",
+      "meaning": "あとで返事するね"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 8,
+      "text": "「一晩考えさせて」\n英語で言える？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 2,
+      "flash": 0.18
+    },
+    {
+      "at": 8,
+      "until": 22,
+      "text": "同僚「今日中に決めちゃわない？」\nCan we decide on this today?",
+      "position": "upper",
+      "size": "medium",
+      "align": "left",
+      "animation": "up",
+      "speech": {
+        "text": "Can we decide on this today?",
+        "voice": "am_michael",
+        "speed": 0.98
+      }
+    },
+    {
+      "at": 22,
+      "until": 34,
+      "text": "Let me sleep on it.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Let me sleep on it"
+      ],
+      "speech": {
+        "text": "Let me sleep on it.",
+        "voice": "af_heart",
+        "speed": 0.92
+      },
+      "sfx": "pop",
+      "flash": 0.2,
+      "accent": 4
+    },
+    {
+      "at": 34,
+      "until": 46,
+      "text": "直訳：その上で寝させて\n意味：一晩じっくり考えさせて",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade"
+    },
+    {
+      "at": 46,
+      "until": 62,
+      "text": "Sounds good, but let me sleep on it.\nI'll get back to you tomorrow.",
+      "position": "center",
+      "size": "medium",
+      "align": "left",
+      "animation": "type",
+      "highlight": [
+        "let me sleep on it",
+        "I'll get back to you"
+      ],
+      "speech": {
+        "text": "Sounds good, but let me sleep on it. I'll get back to you tomorrow.",
+        "voice": "af_heart",
+        "speed": 0.95
+      }
+    },
+    {
+      "at": 62,
+      "until": 74,
+      "text": "断るわけじゃない。\n即答を避けたいときの保留の一言。",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up"
+    },
+    {
+      "at": 74,
+      "until": 88,
+      "text": "その場で決めたくない → Let me sleep on it.\nあとで返事する → I'll get back to you.",
+      "position": "center",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "Let me sleep on it",
+        "I'll get back to you"
+      ],
+      "accent": 3
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/sleep-on",
+    "https://dictionary.cambridge.org/dictionary/english/get-back-to"
+  ],
+  "generatedBy": "claude-chat-2026-11-17"
+}

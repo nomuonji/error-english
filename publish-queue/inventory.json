@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T12:54:16Z",
- "queuedCount": 0,
+ "generatedAt": "2026-11-17T13:19:53Z",
+ "queuedCount": 2,
  "pendingVideoCount": 0,
  "failedCount": 0,
- "nextSequence": "0054",
+ "nextSequence": "0056",
  "lastPublished": {
   "file": "0053-story-a-bit-of-a-stretch-20261114.request.json",
   "assetName": "story-a-bit-of-a-stretch-20261114.mp4",
@@ -13,7 +13,30 @@
   "publishedAt": "2026-11-16T10:21:08.871Z",
   "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
  },
- "queued": [],
+ "queued": [
+  {
+   "file": "0054-story-its-on-me-20261117.json",
+   "id": "story-its-on-me-20261117",
+   "pattern": "story",
+   "formatId": "storyboard-v1",
+   "experimentId": "shorts-recovery-001",
+   "targets": [
+    "It's on me.",
+    "It's on the house."
+   ]
+  },
+  {
+   "file": "0055-story-let-me-sleep-on-it-20261117.json",
+   "id": "story-let-me-sleep-on-it-20261117",
+   "pattern": "story",
+   "formatId": "storyboard-v1",
+   "experimentId": "shorts-recovery-001",
+   "targets": [
+    "Let me sleep on it.",
+    "I'll get back to you."
+   ]
+  }
+ ],
  "usedTermKeys": [
   "abstrus",
   "admittedly",
@@ -106,6 +129,7 @@
   "i can't be bother",
   "i have a lot on my plat",
   "i have a soft spot for this song",
+  "i'll get back to you",
   "iffy",
   "impecuniou",
   "inadvertently",
@@ -125,6 +149,7 @@
   "lambast",
   "languid",
   "leery",
+  "let me sleep on it",
   "let' call it a day",
   "let' cut to the chas",
   "let' give her the benefit of the doubt",
@@ -139,7 +164,9 @@
   "obviat",
   "oddly",
   "officiou",
+  "on me",
   "on tenterhook",
+  "on the hous",
   "ordeal",
   "ostensibly",
   "outag",
@@ -309,6 +336,7 @@
   "I can't be bothered.",
   "I have a lot on my plate.",
   "I have a soft spot for this song.",
+  "I'll get back to you.",
   "I'm on tenterhooks.",
   "iffy",
   "impecunious",
@@ -322,6 +350,8 @@
   "inveterate",
   "irk",
   "It slipped my mind.",
+  "It's on me.",
+  "It's on the house.",
   "kerfuffle",
   "knackered",
   "lackadaisical",
@@ -329,6 +359,7 @@
   "lambaste",
   "languid",
   "leery",
+  "Let me sleep on it.",
   "Let's call it a day.",
   "Let's cut to the chase.",
   "Let's give her the benefit of the doubt.",
