@@ -71,7 +71,8 @@ if (THEME === "chat") {
       textAlign: it.align === "left" ? "left" : "center", fontSize: (sizes[it.size] || sizes.large) + "px" });
     // let a long highlighted phrase wrap (templates.js joins it with &nbsp;); the marker continues on the next line
     const src = it.html.replace(/&nbsp;/g, " ");
-    const html = it.anim === "type" ? src.split(/ (?![^<]*>)/).map(w => `<span class="w">${w}</span>`).join(" ") : src;
+    // type reveals word by word, so the highlighted phrase must stay one token there (keep &nbsp;)
+    const html = it.anim === "type" ? it.html.split(/ (?![^<]*>)/).map(w => `<span class="w">${w}</span>`).join(" ") : src;
     el.innerHTML = `<div class="story-text">${html}</div>`;
     root.insertBefore(el, flash);
     return { el, t0: T(it.at), t1: T(it.until), anim: it.anim, position: it.position, words: it.anim === "type" ? [...el.querySelectorAll(".w")] : null };
