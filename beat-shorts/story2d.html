@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "NotoJP"; font-weight: 900; src: url(./node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-900-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoJP"; font-weight: 700; src: url(./node_modules/@fontsource/noto-sans-jp/files/noto-sans-jp-japanese-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "NotoLatin"; font-weight: 700; src: url(./node_modules/@fontsource/noto-sans/files/noto-sans-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Dela Gothic One"; src: url(./node_modules/@fontsource/dela-gothic-one/files/dela-gothic-one-japanese-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Dela Gothic One"; src: url(./node_modules/@fontsource/dela-gothic-one/files/dela-gothic-one-latin-400-normal.woff2) format("woff2"); unicode-range: U+0000-00FF; }
+@font-face { font-family: "Rounded"; font-weight: 800; src: url(./node_modules/@fontsource/m-plus-rounded-1c/files/m-plus-rounded-1c-japanese-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Rounded"; font-weight: 800; src: url(./node_modules/@fontsource/m-plus-rounded-1c/files/m-plus-rounded-1c-latin-800-normal.woff2) format("woff2"); unicode-range: U+0000-00FF; }
+@font-face { font-family: "Nunito"; font-weight: 900; src: url(./node_modules/@fontsource/nunito/files/nunito-latin-900-normal.woff2) format("woff2"); }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
+#root { position: absolute; inset: 0; overflow: hidden; color: var(--ink); font-family: "NotoLatin", "NotoJP", sans-serif; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+.slot { position: absolute; left: 80px; right: 80px; opacity: 0; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; will-change: transform, opacity; }
+.story-text { line-height: 1.25; overflow-wrap: anywhere; }
+.w { display: inline-block; white-space: pre; }
+
+/* ---------- paper: ruled notebook, ink and highlighter ---------- */
+.paper #bg { position: absolute; inset: 0; background:
+  linear-gradient(90deg, transparent 118px, rgba(230,80,80,.55) 118px, rgba(230,80,80,.55) 122px, transparent 122px),
+  repeating-linear-gradient(180deg, transparent 0 86px, rgba(70,110,170,.22) 86px 89px), var(--bg1); }
+.paper .slot { font-family: "Rounded", "NotoJP", sans-serif; font-weight: 800; color: var(--ink); left: 150px; right: 70px; }
+.paper .story-text .hl { background: linear-gradient(transparent 52%, var(--a3) 52%, var(--a3) 92%, transparent 92%); padding: 0 6px; }
+.paper #brand { position: absolute; top: 120px; right: 80px; font-family: "Rounded"; font-weight: 800; font-size: 34px; color: var(--ink); opacity: .5; transform: rotate(-3deg); }
+.paper #bar { position: absolute; left: 150px; right: 70px; top: 200px; height: 6px; background: rgba(0,0,0,.08); border-radius: 3px; }
+.paper #bar i { display: block; height: 100%; width: 0; background: var(--a1); border-radius: 3px; }
+
+/* ---------- poster: flat colour fields, heavy type ---------- */
+.poster #bg { position: absolute; inset: 0; background: var(--field); }
+.poster #disc { position: absolute; width: 1500px; height: 1500px; left: -210px; top: 210px; border-radius: 50%; background: var(--disc); opacity: .9; }
+.poster .slot { font-family: "Dela Gothic One", "NotoJP", sans-serif; color: var(--fg); }
+.poster .story-text .hl { color: var(--hlc); text-decoration: underline; text-decoration-thickness: 10px; text-underline-offset: 12px; }
+.poster #brand { position: absolute; top: 130px; left: 80px; font-family: "Dela Gothic One"; font-size: 36px; color: var(--fg); opacity: .7; }
+.poster #bar { position: absolute; left: 80px; right: 80px; top: 200px; height: 10px; background: rgba(255,255,255,.2); }
+.poster #bar i { display: block; height: 100%; width: 0; background: var(--fg); }
+
+/* ---------- chat: a messaging app thread that builds up ---------- */
+.chat #bg { position: absolute; inset: 0; background: var(--bg2); }
+.chat #head { position: absolute; left: 0; right: 0; top: 0; height: 250px; background: var(--bg1); box-shadow: 0 2px 0 rgba(0,0,0,.08); display: flex; align-items: flex-end; padding: 0 60px 34px; box-sizing: border-box; gap: 26px; font-family: "NotoJP"; font-weight: 900; font-size: 44px; }
+.chat #head b { width: 84px; height: 84px; border-radius: 50%; background: var(--a1); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+.chat #head small { display: block; font-size: 28px; font-weight: 700; opacity: .5; }
+.chat #view { position: absolute; left: 0; right: 0; top: 250px; bottom: 260px; overflow: hidden; }
+.chat #feed { position: absolute; left: 50px; right: 50px; bottom: 30px; display: flex; flex-direction: column; gap: 30px; }
+.chat #foot { position: absolute; left: 0; right: 0; bottom: 0; height: 260px; background: var(--bg1); }
+.chat #foot i { position: absolute; left: 60px; right: 60px; top: 50px; height: 96px; border-radius: 48px; background: rgba(0,0,0,.06); }
+.msg { display: none; max-width: 780px; font-family: "NotoLatin", "NotoJP", sans-serif; font-weight: 700; line-height: 1.32; padding: 28px 38px; border-radius: 44px; box-sizing: border-box; transform-origin: 50% 100%; }
+.msg.l { align-self: flex-start; background: #fff; color: var(--ink); border-bottom-left-radius: 10px; transform-origin: 0 100%; }
+.msg.r { align-self: flex-end; background: var(--a1); color: #fff; border-bottom-right-radius: 10px; transform-origin: 100% 100%; }
+.msg.sys { align-self: center; background: rgba(0,0,0,.08); color: var(--ink); border-radius: 26px; padding: 18px 30px; font-family: "NotoJP"; text-align: center; }
+.msg.card { align-self: stretch; max-width: none; background: var(--bg1); color: var(--ink); border: 6px solid var(--a1); text-align: center; font-family: "NotoJP"; font-weight: 900; border-radius: 36px; }
+.msg .hl { background: var(--a3); color: var(--ink); border-radius: 10px; padding: 0 8px; }
+.msg.r .hl { background: #fff; color: var(--a1); }
+</style>
+</head>
+<body>
+<div id="root"><div id="bg"></div><div id="disc"></div><div id="head"><b>英</b><div>ドパ英語<small>オンライン</small></div></div><div id="view"><div id="feed"></div></div><div id="foot"><i></i></div><div id="brand">ドパ英語</div><div id="bar"><i></i></div><div id="flash"></div></div>
+<script type="module" src="story2d.js"></script>
+</body>
+</html>

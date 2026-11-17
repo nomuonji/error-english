@@ -127,6 +127,10 @@
     ],
     "card": [
       "error-bgm"
+    ],
+    "flat": [
+      "error-bgm",
+      "lexicon-drop"
     ]
   },
   "motifs": [
