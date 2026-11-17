@@ -1,0 +1,113 @@
+{
+  "id": "proto-mistake-donmai",
+  "pattern": "story",
+  "skin": "paper",
+  "series": false,
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-002-b",
+  "level": "日常で使える英語",
+  "title": "「ドンマイ」をそのまま英語で言うと通じない",
+  "summary": "和製英語の「ドンマイ」と、相手を励ますときの自然な一言。",
+  "learningTargets": [
+    {
+      "term": "Don't worry about it.",
+      "meaning": "気にしないで（ドンマイ）"
+    },
+    {
+      "term": "It happens.",
+      "meaning": "よくあることだよ"
+    }
+  ],
+  "storyboard": [
+    {
+      "at": 0,
+      "until": 10,
+      "text": "「ドンマイ」\n英語で言うと？",
+      "position": "center",
+      "size": "huge",
+      "align": "center",
+      "animation": "slam",
+      "accent": 0,
+      "flash": 0.2
+    },
+    {
+      "at": 10,
+      "until": 20,
+      "text": "× Don't mind.",
+      "position": "upper",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "speech": {
+        "text": "Don't mind.",
+        "voice": "am_michael",
+        "speed": 0.95
+      },
+      "sfx": "tick"
+    },
+    {
+      "at": 20,
+      "until": 30,
+      "text": "英語だと励ましにならない。\nI don't mind. は「私は平気」",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "up"
+    },
+    {
+      "at": 30,
+      "until": 42,
+      "text": "Don't worry about it.",
+      "position": "center",
+      "size": "large",
+      "align": "center",
+      "animation": "slam",
+      "highlight": [
+        "Don't worry about it"
+      ],
+      "speech": {
+        "text": "Don't worry about it.",
+        "voice": "af_heart",
+        "speed": 0.92
+      },
+      "sfx": "pop",
+      "flash": 0.25,
+      "accent": 2
+    },
+    {
+      "at": 42,
+      "until": 52,
+      "text": "ミスした相手に\nIt happens. もよく使う",
+      "position": "lower",
+      "size": "medium",
+      "align": "center",
+      "animation": "fade",
+      "highlight": [
+        "It happens."
+      ],
+      "speech": {
+        "text": "It happens.",
+        "voice": "am_michael",
+        "speed": 0.95
+      }
+    },
+    {
+      "at": 52,
+      "until": 62,
+      "text": "ドンマイ →\nDon't worry about it.",
+      "position": "center",
+      "size": "medium",
+      "align": "center",
+      "animation": "up",
+      "highlight": [
+        "Don't worry about it"
+      ],
+      "accent": 3
+    }
+  ],
+  "sources": [
+    "https://dictionary.cambridge.org/dictionary/english/mind",
+    "https://dictionary.cambridge.org/dictionary/english/it-happens"
+  ],
+  "generatedBy": "claude-chat-2026-11-18"
+}
