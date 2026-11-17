@@ -143,6 +143,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
           rm -rf beat-shorts/out beat-shorts/node_modules beat-shorts/.job
+          python3 scripts/queue_inventory.py || echo "inventory refresh failed (non-blocking)"
           git add -A publish-queue
           if git diff --cached --quiet; then echo "no change"; exit 0; fi
           git commit -m "publish-queue: ${{ steps.next.outputs.kind }} ${{ steps.next.outputs.file }} [skip ci]"

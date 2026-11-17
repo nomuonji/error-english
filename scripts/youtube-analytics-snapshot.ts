@@ -192,8 +192,65 @@ async function main() {
     }
   }
 
+  // Distribution diagnostics (added 2026-11-17). Almost every Short gets ~1 view, so the
+  // first question is not "which format wins" but "does YouTube serve these in the Shorts
+  // feed at all". Traffic source and creator content type answer that directly.
+  async function optionalQuery(params: Record<string, unknown>) {
+    try {
+      return rowsFrom(await analytics.reports.query({ ids: 'channel==MINE', startDate, endDate, ...params } as any));
+    } catch (error) {
+      return { headers: [], rows: [], error: safeError(error) };
+    }
+  }
+  const trafficSources = await optionalQuery({
+    dimensions: 'insightTrafficSourceType',
+    metrics: 'views,engagedViews,estimatedMinutesWatched',
+    sort: '-views',
+  });
+  const contentTypes = await optionalQuery({
+    dimensions: 'creatorContentType',
+    metrics: 'views,engagedViews,averageViewDuration',
+  });
+  const recentTraffic: Array<Record<string, unknown>> = [];
+  for (const video of publishedVideos.slice(0, 10)) {
+    recentTraffic.push({
+      videoId: video.videoId,
+      publishedAt: video.publishedAt,
+      pattern: video.pattern ?? null,
+      ...(await optionalQuery({
+        dimensions: 'insightTrafficSourceType',
+        metrics: 'views,engagedViews',
+        filters: 'video==' + video.videoId,
+      })),
+    });
+  }
+  // Public video state (duration, privacy, made-for-kids). Needs a youtube.readonly-capable
+  // token; with an upload-only token this records the error and moves on.
+  let videoStatus: Record<string, unknown> = {};
+  try {
+    const youtube = google.youtube({ version: 'v3', auth });
+    const ids = publishedVideos.slice(0, 15).map((video) => video.videoId);
+    const response = ids.length
+      ? await youtube.videos.list({ id: ids, part: ['status', 'contentDetails', 'statistics'], maxResults: 50 })
+      : null;
+    videoStatus = {
+      items: (response?.data.items ?? []).map((item: any) => ({
+        videoId: item.id,
+        privacyStatus: item.status?.privacyStatus,
+        uploadStatus: item.status?.uploadStatus,
+        madeForKids: item.status?.madeForKids,
+        duration: item.contentDetails?.duration,
+        definition: item.contentDetails?.definition,
+        regionRestriction: item.contentDetails?.regionRestriction ?? null,
+        viewCount: item.statistics?.viewCount,
+      })),
+    };
+  } catch (error) {
+    videoStatus = { error: safeError(error) };
+  }
+
   const snapshot = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     collectedAt: now,
     timezone: 'Asia/Tokyo',
     channelQuery: 'channel==MINE',
@@ -207,6 +264,7 @@ async function main() {
     }),
     publishedLogCount: publishedVideos.length,
     retention,
+    distribution: { trafficSources, contentTypes, recentTraffic, videoStatus },
   };
 
   const outputDir = path.resolve('analytics/snapshots');
@@ -225,6 +283,9 @@ async function main() {
     topVideoRows: videoReport.rows.length,
     retentionRequested: retention.length,
     retentionErrors: retention.filter((item) => 'error' in item).length,
+    trafficSources: trafficSources.rows,
+    contentTypes: contentTypes.rows,
+    videoStatusError: 'error' in videoStatus ? videoStatus.error : null,
     output: 'analytics/snapshots/' + date + '.json',
   }, null, 2));
 }
