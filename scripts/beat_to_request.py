@@ -82,8 +82,8 @@ def check_spec(spec):
             p.append(f"{len(items)} items; a drill holds 6-8")
         for i, it in enumerate(items, 1):
             ja, en, key = it.get("ja", ""), it.get("en", ""), it.get("key", "")
-            if not ja or len(ja) > 12:
-                p.append(f"item {i}: ja missing or over 12 chars (it must fit the on-screen list)")
+            if not ja or len(ja) > 9:
+                p.append(f"item {i}: ja missing or over 9 chars (it must fit the on-screen list)")
             if not en or len(en) > 48:
                 p.append(f"item {i}: en missing or over 48 chars")
             if not key or not re.search(r"(?<![\w'])" + re.escape(key) + r"(?![\w'])", en):
