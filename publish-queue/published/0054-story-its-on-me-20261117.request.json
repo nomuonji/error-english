@@ -1,0 +1,30 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "696637bc6ca25bc781c1d0db5a1fed814ac19900",
+  "assetName": "story-its-on-me-20261117.mp4",
+  "sha256": "5fd5755a7dee363143c1a85475955103ccfbac4f46bfbae42a2844ba7f0c7cb8",
+  "title": "「ここは奢るよ」を英語で一言で言うと？",
+  "description": "会計のときに「ここは私が払うよ」と伝える一言と、お店の「サービスです」の言い方を学ぶ。\n\n・It's on me. ＝ ここは私が払うよ／奢るよ\n・It's on the house. ＝ （お店から）サービスです\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/on-the-house\n意味の確認: https://www.merriam-webster.com/dictionary/on%20me\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音楽: Lexicon Drop（Suno で生成）\n\n#英語フレーズ #英会話 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語の使いどころ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "It's on me.",
+    "It's on the house."
+  ],
+  "script": "0054-story-its-on-me-20261117.json",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-002-d",
+  "style": {
+    "skin": "flat",
+    "track": "lexicon-drop",
+    "excerpt": 0,
+    "theme": "chat",
+    "palette": "lemon"
+  }
+}

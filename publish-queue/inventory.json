@@ -1,30 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T15:19:41Z",
- "queuedCount": 2,
+ "generatedAt": "2026-11-17T19:28:32Z",
+ "queuedCount": 1,
  "pendingVideoCount": 0,
  "failedCount": 0,
  "nextSequence": "0056",
  "lastPublished": {
-  "file": "0053-story-a-bit-of-a-stretch-20261114.request.json",
-  "assetName": "story-a-bit-of-a-stretch-20261114.mp4",
-  "sha256": "85dc70fc3d76d2841c4e31225bd3937d67ebe73efa803c605b0921c57250e0fd",
-  "youtubeVideoId": "hJrvB15uVj0",
-  "publishedAt": "2026-11-16T10:21:08.871Z",
-  "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  "file": "0054-story-its-on-me-20261117.request.json",
+  "assetName": "story-its-on-me-20261117.mp4",
+  "sha256": "5fd5755a7dee363143c1a85475955103ccfbac4f46bfbae42a2844ba7f0c7cb8",
+  "youtubeVideoId": "98DNXtzikpQ",
+  "publishedAt": "2026-11-17T19:28:02.195Z",
+  "instagramMediaId": "18494664679109657"
  },
  "queued": [
-  {
-   "file": "0054-story-its-on-me-20261117.json",
-   "id": "story-its-on-me-20261117",
-   "pattern": "story",
-   "formatId": "storyboard-v1",
-   "experimentId": "shorts-recovery-002-d",
-   "targets": [
-    "It's on me.",
-    "It's on the house."
-   ]
-  },
   {
    "file": "0055-story-let-me-sleep-on-it-20261117.json",
    "id": "story-let-me-sleep-on-it-20261117",

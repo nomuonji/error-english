@@ -288,5 +288,13 @@
     "youtubeVideoId": "hJrvB15uVj0",
     "publishedAt": "2026-11-16T10:21:08.871Z",
     "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  },
+  {
+    "file": "0054-story-its-on-me-20261117.request.json",
+    "assetName": "story-its-on-me-20261117.mp4",
+    "sha256": "5fd5755a7dee363143c1a85475955103ccfbac4f46bfbae42a2844ba7f0c7cb8",
+    "youtubeVideoId": "98DNXtzikpQ",
+    "publishedAt": "2026-11-17T19:28:02.195Z",
+    "instagramMediaId": "18494664679109657"
   }
 ]
