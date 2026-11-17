@@ -1,6 +1,6 @@
 {
   "id": "shorts-recovery-002",
-  "status": "running",
+  "status": "superseded",
   "startedAt": "2026-11-18",
   "owner": "本人決定 2026-11-17『同じチャンネル内で試行錯誤』『打てる施策全部打って当たったやつを後で再現』『テンプレもかえたら？』",
   "problem": "Shortsフィードにほぼ出ていない（28日でSHORTS流入16再生、直近10本は0）。設定は正常。",
@@ -66,5 +66,7 @@
     "assignment": "armとは独立に、公開済み＋待機中の本数が最も少ないskinを選ぶ（直前と同じskinは避ける）。E arm（音ハメ）は neon のまま。",
     "analysis": "armごと・skinごとの両方でSHORTS流入を集計する。片方の因子でだけ当たりが偏っていれば、その因子を再現対象にする。本数が少ないうちは組み合わせ単位の結論を出さない。"
   },
-  "competitorResearch": "analytics/experiments/competitor-research-2026-11-18.json"
+  "competitorResearch": "analytics/experiments/competitor-research-2026-11-18.json",
+  "supersededBy": "method-v1",
+  "supersededNote": "2026-11-18 本人評価『内容が無い』『全然だめ』→研究→本人依頼『方法論に落とし込んで、コンテンツに反映』。arm/skinの並行試験をやめ、docs/shorts-method.md の drill を全本の基本形にした。"
 }
