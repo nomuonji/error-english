@@ -69,7 +69,9 @@ if (THEME === "chat") {
     el.className = "slot";
     Object.assign(el.style, { top: p.top + "px", height: p.height + "px", alignItems: it.align === "left" ? "flex-start" : "center",
       textAlign: it.align === "left" ? "left" : "center", fontSize: (sizes[it.size] || sizes.large) + "px" });
-    const html = it.anim === "type" ? it.html.split(/ (?![^<]*>)/).map(w => `<span class="w">${w}</span>`).join(" ") : it.html;
+    // let a long highlighted phrase wrap (templates.js joins it with &nbsp;); the marker continues on the next line
+    const src = it.html.replace(/&nbsp;/g, " ");
+    const html = it.anim === "type" ? src.split(/ (?![^<]*>)/).map(w => `<span class="w">${w}</span>`).join(" ") : src;
     el.innerHTML = `<div class="story-text">${html}</div>`;
     root.insertBefore(el, flash);
     return { el, t0: T(it.at), t1: T(it.until), anim: it.anim, position: it.position, words: it.anim === "type" ? [...el.querySelectorAll(".w")] : null };
