@@ -41,6 +41,10 @@ export async function uploadVideo(
                     description,
                     tags,
                     categoryId, // default 28 Science & Technology; 27 Education
+                    // 2026-11-17 recovery experiment: tell YouTube the audience reads Japanese and the
+                    // spoken lesson is English, so it is not classified as an English-speaker video.
+                    defaultLanguage: 'ja',
+                    defaultAudioLanguage: 'en',
                 },
                 status: {
                     privacyStatus: 'public', // Change to 'private' or 'unlisted' if needed

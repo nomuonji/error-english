@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T13:19:53Z",
+ "generatedAt": "2026-11-17T14:00:35Z",
  "queuedCount": 2,
  "pendingVideoCount": 0,
  "failedCount": 0,
@@ -19,7 +19,7 @@
    "id": "story-its-on-me-20261117",
    "pattern": "story",
    "formatId": "storyboard-v1",
-   "experimentId": "shorts-recovery-001",
+   "experimentId": "shorts-recovery-002-d",
    "targets": [
     "It's on me.",
     "It's on the house."
@@ -30,10 +30,9 @@
    "id": "story-let-me-sleep-on-it-20261117",
    "pattern": "story",
    "formatId": "storyboard-v1",
-   "experimentId": "shorts-recovery-001",
+   "experimentId": "shorts-recovery-002-a",
    "targets": [
-    "Let me sleep on it.",
-    "I'll get back to you."
+    "Let me sleep on it."
    ]
   }
  ],
@@ -129,7 +128,6 @@
   "i can't be bother",
   "i have a lot on my plat",
   "i have a soft spot for this song",
-  "i'll get back to you",
   "iffy",
   "impecuniou",
   "inadvertently",
@@ -336,7 +334,6 @@
   "I can't be bothered.",
   "I have a lot on my plate.",
   "I have a soft spot for this song.",
-  "I'll get back to you.",
   "I'm on tenterhooks.",
   "iffy",
   "impecunious",

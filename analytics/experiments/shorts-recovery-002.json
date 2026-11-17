@@ -1,0 +1,58 @@
+{
+  "id": "shorts-recovery-002",
+  "status": "running",
+  "startedAt": "2026-11-18",
+  "owner": "本人決定 2026-11-17『同じチャンネル内で試行錯誤』『打てる施策全部打って当たったやつを後で再現』",
+  "problem": "Shortsフィードにほぼ出ていない（28日でSHORTS流入16再生、直近10本は0）。設定は正常。",
+  "design": "施策を動画ごとに割り振る（arm）。全施策を同じ動画に重ねると当たっても再現できないため、1本に1つのarmだけを当てる。チャンネル全体にしか効かない施策（言語メタデータ）は全本に同時適用し、時系列で見る。",
+  "channelWide": [
+    {
+      "id": "lang-meta",
+      "change": "アップロード時に defaultLanguage=ja / defaultAudioLanguage=en を付ける",
+      "since": "2026-11-18"
+    },
+    {
+      "id": "no-series-title",
+      "change": "タイトルに【シリーズ名】や#番号を付けない（spec.series=false）",
+      "since": "2026-11-18"
+    }
+  ],
+  "arms": [
+    {
+      "id": "A-ultrashort",
+      "change": "20〜25秒（42〜52 units）。問い→答え→例文1つで終わり、ループしやすい。日常フレーズ。",
+      "pattern": "story"
+    },
+    {
+      "id": "B-mistake",
+      "change": "『日本人がよく言うけど不自然な英語』の訂正フック。冒頭に誤用、すぐ自然な言い方。30〜45秒。",
+      "pattern": "story"
+    },
+    {
+      "id": "C-hardword",
+      "change": "C1/C2の難しい1語を『意味わかる？』で出し、身近な場面の例文で回収。30〜45秒。元のチャンネル題材の検証。",
+      "pattern": "story"
+    },
+    {
+      "id": "D-situation",
+      "change": "会話場面→決め台詞→意味→例文→まとめの45秒前後のstory（0053/0054型）。",
+      "pattern": "story"
+    },
+    {
+      "id": "E-beat-fresh",
+      "change": "音ハメ型。#番号・『英検1級の単語、何個わかる？』の定型タイトルをやめ、毎回違う切り口のタイトル。",
+      "pattern": "beat"
+    }
+  ],
+  "assignment": "新しい台本は、公開済み＋待機中の本数が最も少ないarmに割り当てる。同じarmを連続させない。specの experimentId は 'shorts-recovery-002-<armの頭文字小文字>'（例: shorts-recovery-002-a）。",
+  "metric": "動画ごとの公開後72時間のSHORTS流入再生（analytics/latest.json distribution.recentTraffic）。",
+  "hit": "1本がSHORTS流入10再生以上。",
+  "reproduce": "当たったarmは次の2本を同じarmで作る。3本中2本以上が当たれば『再現した』として標準の型に昇格し、本人に報告する。1本だけなら偶然の可能性が高いとして記録だけ残す。",
+  "stop": "各armが3本以上公開されて全本0なら、題材・構成・タイトル側の施策では戻らないと判断し、本人に次の手を1つ提案する（候補：本人の声を入れる）。",
+  "period": "2026-11-18〜（5arm×3本＝約15本、約8日）",
+  "notes": [
+    "基準値がほぼ0なので、10再生でも区別できる。",
+    "Shortsの配信は1本ごとのばらつきが大きく、1本の当たりは偶然でありうる。だから再現を必須にする。",
+    "音ハメ型は本人が気に入っている形式で、E armとして続ける。"
+  ]
+}
