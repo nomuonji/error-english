@@ -49,21 +49,21 @@ let items;
 if (THEME === "chat") {
   // every event is one message; it stays in the thread after its time (a chat keeps history)
   const feed = document.getElementById("feed");
-  const sizes = { small: 40, medium: 46, large: 58, huge: 76 };
+  const sizes = { small: 44, medium: 52, large: 66, huge: 84 };
   items = storyItems.map((it, i) => {
     const ev = events[i], el = document.createElement("div");
     const voice = ev.speech?.voice;
     const kind = (ev.size === "large" || ev.size === "huge") && (i === 0 || !voice) ? "card"
       : voice === "am_michael" ? "l" : voice === "af_heart" ? "r" : "sys";
     el.className = `msg ${kind}`;
-    el.style.fontSize = (kind === "sys" ? 36 : sizes[ev.size] || sizes.medium) + "px";
+    el.style.fontSize = (kind === "sys" ? 40 : sizes[ev.size] || sizes.medium) + "px";
     el.innerHTML = it.html;
     feed.appendChild(el);
     return { el, t0: T(it.at), kind };
   });
 } else {
   const positions = { upper: { top: 330, height: 440 }, center: { top: 690, height: 560 }, lower: { top: 1050, height: 520 } };
-  const sizes = THEME === "poster" ? { small: 50, medium: 66, large: 92, huge: 128 } : { small: 46, medium: 60, large: 80, huge: 108 };
+  const sizes = THEME === "poster" ? { small: 50, medium: 66, large: 92, huge: 128 } : { small: 50, medium: 66, large: 88, huge: 112 };
   items = storyItems.map(it => {
     const el = document.createElement("div"), p = positions[it.position] || positions.center;
     el.className = "slot";

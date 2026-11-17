@@ -15,7 +15,7 @@ html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
 #root { position: absolute; inset: 0; overflow: hidden; color: var(--ink); font-family: "NotoLatin", "NotoJP", sans-serif; }
 #flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
 .slot { position: absolute; left: 80px; right: 80px; opacity: 0; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; will-change: transform, opacity; }
-.story-text { line-height: 1.25; overflow-wrap: anywhere; }
+.story-text { line-height: 1.25; overflow-wrap: normal; word-break: auto-phrase; }
 .w { display: inline-block; white-space: pre; }
 
 /* ---------- paper: ruled notebook, ink and highlighter ---------- */
@@ -46,7 +46,7 @@ html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
 .chat #feed { position: absolute; left: 50px; right: 50px; bottom: 30px; display: flex; flex-direction: column; gap: 30px; }
 .chat #foot { position: absolute; left: 0; right: 0; bottom: 0; height: 260px; background: var(--bg1); }
 .chat #foot i { position: absolute; left: 60px; right: 60px; top: 50px; height: 96px; border-radius: 48px; background: rgba(0,0,0,.06); }
-.msg { display: none; max-width: 780px; font-family: "NotoLatin", "NotoJP", sans-serif; font-weight: 700; line-height: 1.32; padding: 28px 38px; border-radius: 44px; box-sizing: border-box; transform-origin: 50% 100%; }
+.msg { display: none; word-break: auto-phrase; max-width: 780px; font-family: "NotoLatin", "NotoJP", sans-serif; font-weight: 700; line-height: 1.32; padding: 28px 38px; border-radius: 44px; box-sizing: border-box; transform-origin: 50% 100%; }
 .msg.l { align-self: flex-start; background: #fff; color: var(--ink); border-bottom-left-radius: 10px; transform-origin: 0 100%; }
 .msg.r { align-self: flex-end; background: var(--a1); color: #fff; border-bottom-right-radius: 10px; transform-origin: 100% 100%; }
 .msg.sys { align-self: center; background: rgba(0,0,0,.08); color: var(--ink); border-radius: 26px; padding: 18px 30px; font-family: "NotoJP"; text-align: center; }
