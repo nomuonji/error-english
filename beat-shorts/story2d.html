@@ -54,6 +54,19 @@ html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; }
 .msg.card { align-self: stretch; max-width: none; background: var(--bg1); color: var(--ink); border: 6px solid var(--a1); text-align: center; font-family: "NotoJP"; font-weight: 900; border-radius: 36px; }
 .msg .hl { background: var(--a3); color: var(--ink); border-radius: 10px; padding: 0 8px; }
 .msg.r .hl { background: #fff; color: var(--a1); }
+
+/* ---------- drill layout (method v1): pinned title, n/N counter, prompt list that stays on screen ---------- */
+.pin { position: absolute; left: 60px; right: 60px; top: 120px; padding: 22px 30px; border-radius: 18px; background: var(--a3); color: var(--ink); font-family: "NotoJP"; font-weight: 900; font-size: 58px; line-height: 1.22; text-align: center; box-shadow: 0 8px 0 rgba(0,0,0,.18); word-break: auto-phrase; }
+.paper .pin { background: var(--ink); color: var(--bg1); }
+.ctr { position: absolute; right: 70px; top: 360px; font-family: "Archivo Black", "NotoLatin", sans-serif; font-weight: 900; font-size: 54px; color: var(--fg, var(--ink)); }
+.paper .ctr { color: var(--a1); }
+.list { position: absolute; left: 60px; right: 60px; top: 1400px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px; }
+.list div { font-family: "NotoJP"; font-weight: 900; font-size: 38px; padding: 12px 18px; border-radius: 14px; background: rgba(255,255,255,.88); color: #222; border: 5px solid transparent; white-space: nowrap; overflow: hidden; }
+.list div.on { border-color: var(--a1); transform: scale(1.04); }
+.list div.done { opacity: .45; }
+.list div.done::after { content: " ✓"; }
+.blank { display: inline-block; letter-spacing: 2px; opacity: .9; }
+.slot.count .story-text { font-family: "Archivo Black", "NotoLatin", sans-serif; }
 </style>
 </head>
 <body>
