@@ -1,0 +1,36 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "417585e0921ca0397e4b465044aa767ce276772c",
+  "assetName": "drill-tossa-henji-8.mp4",
+  "sha256": "5eae0df7172e3a5d38583ec03bf297c02bb9908c79baff68c30aa61d5540e2fc",
+  "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
+  "description": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。\n\n・お先にどうぞ ＝ After you.（ドアや順番をゆずる時）\n・おまかせで ＝ I'll leave it to you.（お店でも仕事でも使える）\n・お大事に ＝ Take care.（体調の悪い人に）\n・気にしないで ＝ Don't worry about it.（Don't mind. は通じない）\n・しょうがないね ＝ It is what it is.（あきらめ半分の決まり文句）\n・早く言ってよ ＝ You should've said so.（軽く責めるニュアンス）\n・手伝おうか？ ＝ Do you need a hand?（hand＝手助け）\n・どの口が言う ＝ Look who's talking.（自分のことを棚に上げた人に）\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/after-you\n意味の確認: https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is\n意味の確認: https://dictionary.cambridge.org/dictionary/english/look-who-s-talking\n意味の確認: https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "言えそうで言えない英語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "After you.",
+    "I'll leave it to you.",
+    "Take care.",
+    "Don't worry about it.",
+    "It is what it is.",
+    "You should've said so.",
+    "Do you need a hand?",
+    "Look who's talking."
+  ],
+  "script": "0056-drill-tossa-henji-8.json",
+  "pattern": "drill",
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "style": {
+    "skin": "flat",
+    "track": "error-bgm",
+    "excerpt": 54,
+    "theme": "poster",
+    "palette": "sky"
+  }
+}
