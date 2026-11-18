@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "basedOnCollectedAt": "2026-11-17T12:57:22.917Z",
+  "status": "distribution_blocked",
+  "audienceSummary": "28日窓（2026-10-18〜11-14）。直近10本の流入行にSHORTSなし。全期間のSHORTSは16再生であり、欠測とゼロを区別する。",
+  "findings": [
+    {
+      "id": "f1",
+      "metric": "distribution.trafficSources.rows[insightTrafficSourceType=SHORTS].views",
+      "value": 16,
+      "confidence": "high"
+    },
+    {
+      "id": "f2",
+      "metric": "distribution.trafficSources.rows[insightTrafficSourceType=YT_SEARCH].views",
+      "value": 35,
+      "confidence": "high"
+    },
+    {
+      "id": "f3",
+      "metric": "distribution.recentTraffic: rows containing SHORTS",
+      "value": 0,
+      "confidence": "medium"
+    }
+  ],
+  "nextExperiments": [
+    {
+      "findingIds": [
+        "f1",
+        "f3"
+      ],
+      "pattern": "drill",
+      "hypothesis": "参加型連続穴埋めのmethod-v1で流入が回復するか探索する",
+      "singleChange": "既定drillの切り口を許可表現に変更（skinは規定ローテーション）",
+      "successMetric": "公開後72時間SHORTS流入10以上",
+      "comparisonRule": "method-v1内で公開後同じ経過時間を比較。skinは交絡として記録",
+      "implementation": "drill-permission-7"
+    }
+  ],
+  "keepDoing": [
+    "method-v1の固定一覧、前置きなし、6〜8問"
+  ],
+  "avoidForNow": [
+    "旧形式の優劣断定",
+    "配信原因の断定"
+  ],
+  "limitations": [
+    "配信停止が主因で形式比較は無効（観測上の配信不足であり原因自体は未確定）",
+    "直近流入の欠測はゼロと断定しない",
+    "snapshotの期間末は11月14日でmethod-v1の実績は未観測"
+  ],
+  "formatDecision": {
+    "decision": "maintain",
+    "formatId": "drill-v1",
+    "experimentId": "method-v1",
+    "rationale": "本人承認済みmethod-v1を探索的に継続",
+    "novelty": "許可・断りの温度差",
+    "comparisonRule": "公開後72時間のSHORTS流入",
+    "pattern": "drill"
+  },
+  "generatedScriptIds": [
+    "drill-permission-7"
+  ],
+  "generatedFormatIds": [
+    "drill-v1"
+  ],
+  "experiment": {
+    "id": "method-v1",
+    "observedEligibleVideos": 0,
+    "hit": "not_evaluable",
+    "reproduce": "not_evaluable",
+    "stop": "not_evaluable"
+  }
+}
