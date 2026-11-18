@@ -1,0 +1,29 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "e3631a1b8682a76bbec617407a5cd5a26c196d95",
+  "assetName": "story-let-me-sleep-on-it-20261117.mp4",
+  "sha256": "ccc69a130606dafc0e1351459b765456dc53f24a932c3e78a3704abf2185d1db",
+  "title": "「一晩考えさせて」英語で言える？",
+  "description": "その場で決めたくないときに、断らずに返事を保留する一言。\n\n・Let me sleep on it. ＝ 一晩考えさせて\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/sleep-on\n意味の確認: https://dictionary.cambridge.org/dictionary/english/get-back-to\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語フレーズ #英会話 #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "英語の使いどころ",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "Let me sleep on it."
+  ],
+  "script": "0055-story-let-me-sleep-on-it-20261117.json",
+  "pattern": "story",
+  "formatId": "storyboard-v1",
+  "experimentId": "shorts-recovery-002-a",
+  "style": {
+    "skin": "flat",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "theme": "poster",
+    "palette": "coral"
+  }
+}
