@@ -1,0 +1,95 @@
+{
+  "id": "drill-permission-7",
+  "pattern": "drill",
+  "skin": "paper",
+  "series": false,
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "level": "日常で使える英語",
+  "title": "「どうぞ」だけじゃない！許可する英語7選（最後は意外）",
+  "pin": "「どうぞ」の英語7選\n最後は意外",
+  "summary": "相手に許可を出す場面で使う7表現。場面と温度差を学ぶ。",
+  "items": [
+    {
+      "ja": "遠慮なくどうぞ",
+      "en": "Feel free.",
+      "key": "free",
+      "note": "行動を自由にしていい時"
+    },
+    {
+      "ja": "先に進めて",
+      "en": "Go ahead.",
+      "key": "ahead",
+      "note": "許可を求められた時にも"
+    },
+    {
+      "ja": "ご自由に取って",
+      "en": "Help yourself.",
+      "key": "Help",
+      "note": "食べ物や飲み物をすすめる"
+    },
+    {
+      "ja": "くつろいでね",
+      "en": "Make yourself at home.",
+      "key": "at home",
+      "note": "家に招いた相手に"
+    },
+    {
+      "ja": "私は構わないよ",
+      "en": "That's fine by me.",
+      "key": "fine by me",
+      "note": "相手の提案を受け入れる"
+    },
+    {
+      "ja": "どうぞご勝手に",
+      "en": "Suit yourself.",
+      "key": "Suit",
+      "note": "反対しても相手に任せる時"
+    },
+    {
+      "ja": "どうぞ使って",
+      "en": "Be my guest.",
+      "key": "guest",
+      "note": "客になれ、ではなく許可"
+    }
+  ],
+  "learningTargets": [
+    {
+      "term": "Feel free.",
+      "meaning": "遠慮なくどうぞ"
+    },
+    {
+      "term": "Go ahead.",
+      "meaning": "先に進めて"
+    },
+    {
+      "term": "Help yourself.",
+      "meaning": "ご自由に取って"
+    },
+    {
+      "term": "Make yourself at home.",
+      "meaning": "くつろいでね"
+    },
+    {
+      "term": "That's fine by me.",
+      "meaning": "私は構わないよ"
+    },
+    {
+      "term": "Suit yourself.",
+      "meaning": "どうぞご勝手に"
+    },
+    {
+      "term": "Be my guest.",
+      "meaning": "どうぞ使って"
+    }
+  ],
+  "cta": "何問わかった？",
+  "ctaSub": "コメントで教えて",
+  "sources": [
+    "https://dictionaryblog.cambridge.org/2015/06/03/may-i-sit-here-asking-for-and-giving-permission/",
+    "https://dictionary.cambridge.org/dictionary/english/be-my-guest",
+    "https://dictionary.cambridge.org/dictionary/english/make-at-home",
+    "https://www.espressoenglish.net/learn-english-phrases-make-yourself-at-home-help-yourself-suit-yourself/"
+  ],
+  "generatedBy": "chatgpt-routine-worker"
+}
