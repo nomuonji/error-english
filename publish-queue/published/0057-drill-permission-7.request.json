@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "6d7a059d4165a9624b37652f737e9c6d24f7c76e",
+  "assetName": "drill-permission-7.mp4",
+  "sha256": "f8ffd37b2a803f7287ce301d32a4b0f8f2bbabd85fcc065ac247b0c48ea969b0",
+  "title": "「どうぞ」だけじゃない！許可する英語7選（最後は意外）",
+  "description": "相手に許可を出す場面で使う7表現。場面と温度差を学ぶ。\n\n・遠慮なくどうぞ ＝ Feel free.（行動を自由にしていい時）\n・先に進めて ＝ Go ahead.（許可を求められた時にも）\n・ご自由に取って ＝ Help yourself.（食べ物や飲み物をすすめる）\n・くつろいでね ＝ Make yourself at home.（家に招いた相手に）\n・私は構わないよ ＝ That's fine by me.（相手の提案を受け入れる）\n・どうぞご勝手に ＝ Suit yourself.（反対しても相手に任せる時）\n・どうぞ使って ＝ Be my guest.（客になれ、ではなく許可）\n\n意味の確認: https://dictionaryblog.cambridge.org/2015/06/03/may-i-sit-here-asking-for-and-giving-permission/\n意味の確認: https://dictionary.cambridge.org/dictionary/english/be-my-guest\n意味の確認: https://dictionary.cambridge.org/dictionary/english/make-at-home\n意味の確認: https://www.espressoenglish.net/learn-english-phrases-make-yourself-at-home-help-yourself-suit-yourself/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "言えそうで言えない英語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "Feel free.",
+    "Go ahead.",
+    "Help yourself.",
+    "Make yourself at home.",
+    "That's fine by me.",
+    "Suit yourself.",
+    "Be my guest."
+  ],
+  "script": "0057-drill-permission-7.json",
+  "pattern": "drill",
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "style": {
+    "skin": "flat",
+    "track": "error-bgm",
+    "excerpt": 0,
+    "theme": "paper",
+    "palette": "lilac"
+  }
+}
