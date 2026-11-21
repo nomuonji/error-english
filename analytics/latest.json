@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "collectedAt": "2026-11-20T11:13:03.088Z",
+  "collectedAt": "2026-11-21T10:50:35.720Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-21",
-    "endDate": "2026-11-17",
+    "startDate": "2026-10-22",
+    "endDate": "2026-11-18",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -36,19 +36,6 @@
       "subscribersLost"
     ],
     "rows": [
-      {
-        "day": "2026-10-21",
-        "views": 2,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 10,
-        "averageViewPercentage": 5.21,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      },
       {
         "day": "2026-10-22",
         "views": 3,
@@ -334,44 +321,23 @@
         "shares": 0,
         "subscribersGained": 0,
         "subscribersLost": 0
+      },
+      {
+        "day": "2026-11-18",
+        "views": 3,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 6,
+        "averageViewPercentage": 18.73,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
       }
     ]
   },
   "topVideos": [
-    {
-      "videoId": "vN-ZouHPBis",
-      "metadata": null,
-      "metrics": {
-        "video": "vN-ZouHPBis",
-        "views": 4,
-        "engagedViews": 4,
-        "estimatedMinutesWatched": 1,
-        "averageViewDuration": 19,
-        "averageViewPercentage": 58.3,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
-      "metrics": {
-        "video": "UspiucFmOeQ",
-        "views": 4,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 6,
-        "averageViewDuration": 194,
-        "averageViewPercentage": 588.79,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
     {
       "videoId": "G7CilQsLiwI",
       "metadata": {
@@ -392,6 +358,23 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 10,
         "averageViewPercentage": 33.33,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "UspiucFmOeQ",
+      "metadata": null,
+      "metrics": {
+        "video": "UspiucFmOeQ",
+        "views": 4,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 6,
+        "averageViewDuration": 194,
+        "averageViewPercentage": 588.79,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -426,6 +409,40 @@
       }
     },
     {
+      "videoId": "Ab2aRpTQU3g",
+      "metadata": null,
+      "metrics": {
+        "video": "Ab2aRpTQU3g",
+        "views": 3,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 10,
+        "averageViewPercentage": 30.61,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "vN-ZouHPBis",
+      "metadata": null,
+      "metrics": {
+        "video": "vN-ZouHPBis",
+        "views": 3,
+        "engagedViews": 3,
+        "estimatedMinutesWatched": 1,
+        "averageViewDuration": 22,
+        "averageViewPercentage": 69.43,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "r5Wk6H5zctM",
       "metadata": null,
       "metrics": {
@@ -435,33 +452,6 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 40,
         "averageViewPercentage": 100.05,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "YIrcQiagT7o",
-      "metadata": {
-        "videoId": "YIrcQiagT7o",
-        "publishedAt": "2026-11-08T17:03:41.487Z",
-        "requestFile": "0038-beat-gen-20261106-010.request.json",
-        "title": "英検1級の単語、何個わかる？ vouch / haggle / brink ほか【音ハメ英単語 #10】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・vouch /vaʊtʃ/（動）＝ 保証する\n  I can vouch for her honesty.（私は彼女の正直さを保証できる。）\n・haggle /ˈhæɡəl/（動）＝ 値切る\n  She haggled over the price for ten minutes.（彼女は10分間値切った。）\n・brink /brɪŋk/（名）＝ 瀬戸際\n  The company is on the brink of collapse.（会社は崩壊の瀬戸際だ。）\n・stint /stɪnt/（名）＝ 一時的な期間\n  She did a short stint as a teacher.（彼女は短期間教師をした。）\n・candid /ˈkændɪd/（形）＝ 率直な\n  She gave a candid answer.（彼女は率直に答えた。）\n・bland /blænd/（形）＝ 味気ない\n  The soup tasted a bit bland.（スープは少し味気なかった。）\n・arguably /ˈɑrɡjuəbli/（副）＝ おそらく\n  This is arguably her best album.（これはおそらく彼女の最高作だ。）\n・readily /ˈrɛdɪli/（副）＝ 快く\n  He readily agreed to help us.（彼は快く私たちを手伝ってくれることに同意した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261106-010.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261106-010",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "YIrcQiagT7o",
-        "views": 3,
-        "engagedViews": 3,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 16,
-        "averageViewPercentage": 34.31,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -497,15 +487,42 @@
       }
     },
     {
-      "videoId": "NPvCLvfsGpw",
+      "videoId": "YIrcQiagT7o",
+      "metadata": {
+        "videoId": "YIrcQiagT7o",
+        "publishedAt": "2026-11-08T17:03:41.487Z",
+        "requestFile": "0038-beat-gen-20261106-010.request.json",
+        "title": "英検1級の単語、何個わかる？ vouch / haggle / brink ほか【音ハメ英単語 #10】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・vouch /vaʊtʃ/（動）＝ 保証する\n  I can vouch for her honesty.（私は彼女の正直さを保証できる。）\n・haggle /ˈhæɡəl/（動）＝ 値切る\n  She haggled over the price for ten minutes.（彼女は10分間値切った。）\n・brink /brɪŋk/（名）＝ 瀬戸際\n  The company is on the brink of collapse.（会社は崩壊の瀬戸際だ。）\n・stint /stɪnt/（名）＝ 一時的な期間\n  She did a short stint as a teacher.（彼女は短期間教師をした。）\n・candid /ˈkændɪd/（形）＝ 率直な\n  She gave a candid answer.（彼女は率直に答えた。）\n・bland /blænd/（形）＝ 味気ない\n  The soup tasted a bit bland.（スープは少し味気なかった。）\n・arguably /ˈɑrɡjuəbli/（副）＝ おそらく\n  This is arguably her best album.（これはおそらく彼女の最高作だ。）\n・readily /ˈrɛdɪli/（副）＝ 快く\n  He readily agreed to help us.（彼は快く私たちを手伝ってくれることに同意した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261106-010.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-gen-20261106-010",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "YIrcQiagT7o",
+        "views": 3,
+        "engagedViews": 3,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 16,
+        "averageViewPercentage": 34.31,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "2L7S3nZcWzY",
       "metadata": null,
       "metrics": {
-        "video": "NPvCLvfsGpw",
+        "video": "2L7S3nZcWzY",
         "views": 2,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 1,
-        "averageViewDuration": 48,
-        "averageViewPercentage": 13.669999999999998,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 2,
+        "averageViewPercentage": 6.860000000000001,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -528,23 +545,6 @@
       },
       "metrics": {
         "video": "gz3penxN3KQ",
-        "views": 2,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "Ab2aRpTQU3g",
-      "metadata": null,
-      "metrics": {
-        "video": "Ab2aRpTQU3g",
         "views": 2,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -631,40 +631,6 @@
       }
     },
     {
-      "videoId": "uRh_gvmrDG4",
-      "metadata": null,
-      "metrics": {
-        "video": "uRh_gvmrDG4",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 4,
-        "averageViewPercentage": 13.819999999999999,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "9K5YudXmEHk",
-      "metadata": null,
-      "metrics": {
-        "video": "9K5YudXmEHk",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 22,
-        "averageViewPercentage": 32.9,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "Oe1BEzHTjj0",
       "metadata": null,
       "metrics": {
@@ -699,6 +665,23 @@
       }
     },
     {
+      "videoId": "uRh_gvmrDG4",
+      "metadata": null,
+      "metrics": {
+        "video": "uRh_gvmrDG4",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 4,
+        "averageViewPercentage": 13.819999999999999,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "9IMLyulMT4g",
       "metadata": {
         "videoId": "9IMLyulMT4g",
@@ -725,6 +708,32 @@
       }
     },
     {
+      "videoId": "HbW4ZUbFSrw",
+      "metadata": {
+        "videoId": "HbW4ZUbFSrw",
+        "publishedAt": "2026-10-20T11:51:46.088Z",
+        "requestFile": "0002-en-word-kerfuffle.request.json",
+        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
+        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
+        "assetName": "en-word-kerfuffle.mp4",
+        "pattern": "word",
+        "scriptId": "en-word-kerfuffle"
+      },
+      "metrics": {
+        "video": "HbW4ZUbFSrw",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "ptxQKF4e2vc",
       "metadata": null,
       "metrics": {
@@ -742,19 +751,64 @@
       }
     },
     {
-      "videoId": "HbW4ZUbFSrw",
+      "videoId": "DhqBHx_Kfwc",
       "metadata": {
-        "videoId": "HbW4ZUbFSrw",
-        "publishedAt": "2026-10-20T11:51:46.088Z",
-        "requestFile": "0002-en-word-kerfuffle.request.json",
-        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
-        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
-        "assetName": "en-word-kerfuffle.mp4",
-        "pattern": "word",
-        "scriptId": "en-word-kerfuffle"
+        "videoId": "DhqBHx_Kfwc",
+        "publishedAt": "2026-11-09T21:21:28.415Z",
+        "requestFile": "0040-beat-gen-20261107-011.request.json",
+        "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261107-011.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-gen-20261107-011",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
       },
       "metrics": {
-        "video": "HbW4ZUbFSrw",
+        "video": "DhqBHx_Kfwc",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "ktBJiO8oM4g",
+      "metadata": {
+        "videoId": "ktBJiO8oM4g",
+        "publishedAt": "2026-11-10T18:31:44.836Z",
+        "requestFile": "0042-beat-gen-20261108-012.request.json",
+        "title": "英検1級の単語、何個わかる？ bicker / eavesdrop / leery ほか【音ハメ英単語 #12】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bicker /ˈbɪkər/（動）＝ 口論する\n  They bicker over small things.（彼らは些細なことで口論する。）\n・eavesdrop /ˈiːvzdrɑːp/（動）＝ 盗み聞きする\n  Don't eavesdrop on their conversation.（彼らの会話を盗み聞きしないで。）\n・leery /ˈlɪri/（形）＝ 疑い深い\n  I'm leery of online deals.（私はネット取引には警戒している。）\n・stodgy /ˈstɑːdʒi/（形）＝ 古臭い\n  The club has a stodgy image.（そのクラブは古臭い印象だ。）\n・quandary /ˈkwɑːndəri/（名）＝ 困惑\n  She's in a quandary about the offer.（彼女はその申し出について困惑している。）\n・perk /pɝːk/（名）＝ 特典\n  Free coffee is a nice perk.（無料コーヒーは嬉しい特典だ。）\n・oddly /ˈɑːdli/（副）＝ 奇妙に\n  He, oddly, refused the free meal.（奇妙なことに、彼は無料の食事を断った。）\n・admittedly /ədˈmɪtɪdli/（副）＝ 確かに\n  He, admittedly, lied to us.（確かに、彼は私たちに嘘をついた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261108-012.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-gen-20261108-012",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "ktBJiO8oM4g",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "SXwfpkFtW9E",
+      "metadata": null,
+      "metrics": {
+        "video": "SXwfpkFtW9E",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -821,69 +875,15 @@
       }
     },
     {
-      "videoId": "ktBJiO8oM4g",
-      "metadata": {
-        "videoId": "ktBJiO8oM4g",
-        "publishedAt": "2026-11-10T18:31:44.836Z",
-        "requestFile": "0042-beat-gen-20261108-012.request.json",
-        "title": "英検1級の単語、何個わかる？ bicker / eavesdrop / leery ほか【音ハメ英単語 #12】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bicker /ˈbɪkər/（動）＝ 口論する\n  They bicker over small things.（彼らは些細なことで口論する。）\n・eavesdrop /ˈiːvzdrɑːp/（動）＝ 盗み聞きする\n  Don't eavesdrop on their conversation.（彼らの会話を盗み聞きしないで。）\n・leery /ˈlɪri/（形）＝ 疑い深い\n  I'm leery of online deals.（私はネット取引には警戒している。）\n・stodgy /ˈstɑːdʒi/（形）＝ 古臭い\n  The club has a stodgy image.（そのクラブは古臭い印象だ。）\n・quandary /ˈkwɑːndəri/（名）＝ 困惑\n  She's in a quandary about the offer.（彼女はその申し出について困惑している。）\n・perk /pɝːk/（名）＝ 特典\n  Free coffee is a nice perk.（無料コーヒーは嬉しい特典だ。）\n・oddly /ˈɑːdli/（副）＝ 奇妙に\n  He, oddly, refused the free meal.（奇妙なことに、彼は無料の食事を断った。）\n・admittedly /ədˈmɪtɪdli/（副）＝ 確かに\n  He, admittedly, lied to us.（確かに、彼は私たちに嘘をついた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261108-012.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261108-012",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "ktBJiO8oM4g",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "SXwfpkFtW9E",
+      "videoId": "9K5YudXmEHk",
       "metadata": null,
       "metrics": {
-        "video": "SXwfpkFtW9E",
+        "video": "9K5YudXmEHk",
         "views": 1,
-        "engagedViews": 0,
+        "engagedViews": 1,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "DhqBHx_Kfwc",
-      "metadata": {
-        "videoId": "DhqBHx_Kfwc",
-        "publishedAt": "2026-11-09T21:21:28.415Z",
-        "requestFile": "0040-beat-gen-20261107-011.request.json",
-        "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261107-011.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261107-011",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "DhqBHx_Kfwc",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
+        "averageViewDuration": 22,
+        "averageViewPercentage": 32.9,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -919,43 +919,27 @@
       }
     },
     {
-      "videoId": "3raTddLWGHo",
+      "videoId": "YjEycxp7F1Y",
       "metadata": {
-        "videoId": "3raTddLWGHo",
-        "publishedAt": "2026-11-06T10:51:35.083Z",
-        "requestFile": "0033-quiz-gen-20261104-004.request.json",
-        "title": "英語クイズ3問、何問わかる？ gloat・Take it with a grain of salt・ravenous【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・gloat（動詞）＝ ほくそ笑む\n・Don't gloat over your rival's mistake. ＝ 相手の失敗にほくそ笑むな\n・gloat ＝ ほくそ笑む\nQ2\n・Take it with a grain of salt. ＝ 話半分に聞いておいて\n・Take his advice with a grain of salt. ＝ 彼の助言は話半分に聞いて\n・Take what he says with a grain of salt. ＝ 彼の話は話半分に聞いておいて\nQ3\n・very hungry → ravenous ＝ 腹ペコの\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-gen-20261104-004.mp4",
-        "pattern": "quiz",
-        "scriptId": "quiz-gen-20261104-004",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
+        "videoId": "YjEycxp7F1Y",
+        "publishedAt": "2026-11-14T16:58:22.083Z",
+        "requestFile": "0050-beat-gen-20261112-016.request.json",
+        "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261112-016.mp4",
+        "pattern": "beat",
+        "formatId": "beat-v1",
+        "scriptId": "beat-gen-20261112-016",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
       },
       "metrics": {
-        "video": "3raTddLWGHo",
+        "video": "YjEycxp7F1Y",
         "views": 1,
-        "engagedViews": 1,
+        "engagedViews": 0,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 26,
-        "averageViewPercentage": 89.67,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "DE2IBhjSTiY",
-      "metadata": null,
-      "metrics": {
-        "video": "DE2IBhjSTiY",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 52,
-        "averageViewPercentage": 63.83,
-        "likes": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 1,
         "comments": 0,
         "shares": 0,
         "subscribersGained": 0,
@@ -990,27 +974,26 @@
       }
     },
     {
-      "videoId": "YjEycxp7F1Y",
+      "videoId": "DYzD-dosGMg",
       "metadata": {
-        "videoId": "YjEycxp7F1Y",
-        "publishedAt": "2026-11-14T16:58:22.083Z",
-        "requestFile": "0050-beat-gen-20261112-016.request.json",
-        "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261112-016.mp4",
-        "pattern": "beat",
-        "formatId": "beat-v1",
-        "scriptId": "beat-gen-20261112-016",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+        "videoId": "DYzD-dosGMg",
+        "publishedAt": "2026-11-10T10:33:31.837Z",
+        "requestFile": "0041-quiz-gen-20261108-008.request.json",
+        "title": "英語クイズ3問、何問わかる？ hubris・Let's cut to the chase・comprise / compose【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・hubris（名詞）＝ 傲慢・過信\n・His *hubris* brought down the whole team. ＝ 彼の傲慢さがチームを崩壊させた\n・His hubris cost him everything. ＝ 彼の傲慢さが全てを奪った\nQ2\n・Let's cut to the chase. ＝ 本題に入ろう\n・Let's *cut to the chase* and decide. ＝ 本題に入って決めよう\n・Let's cut to the chase. ＝ 本題に入ろう\nQ3\n・comprise ＝ 〜から成る　例: The team *comprises* five members.（チームは5人から成る）\n・compose ＝ 〜を構成する　例: Five members *compose* the team.（5人がチームを構成する）\n・The team comprises five members. ＝ チームは5人から成る\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-gen-20261108-008.mp4",
+        "pattern": "quiz",
+        "scriptId": "quiz-gen-20261108-008",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
       },
       "metrics": {
-        "video": "YjEycxp7F1Y",
+        "video": "DYzD-dosGMg",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 0,
         "averageViewPercentage": 0,
-        "likes": 1,
+        "likes": 0,
         "comments": 0,
         "shares": 0,
         "subscribersGained": 0,
@@ -1052,25 +1035,15 @@
       }
     },
     {
-      "videoId": "DYzD-dosGMg",
-      "metadata": {
-        "videoId": "DYzD-dosGMg",
-        "publishedAt": "2026-11-10T10:33:31.837Z",
-        "requestFile": "0041-quiz-gen-20261108-008.request.json",
-        "title": "英語クイズ3問、何問わかる？ hubris・Let's cut to the chase・comprise / compose【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・hubris（名詞）＝ 傲慢・過信\n・His *hubris* brought down the whole team. ＝ 彼の傲慢さがチームを崩壊させた\n・His hubris cost him everything. ＝ 彼の傲慢さが全てを奪った\nQ2\n・Let's cut to the chase. ＝ 本題に入ろう\n・Let's *cut to the chase* and decide. ＝ 本題に入って決めよう\n・Let's cut to the chase. ＝ 本題に入ろう\nQ3\n・comprise ＝ 〜から成る　例: The team *comprises* five members.（チームは5人から成る）\n・compose ＝ 〜を構成する　例: Five members *compose* the team.（5人がチームを構成する）\n・The team comprises five members. ＝ チームは5人から成る\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-gen-20261108-008.mp4",
-        "pattern": "quiz",
-        "scriptId": "quiz-gen-20261108-008",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
-      },
+      "videoId": "9KX0_s11XSU",
+      "metadata": null,
       "metrics": {
-        "video": "DYzD-dosGMg",
+        "video": "9KX0_s11XSU",
         "views": 1,
-        "engagedViews": 0,
+        "engagedViews": 1,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
+        "averageViewDuration": 27,
+        "averageViewPercentage": 82.42,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1123,15 +1096,15 @@
       }
     },
     {
-      "videoId": "9KX0_s11XSU",
+      "videoId": "NPvCLvfsGpw",
       "metadata": null,
       "metrics": {
-        "video": "9KX0_s11XSU",
+        "video": "NPvCLvfsGpw",
         "views": 1,
         "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 27,
-        "averageViewPercentage": 82.42,
+        "estimatedMinutesWatched": 1,
+        "averageViewDuration": 85,
+        "averageViewPercentage": 23.97,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1160,6 +1133,23 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 0,
         "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "DE2IBhjSTiY",
+      "metadata": null,
+      "metrics": {
+        "video": "DE2IBhjSTiY",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 52,
+        "averageViewPercentage": 63.83,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1204,6 +1194,33 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 0,
         "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "3raTddLWGHo",
+      "metadata": {
+        "videoId": "3raTddLWGHo",
+        "publishedAt": "2026-11-06T10:51:35.083Z",
+        "requestFile": "0033-quiz-gen-20261104-004.request.json",
+        "title": "英語クイズ3問、何問わかる？ gloat・Take it with a grain of salt・ravenous【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・gloat（動詞）＝ ほくそ笑む\n・Don't gloat over your rival's mistake. ＝ 相手の失敗にほくそ笑むな\n・gloat ＝ ほくそ笑む\nQ2\n・Take it with a grain of salt. ＝ 話半分に聞いておいて\n・Take his advice with a grain of salt. ＝ 彼の助言は話半分に聞いて\n・Take what he says with a grain of salt. ＝ 彼の話は話半分に聞いておいて\nQ3\n・very hungry → ravenous ＝ 腹ペコの\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n・After the hike, I was ravenous. ＝ ハイキングの後、腹ペコだった\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-gen-20261104-004.mp4",
+        "pattern": "quiz",
+        "scriptId": "quiz-gen-20261104-004",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "3raTddLWGHo",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 26,
+        "averageViewPercentage": 89.67,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1327,34 +1344,6 @@
       }
     },
     {
-      "videoId": "uyupjtkkwqg",
-      "metadata": {
-        "videoId": "uyupjtkkwqg",
-        "publishedAt": "2026-11-15T10:01:14.203Z",
-        "requestFile": "0051-quiz-gen-20261113-013.request.json",
-        "title": "英語クイズ3問、何問わかる？ snide・I have a lot on my plate・spooked【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・snide（形容詞）＝ 嫌味な\n・He made a *snide* remark about my car. ＝ 私の車について嫌味を言った\n・That was a snide remark. ＝ それは嫌味な一言だった\nQ2\n・I have a lot on my plate. ＝ やることが山ほどある\n・She has *a lot on her plate* right now. ＝ 彼女は今、やることが山ほどある\n・I have a lot on my plate this week. ＝ 今週はやることが山ほどある\nQ3\n・scared → spooked ＝ 怖気づいた\n・I got *spooked* by a sudden noise. ＝ 突然の物音にびっくりした\n・I got spooked by a sudden noise. ＝ 突然の物音に怖気づいた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-gen-20261113-013.mp4",
-        "pattern": "quiz",
-        "formatId": "quiz-v1",
-        "scriptId": "quiz-gen-20261113-013",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "uyupjtkkwqg",
-        "views": 0,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "c2kv4u3Pneo",
       "metadata": {
         "videoId": "c2kv4u3Pneo",
@@ -1383,20 +1372,21 @@
       }
     },
     {
-      "videoId": "85tsUYEPn2k",
+      "videoId": "uyupjtkkwqg",
       "metadata": {
-        "videoId": "85tsUYEPn2k",
-        "publishedAt": "2026-11-12T18:50:32.051Z",
-        "requestFile": "0046-beat-gen-20261110-014.request.json",
-        "title": "英検1級の単語、何個わかる？ faze / tout / furtive ほか【音ハメ英単語 #14】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・faze /feɪz/（動）＝ 動じさせる\n  The heckling didn't faze her at all.（野次にも全く動じなかった。）\n・tout /taʊt/（動）＝ 売り込む\n  The company touts the app as a game changer.（会社はアプリを画期的だと宣伝する。）\n・furtive /ˈfɝːtɪv/（形）＝ こそこそした\n  She gave him a furtive glance.（彼女は彼をこっそり一瞥した。）\n・tenuous /ˈtenjuəs/（形）＝ 希薄な\n  Their claim has a tenuous link to the facts.（その主張は事実とほとんど結びつかない。）\n・snag /snæɡ/（名）＝ 小さな障害\n  We hit a snag with the booking.（予約でちょっとした問題が起きた。）\n・backlog /ˈbæklɔːɡ/（名）＝ 未処理の山\n  The team is working through a backlog of tickets.（チームは未処理のチケットを片付けている。）\n・promptly /ˈprɑːmptli/（副）＝ すぐに\n  She promptly apologized for the mistake.（彼女はすぐに間違いを謝った。）\n・allegedly /əˈledʒɪdli/（副）＝ 伝えられるところでは\n  He allegedly lied to the board.（彼は取締役会に嘘をついたとされる。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261110-014.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261110-014",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+        "videoId": "uyupjtkkwqg",
+        "publishedAt": "2026-11-15T10:01:14.203Z",
+        "requestFile": "0051-quiz-gen-20261113-013.request.json",
+        "title": "英語クイズ3問、何問わかる？ snide・I have a lot on my plate・spooked【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・snide（形容詞）＝ 嫌味な\n・He made a *snide* remark about my car. ＝ 私の車について嫌味を言った\n・That was a snide remark. ＝ それは嫌味な一言だった\nQ2\n・I have a lot on my plate. ＝ やることが山ほどある\n・She has *a lot on her plate* right now. ＝ 彼女は今、やることが山ほどある\n・I have a lot on my plate this week. ＝ 今週はやることが山ほどある\nQ3\n・scared → spooked ＝ 怖気づいた\n・I got *spooked* by a sudden noise. ＝ 突然の物音にびっくりした\n・I got spooked by a sudden noise. ＝ 突然の物音に怖気づいた\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-gen-20261113-013.mp4",
+        "pattern": "quiz",
+        "formatId": "quiz-v1",
+        "scriptId": "quiz-gen-20261113-013",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
       },
       "metrics": {
-        "video": "85tsUYEPn2k",
+        "video": "uyupjtkkwqg",
         "views": 0,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1628,26 +1618,6 @@
       "rows": []
     },
     {
-      "videoId": "vN-ZouHPBis",
-      "metadata": null,
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
       "videoId": "G7CilQsLiwI",
       "metadata": {
         "videoId": "G7CilQsLiwI",
@@ -1660,6 +1630,16 @@
         "scriptId": "quiz-mix-02",
         "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
       },
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
+    {
+      "videoId": "UspiucFmOeQ",
+      "metadata": null,
       "headers": [
         "elapsedVideoTimeRatio",
         "audienceWatchRatio",
@@ -1687,7 +1667,17 @@
       "rows": []
     },
     {
-      "videoId": "r5Wk6H5zctM",
+      "videoId": "Ab2aRpTQU3g",
+      "metadata": null,
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
+    {
+      "videoId": "vN-ZouHPBis",
       "metadata": null,
       "headers": [
         "elapsedVideoTimeRatio",
@@ -1708,8 +1698,8 @@
       "rows": [
         {
           "insightTrafficSourceType": "YT_SEARCH",
-          "views": 31,
-          "engagedViews": 16,
+          "views": 33,
+          "engagedViews": 17,
           "estimatedMinutesWatched": 13
         },
         {
@@ -1726,8 +1716,8 @@
         },
         {
           "insightTrafficSourceType": "EXT_URL",
-          "views": 5,
-          "engagedViews": 4,
+          "views": 4,
+          "engagedViews": 3,
           "estimatedMinutesWatched": 1
         },
         {
@@ -1754,15 +1744,15 @@
       "rows": [
         {
           "creatorContentType": "videoOnDemand",
-          "views": 2,
-          "engagedViews": 2,
-          "averageViewDuration": 48
+          "views": 1,
+          "engagedViews": 1,
+          "averageViewDuration": 85
         },
         {
           "creatorContentType": "shorts",
-          "views": 68,
-          "engagedViews": 31,
-          "averageViewDuration": 36
+          "views": 67,
+          "engagedViews": 32,
+          "averageViewDuration": 35
         }
       ]
     },
@@ -1928,7 +1918,7 @@
           "duration": "PT37S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "1"
+          "viewCount": "2"
         },
         {
           "videoId": "PVHYr1A_gXs",
@@ -1948,7 +1938,7 @@
           "duration": "PT23S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "1"
+          "viewCount": "2"
         },
         {
           "videoId": "98DNXtzikpQ",
@@ -1958,7 +1948,7 @@
           "duration": "PT42S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "0"
+          "viewCount": "3"
         },
         {
           "videoId": "hJrvB15uVj0",
@@ -1968,7 +1958,7 @@
           "duration": "PT51S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "2"
+          "viewCount": "3"
         },
         {
           "videoId": "c2kv4u3Pneo",
