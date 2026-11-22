@@ -320,5 +320,13 @@
     "youtubeVideoId": "qz8WH8nlQt4",
     "publishedAt": "2026-11-19T11:21:59.412Z",
     "instagramMediaId": "17878651560587305"
+  },
+  {
+    "file": "0058-drill-soft-refusals-7.request.json",
+    "assetName": "drill-soft-refusals-7.mp4",
+    "sha256": "ae02df38b1c1839f2db5be4de5e608ba453100dc7c845f4b4d8a31a942f050f0",
+    "youtubeVideoId": "XHZP2mN7n44",
+    "publishedAt": "2026-11-22T10:25:43.234Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]

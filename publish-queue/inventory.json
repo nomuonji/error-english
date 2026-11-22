@@ -1,35 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-22T07:33:50Z",
- "queuedCount": 2,
+ "generatedAt": "2026-11-22T10:26:18Z",
+ "queuedCount": 1,
  "pendingVideoCount": 0,
  "failedCount": 0,
  "nextSequence": "0060",
  "lastPublished": {
-  "file": "0057-drill-permission-7.request.json",
-  "assetName": "drill-permission-7.mp4",
-  "sha256": "f8ffd37b2a803f7287ce301d32a4b0f8f2bbabd85fcc065ac247b0c48ea969b0",
-  "youtubeVideoId": "qz8WH8nlQt4",
-  "publishedAt": "2026-11-19T11:21:59.412Z",
-  "instagramMediaId": "17878651560587305"
+  "file": "0058-drill-soft-refusals-7.request.json",
+  "assetName": "drill-soft-refusals-7.mp4",
+  "sha256": "ae02df38b1c1839f2db5be4de5e608ba453100dc7c845f4b4d8a31a942f050f0",
+  "youtubeVideoId": "XHZP2mN7n44",
+  "publishedAt": "2026-11-22T10:25:43.234Z",
+  "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
  },
  "queued": [
-  {
-   "file": "0058-drill-soft-refusals-7.json",
-   "id": "drill-soft-refusals-7",
-   "pattern": "drill",
-   "formatId": "drill-v1",
-   "experimentId": "method-v1",
-   "targets": [
-    "I can't make it today.",
-    "Maybe another time.",
-    "I'll pass, thanks.",
-    "Not this time.",
-    "I'm not comfortable with that.",
-    "I'd rather not.",
-    "I'll sit this one out."
-   ]
-  },
   {
    "file": "0059-drill-shopping-english-7.json",
    "id": "drill-shopping-english-7",

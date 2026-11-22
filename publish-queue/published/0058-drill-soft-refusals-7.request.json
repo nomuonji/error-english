@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "e2cdfda3994b169e324f9fb0c36454717694692d",
+  "assetName": "drill-soft-refusals-7.mp4",
+  "sha256": "ae02df38b1c1839f2db5be4de5e608ba453100dc7c845f4b4d8a31a942f050f0",
+  "title": "断りたいのに言えない英語7選（最後は意外）",
+  "description": "日常の断り方を、相手との距離や状況別に練習。\n\n・今日は無理 ＝ I can't make it today.（予定に行けない時）\n・また今度ね ＝ Maybe another time.（今は約束しない言い方）\n・遠慮します ＝ I'll pass, thanks.（誘いや提案を断る）\n・今回はやめる ＝ Not this time.（今回だけ見送る）\n・それはちょっと ＝ I'm not comfortable with that.（無理なお願いに線を引く）\n・気が進まない ＝ I'd rather not.（やわらかく拒否）\n・今回は見送る ＝ I'll sit this one out.（参加を一回休む）\n\n意味の確認: https://dictionary.cambridge.org/\n意味の確認: https://www.oxfordlearnersdictionaries.com/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音楽: Lexicon Drop（Suno で生成）\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "言えそうで言えない英語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "I can't make it today.",
+    "Maybe another time.",
+    "I'll pass, thanks.",
+    "Not this time.",
+    "I'm not comfortable with that.",
+    "I'd rather not.",
+    "I'll sit this one out."
+  ],
+  "script": "0058-drill-soft-refusals-7.json",
+  "pattern": "drill",
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "style": {
+    "skin": "flat",
+    "track": "lexicon-drop",
+    "excerpt": 0,
+    "theme": "poster",
+    "palette": "mint"
+  }
+}
