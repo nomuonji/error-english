@@ -1,0 +1,93 @@
+{
+  "id": "drill-shopping-english-7",
+  "skin": "paper",
+  "title": "買い物でとっさに言えない英語7選（最後は意外）",
+  "pin": "買い物の英語7選\n最後は意外",
+  "summary": "店頭でのサイズ・試着・返品など、すぐ使う一言。",
+  "items": [
+    {
+      "ja": "見てるだけ",
+      "en": "I'm just looking.",
+      "key": "just looking",
+      "note": "店員に声をかけられた時"
+    },
+    {
+      "ja": "試着できる？",
+      "en": "Can I try this on?",
+      "key": "try this on",
+      "note": "服を試したい時"
+    },
+    {
+      "ja": "別サイズは？",
+      "en": "Do you have this in another size?",
+      "key": "another size",
+      "note": "サイズ違いを探す"
+    },
+    {
+      "ja": "これください",
+      "en": "I'll take it.",
+      "key": "take it",
+      "note": "購入を決めた時"
+    },
+    {
+      "ja": "領収書を",
+      "en": "Could I get a receipt?",
+      "key": "receipt",
+      "note": "会計後にお願いする"
+    },
+    {
+      "ja": "返品できる？",
+      "en": "Can I return this?",
+      "key": "return",
+      "note": "返品可能か確認"
+    },
+    {
+      "ja": "取り置きは？",
+      "en": "Could you hold this for me?",
+      "key": "hold this",
+      "note": "後で買いに戻る時"
+    }
+  ],
+  "pattern": "drill",
+  "series": false,
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "level": "日常で使える英語",
+  "learningTargets": [
+    {
+      "term": "I'm just looking.",
+      "meaning": "見てるだけ"
+    },
+    {
+      "term": "Can I try this on?",
+      "meaning": "試着できる？"
+    },
+    {
+      "term": "Do you have this in another size?",
+      "meaning": "別サイズは？"
+    },
+    {
+      "term": "I'll take it.",
+      "meaning": "これください"
+    },
+    {
+      "term": "Could I get a receipt?",
+      "meaning": "領収書を"
+    },
+    {
+      "term": "Can I return this?",
+      "meaning": "返品できる？"
+    },
+    {
+      "term": "Could you hold this for me?",
+      "meaning": "取り置きは？"
+    }
+  ],
+  "cta": "何問わかった？",
+  "ctaSub": "コメントで教えて",
+  "sources": [
+    "https://dictionary.cambridge.org/",
+    "https://www.oxfordlearnersdictionaries.com/"
+  ],
+  "generatedBy": "chatgpt-routine-worker"
+}
