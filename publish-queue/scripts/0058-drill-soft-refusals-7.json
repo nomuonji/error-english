@@ -1,0 +1,93 @@
+{
+  "id": "drill-soft-refusals-7",
+  "skin": "poster",
+  "title": "断りたいのに言えない英語7選（最後は意外）",
+  "pin": "断りたい時の英語7選\n最後は意外",
+  "summary": "日常の断り方を、相手との距離や状況別に練習。",
+  "items": [
+    {
+      "ja": "今日は無理",
+      "en": "I can't make it today.",
+      "key": "make it",
+      "note": "予定に行けない時"
+    },
+    {
+      "ja": "また今度ね",
+      "en": "Maybe another time.",
+      "key": "another time",
+      "note": "今は約束しない言い方"
+    },
+    {
+      "ja": "遠慮します",
+      "en": "I'll pass, thanks.",
+      "key": "pass",
+      "note": "誘いや提案を断る"
+    },
+    {
+      "ja": "今回はやめる",
+      "en": "Not this time.",
+      "key": "this time",
+      "note": "今回だけ見送る"
+    },
+    {
+      "ja": "それはちょっと",
+      "en": "I'm not comfortable with that.",
+      "key": "comfortable",
+      "note": "無理なお願いに線を引く"
+    },
+    {
+      "ja": "気が進まない",
+      "en": "I'd rather not.",
+      "key": "rather not",
+      "note": "やわらかく拒否"
+    },
+    {
+      "ja": "今回は見送る",
+      "en": "I'll sit this one out.",
+      "key": "sit this one out",
+      "note": "参加を一回休む"
+    }
+  ],
+  "pattern": "drill",
+  "series": false,
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "level": "日常で使える英語",
+  "learningTargets": [
+    {
+      "term": "I can't make it today.",
+      "meaning": "今日は無理"
+    },
+    {
+      "term": "Maybe another time.",
+      "meaning": "また今度ね"
+    },
+    {
+      "term": "I'll pass, thanks.",
+      "meaning": "遠慮します"
+    },
+    {
+      "term": "Not this time.",
+      "meaning": "今回はやめる"
+    },
+    {
+      "term": "I'm not comfortable with that.",
+      "meaning": "それはちょっと"
+    },
+    {
+      "term": "I'd rather not.",
+      "meaning": "気が進まない"
+    },
+    {
+      "term": "I'll sit this one out.",
+      "meaning": "今回は見送る"
+    }
+  ],
+  "cta": "何問わかった？",
+  "ctaSub": "コメントで教えて",
+  "sources": [
+    "https://dictionary.cambridge.org/",
+    "https://www.oxfordlearnersdictionaries.com/"
+  ],
+  "generatedBy": "chatgpt-routine-worker"
+}
