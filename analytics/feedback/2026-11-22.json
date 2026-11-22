@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "basedOnCollectedAt": "2026-11-21T10:50:35.720Z",
+  "status": "distribution_blocked",
+  "audienceSummary": "28日窓（2026-10-22〜2026-11-18）。SHORTS流入は全期間15再生。直近公開動画の流入行は欠測が多く、形式の優劣を比較できない。",
+  "findings": [
+    {
+      "id": "f1",
+      "metric": "distribution.trafficSources.rows[insightTrafficSourceType=SHORTS].views",
+      "value": 15,
+      "confidence": "high"
+    },
+    {
+      "id": "f2",
+      "metric": "distribution.trafficSources.rows[insightTrafficSourceType=YT_SEARCH].views",
+      "value": 33,
+      "confidence": "high"
+    },
+    {
+      "id": "f3",
+      "metric": "distribution.recentTraffic rows with SHORTS for two newest drill videos",
+      "value": 0,
+      "videoIds": [
+        "qz8WH8nlQt4",
+        "PVHYr1A_gXs"
+      ],
+      "confidence": "low"
+    }
+  ],
+  "nextExperiments": [
+    {
+      "findingIds": [
+        "f1",
+        "f3"
+      ],
+      "pattern": "drill",
+      "hypothesis": "method-v1で場面別の連続穴埋めがShorts流入を生むか探索する",
+      "singleChange": "切り口をやわらかい断り方に変更",
+      "successMetric": "公開72時間後のSHORTS流入10再生以上",
+      "comparisonRule": "同じmethod-v1内で公開後72時間の流入を比較。skinは交絡として記録",
+      "implementation": "drill-soft-refusals-7"
+    },
+    {
+      "findingIds": [
+        "f1",
+        "f3"
+      ],
+      "pattern": "drill",
+      "hypothesis": "買い物の実用表現が視聴者の参加を促すか探索する",
+      "singleChange": "切り口を店頭の会話に変更",
+      "successMetric": "公開72時間後のSHORTS流入10再生以上",
+      "comparisonRule": "同じmethod-v1内で公開後72時間の流入を比較。skinは交絡として記録",
+      "implementation": "drill-shopping-english-7"
+    }
+  ],
+  "keepDoing": [
+    "method-v1の6〜8問・固定一覧・前置きなしを継続（優位性は未実証）"
+  ],
+  "avoidForNow": [
+    "少数の視聴からの形式優劣の断定",
+    "流入行の欠測を0再生と断定",
+    "配信アルゴリズム原因の断定"
+  ],
+  "limitations": [
+    "配信停止が主因で形式比較は無効（観測上の配信不足。原因は未確定）",
+    "直近2本のdrillのrecentTraffic.rowsは空配列でありSHORTS 0を証明しない",
+    "snapshotの期間末は11月18日。最新drillの公開後72時間評価には不十分"
+  ],
+  "formatDecision": {
+    "decision": "maintain",
+    "formatId": "drill-v1",
+    "experimentId": "method-v1",
+    "rationale": "本人承認のmethod-v1を探索継続。形式優位は実測不足で未確認",
+    "novelty": "断り方・買い物の場面別ドリル",
+    "comparisonRule": "公開72時間のSHORTS流入（同条件）",
+    "pattern": "drill"
+  },
+  "generatedScriptIds": [
+    "drill-soft-refusals-7",
+    "drill-shopping-english-7"
+  ],
+  "generatedFormatIds": [
+    "drill-v1"
+  ],
+  "experiment": {
+    "id": "method-v1",
+    "observedEligibleVideos": 0,
+    "hit": "not_evaluable",
+    "reproduce": "not_evaluable",
+    "stop": "not_evaluable"
+  }
+}
