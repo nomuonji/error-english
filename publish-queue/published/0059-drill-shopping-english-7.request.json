@@ -1,0 +1,35 @@
+{
+  "sourceRepo": "nomuonji/error-english (beat-shorts)",
+  "sourceSha": "09a0256eb5a3ccd9f671148a9906e54427d6fc30",
+  "assetName": "drill-shopping-english-7.mp4",
+  "sha256": "2d350e4d0ced44971a6ec6fa1a21ed2f9a761120c305cb35baeb2885f723c2eb",
+  "title": "買い物でとっさに言えない英語7選（最後は意外）",
+  "description": "店頭でのサイズ・試着・返品など、すぐ使う一言。\n\n・見てるだけ ＝ I'm just looking.（店員に声をかけられた時）\n・試着できる？ ＝ Can I try this on?（服を試したい時）\n・別サイズは？ ＝ Do you have this in another size?（サイズ違いを探す）\n・これください ＝ I'll take it.（購入を決めた時）\n・領収書を ＝ Could I get a receipt?（会計後にお願いする）\n・返品できる？ ＝ Can I return this?（返品可能か確認）\n・取り置きは？ ＝ Could you hold this for me?（後で買いに戻る時）\n\n意味の確認: https://dictionary.cambridge.org/\n意味の確認: https://www.oxfordlearnersdictionaries.com/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+  "categoryId": "27",
+  "tags": [
+    "ドパ英語",
+    "英語学習",
+    "言えそうで言えない英語",
+    "英単語",
+    "English vocabulary",
+    "advanced English",
+    "I'm just looking.",
+    "Can I try this on?",
+    "Do you have this in another size?",
+    "I'll take it.",
+    "Could I get a receipt?",
+    "Can I return this?",
+    "Could you hold this for me?"
+  ],
+  "script": "0059-drill-shopping-english-7.json",
+  "pattern": "drill",
+  "formatId": "drill-v1",
+  "experimentId": "method-v1",
+  "style": {
+    "skin": "flat",
+    "track": "error-bgm",
+    "excerpt": 92,
+    "theme": "paper",
+    "palette": "peach"
+  }
+}

@@ -328,5 +328,13 @@
     "youtubeVideoId": "XHZP2mN7n44",
     "publishedAt": "2026-11-22T10:25:43.234Z",
     "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+  },
+  {
+    "file": "0059-drill-shopping-english-7.request.json",
+    "assetName": "drill-shopping-english-7.mp4",
+    "sha256": "2d350e4d0ced44971a6ec6fa1a21ed2f9a761120c305cb35baeb2885f723c2eb",
+    "youtubeVideoId": "7u0H0AkkLD4",
+    "publishedAt": "2026-11-22T18:06:39.765Z",
+    "instagramError": "upload -> 400: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
   }
 ]
