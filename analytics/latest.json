@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "collectedAt": "2026-11-23T12:06:34.558Z",
+  "collectedAt": "2026-11-24T13:29:07.582Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-24",
-    "endDate": "2026-11-20",
+    "startDate": "2026-10-25",
+    "endDate": "2026-11-21",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -36,19 +36,6 @@
       "subscribersLost"
     ],
     "rows": [
-      {
-        "day": "2026-10-24",
-        "views": 3,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 4,
-        "averageViewPercentage": 13.819999999999999,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      },
       {
         "day": "2026-10-25",
         "views": 1,
@@ -347,20 +334,68 @@
         "shares": 0,
         "subscribersGained": 0,
         "subscribersLost": 0
+      },
+      {
+        "day": "2026-11-21",
+        "views": 8,
+        "engagedViews": 3,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 13,
+        "averageViewPercentage": 34.23,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
       }
     ]
   },
   "topVideos": [
     {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
+      "videoId": "nRTcMZU6BFk",
+      "metadata": {
+        "videoId": "nRTcMZU6BFk",
+        "publishedAt": "2026-10-20T15:26:11.545Z",
+        "requestFile": "0003-en-upgrade-livid.request.json",
+        "title": "very angry より強い「激怒」｜livid【very から卒業】",
+        "description": "・very angry → livid ＝ 激怒している\n・My boss was livid. ＝ 上司はカンカンだった\n・She was livid about the delay. ＝ 彼女は遅れに激怒していた\n・He was livid about the mistake. ＝ 彼はそのミスに激怒していた\n意味の確認: https://dictionary.cambridge.org/dictionary/english/livid\n\n— クレジット —\n写真: doktorkleinmusic / Pixabay https://pixabay.com/videos/id-232663/ (Pixabay Content License)\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50311/ (Pixabay Content License)\n写真: isuruzampa / Pixabay https://pixabay.com/videos/id-268230/ (Pixabay Content License)\n写真: viarami / Pixabay https://pixabay.com/videos/id-119826/ (Pixabay Content License)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_using_laptop_and_checking_watch_while_sitting_in_living_room.jpg (CC BY 2.0)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英語表現 #英語学習 #語彙力 #shorts",
+        "assetName": "en-upgrade-livid.mp4",
+        "pattern": "upgrade",
+        "scriptId": "en-upgrade-livid"
+      },
       "metrics": {
-        "video": "UspiucFmOeQ",
+        "video": "nRTcMZU6BFk",
+        "views": 5,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 3,
+        "averageViewPercentage": 8,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "eL8lUSz25vk",
+      "metadata": {
+        "videoId": "eL8lUSz25vk",
+        "publishedAt": "2026-10-31T19:22:44.361Z",
+        "requestFile": "0006-en-vs-flout-flaunt.request.json",
+        "title": "flout と flaunt の違い、言える？｜ネイティブも間違える【どっちを使う？】",
+        "description": "・flout ＝ （ルールを）堂々と無視する　例: He flouted the rules.（彼はルールを堂々と破った）\n・flaunt ＝ 見せびらかす　例: She flaunted her new car.（彼女は新車を見せびらかした）\n・They flouted the speed limit. ＝ 彼らは制限速度を堂々と無視した\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flout\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flaunt\n\n— クレジット —\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-31961/ (Pixabay Content License)\n写真: thenickmurphy / Pixabay https://pixabay.com/videos/id-34258/ (Pixabay Content License)\n写真: Coverr-Free-Footage / Pixabay https://pixabay.com/videos/id-3608/ (Pixabay Content License)\n写真: Martin Falbisoner / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg (CC BY-SA 4.0)\n写真: PIRO4D / Pixabay https://pixabay.com/videos/id-7549/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\nこの動画の編集部分は、元素材と同じ CC BY-SA ライセンスで提供します。\n\n#英語の違い #英語学習 #英文法 #shorts",
+        "assetName": "en-vs-flout-flaunt.mp4",
+        "pattern": "vs",
+        "scriptId": "en-vs-flout-flaunt"
+      },
+      "metrics": {
+        "video": "eL8lUSz25vk",
         "views": 4,
         "engagedViews": 2,
-        "estimatedMinutesWatched": 6,
-        "averageViewDuration": 194,
-        "averageViewPercentage": 588.79,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 22,
+        "averageViewPercentage": 65.86,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -396,67 +431,15 @@
       }
     },
     {
-      "videoId": "eL8lUSz25vk",
-      "metadata": {
-        "videoId": "eL8lUSz25vk",
-        "publishedAt": "2026-10-31T19:22:44.361Z",
-        "requestFile": "0006-en-vs-flout-flaunt.request.json",
-        "title": "flout と flaunt の違い、言える？｜ネイティブも間違える【どっちを使う？】",
-        "description": "・flout ＝ （ルールを）堂々と無視する　例: He flouted the rules.（彼はルールを堂々と破った）\n・flaunt ＝ 見せびらかす　例: She flaunted her new car.（彼女は新車を見せびらかした）\n・They flouted the speed limit. ＝ 彼らは制限速度を堂々と無視した\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flout\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flaunt\n\n— クレジット —\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-31961/ (Pixabay Content License)\n写真: thenickmurphy / Pixabay https://pixabay.com/videos/id-34258/ (Pixabay Content License)\n写真: Coverr-Free-Footage / Pixabay https://pixabay.com/videos/id-3608/ (Pixabay Content License)\n写真: Martin Falbisoner / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg (CC BY-SA 4.0)\n写真: PIRO4D / Pixabay https://pixabay.com/videos/id-7549/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\nこの動画の編集部分は、元素材と同じ CC BY-SA ライセンスで提供します。\n\n#英語の違い #英語学習 #英文法 #shorts",
-        "assetName": "en-vs-flout-flaunt.mp4",
-        "pattern": "vs",
-        "scriptId": "en-vs-flout-flaunt"
-      },
-      "metrics": {
-        "video": "eL8lUSz25vk",
-        "views": 4,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 22,
-        "averageViewPercentage": 65.86,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "HbW4ZUbFSrw",
-      "metadata": {
-        "videoId": "HbW4ZUbFSrw",
-        "publishedAt": "2026-10-20T11:51:46.088Z",
-        "requestFile": "0002-en-word-kerfuffle.request.json",
-        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
-        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
-        "assetName": "en-word-kerfuffle.mp4",
-        "pattern": "word",
-        "scriptId": "en-word-kerfuffle"
-      },
-      "metrics": {
-        "video": "HbW4ZUbFSrw",
-        "views": 3,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 53,
-        "averageViewPercentage": 112.77,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "r5Wk6H5zctM",
+      "videoId": "UspiucFmOeQ",
       "metadata": null,
       "metrics": {
-        "video": "r5Wk6H5zctM",
-        "views": 3,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 40,
-        "averageViewPercentage": 100.05,
+        "video": "UspiucFmOeQ",
+        "views": 4,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 6,
+        "averageViewDuration": 194,
+        "averageViewPercentage": 588.79,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -474,23 +457,6 @@
         "estimatedMinutesWatched": 1,
         "averageViewDuration": 38,
         "averageViewPercentage": 42.85,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "Ab2aRpTQU3g",
-      "metadata": null,
-      "metrics": {
-        "video": "Ab2aRpTQU3g",
-        "views": 3,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 10,
-        "averageViewPercentage": 30.61,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -526,6 +492,34 @@
       }
     },
     {
+      "videoId": "YjEycxp7F1Y",
+      "metadata": {
+        "videoId": "YjEycxp7F1Y",
+        "publishedAt": "2026-11-14T16:58:22.083Z",
+        "requestFile": "0050-beat-gen-20261112-016.request.json",
+        "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261112-016.mp4",
+        "pattern": "beat",
+        "formatId": "beat-v1",
+        "scriptId": "beat-gen-20261112-016",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "YjEycxp7F1Y",
+        "views": 3,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 4,
+        "averageViewPercentage": 9.37,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "YIrcQiagT7o",
       "metadata": {
         "videoId": "YIrcQiagT7o",
@@ -545,6 +539,122 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 16,
         "averageViewPercentage": 34.31,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "r5Wk6H5zctM",
+      "metadata": null,
+      "metrics": {
+        "video": "r5Wk6H5zctM",
+        "views": 3,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 40,
+        "averageViewPercentage": 100.05,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "HbW4ZUbFSrw",
+      "metadata": {
+        "videoId": "HbW4ZUbFSrw",
+        "publishedAt": "2026-10-20T11:51:46.088Z",
+        "requestFile": "0002-en-word-kerfuffle.request.json",
+        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
+        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
+        "assetName": "en-word-kerfuffle.mp4",
+        "pattern": "word",
+        "scriptId": "en-word-kerfuffle"
+      },
+      "metrics": {
+        "video": "HbW4ZUbFSrw",
+        "views": 3,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 53,
+        "averageViewPercentage": 112.77,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "gz3penxN3KQ",
+      "metadata": {
+        "videoId": "gz3penxN3KQ",
+        "publishedAt": "2026-11-05T10:06:15.577Z",
+        "requestFile": "0030-beat-eiken1-06.request.json",
+        "title": "英検1級の単語、何個わかる？ officious / penchant / deleterious ほか【音ハメ英単語 #6】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・officious /əˈfɪʃəs/（形）＝ おせっかいな・偉そうな\n  An officious guard checked our bags twice.（おせっかいな警備員がカバンを2回調べた。）\n・penchant /ˈpentʃənt/（名）＝ 好み・目がないこと\n  She has a penchant for spicy food.（彼女は辛いものに目がない。）\n・deleterious /ˌdeləˈtɪriəs/（形）＝ 有害な\n  Lack of sleep has deleterious effects.（睡眠不足は体に悪影響をもたらす。）\n・foment /foʊˈment/（動）＝ （争いを）あおる\n  He was accused of fomenting unrest.（彼は騒乱をあおったとして非難された。）\n・querulous /ˈkwerələs/（形）＝ 不平がましい\n  He answered in a querulous tone.（彼は不満げな口調で答えた。）\n・magnanimous /mæɡˈnænɪməs/（形）＝ 寛大な\n  She was magnanimous in victory.（彼女は勝っても相手に寛大だった。）\n・parsimonious /ˌpɑːrsəˈmoʊniəs/（形）＝ けちな\n  My parsimonious boss never buys lunch.（けちな上司は一度もランチをおごらない。）\n・inimical /ɪˈnɪmɪkəl/（形）＝ 不利な・害になる\n  Stress is inimical to good sleep.（ストレスは良い睡眠の敵だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-eiken1-06.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-eiken1-06",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "gz3penxN3KQ",
+        "views": 2,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "jHmRT-cCwsM",
+      "metadata": null,
+      "metrics": {
+        "video": "jHmRT-cCwsM",
+        "views": 2,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 28,
+        "averageViewPercentage": 31.480000000000004,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "maaIWzE6VDI",
+      "metadata": {
+        "videoId": "maaIWzE6VDI",
+        "publishedAt": "2026-11-18T10:48:15.926Z",
+        "requestFile": "0055-story-let-me-sleep-on-it-20261117.request.json",
+        "title": "「一晩考えさせて」英語で言える？",
+        "description": "その場で決めたくないときに、断らずに返事を保留する一言。\n\n・Let me sleep on it. ＝ 一晩考えさせて\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/sleep-on\n意味の確認: https://dictionary.cambridge.org/dictionary/english/get-back-to\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語フレーズ #英会話 #英語学習 #ドパ英語 #shorts",
+        "assetName": "story-let-me-sleep-on-it-20261117.mp4",
+        "pattern": "story",
+        "formatId": "storyboard-v1",
+        "experimentId": "shorts-recovery-002-a",
+        "scriptId": "story-let-me-sleep-on-it-20261117",
+        "summary": "その場で決めたくないときに、断らずに返事を保留する一言。"
+      },
+      "metrics": {
+        "video": "maaIWzE6VDI",
+        "views": 2,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -628,34 +738,6 @@
       }
     },
     {
-      "videoId": "YjEycxp7F1Y",
-      "metadata": {
-        "videoId": "YjEycxp7F1Y",
-        "publishedAt": "2026-11-14T16:58:22.083Z",
-        "requestFile": "0050-beat-gen-20261112-016.request.json",
-        "title": "英検1級の単語、何個わかる？ budge / chide / curt ほか【音ハメ英単語 #16】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・budge /bʌdʒ/（動）＝ 少し動く\n  The door won't budge at all.（ドアはびくともしない。）\n・chide /tʃaɪd/（動）＝ たしなめる\n  She chided him for being late again.（彼女は彼がまた遅刻したのでたしなめた。）\n・curt /kɝːt/（形）＝ そっけない\n  His curt reply ended the chat.（彼のそっけない返事で会話が終わった。）\n・fickle /ˈfɪkəl/（形）＝ 気まぐれな\n  Fans can be fickle about new bands.（ファンは新しいバンドに対して気まぐれな態度をとりがちだ。）\n・gripe /ɡraɪp/（名）＝ 不満\n  He always has a gripe about the boss.（彼はいつも上司への不満を言う。）\n・ploy /plɔɪ/（名）＝ 策略\n  The discount was a ploy to attract buyers.（その割引は客を引く策略だった。）\n・aptly /ˈæptli/（副）＝ 適切に\n  She aptly named the cat Mischief.（彼女は猫をミスチーフと適切に名付けた。）\n・deftly /ˈdeftli/（副）＝ 巧みに\n  He deftly changed the subject.（彼は巧みに話題を変えた。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261112-016.mp4",
-        "pattern": "beat",
-        "formatId": "beat-v1",
-        "scriptId": "beat-gen-20261112-016",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "YjEycxp7F1Y",
-        "views": 2,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 4,
-        "averageViewPercentage": 9.37,
-        "likes": 1,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "hJrvB15uVj0",
       "metadata": {
         "videoId": "hJrvB15uVj0",
@@ -729,50 +811,6 @@
       }
     },
     {
-      "videoId": "gz3penxN3KQ",
-      "metadata": {
-        "videoId": "gz3penxN3KQ",
-        "publishedAt": "2026-11-05T10:06:15.577Z",
-        "requestFile": "0030-beat-eiken1-06.request.json",
-        "title": "英検1級の単語、何個わかる？ officious / penchant / deleterious ほか【音ハメ英単語 #6】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・officious /əˈfɪʃəs/（形）＝ おせっかいな・偉そうな\n  An officious guard checked our bags twice.（おせっかいな警備員がカバンを2回調べた。）\n・penchant /ˈpentʃənt/（名）＝ 好み・目がないこと\n  She has a penchant for spicy food.（彼女は辛いものに目がない。）\n・deleterious /ˌdeləˈtɪriəs/（形）＝ 有害な\n  Lack of sleep has deleterious effects.（睡眠不足は体に悪影響をもたらす。）\n・foment /foʊˈment/（動）＝ （争いを）あおる\n  He was accused of fomenting unrest.（彼は騒乱をあおったとして非難された。）\n・querulous /ˈkwerələs/（形）＝ 不平がましい\n  He answered in a querulous tone.（彼は不満げな口調で答えた。）\n・magnanimous /mæɡˈnænɪməs/（形）＝ 寛大な\n  She was magnanimous in victory.（彼女は勝っても相手に寛大だった。）\n・parsimonious /ˌpɑːrsəˈmoʊniəs/（形）＝ けちな\n  My parsimonious boss never buys lunch.（けちな上司は一度もランチをおごらない。）\n・inimical /ɪˈnɪmɪkəl/（形）＝ 不利な・害になる\n  Stress is inimical to good sleep.（ストレスは良い睡眠の敵だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-eiken1-06.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-eiken1-06",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "gz3penxN3KQ",
-        "views": 2,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "jHmRT-cCwsM",
-      "metadata": null,
-      "metrics": {
-        "video": "jHmRT-cCwsM",
-        "views": 2,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 28,
-        "averageViewPercentage": 31.480000000000004,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "Oe1BEzHTjj0",
       "metadata": null,
       "metrics": {
@@ -782,6 +820,32 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 1,
         "averageViewPercentage": 1.8399999999999999,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "9IMLyulMT4g",
+      "metadata": {
+        "videoId": "9IMLyulMT4g",
+        "publishedAt": "2026-10-21T08:04:57.629Z",
+        "requestFile": "0004-en-phrase-move-the-goalposts.request.json",
+        "title": "「後から条件を変えないで」を英語で｜move the goalposts【言えそうで言えない一言】",
+        "description": "・Stop moving the goalposts. ＝ 後から条件を変えないで\n・My boss keeps moving the goalposts. ＝ 上司が後から条件をどんどん変える\n・They moved the goalposts at the last minute. ＝ 土壇場で条件を変えられた\n・Are you moving the goalposts again? ＝ また後から条件を変えるの？\n意味の確認: https://dictionary.cambridge.org/dictionary/english/move-the-goalposts\n\n— クレジット —\n写真: blackmarketmusic / Pixabay https://pixabay.com/videos/id-137265/ (Pixabay Content License)\n写真: G3Remote / Pixabay https://pixabay.com/videos/id-215751/ (Pixabay Content License)\n写真: AlexKopeykin / Pixabay https://pixabay.com/videos/id-39892/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英語フレーズ #英会話 #英語学習 #shorts",
+        "assetName": "en-phrase-move-the-goalposts.mp4",
+        "pattern": "phrase",
+        "scriptId": "en-phrase-move-the-goalposts"
+      },
+      "metrics": {
+        "video": "9IMLyulMT4g",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 37,
+        "averageViewPercentage": 80.19,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -807,15 +871,27 @@
       }
     },
     {
-      "videoId": "uRh_gvmrDG4",
-      "metadata": null,
+      "videoId": "PVHYr1A_gXs",
+      "metadata": {
+        "videoId": "PVHYr1A_gXs",
+        "publishedAt": "2026-11-18T19:40:30.926Z",
+        "requestFile": "0056-drill-tossa-henji-8.request.json",
+        "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
+        "description": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。\n\n・お先にどうぞ ＝ After you.（ドアや順番をゆずる時）\n・おまかせで ＝ I'll leave it to you.（お店でも仕事でも使える）\n・お大事に ＝ Take care.（体調の悪い人に）\n・気にしないで ＝ Don't worry about it.（Don't mind. は通じない）\n・しょうがないね ＝ It is what it is.（あきらめ半分の決まり文句）\n・早く言ってよ ＝ You should've said so.（軽く責めるニュアンス）\n・手伝おうか？ ＝ Do you need a hand?（hand＝手助け）\n・どの口が言う ＝ Look who's talking.（自分のことを棚に上げた人に）\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/after-you\n意味の確認: https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is\n意味の確認: https://dictionary.cambridge.org/dictionary/english/look-who-s-talking\n意味の確認: https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+        "assetName": "drill-tossa-henji-8.mp4",
+        "pattern": "drill",
+        "formatId": "drill-v1",
+        "experimentId": "method-v1",
+        "scriptId": "drill-tossa-henji-8",
+        "summary": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。"
+      },
       "metrics": {
-        "video": "uRh_gvmrDG4",
+        "video": "PVHYr1A_gXs",
         "views": 1,
         "engagedViews": 1,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 4,
-        "averageViewPercentage": 13.819999999999999,
+        "averageViewDuration": 11,
+        "averageViewPercentage": 26.19,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -824,10 +900,20 @@
       }
     },
     {
-      "videoId": "aWcnmXc3dkk",
-      "metadata": null,
+      "videoId": "DhqBHx_Kfwc",
+      "metadata": {
+        "videoId": "DhqBHx_Kfwc",
+        "publishedAt": "2026-11-09T21:21:28.415Z",
+        "requestFile": "0040-beat-gen-20261107-011.request.json",
+        "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261107-011.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-gen-20261107-011",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
       "metrics": {
-        "video": "aWcnmXc3dkk",
+        "video": "DhqBHx_Kfwc",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -894,76 +980,6 @@
       }
     },
     {
-      "videoId": "DhqBHx_Kfwc",
-      "metadata": {
-        "videoId": "DhqBHx_Kfwc",
-        "publishedAt": "2026-11-09T21:21:28.415Z",
-        "requestFile": "0040-beat-gen-20261107-011.request.json",
-        "title": "英検1級の単語、何個わかる？ bemoan / grapple / stilted ほか【音ハメ英単語 #11】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・bemoan /bɪˈmoʊn/（動）＝ 嘆く\n  Critics bemoan the loss of local shops.（評論家は地元商店の喪失を嘆く。）\n・grapple /ˈɡræpəl/（動）＝ 取り組む\n  We grapple with new rules daily.（私たちは毎日新しい規則と格闘する。）\n・stilted /ˈstɪltɪd/（形）＝ 不自然な\n  His apology sounded stilted and forced.（彼の謝罪は不自然で無理があった。）\n・tepid /ˈtepɪd/（形）＝ 熱意のない\n  The audience gave tepid applause.（観客の拍手は熱意に欠けた。）\n・gist /dʒɪst/（名）＝ 要点\n  I missed the gist of his argument.（彼の議論の要点をつかみ損ねた。）\n・rift /rɪft/（名）＝ 不和\n  The rift between them never healed.（二人の不和は決して解消されなかった。）\n・outright /ˌaʊtˈraɪt/（副）＝ 完全に\n  He outright denied the rumor.（彼はその噂を完全に否定した。）\n・decidedly /dɪˈsaɪdɪdli/（副）＝ 明らかに\n  The plan is decidedly risky.（その計画は明らかに危険だ。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261107-011.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261107-011",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "DhqBHx_Kfwc",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "9IMLyulMT4g",
-      "metadata": {
-        "videoId": "9IMLyulMT4g",
-        "publishedAt": "2026-10-21T08:04:57.629Z",
-        "requestFile": "0004-en-phrase-move-the-goalposts.request.json",
-        "title": "「後から条件を変えないで」を英語で｜move the goalposts【言えそうで言えない一言】",
-        "description": "・Stop moving the goalposts. ＝ 後から条件を変えないで\n・My boss keeps moving the goalposts. ＝ 上司が後から条件をどんどん変える\n・They moved the goalposts at the last minute. ＝ 土壇場で条件を変えられた\n・Are you moving the goalposts again? ＝ また後から条件を変えるの？\n意味の確認: https://dictionary.cambridge.org/dictionary/english/move-the-goalposts\n\n— クレジット —\n写真: blackmarketmusic / Pixabay https://pixabay.com/videos/id-137265/ (Pixabay Content License)\n写真: G3Remote / Pixabay https://pixabay.com/videos/id-215751/ (Pixabay Content License)\n写真: AlexKopeykin / Pixabay https://pixabay.com/videos/id-39892/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英語フレーズ #英会話 #英語学習 #shorts",
-        "assetName": "en-phrase-move-the-goalposts.mp4",
-        "pattern": "phrase",
-        "scriptId": "en-phrase-move-the-goalposts"
-      },
-      "metrics": {
-        "video": "9IMLyulMT4g",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 37,
-        "averageViewPercentage": 80.19,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "WRefdl_h4l4",
-      "metadata": null,
-      "metrics": {
-        "video": "WRefdl_h4l4",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "ktBJiO8oM4g",
       "metadata": {
         "videoId": "ktBJiO8oM4g",
@@ -991,52 +1007,6 @@
       }
     },
     {
-      "videoId": "PVHYr1A_gXs",
-      "metadata": {
-        "videoId": "PVHYr1A_gXs",
-        "publishedAt": "2026-11-18T19:40:30.926Z",
-        "requestFile": "0056-drill-tossa-henji-8.request.json",
-        "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
-        "description": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。\n\n・お先にどうぞ ＝ After you.（ドアや順番をゆずる時）\n・おまかせで ＝ I'll leave it to you.（お店でも仕事でも使える）\n・お大事に ＝ Take care.（体調の悪い人に）\n・気にしないで ＝ Don't worry about it.（Don't mind. は通じない）\n・しょうがないね ＝ It is what it is.（あきらめ半分の決まり文句）\n・早く言ってよ ＝ You should've said so.（軽く責めるニュアンス）\n・手伝おうか？ ＝ Do you need a hand?（hand＝手助け）\n・どの口が言う ＝ Look who's talking.（自分のことを棚に上げた人に）\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/after-you\n意味の確認: https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is\n意味の確認: https://dictionary.cambridge.org/dictionary/english/look-who-s-talking\n意味の確認: https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
-        "assetName": "drill-tossa-henji-8.mp4",
-        "pattern": "drill",
-        "formatId": "drill-v1",
-        "experimentId": "method-v1",
-        "scriptId": "drill-tossa-henji-8",
-        "summary": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。"
-      },
-      "metrics": {
-        "video": "PVHYr1A_gXs",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 11,
-        "averageViewPercentage": 26.19,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "Axh-itKpZjE",
-      "metadata": null,
-      "metrics": {
-        "video": "Axh-itKpZjE",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 40,
-        "averageViewPercentage": 39.25,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "DE2IBhjSTiY",
       "metadata": null,
       "metrics": {
@@ -1054,6 +1024,23 @@
       }
     },
     {
+      "videoId": "g82Impy2Gyc",
+      "metadata": null,
+      "metrics": {
+        "video": "g82Impy2Gyc",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 5,
+        "averageViewPercentage": 17.55,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "ptxQKF4e2vc",
       "metadata": null,
       "metrics": {
@@ -1063,23 +1050,6 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 58,
         "averageViewPercentage": 66.27,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "4GHRSPUjzY8",
-      "metadata": null,
-      "metrics": {
-        "video": "4GHRSPUjzY8",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1115,15 +1085,59 @@
       }
     },
     {
-      "videoId": "g82Impy2Gyc",
+      "videoId": "ILnL5uxEqW8",
       "metadata": null,
       "metrics": {
-        "video": "g82Impy2Gyc",
+        "video": "ILnL5uxEqW8",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "vN-ZouHPBis",
+      "metadata": null,
+      "metrics": {
+        "video": "vN-ZouHPBis",
         "views": 1,
         "engagedViews": 1,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 5,
-        "averageViewPercentage": 17.55,
+        "averageViewDuration": 32,
+        "averageViewPercentage": 99.39,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "Y5I2edJcuf8",
+      "metadata": {
+        "videoId": "Y5I2edJcuf8",
+        "publishedAt": "2026-11-11T18:14:32.151Z",
+        "requestFile": "0044-beat-gen-20261109-013.request.json",
+        "title": "英検1級の単語、何個わかる？ mull / lukewarm / grievance ほか【音ハメ英単語 #13】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・mull /mʌl/（動）＝ じっくり考える\n  I need time to mull it over.（じっくり考える時間が必要だ。）\n・lukewarm /ˈluːkwɔːrm/（形）＝ 生ぬるい\n  The coffee's gone lukewarm.（コーヒーがぬるくなった。）\n・grievance /ˈɡriːvəns/（名）＝ 不平不満\n  He filed a grievance with HR.（彼は人事に不満を申し立てた。）\n・sparingly /ˈsperɪŋli/（副）＝ 控えめに\n  Use the hot sauce sparingly.（辛いソースは控えめに。）\n・curb /kɝːb/（動）＝ 抑える\n  We need to curb our spending.（出費を抑える必要がある。）\n・canny /ˈkæni/（形）＝ 抜け目ない\n  She's a canny negotiator.（彼女は抜け目ない交渉者だ。）\n・plight /plaɪt/（名）＝ 苦境\n  The refugees' plight drew attention.（避難民の苦境が注目を集めた。）\n・bluntly /ˈblʌntli/（副）＝ 率直に\n  She bluntly told him to leave.（彼女は彼に出て行けと率直に言った。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261109-013.mp4",
+        "pattern": "beat",
+        "scriptId": "beat-gen-20261109-013",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "Y5I2edJcuf8",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1146,23 +1160,6 @@
       },
       "metrics": {
         "video": "DYzD-dosGMg",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "hiUJALE9f_E",
-      "metadata": null,
-      "metrics": {
-        "video": "hiUJALE9f_E",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1203,88 +1200,15 @@
       }
     },
     {
-      "videoId": "ILnL5uxEqW8",
+      "videoId": "Ab2aRpTQU3g",
       "metadata": null,
       "metrics": {
-        "video": "ILnL5uxEqW8",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "Y5I2edJcuf8",
-      "metadata": {
-        "videoId": "Y5I2edJcuf8",
-        "publishedAt": "2026-11-11T18:14:32.151Z",
-        "requestFile": "0044-beat-gen-20261109-013.request.json",
-        "title": "英検1級の単語、何個わかる？ mull / lukewarm / grievance ほか【音ハメ英単語 #13】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・mull /mʌl/（動）＝ じっくり考える\n  I need time to mull it over.（じっくり考える時間が必要だ。）\n・lukewarm /ˈluːkwɔːrm/（形）＝ 生ぬるい\n  The coffee's gone lukewarm.（コーヒーがぬるくなった。）\n・grievance /ˈɡriːvəns/（名）＝ 不平不満\n  He filed a grievance with HR.（彼は人事に不満を申し立てた。）\n・sparingly /ˈsperɪŋli/（副）＝ 控えめに\n  Use the hot sauce sparingly.（辛いソースは控えめに。）\n・curb /kɝːb/（動）＝ 抑える\n  We need to curb our spending.（出費を抑える必要がある。）\n・canny /ˈkæni/（形）＝ 抜け目ない\n  She's a canny negotiator.（彼女は抜け目ない交渉者だ。）\n・plight /plaɪt/（名）＝ 苦境\n  The refugees' plight drew attention.（避難民の苦境が注目を集めた。）\n・bluntly /ˈblʌntli/（副）＝ 率直に\n  She bluntly told him to leave.（彼女は彼に出て行けと率直に言った。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261109-013.mp4",
-        "pattern": "beat",
-        "scriptId": "beat-gen-20261109-013",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "Y5I2edJcuf8",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "9KX0_s11XSU",
-      "metadata": null,
-      "metrics": {
-        "video": "9KX0_s11XSU",
+        "video": "Ab2aRpTQU3g",
         "views": 1,
         "engagedViews": 1,
         "estimatedMinutesWatched": 0,
-        "averageViewDuration": 27,
-        "averageViewPercentage": 82.42,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "maaIWzE6VDI",
-      "metadata": {
-        "videoId": "maaIWzE6VDI",
-        "publishedAt": "2026-11-18T10:48:15.926Z",
-        "requestFile": "0055-story-let-me-sleep-on-it-20261117.request.json",
-        "title": "「一晩考えさせて」英語で言える？",
-        "description": "その場で決めたくないときに、断らずに返事を保留する一言。\n\n・Let me sleep on it. ＝ 一晩考えさせて\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/sleep-on\n意味の確認: https://dictionary.cambridge.org/dictionary/english/get-back-to\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語フレーズ #英会話 #英語学習 #ドパ英語 #shorts",
-        "assetName": "story-let-me-sleep-on-it-20261117.mp4",
-        "pattern": "story",
-        "formatId": "storyboard-v1",
-        "experimentId": "shorts-recovery-002-a",
-        "scriptId": "story-let-me-sleep-on-it-20261117",
-        "summary": "その場で決めたくないときに、断らずに返事を保留する一言。"
-      },
-      "metrics": {
-        "video": "maaIWzE6VDI",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
+        "averageViewDuration": 10,
+        "averageViewPercentage": 30.61,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1320,6 +1244,40 @@
       }
     },
     {
+      "videoId": "9KX0_s11XSU",
+      "metadata": null,
+      "metrics": {
+        "video": "9KX0_s11XSU",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 27,
+        "averageViewPercentage": 82.42,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "gi7WY5lSgwg",
+      "metadata": null,
+      "metrics": {
+        "video": "gi7WY5lSgwg",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "NPvCLvfsGpw",
       "metadata": null,
       "metrics": {
@@ -1337,10 +1295,10 @@
       }
     },
     {
-      "videoId": "NDqt4R-cYdc",
+      "videoId": "hiUJALE9f_E",
       "metadata": null,
       "metrics": {
-        "video": "NDqt4R-cYdc",
+        "video": "hiUJALE9f_E",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1354,10 +1312,37 @@
       }
     },
     {
-      "videoId": "gi7WY5lSgwg",
+      "videoId": "4GHRSPUjzY8",
       "metadata": null,
       "metrics": {
-        "video": "gi7WY5lSgwg",
+        "video": "4GHRSPUjzY8",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "1fsA3o3PQos",
+      "metadata": {
+        "videoId": "1fsA3o3PQos",
+        "publishedAt": "2026-11-11T09:56:50.076Z",
+        "requestFile": "0043-quiz-gen-20261109-009.request.json",
+        "title": "英語クイズ3問、何問わかる？ cavalier・It slipped my mind・compliment / complement【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・cavalier（形容詞）＝ 無頓着な\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\nQ2\n・It slipped my mind. ＝ うっかり忘れてた\n・Sorry, it slipped my mind. ＝ ごめん、うっかり忘れてた\n・It slipped my mind. ＝ うっかり忘れてた\nQ3\n・compliment ＝ 褒め言葉　例: She took the compliment well.（彼女は褒め言葉を素直に受け取った）\n・complement ＝ 補完する、引き立てる　例: The wine complements the meal.（そのワインは料理を引き立てる）\n・That scarf complements your outfit. ＝ そのスカーフは服を引き立てる\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-gen-20261109-009.mp4",
+        "pattern": "quiz",
+        "scriptId": "quiz-gen-20261109-009",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "1fsA3o3PQos",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1398,20 +1383,44 @@
       }
     },
     {
-      "videoId": "1fsA3o3PQos",
-      "metadata": {
-        "videoId": "1fsA3o3PQos",
-        "publishedAt": "2026-11-11T09:56:50.076Z",
-        "requestFile": "0043-quiz-gen-20261109-009.request.json",
-        "title": "英語クイズ3問、何問わかる？ cavalier・It slipped my mind・compliment / complement【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・cavalier（形容詞）＝ 無頓着な\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\n・He was cavalier about the risks. ＝ 彼はリスクに無頓着だった\nQ2\n・It slipped my mind. ＝ うっかり忘れてた\n・Sorry, it slipped my mind. ＝ ごめん、うっかり忘れてた\n・It slipped my mind. ＝ うっかり忘れてた\nQ3\n・compliment ＝ 褒め言葉　例: She took the compliment well.（彼女は褒め言葉を素直に受け取った）\n・complement ＝ 補完する、引き立てる　例: The wine complements the meal.（そのワインは料理を引き立てる）\n・That scarf complements your outfit. ＝ そのスカーフは服を引き立てる\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-gen-20261109-009.mp4",
-        "pattern": "quiz",
-        "scriptId": "quiz-gen-20261109-009",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
-      },
+      "videoId": "Axh-itKpZjE",
+      "metadata": null,
       "metrics": {
-        "video": "1fsA3o3PQos",
+        "video": "Axh-itKpZjE",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 40,
+        "averageViewPercentage": 39.25,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "WRefdl_h4l4",
+      "metadata": null,
+      "metrics": {
+        "video": "WRefdl_h4l4",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "aWcnmXc3dkk",
+      "metadata": null,
+      "metrics": {
+        "video": "aWcnmXc3dkk",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1461,6 +1470,23 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 29,
         "averageViewPercentage": 99.67,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "NDqt4R-cYdc",
+      "metadata": null,
+      "metrics": {
+        "video": "NDqt4R-cYdc",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1800,27 +1826,16 @@
       "rows": []
     },
     {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
-      "videoId": "G7CilQsLiwI",
+      "videoId": "nRTcMZU6BFk",
       "metadata": {
-        "videoId": "G7CilQsLiwI",
-        "publishedAt": "2026-11-02T20:36:28.778Z",
-        "requestFile": "0023-quiz-mix-02.request.json",
-        "title": "英語クイズ3問、何問わかる？ flummoxed・disinterested / uninterested・curmudgeon【英語クイズ】",
-        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・flummoxed（形容詞）＝ すっかり困惑した・お手上げの\n・I was completely flummoxed by the question. ＝ その質問にすっかり困ってしまった\n・The new TV remote has me flummoxed. ＝ 新しいテレビのリモコン、お手上げだ\n・Even the teacher looked flummoxed. ＝ 先生でさえ困った顔をしていた\n・The instructions left me flummoxed. ＝ 説明書を読んでも、お手上げだった\nQ2\n・disinterested ＝ 利害関係のない・公平な　例: We need a disinterested judge.（公平な審判が必要だ）\n・uninterested ＝ 興味がない　例: He seemed uninterested in the movie.（彼は映画に興味がなさそうだった）\n・We want a disinterested third party. ＝ 公平な第三者に入ってほしい\nQ3\n・curmudgeon（名詞）＝ 気難しい頑固者\n・My grandfather is a lovable old curmudgeon. ＝ 祖父は憎めない頑固じいさんだ\n・Don't be such a curmudgeon. ＝ そんなに不機嫌にならないで\n・He's a curmudgeon about modern music. ＝ 彼は最近の音楽にいちいち文句を言う\n・He's a real curmudgeon. ＝ あの人は本当に気難しい\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flummoxed\n意味の確認: https://dictionary.cambridge.org/dictionary/english/disinterested\n意味の確認: https://dictionary.cambridge.org/dictionary/english/uninterested\n意味の確認: https://dictionary.cambridge.org/dictionary/english/curmudgeon\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
-        "assetName": "quiz-mix-02.mp4",
-        "pattern": "quiz",
-        "scriptId": "quiz-mix-02",
-        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
+        "videoId": "nRTcMZU6BFk",
+        "publishedAt": "2026-10-20T15:26:11.545Z",
+        "requestFile": "0003-en-upgrade-livid.request.json",
+        "title": "very angry より強い「激怒」｜livid【very から卒業】",
+        "description": "・very angry → livid ＝ 激怒している\n・My boss was livid. ＝ 上司はカンカンだった\n・She was livid about the delay. ＝ 彼女は遅れに激怒していた\n・He was livid about the mistake. ＝ 彼はそのミスに激怒していた\n意味の確認: https://dictionary.cambridge.org/dictionary/english/livid\n\n— クレジット —\n写真: doktorkleinmusic / Pixabay https://pixabay.com/videos/id-232663/ (Pixabay Content License)\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50311/ (Pixabay Content License)\n写真: isuruzampa / Pixabay https://pixabay.com/videos/id-268230/ (Pixabay Content License)\n写真: viarami / Pixabay https://pixabay.com/videos/id-119826/ (Pixabay Content License)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_using_laptop_and_checking_watch_while_sitting_in_living_room.jpg (CC BY 2.0)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英語表現 #英語学習 #語彙力 #shorts",
+        "assetName": "en-upgrade-livid.mp4",
+        "pattern": "upgrade",
+        "scriptId": "en-upgrade-livid"
       },
       "headers": [
         "elapsedVideoTimeRatio",
@@ -1849,16 +1864,17 @@
       "rows": []
     },
     {
-      "videoId": "HbW4ZUbFSrw",
+      "videoId": "G7CilQsLiwI",
       "metadata": {
-        "videoId": "HbW4ZUbFSrw",
-        "publishedAt": "2026-10-20T11:51:46.088Z",
-        "requestFile": "0002-en-word-kerfuffle.request.json",
-        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
-        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
-        "assetName": "en-word-kerfuffle.mp4",
-        "pattern": "word",
-        "scriptId": "en-word-kerfuffle"
+        "videoId": "G7CilQsLiwI",
+        "publishedAt": "2026-11-02T20:36:28.778Z",
+        "requestFile": "0023-quiz-mix-02.request.json",
+        "title": "英語クイズ3問、何問わかる？ flummoxed・disinterested / uninterested・curmudgeon【英語クイズ】",
+        "description": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。\n\nQ1\n・flummoxed（形容詞）＝ すっかり困惑した・お手上げの\n・I was completely flummoxed by the question. ＝ その質問にすっかり困ってしまった\n・The new TV remote has me flummoxed. ＝ 新しいテレビのリモコン、お手上げだ\n・Even the teacher looked flummoxed. ＝ 先生でさえ困った顔をしていた\n・The instructions left me flummoxed. ＝ 説明書を読んでも、お手上げだった\nQ2\n・disinterested ＝ 利害関係のない・公平な　例: We need a disinterested judge.（公平な審判が必要だ）\n・uninterested ＝ 興味がない　例: He seemed uninterested in the movie.（彼は映画に興味がなさそうだった）\n・We want a disinterested third party. ＝ 公平な第三者に入ってほしい\nQ3\n・curmudgeon（名詞）＝ 気難しい頑固者\n・My grandfather is a lovable old curmudgeon. ＝ 祖父は憎めない頑固じいさんだ\n・Don't be such a curmudgeon. ＝ そんなに不機嫌にならないで\n・He's a curmudgeon about modern music. ＝ 彼は最近の音楽にいちいち文句を言う\n・He's a real curmudgeon. ＝ あの人は本当に気難しい\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/flummoxed\n意味の確認: https://dictionary.cambridge.org/dictionary/english/disinterested\n意味の確認: https://dictionary.cambridge.org/dictionary/english/uninterested\n意味の確認: https://dictionary.cambridge.org/dictionary/english/curmudgeon\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英語クイズ #英単語 #英語学習 #ドパ英語 #shorts",
+        "assetName": "quiz-mix-02.mp4",
+        "pattern": "quiz",
+        "scriptId": "quiz-mix-02",
+        "summary": "英検1級〜それ以上の英語を3問。カードがめくれる前に答えてみてください。"
       },
       "headers": [
         "elapsedVideoTimeRatio",
@@ -1868,7 +1884,17 @@
       "rows": []
     },
     {
-      "videoId": "r5Wk6H5zctM",
+      "videoId": "UspiucFmOeQ",
+      "metadata": null,
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
+    {
+      "videoId": "SXwfpkFtW9E",
       "metadata": null,
       "headers": [
         "elapsedVideoTimeRatio",
@@ -1889,9 +1915,9 @@
       "rows": [
         {
           "insightTrafficSourceType": "YT_SEARCH",
-          "views": 41,
-          "engagedViews": 20,
-          "estimatedMinutesWatched": 14
+          "views": 46,
+          "engagedViews": 22,
+          "estimatedMinutesWatched": 15
         },
         {
           "insightTrafficSourceType": "YT_CHANNEL",
@@ -1941,9 +1967,9 @@
         },
         {
           "creatorContentType": "shorts",
-          "views": 80,
-          "engagedViews": 37,
-          "averageViewDuration": 35
+          "views": 85,
+          "engagedViews": 39,
+          "averageViewDuration": 34
         }
       ]
     },
@@ -2031,7 +2057,7 @@
           },
           {
             "insightTrafficSourceType": "YT_SEARCH",
-            "views": 1,
+            "views": 2,
             "engagedViews": 0
           }
         ]
@@ -2125,6 +2151,11 @@
             "engagedViews": 0
           },
           {
+            "insightTrafficSourceType": "YT_SEARCH",
+            "views": 1,
+            "engagedViews": 0
+          },
+          {
             "insightTrafficSourceType": "EXT_URL",
             "views": 1,
             "engagedViews": 1
@@ -2177,7 +2208,7 @@
           "duration": "PT42S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "1"
+          "viewCount": "2"
         },
         {
           "videoId": "maaIWzE6VDI",
