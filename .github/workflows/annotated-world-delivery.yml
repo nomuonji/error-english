@@ -51,8 +51,11 @@ jobs:
           grep -Fx 'kind=none' /tmp/queue.out
           grep -Fx 'reason=legacy queue retired; force disabled' /tmp/queue.out
           FORCE=true npx tsx scripts/publish-queue.ts | grep -F 'Legacy queue retired; force disabled.'
-      - name: Compile delivery script without credentials
-        run: npx --no-install esbuild scripts/annotated-world-delivery.ts --platform=node --bundle --packages=external --outfile=/tmp/aw-delivery.js
+      - name: Compile delivery scripts without credentials
+        run: |
+          npx --no-install esbuild scripts/annotated-world-delivery.ts --platform=node --bundle --packages=external --outfile=/tmp/aw-delivery.js
+          npx --no-install esbuild scripts/publish-aw001-reviewed.ts --platform=node --bundle --packages=external --outfile=/tmp/aw001-public.js
+          node --check scripts/prepare-aw001-reviewed.mjs
   prepare:
     if: github.event_name == 'workflow_dispatch' && inputs.mode == 'prepare' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -165,3 +168,53 @@ jobs:
         run: |
           { printf 'Read-only Annotated World channel verification (run %s):\n\n' "$GITHUB_RUN_ID"; cat /tmp/aw-verify-result; printf '\nNo video uploaded.\n'; } >/tmp/aw-verify-comment
           gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-verify-comment
+
+  release-owner-comment:
+    # Only the authenticated owner comment on the existing owner-created identity issue.
+    # The production ledger AND exact MP4 digest must pass review before ANY upload.
+    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-release-001' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - name: Acquire reviewed artifact and enforce all publication gates
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/prepare-aw001-reviewed.mjs
+      - name: Existing OAuth — private upload and readback only
+        env:
+          EXPECTED_SHA256: '194c6a7ba04ecf056fe070b8fdebc3faee4d9db107f4ce68c3590951d6aee9ac'
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/annotated-world-delivery.ts upload-private aw-delivery
+      - name: Public switch of the same private ID with real YouTube readback
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/publish-aw001-reviewed.ts aw-delivery
+      - name: Preserve receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: aw001-publication-receipt
+          path: aw-delivery/receipt.json
+          if-no-files-found: error
+      - name: Post real YouTube ID and privacy to owner tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf 'AW-001 YouTube release verified by API (run %s):\n\n' "$GITHUB_RUN_ID" >/tmp/aw001-release-message
+          jq -r '"Video ID: " + .videoId, "Privacy: " + .privacy, "URL: " + .watchUrl, "SHA256: " + .sha256' aw-delivery/receipt.json >>/tmp/aw001-release-message
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-release-message
