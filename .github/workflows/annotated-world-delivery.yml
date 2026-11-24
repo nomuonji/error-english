@@ -1,5 +1,13 @@
 name: Annotated World delivery
 on:
+  pull_request:
+    paths:
+      - 'scripts/annotated-world-delivery.ts'
+      - 'scripts/prepare-annotated-world.py'
+      - 'scripts/queue_next.py'
+      - 'scripts/publish-queue.ts'
+      - 'publish-queue/config.json'
+      - '.github/workflows/annotated-world-delivery.yml'
   workflow_dispatch:
     inputs:
       mode:
@@ -25,8 +33,26 @@ concurrency:
   group: annotated-world-delivery
   cancel-in-progress: false
 jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - run: python3 -m py_compile scripts/prepare-annotated-world.py scripts/queue_next.py
+      - name: Confirm retired queue cannot be forced
+        run: |
+          FORCE=true python3 scripts/queue_next.py | tee /tmp/queue.out
+          grep -Fx 'kind=none' /tmp/queue.out
+          grep -Fx 'reason=legacy queue retired; force disabled' /tmp/queue.out
+          FORCE=true npx tsx scripts/publish-queue.ts | grep -F 'Legacy queue retired; force disabled.'
+      - name: Compile delivery script without credentials
+        run: npx --no-install esbuild scripts/annotated-world-delivery.ts --platform=node --bundle --packages=external --outfile=/tmp/aw-delivery.js
   prepare:
-    if: inputs.mode == 'prepare' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'prepare' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -62,7 +88,7 @@ jobs:
           if-no-files-found: error
           retention-days: 14
   delivery:
-    if: inputs.mode != 'prepare' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'prepare' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
