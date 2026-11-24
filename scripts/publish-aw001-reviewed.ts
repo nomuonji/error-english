@@ -19,6 +19,7 @@ need(id&&secret&&token,'existing YouTube OAuth absent');
 const auth=new google.auth.OAuth2(id,secret,'https://developers.google.com/oauthplayground');
 auth.setCredentials({refresh_token:token});
 const yt=google.youtube({version:'v3',auth});
+async function main(){
 const mine=await yt.channels.list({part:['snippet'],mine:true});
 need(mine.data.items?.length===1&&mine.data.items[0].id===r.channelId,'OAuth channel identity mismatched');
 const prior=await yt.videos.list({part:['snippet'],id:['7u0H0AkkLD4']});
@@ -49,3 +50,6 @@ need(v.status?.privacyStatus==='public','public privacy readback failed');
 const receipt={...r,privacy:'public',publicationVerifiedAt:new Date().toISOString(),watchUrl:'https://www.youtube.com/watch?v='+r.videoId};
 fs.writeFileSync(path.join(dir,'receipt.json'),JSON.stringify(receipt,null,2)+'\n');
 console.log(JSON.stringify({published:true,...receipt}));
+
+}
+main().catch(e=>{console.error(String(e?.message||e));process.exitCode=1});
