@@ -1,5 +1,7 @@
 name: Annotated World delivery
 on:
+  issue_comment:
+    types: [created]
   pull_request:
     paths:
       - 'scripts/annotated-world-delivery.ts'
@@ -125,3 +127,41 @@ jobs:
           name: annotated-world-receipt
           path: aw-delivery/receipt.json
           if-no-files-found: ignore
+
+  verify-owner-comment:
+    # Read-only identity verification. No media or upload; only the authenticated owner can invoke.
+    if: github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.comment.body == '/aw-verify-channel' && github.event.issue.pull_request == null && github.event.issue.user.id == 63096515
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - name: Read-only OAuth verification
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          set +e
+          npx tsx scripts/annotated-world-delivery.ts verify >/tmp/aw-verify.json 2>/tmp/aw-verify-error
+          rc=$?
+          if [ "$rc" -eq 0 ] && jq -e '(.channelId | type == "string") and .verifiedAgainst == "7u0H0AkkLD4"' /tmp/aw-verify.json >/dev/null; then
+            jq -c '{channelId,title,verifiedAgainst}' /tmp/aw-verify.json >/tmp/aw-verify-result
+          else
+            printf '%s\n' '{"status":"failed","detail":"OAuth identity verification failed. Inspect restricted workflow execution; no upload performed."}' >/tmp/aw-verify-result
+          fi
+      - name: Record verification receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          { printf 'Read-only Annotated World channel verification (run %s):\n\n' "$GITHUB_RUN_ID"; cat /tmp/aw-verify-result; printf '\nNo video uploaded.\n'; } >/tmp/aw-verify-comment
+          gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-verify-comment
