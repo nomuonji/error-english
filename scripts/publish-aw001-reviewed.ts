@@ -40,13 +40,19 @@ if(v.status?.privacyStatus!=='public'){
   await new Promise(resolve=>setTimeout(resolve,15000));v=await read();
  }
  need(v.processingDetails?.processingStatus!=='processing','YouTube video still processing');
- await yt.videos.update({
+ const response=await yt.videos.update({
   part:['status'],
   requestBody:{id:r.videoId,status:{privacyStatus:'public',selfDeclaredMadeForKids:false}}
  });
- v=await read();
+ console.log(JSON.stringify({requestedPublic:true,videoId:r.videoId,responsePrivacy:response.data?.status?.privacyStatus||null}));
+ for(let attempt=0;attempt<18;attempt++){
+  v=await read();
+  if(v.status?.privacyStatus==='public')break;
+  console.log(JSON.stringify({publicReadbackPending:true,attempt:attempt+1,privacy:v.status?.privacyStatus||null,processing:v.processingDetails?.processingStatus||null}));
+  if(attempt<17)await new Promise(resolve=>setTimeout(resolve,10000));
+ }
 }
-need(v.status?.privacyStatus==='public','public privacy readback failed');
+need(v.status?.privacyStatus==='public','public privacy readback failed; latest state='+JSON.stringify({privacy:v.status?.privacyStatus,processing:v.processingDetails?.processingStatus,uploadStatus:v.status?.uploadStatus}));
 const receipt={...r,privacy:'public',publicationVerifiedAt:new Date().toISOString(),watchUrl:'https://www.youtube.com/watch?v='+r.videoId};
 fs.writeFileSync(path.join(dir,'receipt.json'),JSON.stringify(receipt,null,2)+'\n');
 console.log(JSON.stringify({published:true,...receipt}));
