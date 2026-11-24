@@ -207,6 +207,7 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: npx tsx scripts/publish-aw001-reviewed.ts aw-delivery
       - name: Preserve receipt
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: aw001-publication-receipt
@@ -259,3 +260,50 @@ jobs:
         run: |
           { printf 'AW-001 perceptual MP4 QA (run %s):\n\n' "$GITHUB_RUN_ID"; jq -r '"Audio perceptible: " + (.canPerceiveAudio|tostring), "All 25 cues checked: " + (.checkedAllCues|tostring), "Verdict: " + .overall, "Summary: " + .summaryJapanese, "Major issues: " + (.majorIssues|tojson), "Minor issues: " + (.minorIssues|tojson)' aw001-gemini-media-audit.json; printf '\nNo public/private upload or editorial approval performed.\n'; } >/tmp/aw001-audit-message
           gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-audit-message
+
+  resume-existing-aw001:
+    # Recover the EXACT previously uploaded private video; NEVER call videos.insert here.
+    # This job follows a verified upload receipt from run 45423026831, video hYPNkPfJbOQ.
+    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-resume-public-001' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - name: Rebuild exact reviewed delivery manifest, no OAuth/no video upload
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/prepare-aw001-reviewed.mjs
+      - name: Pin already existing YouTube ID from successful private upload readback
+        run: |
+          jq --arg id "hYPNkPfJbOQ" --arg ch "UCBy9F1fD4SQTyjTK8yfZGhA" '{clipId,sourceSha,sha256,videoId:$id,channelId:$ch,privacy:"private"}' aw-delivery/delivery.json >aw-delivery/receipt.json
+      - name: Verify existing video matches clip and SHA, then set PUBLIC and read back
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/publish-aw001-reviewed.ts aw-delivery
+      - name: Preserve observed existing-video receipt even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aw001-existing-video-receipt
+          path: aw-delivery/receipt.json
+          if-no-files-found: ignore
+      - name: Report actual PUBLIC status on the tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf 'AW-001 existing uploaded video final API readback (run %s):\n\n' "$GITHUB_RUN_ID" >/tmp/aw001-public-message
+          jq -r '"Video ID: "+.videoId, "Privacy: "+.privacy, "URL: "+.watchUrl, "SHA256: "+.sha256' aw-delivery/receipt.json >>/tmp/aw001-public-message
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-public-message
