@@ -21,7 +21,7 @@ const status = load('status.json'), brief = load('brief.json');
 const mediaSha = status.render?.sha256;
 const review = brief.deliveryReview || {};
 const owner = status.ownerAuthorization || {};
-need(status.clipId === clip && status.stage === 'reviewed', 'ledger must be reviewed (published videos are never re-uploaded)');
+need(status.clipId === clip && ['reviewed','private_uploaded'].includes(status.stage), 'ledger must be reviewed/private_uploaded (published videos are never re-uploaded)');
 need(owner.publicReleaseAuthorized === true && typeof owner.scope === 'string' && owner.scope.includes(clip), 'no episode-specific owner public-release authorization');
 need(status.script?.renderMatchesBrief === true && status.render?.renderMatchesBrief === true, 'render and source brief do not match');
 need(/^[a-f0-9]{64}$/.test(mediaSha || ''), 'missing reviewed MP4 digest');
