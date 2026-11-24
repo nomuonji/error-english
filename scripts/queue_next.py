@@ -30,7 +30,9 @@ def out(**kw):
 force = os.environ.get("FORCE") == "true"
 today = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=9)).date().isoformat()
 done = sum(1 for e in log if jst_day(e["publishedAt"]) == today)
-if not cfg.get("enabled") and not force:
+if cfg.get("retired"):
+    out(kind="none", file="", reason="legacy queue retired; force disabled")
+elif not cfg.get("enabled") and not force:
     out(kind="none", file="", reason="disabled in publish-queue/config.json")
 elif done >= int(cfg.get("maxPerDayJst", 2)) and not force:
     out(kind="none", file="", reason=f"daily cap reached ({done} today)")

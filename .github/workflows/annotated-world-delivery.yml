@@ -1,0 +1,127 @@
+name: Annotated World delivery
+on:
+  pull_request:
+    paths:
+      - 'scripts/annotated-world-delivery.ts'
+      - 'scripts/prepare-annotated-world.py'
+      - 'scripts/queue_next.py'
+      - 'scripts/publish-queue.ts'
+      - 'publish-queue/config.json'
+      - '.github/workflows/annotated-world-delivery.yml'
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [verify, prepare, upload-private]
+        default: verify
+      source_sha:
+        description: 'prepare: full reviewed commit SHA in The-Annotated-World'
+        type: string
+      clip_id:
+        description: 'prepare: productions/<clip-id>'
+        type: string
+      artifact_run_id:
+        description: 'upload-private: successful prepare run ID in this repository'
+        type: string
+      expected_sha256:
+        description: 'upload-private: reviewed MP4 exact SHA256'
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: annotated-world-delivery
+  cancel-in-progress: false
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - run: python3 -m py_compile scripts/prepare-annotated-world.py scripts/queue_next.py
+      - name: Confirm retired queue cannot be forced
+        run: |
+          FORCE=true python3 scripts/queue_next.py | tee /tmp/queue.out
+          grep -Fx 'kind=none' /tmp/queue.out
+          grep -Fx 'reason=legacy queue retired; force disabled' /tmp/queue.out
+          FORCE=true npx tsx scripts/publish-queue.ts | grep -F 'Legacy queue retired; force disabled.'
+      - name: Compile delivery script without credentials
+        run: npx --no-install esbuild scripts/annotated-world-delivery.ts --platform=node --bundle --packages=external --outfile=/tmp/aw-delivery.js
+  prepare:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'prepare' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate source inputs
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          CLIP_ID: ${{ inputs.clip_id }}
+        run: |
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]] && [[ "$CLIP_ID" =~ ^[A-Za-z0-9_-]+$ ]]
+      - uses: actions/checkout@v4
+        with:
+          repository: nomuonji/The-Annotated-World
+          ref: ${{ inputs.source_sha }}
+          path: source
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg fonts-noto-cjk fonts-dejavu-core
+      - run: pip install pillow numpy pydub
+      - name: Render reviewed source, no OAuth
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          CLIP_ID: ${{ inputs.clip_id }}
+        run: python3 scripts/prepare-annotated-world.py source "$CLIP_ID" "$SOURCE_SHA"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: annotated-world-delivery
+          path: aw-delivery/
+          if-no-files-found: error
+          retention-days: 14
+  delivery:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'prepare' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+      - name: Validate artifact source workflow
+        if: inputs.mode == 'upload-private'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ inputs.artifact_run_id }}
+        run: |
+          [[ "$RUN_ID" =~ ^[0-9]+$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID" | jq -e '.conclusion == "success" and .head_branch == "main" and .path == ".github/workflows/annotated-world-delivery.yml"'
+      - uses: actions/download-artifact@v4
+        if: inputs.mode == 'upload-private'
+        with:
+          name: annotated-world-delivery
+          path: aw-delivery
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.artifact_run_id }}
+      - name: Verify original channel / private upload only
+        env:
+          MODE: ${{ inputs.mode }}
+          EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: npx tsx scripts/annotated-world-delivery.ts "$MODE" aw-delivery
+      - uses: actions/upload-artifact@v4
+        if: inputs.mode == 'upload-private'
+        with:
+          name: annotated-world-receipt
+          path: aw-delivery/receipt.json
+          if-no-files-found: ignore

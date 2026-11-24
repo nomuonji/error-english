@@ -8,9 +8,6 @@ name: Publish queued English lessons
 # go first. Control: publish-queue/config.json (enabled, maxPerDayJst). A failed render or gate
 # moves the script to publish-queue/failed/ with the reason; a failed upload is never retried.
 on:
-  schedule:
-    - cron: "47 2 * * *"   # 11:47 JST
-    - cron: "47 10 * * *"  # 19:47 JST
   workflow_dispatch:
     inputs:
       force:

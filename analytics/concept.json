@@ -1,17 +1,27 @@
 {
-  "name": "ドパ英語",
-  "decidedAt": "2026-11-18",
-  "owner": "本人承認（『go』）",
-  "concept": "3秒で『あ、それ言えた』が来る英語。",
-  "reward": "気持ちよさの源は演出ではなく、①問い→溜め→答えの『わかった！』②今日そのまま言える一言を手に入れた感覚③意外さ・笑い。",
-  "keep": [
-    "問いと答えの間に短い溜めを置く（参加型タップクイズ、超短尺）",
-    "1本で持ち帰れるのは1〜2フレーズ",
-    "音ハメは気持ちよさの手段の一つとして残す"
-  ],
-  "drop": [
-    "派手な見た目・刺激の強い演出を必須条件にしない。見た目のテンプレートは実験で決める"
-  ],
-  "naming": "チャンネル名は変えない。『ドパ』は若い層に通じる言葉で、競合にも『ドパガキには読めない日本語』（24倍・40万回）がある。",
-  "relatedExperiment": "analytics/experiments/shorts-recovery-002.json"
+  "name": "The Annotated World",
+  "decidedAt": "2026-11-24",
+  "owner": "Owner approved transition from Dopaeigo",
+  "concept": "世界の知性を、原文で。思想・文学・科学・歴史 × 英語",
+  "legacy": {
+    "name": "ドパ英語",
+    "decidedAt": "2026-11-18",
+    "owner": "本人承認（『go』）",
+    "concept": "3秒で『あ、それ言えた』が来る英語。",
+    "reward": "気持ちよさの源は演出ではなく、①問い→溜め→答えの『わかった！』②今日そのまま言える一言を手に入れた感覚③意外さ・笑い。",
+    "keep": [
+      "問いと答えの間に短い溜めを置く（参加型タップクイズ、超短尺）",
+      "1本で持ち帰れるのは1〜2フレーズ",
+      "音ハメは気持ちよさの手段の一つとして残す"
+    ],
+    "drop": [
+      "派手な見た目・刺激の強い演出を必須条件にしない。見た目のテンプレートは実験で決める"
+    ],
+    "naming": "チャンネル名は変えない。『ドパ』は若い層に通じる言葉で、競合にも『ドパガキには読めない日本語』（24倍・40万回）がある。",
+    "relatedExperiment": "analytics/experiments/shorts-recovery-002.json"
+  },
+  "productionRepo": "nomuonji/The-Annotated-World",
+  "releaseMode": "reviewed-private-upload-then-owner-publication",
+  "oldQueueRetired": true,
+  "channelProfileChange": "pending Studio operation"
 }
