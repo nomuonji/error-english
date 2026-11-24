@@ -5,6 +5,8 @@ on:
   pull_request:
     paths:
       - 'scripts/annotated-world-delivery.ts'
+      - 'scripts/prepare-reviewed-delivery.mjs'
+      - 'scripts/publish-reviewed.ts'
       - 'scripts/prepare-annotated-world.py'
       - 'scripts/queue_next.py'
       - 'scripts/publish-queue.ts'
@@ -14,13 +16,13 @@ on:
     inputs:
       mode:
         type: choice
-        options: [verify, prepare, upload-private]
+        options: [verify, prepare, upload-private, release-reviewed]
         default: verify
       source_sha:
         description: 'prepare: full reviewed commit SHA in The-Annotated-World'
         type: string
       clip_id:
-        description: 'prepare: productions/<clip-id>'
+        description: 'prepare/release-reviewed: productions/<clip-id>'
         type: string
       artifact_run_id:
         description: 'upload-private: successful prepare run ID in this repository'
@@ -57,6 +59,8 @@ jobs:
           npx --no-install esbuild scripts/publish-aw001-reviewed.ts --platform=node --bundle --packages=external --outfile=/tmp/aw001-public.js
           node --check scripts/prepare-aw001-reviewed.mjs
           node --check scripts/review-aw001-gemini.mjs
+          node --check scripts/prepare-reviewed-delivery.mjs
+          npx --no-install esbuild scripts/publish-reviewed.ts --platform=node --bundle --packages=external --outfile=/tmp/aw-publish-reviewed.js
   prepare:
     if: github.event_name == 'workflow_dispatch' && inputs.mode == 'prepare' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -94,7 +98,7 @@ jobs:
           if-no-files-found: error
           retention-days: 14
   delivery:
-    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'prepare' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'workflow_dispatch' && (inputs.mode == 'verify' || inputs.mode == 'upload-private') && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -170,15 +174,16 @@ jobs:
           { printf 'Read-only Annotated World channel verification (run %s):\n\n' "$GITHUB_RUN_ID"; cat /tmp/aw-verify-result; printf '\nNo video uploaded.\n'; } >/tmp/aw-verify-comment
           gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-verify-comment
 
-  release-owner-comment:
-    # Only the authenticated owner comment on the existing owner-created identity issue.
-    # The production ledger AND exact MP4 digest must pass review before ANY upload.
-    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-release-001' }}
+  release-reviewed:
+    # Explicit owner action + episode-specific ledger permission, quote rights, and exact-media QA.
+    # Issue #31 is the persistent authenticated command inbox; no approval is inferred from a comment alone.
+    if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'release-reviewed' && github.ref == 'refs/heads/main' && github.actor == 'nomuonji') || (github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && startsWith(github.event.comment.body, '/aw-release ')) }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
       actions: read
       issues: write
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -188,122 +193,65 @@ jobs:
         with:
           node-version: 22
       - run: npm ci --no-audit --no-fund
-      - name: Acquire reviewed artifact and enforce all publication gates
+      - name: Validate episode input (never interpolate issue text into shell)
+        env:
+          EVENT_KIND: ${{ github.event_name }}
+          COMMAND: ${{ github.event.comment.body }}
+          DISPATCH_CLIP: ${{ inputs.clip_id }}
+        run: |
+          if [[ "$EVENT_KIND" == "issue_comment" ]]; then
+            [[ "$COMMAND" =~ ^/aw-release[[:space:]](aw-[0-9]{3}-[a-z0-9-]+)$ ]] || { echo "Invalid release comment"; exit 1; }
+            CLIP_ID="${BASH_REMATCH[1]}"
+          else
+            CLIP_ID="$DISPATCH_CLIP"
+            [[ "$CLIP_ID" =~ ^aw-[0-9]{3}-[a-z0-9-]+$ ]] || { echo "Invalid release clip ID"; exit 1; }
+          fi
+          echo "CLIP_ID=$CLIP_ID" >>"$GITHUB_ENV"
+      - name: Validate source rights, owner permission, exact reviewed MP4 and metadata
         env:
           GH_TOKEN: ${{ github.token }}
           GITHUB_TOKEN: ${{ github.token }}
-        run: node scripts/prepare-aw001-reviewed.mjs
-      - name: Existing OAuth — private upload and readback only
+        run: |
+          node scripts/prepare-reviewed-delivery.mjs "$CLIP_ID"
+          echo "EXPECTED_SHA256=$(jq -r '.sha256' aw-delivery/delivery.json)" >>"$GITHUB_ENV"
+      - name: Upload PRIVATE or recover matching existing ID (never duplicate)
         env:
-          EXPECTED_SHA256: '194c6a7ba04ecf056fe070b8fdebc3faee4d9db107f4ce68c3590951d6aee9ac'
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
         run: npx tsx scripts/annotated-world-delivery.ts upload-private aw-delivery
-      - name: Public switch of the same private ID with real YouTube readback
+      - name: Persist private upload receipt BEFORE public switch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { printf 'Annotated World delivery checkpoint (run %s):\n' "$GITHUB_RUN_ID";
+            jq -r '"Clip: "+.clipId, "Video ID: "+.videoId, "Privacy at checkpoint: "+(.privacy//"unknown"), "MP4 SHA256: "+.sha256' aw-delivery/receipt.json;
+            printf 'Public readback NOT yet confirmed. Reuse this ID; do not re-upload if later steps fail.\n'; } >/tmp/aw-private-receipt
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-private-receipt
+      - name: Publish exact existing ID and poll authoritative YouTube privacy
         env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: npx tsx scripts/publish-aw001-reviewed.ts aw-delivery
-      - name: Preserve receipt
+        run: npx tsx scripts/publish-reviewed.ts aw-delivery
+      - name: Always preserve the current receipt for safe retry
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: aw001-publication-receipt
-          path: aw-delivery/receipt.json
-          if-no-files-found: error
-      - name: Post real YouTube ID and privacy to owner tracking issue
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          printf 'AW-001 YouTube release verified by API (run %s):\n\n' "$GITHUB_RUN_ID" >/tmp/aw001-release-message
-          jq -r '"Video ID: " + .videoId, "Privacy: " + .privacy, "URL: " + .watchUrl, "SHA256: " + .sha256' aw-delivery/receipt.json >>/tmp/aw001-release-message
-          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-release-message
-
-  review-owner-comment:
-    # Read-only video/audio review; separate from publication permission.
-    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-review-001' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      actions: read
-      issues: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          persist-credentials: false
-      - name: Download exact MP4 review artifact (no upload)
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          curl --fail --silent --show-error --location -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/nomuonji/The-Annotated-World/actions/artifacts/14897427515/zip" --output /tmp/aw001-review.zip
-          mkdir -p /tmp/aw001-review
-          unzip -oq /tmp/aw001-review.zip -d /tmp/aw001-review
-          echo "194c6a7ba04ecf056fe070b8fdebc3faee4d9db107f4ce68c3590951d6aee9ac  /tmp/aw001-review/annotated-short.mp4" | sha256sum -c
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Gemini actual audiovisual QA (no publication)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/review-aw001-gemini.mjs /tmp/aw001-review/annotated-short.mp4 /tmp/aw001-review/captions.srt
-      - uses: actions/upload-artifact@v4
-        with:
-          name: aw001-gemini-media-audit
-          path: aw001-gemini-media-audit.json
-          if-no-files-found: error
-      - name: Record result for editor's real review
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          { printf 'AW-001 perceptual MP4 QA (run %s):\n\n' "$GITHUB_RUN_ID"; jq -r '"Audio perceptible: " + (.canPerceiveAudio|tostring), "All 25 cues checked: " + (.checkedAllCues|tostring), "Verdict: " + .overall, "Summary: " + .summaryJapanese, "Major issues: " + (.majorIssues|tojson), "Minor issues: " + (.minorIssues|tojson)' aw001-gemini-media-audit.json; printf '\nNo public/private upload or editorial approval performed.\n'; } >/tmp/aw001-audit-message
-          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-audit-message
-
-  resume-existing-aw001:
-    # Recover the EXACT previously uploaded private video; NEVER call videos.insert here.
-    # This job follows a verified upload receipt from run 45423026831, video hYPNkPfJbOQ.
-    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-resume-public-001' }}
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      actions: read
-      issues: write
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-          persist-credentials: false
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - run: npm ci --no-audit --no-fund
-      - name: Rebuild exact reviewed delivery manifest, no OAuth/no video upload
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GITHUB_TOKEN: ${{ github.token }}
-        run: node scripts/prepare-aw001-reviewed.mjs
-      - name: Pin already existing YouTube ID from successful private upload readback
-        run: |
-          jq --arg id "hYPNkPfJbOQ" --arg ch "UCBy9F1fD4SQTyjTK8yfZGhA" '{clipId,sourceSha,sha256,videoId:$id,channelId:$ch,privacy:"private"}' aw-delivery/delivery.json >aw-delivery/receipt.json
-      - name: Verify existing video matches clip and SHA, then set PUBLIC and read back
-        env:
-          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
-          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-        run: npx tsx scripts/publish-aw001-reviewed.ts aw-delivery
-      - name: Preserve observed existing-video receipt even on failure
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: aw001-existing-video-receipt
+          name: annotated-world-episode-receipt
           path: aw-delivery/receipt.json
           if-no-files-found: ignore
-      - name: Report actual PUBLIC status on the tracking issue
+      - name: Report verified public video ID and privacy
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          printf 'AW-001 existing uploaded video final API readback (run %s):\n\n' "$GITHUB_RUN_ID" >/tmp/aw001-public-message
-          jq -r '"Video ID: "+.videoId, "Privacy: "+.privacy, "URL: "+.watchUrl, "SHA256: "+.sha256' aw-delivery/receipt.json >>/tmp/aw001-public-message
-          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw001-public-message
+          { printf 'Annotated World PUBLIC release verified (run %s):\n' "$GITHUB_RUN_ID";
+            jq -r '"Clip: "+.clipId, "Video ID: "+.videoId, "Privacy: "+.privacy, "URL: "+.watchUrl, "MP4 SHA256: "+.sha256, "Source revision: "+.sourceSha' aw-delivery/receipt.json; } >/tmp/aw-public-receipt
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-public-receipt
+      - name: Record failed release without claiming upload success
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          printf 'Annotated World delivery incomplete (run %s, clip %s). Inspect step logs and saved receipt. Do NOT re-upload until the existing video ID/privacy is checked.\n' "$GITHUB_RUN_ID" "$CLIP_ID" >/tmp/aw-failure
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-failure
