@@ -1,0 +1,56 @@
+name: AW001 local speech audit
+on:
+  issue_comment:
+    types: [created]
+  pull_request:
+    paths:
+      - 'scripts/review-aw001-local-asr.py'
+      - '.github/workflows/aw001-speech-audit.yml'
+permissions:
+  contents: read
+jobs:
+  syntax:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m py_compile scripts/review-aw001-local-asr.py
+  audio-audit:
+    if: ${{ github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && github.event.comment.body == '/aw-audit-local-001' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch exact rendered audio/video (no YouTube upload)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          curl --fail --silent --show-error --location -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/nomuonji/The-Annotated-World/actions/artifacts/14897427515/zip" --output /tmp/aw001-audit.zip
+          mkdir -p /tmp/aw001-audit
+          unzip -oq /tmp/aw001-audit.zip -d /tmp/aw001-audit
+          echo "194c6a7ba04ecf056fe070b8fdebc3faee4d9db107f4ce68c3590951d6aee9ac  /tmp/aw001-audit/annotated-short.mp4" | sha256sum -c
+      - name: Install CPU ASR runtime
+        run: python -m pip install --disable-pip-version-check faster-whisper soundfile scipy numpy
+      - name: Transcribe actual voices with local Whisper
+        run: python scripts/review-aw001-local-asr.py /tmp/aw001-audit
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aw001-local-asr-audit
+          path: aw001-local-speech-audit.json
+          if-no-files-found: error
+      - name: Record speech QA data without giving approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { printf 'AW-001 local audio decoding (run %s), NOT final media approval:\n\n' "$GITHUB_RUN_ID"; jq -r '.results | to_entries[] | (.key + ": similarity=" + (.value.similarity|tostring) + " language=" + .value.language + " cues=" + (.value.segments|tostring))' aw001-local-speech-audit.json; printf '\nFull independent text-vs-ASR report in run artifact. No upload performed.\n'; } >/tmp/asr-result
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/asr-result
