@@ -1,0 +1,93 @@
+name: Annotated World local speech QA
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      clip_id:
+        description: 'Episode ID (e.g. aw-002-topic)'
+        required: true
+        type: string
+  pull_request:
+    paths:
+      - 'scripts/review-annotated-speech.py'
+      - '.github/workflows/annotated-world-speech-audit.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m py_compile scripts/review-annotated-speech.py
+  audit:
+    if: ${{ (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main' && github.actor == 'nomuonji') || (github.event_name == 'issue_comment' && github.event.comment.user.id == 63096515 && github.event.issue.user.id == 63096515 && github.event.issue.number == 31 && github.event.issue.pull_request == null && startsWith(github.event.comment.body, '/aw-audit ')) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+      actions: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Parse owner-reviewed clip ID
+        env:
+          EVENT_KIND: ${{ github.event_name }}
+          COMMAND: ${{ github.event.comment.body }}
+          DISPATCH_CLIP: ${{ inputs.clip_id }}
+        run: |
+          if [[ "$EVENT_KIND" == "issue_comment" ]]; then
+            [[ "$COMMAND" =~ ^/aw-audit[[:space:]](aw-[0-9]{3}-[a-z0-9-]+)$ ]] || { echo "Invalid audit command"; exit 1; }
+            CLIP_ID="${BASH_REMATCH[1]}"
+          else
+            CLIP_ID="$DISPATCH_CLIP"
+            [[ "$CLIP_ID" =~ ^aw-[0-9]{3}-[a-z0-9-]+$ ]] || exit 1
+          fi
+          echo "CLIP_ID=$CLIP_ID" >>"$GITHUB_ENV"
+      - name: Resolve exact artifact from source production ledger
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/nomuonji/The-Annotated-World/contents/productions/$CLIP_ID/status.json" --jq '.content' | base64 -d >/tmp/aw-status.json
+          jq -e --arg clip "$CLIP_ID" '.clipId == $clip and .render.sha256 and .render.artifactUrl and .script.renderMatchesBrief == true' /tmp/aw-status.json
+          MEDIA_SHA256="$(jq -r '.render.sha256' /tmp/aw-status.json)"
+          ARTIFACT_URL="$(jq -r '.render.artifactUrl' /tmp/aw-status.json)"
+          [[ "$MEDIA_SHA256" =~ ^[a-f0-9]{64}$ ]] || exit 1
+          [[ "$ARTIFACT_URL" =~ ^https://github.com/nomuonji/The-Annotated-World/actions/runs/([0-9]+)/artifacts/([0-9]+)$ ]] || exit 1
+          RUN_ID="${BASH_REMATCH[1]}"
+          ARTIFACT_ID="${BASH_REMATCH[2]}"
+          [[ "$(gh api "repos/nomuonji/The-Annotated-World/actions/runs/$RUN_ID" --jq .conclusion)" == success ]] || exit 1
+          [[ "$(gh api "repos/nomuonji/The-Annotated-World/actions/artifacts/$ARTIFACT_ID" --jq .expired)" == false ]] || exit 1
+          echo "MEDIA_SHA256=$MEDIA_SHA256" >>"$GITHUB_ENV"
+          mkdir -p /tmp/aw-review
+          curl --fail --silent --show-error --location -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/nomuonji/The-Annotated-World/actions/artifacts/$ARTIFACT_ID/zip" --output /tmp/aw-review.zip
+          unzip -oq /tmp/aw-review.zip -d /tmp/aw-review
+          echo "$MEDIA_SHA256  /tmp/aw-review/annotated-short.mp4" | sha256sum -c
+          test -s /tmp/aw-review/voice-only.wav
+          test -s /tmp/aw-review/timeline.json
+      - name: Install no-key offline speech recognition
+        run: python -m pip install --disable-pip-version-check faster-whisper soundfile scipy numpy
+      - name: Check spoken quotes and editor audio against subtitle text
+        run: python scripts/review-annotated-speech.py /tmp/aw-review --clip "$CLIP_ID" --sha256 "$MEDIA_SHA256"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: annotated-world-speech-audit
+          path: annotated-world-speech-audit.json
+          if-no-files-found: ignore
+      - name: Record voice QA; never auto-approve rights or publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { printf 'Annotated World local ASR review (run %s):\n' "$GITHUB_RUN_ID";
+            jq -r '"Clip: "+.clipId, "MP4 SHA256: "+.mp4Sha256, (.results | to_entries[] | .key + " speech similarity=" + (.value.normalizedSimilarity|tostring) + " cues=" + (.value.cues|tostring))' annotated-world-speech-audit.json;
+            printf 'This is speech recognition evidence, NOT copyright clearance or human listening approval.\n'; } >/tmp/aw-audit-receipt
+          gh issue comment 31 --repo "$GITHUB_REPOSITORY" --body-file /tmp/aw-audit-receipt
