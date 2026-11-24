@@ -50,10 +50,15 @@ async function main(){
  }while(next);
  const res=await yt.videos.insert({part:['snippet','status'],requestBody:{snippet:{title:meta.title,description:meta.description+'\n\n'+marker+'\nAW-SHA256:'+digest,categoryId:'27',tags:['The Annotated World','英語学習','思想'],defaultLanguage:'ja'},status:{privacyStatus:'private',selfDeclaredMadeForKids:false}},media:{body:fs.createReadStream(file)}});
  must(res.data.id,'Upload returned no video ID; inspect Studio before retry');
+ // Write a durable tentative ID BEFORE any potentially failing YouTube readback. A failed
+ // readback must never cause the next attempt to create a duplicate upload.
+ const checkpoint={clipId:meta.clipId,sourceSha:meta.sourceSha,sha256:digest,videoId:res.data.id,channelId:channel!.id,privacy:'unverified',uploadReadbackVerified:false};
+ fs.writeFileSync(path.join(folder,'receipt.json'),JSON.stringify(checkpoint,null,2)+'\n');
+ console.log(JSON.stringify({uploadResponseReceived:true,...checkpoint}));
  const v=await yt.videos.list({part:['snippet','status'],id:[res.data.id!]});
  const item=v.data.items?.[0];
- must(item?.snippet?.channelId===channel!.id&&item.status?.privacyStatus==='private','Upload readback mismatch; inspect Studio immediately');
- const receipt={clipId:meta.clipId,sourceSha:meta.sourceSha,sha256:digest,videoId:res.data.id,channelId:channel!.id,privacy:'private'};
+ must(item?.snippet?.channelId===channel!.id&&item.status?.privacyStatus==='private','Upload readback mismatch; preserve tentative receipt and inspect Studio before retry');
+ const receipt={...checkpoint,privacy:'private',uploadReadbackVerified:true};
  fs.writeFileSync(path.join(folder,'receipt.json'),JSON.stringify(receipt,null,2)+'\n');
  console.log(JSON.stringify(receipt));
 }
