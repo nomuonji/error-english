@@ -29,6 +29,7 @@ function igCaption(req: Req): string {
 }
 
 async function main() {
+  if (cfg.retired) { console.log('Legacy queue retired; force disabled.'); return; }
   if (process.env.FORCE !== 'true' && !cfg.enabled) {
     console.log('Queue publisher disabled (publish-queue/config.json enabled=false).');
     return;

@@ -1,3 +1,7 @@
+# Current channel: The Annotated World transition
+
+Legacy lesson creation/publishing is retired. Source repo: [The Annotated World](https://github.com/nomuonji/The-Annotated-World). This repository retains existing YouTube OAuth and Analytics. [New delivery workflow and review gates](docs/ANNOTATED-WORLD-CHANNEL.md). The old README below is historical.
+
 # Error English Video Generator
 
 エンジニア向けの英語エラー解説動画を自動生成・投稿するプロジェクトです。

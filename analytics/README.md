@@ -1,3 +1,7 @@
+# Current: The Annotated World transition
+
+The legacy editorial routine and lesson publishing are paused/retired as of 2026-11-24. Daily read-only Analytics remains active. Read [channel transition](../docs/ANNOTATED-WORLD-CHANNEL.md). Historical instructions below are retained for reference, not execution.
+
 # YouTube Analytics and My Portal editorial feedback
 
 This directory stores read-only YouTube Analytics snapshots and the evidence-backed editorial feedback produced by the My Portal scheduled agent.
