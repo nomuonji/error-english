@@ -40,9 +40,9 @@ async function main(){
    const videos=await yt.videos.list({part:['snippet','status'],id:ids});
    const found=videos.data.items?.find(v=>v.snippet?.description?.split('\n').includes(marker));
    if(found){
-    must(found.snippet?.description?.split('\\n').includes('AW-SHA256:'+digest),'Existing clip ID points to a different MP4 digest; manual review required');
+    must(found.snippet?.description?.includes('AW-SHA256:'+digest),'Existing clip ID points to a different MP4 digest; manual review required');
     const receipt={clipId:meta.clipId,sourceSha:meta.sourceSha,sha256:digest,videoId:found.id,channelId:channel!.id,privacy:found.status?.privacyStatus};
-    fs.writeFileSync(path.join(folder,'receipt.json'),JSON.stringify(receipt,null,2)+'\\n');
+    fs.writeFileSync(path.join(folder,'receipt.json'),JSON.stringify(receipt,null,2));
     console.log(JSON.stringify({existing:true,...receipt}));return;
    }
   }
