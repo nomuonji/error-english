@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "collectedAt": "2026-11-25T12:28:08.551Z",
+  "collectedAt": "2026-11-26T12:08:39.337Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-26",
-    "endDate": "2026-11-22",
+    "startDate": "2026-10-27",
+    "endDate": "2026-11-23",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -342,6 +342,19 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 6,
         "averageViewPercentage": 9.94,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      },
+      {
+        "day": "2026-11-23",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 4,
+        "averageViewPercentage": 9.64,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -689,6 +702,35 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 0,
         "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "PVHYr1A_gXs",
+      "metadata": {
+        "videoId": "PVHYr1A_gXs",
+        "publishedAt": "2026-11-18T19:40:30.926Z",
+        "requestFile": "0056-drill-tossa-henji-8.request.json",
+        "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
+        "description": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。\n\n・お先にどうぞ ＝ After you.（ドアや順番をゆずる時）\n・おまかせで ＝ I'll leave it to you.（お店でも仕事でも使える）\n・お大事に ＝ Take care.（体調の悪い人に）\n・気にしないで ＝ Don't worry about it.（Don't mind. は通じない）\n・しょうがないね ＝ It is what it is.（あきらめ半分の決まり文句）\n・早く言ってよ ＝ You should've said so.（軽く責めるニュアンス）\n・手伝おうか？ ＝ Do you need a hand?（hand＝手助け）\n・どの口が言う ＝ Look who's talking.（自分のことを棚に上げた人に）\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/after-you\n意味の確認: https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is\n意味の確認: https://dictionary.cambridge.org/dictionary/english/look-who-s-talking\n意味の確認: https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
+        "assetName": "drill-tossa-henji-8.mp4",
+        "pattern": "drill",
+        "formatId": "drill-v1",
+        "experimentId": "method-v1",
+        "scriptId": "drill-tossa-henji-8",
+        "summary": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。"
+      },
+      "metrics": {
+        "video": "PVHYr1A_gXs",
+        "views": 2,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 7,
+        "averageViewPercentage": 17.92,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1241,35 +1283,6 @@
       }
     },
     {
-      "videoId": "PVHYr1A_gXs",
-      "metadata": {
-        "videoId": "PVHYr1A_gXs",
-        "publishedAt": "2026-11-18T19:40:30.926Z",
-        "requestFile": "0056-drill-tossa-henji-8.request.json",
-        "title": "とっさに言えない返事の英語8選（ラストが一番むずい）",
-        "description": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。\n\n・お先にどうぞ ＝ After you.（ドアや順番をゆずる時）\n・おまかせで ＝ I'll leave it to you.（お店でも仕事でも使える）\n・お大事に ＝ Take care.（体調の悪い人に）\n・気にしないで ＝ Don't worry about it.（Don't mind. は通じない）\n・しょうがないね ＝ It is what it is.（あきらめ半分の決まり文句）\n・早く言ってよ ＝ You should've said so.（軽く責めるニュアンス）\n・手伝おうか？ ＝ Do you need a hand?（hand＝手助け）\n・どの口が言う ＝ Look who's talking.（自分のことを棚に上げた人に）\n\n意味の確認: https://dictionary.cambridge.org/dictionary/english/after-you\n意味の確認: https://dictionary.cambridge.org/dictionary/english/it-is-what-it-is\n意味の確認: https://dictionary.cambridge.org/dictionary/english/look-who-s-talking\n意味の確認: https://dictionary.cambridge.org/dictionary/english/give-lend-sb-a-hand\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英会話 #英語フレーズ #英語学習 #ドパ英語 #shorts",
-        "assetName": "drill-tossa-henji-8.mp4",
-        "pattern": "drill",
-        "formatId": "drill-v1",
-        "experimentId": "method-v1",
-        "scriptId": "drill-tossa-henji-8",
-        "summary": "言えそうで出てこない返事の一言を8つ。ラストが一番むずい。"
-      },
-      "metrics": {
-        "video": "PVHYr1A_gXs",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 11,
-        "averageViewPercentage": 26.19,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "WRefdl_h4l4",
       "metadata": null,
       "metrics": {
@@ -1641,6 +1654,23 @@
       }
     },
     {
+      "videoId": "hfbZHefPzxA",
+      "metadata": null,
+      "metrics": {
+        "video": "hfbZHefPzxA",
+        "views": 0,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "uyupjtkkwqg",
       "metadata": {
         "videoId": "uyupjtkkwqg",
@@ -1978,8 +2008,8 @@
       "rows": [
         {
           "insightTrafficSourceType": "YT_SEARCH",
-          "views": 52,
-          "engagedViews": 22,
+          "views": 53,
+          "engagedViews": 23,
           "estimatedMinutesWatched": 15
         },
         {
@@ -2024,9 +2054,9 @@
       "rows": [
         {
           "creatorContentType": "shorts",
-          "views": 92,
-          "engagedViews": 40,
-          "averageViewDuration": 33
+          "views": 93,
+          "engagedViews": 41,
+          "averageViewDuration": 32
         },
         {
           "creatorContentType": "videoOnDemand",
@@ -2099,6 +2129,11 @@
         "rows": [
           {
             "insightTrafficSourceType": "YT_CHANNEL",
+            "views": 1,
+            "engagedViews": 1
+          },
+          {
+            "insightTrafficSourceType": "YT_SEARCH",
             "views": 1,
             "engagedViews": 1
           },
