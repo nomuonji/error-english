@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "collectedAt": "2026-11-26T12:08:39.337Z",
+  "collectedAt": "2026-11-27T11:57:34.761Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-27",
-    "endDate": "2026-11-23",
+    "startDate": "2026-10-28",
+    "endDate": "2026-11-24",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -36,19 +36,6 @@
       "subscribersLost"
     ],
     "rows": [
-      {
-        "day": "2026-10-27",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      },
       {
         "day": "2026-10-28",
         "views": 2,
@@ -355,6 +342,19 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 4,
         "averageViewPercentage": 9.64,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      },
+      {
+        "day": "2026-11-24",
+        "views": 5,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 2,
+        "averageViewDuration": 66,
+        "averageViewPercentage": 92.86,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -822,6 +822,23 @@
       }
     },
     {
+      "videoId": "hYPNkPfJbOQ",
+      "metadata": null,
+      "metrics": {
+        "video": "hYPNkPfJbOQ",
+        "views": 2,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 1,
+        "averageViewDuration": 96,
+        "averageViewPercentage": 99.2,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "jHmRT-cCwsM",
       "metadata": null,
       "metrics": {
@@ -911,6 +928,23 @@
       },
       "metrics": {
         "video": "1fsA3o3PQos",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "3S8s6qZ6TIc",
+      "metadata": null,
+      "metrics": {
+        "video": "3S8s6qZ6TIc",
         "views": 1,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -1232,6 +1266,23 @@
       }
     },
     {
+      "videoId": "M8Xt58YBtpI",
+      "metadata": null,
+      "metrics": {
+        "video": "M8Xt58YBtpI",
+        "views": 1,
+        "engagedViews": 0,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 0,
+        "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "NDqt4R-cYdc",
       "metadata": null,
       "metrics": {
@@ -1426,6 +1477,34 @@
       }
     },
     {
+      "videoId": "c2kv4u3Pneo",
+      "metadata": {
+        "videoId": "c2kv4u3Pneo",
+        "publishedAt": "2026-11-15T17:34:49.303Z",
+        "requestFile": "0052-beat-gen-20261113-017.request.json",
+        "title": "英検1級の単語、何個わかる？ galvanize / curtail / sporadic ほか【音ハメ英単語 #17】",
+        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・galvanize /ˈɡælvənaɪz/（動）＝ 奮起させる\n  The speech helped galvanize the community.（その演説は地域社会を奮起させるのに役立った。）\n・curtail /kɜːrˈteɪl/（動）＝ 切り詰める\n  We must curtail spending to save the project.（プロジェクトを救うため支出を切り詰めねば。）\n・sporadic /spəˈrædɪk/（形）＝ 散発的な\n  Her sporadic efforts yielded little progress.（彼女の散発的な努力は成果が乏しかった。）\n・haphazard /ˌhæpˈhæzərd/（形）＝ 場当たり的な\n  The haphazard filing system wastes our time.（場当たり的な書類整理は時間の無駄だ。）\n・pitfall /ˈpɪtfɔːl/（名）＝ 落とし穴\n  One major pitfall is overlooking hidden fees.（大きな落とし穴の一つは、隠れた手数料を見逃すことだ。）\n・ordeal /ɔːrˈdiːl/（名）＝ 試練\n  The whole ordeal left her exhausted for weeks.（その試練で彼女は何週間も疲弊した。）\n・inadvertently /ˌɪnədˈvɜːrtəntli/（副）＝ うっかりと\n  He inadvertently deleted the entire folder.（彼はうっかりフォルダ全体を削除した。）\n・vehemently /ˈviːəməntli/（副）＝ 激しく\n  She vehemently denied the accusation in court.（彼女は法廷でその告発を激しく否定した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
+        "assetName": "beat-gen-20261113-017.mp4",
+        "pattern": "beat",
+        "formatId": "beat-v1",
+        "scriptId": "beat-gen-20261113-017",
+        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
+      },
+      "metrics": {
+        "video": "c2kv4u3Pneo",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 37,
+        "averageViewPercentage": 79.79,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
       "videoId": "g82Impy2Gyc",
       "metadata": null,
       "metrics": {
@@ -1435,23 +1514,6 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 5,
         "averageViewPercentage": 17.55,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "gi7WY5lSgwg",
-      "metadata": null,
-      "metrics": {
-        "video": "gi7WY5lSgwg",
-        "views": 1,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1613,34 +1675,6 @@
       },
       "metrics": {
         "video": "bIHJE6kTEWU",
-        "views": 0,
-        "engagedViews": 0,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 0,
-        "averageViewPercentage": 0,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "c2kv4u3Pneo",
-      "metadata": {
-        "videoId": "c2kv4u3Pneo",
-        "publishedAt": "2026-11-15T17:34:49.303Z",
-        "requestFile": "0052-beat-gen-20261113-017.request.json",
-        "title": "英検1級の単語、何個わかる？ galvanize / curtail / sporadic ほか【音ハメ英単語 #17】",
-        "description": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。\n\n・galvanize /ˈɡælvənaɪz/（動）＝ 奮起させる\n  The speech helped galvanize the community.（その演説は地域社会を奮起させるのに役立った。）\n・curtail /kɜːrˈteɪl/（動）＝ 切り詰める\n  We must curtail spending to save the project.（プロジェクトを救うため支出を切り詰めねば。）\n・sporadic /spəˈrædɪk/（形）＝ 散発的な\n  Her sporadic efforts yielded little progress.（彼女の散発的な努力は成果が乏しかった。）\n・haphazard /ˌhæpˈhæzərd/（形）＝ 場当たり的な\n  The haphazard filing system wastes our time.（場当たり的な書類整理は時間の無駄だ。）\n・pitfall /ˈpɪtfɔːl/（名）＝ 落とし穴\n  One major pitfall is overlooking hidden fees.（大きな落とし穴の一つは、隠れた手数料を見逃すことだ。）\n・ordeal /ɔːrˈdiːl/（名）＝ 試練\n  The whole ordeal left her exhausted for weeks.（その試練で彼女は何週間も疲弊した。）\n・inadvertently /ˌɪnədˈvɜːrtəntli/（副）＝ うっかりと\n  He inadvertently deleted the entire folder.（彼はうっかりフォルダ全体を削除した。）\n・vehemently /ˈviːəməntli/（副）＝ 激しく\n  She vehemently denied the accusation in court.（彼女は法廷でその告発を激しく否定した。）\n\n意味の確認: https://dictionary.cambridge.org/\n\n— クレジット —\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n\n#英単語 #英検1級 #語彙力 #ドパ英語 #shorts",
-        "assetName": "beat-gen-20261113-017.mp4",
-        "pattern": "beat",
-        "formatId": "beat-v1",
-        "scriptId": "beat-gen-20261113-017",
-        "summary": "英検1級レベル（CEFR C1〜C2）の単語8個を、ビートに合わせて一気に確認。意味が出る前に答えてみてください。"
-      },
-      "metrics": {
-        "video": "c2kv4u3Pneo",
         "views": 0,
         "engagedViews": 0,
         "estimatedMinutesWatched": 0,
@@ -2008,14 +2042,14 @@
       "rows": [
         {
           "insightTrafficSourceType": "YT_SEARCH",
-          "views": 53,
+          "views": 55,
           "engagedViews": 23,
           "estimatedMinutesWatched": 15
         },
         {
           "insightTrafficSourceType": "YT_CHANNEL",
-          "views": 18,
-          "engagedViews": 11,
+          "views": 19,
+          "engagedViews": 12,
           "estimatedMinutesWatched": 6
         },
         {
@@ -2026,9 +2060,15 @@
         },
         {
           "insightTrafficSourceType": "EXT_URL",
-          "views": 5,
+          "views": 4,
           "engagedViews": 3,
           "estimatedMinutesWatched": 0
+        },
+        {
+          "insightTrafficSourceType": "NO_LINK_OTHER",
+          "views": 2,
+          "engagedViews": 2,
+          "estimatedMinutesWatched": 1
         },
         {
           "insightTrafficSourceType": "YT_OTHER_PAGE",
@@ -2037,9 +2077,9 @@
           "estimatedMinutesWatched": 0
         },
         {
-          "insightTrafficSourceType": "NO_LINK_OTHER",
+          "insightTrafficSourceType": "SUBSCRIBER",
           "views": 1,
-          "engagedViews": 1,
+          "engagedViews": 0,
           "estimatedMinutesWatched": 0
         }
       ]
@@ -2054,9 +2094,9 @@
       "rows": [
         {
           "creatorContentType": "shorts",
-          "views": 93,
-          "engagedViews": 41,
-          "averageViewDuration": 32
+          "views": 97,
+          "engagedViews": 43,
+          "averageViewDuration": 34
         },
         {
           "creatorContentType": "videoOnDemand",
@@ -2216,6 +2256,11 @@
         ],
         "rows": [
           {
+            "insightTrafficSourceType": "YT_CHANNEL",
+            "views": 1,
+            "engagedViews": 1
+          },
+          {
             "insightTrafficSourceType": "SHORTS",
             "views": 0,
             "engagedViews": 0
@@ -2302,7 +2347,7 @@
           "duration": "PT37S",
           "definition": "hd",
           "regionRestriction": null,
-          "viewCount": "2"
+          "viewCount": "3"
         },
         {
           "videoId": "PVHYr1A_gXs",
