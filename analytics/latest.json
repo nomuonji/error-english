@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "collectedAt": "2026-11-27T11:57:34.761Z",
+  "collectedAt": "2026-11-28T11:32:24.392Z",
   "timezone": "Asia/Tokyo",
   "channelQuery": "channel==MINE",
   "period": {
-    "startDate": "2026-10-28",
-    "endDate": "2026-11-24",
+    "startDate": "2026-10-29",
+    "endDate": "2026-11-25",
     "days": 28
   },
   "freshnessNote": "The end date is intentionally three JST calendar days before collection to reduce incomplete-day reporting.",
@@ -36,19 +36,6 @@
       "subscribersLost"
     ],
     "rows": [
-      {
-        "day": "2026-10-28",
-        "views": 2,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 24,
-        "averageViewPercentage": 47.16,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      },
       {
         "day": "2026-10-29",
         "views": 1,
@@ -360,6 +347,19 @@
         "shares": 0,
         "subscribersGained": 0,
         "subscribersLost": 0
+      },
+      {
+        "day": "2026-11-25",
+        "views": 2,
+        "engagedViews": 2,
+        "estimatedMinutesWatched": 1,
+        "averageViewDuration": 34,
+        "averageViewPercentage": 37.38,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
       }
     ]
   },
@@ -410,23 +410,6 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 10,
         "averageViewPercentage": 33.33,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
-      "metrics": {
-        "video": "UspiucFmOeQ",
-        "views": 4,
-        "engagedViews": 2,
-        "estimatedMinutesWatched": 6,
-        "averageViewDuration": 194,
-        "averageViewPercentage": 588.79,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -513,6 +496,23 @@
         "estimatedMinutesWatched": 1,
         "averageViewDuration": 38,
         "averageViewPercentage": 42.85,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "UspiucFmOeQ",
+      "metadata": null,
+      "metrics": {
+        "video": "UspiucFmOeQ",
+        "views": 3,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 6,
+        "averageViewDuration": 363,
+        "averageViewPercentage": 1100.61,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1083,23 +1083,6 @@
       }
     },
     {
-      "videoId": "9K5YudXmEHk",
-      "metadata": null,
-      "metrics": {
-        "video": "9K5YudXmEHk",
-        "views": 1,
-        "engagedViews": 1,
-        "estimatedMinutesWatched": 0,
-        "averageViewDuration": 22,
-        "averageViewPercentage": 32.9,
-        "likes": 0,
-        "comments": 0,
-        "shares": 0,
-        "subscribersGained": 0,
-        "subscribersLost": 0
-      }
-    },
-    {
       "videoId": "Ab2aRpTQU3g",
       "metadata": null,
       "metrics": {
@@ -1224,6 +1207,40 @@
         "estimatedMinutesWatched": 0,
         "averageViewDuration": 0,
         "averageViewPercentage": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "Envb4YdJnKE",
+      "metadata": null,
+      "metrics": {
+        "video": "Envb4YdJnKE",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 0,
+        "averageViewDuration": 4,
+        "averageViewPercentage": 5.24,
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribersGained": 0,
+        "subscribersLost": 0
+      }
+    },
+    {
+      "videoId": "F7UrNIC0UGA",
+      "metadata": null,
+      "metrics": {
+        "video": "F7UrNIC0UGA",
+        "views": 1,
+        "engagedViews": 1,
+        "estimatedMinutesWatched": 1,
+        "averageViewDuration": 63,
+        "averageViewPercentage": 70.22,
         "likes": 0,
         "comments": 0,
         "shares": 0,
@@ -1992,16 +2009,6 @@
       "rows": []
     },
     {
-      "videoId": "UspiucFmOeQ",
-      "metadata": null,
-      "headers": [
-        "elapsedVideoTimeRatio",
-        "audienceWatchRatio",
-        "relativeRetentionPerformance"
-      ],
-      "rows": []
-    },
-    {
       "videoId": "XpnTSPpDsek",
       "metadata": null,
       "headers": [
@@ -2022,6 +2029,25 @@
         "assetName": "en-vs-flout-flaunt.mp4",
         "pattern": "vs",
         "scriptId": "en-vs-flout-flaunt"
+      },
+      "headers": [
+        "elapsedVideoTimeRatio",
+        "audienceWatchRatio",
+        "relativeRetentionPerformance"
+      ],
+      "rows": []
+    },
+    {
+      "videoId": "HbW4ZUbFSrw",
+      "metadata": {
+        "videoId": "HbW4ZUbFSrw",
+        "publishedAt": "2026-10-20T11:51:46.088Z",
+        "requestFile": "0002-en-word-kerfuffle.request.json",
+        "title": "kerfuffle の意味わかる？｜ネイティブがよく使う「ゴタゴタ」【ちょっと難しい英単語】",
+        "description": "・kerfuffle（名詞）＝ ちょっとした騒ぎ・ゴタゴタ\n・What's all the kerfuffle about? ＝ 何をそんなに騒いでるの？\n・There was a bit of a kerfuffle at the airport. ＝ 空港でちょっとした騒ぎがあった\n・The new rule caused a huge kerfuffle online. ＝ 新しいルールがネットで大騒ぎになった\n・Sorry about the kerfuffle earlier. ＝ さっきはバタバタしてごめん\n意味の確認: https://dictionary.cambridge.org/dictionary/english/kerfuffle\n\n— クレジット —\n写真: DtheDelinquent / Pixabay https://pixabay.com/videos/id-50312/ (Pixabay Content License)\n写真: Dick Thomas Johnson / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Umeda_Station_Osaka_metro_platform_rush_hour_queues_2022-04-25.jpg (CC BY 2.0)\n写真: Shixart1985 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Woman_sits_at_desk_working_on_laptop_in_home_office.jpg (CC BY 2.0)\n写真: Expatsiam / Pixabay https://pixabay.com/videos/id-30872/ (Pixabay Content License)\n写真: Amorn_mimi / Pixabay https://pixabay.com/videos/id-183448/ (Pixabay Content License)\n写真: sensorycznyTata / Pixabay https://pixabay.com/videos/id-32246/ (Pixabay Content License)\n英語音声: Kokoro-82M (Apache-2.0) による合成音声\n音声: VOICEVOX:青山龍星\n音楽: Tsorthan Grove (CC0-1.0)\n\n#英単語 #英語学習 #語彙力 #shorts",
+        "assetName": "en-word-kerfuffle.mp4",
+        "pattern": "word",
+        "scriptId": "en-word-kerfuffle"
       },
       "headers": [
         "elapsedVideoTimeRatio",
